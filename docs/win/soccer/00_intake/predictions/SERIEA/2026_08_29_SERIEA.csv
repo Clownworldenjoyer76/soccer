@@ -1,0 +1,13 @@
+sport,league,match_date,match_time,home_team,away_team,home_prob,draw_prob,away_prob,home_xg,away_xg,expected_total_goals
+soccer,seriea,2026_08_29,12:30 PM,Sassuolo,Torino,45.0%,25.5%,29.6%,1.51,1.18,2.69
+soccer,seriea,2026_08_29,12:30 PM,Monza,Udinese,30.0%,26.2%,43.9%,1.14,1.44,2.58
+soccer,seriea,2026_08_29,12:30 PM,Fiorentina,Frosinone,63.9%,19.2%,16.9%,2.25,1.07,3.32
+soccer,seriea,2026_08_29,02:45 PM,Juventus,Parma,79.1%,14.1%,6.8%,2.52,0.60,3.12
+soccer,seriea,2026_08_29,12:30 PM,Sassuolo,Torino,45.0%,25.5%,29.6%,1.51,1.18,2.69
+soccer,seriea,2026_08_29,12:30 PM,Monza,Udinese,30.0%,26.2%,43.9%,1.14,1.44,2.58
+soccer,seriea,2026_08_29,12:30 PM,Fiorentina,Frosinone,63.9%,19.2%,16.9%,2.25,1.07,3.32
+soccer,seriea,2026_08_29,02:45 PM,Juventus,Parma,79.1%,14.1%,6.8%,2.52,0.60,3.12
+soccer,seriea,2026_08_29,12:30 PM,Sassuolo,Torino,45.0%,25.5%,29.6%,1.51,1.18,2.69
+soccer,seriea,2026_08_29,12:30 PM,Monza,Udinese,30.0%,26.2%,43.9%,1.14,1.44,2.58
+soccer,seriea,2026_08_29,12:30 PM,Fiorentina,Frosinone,63.9%,19.2%,16.9%,2.25,1.07,3.32
+soccer,seriea,2026_08_29,02:45 PM,Juventus,Parma,79.1%,14.1%,6.8%,2.52,0.60,3.12

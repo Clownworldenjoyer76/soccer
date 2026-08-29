@@ -1,0 +1,5 @@
+bucket,side,Win,Loss,Push,Total,Win_Pct
+04,over,1,0,0,1,1.0
+04,under,1,1,0,2,0.5
+05,over,0,1,0,1,0.0
+05,under,3,0,0,3,1.0

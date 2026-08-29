@@ -1,0 +1,2 @@
+sport,league,game_id,match_date,match_time,home_team,away_team,home_prob,draw_prob,away_prob,home_xg,away_xg,expected_total_goals
+soccer,epl,401879318,2026_08_24,03:00 PM,Fulham,Chelsea,0.263,0.264,0.473,1.01,1.46,2.47

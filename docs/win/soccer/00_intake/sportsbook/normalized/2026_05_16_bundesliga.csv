@@ -1,0 +1,8 @@
+sport,league,game_id,match_date,match_time,home_team,away_team,dk_home_decimal,dk_draw_decimal,dk_away_decimal,dk_over25_decimal,dk_under25_decimal,dk_over35_decimal,dk_under35_decimal,btts_yes,btts_no
+soccer,bundesliga,61515274,2026_05_16,09:30 AM,Bayern Munich,Koln,1.12,8.50,13.00,,,,,1.47,2.65
+soccer,bundesliga,61515276,2026_05_16,09:30 AM,Leverkusen,Hamburg,1.26,6.00,8.00,,,1.68,2.05,1.55,2.45
+soccer,bundesliga,61515278,2026_05_16,09:30 AM,Eintracht Frankfurt,VfB Stuttgart,3.35,4.10,1.86,,,1.71,2.00,1.30,3.50
+soccer,bundesliga,61515288,2026_05_16,09:30 AM,Borussia Monchengladbach,Hoffenheim,4.20,4.50,1.60,,,1.83,1.86,,
+soccer,bundesliga,61515290,2026_05_16,09:30 AM,Union Berlin,Augsburg,2.60,3.70,2.35,,,2.05,1.66,1.39,2.95
+soccer,bundesliga,61515292,2026_05_16,09:30 AM,St Pauli,Wolfsburg,2.80,3.50,2.30,1.66,2.10,,,1.55,2.45
+soccer,bundesliga,61515296,2026_05_16,09:30 AM,Heidenheim,Mainz,1.86,4.10,3.25,,,2.00,1.74,1.38,3.00

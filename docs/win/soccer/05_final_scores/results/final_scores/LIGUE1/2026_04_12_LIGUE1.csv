@@ -1,0 +1,4 @@
+sport,league,game_id,game_date,match_time,home_team,away_team,home_score,away_score
+soccer,ligue1,33675990.0,2026_04_12,02:45 PM,Lyon,Lorient,2,0
+soccer,ligue1,33675989.0,2026_04_12,11:15 AM,Toulouse,Lille,0,4
+soccer,ligue1,,2026_04_12,11:15 AM,Nice,Le Havre,1,1

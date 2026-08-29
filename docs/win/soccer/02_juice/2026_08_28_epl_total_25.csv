@@ -1,0 +1,2 @@
+game_id,sport,league,match_date,match_time,home_team,away_team,home_prob,draw_prob,away_prob,home_xg,away_xg,expected_total_goals,dk_over25_decimal,dk_under25_decimal,engine_lambda_home,engine_lambda_away,engine_match_distance,fair_over_decimal,fair_under_decimal,engine_over_prob,engine_under_prob
+401879294,soccer,epl,2026_08_28,03:00 PM,Crystal Palace,Manchester City,0.28,0.267,0.453,1.05,1.41,2.46,1.65,2.25,1.0808347638111728,1.383989356791842,0.0016273362193929032,2.23648477545626,1.8087442885263203,0.4471302514438053,0.5528697485561946

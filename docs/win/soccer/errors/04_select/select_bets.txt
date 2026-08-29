@@ -1,0 +1,1350 @@
+=== soccer select_bets RUN 2026-08-29T16:46:25.261829+00:00 ===
+2026-08-29T16:46:25.262240+00:00 | INFO  | DELETED OLD SELECT FILE: /home/runner/work/bet_tracker/bet_tracker/docs/win/soccer/04_select/2026_04_10_soccer_bets.csv
+2026-08-29T16:46:25.262297+00:00 | INFO  | DELETED OLD SELECT FILE: /home/runner/work/bet_tracker/bet_tracker/docs/win/soccer/04_select/2026_04_11_soccer_bets.csv
+2026-08-29T16:46:25.262340+00:00 | INFO  | DELETED OLD SELECT FILE: /home/runner/work/bet_tracker/bet_tracker/docs/win/soccer/04_select/2026_04_12_soccer_bets.csv
+2026-08-29T16:46:25.262380+00:00 | INFO  | DELETED OLD SELECT FILE: /home/runner/work/bet_tracker/bet_tracker/docs/win/soccer/04_select/2026_04_17_soccer_bets.csv
+2026-08-29T16:46:25.262441+00:00 | INFO  | DELETED OLD SELECT FILE: /home/runner/work/bet_tracker/bet_tracker/docs/win/soccer/04_select/2026_04_18_soccer_bets.csv
+2026-08-29T16:46:25.262483+00:00 | INFO  | DELETED OLD SELECT FILE: /home/runner/work/bet_tracker/bet_tracker/docs/win/soccer/04_select/2026_04_19_soccer_bets.csv
+2026-08-29T16:46:25.262521+00:00 | INFO  | DELETED OLD SELECT FILE: /home/runner/work/bet_tracker/bet_tracker/docs/win/soccer/04_select/2026_04_20_soccer_bets.csv
+2026-08-29T16:46:25.262562+00:00 | INFO  | DELETED OLD SELECT FILE: /home/runner/work/bet_tracker/bet_tracker/docs/win/soccer/04_select/2026_04_21_soccer_bets.csv
+2026-08-29T16:46:25.262600+00:00 | INFO  | DELETED OLD SELECT FILE: /home/runner/work/bet_tracker/bet_tracker/docs/win/soccer/04_select/2026_04_22_soccer_bets.csv
+2026-08-29T16:46:25.262639+00:00 | INFO  | DELETED OLD SELECT FILE: /home/runner/work/bet_tracker/bet_tracker/docs/win/soccer/04_select/2026_04_24_soccer_bets.csv
+2026-08-29T16:46:25.262680+00:00 | INFO  | DELETED OLD SELECT FILE: /home/runner/work/bet_tracker/bet_tracker/docs/win/soccer/04_select/2026_04_25_soccer_bets.csv
+2026-08-29T16:46:25.262718+00:00 | INFO  | DELETED OLD SELECT FILE: /home/runner/work/bet_tracker/bet_tracker/docs/win/soccer/04_select/2026_04_26_soccer_bets.csv
+2026-08-29T16:46:25.262756+00:00 | INFO  | DELETED OLD SELECT FILE: /home/runner/work/bet_tracker/bet_tracker/docs/win/soccer/04_select/2026_04_27_soccer_bets.csv
+2026-08-29T16:46:25.262793+00:00 | INFO  | DELETED OLD SELECT FILE: /home/runner/work/bet_tracker/bet_tracker/docs/win/soccer/04_select/2026_05_02_soccer_bets.csv
+2026-08-29T16:46:25.262830+00:00 | INFO  | DELETED OLD SELECT FILE: /home/runner/work/bet_tracker/bet_tracker/docs/win/soccer/04_select/2026_05_03_soccer_bets.csv
+2026-08-29T16:46:25.262867+00:00 | INFO  | DELETED OLD SELECT FILE: /home/runner/work/bet_tracker/bet_tracker/docs/win/soccer/04_select/2026_05_04_soccer_bets.csv
+2026-08-29T16:46:25.262904+00:00 | INFO  | DELETED OLD SELECT FILE: /home/runner/work/bet_tracker/bet_tracker/docs/win/soccer/04_select/2026_05_08_soccer_bets.csv
+2026-08-29T16:46:25.262940+00:00 | INFO  | DELETED OLD SELECT FILE: /home/runner/work/bet_tracker/bet_tracker/docs/win/soccer/04_select/2026_05_09_soccer_bets.csv
+2026-08-29T16:46:25.262977+00:00 | INFO  | DELETED OLD SELECT FILE: /home/runner/work/bet_tracker/bet_tracker/docs/win/soccer/04_select/2026_05_10_soccer_bets.csv
+2026-08-29T16:46:25.263013+00:00 | INFO  | DELETED OLD SELECT FILE: /home/runner/work/bet_tracker/bet_tracker/docs/win/soccer/04_select/2026_05_11_soccer_bets.csv
+2026-08-29T16:46:25.263049+00:00 | INFO  | DELETED OLD SELECT FILE: /home/runner/work/bet_tracker/bet_tracker/docs/win/soccer/04_select/2026_05_13_soccer_bets.csv
+2026-08-29T16:46:25.263086+00:00 | INFO  | DELETED OLD SELECT FILE: /home/runner/work/bet_tracker/bet_tracker/docs/win/soccer/04_select/2026_05_16_soccer_bets.csv
+2026-08-29T16:46:25.263122+00:00 | INFO  | DELETED OLD SELECT FILE: /home/runner/work/bet_tracker/bet_tracker/docs/win/soccer/04_select/2026_05_17_soccer_bets.csv
+2026-08-29T16:46:25.263158+00:00 | INFO  | DELETED OLD SELECT FILE: /home/runner/work/bet_tracker/bet_tracker/docs/win/soccer/04_select/2026_05_18_soccer_bets.csv
+2026-08-29T16:46:25.263194+00:00 | INFO  | DELETED OLD SELECT FILE: /home/runner/work/bet_tracker/bet_tracker/docs/win/soccer/04_select/2026_05_19_soccer_bets.csv
+2026-08-29T16:46:25.263238+00:00 | INFO  | DELETED OLD SELECT FILE: /home/runner/work/bet_tracker/bet_tracker/docs/win/soccer/04_select/2026_05_22_soccer_bets.csv
+2026-08-29T16:46:25.263275+00:00 | INFO  | DELETED OLD SELECT FILE: /home/runner/work/bet_tracker/bet_tracker/docs/win/soccer/04_select/2026_05_23_soccer_bets.csv
+2026-08-29T16:46:25.263311+00:00 | INFO  | DELETED OLD SELECT FILE: /home/runner/work/bet_tracker/bet_tracker/docs/win/soccer/04_select/2026_05_24_soccer_bets.csv
+2026-08-29T16:46:25.263346+00:00 | INFO  | DELETED OLD SELECT FILE: /home/runner/work/bet_tracker/bet_tracker/docs/win/soccer/04_select/2026_07_25_soccer_bets.csv
+2026-08-29T16:46:25.263381+00:00 | INFO  | DELETED OLD SELECT FILE: /home/runner/work/bet_tracker/bet_tracker/docs/win/soccer/04_select/2026_08_01_soccer_bets.csv
+2026-08-29T16:46:25.263430+00:00 | INFO  | DELETED OLD SELECT FILE: /home/runner/work/bet_tracker/bet_tracker/docs/win/soccer/04_select/2026_08_08_soccer_bets.csv
+2026-08-29T16:46:25.263467+00:00 | INFO  | DELETED OLD SELECT FILE: /home/runner/work/bet_tracker/bet_tracker/docs/win/soccer/04_select/2026_08_15_soccer_bets.csv
+2026-08-29T16:46:25.263504+00:00 | INFO  | DELETED OLD SELECT FILE: /home/runner/work/bet_tracker/bet_tracker/docs/win/soccer/04_select/2026_08_16_soccer_bets.csv
+2026-08-29T16:46:25.263540+00:00 | INFO  | DELETED OLD SELECT FILE: /home/runner/work/bet_tracker/bet_tracker/docs/win/soccer/04_select/2026_08_19_soccer_bets.csv
+2026-08-29T16:46:25.263576+00:00 | INFO  | DELETED OLD SELECT FILE: /home/runner/work/bet_tracker/bet_tracker/docs/win/soccer/04_select/2026_08_21_soccer_bets.csv
+2026-08-29T16:46:25.263611+00:00 | INFO  | DELETED OLD SELECT FILE: /home/runner/work/bet_tracker/bet_tracker/docs/win/soccer/04_select/2026_08_22_soccer_bets.csv
+2026-08-29T16:46:25.263647+00:00 | INFO  | DELETED OLD SELECT FILE: /home/runner/work/bet_tracker/bet_tracker/docs/win/soccer/04_select/2026_08_23_soccer_bets.csv
+2026-08-29T16:46:25.263682+00:00 | INFO  | DELETED OLD SELECT FILE: /home/runner/work/bet_tracker/bet_tracker/docs/win/soccer/04_select/2026_08_24_soccer_bets.csv
+2026-08-29T16:46:25.263718+00:00 | INFO  | DELETED OLD SELECT FILE: /home/runner/work/bet_tracker/bet_tracker/docs/win/soccer/04_select/2026_08_26_soccer_bets.csv
+2026-08-29T16:46:25.263753+00:00 | INFO  | DELETED OLD SELECT FILE: /home/runner/work/bet_tracker/bet_tracker/docs/win/soccer/04_select/2026_08_28_soccer_bets.csv
+2026-08-29T16:46:25.263789+00:00 | INFO  | DELETED OLD SELECT FILE: /home/runner/work/bet_tracker/bet_tracker/docs/win/soccer/04_select/2026_08_29_soccer_bets.csv
+2026-08-29T16:46:25.263810+00:00 | INFO  | Old select files deleted: 41
+2026-08-29T16:46:25.263829+00:00 | INFO  | INPUT_DIR : /home/runner/work/bet_tracker/bet_tracker/docs/win/soccer/03_edges
+2026-08-29T16:46:25.263845+00:00 | INFO  | OUTPUT_DIR: /home/runner/work/bet_tracker/bet_tracker/docs/win/soccer/04_select
+2026-08-29T16:46:25.263861+00:00 | INFO  | CONFIG    : /home/runner/work/bet_tracker/bet_tracker/docs/win/soccer/config/markets.yaml
+2026-08-29T16:46:25.265842+00:00 | INFO  | Files found: 588
+2026-08-29T16:46:25.269710+00:00 | INFO  | --- FILE: 2026_04_10_bundesliga_btts.csv league=bundesliga market=btts rows=1 mode=all_qualifying
+2026-08-29T16:46:25.270217+00:00 | INFO  | 2026_04_10_bundesliga_btts.csv | 0 selected from 1 rows
+2026-08-29T16:46:25.271722+00:00 | INFO  | --- FILE: 2026_04_10_bundesliga_match_odds.csv league=bundesliga market=match_odds rows=1 mode=all_qualifying
+2026-08-29T16:46:25.272210+00:00 | INFO  | 2026_04_10_bundesliga_match_odds.csv | 0 selected from 1 rows
+2026-08-29T16:46:25.273309+00:00 | INFO  | --- FILE: 2026_04_10_bundesliga_total_25.csv league=bundesliga market=total25 rows=1 mode=all_qualifying
+2026-08-29T16:46:25.273685+00:00 | INFO  | 2026_04_10_bundesliga_total_25.csv | 0 selected from 1 rows
+2026-08-29T16:46:25.274675+00:00 | INFO  | --- FILE: 2026_04_10_bundesliga_total_35.csv league=bundesliga market=total35 rows=1 mode=all_qualifying
+2026-08-29T16:46:25.275012+00:00 | INFO  | 2026_04_10_bundesliga_total_35.csv | 0 selected from 1 rows
+2026-08-29T16:46:25.275982+00:00 | INFO  | --- FILE: 2026_04_10_epl_btts.csv league=epl market=btts rows=1 mode=all_qualifying
+2026-08-29T16:46:25.276303+00:00 | INFO  | 2026_04_10_epl_btts.csv | 0 selected from 1 rows
+2026-08-29T16:46:25.277502+00:00 | INFO  | --- FILE: 2026_04_10_epl_match_odds.csv league=epl market=match_odds rows=1 mode=pick_one
+2026-08-29T16:46:25.278033+00:00 | INFO  | 2026_04_10_epl_match_odds.csv | 1 selected from 1 rows
+2026-08-29T16:46:25.279082+00:00 | INFO  | --- FILE: 2026_04_10_epl_total_25.csv league=epl market=total25 rows=1 mode=all_qualifying
+2026-08-29T16:46:25.279445+00:00 | INFO  | 2026_04_10_epl_total_25.csv | 0 selected from 1 rows
+2026-08-29T16:46:25.280707+00:00 | INFO  | --- FILE: 2026_04_10_epl_total_35.csv league=epl market=total35 rows=1 mode=all_qualifying
+2026-08-29T16:46:25.281117+00:00 | INFO  | 2026_04_10_epl_total_35.csv | 1 selected from 1 rows
+2026-08-29T16:46:25.282178+00:00 | INFO  | --- FILE: 2026_04_10_laliga_btts.csv league=laliga market=btts rows=1 mode=all_qualifying
+2026-08-29T16:46:25.282580+00:00 | INFO  | 2026_04_10_laliga_btts.csv | 0 selected from 1 rows
+2026-08-29T16:46:25.283863+00:00 | INFO  | --- FILE: 2026_04_10_laliga_match_odds.csv league=laliga market=match_odds rows=1 mode=all_qualifying
+2026-08-29T16:46:25.284248+00:00 | INFO  | 2026_04_10_laliga_match_odds.csv | 0 selected from 1 rows
+2026-08-29T16:46:25.285141+00:00 | INFO  | --- FILE: 2026_04_10_laliga_total_25.csv league=laliga market=total25 rows=1 mode=all_qualifying
+2026-08-29T16:46:25.285495+00:00 | INFO  | 2026_04_10_laliga_total_25.csv | 0 selected from 1 rows
+2026-08-29T16:46:25.286342+00:00 | INFO  | --- FILE: 2026_04_10_laliga_total_35.csv league=laliga market=total35 rows=1 mode=all_qualifying
+2026-08-29T16:46:25.286705+00:00 | INFO  | 2026_04_10_laliga_total_35.csv | 1 selected from 1 rows
+2026-08-29T16:46:25.287580+00:00 | INFO  | --- FILE: 2026_04_10_ligue1_btts.csv league=ligue1 market=btts rows=2 mode=all_qualifying
+2026-08-29T16:46:25.287969+00:00 | INFO  | 2026_04_10_ligue1_btts.csv | 1 selected from 2 rows
+2026-08-29T16:46:25.289089+00:00 | INFO  | --- FILE: 2026_04_10_ligue1_match_odds.csv league=ligue1 market=match_odds rows=2 mode=all_qualifying
+2026-08-29T16:46:25.289659+00:00 | INFO  | 2026_04_10_ligue1_match_odds.csv | 0 selected from 2 rows
+2026-08-29T16:46:25.290553+00:00 | INFO  | --- FILE: 2026_04_10_ligue1_total_25.csv league=ligue1 market=total25 rows=2 mode=all_qualifying
+2026-08-29T16:46:25.290919+00:00 | INFO  | 2026_04_10_ligue1_total_25.csv | 0 selected from 2 rows
+2026-08-29T16:46:25.291796+00:00 | INFO  | --- FILE: 2026_04_10_ligue1_total_35.csv league=ligue1 market=total35 rows=2 mode=all_qualifying
+2026-08-29T16:46:25.292163+00:00 | INFO  | 2026_04_10_ligue1_total_35.csv | 0 selected from 2 rows
+2026-08-29T16:46:25.293049+00:00 | INFO  | --- FILE: 2026_04_10_seriea_btts.csv league=seriea market=btts rows=1 mode=all_qualifying
+2026-08-29T16:46:25.293348+00:00 | INFO  | 2026_04_10_seriea_btts.csv | 0 selected from 1 rows
+2026-08-29T16:46:25.294412+00:00 | INFO  | --- FILE: 2026_04_10_seriea_match_odds.csv league=seriea market=match_odds rows=1 mode=all_qualifying
+2026-08-29T16:46:25.294787+00:00 | INFO  | 2026_04_10_seriea_match_odds.csv | 1 selected from 1 rows
+2026-08-29T16:46:25.295689+00:00 | INFO  | --- FILE: 2026_04_10_seriea_total_25.csv league=seriea market=total25 rows=1 mode=all_qualifying
+2026-08-29T16:46:25.296020+00:00 | INFO  | 2026_04_10_seriea_total_25.csv | 1 selected from 1 rows
+2026-08-29T16:46:25.296904+00:00 | INFO  | --- FILE: 2026_04_10_seriea_total_35.csv league=seriea market=total35 rows=1 mode=all_qualifying
+2026-08-29T16:46:25.297231+00:00 | INFO  | 2026_04_10_seriea_total_35.csv | 1 selected from 1 rows
+2026-08-29T16:46:25.298114+00:00 | INFO  | --- FILE: 2026_04_11_laliga_btts.csv league=laliga market=btts rows=1 mode=all_qualifying
+2026-08-29T16:46:25.298423+00:00 | INFO  | 2026_04_11_laliga_btts.csv | 0 selected from 1 rows
+2026-08-29T16:46:25.299462+00:00 | INFO  | --- FILE: 2026_04_11_laliga_match_odds.csv league=laliga market=match_odds rows=1 mode=all_qualifying
+2026-08-29T16:46:25.299825+00:00 | INFO  | 2026_04_11_laliga_match_odds.csv | 0 selected from 1 rows
+2026-08-29T16:46:25.300727+00:00 | INFO  | --- FILE: 2026_04_11_laliga_total_25.csv league=laliga market=total25 rows=1 mode=all_qualifying
+2026-08-29T16:46:25.301020+00:00 | INFO  | 2026_04_11_laliga_total_25.csv | 0 selected from 1 rows
+2026-08-29T16:46:25.301866+00:00 | INFO  | --- FILE: 2026_04_11_laliga_total_35.csv league=laliga market=total35 rows=1 mode=all_qualifying
+2026-08-29T16:46:25.302174+00:00 | INFO  | 2026_04_11_laliga_total_35.csv | 1 selected from 1 rows
+2026-08-29T16:46:25.303029+00:00 | INFO  | --- FILE: 2026_04_11_ligue1_btts.csv league=ligue1 market=btts rows=1 mode=all_qualifying
+2026-08-29T16:46:25.303358+00:00 | INFO  | 2026_04_11_ligue1_btts.csv | 1 selected from 1 rows
+2026-08-29T16:46:25.304440+00:00 | INFO  | --- FILE: 2026_04_11_ligue1_match_odds.csv league=ligue1 market=match_odds rows=1 mode=all_qualifying
+2026-08-29T16:46:25.304787+00:00 | INFO  | 2026_04_11_ligue1_match_odds.csv | 0 selected from 1 rows
+2026-08-29T16:46:25.305661+00:00 | INFO  | --- FILE: 2026_04_11_ligue1_total_25.csv league=ligue1 market=total25 rows=1 mode=all_qualifying
+2026-08-29T16:46:25.305956+00:00 | INFO  | 2026_04_11_ligue1_total_25.csv | 0 selected from 1 rows
+2026-08-29T16:46:25.306811+00:00 | INFO  | --- FILE: 2026_04_11_ligue1_total_35.csv league=ligue1 market=total35 rows=1 mode=all_qualifying
+2026-08-29T16:46:25.307116+00:00 | INFO  | 2026_04_11_ligue1_total_35.csv | 0 selected from 1 rows
+2026-08-29T16:46:25.308031+00:00 | INFO  | --- FILE: 2026_04_11_mls_btts.csv league=mls market=btts rows=7 mode=all_qualifying
+2026-08-29T16:46:25.308668+00:00 | INFO  | 2026_04_11_mls_btts.csv | 1 selected from 7 rows
+2026-08-29T16:46:25.309756+00:00 | INFO  | --- FILE: 2026_04_11_mls_match_odds.csv league=mls market=match_odds rows=7 mode=all_qualifying
+2026-08-29T16:46:25.310498+00:00 | INFO  | 2026_04_11_mls_match_odds.csv | 1 selected from 7 rows
+2026-08-29T16:46:25.311359+00:00 | INFO  | --- FILE: 2026_04_11_mls_total_25.csv league=mls market=total25 rows=7 mode=all_qualifying
+2026-08-29T16:46:25.312008+00:00 | INFO  | 2026_04_11_mls_total_25.csv | 1 selected from 7 rows
+2026-08-29T16:46:25.312883+00:00 | INFO  | --- FILE: 2026_04_11_mls_total_35.csv league=mls market=total35 rows=7 mode=all_qualifying
+2026-08-29T16:46:25.313585+00:00 | INFO  | 2026_04_11_mls_total_35.csv | 5 selected from 7 rows
+2026-08-29T16:46:25.314471+00:00 | INFO  | --- FILE: 2026_04_11_seriea_btts.csv league=seriea market=btts rows=1 mode=all_qualifying
+2026-08-29T16:46:25.314886+00:00 | INFO  | 2026_04_11_seriea_btts.csv | 0 selected from 1 rows
+2026-08-29T16:46:25.316138+00:00 | INFO  | --- FILE: 2026_04_11_seriea_match_odds.csv league=seriea market=match_odds rows=1 mode=all_qualifying
+2026-08-29T16:46:25.316554+00:00 | INFO  | 2026_04_11_seriea_match_odds.csv | 0 selected from 1 rows
+2026-08-29T16:46:25.317633+00:00 | INFO  | --- FILE: 2026_04_11_seriea_total_25.csv league=seriea market=total25 rows=1 mode=all_qualifying
+2026-08-29T16:46:25.317959+00:00 | INFO  | 2026_04_11_seriea_total_25.csv | 0 selected from 1 rows
+2026-08-29T16:46:25.318875+00:00 | INFO  | --- FILE: 2026_04_11_seriea_total_35.csv league=seriea market=total35 rows=1 mode=all_qualifying
+2026-08-29T16:46:25.319171+00:00 | INFO  | 2026_04_11_seriea_total_35.csv | 0 selected from 1 rows
+2026-08-29T16:46:25.320451+00:00 | INFO  | --- FILE: 2026_04_12_bundesliga_btts.csv league=bundesliga market=btts rows=3 mode=all_qualifying
+2026-08-29T16:46:25.320973+00:00 | INFO  | 2026_04_12_bundesliga_btts.csv | 1 selected from 3 rows
+2026-08-29T16:46:25.322036+00:00 | INFO  | --- FILE: 2026_04_12_bundesliga_match_odds.csv league=bundesliga market=match_odds rows=3 mode=all_qualifying
+2026-08-29T16:46:25.322552+00:00 | INFO  | 2026_04_12_bundesliga_match_odds.csv | 0 selected from 3 rows
+2026-08-29T16:46:25.323526+00:00 | INFO  | --- FILE: 2026_04_12_bundesliga_total_25.csv league=bundesliga market=total25 rows=3 mode=all_qualifying
+2026-08-29T16:46:25.323981+00:00 | INFO  | 2026_04_12_bundesliga_total_25.csv | 1 selected from 3 rows
+2026-08-29T16:46:25.324864+00:00 | INFO  | --- FILE: 2026_04_12_bundesliga_total_35.csv league=bundesliga market=total35 rows=3 mode=all_qualifying
+2026-08-29T16:46:25.325314+00:00 | INFO  | 2026_04_12_bundesliga_total_35.csv | 0 selected from 3 rows
+2026-08-29T16:46:25.326186+00:00 | INFO  | --- FILE: 2026_04_12_epl_btts.csv league=epl market=btts rows=4 mode=all_qualifying
+2026-08-29T16:46:25.326705+00:00 | INFO  | 2026_04_12_epl_btts.csv | 1 selected from 4 rows
+2026-08-29T16:46:25.327773+00:00 | INFO  | --- FILE: 2026_04_12_epl_match_odds.csv league=epl market=match_odds rows=4 mode=pick_one
+2026-08-29T16:46:25.328326+00:00 | INFO  | 2026_04_12_epl_match_odds.csv | 0 selected from 4 rows
+2026-08-29T16:46:25.329192+00:00 | INFO  | --- FILE: 2026_04_12_epl_total_25.csv league=epl market=total25 rows=4 mode=all_qualifying
+2026-08-29T16:46:25.329723+00:00 | INFO  | 2026_04_12_epl_total_25.csv | 3 selected from 4 rows
+2026-08-29T16:46:25.330605+00:00 | INFO  | --- FILE: 2026_04_12_epl_total_35.csv league=epl market=total35 rows=4 mode=all_qualifying
+2026-08-29T16:46:25.331128+00:00 | INFO  | 2026_04_12_epl_total_35.csv | 4 selected from 4 rows
+2026-08-29T16:46:25.332006+00:00 | INFO  | --- FILE: 2026_04_12_laliga_btts.csv league=laliga market=btts rows=4 mode=all_qualifying
+2026-08-29T16:46:25.332492+00:00 | INFO  | 2026_04_12_laliga_btts.csv | 0 selected from 4 rows
+2026-08-29T16:46:25.333560+00:00 | INFO  | --- FILE: 2026_04_12_laliga_match_odds.csv league=laliga market=match_odds rows=4 mode=all_qualifying
+2026-08-29T16:46:25.334112+00:00 | INFO  | 2026_04_12_laliga_match_odds.csv | 0 selected from 4 rows
+2026-08-29T16:46:25.335005+00:00 | INFO  | --- FILE: 2026_04_12_laliga_total_25.csv league=laliga market=total25 rows=4 mode=all_qualifying
+2026-08-29T16:46:25.335510+00:00 | INFO  | 2026_04_12_laliga_total_25.csv | 0 selected from 4 rows
+2026-08-29T16:46:25.336723+00:00 | INFO  | --- FILE: 2026_04_12_laliga_total_35.csv league=laliga market=total35 rows=4 mode=all_qualifying
+2026-08-29T16:46:25.337162+00:00 | INFO  | 2026_04_12_laliga_total_35.csv | 1 selected from 4 rows
+2026-08-29T16:46:25.338060+00:00 | INFO  | --- FILE: 2026_04_12_ligue1_btts.csv league=ligue1 market=btts rows=3 mode=all_qualifying
+2026-08-29T16:46:25.338538+00:00 | INFO  | 2026_04_12_ligue1_btts.csv | 2 selected from 3 rows
+2026-08-29T16:46:25.339581+00:00 | INFO  | --- FILE: 2026_04_12_ligue1_match_odds.csv league=ligue1 market=match_odds rows=3 mode=all_qualifying
+2026-08-29T16:46:25.340059+00:00 | INFO  | 2026_04_12_ligue1_match_odds.csv | 0 selected from 3 rows
+2026-08-29T16:46:25.340925+00:00 | INFO  | --- FILE: 2026_04_12_ligue1_total_25.csv league=ligue1 market=total25 rows=3 mode=all_qualifying
+2026-08-29T16:46:25.341327+00:00 | INFO  | 2026_04_12_ligue1_total_25.csv | 0 selected from 3 rows
+2026-08-29T16:46:25.342185+00:00 | INFO  | --- FILE: 2026_04_12_ligue1_total_35.csv league=ligue1 market=total35 rows=3 mode=all_qualifying
+2026-08-29T16:46:25.342634+00:00 | INFO  | 2026_04_12_ligue1_total_35.csv | 1 selected from 3 rows
+2026-08-29T16:46:25.343500+00:00 | INFO  | --- FILE: 2026_04_12_mls_btts.csv league=mls market=btts rows=1 mode=all_qualifying
+2026-08-29T16:46:25.343809+00:00 | INFO  | 2026_04_12_mls_btts.csv | 0 selected from 1 rows
+2026-08-29T16:46:25.344831+00:00 | INFO  | --- FILE: 2026_04_12_mls_match_odds.csv league=mls market=match_odds rows=1 mode=all_qualifying
+2026-08-29T16:46:25.345169+00:00 | INFO  | 2026_04_12_mls_match_odds.csv | 0 selected from 1 rows
+2026-08-29T16:46:25.346049+00:00 | INFO  | --- FILE: 2026_04_12_mls_total_25.csv league=mls market=total25 rows=1 mode=all_qualifying
+2026-08-29T16:46:25.346355+00:00 | INFO  | 2026_04_12_mls_total_25.csv | 0 selected from 1 rows
+2026-08-29T16:46:25.347216+00:00 | INFO  | --- FILE: 2026_04_12_mls_total_35.csv league=mls market=total35 rows=1 mode=all_qualifying
+2026-08-29T16:46:25.347562+00:00 | INFO  | 2026_04_12_mls_total_35.csv | 1 selected from 1 rows
+2026-08-29T16:46:25.348431+00:00 | INFO  | --- FILE: 2026_04_12_seriea_btts.csv league=seriea market=btts rows=4 mode=all_qualifying
+2026-08-29T16:46:25.348887+00:00 | INFO  | 2026_04_12_seriea_btts.csv | 0 selected from 4 rows
+2026-08-29T16:46:25.350036+00:00 | INFO  | --- FILE: 2026_04_12_seriea_match_odds.csv league=seriea market=match_odds rows=4 mode=all_qualifying
+2026-08-29T16:46:25.350639+00:00 | INFO  | 2026_04_12_seriea_match_odds.csv | 2 selected from 4 rows
+2026-08-29T16:46:25.351517+00:00 | INFO  | --- FILE: 2026_04_12_seriea_total_25.csv league=seriea market=total25 rows=4 mode=all_qualifying
+2026-08-29T16:46:25.352023+00:00 | INFO  | 2026_04_12_seriea_total_25.csv | 2 selected from 4 rows
+2026-08-29T16:46:25.352878+00:00 | INFO  | --- FILE: 2026_04_12_seriea_total_35.csv league=seriea market=total35 rows=4 mode=all_qualifying
+2026-08-29T16:46:25.353314+00:00 | INFO  | 2026_04_12_seriea_total_35.csv | 0 selected from 4 rows
+2026-08-29T16:46:25.354164+00:00 | INFO  | --- FILE: 2026_04_13_laliga_btts.csv league=laliga market=btts rows=1 mode=all_qualifying
+2026-08-29T16:46:25.354482+00:00 | INFO  | 2026_04_13_laliga_btts.csv | 0 selected from 1 rows
+2026-08-29T16:46:25.355490+00:00 | INFO  | --- FILE: 2026_04_13_laliga_match_odds.csv league=laliga market=match_odds rows=1 mode=all_qualifying
+2026-08-29T16:46:25.355832+00:00 | INFO  | 2026_04_13_laliga_match_odds.csv | 0 selected from 1 rows
+2026-08-29T16:46:25.356684+00:00 | INFO  | --- FILE: 2026_04_13_laliga_total_25.csv league=laliga market=total25 rows=1 mode=all_qualifying
+2026-08-29T16:46:25.356994+00:00 | INFO  | 2026_04_13_laliga_total_25.csv | 0 selected from 1 rows
+2026-08-29T16:46:25.357865+00:00 | INFO  | --- FILE: 2026_04_13_laliga_total_35.csv league=laliga market=total35 rows=1 mode=all_qualifying
+2026-08-29T16:46:25.358147+00:00 | INFO  | 2026_04_13_laliga_total_35.csv | 0 selected from 1 rows
+2026-08-29T16:46:25.358993+00:00 | INFO  | --- FILE: 2026_04_13_seriea_btts.csv league=seriea market=btts rows=1 mode=all_qualifying
+2026-08-29T16:46:25.359277+00:00 | INFO  | 2026_04_13_seriea_btts.csv | 0 selected from 1 rows
+2026-08-29T16:46:25.360278+00:00 | INFO  | --- FILE: 2026_04_13_seriea_match_odds.csv league=seriea market=match_odds rows=1 mode=all_qualifying
+2026-08-29T16:46:25.360629+00:00 | INFO  | 2026_04_13_seriea_match_odds.csv | 0 selected from 1 rows
+2026-08-29T16:46:25.361474+00:00 | INFO  | --- FILE: 2026_04_13_seriea_total_25.csv league=seriea market=total25 rows=1 mode=all_qualifying
+2026-08-29T16:46:25.361774+00:00 | INFO  | 2026_04_13_seriea_total_25.csv | 0 selected from 1 rows
+2026-08-29T16:46:25.362612+00:00 | INFO  | --- FILE: 2026_04_13_seriea_total_35.csv league=seriea market=total35 rows=1 mode=all_qualifying
+2026-08-29T16:46:25.362909+00:00 | INFO  | 2026_04_13_seriea_total_35.csv | 0 selected from 1 rows
+2026-08-29T16:46:25.363741+00:00 | INFO  | --- FILE: 2026_04_17_bundesliga_btts.csv league=bundesliga market=btts rows=1 mode=all_qualifying
+2026-08-29T16:46:25.364037+00:00 | INFO  | 2026_04_17_bundesliga_btts.csv | 1 selected from 1 rows
+2026-08-29T16:46:25.365035+00:00 | INFO  | --- FILE: 2026_04_17_bundesliga_match_odds.csv league=bundesliga market=match_odds rows=1 mode=all_qualifying
+2026-08-29T16:46:25.365370+00:00 | INFO  | 2026_04_17_bundesliga_match_odds.csv | 0 selected from 1 rows
+2026-08-29T16:46:25.366220+00:00 | INFO  | --- FILE: 2026_04_17_bundesliga_total_25.csv league=bundesliga market=total25 rows=1 mode=all_qualifying
+2026-08-29T16:46:25.366559+00:00 | INFO  | 2026_04_17_bundesliga_total_25.csv | 1 selected from 1 rows
+2026-08-29T16:46:25.367459+00:00 | INFO  | --- FILE: 2026_04_17_bundesliga_total_35.csv league=bundesliga market=total35 rows=1 mode=all_qualifying
+2026-08-29T16:46:25.367757+00:00 | INFO  | 2026_04_17_bundesliga_total_35.csv | 0 selected from 1 rows
+2026-08-29T16:46:25.368606+00:00 | INFO  | --- FILE: 2026_04_17_ligue1_btts.csv league=ligue1 market=btts rows=1 mode=all_qualifying
+2026-08-29T16:46:25.368904+00:00 | INFO  | 2026_04_17_ligue1_btts.csv | 0 selected from 1 rows
+2026-08-29T16:46:25.369922+00:00 | INFO  | --- FILE: 2026_04_17_ligue1_match_odds.csv league=ligue1 market=match_odds rows=1 mode=all_qualifying
+2026-08-29T16:46:25.370254+00:00 | INFO  | 2026_04_17_ligue1_match_odds.csv | 0 selected from 1 rows
+2026-08-29T16:46:25.371099+00:00 | INFO  | --- FILE: 2026_04_17_ligue1_total_25.csv league=ligue1 market=total25 rows=1 mode=all_qualifying
+2026-08-29T16:46:25.371404+00:00 | INFO  | 2026_04_17_ligue1_total_25.csv | 0 selected from 1 rows
+2026-08-29T16:46:25.372227+00:00 | INFO  | --- FILE: 2026_04_17_ligue1_total_35.csv league=ligue1 market=total35 rows=1 mode=all_qualifying
+2026-08-29T16:46:25.372540+00:00 | INFO  | 2026_04_17_ligue1_total_35.csv | 0 selected from 1 rows
+2026-08-29T16:46:25.373354+00:00 | INFO  | --- FILE: 2026_04_17_mls_btts.csv league=mls market=btts rows=1 mode=all_qualifying
+2026-08-29T16:46:25.373691+00:00 | INFO  | 2026_04_17_mls_btts.csv | 1 selected from 1 rows
+2026-08-29T16:46:25.374690+00:00 | INFO  | --- FILE: 2026_04_17_mls_match_odds.csv league=mls market=match_odds rows=1 mode=all_qualifying
+2026-08-29T16:46:25.375021+00:00 | INFO  | 2026_04_17_mls_match_odds.csv | 0 selected from 1 rows
+2026-08-29T16:46:25.375858+00:00 | INFO  | --- FILE: 2026_04_17_mls_total_25.csv league=mls market=total25 rows=1 mode=all_qualifying
+2026-08-29T16:46:25.376154+00:00 | INFO  | 2026_04_17_mls_total_25.csv | 0 selected from 1 rows
+2026-08-29T16:46:25.376985+00:00 | INFO  | --- FILE: 2026_04_17_mls_total_35.csv league=mls market=total35 rows=1 mode=all_qualifying
+2026-08-29T16:46:25.377298+00:00 | INFO  | 2026_04_17_mls_total_35.csv | 1 selected from 1 rows
+2026-08-29T16:46:25.378157+00:00 | INFO  | --- FILE: 2026_04_17_seriea_btts.csv league=seriea market=btts rows=2 mode=all_qualifying
+2026-08-29T16:46:25.378523+00:00 | INFO  | 2026_04_17_seriea_btts.csv | 1 selected from 2 rows
+2026-08-29T16:46:25.379531+00:00 | INFO  | --- FILE: 2026_04_17_seriea_match_odds.csv league=seriea market=match_odds rows=2 mode=all_qualifying
+2026-08-29T16:46:25.379937+00:00 | INFO  | 2026_04_17_seriea_match_odds.csv | 0 selected from 2 rows
+2026-08-29T16:46:25.380812+00:00 | INFO  | --- FILE: 2026_04_17_seriea_total_25.csv league=seriea market=total25 rows=2 mode=all_qualifying
+2026-08-29T16:46:25.381189+00:00 | INFO  | 2026_04_17_seriea_total_25.csv | 1 selected from 2 rows
+2026-08-29T16:46:25.382032+00:00 | INFO  | --- FILE: 2026_04_17_seriea_total_35.csv league=seriea market=total35 rows=2 mode=all_qualifying
+2026-08-29T16:46:25.382426+00:00 | INFO  | 2026_04_17_seriea_total_35.csv | 1 selected from 2 rows
+2026-08-29T16:46:25.383268+00:00 | INFO  | --- FILE: 2026_04_18_bundesliga_btts.csv league=bundesliga market=btts rows=5 mode=all_qualifying
+2026-08-29T16:46:25.383741+00:00 | INFO  | 2026_04_18_bundesliga_btts.csv | 1 selected from 5 rows
+2026-08-29T16:46:25.384763+00:00 | INFO  | --- FILE: 2026_04_18_bundesliga_match_odds.csv league=bundesliga market=match_odds rows=5 mode=all_qualifying
+2026-08-29T16:46:25.385358+00:00 | INFO  | 2026_04_18_bundesliga_match_odds.csv | 0 selected from 5 rows
+2026-08-29T16:46:25.386219+00:00 | INFO  | --- FILE: 2026_04_18_bundesliga_total_25.csv league=bundesliga market=total25 rows=5 mode=all_qualifying
+2026-08-29T16:46:25.386768+00:00 | INFO  | 2026_04_18_bundesliga_total_25.csv | 2 selected from 5 rows
+2026-08-29T16:46:25.387625+00:00 | INFO  | --- FILE: 2026_04_18_bundesliga_total_35.csv league=bundesliga market=total35 rows=5 mode=all_qualifying
+2026-08-29T16:46:25.388127+00:00 | INFO  | 2026_04_18_bundesliga_total_35.csv | 0 selected from 5 rows
+2026-08-29T16:46:25.388986+00:00 | INFO  | --- FILE: 2026_04_18_epl_btts.csv league=epl market=btts rows=5 mode=all_qualifying
+2026-08-29T16:46:25.389499+00:00 | INFO  | 2026_04_18_epl_btts.csv | 0 selected from 5 rows
+2026-08-29T16:46:25.390549+00:00 | INFO  | --- FILE: 2026_04_18_epl_match_odds.csv league=epl market=match_odds rows=5 mode=pick_one
+2026-08-29T16:46:25.391134+00:00 | INFO  | 2026_04_18_epl_match_odds.csv | 0 selected from 5 rows
+2026-08-29T16:46:25.391999+00:00 | INFO  | --- FILE: 2026_04_18_epl_total_25.csv league=epl market=total25 rows=5 mode=all_qualifying
+2026-08-29T16:46:25.392581+00:00 | INFO  | 2026_04_18_epl_total_25.csv | 3 selected from 5 rows
+2026-08-29T16:46:25.393433+00:00 | INFO  | --- FILE: 2026_04_18_epl_total_35.csv league=epl market=total35 rows=5 mode=all_qualifying
+2026-08-29T16:46:25.393992+00:00 | INFO  | 2026_04_18_epl_total_35.csv | 4 selected from 5 rows
+2026-08-29T16:46:25.394844+00:00 | INFO  | --- FILE: 2026_04_18_ligue1_btts.csv league=ligue1 market=btts rows=3 mode=all_qualifying
+2026-08-29T16:46:25.395263+00:00 | INFO  | 2026_04_18_ligue1_btts.csv | 1 selected from 3 rows
+2026-08-29T16:46:25.396277+00:00 | INFO  | --- FILE: 2026_04_18_ligue1_match_odds.csv league=ligue1 market=match_odds rows=3 mode=all_qualifying
+2026-08-29T16:46:25.396757+00:00 | INFO  | 2026_04_18_ligue1_match_odds.csv | 0 selected from 3 rows
+2026-08-29T16:46:25.397608+00:00 | INFO  | --- FILE: 2026_04_18_ligue1_total_25.csv league=ligue1 market=total25 rows=3 mode=all_qualifying
+2026-08-29T16:46:25.398018+00:00 | INFO  | 2026_04_18_ligue1_total_25.csv | 0 selected from 3 rows
+2026-08-29T16:46:25.398872+00:00 | INFO  | --- FILE: 2026_04_18_ligue1_total_35.csv league=ligue1 market=total35 rows=3 mode=all_qualifying
+2026-08-29T16:46:25.399289+00:00 | INFO  | 2026_04_18_ligue1_total_35.csv | 1 selected from 3 rows
+2026-08-29T16:46:25.400162+00:00 | INFO  | --- FILE: 2026_04_18_mls_btts.csv league=mls market=btts rows=9 mode=all_qualifying
+2026-08-29T16:46:25.400842+00:00 | INFO  | 2026_04_18_mls_btts.csv | 1 selected from 9 rows
+2026-08-29T16:46:25.401908+00:00 | INFO  | --- FILE: 2026_04_18_mls_match_odds.csv league=mls market=match_odds rows=9 mode=all_qualifying
+2026-08-29T16:46:25.402752+00:00 | INFO  | 2026_04_18_mls_match_odds.csv | 1 selected from 9 rows
+2026-08-29T16:46:25.403638+00:00 | INFO  | --- FILE: 2026_04_18_mls_total_25.csv league=mls market=total25 rows=9 mode=all_qualifying
+2026-08-29T16:46:25.404346+00:00 | INFO  | 2026_04_18_mls_total_25.csv | 1 selected from 9 rows
+2026-08-29T16:46:25.405222+00:00 | INFO  | --- FILE: 2026_04_18_mls_total_35.csv league=mls market=total35 rows=9 mode=all_qualifying
+2026-08-29T16:46:25.406039+00:00 | INFO  | 2026_04_18_mls_total_35.csv | 8 selected from 9 rows
+2026-08-29T16:46:25.406900+00:00 | INFO  | --- FILE: 2026_04_18_seriea_btts.csv league=seriea market=btts rows=3 mode=all_qualifying
+2026-08-29T16:46:25.407270+00:00 | INFO  | 2026_04_18_seriea_btts.csv | 0 selected from 3 rows
+2026-08-29T16:46:25.408299+00:00 | INFO  | --- FILE: 2026_04_18_seriea_match_odds.csv league=seriea market=match_odds rows=3 mode=all_qualifying
+2026-08-29T16:46:25.408801+00:00 | INFO  | 2026_04_18_seriea_match_odds.csv | 0 selected from 3 rows
+2026-08-29T16:46:25.409663+00:00 | INFO  | --- FILE: 2026_04_18_seriea_total_25.csv league=seriea market=total25 rows=3 mode=all_qualifying
+2026-08-29T16:46:25.410073+00:00 | INFO  | 2026_04_18_seriea_total_25.csv | 0 selected from 3 rows
+2026-08-29T16:46:25.410919+00:00 | INFO  | --- FILE: 2026_04_18_seriea_total_35.csv league=seriea market=total35 rows=3 mode=all_qualifying
+2026-08-29T16:46:25.411307+00:00 | INFO  | 2026_04_18_seriea_total_35.csv | 0 selected from 3 rows
+2026-08-29T16:46:25.412145+00:00 | INFO  | --- FILE: 2026_04_19_bundesliga_btts.csv league=bundesliga market=btts rows=3 mode=all_qualifying
+2026-08-29T16:46:25.412558+00:00 | INFO  | 2026_04_19_bundesliga_btts.csv | 2 selected from 3 rows
+2026-08-29T16:46:25.413581+00:00 | INFO  | --- FILE: 2026_04_19_bundesliga_match_odds.csv league=bundesliga market=match_odds rows=3 mode=all_qualifying
+2026-08-29T16:46:25.414054+00:00 | INFO  | 2026_04_19_bundesliga_match_odds.csv | 0 selected from 3 rows
+2026-08-29T16:46:25.414927+00:00 | INFO  | --- FILE: 2026_04_19_bundesliga_total_25.csv league=bundesliga market=total25 rows=3 mode=all_qualifying
+2026-08-29T16:46:25.415365+00:00 | INFO  | 2026_04_19_bundesliga_total_25.csv | 2 selected from 3 rows
+2026-08-29T16:46:25.416226+00:00 | INFO  | --- FILE: 2026_04_19_bundesliga_total_35.csv league=bundesliga market=total35 rows=3 mode=all_qualifying
+2026-08-29T16:46:25.416654+00:00 | INFO  | 2026_04_19_bundesliga_total_35.csv | 0 selected from 3 rows
+2026-08-29T16:46:25.417497+00:00 | INFO  | --- FILE: 2026_04_19_epl_btts.csv league=epl market=btts rows=4 mode=all_qualifying
+2026-08-29T16:46:25.417952+00:00 | INFO  | 2026_04_19_epl_btts.csv | 0 selected from 4 rows
+2026-08-29T16:46:25.418967+00:00 | INFO  | --- FILE: 2026_04_19_epl_match_odds.csv league=epl market=match_odds rows=4 mode=pick_one
+2026-08-29T16:46:25.419513+00:00 | INFO  | 2026_04_19_epl_match_odds.csv | 0 selected from 4 rows
+2026-08-29T16:46:25.420351+00:00 | INFO  | --- FILE: 2026_04_19_epl_total_25.csv league=epl market=total25 rows=4 mode=all_qualifying
+2026-08-29T16:46:25.420838+00:00 | INFO  | 2026_04_19_epl_total_25.csv | 1 selected from 4 rows
+2026-08-29T16:46:25.421692+00:00 | INFO  | --- FILE: 2026_04_19_epl_total_35.csv league=epl market=total35 rows=4 mode=all_qualifying
+2026-08-29T16:46:25.422144+00:00 | INFO  | 2026_04_19_epl_total_35.csv | 0 selected from 4 rows
+2026-08-29T16:46:25.423010+00:00 | INFO  | --- FILE: 2026_04_19_ligue1_btts.csv league=ligue1 market=btts rows=5 mode=all_qualifying
+2026-08-29T16:46:25.423558+00:00 | INFO  | 2026_04_19_ligue1_btts.csv | 2 selected from 5 rows
+2026-08-29T16:46:25.424588+00:00 | INFO  | --- FILE: 2026_04_19_ligue1_match_odds.csv league=ligue1 market=match_odds rows=5 mode=all_qualifying
+2026-08-29T16:46:25.425178+00:00 | INFO  | 2026_04_19_ligue1_match_odds.csv | 0 selected from 5 rows
+2026-08-29T16:46:25.426047+00:00 | INFO  | --- FILE: 2026_04_19_ligue1_total_25.csv league=ligue1 market=total25 rows=5 mode=all_qualifying
+2026-08-29T16:46:25.426552+00:00 | INFO  | 2026_04_19_ligue1_total_25.csv | 0 selected from 5 rows
+2026-08-29T16:46:25.427418+00:00 | INFO  | --- FILE: 2026_04_19_ligue1_total_35.csv league=ligue1 market=total35 rows=5 mode=all_qualifying
+2026-08-29T16:46:25.427956+00:00 | INFO  | 2026_04_19_ligue1_total_35.csv | 2 selected from 5 rows
+2026-08-29T16:46:25.428841+00:00 | INFO  | --- FILE: 2026_04_19_mls_btts.csv league=mls market=btts rows=1 mode=all_qualifying
+2026-08-29T16:46:25.429134+00:00 | INFO  | 2026_04_19_mls_btts.csv | 0 selected from 1 rows
+2026-08-29T16:46:25.430153+00:00 | INFO  | --- FILE: 2026_04_19_mls_match_odds.csv league=mls market=match_odds rows=1 mode=all_qualifying
+2026-08-29T16:46:25.430502+00:00 | INFO  | 2026_04_19_mls_match_odds.csv | 0 selected from 1 rows
+2026-08-29T16:46:25.431341+00:00 | INFO  | --- FILE: 2026_04_19_mls_total_25.csv league=mls market=total25 rows=1 mode=all_qualifying
+2026-08-29T16:46:25.431673+00:00 | INFO  | 2026_04_19_mls_total_25.csv | 0 selected from 1 rows
+2026-08-29T16:46:25.432511+00:00 | INFO  | --- FILE: 2026_04_19_mls_total_35.csv league=mls market=total35 rows=1 mode=all_qualifying
+2026-08-29T16:46:25.432828+00:00 | INFO  | 2026_04_19_mls_total_35.csv | 1 selected from 1 rows
+2026-08-29T16:46:25.433690+00:00 | INFO  | --- FILE: 2026_04_19_seriea_btts.csv league=seriea market=btts rows=3 mode=all_qualifying
+2026-08-29T16:46:25.434077+00:00 | INFO  | 2026_04_19_seriea_btts.csv | 1 selected from 3 rows
+2026-08-29T16:46:25.435102+00:00 | INFO  | --- FILE: 2026_04_19_seriea_match_odds.csv league=seriea market=match_odds rows=3 mode=all_qualifying
+2026-08-29T16:46:25.435599+00:00 | INFO  | 2026_04_19_seriea_match_odds.csv | 0 selected from 3 rows
+2026-08-29T16:46:25.436458+00:00 | INFO  | --- FILE: 2026_04_19_seriea_total_25.csv league=seriea market=total25 rows=3 mode=all_qualifying
+2026-08-29T16:46:25.436888+00:00 | INFO  | 2026_04_19_seriea_total_25.csv | 1 selected from 3 rows
+2026-08-29T16:46:25.437747+00:00 | INFO  | --- FILE: 2026_04_19_seriea_total_35.csv league=seriea market=total35 rows=3 mode=all_qualifying
+2026-08-29T16:46:25.438173+00:00 | INFO  | 2026_04_19_seriea_total_35.csv | 1 selected from 3 rows
+2026-08-29T16:46:25.439026+00:00 | INFO  | --- FILE: 2026_04_20_epl_btts.csv league=epl market=btts rows=1 mode=all_qualifying
+2026-08-29T16:46:25.439328+00:00 | INFO  | 2026_04_20_epl_btts.csv | 0 selected from 1 rows
+2026-08-29T16:46:25.440347+00:00 | INFO  | --- FILE: 2026_04_20_epl_match_odds.csv league=epl market=match_odds rows=1 mode=pick_one
+2026-08-29T16:46:25.440784+00:00 | INFO  | 2026_04_20_epl_match_odds.csv | 1 selected from 1 rows
+2026-08-29T16:46:25.441653+00:00 | INFO  | --- FILE: 2026_04_20_epl_total_25.csv league=epl market=total25 rows=1 mode=all_qualifying
+2026-08-29T16:46:25.441971+00:00 | INFO  | 2026_04_20_epl_total_25.csv | 1 selected from 1 rows
+2026-08-29T16:46:25.442829+00:00 | INFO  | --- FILE: 2026_04_20_epl_total_35.csv league=epl market=total35 rows=1 mode=all_qualifying
+2026-08-29T16:46:25.443132+00:00 | INFO  | 2026_04_20_epl_total_35.csv | 0 selected from 1 rows
+2026-08-29T16:46:25.444001+00:00 | INFO  | --- FILE: 2026_04_20_seriea_btts.csv league=seriea market=btts rows=1 mode=all_qualifying
+2026-08-29T16:46:25.444284+00:00 | INFO  | 2026_04_20_seriea_btts.csv | 0 selected from 1 rows
+2026-08-29T16:46:25.445306+00:00 | INFO  | --- FILE: 2026_04_20_seriea_match_odds.csv league=seriea market=match_odds rows=1 mode=all_qualifying
+2026-08-29T16:46:25.445660+00:00 | INFO  | 2026_04_20_seriea_match_odds.csv | 0 selected from 1 rows
+2026-08-29T16:46:25.446526+00:00 | INFO  | --- FILE: 2026_04_20_seriea_total_25.csv league=seriea market=total25 rows=1 mode=all_qualifying
+2026-08-29T16:46:25.446830+00:00 | INFO  | 2026_04_20_seriea_total_25.csv | 0 selected from 1 rows
+2026-08-29T16:46:25.447688+00:00 | INFO  | --- FILE: 2026_04_20_seriea_total_35.csv league=seriea market=total35 rows=1 mode=all_qualifying
+2026-08-29T16:46:25.447980+00:00 | INFO  | 2026_04_20_seriea_total_35.csv | 0 selected from 1 rows
+2026-08-29T16:46:25.448817+00:00 | INFO  | --- FILE: 2026_04_21_epl_btts.csv league=epl market=btts rows=1 mode=all_qualifying
+2026-08-29T16:46:25.449132+00:00 | INFO  | 2026_04_21_epl_btts.csv | 1 selected from 1 rows
+2026-08-29T16:46:25.450169+00:00 | INFO  | --- FILE: 2026_04_21_epl_match_odds.csv league=epl market=match_odds rows=1 mode=pick_one
+2026-08-29T16:46:25.450524+00:00 | INFO  | 2026_04_21_epl_match_odds.csv | 0 selected from 1 rows
+2026-08-29T16:46:25.451364+00:00 | INFO  | --- FILE: 2026_04_21_epl_total_25.csv league=epl market=total25 rows=1 mode=all_qualifying
+2026-08-29T16:46:25.451684+00:00 | INFO  | 2026_04_21_epl_total_25.csv | 0 selected from 1 rows
+2026-08-29T16:46:25.452522+00:00 | INFO  | --- FILE: 2026_04_21_epl_total_35.csv league=epl market=total35 rows=1 mode=all_qualifying
+2026-08-29T16:46:25.452839+00:00 | INFO  | 2026_04_21_epl_total_35.csv | 1 selected from 1 rows
+2026-08-29T16:46:25.453694+00:00 | INFO  | --- FILE: 2026_04_21_laliga_btts.csv league=laliga market=btts rows=4 mode=all_qualifying
+2026-08-29T16:46:25.454127+00:00 | INFO  | 2026_04_21_laliga_btts.csv | 0 selected from 4 rows
+2026-08-29T16:46:25.455151+00:00 | INFO  | --- FILE: 2026_04_21_laliga_match_odds.csv league=laliga market=match_odds rows=4 mode=all_qualifying
+2026-08-29T16:46:25.455711+00:00 | INFO  | 2026_04_21_laliga_match_odds.csv | 0 selected from 4 rows
+2026-08-29T16:46:25.456574+00:00 | INFO  | --- FILE: 2026_04_21_laliga_total_25.csv league=laliga market=total25 rows=4 mode=all_qualifying
+2026-08-29T16:46:25.457066+00:00 | INFO  | 2026_04_21_laliga_total_25.csv | 0 selected from 4 rows
+2026-08-29T16:46:25.457958+00:00 | INFO  | --- FILE: 2026_04_21_laliga_total_35.csv league=laliga market=total35 rows=4 mode=all_qualifying
+2026-08-29T16:46:25.458382+00:00 | INFO  | 2026_04_21_laliga_total_35.csv | 1 selected from 4 rows
+2026-08-29T16:46:25.459238+00:00 | INFO  | --- FILE: 2026_04_22_epl_btts.csv league=epl market=btts rows=2 mode=all_qualifying
+2026-08-29T16:46:25.459610+00:00 | INFO  | 2026_04_22_epl_btts.csv | 0 selected from 2 rows
+2026-08-29T16:46:25.460617+00:00 | INFO  | --- FILE: 2026_04_22_epl_match_odds.csv league=epl market=match_odds rows=2 mode=pick_one
+2026-08-29T16:46:25.461023+00:00 | INFO  | 2026_04_22_epl_match_odds.csv | 0 selected from 2 rows
+2026-08-29T16:46:25.461873+00:00 | INFO  | --- FILE: 2026_04_22_epl_total_25.csv league=epl market=total25 rows=2 mode=all_qualifying
+2026-08-29T16:46:25.462257+00:00 | INFO  | 2026_04_22_epl_total_25.csv | 1 selected from 2 rows
+2026-08-29T16:46:25.463109+00:00 | INFO  | --- FILE: 2026_04_22_epl_total_35.csv league=epl market=total35 rows=2 mode=all_qualifying
+2026-08-29T16:46:25.463509+00:00 | INFO  | 2026_04_22_epl_total_35.csv | 1 selected from 2 rows
+2026-08-29T16:46:25.464342+00:00 | INFO  | --- FILE: 2026_04_22_laliga_btts.csv league=laliga market=btts rows=2 mode=all_qualifying
+2026-08-29T16:46:25.464711+00:00 | INFO  | 2026_04_22_laliga_btts.csv | 0 selected from 2 rows
+2026-08-29T16:46:25.465716+00:00 | INFO  | --- FILE: 2026_04_22_laliga_match_odds.csv league=laliga market=match_odds rows=2 mode=all_qualifying
+2026-08-29T16:46:25.466128+00:00 | INFO  | 2026_04_22_laliga_match_odds.csv | 0 selected from 2 rows
+2026-08-29T16:46:25.466980+00:00 | INFO  | --- FILE: 2026_04_22_laliga_total_25.csv league=laliga market=total25 rows=2 mode=all_qualifying
+2026-08-29T16:46:25.467339+00:00 | INFO  | 2026_04_22_laliga_total_25.csv | 0 selected from 2 rows
+2026-08-29T16:46:25.468196+00:00 | INFO  | --- FILE: 2026_04_22_laliga_total_35.csv league=laliga market=total35 rows=2 mode=all_qualifying
+2026-08-29T16:46:25.468558+00:00 | INFO  | 2026_04_22_laliga_total_35.csv | 1 selected from 2 rows
+2026-08-29T16:46:25.469420+00:00 | INFO  | --- FILE: 2026_04_22_ligue1_btts.csv league=ligue1 market=btts rows=1 mode=all_qualifying
+2026-08-29T16:46:25.469716+00:00 | INFO  | 2026_04_22_ligue1_btts.csv | 0 selected from 1 rows
+2026-08-29T16:46:25.470730+00:00 | INFO  | --- FILE: 2026_04_22_ligue1_match_odds.csv league=ligue1 market=match_odds rows=1 mode=all_qualifying
+2026-08-29T16:46:25.471065+00:00 | INFO  | 2026_04_22_ligue1_match_odds.csv | 0 selected from 1 rows
+2026-08-29T16:46:25.471915+00:00 | INFO  | --- FILE: 2026_04_22_ligue1_total_25.csv league=ligue1 market=total25 rows=1 mode=all_qualifying
+2026-08-29T16:46:25.472229+00:00 | INFO  | 2026_04_22_ligue1_total_25.csv | 1 selected from 1 rows
+2026-08-29T16:46:25.473122+00:00 | INFO  | --- FILE: 2026_04_22_ligue1_total_35.csv league=ligue1 market=total35 rows=1 mode=all_qualifying
+2026-08-29T16:46:25.473457+00:00 | INFO  | 2026_04_22_ligue1_total_35.csv | 1 selected from 1 rows
+2026-08-29T16:46:25.474349+00:00 | INFO  | --- FILE: 2026_04_22_mls_btts.csv league=mls market=btts rows=11 mode=all_qualifying
+2026-08-29T16:46:25.475122+00:00 | INFO  | 2026_04_22_mls_btts.csv | 0 selected from 11 rows
+2026-08-29T16:46:25.476244+00:00 | INFO  | --- FILE: 2026_04_22_mls_match_odds.csv league=mls market=match_odds rows=11 mode=all_qualifying
+2026-08-29T16:46:25.477212+00:00 | INFO  | 2026_04_22_mls_match_odds.csv | 1 selected from 11 rows
+2026-08-29T16:46:25.478114+00:00 | INFO  | --- FILE: 2026_04_22_mls_total_25.csv league=mls market=total25 rows=11 mode=all_qualifying
+2026-08-29T16:46:25.478915+00:00 | INFO  | 2026_04_22_mls_total_25.csv | 0 selected from 11 rows
+2026-08-29T16:46:25.479851+00:00 | INFO  | --- FILE: 2026_04_22_mls_total_35.csv league=mls market=total35 rows=11 mode=all_qualifying
+2026-08-29T16:46:25.480805+00:00 | INFO  | 2026_04_22_mls_total_35.csv | 11 selected from 11 rows
+2026-08-29T16:46:25.481693+00:00 | INFO  | --- FILE: 2026_04_23_laliga_btts.csv league=laliga market=btts rows=3 mode=all_qualifying
+2026-08-29T16:46:25.482086+00:00 | INFO  | 2026_04_23_laliga_btts.csv | 0 selected from 3 rows
+2026-08-29T16:46:25.483114+00:00 | INFO  | --- FILE: 2026_04_23_laliga_match_odds.csv league=laliga market=match_odds rows=3 mode=all_qualifying
+2026-08-29T16:46:25.483640+00:00 | INFO  | 2026_04_23_laliga_match_odds.csv | 0 selected from 3 rows
+2026-08-29T16:46:25.484514+00:00 | INFO  | --- FILE: 2026_04_23_laliga_total_25.csv league=laliga market=total25 rows=3 mode=all_qualifying
+2026-08-29T16:46:25.484934+00:00 | INFO  | 2026_04_23_laliga_total_25.csv | 0 selected from 3 rows
+2026-08-29T16:46:25.485796+00:00 | INFO  | --- FILE: 2026_04_23_laliga_total_35.csv league=laliga market=total35 rows=3 mode=all_qualifying
+2026-08-29T16:46:25.486161+00:00 | INFO  | 2026_04_23_laliga_total_35.csv | 0 selected from 3 rows
+2026-08-29T16:46:25.487013+00:00 | INFO  | --- FILE: 2026_04_24_bundesliga_btts.csv league=bundesliga market=btts rows=1 mode=all_qualifying
+2026-08-29T16:46:25.487317+00:00 | INFO  | 2026_04_24_bundesliga_btts.csv | 1 selected from 1 rows
+2026-08-29T16:46:25.488335+00:00 | INFO  | --- FILE: 2026_04_24_bundesliga_match_odds.csv league=bundesliga market=match_odds rows=1 mode=all_qualifying
+2026-08-29T16:46:25.488691+00:00 | INFO  | 2026_04_24_bundesliga_match_odds.csv | 0 selected from 1 rows
+2026-08-29T16:46:25.489538+00:00 | INFO  | --- FILE: 2026_04_24_bundesliga_total_25.csv league=bundesliga market=total25 rows=1 mode=all_qualifying
+2026-08-29T16:46:25.489861+00:00 | INFO  | 2026_04_24_bundesliga_total_25.csv | 1 selected from 1 rows
+2026-08-29T16:46:25.490710+00:00 | INFO  | --- FILE: 2026_04_24_bundesliga_total_35.csv league=bundesliga market=total35 rows=1 mode=all_qualifying
+2026-08-29T16:46:25.491015+00:00 | INFO  | 2026_04_24_bundesliga_total_35.csv | 0 selected from 1 rows
+2026-08-29T16:46:25.491857+00:00 | INFO  | --- FILE: 2026_04_24_epl_btts.csv league=epl market=btts rows=1 mode=all_qualifying
+2026-08-29T16:46:25.492158+00:00 | INFO  | 2026_04_24_epl_btts.csv | 0 selected from 1 rows
+2026-08-29T16:46:25.493172+00:00 | INFO  | --- FILE: 2026_04_24_epl_match_odds.csv league=epl market=match_odds rows=1 mode=pick_one
+2026-08-29T16:46:25.493523+00:00 | INFO  | 2026_04_24_epl_match_odds.csv | 0 selected from 1 rows
+2026-08-29T16:46:25.494350+00:00 | INFO  | --- FILE: 2026_04_24_epl_total_25.csv league=epl market=total25 rows=1 mode=all_qualifying
+2026-08-29T16:46:25.494685+00:00 | INFO  | 2026_04_24_epl_total_25.csv | 1 selected from 1 rows
+2026-08-29T16:46:25.495548+00:00 | INFO  | --- FILE: 2026_04_24_epl_total_35.csv league=epl market=total35 rows=1 mode=all_qualifying
+2026-08-29T16:46:25.495837+00:00 | INFO  | 2026_04_24_epl_total_35.csv | 0 selected from 1 rows
+2026-08-29T16:46:25.496692+00:00 | INFO  | --- FILE: 2026_04_24_laliga_btts.csv league=laliga market=btts rows=1 mode=all_qualifying
+2026-08-29T16:46:25.496980+00:00 | INFO  | 2026_04_24_laliga_btts.csv | 0 selected from 1 rows
+2026-08-29T16:46:25.497981+00:00 | INFO  | --- FILE: 2026_04_24_laliga_match_odds.csv league=laliga market=match_odds rows=1 mode=all_qualifying
+2026-08-29T16:46:25.498321+00:00 | INFO  | 2026_04_24_laliga_match_odds.csv | 0 selected from 1 rows
+2026-08-29T16:46:25.499168+00:00 | INFO  | --- FILE: 2026_04_24_laliga_total_25.csv league=laliga market=total25 rows=1 mode=all_qualifying
+2026-08-29T16:46:25.499504+00:00 | INFO  | 2026_04_24_laliga_total_25.csv | 1 selected from 1 rows
+2026-08-29T16:46:25.500328+00:00 | INFO  | --- FILE: 2026_04_24_laliga_total_35.csv league=laliga market=total35 rows=1 mode=all_qualifying
+2026-08-29T16:46:25.500658+00:00 | INFO  | 2026_04_24_laliga_total_35.csv | 1 selected from 1 rows
+2026-08-29T16:46:25.501515+00:00 | INFO  | --- FILE: 2026_04_24_ligue1_btts.csv league=ligue1 market=btts rows=1 mode=all_qualifying
+2026-08-29T16:46:25.501809+00:00 | INFO  | 2026_04_24_ligue1_btts.csv | 0 selected from 1 rows
+2026-08-29T16:46:25.502817+00:00 | INFO  | --- FILE: 2026_04_24_ligue1_match_odds.csv league=ligue1 market=match_odds rows=1 mode=all_qualifying
+2026-08-29T16:46:25.503152+00:00 | INFO  | 2026_04_24_ligue1_match_odds.csv | 0 selected from 1 rows
+2026-08-29T16:46:25.503999+00:00 | INFO  | --- FILE: 2026_04_24_ligue1_total_25.csv league=ligue1 market=total25 rows=1 mode=all_qualifying
+2026-08-29T16:46:25.504298+00:00 | INFO  | 2026_04_24_ligue1_total_25.csv | 0 selected from 1 rows
+2026-08-29T16:46:25.505144+00:00 | INFO  | --- FILE: 2026_04_24_ligue1_total_35.csv league=ligue1 market=total35 rows=1 mode=all_qualifying
+2026-08-29T16:46:25.505459+00:00 | INFO  | 2026_04_24_ligue1_total_35.csv | 0 selected from 1 rows
+2026-08-29T16:46:25.506296+00:00 | INFO  | --- FILE: 2026_04_24_seriea_btts.csv league=seriea market=btts rows=1 mode=all_qualifying
+2026-08-29T16:46:25.506590+00:00 | INFO  | 2026_04_24_seriea_btts.csv | 0 selected from 1 rows
+2026-08-29T16:46:25.507592+00:00 | INFO  | --- FILE: 2026_04_24_seriea_match_odds.csv league=seriea market=match_odds rows=1 mode=all_qualifying
+2026-08-29T16:46:25.507960+00:00 | INFO  | 2026_04_24_seriea_match_odds.csv | 1 selected from 1 rows
+2026-08-29T16:46:25.508817+00:00 | INFO  | --- FILE: 2026_04_24_seriea_total_25.csv league=seriea market=total25 rows=1 mode=all_qualifying
+2026-08-29T16:46:25.509139+00:00 | INFO  | 2026_04_24_seriea_total_25.csv | 1 selected from 1 rows
+2026-08-29T16:46:25.509984+00:00 | INFO  | --- FILE: 2026_04_24_seriea_total_35.csv league=seriea market=total35 rows=1 mode=all_qualifying
+2026-08-29T16:46:25.510301+00:00 | INFO  | 2026_04_24_seriea_total_35.csv | 1 selected from 1 rows
+2026-08-29T16:46:25.511170+00:00 | INFO  | --- FILE: 2026_04_25_bundesliga_btts.csv league=bundesliga market=btts rows=6 mode=all_qualifying
+2026-08-29T16:46:25.511661+00:00 | INFO  | 2026_04_25_bundesliga_btts.csv | 0 selected from 6 rows
+2026-08-29T16:46:25.512731+00:00 | INFO  | --- FILE: 2026_04_25_bundesliga_match_odds.csv league=bundesliga market=match_odds rows=6 mode=all_qualifying
+2026-08-29T16:46:25.513417+00:00 | INFO  | 2026_04_25_bundesliga_match_odds.csv | 0 selected from 6 rows
+2026-08-29T16:46:25.514282+00:00 | INFO  | --- FILE: 2026_04_25_bundesliga_total_25.csv league=bundesliga market=total25 rows=6 mode=all_qualifying
+2026-08-29T16:46:25.514856+00:00 | INFO  | 2026_04_25_bundesliga_total_25.csv | 0 selected from 6 rows
+2026-08-29T16:46:25.515727+00:00 | INFO  | --- FILE: 2026_04_25_bundesliga_total_35.csv league=bundesliga market=total35 rows=6 mode=all_qualifying
+2026-08-29T16:46:25.516266+00:00 | INFO  | 2026_04_25_bundesliga_total_35.csv | 0 selected from 6 rows
+2026-08-29T16:46:25.517131+00:00 | INFO  | --- FILE: 2026_04_25_epl_btts.csv league=epl market=btts rows=5 mode=all_qualifying
+2026-08-29T16:46:25.517649+00:00 | INFO  | 2026_04_25_epl_btts.csv | 0 selected from 5 rows
+2026-08-29T16:46:25.518705+00:00 | INFO  | --- FILE: 2026_04_25_epl_match_odds.csv league=epl market=match_odds rows=5 mode=pick_one
+2026-08-29T16:46:25.519302+00:00 | INFO  | 2026_04_25_epl_match_odds.csv | 0 selected from 5 rows
+2026-08-29T16:46:25.520172+00:00 | INFO  | --- FILE: 2026_04_25_epl_total_25.csv league=epl market=total25 rows=5 mode=all_qualifying
+2026-08-29T16:46:25.520730+00:00 | INFO  | 2026_04_25_epl_total_25.csv | 2 selected from 5 rows
+2026-08-29T16:46:25.521593+00:00 | INFO  | --- FILE: 2026_04_25_epl_total_35.csv league=epl market=total35 rows=5 mode=all_qualifying
+2026-08-29T16:46:25.522140+00:00 | INFO  | 2026_04_25_epl_total_35.csv | 3 selected from 5 rows
+2026-08-29T16:46:25.523019+00:00 | INFO  | --- FILE: 2026_04_25_laliga_btts.csv league=laliga market=btts rows=4 mode=all_qualifying
+2026-08-29T16:46:25.523461+00:00 | INFO  | 2026_04_25_laliga_btts.csv | 0 selected from 4 rows
+2026-08-29T16:46:25.524487+00:00 | INFO  | --- FILE: 2026_04_25_laliga_match_odds.csv league=laliga market=match_odds rows=4 mode=all_qualifying
+2026-08-29T16:46:25.525037+00:00 | INFO  | 2026_04_25_laliga_match_odds.csv | 0 selected from 4 rows
+2026-08-29T16:46:25.525921+00:00 | INFO  | --- FILE: 2026_04_25_laliga_total_25.csv league=laliga market=total25 rows=4 mode=all_qualifying
+2026-08-29T16:46:25.526406+00:00 | INFO  | 2026_04_25_laliga_total_25.csv | 0 selected from 4 rows
+2026-08-29T16:46:25.527274+00:00 | INFO  | --- FILE: 2026_04_25_laliga_total_35.csv league=laliga market=total35 rows=4 mode=all_qualifying
+2026-08-29T16:46:25.527734+00:00 | INFO  | 2026_04_25_laliga_total_35.csv | 2 selected from 4 rows
+2026-08-29T16:46:25.528615+00:00 | INFO  | --- FILE: 2026_04_25_ligue1_btts.csv league=ligue1 market=btts rows=3 mode=all_qualifying
+2026-08-29T16:46:25.529000+00:00 | INFO  | 2026_04_25_ligue1_btts.csv | 0 selected from 3 rows
+2026-08-29T16:46:25.530034+00:00 | INFO  | --- FILE: 2026_04_25_ligue1_match_odds.csv league=ligue1 market=match_odds rows=3 mode=all_qualifying
+2026-08-29T16:46:25.530527+00:00 | INFO  | 2026_04_25_ligue1_match_odds.csv | 0 selected from 3 rows
+2026-08-29T16:46:25.531454+00:00 | INFO  | --- FILE: 2026_04_25_ligue1_total_25.csv league=ligue1 market=total25 rows=3 mode=all_qualifying
+2026-08-29T16:46:25.531892+00:00 | INFO  | 2026_04_25_ligue1_total_25.csv | 1 selected from 3 rows
+2026-08-29T16:46:25.532756+00:00 | INFO  | --- FILE: 2026_04_25_ligue1_total_35.csv league=ligue1 market=total35 rows=3 mode=all_qualifying
+2026-08-29T16:46:25.533182+00:00 | INFO  | 2026_04_25_ligue1_total_35.csv | 1 selected from 3 rows
+2026-08-29T16:46:25.534071+00:00 | INFO  | --- FILE: 2026_04_25_mls_btts.csv league=mls market=btts rows=14 mode=all_qualifying
+2026-08-29T16:46:25.535000+00:00 | INFO  | 2026_04_25_mls_btts.csv | 1 selected from 14 rows
+2026-08-29T16:46:25.536089+00:00 | INFO  | --- FILE: 2026_04_25_mls_match_odds.csv league=mls market=match_odds rows=14 mode=all_qualifying
+2026-08-29T16:46:25.537212+00:00 | INFO  | 2026_04_25_mls_match_odds.csv | 0 selected from 14 rows
+2026-08-29T16:46:25.538117+00:00 | INFO  | --- FILE: 2026_04_25_mls_total_25.csv league=mls market=total25 rows=14 mode=all_qualifying
+2026-08-29T16:46:25.539063+00:00 | INFO  | 2026_04_25_mls_total_25.csv | 1 selected from 14 rows
+2026-08-29T16:46:25.539948+00:00 | INFO  | --- FILE: 2026_04_25_mls_total_35.csv league=mls market=total35 rows=14 mode=all_qualifying
+2026-08-29T16:46:25.541080+00:00 | INFO  | 2026_04_25_mls_total_35.csv | 14 selected from 14 rows
+2026-08-29T16:46:25.541963+00:00 | INFO  | --- FILE: 2026_04_25_seriea_btts.csv league=seriea market=btts rows=2 mode=all_qualifying
+2026-08-29T16:46:25.542292+00:00 | INFO  | 2026_04_25_seriea_btts.csv | 0 selected from 2 rows
+2026-08-29T16:46:25.543310+00:00 | INFO  | --- FILE: 2026_04_25_seriea_match_odds.csv league=seriea market=match_odds rows=2 mode=all_qualifying
+2026-08-29T16:46:25.543743+00:00 | INFO  | 2026_04_25_seriea_match_odds.csv | 0 selected from 2 rows
+2026-08-29T16:46:25.544711+00:00 | INFO  | --- FILE: 2026_04_25_seriea_total_25.csv league=seriea market=total25 rows=2 mode=all_qualifying
+2026-08-29T16:46:25.545076+00:00 | INFO  | 2026_04_25_seriea_total_25.csv | 0 selected from 2 rows
+2026-08-29T16:46:25.545958+00:00 | INFO  | --- FILE: 2026_04_25_seriea_total_35.csv league=seriea market=total35 rows=2 mode=all_qualifying
+2026-08-29T16:46:25.546301+00:00 | INFO  | 2026_04_25_seriea_total_35.csv | 0 selected from 2 rows
+2026-08-29T16:46:25.547147+00:00 | INFO  | --- FILE: 2026_04_26_bundesliga_btts.csv league=bundesliga market=btts rows=2 mode=all_qualifying
+2026-08-29T16:46:25.547518+00:00 | INFO  | 2026_04_26_bundesliga_btts.csv | 1 selected from 2 rows
+2026-08-29T16:46:25.548538+00:00 | INFO  | --- FILE: 2026_04_26_bundesliga_match_odds.csv league=bundesliga market=match_odds rows=2 mode=all_qualifying
+2026-08-29T16:46:25.548951+00:00 | INFO  | 2026_04_26_bundesliga_match_odds.csv | 0 selected from 2 rows
+2026-08-29T16:46:25.549804+00:00 | INFO  | --- FILE: 2026_04_26_bundesliga_total_25.csv league=bundesliga market=total25 rows=2 mode=all_qualifying
+2026-08-29T16:46:25.550186+00:00 | INFO  | 2026_04_26_bundesliga_total_25.csv | 1 selected from 2 rows
+2026-08-29T16:46:25.551030+00:00 | INFO  | --- FILE: 2026_04_26_bundesliga_total_35.csv league=bundesliga market=total35 rows=2 mode=all_qualifying
+2026-08-29T16:46:25.551420+00:00 | INFO  | 2026_04_26_bundesliga_total_35.csv | 1 selected from 2 rows
+2026-08-29T16:46:25.552271+00:00 | INFO  | --- FILE: 2026_04_26_laliga_btts.csv league=laliga market=btts rows=3 mode=all_qualifying
+2026-08-29T16:46:25.552671+00:00 | INFO  | 2026_04_26_laliga_btts.csv | 0 selected from 3 rows
+2026-08-29T16:46:25.553697+00:00 | INFO  | --- FILE: 2026_04_26_laliga_match_odds.csv league=laliga market=match_odds rows=3 mode=all_qualifying
+2026-08-29T16:46:25.554175+00:00 | INFO  | 2026_04_26_laliga_match_odds.csv | 0 selected from 3 rows
+2026-08-29T16:46:25.555033+00:00 | INFO  | --- FILE: 2026_04_26_laliga_total_25.csv league=laliga market=total25 rows=3 mode=all_qualifying
+2026-08-29T16:46:25.555474+00:00 | INFO  | 2026_04_26_laliga_total_25.csv | 0 selected from 3 rows
+2026-08-29T16:46:25.556315+00:00 | INFO  | --- FILE: 2026_04_26_laliga_total_35.csv league=laliga market=total35 rows=3 mode=all_qualifying
+2026-08-29T16:46:25.556724+00:00 | INFO  | 2026_04_26_laliga_total_35.csv | 1 selected from 3 rows
+2026-08-29T16:46:25.557593+00:00 | INFO  | --- FILE: 2026_04_26_ligue1_btts.csv league=ligue1 market=btts rows=5 mode=all_qualifying
+2026-08-29T16:46:25.558054+00:00 | INFO  | 2026_04_26_ligue1_btts.csv | 0 selected from 5 rows
+2026-08-29T16:46:25.559071+00:00 | INFO  | --- FILE: 2026_04_26_ligue1_match_odds.csv league=ligue1 market=match_odds rows=5 mode=all_qualifying
+2026-08-29T16:46:25.559672+00:00 | INFO  | 2026_04_26_ligue1_match_odds.csv | 0 selected from 5 rows
+2026-08-29T16:46:25.560533+00:00 | INFO  | --- FILE: 2026_04_26_ligue1_total_25.csv league=ligue1 market=total25 rows=5 mode=all_qualifying
+2026-08-29T16:46:25.561040+00:00 | INFO  | 2026_04_26_ligue1_total_25.csv | 1 selected from 5 rows
+2026-08-29T16:46:25.561894+00:00 | INFO  | --- FILE: 2026_04_26_ligue1_total_35.csv league=ligue1 market=total35 rows=5 mode=all_qualifying
+2026-08-29T16:46:25.562418+00:00 | INFO  | 2026_04_26_ligue1_total_35.csv | 1 selected from 5 rows
+2026-08-29T16:46:25.563248+00:00 | INFO  | --- FILE: 2026_04_26_mls_btts.csv league=mls market=btts rows=1 mode=all_qualifying
+2026-08-29T16:46:25.563567+00:00 | INFO  | 2026_04_26_mls_btts.csv | 0 selected from 1 rows
+2026-08-29T16:46:25.564575+00:00 | INFO  | --- FILE: 2026_04_26_mls_match_odds.csv league=mls market=match_odds rows=1 mode=all_qualifying
+2026-08-29T16:46:25.564909+00:00 | INFO  | 2026_04_26_mls_match_odds.csv | 0 selected from 1 rows
+2026-08-29T16:46:25.565767+00:00 | INFO  | --- FILE: 2026_04_26_mls_total_25.csv league=mls market=total25 rows=1 mode=all_qualifying
+2026-08-29T16:46:25.566070+00:00 | INFO  | 2026_04_26_mls_total_25.csv | 0 selected from 1 rows
+2026-08-29T16:46:25.566917+00:00 | INFO  | --- FILE: 2026_04_26_mls_total_35.csv league=mls market=total35 rows=1 mode=all_qualifying
+2026-08-29T16:46:25.567237+00:00 | INFO  | 2026_04_26_mls_total_35.csv | 1 selected from 1 rows
+2026-08-29T16:46:25.568109+00:00 | INFO  | --- FILE: 2026_04_26_seriea_btts.csv league=seriea market=btts rows=3 mode=all_qualifying
+2026-08-29T16:46:25.568477+00:00 | INFO  | 2026_04_26_seriea_btts.csv | 0 selected from 3 rows
+2026-08-29T16:46:25.569495+00:00 | INFO  | --- FILE: 2026_04_26_seriea_match_odds.csv league=seriea market=match_odds rows=3 mode=all_qualifying
+2026-08-29T16:46:25.569980+00:00 | INFO  | 2026_04_26_seriea_match_odds.csv | 0 selected from 3 rows
+2026-08-29T16:46:25.570840+00:00 | INFO  | --- FILE: 2026_04_26_seriea_total_25.csv league=seriea market=total25 rows=3 mode=all_qualifying
+2026-08-29T16:46:25.571251+00:00 | INFO  | 2026_04_26_seriea_total_25.csv | 0 selected from 3 rows
+2026-08-29T16:46:25.572109+00:00 | INFO  | --- FILE: 2026_04_26_seriea_total_35.csv league=seriea market=total35 rows=3 mode=all_qualifying
+2026-08-29T16:46:25.572563+00:00 | INFO  | 2026_04_26_seriea_total_35.csv | 1 selected from 3 rows
+2026-08-29T16:46:25.573422+00:00 | INFO  | --- FILE: 2026_04_27_epl_btts.csv league=epl market=btts rows=1 mode=all_qualifying
+2026-08-29T16:46:25.573728+00:00 | INFO  | 2026_04_27_epl_btts.csv | 0 selected from 1 rows
+2026-08-29T16:46:25.574740+00:00 | INFO  | --- FILE: 2026_04_27_epl_match_odds.csv league=epl market=match_odds rows=1 mode=pick_one
+2026-08-29T16:46:25.575102+00:00 | INFO  | 2026_04_27_epl_match_odds.csv | 1 selected from 1 rows
+2026-08-29T16:46:25.575965+00:00 | INFO  | --- FILE: 2026_04_27_epl_total_25.csv league=epl market=total25 rows=1 mode=all_qualifying
+2026-08-29T16:46:25.576269+00:00 | INFO  | 2026_04_27_epl_total_25.csv | 0 selected from 1 rows
+2026-08-29T16:46:25.577113+00:00 | INFO  | --- FILE: 2026_04_27_epl_total_35.csv league=epl market=total35 rows=1 mode=all_qualifying
+2026-08-29T16:46:25.577442+00:00 | INFO  | 2026_04_27_epl_total_35.csv | 1 selected from 1 rows
+2026-08-29T16:46:25.578292+00:00 | INFO  | --- FILE: 2026_04_27_laliga_btts.csv league=laliga market=btts rows=1 mode=all_qualifying
+2026-08-29T16:46:25.578618+00:00 | INFO  | 2026_04_27_laliga_btts.csv | 0 selected from 1 rows
+2026-08-29T16:46:25.579632+00:00 | INFO  | --- FILE: 2026_04_27_laliga_match_odds.csv league=laliga market=match_odds rows=1 mode=all_qualifying
+2026-08-29T16:46:25.579970+00:00 | INFO  | 2026_04_27_laliga_match_odds.csv | 0 selected from 1 rows
+2026-08-29T16:46:25.580821+00:00 | INFO  | --- FILE: 2026_04_27_laliga_total_25.csv league=laliga market=total25 rows=1 mode=all_qualifying
+2026-08-29T16:46:25.581122+00:00 | INFO  | 2026_04_27_laliga_total_25.csv | 0 selected from 1 rows
+2026-08-29T16:46:25.581964+00:00 | INFO  | --- FILE: 2026_04_27_laliga_total_35.csv league=laliga market=total35 rows=1 mode=all_qualifying
+2026-08-29T16:46:25.582250+00:00 | INFO  | 2026_04_27_laliga_total_35.csv | 0 selected from 1 rows
+2026-08-29T16:46:25.583110+00:00 | INFO  | --- FILE: 2026_04_27_seriea_btts.csv league=seriea market=btts rows=2 mode=all_qualifying
+2026-08-29T16:46:25.583441+00:00 | INFO  | 2026_04_27_seriea_btts.csv | 0 selected from 2 rows
+2026-08-29T16:46:25.584445+00:00 | INFO  | --- FILE: 2026_04_27_seriea_match_odds.csv league=seriea market=match_odds rows=2 mode=all_qualifying
+2026-08-29T16:46:25.584851+00:00 | INFO  | 2026_04_27_seriea_match_odds.csv | 0 selected from 2 rows
+2026-08-29T16:46:25.585716+00:00 | INFO  | --- FILE: 2026_04_27_seriea_total_25.csv league=seriea market=total25 rows=2 mode=all_qualifying
+2026-08-29T16:46:25.586124+00:00 | INFO  | 2026_04_27_seriea_total_25.csv | 2 selected from 2 rows
+2026-08-29T16:46:25.586981+00:00 | INFO  | --- FILE: 2026_04_27_seriea_total_35.csv league=seriea market=total35 rows=2 mode=all_qualifying
+2026-08-29T16:46:25.587350+00:00 | INFO  | 2026_04_27_seriea_total_35.csv | 1 selected from 2 rows
+2026-08-29T16:46:25.588206+00:00 | INFO  | --- FILE: 2026_05_01_epl_btts.csv league=epl market=btts rows=1 mode=all_qualifying
+2026-08-29T16:46:25.588529+00:00 | INFO  | 2026_05_01_epl_btts.csv | 0 selected from 1 rows
+2026-08-29T16:46:25.589564+00:00 | INFO  | --- FILE: 2026_05_01_epl_match_odds.csv league=epl market=match_odds rows=1 mode=pick_one
+2026-08-29T16:46:25.589890+00:00 | INFO  | 2026_05_01_epl_match_odds.csv | 0 selected from 1 rows
+2026-08-29T16:46:25.590765+00:00 | INFO  | --- FILE: 2026_05_01_epl_total_25.csv league=epl market=total25 rows=1 mode=all_qualifying
+2026-08-29T16:46:25.591060+00:00 | INFO  | 2026_05_01_epl_total_25.csv | 0 selected from 1 rows
+2026-08-29T16:46:25.591917+00:00 | INFO  | --- FILE: 2026_05_01_epl_total_35.csv league=epl market=total35 rows=1 mode=all_qualifying
+2026-08-29T16:46:25.592209+00:00 | INFO  | 2026_05_01_epl_total_35.csv | 0 selected from 1 rows
+2026-08-29T16:46:25.593105+00:00 | INFO  | --- FILE: 2026_05_02_mls_btts.csv league=mls market=btts rows=13 mode=all_qualifying
+2026-08-29T16:46:25.593990+00:00 | INFO  | 2026_05_02_mls_btts.csv | 1 selected from 13 rows
+2026-08-29T16:46:25.595077+00:00 | INFO  | --- FILE: 2026_05_02_mls_match_odds.csv league=mls market=match_odds rows=13 mode=all_qualifying
+2026-08-29T16:46:25.596156+00:00 | INFO  | 2026_05_02_mls_match_odds.csv | 0 selected from 13 rows
+2026-08-29T16:46:25.597062+00:00 | INFO  | --- FILE: 2026_05_02_mls_total_25.csv league=mls market=total25 rows=13 mode=all_qualifying
+2026-08-29T16:46:25.598002+00:00 | INFO  | 2026_05_02_mls_total_25.csv | 3 selected from 13 rows
+2026-08-29T16:46:25.598904+00:00 | INFO  | --- FILE: 2026_05_02_mls_total_35.csv league=mls market=total35 rows=13 mode=all_qualifying
+2026-08-29T16:46:25.599989+00:00 | INFO  | 2026_05_02_mls_total_35.csv | 13 selected from 13 rows
+2026-08-29T16:46:25.600857+00:00 | INFO  | --- FILE: 2026_05_03_mls_btts.csv league=mls market=btts rows=2 mode=all_qualifying
+2026-08-29T16:46:25.601220+00:00 | INFO  | 2026_05_03_mls_btts.csv | 0 selected from 2 rows
+2026-08-29T16:46:25.602234+00:00 | INFO  | --- FILE: 2026_05_03_mls_match_odds.csv league=mls market=match_odds rows=2 mode=all_qualifying
+2026-08-29T16:46:25.602661+00:00 | INFO  | 2026_05_03_mls_match_odds.csv | 0 selected from 2 rows
+2026-08-29T16:46:25.603520+00:00 | INFO  | --- FILE: 2026_05_03_mls_total_25.csv league=mls market=total25 rows=2 mode=all_qualifying
+2026-08-29T16:46:25.603909+00:00 | INFO  | 2026_05_03_mls_total_25.csv | 1 selected from 2 rows
+2026-08-29T16:46:25.604768+00:00 | INFO  | --- FILE: 2026_05_03_mls_total_35.csv league=mls market=total35 rows=2 mode=all_qualifying
+2026-08-29T16:46:25.605139+00:00 | INFO  | 2026_05_03_mls_total_35.csv | 1 selected from 2 rows
+2026-08-29T16:46:25.605992+00:00 | INFO  | --- FILE: 2026_05_04_epl_btts.csv league=epl market=btts rows=3 mode=all_qualifying
+2026-08-29T16:46:25.606415+00:00 | INFO  | 2026_05_04_epl_btts.csv | 0 selected from 3 rows
+2026-08-29T16:46:25.607432+00:00 | INFO  | --- FILE: 2026_05_04_epl_match_odds.csv league=epl market=match_odds rows=3 mode=pick_one
+2026-08-29T16:46:25.607953+00:00 | INFO  | 2026_05_04_epl_match_odds.csv | 2 selected from 3 rows
+2026-08-29T16:46:25.608814+00:00 | INFO  | --- FILE: 2026_05_04_epl_total_25.csv league=epl market=total25 rows=3 mode=all_qualifying
+2026-08-29T16:46:25.609220+00:00 | INFO  | 2026_05_04_epl_total_25.csv | 0 selected from 3 rows
+2026-08-29T16:46:25.610072+00:00 | INFO  | --- FILE: 2026_05_04_epl_total_35.csv league=epl market=total35 rows=3 mode=all_qualifying
+2026-08-29T16:46:25.610526+00:00 | INFO  | 2026_05_04_epl_total_35.csv | 2 selected from 3 rows
+2026-08-29T16:46:25.611371+00:00 | INFO  | --- FILE: 2026_05_04_laliga_btts.csv league=laliga market=btts rows=2 mode=all_qualifying
+2026-08-29T16:46:25.611781+00:00 | INFO  | 2026_05_04_laliga_btts.csv | 1 selected from 2 rows
+2026-08-29T16:46:25.612804+00:00 | INFO  | --- FILE: 2026_05_04_laliga_match_odds.csv league=laliga market=match_odds rows=2 mode=all_qualifying
+2026-08-29T16:46:25.613222+00:00 | INFO  | 2026_05_04_laliga_match_odds.csv | 0 selected from 2 rows
+2026-08-29T16:46:25.614084+00:00 | INFO  | --- FILE: 2026_05_04_laliga_total_25.csv league=laliga market=total25 rows=2 mode=all_qualifying
+2026-08-29T16:46:25.614506+00:00 | INFO  | 2026_05_04_laliga_total_25.csv | 2 selected from 2 rows
+2026-08-29T16:46:25.615363+00:00 | INFO  | --- FILE: 2026_05_04_laliga_total_35.csv league=laliga market=total35 rows=2 mode=all_qualifying
+2026-08-29T16:46:25.615703+00:00 | INFO  | 2026_05_04_laliga_total_35.csv | 0 selected from 2 rows
+2026-08-29T16:46:25.616552+00:00 | INFO  | --- FILE: 2026_05_04_seriea_btts.csv league=seriea market=btts rows=4 mode=all_qualifying
+2026-08-29T16:46:25.616954+00:00 | INFO  | 2026_05_04_seriea_btts.csv | 0 selected from 4 rows
+2026-08-29T16:46:25.617987+00:00 | INFO  | --- FILE: 2026_05_04_seriea_match_odds.csv league=seriea market=match_odds rows=4 mode=all_qualifying
+2026-08-29T16:46:25.618581+00:00 | INFO  | 2026_05_04_seriea_match_odds.csv | 2 selected from 4 rows
+2026-08-29T16:46:25.619473+00:00 | INFO  | --- FILE: 2026_05_04_seriea_total_25.csv league=seriea market=total25 rows=4 mode=all_qualifying
+2026-08-29T16:46:25.619964+00:00 | INFO  | 2026_05_04_seriea_total_25.csv | 2 selected from 4 rows
+2026-08-29T16:46:25.620814+00:00 | INFO  | --- FILE: 2026_05_04_seriea_total_35.csv league=seriea market=total35 rows=4 mode=all_qualifying
+2026-08-29T16:46:25.621293+00:00 | INFO  | 2026_05_04_seriea_total_35.csv | 1 selected from 4 rows
+2026-08-29T16:46:25.622140+00:00 | INFO  | --- FILE: 2026_05_08_bundesliga_btts.csv league=bundesliga market=btts rows=1 mode=all_qualifying
+2026-08-29T16:46:25.622440+00:00 | INFO  | 2026_05_08_bundesliga_btts.csv | 0 selected from 1 rows
+2026-08-29T16:46:25.623441+00:00 | INFO  | --- FILE: 2026_05_08_bundesliga_match_odds.csv league=bundesliga market=match_odds rows=1 mode=all_qualifying
+2026-08-29T16:46:25.623788+00:00 | INFO  | 2026_05_08_bundesliga_match_odds.csv | 0 selected from 1 rows
+2026-08-29T16:46:25.624651+00:00 | INFO  | --- FILE: 2026_05_08_bundesliga_total_25.csv league=bundesliga market=total25 rows=1 mode=all_qualifying
+2026-08-29T16:46:25.624954+00:00 | INFO  | 2026_05_08_bundesliga_total_25.csv | 0 selected from 1 rows
+2026-08-29T16:46:25.625794+00:00 | INFO  | --- FILE: 2026_05_08_bundesliga_total_35.csv league=bundesliga market=total35 rows=1 mode=all_qualifying
+2026-08-29T16:46:25.626094+00:00 | INFO  | 2026_05_08_bundesliga_total_35.csv | 0 selected from 1 rows
+2026-08-29T16:46:25.626957+00:00 | INFO  | --- FILE: 2026_05_08_laliga_btts.csv league=laliga market=btts rows=2 mode=all_qualifying
+2026-08-29T16:46:25.627299+00:00 | INFO  | 2026_05_08_laliga_btts.csv | 0 selected from 2 rows
+2026-08-29T16:46:25.628308+00:00 | INFO  | --- FILE: 2026_05_08_laliga_match_odds.csv league=laliga market=match_odds rows=2 mode=all_qualifying
+2026-08-29T16:46:25.628769+00:00 | INFO  | 2026_05_08_laliga_match_odds.csv | 2 selected from 2 rows
+2026-08-29T16:46:25.629629+00:00 | INFO  | --- FILE: 2026_05_08_laliga_total_25.csv league=laliga market=total25 rows=2 mode=all_qualifying
+2026-08-29T16:46:25.629997+00:00 | INFO  | 2026_05_08_laliga_total_25.csv | 0 selected from 2 rows
+2026-08-29T16:46:25.630852+00:00 | INFO  | --- FILE: 2026_05_08_laliga_total_35.csv league=laliga market=total35 rows=2 mode=all_qualifying
+2026-08-29T16:46:25.631168+00:00 | INFO  | 2026_05_08_laliga_total_35.csv | 0 selected from 2 rows
+2026-08-29T16:46:25.632008+00:00 | INFO  | --- FILE: 2026_05_08_ligue1_btts.csv league=ligue1 market=btts rows=1 mode=all_qualifying
+2026-08-29T16:46:25.632309+00:00 | INFO  | 2026_05_08_ligue1_btts.csv | 0 selected from 1 rows
+2026-08-29T16:46:25.633308+00:00 | INFO  | --- FILE: 2026_05_08_ligue1_match_odds.csv league=ligue1 market=match_odds rows=1 mode=all_qualifying
+2026-08-29T16:46:25.633664+00:00 | INFO  | 2026_05_08_ligue1_match_odds.csv | 0 selected from 1 rows
+2026-08-29T16:46:25.634508+00:00 | INFO  | --- FILE: 2026_05_08_ligue1_total_25.csv league=ligue1 market=total25 rows=1 mode=all_qualifying
+2026-08-29T16:46:25.634804+00:00 | INFO  | 2026_05_08_ligue1_total_25.csv | 0 selected from 1 rows
+2026-08-29T16:46:25.635641+00:00 | INFO  | --- FILE: 2026_05_08_ligue1_total_35.csv league=ligue1 market=total35 rows=1 mode=all_qualifying
+2026-08-29T16:46:25.635941+00:00 | INFO  | 2026_05_08_ligue1_total_35.csv | 0 selected from 1 rows
+2026-08-29T16:46:25.636777+00:00 | INFO  | --- FILE: 2026_05_08_seriea_btts.csv league=seriea market=btts rows=1 mode=all_qualifying
+2026-08-29T16:46:25.637059+00:00 | INFO  | 2026_05_08_seriea_btts.csv | 0 selected from 1 rows
+2026-08-29T16:46:25.638067+00:00 | INFO  | --- FILE: 2026_05_08_seriea_match_odds.csv league=seriea market=match_odds rows=1 mode=all_qualifying
+2026-08-29T16:46:25.638423+00:00 | INFO  | 2026_05_08_seriea_match_odds.csv | 0 selected from 1 rows
+2026-08-29T16:46:25.639252+00:00 | INFO  | --- FILE: 2026_05_08_seriea_total_25.csv league=seriea market=total25 rows=1 mode=all_qualifying
+2026-08-29T16:46:25.639572+00:00 | INFO  | 2026_05_08_seriea_total_25.csv | 0 selected from 1 rows
+2026-08-29T16:46:25.640408+00:00 | INFO  | --- FILE: 2026_05_08_seriea_total_35.csv league=seriea market=total35 rows=1 mode=all_qualifying
+2026-08-29T16:46:25.640715+00:00 | INFO  | 2026_05_08_seriea_total_35.csv | 0 selected from 1 rows
+2026-08-29T16:46:25.641566+00:00 | INFO  | --- FILE: 2026_05_09_bundesliga_btts.csv league=bundesliga market=btts rows=5 mode=all_qualifying
+2026-08-29T16:46:25.642021+00:00 | INFO  | 2026_05_09_bundesliga_btts.csv | 1 selected from 5 rows
+2026-08-29T16:46:25.643042+00:00 | INFO  | --- FILE: 2026_05_09_bundesliga_match_odds.csv league=bundesliga market=match_odds rows=5 mode=all_qualifying
+2026-08-29T16:46:25.643653+00:00 | INFO  | 2026_05_09_bundesliga_match_odds.csv | 0 selected from 5 rows
+2026-08-29T16:46:25.644534+00:00 | INFO  | --- FILE: 2026_05_09_bundesliga_total_25.csv league=bundesliga market=total25 rows=5 mode=all_qualifying
+2026-08-29T16:46:25.645101+00:00 | INFO  | 2026_05_09_bundesliga_total_25.csv | 4 selected from 5 rows
+2026-08-29T16:46:25.645963+00:00 | INFO  | --- FILE: 2026_05_09_bundesliga_total_35.csv league=bundesliga market=total35 rows=5 mode=all_qualifying
+2026-08-29T16:46:25.646469+00:00 | INFO  | 2026_05_09_bundesliga_total_35.csv | 0 selected from 5 rows
+2026-08-29T16:46:25.647313+00:00 | INFO  | --- FILE: 2026_05_09_epl_btts.csv league=epl market=btts rows=5 mode=all_qualifying
+2026-08-29T16:46:25.647808+00:00 | INFO  | 2026_05_09_epl_btts.csv | 0 selected from 5 rows
+2026-08-29T16:46:25.648837+00:00 | INFO  | --- FILE: 2026_05_09_epl_match_odds.csv league=epl market=match_odds rows=5 mode=pick_one
+2026-08-29T16:46:25.649489+00:00 | INFO  | 2026_05_09_epl_match_odds.csv | 1 selected from 5 rows
+2026-08-29T16:46:25.650343+00:00 | INFO  | --- FILE: 2026_05_09_epl_total_25.csv league=epl market=total25 rows=5 mode=all_qualifying
+2026-08-29T16:46:25.650901+00:00 | INFO  | 2026_05_09_epl_total_25.csv | 2 selected from 5 rows
+2026-08-29T16:46:25.651763+00:00 | INFO  | --- FILE: 2026_05_09_epl_total_35.csv league=epl market=total35 rows=5 mode=all_qualifying
+2026-08-29T16:46:25.652320+00:00 | INFO  | 2026_05_09_epl_total_35.csv | 4 selected from 5 rows
+2026-08-29T16:46:25.653195+00:00 | INFO  | --- FILE: 2026_05_09_laliga_btts.csv league=laliga market=btts rows=3 mode=all_qualifying
+2026-08-29T16:46:25.653595+00:00 | INFO  | 2026_05_09_laliga_btts.csv | 0 selected from 3 rows
+2026-08-29T16:46:25.654616+00:00 | INFO  | --- FILE: 2026_05_09_laliga_match_odds.csv league=laliga market=match_odds rows=3 mode=all_qualifying
+2026-08-29T16:46:25.655107+00:00 | INFO  | 2026_05_09_laliga_match_odds.csv | 1 selected from 3 rows
+2026-08-29T16:46:25.655974+00:00 | INFO  | --- FILE: 2026_05_09_laliga_total_25.csv league=laliga market=total25 rows=3 mode=all_qualifying
+2026-08-29T16:46:25.656414+00:00 | INFO  | 2026_05_09_laliga_total_25.csv | 1 selected from 3 rows
+2026-08-29T16:46:25.657252+00:00 | INFO  | --- FILE: 2026_05_09_laliga_total_35.csv league=laliga market=total35 rows=3 mode=all_qualifying
+2026-08-29T16:46:25.657654+00:00 | INFO  | 2026_05_09_laliga_total_35.csv | 1 selected from 3 rows
+2026-08-29T16:46:25.658562+00:00 | INFO  | --- FILE: 2026_05_09_mls_btts.csv league=mls market=btts rows=11 mode=all_qualifying
+2026-08-29T16:46:25.659247+00:00 | INFO  | 2026_05_09_mls_btts.csv | 0 selected from 11 rows
+2026-08-29T16:46:25.660309+00:00 | INFO  | --- FILE: 2026_05_09_mls_match_odds.csv league=mls market=match_odds rows=11 mode=all_qualifying
+2026-08-29T16:46:25.661320+00:00 | INFO  | 2026_05_09_mls_match_odds.csv | 3 selected from 11 rows
+2026-08-29T16:46:25.662217+00:00 | INFO  | --- FILE: 2026_05_09_mls_total_25.csv league=mls market=total25 rows=11 mode=all_qualifying
+2026-08-29T16:46:25.662903+00:00 | INFO  | 2026_05_09_mls_total_25.csv | 0 selected from 11 rows
+2026-08-29T16:46:25.663799+00:00 | INFO  | --- FILE: 2026_05_09_mls_total_35.csv league=mls market=total35 rows=11 mode=all_qualifying
+2026-08-29T16:46:25.664479+00:00 | INFO  | 2026_05_09_mls_total_35.csv | 0 selected from 11 rows
+2026-08-29T16:46:25.665313+00:00 | INFO  | --- FILE: 2026_05_09_seriea_btts.csv league=seriea market=btts rows=1 mode=all_qualifying
+2026-08-29T16:46:25.665616+00:00 | INFO  | 2026_05_09_seriea_btts.csv | 0 selected from 1 rows
+2026-08-29T16:46:25.666624+00:00 | INFO  | --- FILE: 2026_05_09_seriea_match_odds.csv league=seriea market=match_odds rows=1 mode=all_qualifying
+2026-08-29T16:46:25.666969+00:00 | INFO  | 2026_05_09_seriea_match_odds.csv | 0 selected from 1 rows
+2026-08-29T16:46:25.667821+00:00 | INFO  | --- FILE: 2026_05_09_seriea_total_25.csv league=seriea market=total25 rows=1 mode=all_qualifying
+2026-08-29T16:46:25.668131+00:00 | INFO  | 2026_05_09_seriea_total_25.csv | 0 selected from 1 rows
+2026-08-29T16:46:25.668982+00:00 | INFO  | --- FILE: 2026_05_09_seriea_total_35.csv league=seriea market=total35 rows=1 mode=all_qualifying
+2026-08-29T16:46:25.669283+00:00 | INFO  | 2026_05_09_seriea_total_35.csv | 0 selected from 1 rows
+2026-08-29T16:46:25.670129+00:00 | INFO  | --- FILE: 2026_05_10_bundesliga_btts.csv league=bundesliga market=btts rows=3 mode=all_qualifying
+2026-08-29T16:46:25.670517+00:00 | INFO  | 2026_05_10_bundesliga_btts.csv | 0 selected from 3 rows
+2026-08-29T16:46:25.671531+00:00 | INFO  | --- FILE: 2026_05_10_bundesliga_match_odds.csv league=bundesliga market=match_odds rows=3 mode=all_qualifying
+2026-08-29T16:46:25.672009+00:00 | INFO  | 2026_05_10_bundesliga_match_odds.csv | 0 selected from 3 rows
+2026-08-29T16:46:25.672868+00:00 | INFO  | --- FILE: 2026_05_10_bundesliga_total_25.csv league=bundesliga market=total25 rows=3 mode=all_qualifying
+2026-08-29T16:46:25.673287+00:00 | INFO  | 2026_05_10_bundesliga_total_25.csv | 0 selected from 3 rows
+2026-08-29T16:46:25.674143+00:00 | INFO  | --- FILE: 2026_05_10_bundesliga_total_35.csv league=bundesliga market=total35 rows=3 mode=all_qualifying
+2026-08-29T16:46:25.674558+00:00 | INFO  | 2026_05_10_bundesliga_total_35.csv | 0 selected from 3 rows
+2026-08-29T16:46:25.675410+00:00 | INFO  | --- FILE: 2026_05_10_epl_btts.csv league=epl market=btts rows=4 mode=all_qualifying
+2026-08-29T16:46:25.675888+00:00 | INFO  | 2026_05_10_epl_btts.csv | 1 selected from 4 rows
+2026-08-29T16:46:25.676919+00:00 | INFO  | --- FILE: 2026_05_10_epl_match_odds.csv league=epl market=match_odds rows=4 mode=pick_one
+2026-08-29T16:46:25.677510+00:00 | INFO  | 2026_05_10_epl_match_odds.csv | 1 selected from 4 rows
+2026-08-29T16:46:25.678376+00:00 | INFO  | --- FILE: 2026_05_10_epl_total_25.csv league=epl market=total25 rows=4 mode=all_qualifying
+2026-08-29T16:46:25.678854+00:00 | INFO  | 2026_05_10_epl_total_25.csv | 0 selected from 4 rows
+2026-08-29T16:46:25.679717+00:00 | INFO  | --- FILE: 2026_05_10_epl_total_35.csv league=epl market=total35 rows=4 mode=all_qualifying
+2026-08-29T16:46:25.680186+00:00 | INFO  | 2026_05_10_epl_total_35.csv | 1 selected from 4 rows
+2026-08-29T16:46:25.681054+00:00 | INFO  | --- FILE: 2026_05_10_laliga_btts.csv league=laliga market=btts rows=4 mode=all_qualifying
+2026-08-29T16:46:25.681528+00:00 | INFO  | 2026_05_10_laliga_btts.csv | 0 selected from 4 rows
+2026-08-29T16:46:25.682556+00:00 | INFO  | --- FILE: 2026_05_10_laliga_match_odds.csv league=laliga market=match_odds rows=4 mode=all_qualifying
+2026-08-29T16:46:25.683102+00:00 | INFO  | 2026_05_10_laliga_match_odds.csv | 0 selected from 4 rows
+2026-08-29T16:46:25.683969+00:00 | INFO  | --- FILE: 2026_05_10_laliga_total_25.csv league=laliga market=total25 rows=4 mode=all_qualifying
+2026-08-29T16:46:25.684449+00:00 | INFO  | 2026_05_10_laliga_total_25.csv | 0 selected from 4 rows
+2026-08-29T16:46:25.685294+00:00 | INFO  | --- FILE: 2026_05_10_laliga_total_35.csv league=laliga market=total35 rows=4 mode=all_qualifying
+2026-08-29T16:46:25.685772+00:00 | INFO  | 2026_05_10_laliga_total_35.csv | 3 selected from 4 rows
+2026-08-29T16:46:25.686659+00:00 | INFO  | --- FILE: 2026_05_10_ligue1_btts.csv league=ligue1 market=btts rows=8 mode=all_qualifying
+2026-08-29T16:46:25.687293+00:00 | INFO  | 2026_05_10_ligue1_btts.csv | 1 selected from 8 rows
+2026-08-29T16:46:25.688379+00:00 | INFO  | --- FILE: 2026_05_10_ligue1_match_odds.csv league=ligue1 market=match_odds rows=8 mode=all_qualifying
+2026-08-29T16:46:25.689200+00:00 | INFO  | 2026_05_10_ligue1_match_odds.csv | 0 selected from 8 rows
+2026-08-29T16:46:25.690086+00:00 | INFO  | --- FILE: 2026_05_10_ligue1_total_25.csv league=ligue1 market=total25 rows=8 mode=all_qualifying
+2026-08-29T16:46:25.690729+00:00 | INFO  | 2026_05_10_ligue1_total_25.csv | 0 selected from 8 rows
+2026-08-29T16:46:25.691606+00:00 | INFO  | --- FILE: 2026_05_10_ligue1_total_35.csv league=ligue1 market=total35 rows=8 mode=all_qualifying
+2026-08-29T16:46:25.692302+00:00 | INFO  | 2026_05_10_ligue1_total_35.csv | 4 selected from 8 rows
+2026-08-29T16:46:25.693176+00:00 | INFO  | --- FILE: 2026_05_10_mls_btts.csv league=mls market=btts rows=3 mode=all_qualifying
+2026-08-29T16:46:25.693577+00:00 | INFO  | 2026_05_10_mls_btts.csv | 0 selected from 3 rows
+2026-08-29T16:46:25.694596+00:00 | INFO  | --- FILE: 2026_05_10_mls_match_odds.csv league=mls market=match_odds rows=3 mode=all_qualifying
+2026-08-29T16:46:25.695078+00:00 | INFO  | 2026_05_10_mls_match_odds.csv | 0 selected from 3 rows
+2026-08-29T16:46:25.696234+00:00 | INFO  | --- FILE: 2026_05_10_mls_total_25.csv league=mls market=total25 rows=3 mode=all_qualifying
+2026-08-29T16:46:25.696640+00:00 | INFO  | 2026_05_10_mls_total_25.csv | 0 selected from 3 rows
+2026-08-29T16:46:25.697505+00:00 | INFO  | --- FILE: 2026_05_10_mls_total_35.csv league=mls market=total35 rows=3 mode=all_qualifying
+2026-08-29T16:46:25.697889+00:00 | INFO  | 2026_05_10_mls_total_35.csv | 0 selected from 3 rows
+2026-08-29T16:46:25.698770+00:00 | INFO  | --- FILE: 2026_05_10_seriea_btts.csv league=seriea market=btts rows=5 mode=all_qualifying
+2026-08-29T16:46:25.699202+00:00 | INFO  | 2026_05_10_seriea_btts.csv | 0 selected from 5 rows
+2026-08-29T16:46:25.700226+00:00 | INFO  | --- FILE: 2026_05_10_seriea_match_odds.csv league=seriea market=match_odds rows=5 mode=all_qualifying
+2026-08-29T16:46:25.700849+00:00 | INFO  | 2026_05_10_seriea_match_odds.csv | 0 selected from 5 rows
+2026-08-29T16:46:25.701719+00:00 | INFO  | --- FILE: 2026_05_10_seriea_total_25.csv league=seriea market=total25 rows=5 mode=all_qualifying
+2026-08-29T16:46:25.702299+00:00 | INFO  | 2026_05_10_seriea_total_25.csv | 2 selected from 5 rows
+2026-08-29T16:46:25.703169+00:00 | INFO  | --- FILE: 2026_05_10_seriea_total_35.csv league=seriea market=total35 rows=5 mode=all_qualifying
+2026-08-29T16:46:25.703763+00:00 | INFO  | 2026_05_10_seriea_total_35.csv | 2 selected from 5 rows
+2026-08-29T16:46:25.704621+00:00 | INFO  | --- FILE: 2026_05_11_epl_btts.csv league=epl market=btts rows=1 mode=all_qualifying
+2026-08-29T16:46:25.704927+00:00 | INFO  | 2026_05_11_epl_btts.csv | 0 selected from 1 rows
+2026-08-29T16:46:25.705942+00:00 | INFO  | --- FILE: 2026_05_11_epl_match_odds.csv league=epl market=match_odds rows=1 mode=pick_one
+2026-08-29T16:46:25.706300+00:00 | INFO  | 2026_05_11_epl_match_odds.csv | 1 selected from 1 rows
+2026-08-29T16:46:25.707144+00:00 | INFO  | --- FILE: 2026_05_11_epl_total_25.csv league=epl market=total25 rows=1 mode=all_qualifying
+2026-08-29T16:46:25.707473+00:00 | INFO  | 2026_05_11_epl_total_25.csv | 1 selected from 1 rows
+2026-08-29T16:46:25.708340+00:00 | INFO  | --- FILE: 2026_05_11_epl_total_35.csv league=epl market=total35 rows=1 mode=all_qualifying
+2026-08-29T16:46:25.708646+00:00 | INFO  | 2026_05_11_epl_total_35.csv | 0 selected from 1 rows
+2026-08-29T16:46:25.709485+00:00 | INFO  | --- FILE: 2026_05_11_laliga_btts.csv league=laliga market=btts rows=1 mode=all_qualifying
+2026-08-29T16:46:25.709789+00:00 | INFO  | 2026_05_11_laliga_btts.csv | 0 selected from 1 rows
+2026-08-29T16:46:25.710808+00:00 | INFO  | --- FILE: 2026_05_11_laliga_match_odds.csv league=laliga market=match_odds rows=1 mode=all_qualifying
+2026-08-29T16:46:25.711182+00:00 | INFO  | 2026_05_11_laliga_match_odds.csv | 0 selected from 1 rows
+2026-08-29T16:46:25.712036+00:00 | INFO  | --- FILE: 2026_05_11_laliga_total_25.csv league=laliga market=total25 rows=1 mode=all_qualifying
+2026-08-29T16:46:25.712336+00:00 | INFO  | 2026_05_11_laliga_total_25.csv | 0 selected from 1 rows
+2026-08-29T16:46:25.713190+00:00 | INFO  | --- FILE: 2026_05_11_laliga_total_35.csv league=laliga market=total35 rows=1 mode=all_qualifying
+2026-08-29T16:46:25.713489+00:00 | INFO  | 2026_05_11_laliga_total_35.csv | 0 selected from 1 rows
+2026-08-29T16:46:25.714311+00:00 | INFO  | --- FILE: 2026_05_11_seriea_btts.csv league=seriea market=btts rows=1 mode=all_qualifying
+2026-08-29T16:46:25.714615+00:00 | INFO  | 2026_05_11_seriea_btts.csv | 0 selected from 1 rows
+2026-08-29T16:46:25.715658+00:00 | INFO  | --- FILE: 2026_05_11_seriea_match_odds.csv league=seriea market=match_odds rows=1 mode=all_qualifying
+2026-08-29T16:46:25.715998+00:00 | INFO  | 2026_05_11_seriea_match_odds.csv | 0 selected from 1 rows
+2026-08-29T16:46:25.716903+00:00 | INFO  | --- FILE: 2026_05_11_seriea_total_25.csv league=seriea market=total25 rows=1 mode=all_qualifying
+2026-08-29T16:46:25.717203+00:00 | INFO  | 2026_05_11_seriea_total_25.csv | 0 selected from 1 rows
+2026-08-29T16:46:25.718062+00:00 | INFO  | --- FILE: 2026_05_11_seriea_total_35.csv league=seriea market=total35 rows=1 mode=all_qualifying
+2026-08-29T16:46:25.718354+00:00 | INFO  | 2026_05_11_seriea_total_35.csv | 0 selected from 1 rows
+2026-08-29T16:46:25.719204+00:00 | INFO  | --- FILE: 2026_05_12_laliga_btts.csv league=laliga market=btts rows=3 mode=all_qualifying
+2026-08-29T16:46:25.719631+00:00 | INFO  | 2026_05_12_laliga_btts.csv | 0 selected from 3 rows
+2026-08-29T16:46:25.720643+00:00 | INFO  | --- FILE: 2026_05_12_laliga_match_odds.csv league=laliga market=match_odds rows=3 mode=all_qualifying
+2026-08-29T16:46:25.721134+00:00 | INFO  | 2026_05_12_laliga_match_odds.csv | 0 selected from 3 rows
+2026-08-29T16:46:25.721989+00:00 | INFO  | --- FILE: 2026_05_12_laliga_total_25.csv league=laliga market=total25 rows=3 mode=all_qualifying
+2026-08-29T16:46:25.722413+00:00 | INFO  | 2026_05_12_laliga_total_25.csv | 0 selected from 3 rows
+2026-08-29T16:46:25.723295+00:00 | INFO  | --- FILE: 2026_05_12_laliga_total_35.csv league=laliga market=total35 rows=3 mode=all_qualifying
+2026-08-29T16:46:25.723669+00:00 | INFO  | 2026_05_12_laliga_total_35.csv | 0 selected from 3 rows
+2026-08-29T16:46:25.724521+00:00 | INFO  | --- FILE: 2026_05_13_epl_btts.csv league=epl market=btts rows=1 mode=all_qualifying
+2026-08-29T16:46:25.724847+00:00 | INFO  | 2026_05_13_epl_btts.csv | 0 selected from 1 rows
+2026-08-29T16:46:25.725903+00:00 | INFO  | --- FILE: 2026_05_13_epl_match_odds.csv league=epl market=match_odds rows=1 mode=pick_one
+2026-08-29T16:46:25.726265+00:00 | INFO  | 2026_05_13_epl_match_odds.csv | 1 selected from 1 rows
+2026-08-29T16:46:25.727133+00:00 | INFO  | --- FILE: 2026_05_13_epl_total_25.csv league=epl market=total25 rows=1 mode=all_qualifying
+2026-08-29T16:46:25.727440+00:00 | INFO  | 2026_05_13_epl_total_25.csv | 0 selected from 1 rows
+2026-08-29T16:46:25.728269+00:00 | INFO  | --- FILE: 2026_05_13_epl_total_35.csv league=epl market=total35 rows=1 mode=all_qualifying
+2026-08-29T16:46:25.728603+00:00 | INFO  | 2026_05_13_epl_total_35.csv | 1 selected from 1 rows
+2026-08-29T16:46:25.729449+00:00 | INFO  | --- FILE: 2026_05_13_laliga_btts.csv league=laliga market=btts rows=4 mode=all_qualifying
+2026-08-29T16:46:25.729951+00:00 | INFO  | 2026_05_13_laliga_btts.csv | 1 selected from 4 rows
+2026-08-29T16:46:25.730985+00:00 | INFO  | --- FILE: 2026_05_13_laliga_match_odds.csv league=laliga market=match_odds rows=4 mode=all_qualifying
+2026-08-29T16:46:25.731545+00:00 | INFO  | 2026_05_13_laliga_match_odds.csv | 0 selected from 4 rows
+2026-08-29T16:46:25.732407+00:00 | INFO  | --- FILE: 2026_05_13_laliga_total_25.csv league=laliga market=total25 rows=4 mode=all_qualifying
+2026-08-29T16:46:25.732850+00:00 | INFO  | 2026_05_13_laliga_total_25.csv | 0 selected from 4 rows
+2026-08-29T16:46:25.733705+00:00 | INFO  | --- FILE: 2026_05_13_laliga_total_35.csv league=laliga market=total35 rows=4 mode=all_qualifying
+2026-08-29T16:46:25.734107+00:00 | INFO  | 2026_05_13_laliga_total_35.csv | 1 selected from 4 rows
+2026-08-29T16:46:25.734958+00:00 | INFO  | --- FILE: 2026_05_13_ligue1_btts.csv league=ligue1 market=btts rows=2 mode=all_qualifying
+2026-08-29T16:46:25.735317+00:00 | INFO  | 2026_05_13_ligue1_btts.csv | 0 selected from 2 rows
+2026-08-29T16:46:25.736325+00:00 | INFO  | --- FILE: 2026_05_13_ligue1_match_odds.csv league=ligue1 market=match_odds rows=2 mode=all_qualifying
+2026-08-29T16:46:25.736752+00:00 | INFO  | 2026_05_13_ligue1_match_odds.csv | 0 selected from 2 rows
+2026-08-29T16:46:25.737609+00:00 | INFO  | --- FILE: 2026_05_13_ligue1_total_25.csv league=ligue1 market=total25 rows=2 mode=all_qualifying
+2026-08-29T16:46:25.737959+00:00 | INFO  | 2026_05_13_ligue1_total_25.csv | 0 selected from 2 rows
+2026-08-29T16:46:25.738798+00:00 | INFO  | --- FILE: 2026_05_13_ligue1_total_35.csv league=ligue1 market=total35 rows=2 mode=all_qualifying
+2026-08-29T16:46:25.739146+00:00 | INFO  | 2026_05_13_ligue1_total_35.csv | 0 selected from 2 rows
+2026-08-29T16:46:25.740055+00:00 | INFO  | --- FILE: 2026_05_13_mls_btts.csv league=mls market=btts rows=14 mode=all_qualifying
+2026-08-29T16:46:25.740846+00:00 | INFO  | 2026_05_13_mls_btts.csv | 0 selected from 14 rows
+2026-08-29T16:46:25.741947+00:00 | INFO  | --- FILE: 2026_05_13_mls_match_odds.csv league=mls market=match_odds rows=14 mode=all_qualifying
+2026-08-29T16:46:25.743080+00:00 | INFO  | 2026_05_13_mls_match_odds.csv | 0 selected from 14 rows
+2026-08-29T16:46:25.744013+00:00 | INFO  | --- FILE: 2026_05_13_mls_total_25.csv league=mls market=total25 rows=14 mode=all_qualifying
+2026-08-29T16:46:25.744814+00:00 | INFO  | 2026_05_13_mls_total_25.csv | 0 selected from 14 rows
+2026-08-29T16:46:25.745714+00:00 | INFO  | --- FILE: 2026_05_13_mls_total_35.csv league=mls market=total35 rows=14 mode=all_qualifying
+2026-08-29T16:46:25.746503+00:00 | INFO  | 2026_05_13_mls_total_35.csv | 0 selected from 14 rows
+2026-08-29T16:46:25.747345+00:00 | INFO  | --- FILE: 2026_05_14_laliga_btts.csv league=laliga market=btts rows=3 mode=all_qualifying
+2026-08-29T16:46:25.747770+00:00 | INFO  | 2026_05_14_laliga_btts.csv | 0 selected from 3 rows
+2026-08-29T16:46:25.748813+00:00 | INFO  | --- FILE: 2026_05_14_laliga_match_odds.csv league=laliga market=match_odds rows=3 mode=all_qualifying
+2026-08-29T16:46:25.749312+00:00 | INFO  | 2026_05_14_laliga_match_odds.csv | 0 selected from 3 rows
+2026-08-29T16:46:25.750175+00:00 | INFO  | --- FILE: 2026_05_14_laliga_total_25.csv league=laliga market=total25 rows=3 mode=all_qualifying
+2026-08-29T16:46:25.750601+00:00 | INFO  | 2026_05_14_laliga_total_25.csv | 0 selected from 3 rows
+2026-08-29T16:46:25.751458+00:00 | INFO  | --- FILE: 2026_05_14_laliga_total_35.csv league=laliga market=total35 rows=3 mode=all_qualifying
+2026-08-29T16:46:25.751815+00:00 | INFO  | 2026_05_14_laliga_total_35.csv | 0 selected from 3 rows
+2026-08-29T16:46:25.752665+00:00 | INFO  | --- FILE: 2026_05_15_epl_btts.csv league=epl market=btts rows=1 mode=all_qualifying
+2026-08-29T16:46:25.752969+00:00 | INFO  | 2026_05_15_epl_btts.csv | 0 selected from 1 rows
+2026-08-29T16:46:25.753978+00:00 | INFO  | --- FILE: 2026_05_15_epl_match_odds.csv league=epl market=match_odds rows=1 mode=pick_one
+2026-08-29T16:46:25.754314+00:00 | INFO  | 2026_05_15_epl_match_odds.csv | 0 selected from 1 rows
+2026-08-29T16:46:25.755169+00:00 | INFO  | --- FILE: 2026_05_15_epl_total_25.csv league=epl market=total25 rows=1 mode=all_qualifying
+2026-08-29T16:46:25.755487+00:00 | INFO  | 2026_05_15_epl_total_25.csv | 0 selected from 1 rows
+2026-08-29T16:46:25.756331+00:00 | INFO  | --- FILE: 2026_05_15_epl_total_35.csv league=epl market=total35 rows=1 mode=all_qualifying
+2026-08-29T16:46:25.756636+00:00 | INFO  | 2026_05_15_epl_total_35.csv | 0 selected from 1 rows
+2026-08-29T16:46:25.757518+00:00 | INFO  | --- FILE: 2026_05_16_bundesliga_btts.csv league=bundesliga market=btts rows=7 mode=all_qualifying
+2026-08-29T16:46:25.758058+00:00 | INFO  | 2026_05_16_bundesliga_btts.csv | 2 selected from 7 rows
+2026-08-29T16:46:25.759134+00:00 | INFO  | --- FILE: 2026_05_16_bundesliga_match_odds.csv league=bundesliga market=match_odds rows=7 mode=all_qualifying
+2026-08-29T16:46:25.759931+00:00 | INFO  | 2026_05_16_bundesliga_match_odds.csv | 3 selected from 7 rows
+2026-08-29T16:46:25.760823+00:00 | INFO  | --- FILE: 2026_05_16_bundesliga_total_25.csv league=bundesliga market=total25 rows=7 mode=all_qualifying
+2026-08-29T16:46:25.761376+00:00 | INFO  | 2026_05_16_bundesliga_total_25.csv | 0 selected from 7 rows
+2026-08-29T16:46:25.762253+00:00 | INFO  | --- FILE: 2026_05_16_bundesliga_total_35.csv league=bundesliga market=total35 rows=7 mode=all_qualifying
+2026-08-29T16:46:25.762868+00:00 | INFO  | 2026_05_16_bundesliga_total_35.csv | 1 selected from 7 rows
+2026-08-29T16:46:25.763769+00:00 | INFO  | --- FILE: 2026_05_16_mls_btts.csv league=mls market=btts rows=13 mode=all_qualifying
+2026-08-29T16:46:25.764519+00:00 | INFO  | 2026_05_16_mls_btts.csv | 0 selected from 13 rows
+2026-08-29T16:46:25.765613+00:00 | INFO  | --- FILE: 2026_05_16_mls_match_odds.csv league=mls market=match_odds rows=13 mode=all_qualifying
+2026-08-29T16:46:25.766701+00:00 | INFO  | 2026_05_16_mls_match_odds.csv | 1 selected from 13 rows
+2026-08-29T16:46:25.767617+00:00 | INFO  | --- FILE: 2026_05_16_mls_total_25.csv league=mls market=total25 rows=13 mode=all_qualifying
+2026-08-29T16:46:25.768359+00:00 | INFO  | 2026_05_16_mls_total_25.csv | 0 selected from 13 rows
+2026-08-29T16:46:25.769260+00:00 | INFO  | --- FILE: 2026_05_16_mls_total_35.csv league=mls market=total35 rows=13 mode=all_qualifying
+2026-08-29T16:46:25.770015+00:00 | INFO  | 2026_05_16_mls_total_35.csv | 0 selected from 13 rows
+2026-08-29T16:46:25.770890+00:00 | INFO  | --- FILE: 2026_05_17_epl_btts.csv league=epl market=btts rows=6 mode=all_qualifying
+2026-08-29T16:46:25.771445+00:00 | INFO  | 2026_05_17_epl_btts.csv | 0 selected from 6 rows
+2026-08-29T16:46:25.772481+00:00 | INFO  | --- FILE: 2026_05_17_epl_match_odds.csv league=epl market=match_odds rows=6 mode=pick_one
+2026-08-29T16:46:25.773144+00:00 | INFO  | 2026_05_17_epl_match_odds.csv | 0 selected from 6 rows
+2026-08-29T16:46:25.774023+00:00 | INFO  | --- FILE: 2026_05_17_epl_total_25.csv league=epl market=total25 rows=6 mode=all_qualifying
+2026-08-29T16:46:25.774607+00:00 | INFO  | 2026_05_17_epl_total_25.csv | 2 selected from 6 rows
+2026-08-29T16:46:25.775558+00:00 | INFO  | --- FILE: 2026_05_17_epl_total_35.csv league=epl market=total35 rows=6 mode=all_qualifying
+2026-08-29T16:46:25.776095+00:00 | INFO  | 2026_05_17_epl_total_35.csv | 1 selected from 6 rows
+2026-08-29T16:46:25.776982+00:00 | INFO  | --- FILE: 2026_05_17_laliga_btts.csv league=laliga market=btts rows=10 mode=all_qualifying
+2026-08-29T16:46:25.777762+00:00 | INFO  | 2026_05_17_laliga_btts.csv | 2 selected from 10 rows
+2026-08-29T16:46:25.778841+00:00 | INFO  | --- FILE: 2026_05_17_laliga_match_odds.csv league=laliga market=match_odds rows=10 mode=all_qualifying
+2026-08-29T16:46:25.779780+00:00 | INFO  | 2026_05_17_laliga_match_odds.csv | 1 selected from 10 rows
+2026-08-29T16:46:25.780675+00:00 | INFO  | --- FILE: 2026_05_17_laliga_total_25.csv league=laliga market=total25 rows=10 mode=all_qualifying
+2026-08-29T16:46:25.781422+00:00 | INFO  | 2026_05_17_laliga_total_25.csv | 0 selected from 10 rows
+2026-08-29T16:46:25.782292+00:00 | INFO  | --- FILE: 2026_05_17_laliga_total_35.csv league=laliga market=total35 rows=10 mode=all_qualifying
+2026-08-29T16:46:25.782880+00:00 | INFO  | 2026_05_17_laliga_total_35.csv | 1 selected from 10 rows
+2026-08-29T16:46:25.783851+00:00 | INFO  | --- FILE: 2026_05_17_ligue1_btts.csv league=ligue1 market=btts rows=9 mode=all_qualifying
+2026-08-29T16:46:25.784552+00:00 | INFO  | 2026_05_17_ligue1_btts.csv | 0 selected from 9 rows
+2026-08-29T16:46:25.785617+00:00 | INFO  | --- FILE: 2026_05_17_ligue1_match_odds.csv league=ligue1 market=match_odds rows=9 mode=all_qualifying
+2026-08-29T16:46:25.786497+00:00 | INFO  | 2026_05_17_ligue1_match_odds.csv | 2 selected from 9 rows
+2026-08-29T16:46:25.787403+00:00 | INFO  | --- FILE: 2026_05_17_ligue1_total_25.csv league=ligue1 market=total25 rows=9 mode=all_qualifying
+2026-08-29T16:46:25.788057+00:00 | INFO  | 2026_05_17_ligue1_total_25.csv | 0 selected from 9 rows
+2026-08-29T16:46:25.788947+00:00 | INFO  | --- FILE: 2026_05_17_ligue1_total_35.csv league=ligue1 market=total35 rows=9 mode=all_qualifying
+2026-08-29T16:46:25.789658+00:00 | INFO  | 2026_05_17_ligue1_total_35.csv | 3 selected from 9 rows
+2026-08-29T16:46:25.790526+00:00 | INFO  | --- FILE: 2026_05_17_mls_btts.csv league=mls market=btts rows=2 mode=all_qualifying
+2026-08-29T16:46:25.790867+00:00 | INFO  | 2026_05_17_mls_btts.csv | 0 selected from 2 rows
+2026-08-29T16:46:25.791874+00:00 | INFO  | --- FILE: 2026_05_17_mls_match_odds.csv league=mls market=match_odds rows=2 mode=all_qualifying
+2026-08-29T16:46:25.792278+00:00 | INFO  | 2026_05_17_mls_match_odds.csv | 0 selected from 2 rows
+2026-08-29T16:46:25.793140+00:00 | INFO  | --- FILE: 2026_05_17_mls_total_25.csv league=mls market=total25 rows=2 mode=all_qualifying
+2026-08-29T16:46:25.793496+00:00 | INFO  | 2026_05_17_mls_total_25.csv | 0 selected from 2 rows
+2026-08-29T16:46:25.794328+00:00 | INFO  | --- FILE: 2026_05_17_mls_total_35.csv league=mls market=total35 rows=2 mode=all_qualifying
+2026-08-29T16:46:25.794681+00:00 | INFO  | 2026_05_17_mls_total_35.csv | 0 selected from 2 rows
+2026-08-29T16:46:25.795562+00:00 | INFO  | --- FILE: 2026_05_17_seriea_btts.csv league=seriea market=btts rows=9 mode=all_qualifying
+2026-08-29T16:46:25.796126+00:00 | INFO  | 2026_05_17_seriea_btts.csv | 0 selected from 9 rows
+2026-08-29T16:46:25.797181+00:00 | INFO  | --- FILE: 2026_05_17_seriea_match_odds.csv league=seriea market=match_odds rows=9 mode=all_qualifying
+2026-08-29T16:46:25.798100+00:00 | INFO  | 2026_05_17_seriea_match_odds.csv | 2 selected from 9 rows
+2026-08-29T16:46:25.798992+00:00 | INFO  | --- FILE: 2026_05_17_seriea_total_25.csv league=seriea market=total25 rows=9 mode=all_qualifying
+2026-08-29T16:46:25.799780+00:00 | INFO  | 2026_05_17_seriea_total_25.csv | 5 selected from 9 rows
+2026-08-29T16:46:25.800678+00:00 | INFO  | --- FILE: 2026_05_17_seriea_total_35.csv league=seriea market=total35 rows=9 mode=all_qualifying
+2026-08-29T16:46:25.801301+00:00 | INFO  | 2026_05_17_seriea_total_35.csv | 0 selected from 9 rows
+2026-08-29T16:46:25.802151+00:00 | INFO  | --- FILE: 2026_05_18_epl_btts.csv league=epl market=btts rows=1 mode=all_qualifying
+2026-08-29T16:46:25.802484+00:00 | INFO  | 2026_05_18_epl_btts.csv | 1 selected from 1 rows
+2026-08-29T16:46:25.803490+00:00 | INFO  | --- FILE: 2026_05_18_epl_match_odds.csv league=epl market=match_odds rows=1 mode=pick_one
+2026-08-29T16:46:25.803833+00:00 | INFO  | 2026_05_18_epl_match_odds.csv | 0 selected from 1 rows
+2026-08-29T16:46:25.804704+00:00 | INFO  | --- FILE: 2026_05_18_epl_total_25.csv league=epl market=total25 rows=1 mode=all_qualifying
+2026-08-29T16:46:25.804993+00:00 | INFO  | 2026_05_18_epl_total_25.csv | 0 selected from 1 rows
+2026-08-29T16:46:25.805837+00:00 | INFO  | --- FILE: 2026_05_18_epl_total_35.csv league=epl market=total35 rows=1 mode=all_qualifying
+2026-08-29T16:46:25.806139+00:00 | INFO  | 2026_05_18_epl_total_35.csv | 0 selected from 1 rows
+2026-08-29T16:46:25.806988+00:00 | INFO  | --- FILE: 2026_05_19_epl_btts.csv league=epl market=btts rows=2 mode=all_qualifying
+2026-08-29T16:46:25.807362+00:00 | INFO  | 2026_05_19_epl_btts.csv | 1 selected from 2 rows
+2026-08-29T16:46:25.808386+00:00 | INFO  | --- FILE: 2026_05_19_epl_match_odds.csv league=epl market=match_odds rows=2 mode=pick_one
+2026-08-29T16:46:25.808836+00:00 | INFO  | 2026_05_19_epl_match_odds.csv | 1 selected from 2 rows
+2026-08-29T16:46:25.809694+00:00 | INFO  | --- FILE: 2026_05_19_epl_total_25.csv league=epl market=total25 rows=2 mode=all_qualifying
+2026-08-29T16:46:25.810060+00:00 | INFO  | 2026_05_19_epl_total_25.csv | 1 selected from 2 rows
+2026-08-29T16:46:25.810900+00:00 | INFO  | --- FILE: 2026_05_19_epl_total_35.csv league=epl market=total35 rows=2 mode=all_qualifying
+2026-08-29T16:46:25.811258+00:00 | INFO  | 2026_05_19_epl_total_35.csv | 1 selected from 2 rows
+2026-08-29T16:46:25.812098+00:00 | INFO  | --- FILE: 2026_05_22_seriea_btts.csv league=seriea market=btts rows=1 mode=all_qualifying
+2026-08-29T16:46:25.812418+00:00 | INFO  | 2026_05_22_seriea_btts.csv | 1 selected from 1 rows
+2026-08-29T16:46:25.813425+00:00 | INFO  | --- FILE: 2026_05_22_seriea_match_odds.csv league=seriea market=match_odds rows=1 mode=all_qualifying
+2026-08-29T16:46:25.813765+00:00 | INFO  | 2026_05_22_seriea_match_odds.csv | 0 selected from 1 rows
+2026-08-29T16:46:25.814635+00:00 | INFO  | --- FILE: 2026_05_22_seriea_total_25.csv league=seriea market=total25 rows=1 mode=all_qualifying
+2026-08-29T16:46:25.814939+00:00 | INFO  | 2026_05_22_seriea_total_25.csv | 0 selected from 1 rows
+2026-08-29T16:46:25.815802+00:00 | INFO  | --- FILE: 2026_05_22_seriea_total_35.csv league=seriea market=total35 rows=1 mode=all_qualifying
+2026-08-29T16:46:25.816088+00:00 | INFO  | 2026_05_22_seriea_total_35.csv | 0 selected from 1 rows
+2026-08-29T16:46:25.816949+00:00 | INFO  | --- FILE: 2026_05_23_laliga_btts.csv league=laliga market=btts rows=9 mode=all_qualifying
+2026-08-29T16:46:25.817670+00:00 | INFO  | 2026_05_23_laliga_btts.csv | 1 selected from 9 rows
+2026-08-29T16:46:25.818747+00:00 | INFO  | --- FILE: 2026_05_23_laliga_match_odds.csv league=laliga market=match_odds rows=9 mode=all_qualifying
+2026-08-29T16:46:25.819655+00:00 | INFO  | 2026_05_23_laliga_match_odds.csv | 1 selected from 9 rows
+2026-08-29T16:46:25.820540+00:00 | INFO  | --- FILE: 2026_05_23_laliga_total_25.csv league=laliga market=total25 rows=9 mode=all_qualifying
+2026-08-29T16:46:25.821247+00:00 | INFO  | 2026_05_23_laliga_total_25.csv | 2 selected from 9 rows
+2026-08-29T16:46:25.822149+00:00 | INFO  | --- FILE: 2026_05_23_laliga_total_35.csv league=laliga market=total35 rows=9 mode=all_qualifying
+2026-08-29T16:46:25.822751+00:00 | INFO  | 2026_05_23_laliga_total_35.csv | 2 selected from 9 rows
+2026-08-29T16:46:25.823655+00:00 | INFO  | --- FILE: 2026_05_23_mls_btts.csv league=mls market=btts rows=12 mode=all_qualifying
+2026-08-29T16:46:25.824373+00:00 | INFO  | 2026_05_23_mls_btts.csv | 0 selected from 12 rows
+2026-08-29T16:46:25.825459+00:00 | INFO  | --- FILE: 2026_05_23_mls_match_odds.csv league=mls market=match_odds rows=12 mode=all_qualifying
+2026-08-29T16:46:25.826470+00:00 | INFO  | 2026_05_23_mls_match_odds.csv | 0 selected from 12 rows
+2026-08-29T16:46:25.827366+00:00 | INFO  | --- FILE: 2026_05_23_mls_total_25.csv league=mls market=total25 rows=12 mode=all_qualifying
+2026-08-29T16:46:25.828104+00:00 | INFO  | 2026_05_23_mls_total_25.csv | 0 selected from 12 rows
+2026-08-29T16:46:25.828998+00:00 | INFO  | --- FILE: 2026_05_23_mls_total_35.csv league=mls market=total35 rows=12 mode=all_qualifying
+2026-08-29T16:46:25.829723+00:00 | INFO  | 2026_05_23_mls_total_35.csv | 0 selected from 12 rows
+2026-08-29T16:46:25.830605+00:00 | INFO  | --- FILE: 2026_05_24_epl_btts.csv league=epl market=btts rows=10 mode=all_qualifying
+2026-08-29T16:46:25.831377+00:00 | INFO  | 2026_05_24_epl_btts.csv | 3 selected from 10 rows
+2026-08-29T16:46:25.832489+00:00 | INFO  | --- FILE: 2026_05_24_epl_match_odds.csv league=epl market=match_odds rows=10 mode=pick_one
+2026-08-29T16:46:25.833450+00:00 | INFO  | 2026_05_24_epl_match_odds.csv | 2 selected from 10 rows
+2026-08-29T16:46:25.834340+00:00 | INFO  | --- FILE: 2026_05_24_epl_total_25.csv league=epl market=total25 rows=10 mode=all_qualifying
+2026-08-29T16:46:25.835102+00:00 | INFO  | 2026_05_24_epl_total_25.csv | 3 selected from 10 rows
+2026-08-29T16:46:25.835995+00:00 | INFO  | --- FILE: 2026_05_24_epl_total_35.csv league=epl market=total35 rows=10 mode=all_qualifying
+2026-08-29T16:46:25.836748+00:00 | INFO  | 2026_05_24_epl_total_35.csv | 3 selected from 10 rows
+2026-08-29T16:46:25.837607+00:00 | INFO  | --- FILE: 2026_05_24_laliga_btts.csv league=laliga market=btts rows=1 mode=all_qualifying
+2026-08-29T16:46:25.837909+00:00 | INFO  | 2026_05_24_laliga_btts.csv | 0 selected from 1 rows
+2026-08-29T16:46:25.838934+00:00 | INFO  | --- FILE: 2026_05_24_laliga_match_odds.csv league=laliga market=match_odds rows=1 mode=all_qualifying
+2026-08-29T16:46:25.839288+00:00 | INFO  | 2026_05_24_laliga_match_odds.csv | 0 selected from 1 rows
+2026-08-29T16:46:25.840160+00:00 | INFO  | --- FILE: 2026_05_24_laliga_total_25.csv league=laliga market=total25 rows=1 mode=all_qualifying
+2026-08-29T16:46:25.840470+00:00 | INFO  | 2026_05_24_laliga_total_25.csv | 0 selected from 1 rows
+2026-08-29T16:46:25.841305+00:00 | INFO  | --- FILE: 2026_05_24_laliga_total_35.csv league=laliga market=total35 rows=1 mode=all_qualifying
+2026-08-29T16:46:25.841625+00:00 | INFO  | 2026_05_24_laliga_total_35.csv | 1 selected from 1 rows
+2026-08-29T16:46:25.842492+00:00 | INFO  | --- FILE: 2026_05_24_mls_btts.csv league=mls market=btts rows=3 mode=all_qualifying
+2026-08-29T16:46:25.842876+00:00 | INFO  | 2026_05_24_mls_btts.csv | 0 selected from 3 rows
+2026-08-29T16:46:25.843903+00:00 | INFO  | --- FILE: 2026_05_24_mls_match_odds.csv league=mls market=match_odds rows=3 mode=all_qualifying
+2026-08-29T16:46:25.844376+00:00 | INFO  | 2026_05_24_mls_match_odds.csv | 0 selected from 3 rows
+2026-08-29T16:46:25.845258+00:00 | INFO  | --- FILE: 2026_05_24_mls_total_25.csv league=mls market=total25 rows=3 mode=all_qualifying
+2026-08-29T16:46:25.845659+00:00 | INFO  | 2026_05_24_mls_total_25.csv | 0 selected from 3 rows
+2026-08-29T16:46:25.846522+00:00 | INFO  | --- FILE: 2026_05_24_mls_total_35.csv league=mls market=total35 rows=3 mode=all_qualifying
+2026-08-29T16:46:25.846908+00:00 | INFO  | 2026_05_24_mls_total_35.csv | 0 selected from 3 rows
+2026-08-29T16:46:25.847797+00:00 | INFO  | --- FILE: 2026_05_24_seriea_btts.csv league=seriea market=btts rows=7 mode=all_qualifying
+2026-08-29T16:46:25.848368+00:00 | INFO  | 2026_05_24_seriea_btts.csv | 3 selected from 7 rows
+2026-08-29T16:46:25.849438+00:00 | INFO  | --- FILE: 2026_05_24_seriea_match_odds.csv league=seriea market=match_odds rows=7 mode=all_qualifying
+2026-08-29T16:46:25.850227+00:00 | INFO  | 2026_05_24_seriea_match_odds.csv | 3 selected from 7 rows
+2026-08-29T16:46:25.851128+00:00 | INFO  | --- FILE: 2026_05_24_seriea_total_25.csv league=seriea market=total25 rows=7 mode=all_qualifying
+2026-08-29T16:46:25.851802+00:00 | INFO  | 2026_05_24_seriea_total_25.csv | 3 selected from 7 rows
+2026-08-29T16:46:25.852695+00:00 | INFO  | --- FILE: 2026_05_24_seriea_total_35.csv league=seriea market=total35 rows=7 mode=all_qualifying
+2026-08-29T16:46:25.853232+00:00 | INFO  | 2026_05_24_seriea_total_35.csv | 0 selected from 7 rows
+2026-08-29T16:46:25.854106+00:00 | INFO  | --- FILE: 2026_05_26_ligue1_btts.csv league=ligue1 market=btts rows=1 mode=all_qualifying
+2026-08-29T16:46:25.854413+00:00 | INFO  | 2026_05_26_ligue1_btts.csv | 0 selected from 1 rows
+2026-08-29T16:46:25.855429+00:00 | INFO  | --- FILE: 2026_05_26_ligue1_match_odds.csv league=ligue1 market=match_odds rows=1 mode=all_qualifying
+2026-08-29T16:46:25.855769+00:00 | INFO  | 2026_05_26_ligue1_match_odds.csv | 0 selected from 1 rows
+2026-08-29T16:46:25.856643+00:00 | INFO  | --- FILE: 2026_05_26_ligue1_total_25.csv league=ligue1 market=total25 rows=1 mode=all_qualifying
+2026-08-29T16:46:25.856940+00:00 | INFO  | 2026_05_26_ligue1_total_25.csv | 0 selected from 1 rows
+2026-08-29T16:46:25.857804+00:00 | INFO  | --- FILE: 2026_05_26_ligue1_total_35.csv league=ligue1 market=total35 rows=1 mode=all_qualifying
+2026-08-29T16:46:25.858106+00:00 | INFO  | 2026_05_26_ligue1_total_35.csv | 0 selected from 1 rows
+2026-08-29T16:46:25.858973+00:00 | INFO  | --- FILE: 2026_05_29_ligue1_btts.csv league=ligue1 market=btts rows=1 mode=all_qualifying
+2026-08-29T16:46:25.859267+00:00 | INFO  | 2026_05_29_ligue1_btts.csv | 0 selected from 1 rows
+2026-08-29T16:46:25.860318+00:00 | INFO  | --- FILE: 2026_05_29_ligue1_match_odds.csv league=ligue1 market=match_odds rows=1 mode=all_qualifying
+2026-08-29T16:46:25.860674+00:00 | INFO  | 2026_05_29_ligue1_match_odds.csv | 0 selected from 1 rows
+2026-08-29T16:46:25.861544+00:00 | INFO  | --- FILE: 2026_05_29_ligue1_total_25.csv league=ligue1 market=total25 rows=1 mode=all_qualifying
+2026-08-29T16:46:25.861836+00:00 | INFO  | 2026_05_29_ligue1_total_25.csv | 0 selected from 1 rows
+2026-08-29T16:46:25.862695+00:00 | INFO  | --- FILE: 2026_05_29_ligue1_total_35.csv league=ligue1 market=total35 rows=1 mode=all_qualifying
+2026-08-29T16:46:25.862986+00:00 | INFO  | 2026_05_29_ligue1_total_35.csv | 0 selected from 1 rows
+2026-08-29T16:46:25.863852+00:00 | INFO  | --- FILE: 2026_07_16_mls_btts.csv league=mls market=btts rows=4 mode=all_qualifying
+2026-08-29T16:46:25.864275+00:00 | INFO  | 2026_07_16_mls_btts.csv | 0 selected from 4 rows
+2026-08-29T16:46:25.865297+00:00 | INFO  | --- FILE: 2026_07_16_mls_match_odds.csv league=mls market=match_odds rows=4 mode=all_qualifying
+2026-08-29T16:46:25.865851+00:00 | INFO  | 2026_07_16_mls_match_odds.csv | 0 selected from 4 rows
+2026-08-29T16:46:25.866739+00:00 | INFO  | --- FILE: 2026_07_16_mls_total_25.csv league=mls market=total25 rows=4 mode=all_qualifying
+2026-08-29T16:46:25.867163+00:00 | INFO  | 2026_07_16_mls_total_25.csv | 0 selected from 4 rows
+2026-08-29T16:46:25.868033+00:00 | INFO  | --- FILE: 2026_07_16_mls_total_35.csv league=mls market=total35 rows=4 mode=all_qualifying
+2026-08-29T16:46:25.868471+00:00 | INFO  | 2026_07_16_mls_total_35.csv | 0 selected from 4 rows
+2026-08-29T16:46:25.869319+00:00 | INFO  | --- FILE: 2026_07_17_mls_btts.csv league=mls market=btts rows=2 mode=all_qualifying
+2026-08-29T16:46:25.869674+00:00 | INFO  | 2026_07_17_mls_btts.csv | 0 selected from 2 rows
+2026-08-29T16:46:25.870691+00:00 | INFO  | --- FILE: 2026_07_17_mls_match_odds.csv league=mls market=match_odds rows=2 mode=all_qualifying
+2026-08-29T16:46:25.871105+00:00 | INFO  | 2026_07_17_mls_match_odds.csv | 0 selected from 2 rows
+2026-08-29T16:46:25.871984+00:00 | INFO  | --- FILE: 2026_07_17_mls_total_25.csv league=mls market=total25 rows=2 mode=all_qualifying
+2026-08-29T16:46:25.872329+00:00 | INFO  | 2026_07_17_mls_total_25.csv | 0 selected from 2 rows
+2026-08-29T16:46:25.873194+00:00 | INFO  | --- FILE: 2026_07_17_mls_total_35.csv league=mls market=total35 rows=2 mode=all_qualifying
+2026-08-29T16:46:25.873553+00:00 | INFO  | 2026_07_17_mls_total_35.csv | 0 selected from 2 rows
+2026-08-29T16:46:25.874439+00:00 | INFO  | --- FILE: 2026_07_22_mls_btts.csv league=mls market=btts rows=14 mode=all_qualifying
+2026-08-29T16:46:25.875211+00:00 | INFO  | 2026_07_22_mls_btts.csv | 0 selected from 14 rows
+2026-08-29T16:46:25.876286+00:00 | INFO  | --- FILE: 2026_07_22_mls_match_odds.csv league=mls market=match_odds rows=14 mode=all_qualifying
+2026-08-29T16:46:25.877419+00:00 | INFO  | 2026_07_22_mls_match_odds.csv | 0 selected from 14 rows
+2026-08-29T16:46:25.878316+00:00 | INFO  | --- FILE: 2026_07_22_mls_total_25.csv league=mls market=total25 rows=14 mode=all_qualifying
+2026-08-29T16:46:25.879115+00:00 | INFO  | 2026_07_22_mls_total_25.csv | 0 selected from 14 rows
+2026-08-29T16:46:25.880036+00:00 | INFO  | --- FILE: 2026_07_22_mls_total_35.csv league=mls market=total35 rows=14 mode=all_qualifying
+2026-08-29T16:46:25.880835+00:00 | INFO  | 2026_07_22_mls_total_35.csv | 0 selected from 14 rows
+2026-08-29T16:46:25.881740+00:00 | INFO  | --- FILE: 2026_07_25_mls_btts.csv league=mls market=btts rows=14 mode=all_qualifying
+2026-08-29T16:46:25.882610+00:00 | INFO  | 2026_07_25_mls_btts.csv | 0 selected from 14 rows
+2026-08-29T16:46:25.883697+00:00 | INFO  | --- FILE: 2026_07_25_mls_match_odds.csv league=mls market=match_odds rows=14 mode=all_qualifying
+2026-08-29T16:46:25.884847+00:00 | INFO  | 2026_07_25_mls_match_odds.csv | 2 selected from 14 rows
+2026-08-29T16:46:25.885763+00:00 | INFO  | --- FILE: 2026_07_25_mls_total_25.csv league=mls market=total25 rows=14 mode=all_qualifying
+2026-08-29T16:46:25.886598+00:00 | INFO  | 2026_07_25_mls_total_25.csv | 0 selected from 14 rows
+2026-08-29T16:46:25.887497+00:00 | INFO  | --- FILE: 2026_07_25_mls_total_35.csv league=mls market=total35 rows=14 mode=all_qualifying
+2026-08-29T16:46:25.888281+00:00 | INFO  | 2026_07_25_mls_total_35.csv | 0 selected from 14 rows
+2026-08-29T16:46:25.889148+00:00 | INFO  | --- FILE: 2026_07_31_mls_btts.csv league=mls market=btts rows=1 mode=all_qualifying
+2026-08-29T16:46:25.889455+00:00 | INFO  | 2026_07_31_mls_btts.csv | 0 selected from 1 rows
+2026-08-29T16:46:25.890495+00:00 | INFO  | --- FILE: 2026_07_31_mls_match_odds.csv league=mls market=match_odds rows=1 mode=all_qualifying
+2026-08-29T16:46:25.890841+00:00 | INFO  | 2026_07_31_mls_match_odds.csv | 0 selected from 1 rows
+2026-08-29T16:46:25.891719+00:00 | INFO  | --- FILE: 2026_07_31_mls_total_25.csv league=mls market=total25 rows=1 mode=all_qualifying
+2026-08-29T16:46:25.892011+00:00 | INFO  | 2026_07_31_mls_total_25.csv | 0 selected from 1 rows
+2026-08-29T16:46:25.892881+00:00 | INFO  | --- FILE: 2026_07_31_mls_total_35.csv league=mls market=total35 rows=1 mode=all_qualifying
+2026-08-29T16:46:25.893175+00:00 | INFO  | 2026_07_31_mls_total_35.csv | 0 selected from 1 rows
+2026-08-29T16:46:25.894066+00:00 | INFO  | --- FILE: 2026_08_01_mls_btts.csv league=mls market=btts rows=14 mode=all_qualifying
+2026-08-29T16:46:25.894856+00:00 | INFO  | 2026_08_01_mls_btts.csv | 0 selected from 14 rows
+2026-08-29T16:46:25.895938+00:00 | INFO  | --- FILE: 2026_08_01_mls_match_odds.csv league=mls market=match_odds rows=14 mode=all_qualifying
+2026-08-29T16:46:25.897077+00:00 | INFO  | 2026_08_01_mls_match_odds.csv | 1 selected from 14 rows
+2026-08-29T16:46:25.897988+00:00 | INFO  | --- FILE: 2026_08_01_mls_total_25.csv league=mls market=total25 rows=14 mode=all_qualifying
+2026-08-29T16:46:25.898787+00:00 | INFO  | 2026_08_01_mls_total_25.csv | 0 selected from 14 rows
+2026-08-29T16:46:25.899690+00:00 | INFO  | --- FILE: 2026_08_01_mls_total_35.csv league=mls market=total35 rows=14 mode=all_qualifying
+2026-08-29T16:46:25.900475+00:00 | INFO  | 2026_08_01_mls_total_35.csv | 0 selected from 14 rows
+2026-08-29T16:46:25.901321+00:00 | INFO  | --- FILE: 2026_08_08_mls_btts.csv league=mls market=btts rows=1 mode=all_qualifying
+2026-08-29T16:46:25.901641+00:00 | INFO  | 2026_08_08_mls_btts.csv | 0 selected from 1 rows
+2026-08-29T16:46:25.902655+00:00 | INFO  | --- FILE: 2026_08_08_mls_match_odds.csv league=mls market=match_odds rows=1 mode=all_qualifying
+2026-08-29T16:46:25.902991+00:00 | INFO  | 2026_08_08_mls_match_odds.csv | 0 selected from 1 rows
+2026-08-29T16:46:25.903839+00:00 | INFO  | --- FILE: 2026_08_08_mls_total_25.csv league=mls market=total25 rows=1 mode=all_qualifying
+2026-08-29T16:46:25.904142+00:00 | INFO  | 2026_08_08_mls_total_25.csv | 0 selected from 1 rows
+2026-08-29T16:46:25.904989+00:00 | INFO  | --- FILE: 2026_08_08_mls_total_35.csv league=mls market=total35 rows=1 mode=all_qualifying
+2026-08-29T16:46:25.905310+00:00 | INFO  | 2026_08_08_mls_total_35.csv | 1 selected from 1 rows
+2026-08-29T16:46:25.906175+00:00 | INFO  | --- FILE: 2026_08_15_laliga_btts.csv league=laliga market=btts rows=2 mode=all_qualifying
+2026-08-29T16:46:25.906535+00:00 | INFO  | 2026_08_15_laliga_btts.csv | 0 selected from 2 rows
+2026-08-29T16:46:25.907544+00:00 | INFO  | --- FILE: 2026_08_15_laliga_match_odds.csv league=laliga market=match_odds rows=2 mode=all_qualifying
+2026-08-29T16:46:25.907964+00:00 | INFO  | 2026_08_15_laliga_match_odds.csv | 0 selected from 2 rows
+2026-08-29T16:46:25.908832+00:00 | INFO  | --- FILE: 2026_08_15_laliga_total_25.csv league=laliga market=total25 rows=2 mode=all_qualifying
+2026-08-29T16:46:25.909187+00:00 | INFO  | 2026_08_15_laliga_total_25.csv | 0 selected from 2 rows
+2026-08-29T16:46:25.910052+00:00 | INFO  | --- FILE: 2026_08_15_laliga_total_35.csv league=laliga market=total35 rows=2 mode=all_qualifying
+2026-08-29T16:46:25.910374+00:00 | INFO  | 2026_08_15_laliga_total_35.csv | 0 selected from 2 rows
+2026-08-29T16:46:25.911260+00:00 | INFO  | --- FILE: 2026_08_15_mls_btts.csv league=mls market=btts rows=11 mode=all_qualifying
+2026-08-29T16:46:25.912080+00:00 | INFO  | 2026_08_15_mls_btts.csv | 3 selected from 11 rows
+2026-08-29T16:46:25.913188+00:00 | INFO  | --- FILE: 2026_08_15_mls_match_odds.csv league=mls market=match_odds rows=11 mode=all_qualifying
+2026-08-29T16:46:25.914130+00:00 | INFO  | 2026_08_15_mls_match_odds.csv | 0 selected from 11 rows
+2026-08-29T16:46:25.915021+00:00 | INFO  | --- FILE: 2026_08_15_mls_total_25.csv league=mls market=total25 rows=11 mode=all_qualifying
+2026-08-29T16:46:25.915762+00:00 | INFO  | 2026_08_15_mls_total_25.csv | 0 selected from 11 rows
+2026-08-29T16:46:25.916645+00:00 | INFO  | --- FILE: 2026_08_15_mls_total_35.csv league=mls market=total35 rows=11 mode=all_qualifying
+2026-08-29T16:46:25.917478+00:00 | INFO  | 2026_08_15_mls_total_35.csv | 6 selected from 11 rows
+2026-08-29T16:46:25.918342+00:00 | INFO  | --- FILE: 2026_08_16_laliga_btts.csv league=laliga market=btts rows=1 mode=all_qualifying
+2026-08-29T16:46:25.918652+00:00 | INFO  | 2026_08_16_laliga_btts.csv | 0 selected from 1 rows
+2026-08-29T16:46:25.919667+00:00 | INFO  | --- FILE: 2026_08_16_laliga_match_odds.csv league=laliga market=match_odds rows=1 mode=all_qualifying
+2026-08-29T16:46:25.920007+00:00 | INFO  | 2026_08_16_laliga_match_odds.csv | 0 selected from 1 rows
+2026-08-29T16:46:25.920868+00:00 | INFO  | --- FILE: 2026_08_16_laliga_total_25.csv league=laliga market=total25 rows=1 mode=all_qualifying
+2026-08-29T16:46:25.921172+00:00 | INFO  | 2026_08_16_laliga_total_25.csv | 0 selected from 1 rows
+2026-08-29T16:46:25.922034+00:00 | INFO  | --- FILE: 2026_08_16_laliga_total_35.csv league=laliga market=total35 rows=1 mode=all_qualifying
+2026-08-29T16:46:25.922316+00:00 | INFO  | 2026_08_16_laliga_total_35.csv | 0 selected from 1 rows
+2026-08-29T16:46:25.923170+00:00 | INFO  | --- FILE: 2026_08_16_mls_btts.csv league=mls market=btts rows=4 mode=all_qualifying
+2026-08-29T16:46:25.923627+00:00 | INFO  | 2026_08_16_mls_btts.csv | 0 selected from 4 rows
+2026-08-29T16:46:25.924659+00:00 | INFO  | --- FILE: 2026_08_16_mls_match_odds.csv league=mls market=match_odds rows=4 mode=all_qualifying
+2026-08-29T16:46:25.925198+00:00 | INFO  | 2026_08_16_mls_match_odds.csv | 0 selected from 4 rows
+2026-08-29T16:46:25.926066+00:00 | INFO  | --- FILE: 2026_08_16_mls_total_25.csv league=mls market=total25 rows=4 mode=all_qualifying
+2026-08-29T16:46:25.926538+00:00 | INFO  | 2026_08_16_mls_total_25.csv | 0 selected from 4 rows
+2026-08-29T16:46:25.927383+00:00 | INFO  | --- FILE: 2026_08_16_mls_total_35.csv league=mls market=total35 rows=4 mode=all_qualifying
+2026-08-29T16:46:25.927847+00:00 | INFO  | 2026_08_16_mls_total_35.csv | 1 selected from 4 rows
+2026-08-29T16:46:25.928757+00:00 | INFO  | --- FILE: 2026_08_19_mls_btts.csv league=mls market=btts rows=15 mode=all_qualifying
+2026-08-29T16:46:25.929661+00:00 | INFO  | 2026_08_19_mls_btts.csv | 1 selected from 15 rows
+2026-08-29T16:46:25.930748+00:00 | INFO  | --- FILE: 2026_08_19_mls_match_odds.csv league=mls market=match_odds rows=15 mode=all_qualifying
+2026-08-29T16:46:25.931928+00:00 | INFO  | 2026_08_19_mls_match_odds.csv | 0 selected from 15 rows
+2026-08-29T16:46:25.932829+00:00 | INFO  | --- FILE: 2026_08_19_mls_total_25.csv league=mls market=total25 rows=15 mode=all_qualifying
+2026-08-29T16:46:25.933726+00:00 | INFO  | 2026_08_19_mls_total_25.csv | 0 selected from 15 rows
+2026-08-29T16:46:25.934630+00:00 | INFO  | --- FILE: 2026_08_19_mls_total_35.csv league=mls market=total35 rows=15 mode=all_qualifying
+2026-08-29T16:46:25.935692+00:00 | INFO  | 2026_08_19_mls_total_35.csv | 9 selected from 15 rows
+2026-08-29T16:46:25.936581+00:00 | INFO  | --- FILE: 2026_08_20_laliga_btts.csv league=laliga market=btts rows=1 mode=all_qualifying
+2026-08-29T16:46:25.936879+00:00 | INFO  | 2026_08_20_laliga_btts.csv | 0 selected from 1 rows
+2026-08-29T16:46:25.937896+00:00 | INFO  | --- FILE: 2026_08_20_laliga_match_odds.csv league=laliga market=match_odds rows=1 mode=all_qualifying
+2026-08-29T16:46:25.938242+00:00 | INFO  | 2026_08_20_laliga_match_odds.csv | 0 selected from 1 rows
+2026-08-29T16:46:25.939097+00:00 | INFO  | --- FILE: 2026_08_20_laliga_total_25.csv league=laliga market=total25 rows=1 mode=all_qualifying
+2026-08-29T16:46:25.939414+00:00 | INFO  | 2026_08_20_laliga_total_25.csv | 0 selected from 1 rows
+2026-08-29T16:46:25.940259+00:00 | INFO  | --- FILE: 2026_08_20_laliga_total_35.csv league=laliga market=total35 rows=1 mode=all_qualifying
+2026-08-29T16:46:25.940558+00:00 | INFO  | 2026_08_20_laliga_total_35.csv | 0 selected from 1 rows
+2026-08-29T16:46:25.941428+00:00 | INFO  | --- FILE: 2026_08_21_epl_btts.csv league=epl market=btts rows=1 mode=all_qualifying
+2026-08-29T16:46:25.941757+00:00 | INFO  | 2026_08_21_epl_btts.csv | 0 selected from 1 rows
+2026-08-29T16:46:25.942799+00:00 | INFO  | --- FILE: 2026_08_21_epl_match_odds.csv league=epl market=match_odds rows=1 mode=pick_one
+2026-08-29T16:46:25.943144+00:00 | INFO  | 2026_08_21_epl_match_odds.csv | 0 selected from 1 rows
+2026-08-29T16:46:25.944043+00:00 | INFO  | --- FILE: 2026_08_21_epl_total_25.csv league=epl market=total25 rows=1 mode=all_qualifying
+2026-08-29T16:46:25.944370+00:00 | INFO  | 2026_08_21_epl_total_25.csv | 1 selected from 1 rows
+2026-08-29T16:46:25.945222+00:00 | INFO  | --- FILE: 2026_08_21_epl_total_35.csv league=epl market=total35 rows=1 mode=all_qualifying
+2026-08-29T16:46:25.945541+00:00 | INFO  | 2026_08_21_epl_total_35.csv | 0 selected from 1 rows
+2026-08-29T16:46:25.946382+00:00 | INFO  | --- FILE: 2026_08_21_laliga_btts.csv league=laliga market=btts rows=1 mode=all_qualifying
+2026-08-29T16:46:25.946693+00:00 | INFO  | 2026_08_21_laliga_btts.csv | 0 selected from 1 rows
+2026-08-29T16:46:25.947708+00:00 | INFO  | --- FILE: 2026_08_21_laliga_match_odds.csv league=laliga market=match_odds rows=1 mode=all_qualifying
+2026-08-29T16:46:25.948054+00:00 | INFO  | 2026_08_21_laliga_match_odds.csv | 0 selected from 1 rows
+2026-08-29T16:46:25.948928+00:00 | INFO  | --- FILE: 2026_08_21_laliga_total_25.csv league=laliga market=total25 rows=1 mode=all_qualifying
+2026-08-29T16:46:25.949252+00:00 | INFO  | 2026_08_21_laliga_total_25.csv | 0 selected from 1 rows
+2026-08-29T16:46:25.950135+00:00 | INFO  | --- FILE: 2026_08_21_laliga_total_35.csv league=laliga market=total35 rows=1 mode=all_qualifying
+2026-08-29T16:46:25.950436+00:00 | INFO  | 2026_08_21_laliga_total_35.csv | 0 selected from 1 rows
+2026-08-29T16:46:25.951275+00:00 | INFO  | --- FILE: 2026_08_21_ligue1_btts.csv league=ligue1 market=btts rows=1 mode=all_qualifying
+2026-08-29T16:46:25.951595+00:00 | INFO  | 2026_08_21_ligue1_btts.csv | 0 selected from 1 rows
+2026-08-29T16:46:25.952607+00:00 | INFO  | --- FILE: 2026_08_21_ligue1_match_odds.csv league=ligue1 market=match_odds rows=1 mode=all_qualifying
+2026-08-29T16:46:25.952942+00:00 | INFO  | 2026_08_21_ligue1_match_odds.csv | 0 selected from 1 rows
+2026-08-29T16:46:25.953840+00:00 | INFO  | --- FILE: 2026_08_21_ligue1_total_25.csv league=ligue1 market=total25 rows=1 mode=all_qualifying
+2026-08-29T16:46:25.954131+00:00 | INFO  | 2026_08_21_ligue1_total_25.csv | 0 selected from 1 rows
+2026-08-29T16:46:25.954981+00:00 | INFO  | --- FILE: 2026_08_21_ligue1_total_35.csv league=ligue1 market=total35 rows=1 mode=all_qualifying
+2026-08-29T16:46:25.955301+00:00 | INFO  | 2026_08_21_ligue1_total_35.csv | 1 selected from 1 rows
+2026-08-29T16:46:25.956159+00:00 | INFO  | --- FILE: 2026_08_22_epl_btts.csv league=epl market=btts rows=5 mode=all_qualifying
+2026-08-29T16:46:25.956712+00:00 | INFO  | 2026_08_22_epl_btts.csv | 2 selected from 5 rows
+2026-08-29T16:46:25.957748+00:00 | INFO  | --- FILE: 2026_08_22_epl_match_odds.csv league=epl market=match_odds rows=5 mode=pick_one
+2026-08-29T16:46:25.958344+00:00 | INFO  | 2026_08_22_epl_match_odds.csv | 0 selected from 5 rows
+2026-08-29T16:46:25.959208+00:00 | INFO  | --- FILE: 2026_08_22_epl_total_25.csv league=epl market=total25 rows=5 mode=all_qualifying
+2026-08-29T16:46:25.959788+00:00 | INFO  | 2026_08_22_epl_total_25.csv | 4 selected from 5 rows
+2026-08-29T16:46:25.960661+00:00 | INFO  | --- FILE: 2026_08_22_epl_total_35.csv league=epl market=total35 rows=5 mode=all_qualifying
+2026-08-29T16:46:25.961193+00:00 | INFO  | 2026_08_22_epl_total_35.csv | 3 selected from 5 rows
+2026-08-29T16:46:25.962052+00:00 | INFO  | --- FILE: 2026_08_22_laliga_btts.csv league=laliga market=btts rows=3 mode=all_qualifying
+2026-08-29T16:46:25.962459+00:00 | INFO  | 2026_08_22_laliga_btts.csv | 0 selected from 3 rows
+2026-08-29T16:46:25.963474+00:00 | INFO  | --- FILE: 2026_08_22_laliga_match_odds.csv league=laliga market=match_odds rows=3 mode=all_qualifying
+2026-08-29T16:46:25.963967+00:00 | INFO  | 2026_08_22_laliga_match_odds.csv | 1 selected from 3 rows
+2026-08-29T16:46:25.964830+00:00 | INFO  | --- FILE: 2026_08_22_laliga_total_25.csv league=laliga market=total25 rows=3 mode=all_qualifying
+2026-08-29T16:46:25.965244+00:00 | INFO  | 2026_08_22_laliga_total_25.csv | 0 selected from 3 rows
+2026-08-29T16:46:25.966105+00:00 | INFO  | --- FILE: 2026_08_22_laliga_total_35.csv league=laliga market=total35 rows=3 mode=all_qualifying
+2026-08-29T16:46:25.966497+00:00 | INFO  | 2026_08_22_laliga_total_35.csv | 1 selected from 3 rows
+2026-08-29T16:46:25.967358+00:00 | INFO  | --- FILE: 2026_08_22_ligue1_btts.csv league=ligue1 market=btts rows=5 mode=all_qualifying
+2026-08-29T16:46:25.967826+00:00 | INFO  | 2026_08_22_ligue1_btts.csv | 0 selected from 5 rows
+2026-08-29T16:46:25.968852+00:00 | INFO  | --- FILE: 2026_08_22_ligue1_match_odds.csv league=ligue1 market=match_odds rows=5 mode=all_qualifying
+2026-08-29T16:46:25.969469+00:00 | INFO  | 2026_08_22_ligue1_match_odds.csv | 1 selected from 5 rows
+2026-08-29T16:46:25.970315+00:00 | INFO  | --- FILE: 2026_08_22_ligue1_total_25.csv league=ligue1 market=total25 rows=5 mode=all_qualifying
+2026-08-29T16:46:25.970818+00:00 | INFO  | 2026_08_22_ligue1_total_25.csv | 0 selected from 5 rows
+2026-08-29T16:46:25.971690+00:00 | INFO  | --- FILE: 2026_08_22_ligue1_total_35.csv league=ligue1 market=total35 rows=5 mode=all_qualifying
+2026-08-29T16:46:25.972141+00:00 | INFO  | 2026_08_22_ligue1_total_35.csv | 0 selected from 5 rows
+2026-08-29T16:46:25.973023+00:00 | INFO  | --- FILE: 2026_08_22_mls_btts.csv league=mls market=btts rows=13 mode=all_qualifying
+2026-08-29T16:46:25.973871+00:00 | INFO  | 2026_08_22_mls_btts.csv | 0 selected from 13 rows
+2026-08-29T16:46:25.974943+00:00 | INFO  | --- FILE: 2026_08_22_mls_match_odds.csv league=mls market=match_odds rows=13 mode=all_qualifying
+2026-08-29T16:46:25.976010+00:00 | INFO  | 2026_08_22_mls_match_odds.csv | 0 selected from 13 rows
+2026-08-29T16:46:25.976909+00:00 | INFO  | --- FILE: 2026_08_22_mls_total_25.csv league=mls market=total25 rows=13 mode=all_qualifying
+2026-08-29T16:46:25.977714+00:00 | INFO  | 2026_08_22_mls_total_25.csv | 0 selected from 13 rows
+2026-08-29T16:46:25.978611+00:00 | INFO  | --- FILE: 2026_08_22_mls_total_35.csv league=mls market=total35 rows=13 mode=all_qualifying
+2026-08-29T16:46:25.979565+00:00 | INFO  | 2026_08_22_mls_total_35.csv | 8 selected from 13 rows
+2026-08-29T16:46:25.980424+00:00 | INFO  | --- FILE: 2026_08_22_seriea_btts.csv league=seriea market=btts rows=2 mode=all_qualifying
+2026-08-29T16:46:25.980753+00:00 | INFO  | 2026_08_22_seriea_btts.csv | 0 selected from 2 rows
+2026-08-29T16:46:25.981780+00:00 | INFO  | --- FILE: 2026_08_22_seriea_match_odds.csv league=seriea market=match_odds rows=2 mode=all_qualifying
+2026-08-29T16:46:25.982210+00:00 | INFO  | 2026_08_22_seriea_match_odds.csv | 1 selected from 2 rows
+2026-08-29T16:46:25.983077+00:00 | INFO  | --- FILE: 2026_08_22_seriea_total_25.csv league=seriea market=total25 rows=2 mode=all_qualifying
+2026-08-29T16:46:25.983470+00:00 | INFO  | 2026_08_22_seriea_total_25.csv | 1 selected from 2 rows
+2026-08-29T16:46:25.984313+00:00 | INFO  | --- FILE: 2026_08_22_seriea_total_35.csv league=seriea market=total35 rows=2 mode=all_qualifying
+2026-08-29T16:46:25.984669+00:00 | INFO  | 2026_08_22_seriea_total_35.csv | 0 selected from 2 rows
+2026-08-29T16:46:25.985518+00:00 | INFO  | --- FILE: 2026_08_23_epl_btts.csv league=epl market=btts rows=3 mode=all_qualifying
+2026-08-29T16:46:25.985995+00:00 | INFO  | 2026_08_23_epl_btts.csv | 2 selected from 3 rows
+2026-08-29T16:46:25.987022+00:00 | INFO  | --- FILE: 2026_08_23_epl_match_odds.csv league=epl market=match_odds rows=3 mode=pick_one
+2026-08-29T16:46:25.987521+00:00 | INFO  | 2026_08_23_epl_match_odds.csv | 0 selected from 3 rows
+2026-08-29T16:46:25.988369+00:00 | INFO  | --- FILE: 2026_08_23_epl_total_25.csv league=epl market=total25 rows=3 mode=all_qualifying
+2026-08-29T16:46:25.988804+00:00 | INFO  | 2026_08_23_epl_total_25.csv | 1 selected from 3 rows
+2026-08-29T16:46:25.989656+00:00 | INFO  | --- FILE: 2026_08_23_epl_total_35.csv league=epl market=total35 rows=3 mode=all_qualifying
+2026-08-29T16:46:25.990068+00:00 | INFO  | 2026_08_23_epl_total_35.csv | 1 selected from 3 rows
+2026-08-29T16:46:25.990926+00:00 | INFO  | --- FILE: 2026_08_23_laliga_btts.csv league=laliga market=btts rows=2 mode=all_qualifying
+2026-08-29T16:46:25.991263+00:00 | INFO  | 2026_08_23_laliga_btts.csv | 0 selected from 2 rows
+2026-08-29T16:46:25.992275+00:00 | INFO  | --- FILE: 2026_08_23_laliga_match_odds.csv league=laliga market=match_odds rows=2 mode=all_qualifying
+2026-08-29T16:46:25.992707+00:00 | INFO  | 2026_08_23_laliga_match_odds.csv | 0 selected from 2 rows
+2026-08-29T16:46:25.993564+00:00 | INFO  | --- FILE: 2026_08_23_laliga_total_25.csv league=laliga market=total25 rows=2 mode=all_qualifying
+2026-08-29T16:46:25.993916+00:00 | INFO  | 2026_08_23_laliga_total_25.csv | 0 selected from 2 rows
+2026-08-29T16:46:25.994767+00:00 | INFO  | --- FILE: 2026_08_23_laliga_total_35.csv league=laliga market=total35 rows=2 mode=all_qualifying
+2026-08-29T16:46:25.995112+00:00 | INFO  | 2026_08_23_laliga_total_35.csv | 1 selected from 2 rows
+2026-08-29T16:46:25.995958+00:00 | INFO  | --- FILE: 2026_08_23_ligue1_btts.csv league=ligue1 market=btts rows=2 mode=all_qualifying
+2026-08-29T16:46:25.996326+00:00 | INFO  | 2026_08_23_ligue1_btts.csv | 1 selected from 2 rows
+2026-08-29T16:46:25.997330+00:00 | INFO  | --- FILE: 2026_08_23_ligue1_match_odds.csv league=ligue1 market=match_odds rows=2 mode=all_qualifying
+2026-08-29T16:46:25.997769+00:00 | INFO  | 2026_08_23_ligue1_match_odds.csv | 1 selected from 2 rows
+2026-08-29T16:46:25.998644+00:00 | INFO  | --- FILE: 2026_08_23_ligue1_total_25.csv league=ligue1 market=total25 rows=2 mode=all_qualifying
+2026-08-29T16:46:25.998995+00:00 | INFO  | 2026_08_23_ligue1_total_25.csv | 0 selected from 2 rows
+2026-08-29T16:46:25.999854+00:00 | INFO  | --- FILE: 2026_08_23_ligue1_total_35.csv league=ligue1 market=total35 rows=2 mode=all_qualifying
+2026-08-29T16:46:26.000188+00:00 | INFO  | 2026_08_23_ligue1_total_35.csv | 0 selected from 2 rows
+2026-08-29T16:46:26.001031+00:00 | INFO  | --- FILE: 2026_08_23_mls_btts.csv league=mls market=btts rows=2 mode=all_qualifying
+2026-08-29T16:46:26.001378+00:00 | INFO  | 2026_08_23_mls_btts.csv | 0 selected from 2 rows
+2026-08-29T16:46:26.002378+00:00 | INFO  | --- FILE: 2026_08_23_mls_match_odds.csv league=mls market=match_odds rows=2 mode=all_qualifying
+2026-08-29T16:46:26.002801+00:00 | INFO  | 2026_08_23_mls_match_odds.csv | 0 selected from 2 rows
+2026-08-29T16:46:26.003665+00:00 | INFO  | --- FILE: 2026_08_23_mls_total_25.csv league=mls market=total25 rows=2 mode=all_qualifying
+2026-08-29T16:46:26.004016+00:00 | INFO  | 2026_08_23_mls_total_25.csv | 0 selected from 2 rows
+2026-08-29T16:46:26.004868+00:00 | INFO  | --- FILE: 2026_08_23_mls_total_35.csv league=mls market=total35 rows=2 mode=all_qualifying
+2026-08-29T16:46:26.005231+00:00 | INFO  | 2026_08_23_mls_total_35.csv | 1 selected from 2 rows
+2026-08-29T16:46:26.006075+00:00 | INFO  | --- FILE: 2026_08_23_seriea_btts.csv league=seriea market=btts rows=4 mode=all_qualifying
+2026-08-29T16:46:26.006513+00:00 | INFO  | 2026_08_23_seriea_btts.csv | 1 selected from 4 rows
+2026-08-29T16:46:26.007557+00:00 | INFO  | --- FILE: 2026_08_23_seriea_match_odds.csv league=seriea market=match_odds rows=4 mode=all_qualifying
+2026-08-29T16:46:26.008149+00:00 | INFO  | 2026_08_23_seriea_match_odds.csv | 3 selected from 4 rows
+2026-08-29T16:46:26.009023+00:00 | INFO  | --- FILE: 2026_08_23_seriea_total_25.csv league=seriea market=total25 rows=4 mode=all_qualifying
+2026-08-29T16:46:26.009525+00:00 | INFO  | 2026_08_23_seriea_total_25.csv | 1 selected from 4 rows
+2026-08-29T16:46:26.010380+00:00 | INFO  | --- FILE: 2026_08_23_seriea_total_35.csv league=seriea market=total35 rows=4 mode=all_qualifying
+2026-08-29T16:46:26.010828+00:00 | INFO  | 2026_08_23_seriea_total_35.csv | 0 selected from 4 rows
+2026-08-29T16:46:26.011695+00:00 | INFO  | --- FILE: 2026_08_24_epl_btts.csv league=epl market=btts rows=1 mode=all_qualifying
+2026-08-29T16:46:26.011986+00:00 | INFO  | 2026_08_24_epl_btts.csv | 0 selected from 1 rows
+2026-08-29T16:46:26.012995+00:00 | INFO  | --- FILE: 2026_08_24_epl_match_odds.csv league=epl market=match_odds rows=1 mode=pick_one
+2026-08-29T16:46:26.013334+00:00 | INFO  | 2026_08_24_epl_match_odds.csv | 0 selected from 1 rows
+2026-08-29T16:46:26.014191+00:00 | INFO  | --- FILE: 2026_08_24_epl_total_25.csv league=epl market=total25 rows=1 mode=all_qualifying
+2026-08-29T16:46:26.014534+00:00 | INFO  | 2026_08_24_epl_total_25.csv | 1 selected from 1 rows
+2026-08-29T16:46:26.015381+00:00 | INFO  | --- FILE: 2026_08_24_epl_total_35.csv league=epl market=total35 rows=1 mode=all_qualifying
+2026-08-29T16:46:26.015698+00:00 | INFO  | 2026_08_24_epl_total_35.csv | 0 selected from 1 rows
+2026-08-29T16:46:26.016550+00:00 | INFO  | --- FILE: 2026_08_24_laliga_btts.csv league=laliga market=btts rows=1 mode=all_qualifying
+2026-08-29T16:46:26.016841+00:00 | INFO  | 2026_08_24_laliga_btts.csv | 0 selected from 1 rows
+2026-08-29T16:46:26.017844+00:00 | INFO  | --- FILE: 2026_08_24_laliga_match_odds.csv league=laliga market=match_odds rows=1 mode=all_qualifying
+2026-08-29T16:46:26.018193+00:00 | INFO  | 2026_08_24_laliga_match_odds.csv | 0 selected from 1 rows
+2026-08-29T16:46:26.019053+00:00 | INFO  | --- FILE: 2026_08_24_laliga_total_25.csv league=laliga market=total25 rows=1 mode=all_qualifying
+2026-08-29T16:46:26.019358+00:00 | INFO  | 2026_08_24_laliga_total_25.csv | 0 selected from 1 rows
+2026-08-29T16:46:26.020221+00:00 | INFO  | --- FILE: 2026_08_24_laliga_total_35.csv league=laliga market=total35 rows=1 mode=all_qualifying
+2026-08-29T16:46:26.020524+00:00 | INFO  | 2026_08_24_laliga_total_35.csv | 0 selected from 1 rows
+2026-08-29T16:46:26.021361+00:00 | INFO  | --- FILE: 2026_08_24_seriea_btts.csv league=seriea market=btts rows=2 mode=all_qualifying
+2026-08-29T16:46:26.021707+00:00 | INFO  | 2026_08_24_seriea_btts.csv | 0 selected from 2 rows
+2026-08-29T16:46:26.022726+00:00 | INFO  | --- FILE: 2026_08_24_seriea_match_odds.csv league=seriea market=match_odds rows=2 mode=all_qualifying
+2026-08-29T16:46:26.023147+00:00 | INFO  | 2026_08_24_seriea_match_odds.csv | 0 selected from 2 rows
+2026-08-29T16:46:26.023999+00:00 | INFO  | --- FILE: 2026_08_24_seriea_total_25.csv league=seriea market=total25 rows=2 mode=all_qualifying
+2026-08-29T16:46:26.024411+00:00 | INFO  | 2026_08_24_seriea_total_25.csv | 2 selected from 2 rows
+2026-08-29T16:46:26.025255+00:00 | INFO  | --- FILE: 2026_08_24_seriea_total_35.csv league=seriea market=total35 rows=2 mode=all_qualifying
+2026-08-29T16:46:26.025612+00:00 | INFO  | 2026_08_24_seriea_total_35.csv | 0 selected from 2 rows
+2026-08-29T16:46:26.026457+00:00 | INFO  | --- FILE: 2026_08_25_laliga_btts.csv league=laliga market=btts rows=1 mode=all_qualifying
+2026-08-29T16:46:26.026758+00:00 | INFO  | 2026_08_25_laliga_btts.csv | 0 selected from 1 rows
+2026-08-29T16:46:26.027769+00:00 | INFO  | --- FILE: 2026_08_25_laliga_match_odds.csv league=laliga market=match_odds rows=1 mode=all_qualifying
+2026-08-29T16:46:26.028120+00:00 | INFO  | 2026_08_25_laliga_match_odds.csv | 0 selected from 1 rows
+2026-08-29T16:46:26.028976+00:00 | INFO  | --- FILE: 2026_08_25_laliga_total_25.csv league=laliga market=total25 rows=1 mode=all_qualifying
+2026-08-29T16:46:26.029279+00:00 | INFO  | 2026_08_25_laliga_total_25.csv | 0 selected from 1 rows
+2026-08-29T16:46:26.030139+00:00 | INFO  | --- FILE: 2026_08_25_laliga_total_35.csv league=laliga market=total35 rows=1 mode=all_qualifying
+2026-08-29T16:46:26.030433+00:00 | INFO  | 2026_08_25_laliga_total_35.csv | 0 selected from 1 rows
+2026-08-29T16:46:26.031341+00:00 | INFO  | --- FILE: 2026_08_26_laliga_btts.csv league=laliga market=btts rows=1 mode=all_qualifying
+2026-08-29T16:46:26.031655+00:00 | INFO  | 2026_08_26_laliga_btts.csv | 0 selected from 1 rows
+2026-08-29T16:46:26.032672+00:00 | INFO  | --- FILE: 2026_08_26_laliga_match_odds.csv league=laliga market=match_odds rows=1 mode=all_qualifying
+2026-08-29T16:46:26.033014+00:00 | INFO  | 2026_08_26_laliga_match_odds.csv | 0 selected from 1 rows
+2026-08-29T16:46:26.033883+00:00 | INFO  | --- FILE: 2026_08_26_laliga_total_25.csv league=laliga market=total25 rows=1 mode=all_qualifying
+2026-08-29T16:46:26.034175+00:00 | INFO  | 2026_08_26_laliga_total_25.csv | 0 selected from 1 rows
+2026-08-29T16:46:26.035026+00:00 | INFO  | --- FILE: 2026_08_26_laliga_total_35.csv league=laliga market=total35 rows=1 mode=all_qualifying
+2026-08-29T16:46:26.035332+00:00 | INFO  | 2026_08_26_laliga_total_35.csv | 1 selected from 1 rows
+2026-08-29T16:46:26.036194+00:00 | INFO  | --- FILE: 2026_08_28_bundesliga_btts.csv league=bundesliga market=btts rows=1 mode=all_qualifying
+2026-08-29T16:46:26.036494+00:00 | INFO  | 2026_08_28_bundesliga_btts.csv | 0 selected from 1 rows
+2026-08-29T16:46:26.037501+00:00 | INFO  | --- FILE: 2026_08_28_bundesliga_match_odds.csv league=bundesliga market=match_odds rows=1 mode=all_qualifying
+2026-08-29T16:46:26.037845+00:00 | INFO  | 2026_08_28_bundesliga_match_odds.csv | 0 selected from 1 rows
+2026-08-29T16:46:26.038737+00:00 | INFO  | --- FILE: 2026_08_28_bundesliga_total_25.csv league=bundesliga market=total25 rows=1 mode=all_qualifying
+2026-08-29T16:46:26.039034+00:00 | INFO  | 2026_08_28_bundesliga_total_25.csv | 0 selected from 1 rows
+2026-08-29T16:46:26.039904+00:00 | INFO  | --- FILE: 2026_08_28_bundesliga_total_35.csv league=bundesliga market=total35 rows=1 mode=all_qualifying
+2026-08-29T16:46:26.040224+00:00 | INFO  | 2026_08_28_bundesliga_total_35.csv | 1 selected from 1 rows
+2026-08-29T16:46:26.041088+00:00 | INFO  | --- FILE: 2026_08_28_epl_btts.csv league=epl market=btts rows=1 mode=all_qualifying
+2026-08-29T16:46:26.041385+00:00 | INFO  | 2026_08_28_epl_btts.csv | 0 selected from 1 rows
+2026-08-29T16:46:26.042416+00:00 | INFO  | --- FILE: 2026_08_28_epl_match_odds.csv league=epl market=match_odds rows=1 mode=pick_one
+2026-08-29T16:46:26.042763+00:00 | INFO  | 2026_08_28_epl_match_odds.csv | 0 selected from 1 rows
+2026-08-29T16:46:26.043620+00:00 | INFO  | --- FILE: 2026_08_28_epl_total_25.csv league=epl market=total25 rows=1 mode=all_qualifying
+2026-08-29T16:46:26.043923+00:00 | INFO  | 2026_08_28_epl_total_25.csv | 0 selected from 1 rows
+2026-08-29T16:46:26.044791+00:00 | INFO  | --- FILE: 2026_08_28_epl_total_35.csv league=epl market=total35 rows=1 mode=all_qualifying
+2026-08-29T16:46:26.045080+00:00 | INFO  | 2026_08_28_epl_total_35.csv | 0 selected from 1 rows
+2026-08-29T16:46:26.045939+00:00 | INFO  | --- FILE: 2026_08_29_bundesliga_btts.csv league=bundesliga market=btts rows=2 mode=all_qualifying
+2026-08-29T16:46:26.046262+00:00 | INFO  | 2026_08_29_bundesliga_btts.csv | 0 selected from 2 rows
+2026-08-29T16:46:26.047270+00:00 | INFO  | --- FILE: 2026_08_29_bundesliga_match_odds.csv league=bundesliga market=match_odds rows=2 mode=all_qualifying
+2026-08-29T16:46:26.047705+00:00 | INFO  | 2026_08_29_bundesliga_match_odds.csv | 0 selected from 2 rows
+2026-08-29T16:46:26.048579+00:00 | INFO  | --- FILE: 2026_08_29_bundesliga_total_25.csv league=bundesliga market=total25 rows=2 mode=all_qualifying
+2026-08-29T16:46:26.048918+00:00 | INFO  | 2026_08_29_bundesliga_total_25.csv | 0 selected from 2 rows
+2026-08-29T16:46:26.049766+00:00 | INFO  | --- FILE: 2026_08_29_bundesliga_total_35.csv league=bundesliga market=total35 rows=2 mode=all_qualifying
+2026-08-29T16:46:26.050119+00:00 | INFO  | 2026_08_29_bundesliga_total_35.csv | 0 selected from 2 rows
+2026-08-29T16:46:26.050966+00:00 | INFO  | --- FILE: 2026_08_29_epl_btts.csv league=epl market=btts rows=3 mode=all_qualifying
+2026-08-29T16:46:26.051358+00:00 | INFO  | 2026_08_29_epl_btts.csv | 0 selected from 3 rows
+2026-08-29T16:46:26.052372+00:00 | INFO  | --- FILE: 2026_08_29_epl_match_odds.csv league=epl market=match_odds rows=3 mode=pick_one
+2026-08-29T16:46:26.052867+00:00 | INFO  | 2026_08_29_epl_match_odds.csv | 0 selected from 3 rows
+2026-08-29T16:46:26.053727+00:00 | INFO  | --- FILE: 2026_08_29_epl_total_25.csv league=epl market=total25 rows=3 mode=all_qualifying
+2026-08-29T16:46:26.054150+00:00 | INFO  | 2026_08_29_epl_total_25.csv | 1 selected from 3 rows
+2026-08-29T16:46:26.055005+00:00 | INFO  | --- FILE: 2026_08_29_epl_total_35.csv league=epl market=total35 rows=3 mode=all_qualifying
+2026-08-29T16:46:26.055407+00:00 | INFO  | 2026_08_29_epl_total_35.csv | 0 selected from 3 rows
+2026-08-29T16:46:26.056254+00:00 | INFO  | --- FILE: 2026_08_29_laliga_btts.csv league=laliga market=btts rows=3 mode=all_qualifying
+2026-08-29T16:46:26.056652+00:00 | INFO  | 2026_08_29_laliga_btts.csv | 0 selected from 3 rows
+2026-08-29T16:46:26.057666+00:00 | INFO  | --- FILE: 2026_08_29_laliga_match_odds.csv league=laliga market=match_odds rows=3 mode=all_qualifying
+2026-08-29T16:46:26.058148+00:00 | INFO  | 2026_08_29_laliga_match_odds.csv | 0 selected from 3 rows
+2026-08-29T16:46:26.059011+00:00 | INFO  | --- FILE: 2026_08_29_laliga_total_25.csv league=laliga market=total25 rows=3 mode=all_qualifying
+2026-08-29T16:46:26.059450+00:00 | INFO  | 2026_08_29_laliga_total_25.csv | 0 selected from 3 rows
+2026-08-29T16:46:26.060300+00:00 | INFO  | --- FILE: 2026_08_29_laliga_total_35.csv league=laliga market=total35 rows=3 mode=all_qualifying
+2026-08-29T16:46:26.060677+00:00 | INFO  | 2026_08_29_laliga_total_35.csv | 0 selected from 3 rows
+2026-08-29T16:46:26.061545+00:00 | INFO  | --- FILE: 2026_08_29_ligue1_btts.csv league=ligue1 market=btts rows=5 mode=all_qualifying
+2026-08-29T16:46:26.062001+00:00 | INFO  | 2026_08_29_ligue1_btts.csv | 0 selected from 5 rows
+2026-08-29T16:46:26.063030+00:00 | INFO  | --- FILE: 2026_08_29_ligue1_match_odds.csv league=ligue1 market=match_odds rows=5 mode=all_qualifying
+2026-08-29T16:46:26.063645+00:00 | INFO  | 2026_08_29_ligue1_match_odds.csv | 0 selected from 5 rows
+2026-08-29T16:46:26.064519+00:00 | INFO  | --- FILE: 2026_08_29_ligue1_total_25.csv league=ligue1 market=total25 rows=5 mode=all_qualifying
+2026-08-29T16:46:26.065007+00:00 | INFO  | 2026_08_29_ligue1_total_25.csv | 0 selected from 5 rows
+2026-08-29T16:46:26.065864+00:00 | INFO  | --- FILE: 2026_08_29_ligue1_total_35.csv league=ligue1 market=total35 rows=5 mode=all_qualifying
+2026-08-29T16:46:26.066359+00:00 | INFO  | 2026_08_29_ligue1_total_35.csv | 1 selected from 5 rows
+2026-08-29T16:46:26.067256+00:00 | INFO  | --- FILE: 2026_08_29_mls_btts.csv league=mls market=btts rows=13 mode=all_qualifying
+2026-08-29T16:46:26.068087+00:00 | INFO  | 2026_08_29_mls_btts.csv | 1 selected from 13 rows
+2026-08-29T16:46:26.069159+00:00 | INFO  | --- FILE: 2026_08_29_mls_match_odds.csv league=mls market=match_odds rows=13 mode=all_qualifying
+2026-08-29T16:46:26.070221+00:00 | INFO  | 2026_08_29_mls_match_odds.csv | 0 selected from 13 rows
+2026-08-29T16:46:26.071128+00:00 | INFO  | --- FILE: 2026_08_29_mls_total_25.csv league=mls market=total25 rows=13 mode=all_qualifying
+2026-08-29T16:46:26.071934+00:00 | INFO  | 2026_08_29_mls_total_25.csv | 0 selected from 13 rows
+2026-08-29T16:46:26.072861+00:00 | INFO  | --- FILE: 2026_08_29_mls_total_35.csv league=mls market=total35 rows=13 mode=all_qualifying
+2026-08-29T16:46:26.073881+00:00 | INFO  | 2026_08_29_mls_total_35.csv | 10 selected from 13 rows
+2026-08-29T16:46:26.074785+00:00 | INFO  | --- FILE: 2026_08_29_seriea_btts.csv league=seriea market=btts rows=4 mode=all_qualifying
+2026-08-29T16:46:26.075170+00:00 | INFO  | 2026_08_29_seriea_btts.csv | 0 selected from 4 rows
+2026-08-29T16:46:26.076198+00:00 | INFO  | --- FILE: 2026_08_29_seriea_match_odds.csv league=seriea market=match_odds rows=4 mode=all_qualifying
+2026-08-29T16:46:26.076798+00:00 | INFO  | 2026_08_29_seriea_match_odds.csv | 2 selected from 4 rows
+2026-08-29T16:46:26.077668+00:00 | INFO  | --- FILE: 2026_08_29_seriea_total_25.csv league=seriea market=total25 rows=4 mode=all_qualifying
+2026-08-29T16:46:26.078185+00:00 | INFO  | 2026_08_29_seriea_total_25.csv | 3 selected from 4 rows
+2026-08-29T16:46:26.079068+00:00 | INFO  | --- FILE: 2026_08_29_seriea_total_35.csv league=seriea market=total35 rows=4 mode=all_qualifying
+2026-08-29T16:46:26.079510+00:00 | INFO  | 2026_08_29_seriea_total_35.csv | 0 selected from 4 rows
+2026-08-29T16:46:26.082861+00:00 | INFO  | WROTE: /home/runner/work/bet_tracker/bet_tracker/docs/win/soccer/04_select/2026_04_10_soccer_bets.csv (7 bets)
+2026-08-29T16:46:26.083567+00:00 | INFO  | WROTE: /home/runner/work/bet_tracker/bet_tracker/docs/win/soccer/04_select/2026_04_11_soccer_bets.csv (10 bets)
+2026-08-29T16:46:26.084368+00:00 | INFO  | WROTE: /home/runner/work/bet_tracker/bet_tracker/docs/win/soccer/04_select/2026_04_12_soccer_bets.csv (19 bets)
+2026-08-29T16:46:26.085039+00:00 | INFO  | WROTE: /home/runner/work/bet_tracker/bet_tracker/docs/win/soccer/04_select/2026_04_17_soccer_bets.csv (7 bets)
+2026-08-29T16:46:26.085771+00:00 | INFO  | WROTE: /home/runner/work/bet_tracker/bet_tracker/docs/win/soccer/04_select/2026_04_18_soccer_bets.csv (23 bets)
+2026-08-29T16:46:26.086446+00:00 | INFO  | WROTE: /home/runner/work/bet_tracker/bet_tracker/docs/win/soccer/04_select/2026_04_19_soccer_bets.csv (13 bets)
+2026-08-29T16:46:26.087027+00:00 | INFO  | WROTE: /home/runner/work/bet_tracker/bet_tracker/docs/win/soccer/04_select/2026_04_20_soccer_bets.csv (2 bets)
+2026-08-29T16:46:26.087652+00:00 | INFO  | WROTE: /home/runner/work/bet_tracker/bet_tracker/docs/win/soccer/04_select/2026_04_21_soccer_bets.csv (3 bets)
+2026-08-29T16:46:26.088337+00:00 | INFO  | WROTE: /home/runner/work/bet_tracker/bet_tracker/docs/win/soccer/04_select/2026_04_22_soccer_bets.csv (17 bets)
+2026-08-29T16:46:26.088955+00:00 | INFO  | WROTE: /home/runner/work/bet_tracker/bet_tracker/docs/win/soccer/04_select/2026_04_24_soccer_bets.csv (8 bets)
+2026-08-29T16:46:26.089671+00:00 | INFO  | WROTE: /home/runner/work/bet_tracker/bet_tracker/docs/win/soccer/04_select/2026_04_25_soccer_bets.csv (25 bets)
+2026-08-29T16:46:26.090287+00:00 | INFO  | WROTE: /home/runner/work/bet_tracker/bet_tracker/docs/win/soccer/04_select/2026_04_26_soccer_bets.csv (8 bets)
+2026-08-29T16:46:26.090889+00:00 | INFO  | WROTE: /home/runner/work/bet_tracker/bet_tracker/docs/win/soccer/04_select/2026_04_27_soccer_bets.csv (5 bets)
+2026-08-29T16:46:26.091582+00:00 | INFO  | WROTE: /home/runner/work/bet_tracker/bet_tracker/docs/win/soccer/04_select/2026_05_02_soccer_bets.csv (17 bets)
+2026-08-29T16:46:26.092156+00:00 | INFO  | WROTE: /home/runner/work/bet_tracker/bet_tracker/docs/win/soccer/04_select/2026_05_03_soccer_bets.csv (2 bets)
+2026-08-29T16:46:26.092823+00:00 | INFO  | WROTE: /home/runner/work/bet_tracker/bet_tracker/docs/win/soccer/04_select/2026_05_04_soccer_bets.csv (12 bets)
+2026-08-29T16:46:26.093431+00:00 | INFO  | WROTE: /home/runner/work/bet_tracker/bet_tracker/docs/win/soccer/04_select/2026_05_08_soccer_bets.csv (2 bets)
+2026-08-29T16:46:26.094143+00:00 | INFO  | WROTE: /home/runner/work/bet_tracker/bet_tracker/docs/win/soccer/04_select/2026_05_09_soccer_bets.csv (18 bets)
+2026-08-29T16:46:26.094821+00:00 | INFO  | WROTE: /home/runner/work/bet_tracker/bet_tracker/docs/win/soccer/04_select/2026_05_10_soccer_bets.csv (15 bets)
+2026-08-29T16:46:26.095416+00:00 | INFO  | WROTE: /home/runner/work/bet_tracker/bet_tracker/docs/win/soccer/04_select/2026_05_11_soccer_bets.csv (2 bets)
+2026-08-29T16:46:26.095995+00:00 | INFO  | WROTE: /home/runner/work/bet_tracker/bet_tracker/docs/win/soccer/04_select/2026_05_13_soccer_bets.csv (4 bets)
+2026-08-29T16:46:26.096602+00:00 | INFO  | WROTE: /home/runner/work/bet_tracker/bet_tracker/docs/win/soccer/04_select/2026_05_16_soccer_bets.csv (7 bets)
+2026-08-29T16:46:26.097256+00:00 | INFO  | WROTE: /home/runner/work/bet_tracker/bet_tracker/docs/win/soccer/04_select/2026_05_17_soccer_bets.csv (19 bets)
+2026-08-29T16:46:26.097835+00:00 | INFO  | WROTE: /home/runner/work/bet_tracker/bet_tracker/docs/win/soccer/04_select/2026_05_18_soccer_bets.csv (1 bets)
+2026-08-29T16:46:26.098453+00:00 | INFO  | WROTE: /home/runner/work/bet_tracker/bet_tracker/docs/win/soccer/04_select/2026_05_19_soccer_bets.csv (4 bets)
+2026-08-29T16:46:26.099026+00:00 | INFO  | WROTE: /home/runner/work/bet_tracker/bet_tracker/docs/win/soccer/04_select/2026_05_22_soccer_bets.csv (1 bets)
+2026-08-29T16:46:26.099629+00:00 | INFO  | WROTE: /home/runner/work/bet_tracker/bet_tracker/docs/win/soccer/04_select/2026_05_23_soccer_bets.csv (6 bets)
+2026-08-29T16:46:26.100312+00:00 | INFO  | WROTE: /home/runner/work/bet_tracker/bet_tracker/docs/win/soccer/04_select/2026_05_24_soccer_bets.csv (21 bets)
+2026-08-29T16:46:26.100886+00:00 | INFO  | WROTE: /home/runner/work/bet_tracker/bet_tracker/docs/win/soccer/04_select/2026_07_25_soccer_bets.csv (2 bets)
+2026-08-29T16:46:26.101463+00:00 | INFO  | WROTE: /home/runner/work/bet_tracker/bet_tracker/docs/win/soccer/04_select/2026_08_01_soccer_bets.csv (1 bets)
+2026-08-29T16:46:26.102041+00:00 | INFO  | WROTE: /home/runner/work/bet_tracker/bet_tracker/docs/win/soccer/04_select/2026_08_08_soccer_bets.csv (1 bets)
+2026-08-29T16:46:26.102667+00:00 | INFO  | WROTE: /home/runner/work/bet_tracker/bet_tracker/docs/win/soccer/04_select/2026_08_15_soccer_bets.csv (9 bets)
+2026-08-29T16:46:26.103227+00:00 | INFO  | WROTE: /home/runner/work/bet_tracker/bet_tracker/docs/win/soccer/04_select/2026_08_16_soccer_bets.csv (1 bets)
+2026-08-29T16:46:26.103850+00:00 | INFO  | WROTE: /home/runner/work/bet_tracker/bet_tracker/docs/win/soccer/04_select/2026_08_19_soccer_bets.csv (10 bets)
+2026-08-29T16:46:26.104415+00:00 | INFO  | WROTE: /home/runner/work/bet_tracker/bet_tracker/docs/win/soccer/04_select/2026_08_21_soccer_bets.csv (2 bets)
+2026-08-29T16:46:26.105109+00:00 | INFO  | WROTE: /home/runner/work/bet_tracker/bet_tracker/docs/win/soccer/04_select/2026_08_22_soccer_bets.csv (22 bets)
+2026-08-29T16:46:26.105764+00:00 | INFO  | WROTE: /home/runner/work/bet_tracker/bet_tracker/docs/win/soccer/04_select/2026_08_23_soccer_bets.csv (13 bets)
+2026-08-29T16:46:26.106340+00:00 | INFO  | WROTE: /home/runner/work/bet_tracker/bet_tracker/docs/win/soccer/04_select/2026_08_24_soccer_bets.csv (3 bets)
+2026-08-29T16:46:26.106910+00:00 | INFO  | WROTE: /home/runner/work/bet_tracker/bet_tracker/docs/win/soccer/04_select/2026_08_26_soccer_bets.csv (1 bets)
+2026-08-29T16:46:26.107478+00:00 | INFO  | WROTE: /home/runner/work/bet_tracker/bet_tracker/docs/win/soccer/04_select/2026_08_28_soccer_bets.csv (1 bets)
+2026-08-29T16:46:26.108150+00:00 | INFO  | WROTE: /home/runner/work/bet_tracker/bet_tracker/docs/win/soccer/04_select/2026_08_29_soccer_bets.csv (18 bets)
+
+======================================================================
+SUMMARY  2026-08-29T16:46:26.108183+00:00
+======================================================================
+  files_processed : 588
+  total_bets      : 362
+  dates_written   : 41
+  skipped_files   : 0
+  errors          : 0
+
+--- By Market ---
+  market            bets
+  btts                53
+  match_odds          52
+  total25             84
+  total35            173
+
+--- By League ---
+  league            bets
+  bundesliga          28
+  epl                 85
+  laliga              38
+  ligue1              32
+  mls                119
+  seriea              60
+
+--- By Date ---
+  date             bets file
+  2026_04_10          7  2026_04_10_soccer_bets.csv
+  2026_04_11         10  2026_04_11_soccer_bets.csv
+  2026_04_12         19  2026_04_12_soccer_bets.csv
+  2026_04_17          7  2026_04_17_soccer_bets.csv
+  2026_04_18         23  2026_04_18_soccer_bets.csv
+  2026_04_19         13  2026_04_19_soccer_bets.csv
+  2026_04_20          2  2026_04_20_soccer_bets.csv
+  2026_04_21          3  2026_04_21_soccer_bets.csv
+  2026_04_22         17  2026_04_22_soccer_bets.csv
+  2026_04_24          8  2026_04_24_soccer_bets.csv
+  2026_04_25         25  2026_04_25_soccer_bets.csv
+  2026_04_26          8  2026_04_26_soccer_bets.csv
+  2026_04_27          5  2026_04_27_soccer_bets.csv
+  2026_05_02         17  2026_05_02_soccer_bets.csv
+  2026_05_03          2  2026_05_03_soccer_bets.csv
+  2026_05_04         12  2026_05_04_soccer_bets.csv
+  2026_05_08          2  2026_05_08_soccer_bets.csv
+  2026_05_09         18  2026_05_09_soccer_bets.csv
+  2026_05_10         15  2026_05_10_soccer_bets.csv
+  2026_05_11          2  2026_05_11_soccer_bets.csv
+  2026_05_13          4  2026_05_13_soccer_bets.csv
+  2026_05_16          7  2026_05_16_soccer_bets.csv
+  2026_05_17         19  2026_05_17_soccer_bets.csv
+  2026_05_18          1  2026_05_18_soccer_bets.csv
+  2026_05_19          4  2026_05_19_soccer_bets.csv
+  2026_05_22          1  2026_05_22_soccer_bets.csv
+  2026_05_23          6  2026_05_23_soccer_bets.csv
+  2026_05_24         21  2026_05_24_soccer_bets.csv
+  2026_07_25          2  2026_07_25_soccer_bets.csv
+  2026_08_01          1  2026_08_01_soccer_bets.csv
+  2026_08_08          1  2026_08_08_soccer_bets.csv
+  2026_08_15          9  2026_08_15_soccer_bets.csv
+  2026_08_16          1  2026_08_16_soccer_bets.csv
+  2026_08_19         10  2026_08_19_soccer_bets.csv
+  2026_08_21          2  2026_08_21_soccer_bets.csv
+  2026_08_22         22  2026_08_22_soccer_bets.csv
+  2026_08_23         13  2026_08_23_soccer_bets.csv
+  2026_08_24          3  2026_08_24_soccer_bets.csv
+  2026_08_26          1  2026_08_26_soccer_bets.csv
+  2026_08_28          1  2026_08_28_soccer_bets.csv
+  2026_08_29         18  2026_08_29_soccer_bets.csv
+
+--- Filter Reject Counts ---
+  deleted_old_select_files             : 41
+  fail_american_odds                   : 328
+  fail_edge                            : 1
+  fail_ev                              : 2380
+  fail_kelly                           : 178
+  fail_model_prob                      : 183
+  fail_odds                            : 1320
+  rejected_btts                        : 939
+  rejected_match_odds                  : 1595
+  rejected_total25                     : 1014
+  rejected_total35                     : 842
+  selected                             : 362
+
+STATUS: SUCCESS
+======================================================================

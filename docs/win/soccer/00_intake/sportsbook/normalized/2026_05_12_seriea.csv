@@ -1,0 +1,11 @@
+sport,league,game_id,match_date,match_time,home_team,away_team,dk_home_decimal,dk_draw_decimal,dk_away_decimal,dk_over25_decimal,dk_under25_decimal,dk_over35_decimal,dk_under35_decimal,btts_yes,btts_no
+soccer,seriea,61061665,2026_05_17,09:00 AM,Atalanta,Bologna,1.58,4.10,4.70,1.58,2.15,,,1.66,2.15
+soccer,seriea,61061667,2026_05_17,09:00 AM,Cagliari,Torino,2.35,2.90,3.05,2.15,1.58,,,1.83,1.90
+soccer,seriea,61061669,2026_05_17,09:00 AM,Como,Parma,1.23,5.50,9.00,1.60,2.10,,,2.20,1.62
+soccer,seriea,61061671,2026_05_17,09:00 AM,Genoa,Milan,4.30,3.60,1.71,1.45,2.50,,,1.83,1.90
+soccer,seriea,61061673,2026_05_17,09:00 AM,Inter Milan,Verona,1.16,6.50,12.00,,,2.15,1.60,2.20,1.62
+soccer,seriea,61061675,2026_05_17,09:00 AM,Juventus,Fiorentina,1.32,5.00,7.00,1.54,2.25,,,1.90,1.83
+soccer,seriea,61061677,2026_05_17,09:00 AM,Pisa,Napoli,6.50,4.40,1.40,1.74,1.90,,,2.00,1.74
+soccer,seriea,61061679,2026_05_17,09:00 AM,Roma,Lazio,1.52,4.00,5.25,1.83,1.83,,,1.90,1.80
+soccer,seriea,61061681,2026_05_17,09:00 AM,Sassuolo,Lecce,2.60,3.10,2.60,1.95,1.71,,,1.71,2.05
+soccer,seriea,61061683,2026_05_17,09:00 AM,Udinese,Cremonese,2.05,3.40,3.25,1.95,1.74,,,1.76,2.00

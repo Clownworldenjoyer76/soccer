@@ -1,0 +1,19 @@
+=== odds_epl RUN 2026-08-10T03:15:27.546220-04:00 ===
+2026-08-10T03:15:27.546386-04:00 | START league=EPL slug=england-premier-league bookmaker=DraftKings
+2026-08-10T03:15:27.974350-04:00 | EVENTS league=EPL count=10
+2026-08-10T03:15:28.117801-04:00 | ROW league=EPL game_id=72221154 Coventry City at Arsenal FC ML=(1.15,7.00,14.00) O25/U25=(1.54,2.35) O35/U35=(,) BTTS=(2.45,1.50)
+2026-08-10T03:15:28.466840-04:00 | ROW league=EPL game_id=72221156 Manchester United at Hull City ML=(7.00,4.30,1.44) O25/U25=(1.71,2.00) O35/U35=(,) BTTS=(1.86,1.80)
+2026-08-10T03:15:28.815977-04:00 | ROW league=EPL game_id=72221158 Crystal Palace at Everton FC ML=(2.15,3.40,3.30) O25/U25=(,) O35/U35=(,) BTTS=(,)
+2026-08-10T03:15:29.163754-04:00 | ROW league=EPL game_id=72221160 Sunderland AFC at Ipswich Town ML=(2.70,3.25,2.60) O25/U25=(,) O35/U35=(,) BTTS=(,)
+2026-08-10T03:15:29.558371-04:00 | ROW league=EPL game_id=72221162 Leeds United at Nottingham Forest ML=(2.20,3.35,3.15) O25/U25=(,) O35/U35=(,) BTTS=(,)
+2026-08-10T03:15:29.903257-04:00 | ROW league=EPL game_id=72221164 Tottenham Hotspur at Brentford FC ML=(2.35,3.55,2.80) O25/U25=(,) O35/U35=(,) BTTS=(,)
+2026-08-10T03:15:30.250491-04:00 | ROW league=EPL game_id=72221166 Aston Villa at Brighton & Hove Albion ML=(2.25,3.55,2.90) O25/U25=(,) O35/U35=(,) BTTS=(,)
+2026-08-10T03:15:30.619271-04:00 | ROW league=EPL game_id=72221168 AFC Bournemouth at Manchester City ML=(1.44,4.90,5.75) O25/U25=(,) O35/U35=(,) BTTS=(,)
+2026-08-10T03:15:30.965346-04:00 | ROW league=EPL game_id=72221170 Liverpool FC at Newcastle United ML=(3.15,3.75,2.05) O25/U25=(,) O35/U35=(,) BTTS=(,)
+2026-08-10T03:15:31.300307-04:00 | ROW league=EPL game_id=72221172 Chelsea FC at Fulham FC ML=(3.05,3.65,2.15) O25/U25=(,) O35/U35=(,) BTTS=(,)
+2026-08-10T03:15:31.502621-04:00 | --- SUMMARY ---
+2026-08-10T03:15:31.502680-04:00 | Rows written: 10
+2026-08-10T03:15:31.502709-04:00 | Odds errors: 0
+2026-08-10T03:15:31.502734-04:00 | CSV output: docs/win/soccer/00_intake/sportsbook/epl/2026_08_10_epl_soccer.csv
+2026-08-10T03:15:31.502756-04:00 | JSON output: docs/win/soccer/00_intake/odds_api_raw/epl/2026_08_10_epl_soccer_odds.json
+2026-08-10T03:15:31.502776-04:00 | STATUS: SUCCESS

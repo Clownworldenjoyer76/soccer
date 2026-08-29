@@ -1,0 +1,2 @@
+sport,league,game_id,match_date,match_time,home_team,away_team,dk_home_decimal,dk_draw_decimal,dk_away_decimal,dk_over25_decimal,dk_under25_decimal,dk_over35_decimal,dk_under35_decimal,btts_yes,btts_no
+soccer,seriea,33896393,2026_04_20,06:45 PM,Lecce,Fiorentina,3.394,3.374,2.158,2.148,1.686,,,,

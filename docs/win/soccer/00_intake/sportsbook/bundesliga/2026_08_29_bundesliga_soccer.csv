@@ -1,0 +1,7 @@
+sport,league,game_id,match_date,match_time,home_team,away_team,dk_home_decimal,dk_draw_decimal,dk_away_decimal,dk_over25_decimal,dk_under25_decimal,dk_over35_decimal,dk_under35_decimal,btts_yes,btts_no
+soccer,bundesliga,401884811,2026_08_29,09:30 AM,1. FC Union Berlin,Eintracht Frankfurt,2.60,3.50,2.45,1.59,2.35,2.35,1.59,,
+soccer,bundesliga,401884810,2026_08_29,09:30 AM,FC Cologne,Hoffenheim,3.05,3.55,2.10,1.57,2.40,2.30,1.62,,
+soccer,bundesliga,401884812,2026_08_29,09:30 AM,Mainz,Paderborn,1.50,4.30,5.50,,,2.15,1.69,,
+soccer,bundesliga,401884815,2026_08_29,09:30 AM,RB Leipzig,Borussia Monchengladbach,1.54,4.30,5.00,,,2.10,1.71,,
+soccer,bundesliga,401884809,2026_08_29,09:30 AM,SV Elversberg,Leverkusen,4.90,4.20,1.57,,,2.20,1.65,1.48,2.60
+soccer,bundesliga,401884816,2026_08_29,12:30 PM,Borussia Dortmund,Hamburg SV,1.09,10.50,7.50,,,1.62,2.29,,

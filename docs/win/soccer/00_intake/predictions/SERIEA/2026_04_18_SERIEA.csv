@@ -1,0 +1,4 @@
+sport,league,market,match_date,match_time,home_team,away_team,home_prob,draw_prob,away_prob,home_xg,away_xg,expected_total_goals
+soccer,seriea,,2026_04_18,01:00 PM,Udinese,Parma,47.7%,26.1%,26.2%,1.48,1.03,2.51
+soccer,seriea,,2026_04_18,04:00 PM,Napoli,Lazio,62.9%,20.3%,16.7%,2.08,0.98,3.06
+soccer,seriea,,2026_04_18,06:45 PM,Roma,Atalanta,43.2%,24.8%,31.9%,1.55,1.30,2.85

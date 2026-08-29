@@ -1,0 +1,4 @@
+sport,league,game_id,match_date,match_time,home_team,away_team,dk_home_decimal,dk_draw_decimal,dk_away_decimal,dk_over25_decimal,dk_under25_decimal,dk_over35_decimal,dk_under35_decimal,btts_yes,btts_no
+soccer,seriea,33890499,2026_04_19,10:30 AM,Cremonese,Torino,2.972,3.011,2.599,2.266,1.634,,,1.856,1.923
+soccer,seriea,33890516,2026_04_19,01:00 PM,Verona,Milan,6.426,4.012,1.531,2.03,1.798,3.591,1.277,2.06,1.747
+soccer,seriea,33890586,2026_04_19,06:45 PM,Juventus,Bologna,1.445,4.63,6.661,1.717,2.119,2.815,1.416,1.906,1.872

@@ -1,0 +1,4 @@
+sport,league,game_id,match_date,match_time,home_team,away_team,home_prob,draw_prob,away_prob,home_xg,away_xg,expected_total_goals
+soccer,mls,66299142,2026_05_10,04:30 PM,New York City FC,Columbus Crew,0.602,0.223,0.175,1.85,0.89,2.74
+soccer,mls,66299144,2026_05_10,07:00 PM,Minnesota United,Austin FC,0.549,0.242,0.208,1.68,0.93,2.61
+soccer,mls,66299146,2026_05_10,09:00 PM,Los Angeles FC,Houston Dynamo,0.647,0.206,0.147,2.00,0.82,2.82

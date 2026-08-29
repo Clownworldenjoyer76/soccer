@@ -1,0 +1,2 @@
+game_id,sport,league,match_date,match_time,home_team,away_team,home_prob,draw_prob,away_prob,home_xg,away_xg,expected_total_goals,dk_home_decimal,dk_draw_decimal,dk_away_decimal,fair_home_decimal,fair_draw_decimal,fair_away_decimal
+61061689,soccer,seriea,2026_05_22,02:45 PM,Fiorentina,Atalanta,0.344,0.266,0.39,1.23,1.33,2.56,2.6,3.4,2.5,2.906976744186047,3.7593984962406015,2.564102564102564

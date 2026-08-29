@@ -1,0 +1,4 @@
+sport,league,game_id,match_date,match_time,home_team,away_team,home_prob,draw_prob,away_prob,home_xg,away_xg,expected_total_goals
+soccer,mls,66299230,2026_05_24,05:00 PM,Columbus Crew,Atlanta United,0.56,0.232,0.207,1.78,0.99,2.77
+soccer,mls,66299232,2026_05_24,07:00 PM,Inter Miami,Philadelphia Union,0.648,0.201,0.151,2.07,0.88,2.95
+soccer,mls,66299234,2026_05_24,09:00 PM,Los Angeles FC,Seattle Sounders,0.49,0.258,0.252,1.52,1.01,2.53

@@ -1,0 +1,4 @@
+game_id,sport,league,match_date,match_time,home_team,away_team,home_prob,draw_prob,away_prob,home_xg,away_xg,expected_total_goals,dk_over35_decimal,dk_under35_decimal,fair_over_decimal,fair_under_decimal
+33673484,soccer,bundesliga,2026_04_12,01:30 PM,Koln,Werder Bremen,0.443,0.25,0.307,1.55,1.24,2.79,2.776,1.451,3.2696991191505953,1.440587032687503
+33673482,soccer,bundesliga,2026_04_12,03:30 PM,VfB Stuttgart,Hamburg,0.675,0.18,0.145,2.36,1.01,3.37,1.919,1.919,2.298464330542703,1.7701405240620223
+33673492,soccer,bundesliga,2026_04_12,05:30 PM,Mainz,Freiburg,0.468,0.244,0.288,1.63,1.23,2.86,3.003,1.396,3.1110276285123715,1.4737029428196986

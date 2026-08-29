@@ -1,0 +1,5 @@
+game_id,sport,league,match_date,match_time,home_team,away_team,home_prob,draw_prob,away_prob,home_xg,away_xg,expected_total_goals,dk_home_decimal,dk_draw_decimal,dk_away_decimal
+61624626,soccer,laliga,2026_05_10,08:00 AM,Mallorca,Villarreal,0.388,0.282,0.33,1.22,1.09,2.31,2.45,3.60,2.75
+61624618,soccer,laliga,2026_05_10,10:15 AM,Athletic Club,Valencia,0.583,0.222,0.195,1.89,0.99,2.88,1.68,3.90,5.00
+61624634,soccer,laliga,2026_05_10,12:30 PM,Real Oviedo,Getafe,0.308,0.31,0.383,0.92,1.05,1.97,2.75,3.05,2.80
+61624622,soccer,laliga,2026_05_10,03:00 PM,Barcelona,Real Madrid,0.519,0.241,0.24,1.69,1.07,2.76,1.66,4.80,4.30

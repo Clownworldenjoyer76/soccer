@@ -1,0 +1,11 @@
+sport,league,game_id,match_date,match_time,home_team,away_team,dk_home_decimal,dk_draw_decimal,dk_away_decimal,dk_over25_decimal,dk_under25_decimal,dk_over35_decimal,dk_under35_decimal,btts_yes,btts_no
+soccer,epl,61301267,2026_05_24,11:00 AM,Brighton,Manchester United,1.90,4.00,3.45,,,2.10,1.60,1.43,2.70
+soccer,epl,61301269,2026_05_24,11:00 AM,Burnley,Wolverhampton,2.45,3.50,2.75,1.66,2.00,,,1.57,2.35
+soccer,epl,61301271,2026_05_24,11:00 AM,Crystal Palace,Arsenal,3.80,3.90,1.86,1.60,2.15,,,1.58,2.30
+soccer,epl,61301273,2026_05_24,11:00 AM,Fulham,Newcastle,2.90,3.70,2.25,1.57,2.20,,,1.48,2.55
+soccer,epl,61301275,2026_05_24,11:00 AM,Liverpool,Brentford,1.80,4.20,3.85,,,2.20,1.57,1.48,2.55
+soccer,epl,61301277,2026_05_24,11:00 AM,Manchester City,Aston Villa,1.45,5.00,5.75,,,1.83,1.80,1.47,2.55
+soccer,epl,61301279,2026_05_24,11:00 AM,Nottingham Forest,Bournemouth,3.20,3.70,2.10,1.57,2.20,,,1.48,2.50
+soccer,epl,61301281,2026_05_24,11:00 AM,Sunderland,Chelsea,3.55,3.60,2.00,1.71,1.95,,,1.62,2.20
+soccer,epl,61301283,2026_05_24,11:00 AM,Tottenham Hotspur,Everton,1.86,3.85,3.90,1.66,2.05,,,1.58,2.25
+soccer,epl,61301285,2026_05_24,11:00 AM,West Ham,Leeds,1.83,4.00,3.75,1.64,2.05,,,1.62,2.20

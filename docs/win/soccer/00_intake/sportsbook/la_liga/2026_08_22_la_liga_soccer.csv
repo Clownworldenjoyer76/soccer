@@ -1,0 +1,4 @@
+sport,league,game_id,match_date,match_time,home_team,away_team,dk_home_decimal,dk_draw_decimal,dk_away_decimal,dk_over25_decimal,dk_under25_decimal,dk_over35_decimal,dk_under35_decimal,btts_yes,btts_no
+soccer,laliga,401882907,2026_08_22,01:30 PM,Valencia,Celta Vigo,3.20,2.10,3.65,2.30,1.62,,,4.40,1.20
+soccer,laliga,401882912,2026_08_22,03:30 PM,Espanyol,Real Madrid,7.50,4.80,1.42,1.62,2.30,2.35,1.59,,
+soccer,laliga,401882916,2026_08_22,11:00 AM,Athletic Club,Sevilla,1.77,3.60,4.90,2.15,1.69,,,,

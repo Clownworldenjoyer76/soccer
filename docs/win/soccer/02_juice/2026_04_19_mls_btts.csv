@@ -1,0 +1,2 @@
+game_id,sport,league,match_date,match_time,home_team,away_team,home_prob,draw_prob,away_prob,home_xg,away_xg,expected_total_goals,btts_yes,btts_no,engine_lambda_home,engine_lambda_away,engine_match_distance,fair_btts_yes_decimal,fair_btts_no_decimal,engine_btts_yes_prob,engine_btts_no_prob
+33891402,soccer,mls,2026_04_19,11:00 PM,Los Angeles FC,San Jose Earthquakes,0.584,0.226,0.19,1.84,0.94,2.78,,,1.8321779883490843,0.9381373576872004,6.465330265249346e-05,1.9157501675721145,2.092000892177012,0.5219887315825367,0.478011268417464

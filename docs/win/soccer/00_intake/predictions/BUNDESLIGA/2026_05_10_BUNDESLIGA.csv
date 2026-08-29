@@ -1,0 +1,4 @@
+sport,league,match_date,match_time,home_team,away_team,home_prob,draw_prob,away_prob,home_xg,away_xg,expected_total_goals
+soccer,bundesliga,2026_05_10,09:30 AM,Hamburg,Freiburg,35.6%,24.4%,40.0%,1.43,1.54,2.97
+soccer,bundesliga,2026_05_10,11:30 AM,Koln,Heidenheim,53.3%,22.1%,24.6%,1.93,1.25,3.18
+soccer,bundesliga,2026_05_10,01:30 PM,Mainz,Union Berlin,54.7%,23.3%,21.9%,1.77,1.04,2.81

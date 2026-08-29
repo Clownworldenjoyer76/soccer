@@ -1,0 +1,2 @@
+game_id,sport,league,match_date,match_time,home_team,away_team,home_prob,draw_prob,away_prob,home_xg,away_xg,expected_total_goals,dk_over25_decimal,dk_under25_decimal
+33673481,soccer,bundesliga,2026_04_10,06:30 PM,Augsburg,Hoffenheim,0.292,0.249,0.459,1.20,1.58,2.78,1.575,2.44

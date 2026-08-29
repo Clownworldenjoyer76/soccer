@@ -1,0 +1,15 @@
+game_id,sport,league,match_date,match_time,home_team,away_team,home_prob,draw_prob,away_prob,home_xg,away_xg,expected_total_goals,dk_home_decimal,dk_draw_decimal,dk_away_decimal
+66299248,soccer,mls,2026_07_22,07:30 PM,FC Cincinnati,Vancouver Whitecaps,0.31,0.272,0.418,1.11,1.33,2.44,3.60,4.30,1.77
+66299250,soccer,mls,2026_07_22,07:30 PM,Columbus Crew,New York City FC,0.446,0.268,0.285,1.40,1.05,2.45,1.95,3.70,3.50
+66299254,soccer,mls,2026_07_22,07:30 PM,New England Revolution,Toronto FC,0.582,0.232,0.185,1.76,0.88,2.64,1.83,3.70,3.70
+66299256,soccer,mls,2026_07_22,07:30 PM,Philadelphia Union,New York Red Bulls,0.463,0.271,0.266,1.40,0.98,2.38,1.61,4.30,4.40
+66299258,soccer,mls,2026_07_22,08:15 PM,Charlotte FC,Atlanta United,0.598,0.224,0.179,1.85,0.90,2.75,2.00,3.50,3.60
+66299264,soccer,mls,2026_07_22,08:30 PM,Sporting Kansas City,Minnesota United,0.339,0.285,0.376,1.10,1.18,2.28,3.40,3.90,1.95
+66299262,soccer,mls,2026_07_22,08:30 PM,Houston Dynamo,DC United,0.555,0.244,0.2,1.66,0.88,2.54,1.71,3.80,4.30
+66299266,soccer,mls,2026_07_22,08:30 PM,Nashville SC,CF Montreal,0.686,0.194,0.12,2.06,0.73,2.79,1.48,4.60,5.90
+66299260,soccer,mls,2026_07_22,09:30 PM,Austin FC,Seattle Sounders,0.355,0.296,0.349,1.07,1.07,2.14,3.20,3.50,2.15
+66299268,soccer,mls,2026_07_22,09:30 PM,Colorado Rapids,San Diego FC,0.447,0.267,0.287,1.41,1.07,2.48,1.95,4.10,3.30
+66299270,soccer,mls,2026_07_22,10:30 PM,LA Galaxy,St Louis City,0.502,0.249,0.25,1.61,1.06,2.67,1.95,3.70,3.50
+66299272,soccer,mls,2026_07_22,10:30 PM,Los Angeles FC,Real Salt Lake,0.518,0.245,0.236,1.65,1.02,2.67,1.67,4.20,4.40
+66299274,soccer,mls,2026_07_22,10:30 PM,Portland Timbers,FC Dallas,0.421,0.276,0.304,1.31,1.07,2.38,2.30,3.90,2.70
+66299276,soccer,mls,2026_07_22,10:30 PM,San Jose Earthquakes,Orlando City,0.719,0.173,0.108,2.30,0.77,3.07,1.51,4.80,5.10

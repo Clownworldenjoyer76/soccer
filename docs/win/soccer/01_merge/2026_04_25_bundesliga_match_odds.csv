@@ -1,0 +1,7 @@
+game_id,sport,league,match_date,match_time,home_team,away_team,home_prob,draw_prob,away_prob,home_xg,away_xg,expected_total_goals,dk_home_decimal,dk_draw_decimal,dk_away_decimal
+33994101,soccer,bundesliga,2026_04_25,01:30 PM,Augsburg,Eintracht Frankfurt,0.402,0.245,0.353,1.53,1.42,2.95,2.247,3.64,2.865
+33994151,soccer,bundesliga,2026_04_25,01:30 PM,Heidenheim,St Pauli,0.399,0.264,0.337,1.36,1.23,2.59,2.502,3.208,2.786
+33994104,soccer,bundesliga,2026_04_25,01:30 PM,Koln,Leverkusen,0.246,0.223,0.532,1.24,1.91,3.15,3.856,4.043,1.759
+33994100,soccer,bundesliga,2026_04_25,01:30 PM,Mainz,Bayern Munich,0.197,0.191,0.612,1.28,2.34,3.62,5.535,5.113,1.426
+33994099,soccer,bundesliga,2026_04_25,01:30 PM,Wolfsburg,Borussia Monchengladbach,0.434,0.243,0.322,1.60,1.35,2.95,2.355,3.503,2.767
+33994153,soccer,bundesliga,2026_04_25,04:30 PM,Hamburg,Hoffenheim,0.233,0.23,0.537,1.12,1.81,2.93,3.581,4.003,1.841

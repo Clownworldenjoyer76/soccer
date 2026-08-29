@@ -1,0 +1,5 @@
+sport,league,game_id,game_date,match_time,home_team,away_team,home_score,away_score
+soccer,laliga,61624622.0,2026_05_10,03:00 PM,Barcelona,Real Madrid,2,0
+soccer,laliga,,2026_05_10,12:30 PM,Oviedo,Getafe,0,0
+soccer,laliga,61624618.0,2026_05_10,10:15 AM,Athletic Club,Valencia,0,1
+soccer,laliga,61624626.0,2026_05_10,08:00 AM,Mallorca,Villarreal,1,1

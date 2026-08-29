@@ -1,0 +1,4 @@
+sport,league,game_id,match_date,match_time,home_team,away_team,dk_home_decimal,dk_draw_decimal,dk_away_decimal,dk_over25_decimal,dk_under25_decimal,dk_over35_decimal,dk_under35_decimal,btts_yes,btts_no
+soccer,laliga,33890664,2026_04_23,05:00 PM,Levante,Sevilla,2.525,3.387,2.724,2.109,1.712,,,,
+soccer,laliga,33890665,2026_04_23,06:00 PM,Vallecano,Espanyol,1.859,3.437,4.289,2.08,1.734,,,,
+soccer,laliga,33890666,2026_04_23,07:30 PM,Real Oviedo,Villarreal,3.833,3.526,1.933,1.924,1.866,3.16,1.335,,

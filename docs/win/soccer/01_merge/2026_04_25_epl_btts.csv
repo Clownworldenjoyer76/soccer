@@ -1,0 +1,6 @@
+game_id,sport,league,match_date,match_time,home_team,away_team,home_prob,draw_prob,away_prob,home_xg,away_xg,expected_total_goals,btts_yes,btts_no
+33981317,soccer,epl,2026_04_25,11:30 AM,Fulham,Aston Villa,0.36,0.281,0.359,1.17,1.17,2.34,1.59,2.21
+33981320,soccer,epl,2026_04_25,02:00 PM,Liverpool,Crystal Palace,0.668,0.192,0.141,2.17,0.88,3.05,1.68,2.07
+33981318,soccer,epl,2026_04_25,02:00 PM,West Ham,Everton,0.388,0.275,0.337,1.26,1.16,2.42,1.65,2.11
+33981323,soccer,epl,2026_04_25,02:00 PM,Wolverhampton,Tottenham Hotspur,0.222,0.254,0.524,0.92,1.57,2.49,1.68,2.06
+33981322,soccer,epl,2026_04_25,04:30 PM,Arsenal,Newcastle,0.651,0.198,0.151,2.12,0.90,3.02,1.69,2.05

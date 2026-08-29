@@ -1,0 +1,4 @@
+sport,league,market,match_date,match_time,home_team,away_team,home_prob,draw_prob,away_prob,home_xg,away_xg,expected_total_goals
+soccer,bundesliga,,2026_04_12,01:30 PM,Koln,Werder Bremen,44.3%,25.0%,30.7%,1.55,1.24,2.79
+soccer,bundesliga,,2026_04_12,03:30 PM,VfB Stuttgart,Hamburg,67.5%,18.0%,14.5%,2.36,1.01,3.37
+soccer,bundesliga,,2026_04_12,05:30 PM,Mainz,Freiburg,46.8%,24.4%,28.8%,1.63,1.23,2.86

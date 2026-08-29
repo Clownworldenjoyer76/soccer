@@ -1,0 +1,2 @@
+game_id,sport,league,match_date,match_time,home_team,away_team,home_prob,draw_prob,away_prob,home_xg,away_xg,expected_total_goals,dk_over35_decimal,dk_under35_decimal,fair_over_decimal,fair_under_decimal
+61061653,soccer,seriea,2026_05_09,02:45 PM,Lecce,Juventus,0.144,0.204,0.652,0.82,2.02,2.84,2.95,1.39,3.1548354829402876,1.4640725512072472

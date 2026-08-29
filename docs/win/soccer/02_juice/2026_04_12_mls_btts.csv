@@ -1,0 +1,2 @@
+game_id,sport,league,match_date,match_time,home_team,away_team,home_prob,draw_prob,away_prob,home_xg,away_xg,expected_total_goals,btts_yes,btts_no,engine_lambda_home,engine_lambda_away,engine_match_distance,fair_btts_yes_decimal,fair_btts_no_decimal,engine_btts_yes_prob,engine_btts_no_prob
+33780426,soccer,mls,2026_04_12,11:00 PM,Columbus Crew,Orlando City,0.564,0.235,0.2,1.75,0.93,2.68,1.569,2.381,1.7504479417451686,0.93592209278838,3.527183480124665e-05,1.947916984062362,2.054944701712625,0.513368900308323,0.486631099691677

@@ -1,0 +1,2 @@
+game_id,sport,league,match_date,match_time,home_team,away_team,home_prob,draw_prob,away_prob,home_xg,away_xg,expected_total_goals,dk_over35_decimal,dk_under35_decimal,fair_over_decimal,fair_under_decimal
+61061657,soccer,seriea,2026_05_11,02:45 PM,Napoli,Bologna,0.633,0.209,0.158,1.99,0.88,2.87,,,3.0895607505295497,1.4785694791341069

@@ -1,0 +1,4 @@
+sport,league,game_id,match_date,match_time,home_team,away_team,dk_home_decimal,dk_draw_decimal,dk_away_decimal,dk_over25_decimal,dk_under25_decimal,dk_over35_decimal,dk_under35_decimal,btts_yes,btts_no
+soccer,seriea,33996725,2026_04_26,10:30 AM,Fiorentina,Sassuolo,1.906,3.11,4.435,1.833,1.932,2.934,1.363,,
+soccer,seriea,33996884,2026_04_26,04:00 PM,Torino,Inter Milan,7.184,4.946,1.358,1.614,2.227,2.571,1.459,,
+soccer,seriea,33996881,2026_04_26,06:45 PM,Milan,Juventus,2.561,3.238,2.708,1.906,1.856,3.15,1.303,,

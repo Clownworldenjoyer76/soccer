@@ -1,0 +1,4 @@
+sport,league,game_id,match_date,match_time,home_team,away_team,dk_home_decimal,dk_draw_decimal,dk_away_decimal,dk_over25_decimal,dk_under25_decimal,dk_over35_decimal,dk_under35_decimal,btts_yes,btts_no
+soccer,laliga,401882898,2026_08_29,01:00 PM,Real Sociedad,Espanyol,1.87,3.70,4.10,1.71,2.10,,,,
+soccer,laliga,401882897,2026_08_29,03:30 PM,Sevilla,Atletico Madrid,4.20,3.45,1.91,2.05,1.77,,,,
+soccer,laliga,401882902,2026_08_29,11:00 AM,Levante,Real Betis,1.06,11.00,66.00,1.87,1.95,,,,

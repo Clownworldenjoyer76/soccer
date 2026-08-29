@@ -1,0 +1,2 @@
+game_id,sport,league,match_date,match_time,home_team,away_team,home_prob,draw_prob,away_prob,home_xg,away_xg,expected_total_goals,dk_over35_decimal,dk_under35_decimal,engine_lambda_home,engine_lambda_away,engine_match_distance,fair_over_decimal,fair_under_decimal,engine_over_prob,engine_under_prob
+33657522,soccer,epl,2026_04_20,07:00 PM,Crystal Palace,West Ham,0.46,0.243,0.297,1.63,1.27,2.9,3.11,1.369,1.6426895377367798,1.2894712662833203,0.0005401545786491281,2.9623202517432974,1.5096008152143434,0.3375732247084053,0.6624267752915947

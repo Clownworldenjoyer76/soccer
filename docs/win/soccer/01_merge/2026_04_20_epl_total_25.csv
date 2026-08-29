@@ -1,0 +1,2 @@
+game_id,sport,league,match_date,match_time,home_team,away_team,home_prob,draw_prob,away_prob,home_xg,away_xg,expected_total_goals,dk_over25_decimal,dk_under25_decimal
+33657522,soccer,epl,2026_04_20,07:00 PM,Crystal Palace,West Ham,0.46,0.243,0.297,1.63,1.27,2.90,1.924,1.924

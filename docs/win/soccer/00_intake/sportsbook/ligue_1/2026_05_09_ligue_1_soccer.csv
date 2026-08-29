@@ -1,0 +1,9 @@
+sport,league,game_id,match_date,match_time,home_team,away_team,dk_home_decimal,dk_draw_decimal,dk_away_decimal,dk_over25_decimal,dk_under25_decimal,dk_over35_decimal,dk_under35_decimal,btts_yes,btts_no
+soccer,ligue1,61526570,2026_05_10,03:00 PM,Paris Saint Germain,Stade Brest,1.17,8.50,14.00,,,1.86,1.90,,
+soccer,ligue1,61526572,2026_05_10,03:00 PM,Le Havre,Marseille,3.50,3.75,2.05,,,,,,
+soccer,ligue1,61526574,2026_05_10,03:00 PM,Toulouse,Lyon,4.40,4.00,1.76,,,,,,
+soccer,ligue1,61526578,2026_05_10,03:00 PM,Auxerre,Nice,2.45,3.40,2.90,1.90,1.86,,,,
+soccer,ligue1,61526584,2026_05_10,03:00 PM,Rennes,Paris FC,1.50,4.90,5.75,1.48,2.60,,,,
+soccer,ligue1,61526586,2026_05_10,03:00 PM,Metz,Lorient,3.20,3.70,2.15,,,,,,
+soccer,ligue1,61526588,2026_05_10,03:00 PM,Angers,Strasbourg,2.85,3.35,2.50,1.90,1.86,3.30,1.32,,
+soccer,ligue1,61526590,2026_05_10,03:00 PM,Monaco,Lille,2.35,3.80,2.80,2.50,1.51,2.50,1.51,,

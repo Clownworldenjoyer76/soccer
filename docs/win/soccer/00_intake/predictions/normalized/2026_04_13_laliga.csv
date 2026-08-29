@@ -1,0 +1,2 @@
+sport,league,game_id,match_date,match_time,home_team,away_team,home_prob,draw_prob,away_prob,home_xg,away_xg,expected_total_goals
+soccer,laliga,33676133,2026_04_13,07:00 PM,Levante,Getafe,0.364,0.282,0.353,1.17,1.15,2.32

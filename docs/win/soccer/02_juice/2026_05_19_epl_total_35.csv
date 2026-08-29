@@ -1,0 +1,3 @@
+game_id,sport,league,match_date,match_time,home_team,away_team,home_prob,draw_prob,away_prob,home_xg,away_xg,expected_total_goals,dk_over35_decimal,dk_under35_decimal,engine_lambda_home,engine_lambda_away,engine_match_distance,fair_over_decimal,fair_under_decimal,engine_over_prob,engine_under_prob
+61301247,soccer,epl,2026_05_19,02:30 PM,Bournemouth,Manchester City,0.233,0.247,0.52,1.01,1.63,2.64,2.05,1.68,1.0285162400055323,1.5719862725572815,0.003708443715740491,3.786334242652755,1.3588944874926208,0.2641076925367759,0.7358923074632241
+71173724,soccer,epl,2026_05_19,03:15 PM,Chelsea,Tottenham Hotspur,0.642,0.201,0.157,2.09,0.92,3.01,,,2.014047429084597,1.1442440282018351,0.05605417721284473,2.5760981307134405,1.6344782602764318,0.388183970198004,0.611816029801996

@@ -1,0 +1,3 @@
+game_id,sport,league,match_date,match_time,home_team,away_team,home_prob,draw_prob,away_prob,home_xg,away_xg,expected_total_goals,dk_over25_decimal,dk_under25_decimal,fair_over_decimal,fair_under_decimal
+33996743,soccer,seriea,2026_04_27,04:30 PM,Cagliari,Atalanta,0.203,0.226,0.571,1.01,1.85,2.86,1.906,1.856,1.835789342251493,2.196473739789679
+33996726,soccer,seriea,2026_04_27,06:45 PM,Lazio,Udinese,0.522,0.235,0.243,1.76,1.13,2.89,2.178,1.643,1.8125152684372576,2.230746102683509

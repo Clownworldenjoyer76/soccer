@@ -1,0 +1,2 @@
+game_id,sport,league,match_date,match_time,home_team,away_team,home_prob,draw_prob,away_prob,home_xg,away_xg,expected_total_goals,dk_home_decimal,dk_draw_decimal,dk_away_decimal,fair_home_decimal,fair_draw_decimal,fair_away_decimal
+61624636,soccer,laliga,2026_05_11,03:00 PM,Vallecano,Girona,0.616,0.221,0.163,1.86,0.84,2.7,2.45,3.3,2.95,1.6233766233766234,4.524886877828054,6.134969325153374

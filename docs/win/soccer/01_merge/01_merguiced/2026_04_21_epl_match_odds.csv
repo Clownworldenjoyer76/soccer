@@ -1,0 +1,2 @@
+game_id,sport,league,match_date,match_time,home_team,away_team,home_prob,draw_prob,away_prob,home_xg,away_xg,expected_total_goals,dk_home_decimal,dk_draw_decimal,dk_away_decimal,fair_home_decimal,fair_draw_decimal,fair_away_decimal
+33981399,soccer,epl,2026_04_21,07:00 PM,Brighton,Chelsea,0.363,0.288,0.349,1.13,1.11,2.24,2.436,3.744,2.615,2.7548209366391188,3.4722222222222223,2.865329512893983

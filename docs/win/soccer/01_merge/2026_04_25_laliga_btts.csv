@@ -1,0 +1,5 @@
+game_id,sport,league,match_date,match_time,home_team,away_team,home_prob,draw_prob,away_prob,home_xg,away_xg,expected_total_goals,btts_yes,btts_no
+33999005,soccer,laliga,2026_04_25,12:00 PM,Alaves,Mallorca,0.446,0.282,0.271,1.30,0.94,2.24,,
+33999012,soccer,laliga,2026_04_25,02:15 PM,Getafe,Barcelona,0.151,0.204,0.645,0.86,2.04,2.90,,
+33999015,soccer,laliga,2026_04_25,04:30 PM,Valencia,Girona,0.489,0.259,0.251,1.51,1.00,2.51,,
+33999024,soccer,laliga,2026_04_25,07:00 PM,Atletico Madrid,Athletic Club,0.448,0.271,0.28,1.37,1.03,2.40,,

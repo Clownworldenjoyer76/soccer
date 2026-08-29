@@ -1,0 +1,5 @@
+sport,league,match_date,match_time,home_team,away_team,home_prob,draw_prob,away_prob,home_xg,away_xg,expected_total_goals
+soccer,mls,2026_07_16,07:30 PM,CF Montreal,Toronto FC,46.5%,27.1%,26.4%,1.39,0.98,2.37
+soccer,mls,2026_07_16,08:30 PM,Chicago Fire,Vancouver Whitecaps,36.2%,28.3%,35.5%,1.16,1.15,2.31
+soccer,mls,2026_07_16,08:30 PM,St Louis City,Sporting Kansas City,64.6%,20.5%,14.8%,2.01,0.85,2.86
+soccer,mls,2026_07_16,10:30 PM,Seattle Sounders,Portland Timbers,62.7%,21.4%,16.0%,1.94,0.85,2.79

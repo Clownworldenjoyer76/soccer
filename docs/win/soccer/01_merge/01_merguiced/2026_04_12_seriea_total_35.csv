@@ -1,0 +1,5 @@
+game_id,sport,league,match_date,match_time,home_team,away_team,home_prob,draw_prob,away_prob,home_xg,away_xg,expected_total_goals,dk_over35_decimal,dk_under35_decimal,fair_over_decimal,fair_under_decimal
+33676098,soccer,seriea,2026_04_12,10:30 AM,Genoa,Sassuolo,0.471,0.246,0.282,1.61,1.19,2.8,3.641,1.307,3.246093832211382,1.4452173750085295
+33676097,soccer,seriea,2026_04_12,01:00 PM,Parma,Napoli,0.172,0.217,0.61,0.9,1.92,2.82,,,3.199843243342797,1.4545778445924349
+33676103,soccer,seriea,2026_04_12,04:00 PM,Bologna,Lecce,0.613,0.199,0.187,2.18,1.13,3.31,,,2.370398992844328,1.7297144884238806
+33676110,soccer,seriea,2026_04_12,06:45 PM,Como,Inter Milan,0.309,0.253,0.438,1.23,1.5,2.73,3.371,1.345,3.418423786201681,1.413492459719219

@@ -1,0 +1,11 @@
+sport,league,match_date,match_time,home_team,away_team,home_prob,draw_prob,away_prob,home_xg,away_xg,expected_total_goals
+soccer,seriea,2026_05_24,09:00 AM,Parma,Sassuolo,44.9%,25.3%,29.8%,1.53,1.19,2.72
+soccer,seriea,2026_05_24,09:00 AM,Cremonese,Como,22.8%,24.9%,52.3%,0.97,1.62,2.59
+soccer,seriea,2026_05_24,09:00 AM,Fiorentina,Atalanta,38.2%,26.6%,35.2%,1.31,1.25,2.56
+soccer,seriea,2026_05_24,09:00 AM,Napoli,Udinese,78.0%,14.2%,7.8%,2.60,0.71,3.31
+soccer,seriea,2026_05_24,09:00 AM,Verona,Roma,20.2%,22.9%,56.9%,0.98,1.81,2.79
+soccer,seriea,2026_05_24,09:00 AM,Bologna,Inter Milan,28.2%,26.3%,45.4%,1.08,1.45,2.53
+soccer,seriea,2026_05_24,09:00 AM,Lecce,Genoa,31.0%,27.6%,41.4%,1.08,1.30,2.38
+soccer,seriea,2026_05_24,09:00 AM,Milan,Cagliari,79.5%,13.5%,7.1%,2.67,0.67,3.34
+soccer,seriea,2026_05_24,09:00 AM,Lazio,Pisa,74.2%,16.0%,9.8%,2.44,0.78,3.22
+soccer,seriea,2026_05_24,09:00 AM,Torino,Juventus,22.7%,25.8%,51.5%,0.92,1.53,2.45

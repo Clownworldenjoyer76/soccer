@@ -1,0 +1,2 @@
+game_id,sport,league,match_date,match_time,home_team,away_team,home_prob,draw_prob,away_prob,home_xg,away_xg,expected_total_goals,btts_yes,btts_no
+33981325,soccer,epl,2026_04_24,07:00 PM,Sunderland,Nottingham Forest,0.358,0.288,0.354,1.13,1.11,2.24,1.82,1.89

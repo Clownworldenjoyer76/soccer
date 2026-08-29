@@ -1,0 +1,2 @@
+game_id,sport,league,match_date,match_time,home_team,away_team,home_prob,draw_prob,away_prob,home_xg,away_xg,expected_total_goals,dk_over35_decimal,dk_under35_decimal
+33676041,soccer,seriea,2026_04_10,06:45 PM,Roma,Pisa,0.761,0.145,0.094,2.69,0.86,3.55,3.182,1.379

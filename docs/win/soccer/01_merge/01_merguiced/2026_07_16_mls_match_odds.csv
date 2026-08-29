@@ -1,0 +1,5 @@
+game_id,sport,league,match_date,match_time,home_team,away_team,home_prob,draw_prob,away_prob,home_xg,away_xg,expected_total_goals,dk_home_decimal,dk_draw_decimal,dk_away_decimal,fair_home_decimal,fair_draw_decimal,fair_away_decimal
+66299236,soccer,mls,2026_07_16,07:30 PM,CF Montreal,Toronto FC,0.465,0.271,0.264,1.39,0.98,2.37,2.3,3.5,2.9,2.150537634408602,3.6900369003690034,3.7878787878787876
+66299238,soccer,mls,2026_07_16,08:30 PM,Chicago Fire,Vancouver Whitecaps,0.362,0.283,0.355,1.16,1.15,2.31,2.55,3.8,2.45,2.7624309392265194,3.53356890459364,2.8169014084507045
+66299240,soccer,mls,2026_07_16,08:30 PM,St Louis City,Sporting Kansas City,0.646,0.205,0.148,2.01,0.85,2.86,1.38,5.1,6.0,1.547987616099071,4.878048780487805,6.756756756756757
+66299242,soccer,mls,2026_07_16,10:30 PM,Seattle Sounders,Portland Timbers,0.627,0.214,0.16,1.94,0.85,2.79,1.42,5.0,5.9,1.594896331738437,4.672897196261682,6.25

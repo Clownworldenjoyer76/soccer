@@ -1,0 +1,2 @@
+game_id,sport,league,match_date,match_time,home_team,away_team,home_prob,draw_prob,away_prob,home_xg,away_xg,expected_total_goals,dk_over25_decimal,dk_under25_decimal,engine_lambda_home,engine_lambda_away,engine_match_distance,fair_over_decimal,fair_under_decimal,engine_over_prob,engine_under_prob
+33890596,soccer,ligue1,2026_04_17,06:45 PM,Lens,Toulouse,0.61,0.222,0.169,1.86,0.86,2.72,1.687,2.198,1.7662293993227884,1.120705274044046,0.0767601654657462,1.8149120784322488,2.22712624645818,0.5509908782269036,0.4490091217730964

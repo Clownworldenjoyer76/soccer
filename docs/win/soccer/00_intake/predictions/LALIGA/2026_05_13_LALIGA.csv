@@ -1,0 +1,5 @@
+sport,league,match_date,match_time,home_team,away_team,home_prob,draw_prob,away_prob,home_xg,away_xg,expected_total_goals
+soccer,laliga,2026_05_13,01:00 PM,Espanyol,Athletic Club,22.4%,25.6%,52.0%,0.92,1.55,2.47
+soccer,laliga,2026_05_13,01:00 PM,Villarreal,Sevilla,64.5%,20.5%,15.0%,2.02,0.86,2.88
+soccer,laliga,2026_05_13,03:30 PM,Alaves,Barcelona,12.9%,19.9%,67.2%,0.76,2.04,2.80
+soccer,laliga,2026_05_13,03:30 PM,Getafe,Mallorca,38.5%,30.8%,30.7%,1.07,0.93,2.00

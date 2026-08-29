@@ -1,0 +1,5 @@
+sport,league,match_date,match_time,home_team,away_team,home_prob,draw_prob,away_prob,home_xg,away_xg,expected_total_goals
+soccer,epl,2026_05_10,09:00 AM,Burnley,Aston Villa,18.1%,23.4%,58.5%,0.85,1.75,2.60
+soccer,epl,2026_05_10,09:00 AM,Nottingham Forest,Newcastle,35.5%,29.0%,35.5%,1.11,1.11,2.22
+soccer,epl,2026_05_10,09:00 AM,Crystal Palace,Everton,36.0%,26.6%,37.4%,1.27,1.30,2.57
+soccer,epl,2026_05_10,11:30 AM,West Ham,Arsenal,18.3%,21.1%,60.5%,1.01,2.00,3.01

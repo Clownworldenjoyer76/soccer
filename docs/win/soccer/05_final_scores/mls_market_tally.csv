@@ -1,0 +1,7 @@
+market,market_type,Win,Loss,Push,Total,Win_Pct
+btts,no,2,2,0,4,0.5
+btts,yes,2,1,0,3,0.6667
+match_odds,home,4,3,0,7,0.5714
+total25,over,1,1,0,2,0.5
+total25,under,4,1,0,5,0.8
+total35,under,50,26,0,76,0.6579

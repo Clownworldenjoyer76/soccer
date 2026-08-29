@@ -1,0 +1,4 @@
+sport,league,game_id,match_date,match_time,home_team,away_team,home_prob,draw_prob,away_prob,home_xg,away_xg,expected_total_goals
+soccer,seriea,61061645,2026_05_09,09:00 AM,Cagliari,Udinese,0.395,0.269,0.336,1.31,1.19,2.50
+soccer,seriea,61061651,2026_05_09,12:00 PM,Lazio,Inter Milan,0.216,0.238,0.546,0.99,1.72,2.71
+soccer,seriea,61061653,2026_05_09,02:45 PM,Lecce,Juventus,0.144,0.204,0.652,0.82,2.02,2.84

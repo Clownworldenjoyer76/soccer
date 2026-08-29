@@ -1,0 +1,6 @@
+"sport","league","market","match_date","match_time","home_team","away_team","home_prob","draw_prob","away_prob","home_xg","away_xg","expected_total_goals"
+"soccer","epl","","2026_04_18","11:30 AM","Brentford","Fulham","45.5%","26.0%","28.4%","1.47","1.11","2.58"
+"soccer","epl","","2026_04_18","02:00 PM","Leeds","Wolverhampton","61.1%","22.3%","16.6%","1.84","0.84","2.68"
+"soccer","epl","","2026_04_18","02:00 PM","Newcastle","Bournemouth","48.3%","25.3%","26.3%","1.55","1.08","2.63"
+"soccer","epl","","2026_04_18","04:30 PM","Tottenham Hotspur","Brighton","35.3%","26.5%","38.2%","1.26","1.32","2.58"
+"soccer","epl","","2026_04_18","07:00 PM","Chelsea","Manchester United","43.0%","25.5%","31.4%","1.48","1.23","2.71"

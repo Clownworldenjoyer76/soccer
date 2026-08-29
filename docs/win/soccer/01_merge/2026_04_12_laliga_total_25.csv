@@ -1,0 +1,5 @@
+game_id,sport,league,match_date,match_time,home_team,away_team,home_prob,draw_prob,away_prob,home_xg,away_xg,expected_total_goals,dk_over25_decimal,dk_under25_decimal
+33674616,soccer,laliga,2026_04_12,12:00 PM,Osasuna,Real Betis,0.417,0.278,0.305,1.29,1.06,2.35,1.965,1.929
+33674618,soccer,laliga,2026_04_12,02:15 PM,Mallorca,Vallecano,0.37,0.297,0.333,1.10,1.03,2.13,2.204,1.73
+33674619,soccer,laliga,2026_04_12,04:30 PM,Celta Vigo,Real Oviedo,0.578,0.228,0.194,1.82,0.95,2.77,2.084,1.828
+33674617,soccer,laliga,2026_04_12,07:00 PM,Athletic Club,Villarreal,0.439,0.253,0.308,1.51,1.22,2.73,1.937,1.919

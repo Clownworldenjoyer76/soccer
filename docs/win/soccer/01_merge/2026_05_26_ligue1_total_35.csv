@@ -1,0 +1,2 @@
+game_id,sport,league,match_date,match_time,home_team,away_team,home_prob,draw_prob,away_prob,home_xg,away_xg,expected_total_goals,dk_over35_decimal,dk_under35_decimal
+71564468,soccer,ligue1,2026_05_26,02:45 PM,Saint Etienne,Nice,0.418,0.272,0.311,1.33,1.11,2.44,,

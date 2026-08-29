@@ -1,0 +1,5 @@
+sport,league,match_date,match_time,home_team,away_team,home_prob,draw_prob,away_prob,home_xg,away_xg,expected_total_goals
+soccer,epl,2026_08_30,09:00 AM,Sunderland,Fulham,40.0%,27.4%,32.6%,1.29,1.13,2.42
+soccer,epl,2026_08_30,09:00 AM,Chelsea,Brighton,49.9%,24.9%,25.2%,1.60,1.06,2.66
+soccer,epl,2026_08_30,09:00 AM,Leeds,Brentford,38.1%,27.0%,34.9%,1.29,1.21,2.50
+soccer,epl,2026_08_30,11:30 AM,Manchester United,Ipswich,69.3%,17.9%,12.8%,2.31,0.89,3.20

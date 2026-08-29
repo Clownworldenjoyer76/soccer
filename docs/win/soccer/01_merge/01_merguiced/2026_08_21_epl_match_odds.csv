@@ -1,0 +1,2 @@
+game_id,sport,league,match_date,match_time,home_team,away_team,home_prob,draw_prob,away_prob,home_xg,away_xg,expected_total_goals,dk_home_decimal,dk_draw_decimal,dk_away_decimal,fair_home_decimal,fair_draw_decimal,fair_away_decimal
+401879301,soccer,epl,2026_08_21,03:00 PM,Arsenal,Coventry,0.864,0.096,0.039,3.04,0.54,3.58,1.21,6.5,14.0,1.1574074074074074,10.416666666666666,25.641025641025642

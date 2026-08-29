@@ -1,0 +1,11 @@
+sport,league,game_id,match_date,match_time,home_team,away_team,dk_home_decimal,dk_draw_decimal,dk_away_decimal,dk_over25_decimal,dk_under25_decimal,dk_over35_decimal,dk_under35_decimal,btts_yes,btts_no
+soccer,laliga,61624676,2026_05_17,01:00 PM,Sevilla,Real Madrid,3.25,3.50,2.20,1.68,2.05,,,1.57,2.40
+soccer,laliga,61624660,2026_05_17,01:00 PM,Atletico Madrid,Girona,1.83,3.85,4.20,1.66,2.05,,,1.62,2.25
+soccer,laliga,61624658,2026_05_17,01:00 PM,Athletic Club,Celta Vigo,2.15,3.30,3.55,2.05,1.68,,,1.80,2.00
+soccer,laliga,61624664,2026_05_17,01:00 PM,Elche,Getafe,2.25,2.90,3.75,,,,,2.15,1.68
+soccer,laliga,61624666,2026_05_17,01:00 PM,Levante,Mallorca,2.15,3.35,3.45,1.76,1.90,,,1.62,2.25
+soccer,laliga,61624668,2026_05_17,01:00 PM,Vallecano,Villarreal,2.40,3.55,2.90,1.68,2.05,,,1.57,2.35
+soccer,laliga,61624670,2026_05_17,01:00 PM,Real Sociedad,Valencia,2.15,3.50,3.30,1.80,1.90,,,1.66,2.15
+soccer,laliga,61624672,2026_05_17,01:00 PM,Real Oviedo,Alaves,3.75,3.70,1.95,1.80,1.90,,,1.71,2.10
+soccer,laliga,61624674,2026_05_17,01:00 PM,Osasuna,Espanyol,2.10,2.85,4.20,2.15,1.62,,,1.74,1.90
+soccer,laliga,61624662,2026_05_17,03:15 PM,Barcelona,Real Betis,1.33,6.00,7.50,,,1.80,1.90,1.52,2.50

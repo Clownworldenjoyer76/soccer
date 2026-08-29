@@ -1,0 +1,8 @@
+game_id,sport,league,match_date,match_time,home_team,away_team,home_prob,draw_prob,away_prob,home_xg,away_xg,expected_total_goals,dk_over25_decimal,dk_under25_decimal
+61061699,soccer,seriea,2026_05_24,09:00 AM,Parma,Sassuolo,0.449,0.253,0.298,1.53,1.19,2.72,1.83,1.86
+61061697,soccer,seriea,2026_05_24,12:00 PM,Napoli,Udinese,0.78,0.142,0.078,2.60,0.71,3.31,1.80,1.90
+61061695,soccer,seriea,2026_05_24,02:45 PM,Milan,Cagliari,0.795,0.135,0.071,2.67,0.67,3.34,1.66,2.05
+61061687,soccer,seriea,2026_05_24,02:45 PM,Cremonese,Como,0.228,0.249,0.523,0.97,1.62,2.59,1.64,2.10
+61061693,soccer,seriea,2026_05_24,02:45 PM,Lecce,Genoa,0.31,0.276,0.414,1.08,1.30,2.38,2.25,1.57
+61061701,soccer,seriea,2026_05_24,02:45 PM,Torino,Juventus,0.227,0.258,0.515,0.92,1.53,2.45,1.80,1.90
+61061703,soccer,seriea,2026_05_24,02:45 PM,Verona,Roma,0.202,0.229,0.569,0.98,1.81,2.79,1.74,1.95

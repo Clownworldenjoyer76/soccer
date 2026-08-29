@@ -1,0 +1,3 @@
+sport,league,game_id,match_date,match_time,home_team,away_team,dk_home_decimal,dk_draw_decimal,dk_away_decimal,dk_over25_decimal,dk_under25_decimal,dk_over35_decimal,dk_under35_decimal,btts_yes,btts_no
+soccer,ligue1,70315368,2026_05_13,01:00 PM,Stade Brest,Strasbourg,2.75,3.50,2.50,1.74,1.95,,,1.60,2.30
+soccer,ligue1,70315360,2026_05_13,03:00 PM,Lens,Paris Saint Germain,3.45,3.95,2.00,,,2.15,1.62,1.45,2.75

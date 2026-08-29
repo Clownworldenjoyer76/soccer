@@ -1,0 +1,5 @@
+sport,league,game_id,game_date,match_time,home_team,away_team,home_score,away_score
+soccer,epl,33550031,2026_04_12,11:30 AM,Chelsea,Manchester City,0,3
+soccer,epl,33642701,2026_04_12,09:00 AM,Crystal Palace,Newcastle,2,1
+soccer,epl,33642702,2026_04_12,09:00 AM,Nottingham Forest,Aston Villa,1,1
+soccer,epl,33550029,2026_04_12,09:00 AM,Sunderland,Tottenham Hotspur,1,0

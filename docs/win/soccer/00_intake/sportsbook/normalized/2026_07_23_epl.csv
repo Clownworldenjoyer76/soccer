@@ -1,0 +1,11 @@
+sport,league,game_id,match_date,match_time,home_team,away_team,dk_home_decimal,dk_draw_decimal,dk_away_decimal,dk_over25_decimal,dk_under25_decimal,dk_over35_decimal,dk_under35_decimal,btts_yes,btts_no
+soccer,epl,72221154,2026_08_21,03:00 PM,Arsenal,Coventry,1.15,7.50,15.00,1.54,2.35,,,2.50,1.46
+soccer,epl,72221156,2026_08_22,07:30 AM,Hull,Manchester United,6.50,4.30,1.45,1.71,2.00,,,1.86,1.83
+soccer,epl,72221158,2026_08_22,10:00 AM,Everton,Crystal Palace,2.15,3.40,3.30,1.86,1.86,,,1.64,2.10
+soccer,epl,72221160,2026_08_22,10:00 AM,Ipswich,Sunderland,2.70,3.25,2.60,1.90,1.83,,,1.66,2.10
+soccer,epl,72221162,2026_08_22,10:00 AM,Nottingham Forest,Leeds,2.20,3.35,3.15,1.86,1.86,,,1.64,2.10
+soccer,epl,72221164,2026_08_22,12:30 PM,Brentford,Tottenham Hotspur,2.20,3.70,2.85,1.58,2.25,,,1.48,2.45
+soccer,epl,72221166,2026_08_23,09:00 AM,Brighton,Aston Villa,2.25,3.55,2.90,1.57,2.25,,,1.45,2.55
+soccer,epl,72221168,2026_08_23,09:00 AM,Manchester City,Bournemouth,1.43,5.00,5.75,,,2.00,1.74,1.50,2.45
+soccer,epl,72221170,2026_08_23,11:30 AM,Newcastle,Liverpool,2.90,3.70,2.20,,,2.15,1.62,1.39,2.75
+soccer,epl,72221172,2026_08_24,03:00 PM,Fulham,Chelsea,2.90,3.60,2.20,1.60,2.25,,,1.48,2.45

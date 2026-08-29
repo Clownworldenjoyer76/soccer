@@ -1,0 +1,5 @@
+sport,league,game_id,match_date,match_time,home_team,away_team,dk_home_decimal,dk_draw_decimal,dk_away_decimal,dk_over25_decimal,dk_under25_decimal,dk_over35_decimal,dk_under35_decimal,btts_yes,btts_no
+soccer,epl,33657528,2026_04_19,01:00 PM,Everton,Liverpool,3.208,3.466,2.258,1.836,2.02,3.02,1.389,1.659,2.248
+soccer,epl,33657539,2026_04_19,01:00 PM,Nottingham Forest,Burnley,1.525,4.209,6.457,1.801,2.03,2.981,1.397,1.906,1.906
+soccer,epl,33657523,2026_04_19,02:00 PM,Aston Villa,Sunderland,1.687,3.753,5.348,1.942,1.906,3.248,1.345,1.898,1.915
+soccer,epl,33657526,2026_04_19,03:30 PM,Manchester City,Arsenal,1.851,3.694,4.278,1.924,1.924,3.199,1.353,1.795,2.03

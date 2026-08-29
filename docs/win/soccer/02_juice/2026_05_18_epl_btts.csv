@@ -1,0 +1,2 @@
+game_id,sport,league,match_date,match_time,home_team,away_team,home_prob,draw_prob,away_prob,home_xg,away_xg,expected_total_goals,btts_yes,btts_no,engine_lambda_home,engine_lambda_away,engine_match_distance,fair_btts_yes_decimal,fair_btts_no_decimal,engine_btts_yes_prob,engine_btts_no_prob
+61301249,soccer,epl,2026_05_18,03:00 PM,Arsenal,Burnley,0.862,0.099,0.04,2.98,0.53,3.51,2.55,1.51,2.395854271356784,1.2900753768844218,0.9189408108381094,1.5184094152187133,2.928977311452005,0.6585839036410077,0.3414160963589923

@@ -1,0 +1,2 @@
+sport,league,game_id,match_date,match_time,home_team,away_team,home_prob,draw_prob,away_prob,home_xg,away_xg,expected_total_goals
+soccer,laliga,33999004,2026_04_24,07:00 PM,Real Betis,Real Madrid,0.259,0.254,0.487,1.05,1.55,2.60

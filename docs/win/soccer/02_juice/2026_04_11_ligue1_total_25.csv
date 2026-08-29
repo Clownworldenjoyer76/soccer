@@ -1,0 +1,2 @@
+game_id,sport,league,match_date,match_time,home_team,away_team,home_prob,draw_prob,away_prob,home_xg,away_xg,expected_total_goals,dk_over25_decimal,dk_under25_decimal,engine_lambda_home,engine_lambda_away,engine_match_distance,fair_over_decimal,fair_under_decimal,engine_over_prob,engine_under_prob
+33675944,soccer,ligue1,2026_04_11,07:05 PM,Rennes,Angers,0.686,0.194,0.121,2.07,0.74,2.81,,,2.190075376884422,1.1792713567839193,0.20737742102472134,1.5285562973410614,2.891946051973212,0.6542120834800196,0.3457879165199804

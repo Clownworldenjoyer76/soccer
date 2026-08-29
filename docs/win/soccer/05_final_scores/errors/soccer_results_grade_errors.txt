@@ -1,0 +1,160 @@
+[2026-08-29T12:46:28.648532] SCORE GAME_ID ROWS REMOVED | docs/win/soccer/05_final_scores/results/final_scores/LIGUE1/2026_04_10_LIGUE1.csv | before=2 after=1
+[2026-08-29T12:46:28.667583] SCORE GAME_ID ROWS REMOVED | docs/win/soccer/05_final_scores/results/final_scores/LALIGA/2026_04_11_LALIGA.csv | before=4 after=1
+[2026-08-29T12:46:28.672310] SCORE GAME_ID ROWS REMOVED | docs/win/soccer/05_final_scores/results/final_scores/LIGUE1/2026_04_11_LIGUE1.csv | before=2 after=1
+[2026-08-29T12:46:28.678180] SCORE GAME_ID ROWS REMOVED | docs/win/soccer/05_final_scores/results/final_scores/MLS/2026_04_11_MLS.csv | before=13 after=7
+[2026-08-29T12:46:28.692371] SCORE GAME_ID ROWS REMOVED | docs/win/soccer/05_final_scores/results/final_scores/BUNDESLIGA/2026_04_12_BUNDESLIGA.csv | before=3 after=2
+[2026-08-29T12:46:28.702825] SCORE GAME_ID ROWS REMOVED | docs/win/soccer/05_final_scores/results/final_scores/LALIGA/2026_04_12_LALIGA.csv | before=4 after=1
+[2026-08-29T12:46:28.707803] SCORE GAME_ID ROWS REMOVED | docs/win/soccer/05_final_scores/results/final_scores/LIGUE1/2026_04_12_LIGUE1.csv | before=3 after=2
+[2026-08-29T12:46:28.717558] SCORE GAME_ID ROWS REMOVED | docs/win/soccer/05_final_scores/results/final_scores/SERIEA/2026_04_12_SERIEA.csv | before=4 after=3
+[2026-08-29T12:46:28.753297] SCORE GAME_ID ROWS REMOVED | docs/win/soccer/05_final_scores/results/final_scores/BUNDESLIGA/2026_04_18_BUNDESLIGA.csv | before=5 after=2
+[2026-08-29T12:46:28.762901] SCORE GAME_ID ROWS REMOVED | docs/win/soccer/05_final_scores/results/final_scores/LIGUE1/2026_04_18_LIGUE1.csv | before=3 after=2
+[2026-08-29T12:46:28.767703] SCORE GAME_ID ROWS REMOVED | docs/win/soccer/05_final_scores/results/final_scores/MLS/2026_04_18_MLS.csv | before=13 after=8
+[2026-08-29T12:46:28.780860] SCORE GAME_ID ROWS REMOVED | docs/win/soccer/05_final_scores/results/final_scores/BUNDESLIGA/2026_04_19_BUNDESLIGA.csv | before=3 after=2
+[2026-08-29T12:46:28.785664] SCORE GAME_ID ROWS REMOVED | docs/win/soccer/05_final_scores/results/final_scores/EPL/2026_04_19_EPL.csv | before=4 after=1
+[2026-08-29T12:46:28.790249] SCORE GAME_ID ROWS REMOVED | docs/win/soccer/05_final_scores/results/final_scores/LIGUE1/2026_04_19_LIGUE1.csv | before=5 after=3
+[2026-08-29T12:46:28.799622] SCORE GAME_ID ROWS REMOVED | docs/win/soccer/05_final_scores/results/final_scores/SERIEA/2026_04_19_SERIEA.csv | before=3 after=1
+[2026-08-29T12:46:28.829104] SCORE GAME_ID ROWS REMOVED | docs/win/soccer/05_final_scores/results/final_scores/LALIGA/2026_04_21_LALIGA.csv | before=4 after=1
+[2026-08-29T12:46:28.841353] SCORE GAME_ID ROWS REMOVED | docs/win/soccer/05_final_scores/results/final_scores/EPL/2026_04_22_EPL.csv | before=2 after=1
+[2026-08-29T12:46:28.846163] SCORE GAME_ID ROWS REMOVED | docs/win/soccer/05_final_scores/results/final_scores/LALIGA/2026_04_22_LALIGA.csv | before=3 after=1
+[2026-08-29T12:46:28.894887] SCORE GAME_ID ROWS REMOVED | docs/win/soccer/05_final_scores/results/final_scores/EPL/2026_04_25_EPL.csv | before=5 after=3
+[2026-08-29T12:46:28.899757] SCORE GAME_ID ROWS REMOVED | docs/win/soccer/05_final_scores/results/final_scores/LALIGA/2026_04_25_LALIGA.csv | before=4 after=2
+[2026-08-29T12:46:28.904645] SCORE GAME_ID ROWS REMOVED | docs/win/soccer/05_final_scores/results/final_scores/LIGUE1/2026_04_25_LIGUE1.csv | before=3 after=2
+[2026-08-29T12:46:28.922424] SCORE GAME_ID ROWS REMOVED | docs/win/soccer/05_final_scores/results/final_scores/BUNDESLIGA/2026_04_26_BUNDESLIGA.csv | before=2 after=1
+[2026-08-29T12:46:28.927155] SCORE GAME_ID ROWS REMOVED | docs/win/soccer/05_final_scores/results/final_scores/LALIGA/2026_04_26_LALIGA.csv | before=3 after=1
+[2026-08-29T12:46:28.931792] SCORE GAME_ID ROWS REMOVED | docs/win/soccer/05_final_scores/results/final_scores/LIGUE1/2026_04_26_LIGUE1.csv | before=5 after=2
+[2026-08-29T12:46:28.941151] SCORE GAME_ID ROWS REMOVED | docs/win/soccer/05_final_scores/results/final_scores/SERIEA/2026_04_26_SERIEA.csv | before=3 after=1
+[2026-08-29T12:46:28.995233] SCORE GAME_ID ROWS REMOVED | docs/win/soccer/05_final_scores/results/final_scores/EPL/2026_05_04_EPL.csv | before=2 after=1
+[2026-08-29T12:46:29.029007] SCORE GAME_ID ROWS REMOVED | docs/win/soccer/05_final_scores/results/final_scores/BUNDESLIGA/2026_05_09_BUNDESLIGA.csv | before=5 after=2
+[2026-08-29T12:46:29.032933] MISSING SCORE MERGE | select=2026_05_09_soccer_bets.csv league=bundesliga rows=5 missing_rows=3 unique_missing=3
+[2026-08-29T12:46:29.034472]  game_id     league match_date     home_team  away_team  market  side
+61514188 bundesliga 2026_05_09    RB Leipzig   St Pauli    btts   yes
+61514188 bundesliga 2026_05_09    RB Leipzig   St Pauli total25  over
+61514190 bundesliga 2026_05_09 VfB Stuttgart Leverkusen total25 under
+[2026-08-29T12:46:29.037063] SCORE GAME_ID ROWS REMOVED | docs/win/soccer/05_final_scores/results/final_scores/EPL/2026_05_09_EPL.csv | before=5 after=3
+[2026-08-29T12:46:29.040798] MISSING SCORE MERGE | select=2026_05_09_soccer_bets.csv league=epl rows=7 missing_rows=3 unique_missing=3
+[2026-08-29T12:46:29.041895]  game_id league match_date home_team     away_team     market  side
+61301225    epl 2026_05_09  Brighton Wolverhampton match_odds  away
+61301225    epl 2026_05_09  Brighton Wolverhampton    total25 under
+61301225    epl 2026_05_09  Brighton Wolverhampton    total35 under
+[2026-08-29T12:46:29.044584] SCORE GAME_ID ROWS REMOVED | docs/win/soccer/05_final_scores/results/final_scores/LALIGA/2026_05_09_LALIGA.csv | before=4 after=1
+[2026-08-29T12:46:29.048332] MISSING SCORE MERGE | select=2026_05_09_soccer_bets.csv league=laliga rows=3 missing_rows=1 unique_missing=1
+[2026-08-29T12:46:29.049350]  game_id league match_date     home_team  away_team     market side
+61624630 laliga 2026_05_09 Real Sociedad Real Betis match_odds home
+[2026-08-29T12:46:29.051995] SCORE GAME_ID ROWS REMOVED | docs/win/soccer/05_final_scores/results/final_scores/MLS/2026_05_09_MLS.csv | before=12 after=2
+[2026-08-29T12:46:29.055811] MISSING SCORE MERGE | select=2026_05_09_soccer_bets.csv league=mls rows=3 missing_rows=1 unique_missing=1
+[2026-08-29T12:46:29.056828]  game_id league match_date      home_team away_team     market side
+66299124    mls 2026_05_09 Atlanta United LA Galaxy match_odds home
+[2026-08-29T12:46:29.068062] SCORE GAME_ID ROWS REMOVED | docs/win/soccer/05_final_scores/results/final_scores/EPL/2026_05_10_EPL.csv | before=4 after=0
+[2026-08-29T12:46:29.068101] NO SCORES LOADED | league=epl date=2026_05_10
+[2026-08-29T12:46:29.071783] SCORE GAME_ID ROWS REMOVED | docs/win/soccer/05_final_scores/results/final_scores/LALIGA/2026_05_10_LALIGA.csv | before=4 after=3
+[2026-08-29T12:46:29.076826] SCORE GAME_ID ROWS REMOVED | docs/win/soccer/05_final_scores/results/final_scores/LIGUE1/2026_05_10_LIGUE1.csv | before=8 after=4
+[2026-08-29T12:46:29.080548] MISSING SCORE MERGE | select=2026_05_10_soccer_bets.csv league=ligue1 rows=5 missing_rows=1 unique_missing=1
+[2026-08-29T12:46:29.081557]  game_id league match_date           home_team   away_team market side
+61526570 ligue1 2026_05_10 Paris Saint Germain Stade Brest   btts  yes
+[2026-08-29T12:46:29.084096] SCORE GAME_ID ROWS REMOVED | docs/win/soccer/05_final_scores/results/final_scores/SERIEA/2026_05_10_SERIEA.csv | before=5 after=2
+[2026-08-29T12:46:29.087888] MISSING SCORE MERGE | select=2026_05_10_soccer_bets.csv league=seriea rows=4 missing_rows=1 unique_missing=1
+[2026-08-29T12:46:29.088902]  game_id league match_date home_team away_team  market  side
+61061663 seriea 2026_05_10    Verona      Como total35 under
+[2026-08-29T12:46:29.100980] SCORE GAME_ID ROWS REMOVED | docs/win/soccer/05_final_scores/results/final_scores/EPL/2026_05_11_EPL.csv | before=1 after=0
+[2026-08-29T12:46:29.101020] NO SCORES LOADED | league=epl date=2026_05_11
+[2026-08-29T12:46:29.116504] SCORE GAME_ID ROWS REMOVED | docs/win/soccer/05_final_scores/results/final_scores/LALIGA/2026_05_13_LALIGA.csv | before=4 after=1
+[2026-08-29T12:46:29.128912] SCORE GAME_ID ROWS REMOVED | docs/win/soccer/05_final_scores/results/final_scores/BUNDESLIGA/2026_05_16_BUNDESLIGA.csv | before=9 after=2
+[2026-08-29T12:46:29.132660] MISSING SCORE MERGE | select=2026_05_16_soccer_bets.csv league=bundesliga rows=6 missing_rows=3 unique_missing=3
+[2026-08-29T12:46:29.133752]  game_id     league match_date     home_team away_team     market side
+61515274 bundesliga 2026_05_16 Bayern Munich      Koln       btts  yes
+61515276 bundesliga 2026_05_16    Leverkusen   Hamburg       btts  yes
+61515296 bundesliga 2026_05_16    Heidenheim     Mainz match_odds away
+[2026-08-29T12:46:29.136147] SCORE GAME_ID ROWS REMOVED | docs/win/soccer/05_final_scores/results/final_scores/MLS/2026_05_16_MLS.csv | before=13 after=0
+[2026-08-29T12:46:29.136186] NO SCORES LOADED | league=mls date=2026_05_16
+[2026-08-29T12:46:29.148631] SCORE GAME_ID ROWS REMOVED | docs/win/soccer/05_final_scores/results/final_scores/EPL/2026_05_17_EPL.csv | before=6 after=2
+[2026-08-29T12:46:29.152365] MISSING SCORE MERGE | select=2026_05_17_soccer_bets.csv league=epl rows=3 missing_rows=1 unique_missing=1
+[2026-08-29T12:46:29.153407]  game_id league match_date home_team away_team  market  side
+61301259    epl 2026_05_17     Leeds  Brighton total25 under
+[2026-08-29T12:46:29.156064] SCORE GAME_ID ROWS REMOVED | docs/win/soccer/05_final_scores/results/final_scores/LALIGA/2026_05_17_LALIGA.csv | before=10 after=1
+[2026-08-29T12:46:29.159787] MISSING SCORE MERGE | select=2026_05_17_soccer_bets.csv league=laliga rows=4 missing_rows=3 unique_missing=3
+[2026-08-29T12:46:29.160833]  game_id league match_date   home_team  away_team     market  side
+61624672 laliga 2026_05_17 Real Oviedo     Alaves       btts    no
+61624672 laliga 2026_05_17 Real Oviedo     Alaves match_odds  draw
+61624662 laliga 2026_05_17   Barcelona Real Betis    total35 under
+[2026-08-29T12:46:29.163425] SCORE GAME_ID ROWS REMOVED | docs/win/soccer/05_final_scores/results/final_scores/LIGUE1/2026_05_17_LIGUE1.csv | before=8 after=4
+[2026-08-29T12:46:29.168666] SCORE GAME_ID ROWS REMOVED | docs/win/soccer/05_final_scores/results/final_scores/SERIEA/2026_05_17_SERIEA.csv | before=9 after=5
+[2026-08-29T12:46:29.172367] MISSING SCORE MERGE | select=2026_05_17_soccer_bets.csv league=seriea rows=7 missing_rows=1 unique_missing=1
+[2026-08-29T12:46:29.173372]  game_id league match_date   home_team away_team     market side
+61061673 seriea 2026_05_17 Inter Milan    Verona match_odds home
+[2026-08-29T12:46:29.182667] NO SCORE FILE | league=epl date=2026_05_18
+[2026-08-29T12:46:29.182780] NO SCORES LOADED | league=epl date=2026_05_18
+[2026-08-29T12:46:29.193537] SCORE GAME_ID ROWS REMOVED | docs/win/soccer/05_final_scores/results/final_scores/EPL/2026_05_19_EPL.csv | before=2 after=1
+[2026-08-29T12:46:29.197425] MISSING SCORE MERGE | select=2026_05_19_soccer_bets.csv league=epl rows=4 missing_rows=1 unique_missing=1
+[2026-08-29T12:46:29.198435]  game_id league match_date home_team         away_team  market side
+71173724    epl 2026_05_19   Chelsea Tottenham Hotspur total25 over
+[2026-08-29T12:46:29.220461] SCORE GAME_ID ROWS REMOVED | docs/win/soccer/05_final_scores/results/final_scores/LALIGA/2026_05_23_LALIGA.csv | before=9 after=5
+[2026-08-29T12:46:29.224320] MISSING SCORE MERGE | select=2026_05_23_soccer_bets.csv league=laliga rows=6 missing_rows=1 unique_missing=1
+[2026-08-29T12:46:29.225342]  game_id league match_date home_team away_team market side
+61624678 laliga 2026_05_23    Alaves Vallecano   btts   no
+[2026-08-29T12:46:29.235903] SCORE GAME_ID ROWS REMOVED | docs/win/soccer/05_final_scores/results/final_scores/EPL/2026_05_24_EPL.csv | before=10 after=5
+[2026-08-29T12:46:29.239818] MISSING SCORE MERGE | select=2026_05_24_soccer_bets.csv league=epl rows=11 missing_rows=4 unique_missing=4
+[2026-08-29T12:46:29.240917]  game_id league match_date         home_team         away_team     market  side
+61301273    epl 2026_05_24            Fulham         Newcastle       btts    no
+61301283    epl 2026_05_24 Tottenham Hotspur           Everton match_odds  away
+61301267    epl 2026_05_24          Brighton Manchester United    total35 under
+61301273    epl 2026_05_24            Fulham         Newcastle    total35 under
+[2026-08-29T12:46:29.248005] SCORE GAME_ID ROWS REMOVED | docs/win/soccer/05_final_scores/results/final_scores/SERIEA/2026_05_24_SERIEA.csv | before=7 after=6
+[2026-08-29T12:46:29.261637] SCORE GAME_ID ROWS REMOVED | docs/win/soccer/05_final_scores/results/final_scores/MLS/2026_07_25_MLS.csv | before=15 after=1
+[2026-08-29T12:46:29.265340] MISSING SCORE MERGE | select=2026_07_25_soccer_bets.csv league=mls rows=2 missing_rows=1 unique_missing=1
+[2026-08-29T12:46:29.266360]  game_id league match_date home_team  away_team     market side
+66299280    mls 2026_07_25 DC United Toronto FC match_odds home
+[2026-08-29T12:46:29.276746] SCORE GAME_ID ROWS REMOVED | docs/win/soccer/05_final_scores/results/final_scores/MLS/2026_08_01_MLS.csv | before=14 after=1
+[2026-08-29T12:46:29.300523] SCORE GAME_ID ROWS REMOVED | docs/win/soccer/05_final_scores/results/final_scores/MLS/2026_08_15_MLS.csv | before=11 after=6
+[2026-08-29T12:46:29.304368] MISSING SCORE MERGE | select=2026_08_15_soccer_bets.csv league=mls rows=9 missing_rows=2 unique_missing=2
+[2026-08-29T12:46:29.305423] game_id league match_date    home_team   away_team  market  side
+ 761711    mls 2026_08_15  CF Montreal   DC United    btts   yes
+ 761716    mls 2026_08_15 Nashville SC Inter Miami total35 under
+[2026-08-29T12:46:29.315804] SCORE GAME_ID ROWS REMOVED | docs/win/soccer/05_final_scores/results/final_scores/MLS/2026_08_16_MLS.csv | before=4 after=1
+[2026-08-29T12:46:29.327747] SCORE GAME_ID ROWS REMOVED | docs/win/soccer/05_final_scores/results/final_scores/MLS/2026_08_19_MLS.csv | before=15 after=5
+[2026-08-29T12:46:29.331584] MISSING SCORE MERGE | select=2026_08_19_soccer_bets.csv league=mls rows=10 missing_rows=5 unique_missing=5
+[2026-08-29T12:46:29.332699] game_id league match_date          home_team            away_team  market  side
+ 761727    mls 2026_08_19 Philadelphia Union          Inter Miami    btts    no
+ 761726    mls 2026_08_19      Columbus Crew          CF Montreal total35 under
+ 761730    mls 2026_08_19      FC Cincinnati     New York City FC total35 under
+ 761727    mls 2026_08_19 Philadelphia Union          Inter Miami total35 under
+ 761738    mls 2026_08_19          LA Galaxy San Jose Earthquakes total35 under
+[2026-08-29T12:46:29.342855] SCORE GAME_ID ROWS REMOVED | docs/win/soccer/05_final_scores/results/final_scores/EPL/2026_08_21_EPL.csv | before=1 after=0
+[2026-08-29T12:46:29.342895] NO SCORES LOADED | league=epl date=2026_08_21
+[2026-08-29T12:46:29.359726] SCORE GAME_ID ROWS REMOVED | docs/win/soccer/05_final_scores/results/final_scores/EPL/2026_08_22_EPL.csv | before=5 after=1
+[2026-08-29T12:46:29.363589] MISSING SCORE MERGE | select=2026_08_22_soccer_bets.csv league=epl rows=9 missing_rows=8 unique_missing=8
+[2026-08-29T12:46:29.364754]   game_id league match_date         home_team         away_team  market  side
+401879299    epl 2026_08_22           Ipswich        Sunderland    btts   yes
+401879298    epl 2026_08_22 Nottingham Forest             Leeds    btts   yes
+401879322    epl 2026_08_22              Hull Manchester United total25  over
+401879299    epl 2026_08_22           Ipswich        Sunderland total25 under
+401879298    epl 2026_08_22 Nottingham Forest             Leeds total25  over
+401879322    epl 2026_08_22              Hull Manchester United total35 under
+401879299    epl 2026_08_22           Ipswich        Sunderland total35 under
+401879321    epl 2026_08_22         Brentford Tottenham Hotspur total35 under
+[2026-08-29T12:46:29.367306] SCORE GAME_ID ROWS REMOVED | docs/win/soccer/05_final_scores/results/final_scores/LALIGA/2026_08_22_LALIGA.csv | before=3 after=2
+[2026-08-29T12:46:29.372183] SCORE GAME_ID ROWS REMOVED | docs/win/soccer/05_final_scores/results/final_scores/LIGUE1/2026_08_22_LIGUE1.csv | before=5 after=1
+[2026-08-29T12:46:29.376902] SCORE GAME_ID ROWS REMOVED | docs/win/soccer/05_final_scores/results/final_scores/MLS/2026_08_22_MLS.csv | before=13 after=7
+[2026-08-29T12:46:29.380646] MISSING SCORE MERGE | select=2026_08_22_soccer_bets.csv league=mls rows=8 missing_rows=1 unique_missing=1
+[2026-08-29T12:46:29.381652] game_id league match_date   home_team  away_team  market  side
+ 761742    mls 2026_08_22 Inter Miami Toronto FC total35 under
+[2026-08-29T12:46:29.384243] SCORE GAME_ID ROWS REMOVED | docs/win/soccer/05_final_scores/results/final_scores/SERIEA/2026_08_22_SERIEA.csv | before=3 after=1
+[2026-08-29T12:46:29.398044] SCORE GAME_ID ROWS REMOVED | docs/win/soccer/05_final_scores/results/final_scores/EPL/2026_08_23_EPL.csv | before=3 after=1
+[2026-08-29T12:46:29.401772] MISSING SCORE MERGE | select=2026_08_23_soccer_bets.csv league=epl rows=4 missing_rows=2 unique_missing=2
+[2026-08-29T12:46:29.402805]   game_id league match_date home_team   away_team  market  side
+401879297    epl 2026_08_23  Brighton Aston Villa    btts   yes
+401879319    epl 2026_08_23 Newcastle   Liverpool total35 under
+[2026-08-29T12:46:29.405355] SCORE GAME_ID ROWS REMOVED | docs/win/soccer/05_final_scores/results/final_scores/LALIGA/2026_08_23_LALIGA.csv | before=3 after=1
+[2026-08-29T12:46:29.409974] SCORE GAME_ID ROWS REMOVED | docs/win/soccer/05_final_scores/results/final_scores/LIGUE1/2026_08_23_LIGUE1.csv | before=3 after=2
+[2026-08-29T12:46:29.414658] SCORE GAME_ID ROWS REMOVED | docs/win/soccer/05_final_scores/results/final_scores/MLS/2026_08_23_MLS.csv | before=2 after=1
+[2026-08-29T12:46:29.447003] NO SCORE FILE | league=laliga date=2026_08_26
+[2026-08-29T12:46:29.447099] NO SCORES LOADED | league=laliga date=2026_08_26
+[2026-08-29T12:46:29.455637] NO SCORE FILE | league=bundesliga date=2026_08_28
+[2026-08-29T12:46:29.455724] NO SCORES LOADED | league=bundesliga date=2026_08_28
+[2026-08-29T12:46:29.464515] NO SCORE FILE | league=epl date=2026_08_29
+[2026-08-29T12:46:29.464603] NO SCORES LOADED | league=epl date=2026_08_29
+[2026-08-29T12:46:29.466173] NO SCORE FILE | league=ligue1 date=2026_08_29
+[2026-08-29T12:46:29.466255] NO SCORES LOADED | league=ligue1 date=2026_08_29
+[2026-08-29T12:46:29.467814] NO SCORE FILE | league=mls date=2026_08_29
+[2026-08-29T12:46:29.467896] NO SCORES LOADED | league=mls date=2026_08_29
+[2026-08-29T12:46:29.469544] NO SCORE FILE | league=seriea date=2026_08_29
+[2026-08-29T12:46:29.469626] NO SCORES LOADED | league=seriea date=2026_08_29

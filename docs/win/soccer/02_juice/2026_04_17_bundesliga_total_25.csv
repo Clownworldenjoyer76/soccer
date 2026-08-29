@@ -1,0 +1,2 @@
+game_id,sport,league,match_date,match_time,home_team,away_team,home_prob,draw_prob,away_prob,home_xg,away_xg,expected_total_goals,dk_over25_decimal,dk_under25_decimal,engine_lambda_home,engine_lambda_away,engine_match_distance,fair_over_decimal,fair_under_decimal,engine_over_prob,engine_under_prob
+33890622,soccer,bundesliga,2026_04_17,06:30 PM,St Pauli,Koln,0.406,0.244,0.35,1.55,1.43,2.98,2.089,1.741,1.545064688239715,1.4323222464336518,2.9750130669816772e-05,1.749118458227337,2.3349023629271293,0.571716566877615,0.428283433122385

@@ -1,0 +1,6 @@
+sport,league,match_date,match_time,home_team,away_team,home_prob,draw_prob,away_prob,home_xg,away_xg,expected_total_goals
+soccer,epl,2026_08_22,07:30 AM,Hull,Manchester United,8.6%,15.1%,76.3%,0.73,2.51,3.24
+soccer,epl,2026_08_22,10:00 AM,Nottingham Forest,Leeds,53.8%,24.4%,21.8%,1.66,0.97,2.63
+soccer,epl,2026_08_22,10:00 AM,Ipswich,Sunderland,33.4%,28.6%,38.0%,1.09,1.17,2.26
+soccer,epl,2026_08_22,10:00 AM,Everton,Crystal Palace,41.4%,27.8%,30.7%,1.28,1.06,2.34
+soccer,epl,2026_08_22,12:30 PM,Brentford,Tottenham Hotspur,43.8%,26.1%,30.1%,1.45,1.15,2.60

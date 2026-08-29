@@ -1,0 +1,11 @@
+pandas
+numpy
+scipy==1.12.0
+pyyaml
+playwright
+pytz
+requests
+openpyxl
+sportsdataverse==0.0.75
+pytest
+polars

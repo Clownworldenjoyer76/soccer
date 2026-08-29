@@ -1,0 +1,4 @@
+sport,league,match_date,match_time,home_team,away_team,home_prob,draw_prob,away_prob,home_xg,away_xg,expected_total_goals
+soccer,ligue1,2026_08_23,09:00 AM,Angers,Lille,31.1%,27.6%,41.2%,1.08,1.29,2.37
+soccer,ligue1,2026_08_23,11:15 AM,Le Havre,Monaco,9.3%,16.3%,74.4%,0.71,2.37,3.08
+soccer,ligue1,2026_08_23,02:45 PM,Paris Saint Germain,Rennes,84.7%,10.5%,4.9%,3.01,0.63,3.64

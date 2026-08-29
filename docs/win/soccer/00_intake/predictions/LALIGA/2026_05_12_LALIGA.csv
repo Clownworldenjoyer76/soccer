@@ -1,0 +1,4 @@
+sport,league,match_date,match_time,home_team,away_team,home_prob,draw_prob,away_prob,home_xg,away_xg,expected_total_goals
+soccer,laliga,2026_05_12,01:00 PM,Celta Vigo,Levante,62.1%,21.2%,16.7%,1.97,0.91,2.88
+soccer,laliga,2026_05_12,02:00 PM,Real Betis,Elche,66.4%,20.0%,13.7%,2.05,0.80,2.85
+soccer,laliga,2026_05_12,03:30 PM,Osasuna,Atletico Madrid,18.9%,24.3%,56.7%,0.84,1.66,2.50

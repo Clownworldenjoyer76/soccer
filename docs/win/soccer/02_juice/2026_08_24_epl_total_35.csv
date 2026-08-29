@@ -1,0 +1,2 @@
+game_id,sport,league,match_date,match_time,home_team,away_team,home_prob,draw_prob,away_prob,home_xg,away_xg,expected_total_goals,dk_over35_decimal,dk_under35_decimal,engine_lambda_home,engine_lambda_away,engine_match_distance,fair_over_decimal,fair_under_decimal,engine_over_prob,engine_under_prob
+401879318,soccer,epl,2026_08_24,03:00 PM,Fulham,Chelsea,0.263,0.264,0.473,1.01,1.46,2.47,,,1.0685242335921146,1.4716767714330112,0.0035614329086431783,3.983256211720098,1.3352041960296184,0.2510508857194923,0.7489491142805077

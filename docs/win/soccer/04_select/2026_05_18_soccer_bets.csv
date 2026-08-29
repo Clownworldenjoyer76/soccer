@@ -1,0 +1,2 @@
+game_id,sport,league,match_date,match_time,home_team,away_team,market,side,odds,american_odds,ev,kelly,model_prob,edge
+61301249,soccer,epl,2026_05_18,03:00 PM,Arsenal,Burnley,btts,yes,2.55,155,0.6793889542845695,0.4383154543771416,0.6585839036410077,0.6793889542845697

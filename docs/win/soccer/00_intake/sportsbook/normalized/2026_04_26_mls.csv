@@ -1,0 +1,2 @@
+sport,league,game_id,match_date,match_time,home_team,away_team,dk_home_decimal,dk_draw_decimal,dk_away_decimal,dk_over25_decimal,dk_under25_decimal,dk_over35_decimal,dk_under35_decimal,btts_yes,btts_no
+soccer,mls,118839,2026_04_26,09:00 PM,LA Galaxy,Real Salt Lake,2.48,3.62,2.85,1.69,2.20,2.63,1.50,1.53,2.53

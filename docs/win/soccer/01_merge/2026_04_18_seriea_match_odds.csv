@@ -1,0 +1,4 @@
+game_id,sport,league,match_date,match_time,home_team,away_team,home_prob,draw_prob,away_prob,home_xg,away_xg,expected_total_goals,dk_home_decimal,dk_draw_decimal,dk_away_decimal
+33890573,soccer,seriea,2026_04_18,01:00 PM,Udinese,Parma,0.477,0.261,0.262,1.48,1.03,2.51,2.148,2.913,4.051
+33890574,soccer,seriea,2026_04_18,04:00 PM,Napoli,Lazio,0.629,0.203,0.167,2.08,0.98,3.06,1.557,3.885,6.279
+33890575,soccer,seriea,2026_04_18,06:45 PM,Roma,Atalanta,0.432,0.248,0.319,1.55,1.30,2.85,2.315,3.276,3.158

@@ -1,0 +1,3 @@
+game_id,sport,league,match_date,match_time,home_team,away_team,home_prob,draw_prob,away_prob,home_xg,away_xg,expected_total_goals,dk_over25_decimal,dk_under25_decimal,fair_over_decimal,fair_under_decimal
+70315368,soccer,ligue1,2026_05_13,01:00 PM,Stade Brest,Strasbourg,0.474,0.256,0.269,1.52,1.08,2.6,1.71,2.0,2.0765394842171747,1.9289022972781793
+70315360,soccer,ligue1,2026_05_13,03:00 PM,Lens,Paris Saint Germain,0.12,0.179,0.701,0.82,2.26,3.08,,,1.6821076106697799,2.466044337224259

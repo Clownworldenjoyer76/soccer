@@ -1,0 +1,15 @@
+sport,league,match_date,match_time,home_team,away_team,home_prob,draw_prob,away_prob,home_xg,away_xg,expected_total_goals
+soccer,mls,2026_07_22,07:30 PM,New England Revolution,Toronto FC,58.2%,23.2%,18.5%,1.76,0.88,2.64
+soccer,mls,2026_07_22,07:30 PM,FC Cincinnati,Vancouver Whitecaps,31.0%,27.2%,41.8%,1.11,1.33,2.44
+soccer,mls,2026_07_22,07:30 PM,Columbus Crew,New York City FC,44.6%,26.8%,28.5%,1.40,1.05,2.45
+soccer,mls,2026_07_22,07:30 PM,Philadelphia Union,New York Red Bulls,46.3%,27.1%,26.6%,1.40,0.98,2.38
+soccer,mls,2026_07_22,08:15 PM,Charlotte FC,Atlanta United,59.8%,22.4%,17.9%,1.85,0.90,2.75
+soccer,mls,2026_07_22,08:30 PM,Sporting Kansas City,Minnesota United,33.9%,28.5%,37.6%,1.10,1.18,2.28
+soccer,mls,2026_07_22,08:30 PM,Austin FC,Seattle Sounders,35.5%,29.6%,34.9%,1.07,1.07,2.14
+soccer,mls,2026_07_22,08:30 PM,Houston Dynamo,DC United,55.5%,24.4%,20.0%,1.66,0.88,2.54
+soccer,mls,2026_07_22,08:30 PM,Nashville SC,CF Montreal,68.6%,19.4%,12.0%,2.06,0.73,2.79
+soccer,mls,2026_07_22,09:30 PM,Colorado Rapids,San Diego FC,44.7%,26.7%,28.7%,1.41,1.07,2.48
+soccer,mls,2026_07_22,10:30 PM,Portland Timbers,FC Dallas,42.1%,27.6%,30.4%,1.31,1.07,2.38
+soccer,mls,2026_07_22,10:30 PM,Los Angeles FC,Real Salt Lake,51.8%,24.5%,23.6%,1.65,1.02,2.67
+soccer,mls,2026_07_22,10:30 PM,LA Galaxy,St Louis City,50.2%,24.9%,25.0%,1.61,1.06,2.67
+soccer,mls,2026_07_22,10:30 PM,San Jose Earthquakes,Orlando City,71.9%,17.3%,10.8%,2.30,0.77,3.07

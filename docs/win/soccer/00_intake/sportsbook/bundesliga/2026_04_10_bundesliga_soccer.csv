@@ -1,0 +1,2 @@
+sport,league,game_id,match_date,match_time,home_team,away_team,dk_home_decimal,dk_draw_decimal,dk_away_decimal,dk_over25_decimal,dk_under25_decimal,dk_over35_decimal,dk_under35_decimal,btts_yes,btts_no
+soccer,bundesliga,33673481,2026_04_10,06:30 PM,Augsburg,Hoffenheim,3.438,3.754,2.064,1.575,2.44,2.41,1.586,1.499,2.628

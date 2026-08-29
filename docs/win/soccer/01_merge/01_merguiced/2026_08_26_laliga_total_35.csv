@@ -1,0 +1,2 @@
+game_id,sport,league,match_date,match_time,home_team,away_team,home_prob,draw_prob,away_prob,home_xg,away_xg,expected_total_goals,dk_over35_decimal,dk_under35_decimal,fair_over_decimal,fair_under_decimal
+401882919,soccer,laliga,2026_08_26,03:00 PM,Real Madrid,Real Sociedad,0.742,0.164,0.093,2.34,0.7,3.04,1.8,2.0,2.7645005553637585,1.566732607116605

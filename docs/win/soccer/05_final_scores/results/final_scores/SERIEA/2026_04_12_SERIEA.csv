@@ -1,0 +1,5 @@
+sport,league,game_id,game_date,match_time,home_team,away_team,home_score,away_score
+soccer,seriea,33676110.0,2026_04_12,02:45 PM,Como,Inter Milan,3,4
+soccer,seriea,33676103.0,2026_04_12,12:00 PM,Bologna,Lecce,2,0
+soccer,seriea,33676097.0,2026_04_12,09:00 AM,Parma,Napoli,1,1
+soccer,seriea,,2026_04_12,06:30 AM,Genoa,Sassuolo,2,1

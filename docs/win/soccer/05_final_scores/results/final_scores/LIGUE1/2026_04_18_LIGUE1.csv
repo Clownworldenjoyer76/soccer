@@ -1,0 +1,4 @@
+sport,league,game_id,game_date,match_time,home_team,away_team,home_score,away_score
+soccer,ligue1,,2026_04_18,03:05 PM,Lille,Nice,0,0
+soccer,ligue1,33890599.0,2026_04_18,01:00 PM,Angers,Le Havre,1,1
+soccer,ligue1,33890598.0,2026_04_18,11:00 AM,Lorient,Marseille,2,0

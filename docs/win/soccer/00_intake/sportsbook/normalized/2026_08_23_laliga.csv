@@ -1,0 +1,4 @@
+sport,league,game_id,match_date,match_time,home_team,away_team,dk_home_decimal,dk_draw_decimal,dk_away_decimal,dk_over25_decimal,dk_under25_decimal,dk_over35_decimal,dk_under35_decimal,btts_yes,btts_no
+soccer,laliga,401882911,2026_08_23,01:30 PM,Getafe,Santander,2.85,2.05,4.40,2.25,1.67,,,5.00,1.15
+soccer,laliga,401882913,2026_08_23,03:30 PM,Elche,Barcelona,8.50,5.75,1.34,,,2.25,1.65,,
+soccer,laliga,401882915,2026_08_23,11:00 AM,Atletico Madrid,Villarreal,1.80,3.90,4.30,1.67,2.20,,,,

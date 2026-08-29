@@ -1,0 +1,10 @@
+sport,league,game_id,match_date,match_time,home_team,away_team,home_prob,draw_prob,away_prob,home_xg,away_xg,expected_total_goals
+soccer,bundesliga,61515278,2026_05_16,09:30 AM,Eintracht Frankfurt,VfB Stuttgart,0.574,0.212,0.214,2.03,1.17,3.20
+soccer,bundesliga,61515288,2026_05_16,09:30 AM,Borussia Monchengladbach,Hoffenheim,0.412,0.247,0.341,1.53,1.37,2.90
+soccer,bundesliga,61515284,2026_05_16,09:30 AM,Werder Bremen,Borussia Dortmund,0.271,0.231,0.497,1.27,1.79,3.06
+soccer,bundesliga,61515276,2026_05_16,09:30 AM,Leverkusen,Hamburg,0.739,0.152,0.109,2.67,0.95,3.62
+soccer,bundesliga,61515290,2026_05_16,09:30 AM,Union Berlin,Augsburg,0.465,0.252,0.283,1.55,1.15,2.70
+soccer,bundesliga,61515296,2026_05_16,09:30 AM,Heidenheim,Mainz,0.302,0.255,0.443,1.20,1.50,2.70
+soccer,bundesliga,61515274,2026_05_16,09:30 AM,Bayern Munich,Koln,0.897,0.07,0.033,3.71,0.69,4.40
+soccer,bundesliga,61515292,2026_05_16,09:30 AM,St Pauli,Wolfsburg,0.418,0.256,0.326,1.46,1.26,2.72
+soccer,bundesliga,61515282,2026_05_16,09:30 AM,Freiburg,RB Leipzig,0.28,0.246,0.474,1.18,1.62,2.80

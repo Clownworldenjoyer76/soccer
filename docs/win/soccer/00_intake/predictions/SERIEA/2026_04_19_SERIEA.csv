@@ -1,0 +1,4 @@
+sport,league,market,match_date,match_time,home_team,away_team,home_prob,draw_prob,away_prob,home_xg,away_xg,expected_total_goals
+soccer,seriea,,2026_04_19,01:00 PM,Verona,Milan,15.5%,20.7%,63.8%,0.88,2.01,2.89
+soccer,seriea,,2026_04_19,06:45 PM,Juventus,Bologna,64.7%,21.2%,14.1%,1.92,0.76,2.68
+soccer,seriea,,2026_04_19,6:30 AM,Cremonese,Torino,33.70%,28.10%,38.10%,1.12,1.21,2.33

@@ -1,0 +1,22 @@
+Proposed Base Structure (Clean Isolation)
+
+docs/win/soccer/
+│
+├── dump/                  # raw manual exports
+├── cleaned/               # post raw_clean equivalent
+├── normalized/            # post team/date normalization
+├── games_master/
+├── juice/
+│   ├── ml/
+│   ├── spreads/
+│   └── totals/
+├── final/
+├── calibration/
+├── errors/
+└── logs/
+
+Mappings:
+mappings/soccer/
+├── team_name_map.csv
+├── league_alias_map.csv
+└── any tier/competition maps

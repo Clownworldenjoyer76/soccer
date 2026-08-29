@@ -1,0 +1,4 @@
+sport,league,game_id,match_date,match_time,home_team,away_team,home_prob,draw_prob,away_prob,home_xg,away_xg,expected_total_goals
+soccer,seriea,33890516,2026_04_19,01:00 PM,Verona,Milan,0.155,0.207,0.638,0.88,2.01,2.89
+soccer,seriea,33890586,2026_04_19,06:45 PM,Juventus,Bologna,0.647,0.212,0.141,1.92,0.76,2.68
+soccer,seriea,33890499,2026_04_19,6:30 AM,Cremonese,Torino,0.337,0.281,0.381,1.12,1.21,2.33

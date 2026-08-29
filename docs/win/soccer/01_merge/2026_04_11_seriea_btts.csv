@@ -1,0 +1,2 @@
+game_id,sport,league,match_date,match_time,home_team,away_team,home_prob,draw_prob,away_prob,home_xg,away_xg,expected_total_goals,btts_yes,btts_no
+33676064,soccer,seriea,2026_04_11,06:45 PM,Atalanta,Juventus,0.309,0.264,0.426,1.15,1.40,2.55,1.995,1.842

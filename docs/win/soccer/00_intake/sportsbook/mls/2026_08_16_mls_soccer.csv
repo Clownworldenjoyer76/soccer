@@ -1,0 +1,5 @@
+sport,league,game_id,match_date,match_time,home_team,away_team,dk_home_decimal,dk_draw_decimal,dk_away_decimal,dk_over25_decimal,dk_under25_decimal,dk_over35_decimal,dk_under35_decimal,btts_yes,btts_no
+soccer,mls,761723,2026_08_16,06:00 PM,Chicago Fire,Portland Timbers,1.51,4.70,4.90,,,1.83,1.95,,
+soccer,mls,761722,2026_08_16,06:00 PM,New York City FC,Philadelphia Union,2.50,3.55,2.50,1.61,2.30,,,1.51,2.55
+soccer,mls,761717,2026_08_16,08:30 PM,Austin FC,FC Dallas,2.80,3.55,2.25,1.67,2.20,,,,
+soccer,mls,761724,2026_08_16,10:30 PM,Seattle Sounders,Vancouver Whitecaps,3.75,3.75,1.83,1.57,2.35,,,1.52,2.50

@@ -1,0 +1,6 @@
+sport,league,game_id,game_date,match_time,home_team,away_team,home_score,away_score
+soccer,bundesliga,61514192.0,2026_05_09,12:30 PM,Wolfsburg,Bayern Munich,0,1
+soccer,bundesliga,61514194.0,2026_05_09,09:30 AM,Augsburg,Borussia Monchengladbach,3,1
+soccer,bundesliga,,2026_05_09,09:30 AM,RB Leipzig,FC St. Pauli,2,1
+soccer,bundesliga,,2026_05_09,09:30 AM,Hoffenheim,Werder Bremen,1,0
+soccer,bundesliga,,2026_05_09,09:30 AM,VfB Stuttgart,Bayer 04 Leverkusen,3,1

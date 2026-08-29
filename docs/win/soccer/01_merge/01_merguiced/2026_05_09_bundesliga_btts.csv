@@ -1,0 +1,6 @@
+game_id,sport,league,match_date,match_time,home_team,away_team,home_prob,draw_prob,away_prob,home_xg,away_xg,expected_total_goals,btts_yes,btts_no,fair_btts_yes_decimal,fair_btts_no_decimal
+61514196,soccer,bundesliga,2026_05_09,09:30 AM,Hoffenheim,Werder Bremen,0.643,0.196,0.161,2.17,0.98,3.15,1.46,2.65,1.5509433962264152,2.815068493150685
+61514188,soccer,bundesliga,2026_05_09,09:30 AM,RB Leipzig,St Pauli,0.739,0.151,0.109,2.68,0.95,3.63,1.76,2.05,1.8585365853658535,2.1647727272727275
+61514190,soccer,bundesliga,2026_05_09,09:30 AM,VfB Stuttgart,Leverkusen,0.439,0.254,0.306,1.5,1.21,2.71,1.28,3.6,1.3555555555555554,3.8125
+61514194,soccer,bundesliga,2026_05_09,09:30 AM,Augsburg,Borussia Monchengladbach,0.461,0.24,0.298,1.66,1.3,2.96,1.39,2.95,1.4711864406779658,3.1223021582733814
+61514192,soccer,bundesliga,2026_05_09,12:30 PM,Wolfsburg,Bayern Munich,0.216,0.199,0.585,1.31,2.24,3.55,1.31,3.4,1.385294117647059,3.595419847328244

@@ -1,0 +1,9 @@
+sport,league,game_id,match_date,match_time,home_team,away_team,dk_home_decimal,dk_draw_decimal,dk_away_decimal,dk_over25_decimal,dk_under25_decimal,dk_over35_decimal,dk_under35_decimal,btts_yes,btts_no
+soccer,epl,61301251,2026_05_15,03:00 PM,Aston Villa,Liverpool,2.95,3.75,2.30,,,2.30,1.55,1.43,2.80
+soccer,epl,61301261,2026_05_17,07:30 AM,Manchester United,Nottingham Forest,1.62,4.20,4.80,1.55,2.20,,,1.62,2.20
+soccer,epl,61301257,2026_05_17,10:00 AM,Everton,Sunderland,1.83,3.70,4.10,1.83,1.83,,,1.74,2.00
+soccer,epl,61301259,2026_05_17,10:00 AM,Leeds,Brighton,3.10,3.65,2.15,1.60,2.10,,,1.52,2.40
+soccer,epl,61301265,2026_05_17,10:00 AM,Wolverhampton,Fulham,3.65,3.90,1.90,1.66,2.05,,,1.62,2.20
+soccer,epl,61301253,2026_05_17,10:00 AM,Brentford,Crystal Palace,1.76,4.10,4.00,1.62,2.10,,,1.64,2.20
+soccer,epl,61301263,2026_05_17,12:30 PM,Newcastle,West Ham,2.05,3.80,3.25,,,2.10,1.60,1.40,2.80
+soccer,epl,61301249,2026_05_18,03:00 PM,Arsenal,Burnley,1.09,11.00,20.00,,,1.80,1.83,2.40,1.54

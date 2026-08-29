@@ -1,0 +1,4 @@
+game_id,sport,league,match_date,match_time,home_team,away_team,home_prob,draw_prob,away_prob,home_xg,away_xg,expected_total_goals,dk_over25_decimal,dk_under25_decimal,fair_over_decimal,fair_under_decimal
+61624652,soccer,laliga,2026_05_14,01:00 PM,Valencia,Vallecano,0.338,0.286,0.376,1.1,1.17,2.27,2.0,1.71,2.525313076947012,1.655603111986392
+61624646,soccer,laliga,2026_05_14,02:00 PM,Girona,Real Sociedad,0.367,0.292,0.341,1.12,1.08,2.2,1.68,2.05,2.650507406485755,1.6058742881555381
+61624656,soccer,laliga,2026_05_14,03:30 PM,Real Madrid,Real Oviedo,0.853,0.105,0.042,2.87,0.52,3.39,,,1.5190015730584898,2.9267764336569813

@@ -1,0 +1,4 @@
+game_id,sport,league,match_date,match_time,home_team,away_team,home_prob,draw_prob,away_prob,home_xg,away_xg,expected_total_goals,dk_home_decimal,dk_draw_decimal,dk_away_decimal,fair_home_decimal,fair_draw_decimal,fair_away_decimal
+33999025,soccer,laliga,2026_04_26,12:00 PM,Vallecano,Real Sociedad,0.442,0.269,0.289,1.39,1.06,2.45,2.397,3.496,2.803,2.262443438914027,3.717472118959108,3.4602076124567476
+33999027,soccer,laliga,2026_04_26,04:30 PM,Osasuna,Sevilla,0.447,0.275,0.278,1.35,1.0,2.35,2.109,3.575,3.268,2.237136465324385,3.6363636363636362,3.597122302158273
+33999028,soccer,laliga,2026_04_26,07:00 PM,Villarreal,Celta Vigo,0.521,0.239,0.24,1.72,1.08,2.8,1.729,3.863,4.388,1.9193857965451055,4.184100418410042,4.166666666666667

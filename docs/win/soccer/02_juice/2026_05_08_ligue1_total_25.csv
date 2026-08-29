@@ -1,0 +1,2 @@
+game_id,sport,league,match_date,match_time,home_team,away_team,home_prob,draw_prob,away_prob,home_xg,away_xg,expected_total_goals,dk_over25_decimal,dk_under25_decimal,engine_lambda_home,engine_lambda_away,engine_match_distance,fair_over_decimal,fair_under_decimal,engine_over_prob,engine_under_prob
+61526576,soccer,ligue1,2026_05_08,02:45 PM,Lens,Nantes,0.69,0.184,0.126,2.22,0.83,3.05,1.46,2.7,2.190075376884422,1.1792713567839193,0.12288596373828924,1.5285562973410614,2.891946051973212,0.6542120834800196,0.3457879165199804

@@ -1,0 +1,6 @@
+bucket,side,Win,Loss,Push,Total,Win_Pct
++100_to_+149,over,0,1,0,1,0.0
++100_to_+149,under,1,0,0,1,1.0
++150_to_+199,under,2,1,0,3,0.6667
++200_to_+249,under,1,0,0,1,1.0
++300_or_higher,over,1,0,0,1,1.0

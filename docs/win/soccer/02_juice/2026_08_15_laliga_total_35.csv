@@ -1,0 +1,3 @@
+game_id,sport,league,match_date,match_time,home_team,away_team,home_prob,draw_prob,away_prob,home_xg,away_xg,expected_total_goals,dk_over35_decimal,dk_under35_decimal,engine_lambda_home,engine_lambda_away,engine_match_distance,fair_over_decimal,fair_under_decimal,engine_over_prob,engine_under_prob
+401882926,soccer,laliga,2026_08_15,01:30 PM,Alaves,Getafe,0.549,0.262,0.189,1.5,0.76,2.26,,,1.4303781466516088,0.8686168282227631,0.01664481783683812,4.988808849634464,1.25070140929206,0.2004486501969846,0.7995513498030153
+401882918,soccer,laliga,2026_08_15,03:30 PM,Sevilla,Vallecano,0.323,0.291,0.386,1.03,1.16,2.19,,,1.0195382722150523,1.1588536875839426,0.00011076178040155381,5.668437571580575,1.2142044280698037,0.1764154561767824,0.8235845438232176

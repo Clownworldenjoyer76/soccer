@@ -1,0 +1,6 @@
+game_id,sport,league,match_date,match_time,home_team,away_team,home_prob,draw_prob,away_prob,home_xg,away_xg,expected_total_goals,dk_over35_decimal,dk_under35_decimal
+61301233,soccer,epl,2026_05_09,07:30 AM,Liverpool,Chelsea,0.521,0.237,0.242,1.74,1.10,2.84,2.30,1.60
+61301225,soccer,epl,2026_05_09,10:00 AM,Brighton,Wolverhampton,0.72,0.181,0.098,2.14,0.64,2.78,2.25,1.64
+61301241,soccer,epl,2026_05_09,10:00 AM,Sunderland,Manchester United,0.245,0.263,0.491,0.96,1.47,2.43,2.75,1.44
+61301231,soccer,epl,2026_05_09,10:00 AM,Fulham,Bournemouth,0.34,0.277,0.384,1.15,1.24,2.39,2.45,1.55
+61301235,soccer,epl,2026_05_09,12:30 PM,Manchester City,Brentford,0.711,0.173,0.116,2.35,0.83,3.18,1.95,1.83

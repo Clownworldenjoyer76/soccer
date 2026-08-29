@@ -1,0 +1,12 @@
+game_id,sport,league,match_date,match_time,home_team,away_team,home_prob,draw_prob,away_prob,home_xg,away_xg,expected_total_goals,btts_yes,btts_no
+118531,soccer,mls,2026_04_22,09:30 PM,Columbus Crew,LA Galaxy,0.496,0.247,0.257,1.63,1.09,2.72,1.62,2.31
+118532,soccer,mls,2026_04_22,09:30 PM,New York City FC,FC Cincinnati,0.646,0.209,0.145,1.96,0.80,2.76,1.52,2.54
+118533,soccer,mls,2026_04_22,09:30 PM,New York Red Bulls,DC United,0.543,0.249,0.207,1.61,0.89,2.50,1.65,2.25
+118534,soccer,mls,2026_04_22,09:30 PM,Orlando City,Charlotte FC,0.38,0.288,0.332,1.17,1.07,2.24,1.57,2.42
+118535,soccer,mls,2026_04_22,09:30 PM,Toronto FC,Philadelphia Union,0.457,0.273,0.27,1.37,0.99,2.36,1.70,2.15
+118536,soccer,mls,2026_04_22,09:45 PM,Atlanta United,New England Revolution,0.465,0.26,0.275,1.48,1.07,2.55,1.60,2.19
+118537,soccer,mls,2026_04_22,10:30 PM,FC Dallas,Minnesota United,0.486,0.263,0.25,1.47,0.98,2.45,1.49,2.64
+118538,soccer,mls,2026_04_22,10:30 PM,Houston Dynamo,San Diego FC,0.406,0.285,0.309,1.22,1.04,2.26,1.52,2.54
+118539,soccer,mls,2026_04_22,11:30 PM,Real Salt Lake,Inter Miami,0.43,0.269,0.3,1.37,1.09,2.46,1.41,2.94
+118540,soccer,mls,2026_04_22,12:30 PM,Los Angeles FC,Colorado Rapids,0.632,0.209,0.159,1.99,0.88,2.87,1.62,2.31
+118541,soccer,mls,2026_04_22,12:30 PM,San Jose Earthquakes,Austin FC,0.605,0.224,0.171,1.84,0.86,2.70,1.70,2.15

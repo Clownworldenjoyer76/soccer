@@ -1,0 +1,4 @@
+game_id,sport,league,match_date,match_time,home_team,away_team,home_prob,draw_prob,away_prob,home_xg,away_xg,expected_total_goals,dk_home_decimal,dk_draw_decimal,dk_away_decimal
+61624628,soccer,laliga,2026_05_09,08:00 AM,Elche,Alaves,0.418,0.297,0.285,1.18,0.91,2.09,2.30,3.20,3.35
+61624632,soccer,laliga,2026_05_09,10:15 AM,Sevilla,Espanyol,0.471,0.268,0.261,1.42,0.99,2.41,2.05,3.30,3.80
+61624630,soccer,laliga,2026_05_09,03:00 PM,Real Sociedad,Real Betis,0.388,0.278,0.334,1.24,1.13,2.37,2.60,3.60,2.60

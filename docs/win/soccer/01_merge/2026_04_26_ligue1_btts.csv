@@ -1,0 +1,6 @@
+game_id,sport,league,match_date,match_time,home_team,away_team,home_prob,draw_prob,away_prob,home_xg,away_xg,expected_total_goals,btts_yes,btts_no
+33999632,soccer,ligue1,2026_04_26,01:00 PM,Lorient,Strasbourg,0.41,0.272,0.318,1.32,1.12,2.44,,
+33999633,soccer,ligue1,2026_04_26,03:15 PM,Le Havre,Metz,0.536,0.273,0.19,1.41,0.72,2.13,,
+33999634,soccer,ligue1,2026_04_26,03:15 PM,Paris FC,Lille,0.242,0.268,0.49,0.93,1.43,2.36,,
+33999635,soccer,ligue1,2026_04_26,03:15 PM,Rennes,Nantes,0.693,0.183,0.125,2.24,0.82,3.06,,
+33999636,soccer,ligue1,2026_04_26,06:45 PM,Marseille,Nice,0.642,0.211,0.147,1.94,0.79,2.73,,

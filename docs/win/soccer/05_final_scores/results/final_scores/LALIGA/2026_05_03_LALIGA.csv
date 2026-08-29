@@ -1,0 +1,5 @@
+sport,league,game_id,game_date,match_time,home_team,away_team,home_score,away_score
+soccer,laliga,,2026_05_03,03:00 PM,Espanyol,Real Madrid,0,2
+soccer,laliga,,2026_05_03,12:30 PM,Real Betis,Real Oviedo,3,0
+soccer,laliga,,2026_05_03,10:15 AM,Getafe,Vallecano,0,2
+soccer,laliga,,2026_05_03,08:00 AM,Celta Vigo,Elche,3,1

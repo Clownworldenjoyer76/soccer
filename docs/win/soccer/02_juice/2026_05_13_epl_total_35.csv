@@ -1,0 +1,2 @@
+game_id,sport,league,match_date,match_time,home_team,away_team,home_prob,draw_prob,away_prob,home_xg,away_xg,expected_total_goals,dk_over35_decimal,dk_under35_decimal,engine_lambda_home,engine_lambda_away,engine_match_distance,fair_over_decimal,fair_under_decimal,engine_over_prob,engine_under_prob
+70784812,soccer,epl,2026_05_13,03:00 PM,Manchester City,Crystal Palace,0.682,0.191,0.127,2.13,0.79,2.92,1.9,1.8,1.878936599636711,1.0532242043833897,0.13231981277524563,2.9623202517432974,1.5096008152143434,0.3375732247084053,0.6624267752915947

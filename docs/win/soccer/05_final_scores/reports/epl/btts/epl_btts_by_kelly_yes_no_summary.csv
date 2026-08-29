@@ -1,0 +1,4 @@
+bucket,side,Win,Loss,Push,Total,Win_Pct
+0.20_to_0.25,no,2,2,0,4,0.5
+0.25_to_0.30,no,0,1,0,1,0.0
+0.55_to_0.60,yes,1,0,0,1,1.0

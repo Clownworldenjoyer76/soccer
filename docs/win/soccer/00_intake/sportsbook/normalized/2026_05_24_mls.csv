@@ -1,0 +1,4 @@
+sport,league,game_id,match_date,match_time,home_team,away_team,dk_home_decimal,dk_draw_decimal,dk_away_decimal,dk_over25_decimal,dk_under25_decimal,dk_over35_decimal,dk_under35_decimal,btts_yes,btts_no
+soccer,mls,66299230,2026_05_24,05:00 PM,Columbus Crew,Atlanta United,1.48,4.50,5.70,,,,,,
+soccer,mls,66299232,2026_05_24,07:00 PM,Inter Miami,Philadelphia Union,1.34,5.50,6.50,,,,,,
+soccer,mls,66299234,2026_05_24,09:15 PM,Los Angeles FC,Seattle Sounders,1.83,3.80,3.60,,,,,,

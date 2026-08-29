@@ -1,0 +1,2 @@
+game_id,sport,league,match_date,match_time,home_team,away_team,home_prob,draw_prob,away_prob,home_xg,away_xg,expected_total_goals,dk_over25_decimal,dk_under25_decimal,engine_lambda_home,engine_lambda_away,engine_match_distance,fair_over_decimal,fair_under_decimal,engine_over_prob,engine_under_prob
+33999618,soccer,ligue1,2026_04_24,06:45 PM,Stade Brest,Lens,0.205,0.24,0.555,0.93,1.69,2.62,1.682,2.159,1.0664580773795538,1.6546474502586368,0.01987060965533983,1.954951401837154,2.0471737075585006,0.5115216670144618,0.4884783329855382

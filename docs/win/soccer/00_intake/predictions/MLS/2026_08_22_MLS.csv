@@ -1,0 +1,14 @@
+sport,league,match_date,match_time,home_team,away_team,home_prob,draw_prob,away_prob,home_xg,away_xg,expected_total_goals
+soccer,mls,2026_08_22,07:30 PM,Orlando City,Real Salt Lake,48.5%,26.6%,24.9%,1.44,0.96,2.40
+soccer,mls,2026_08_22,07:30 PM,Charlotte FC,DC United,51.0%,25.6%,23.4%,1.55,0.96,2.51
+soccer,mls,2026_08_22,07:30 PM,New York Red Bulls,Chicago Fire,30.6%,28.7%,40.8%,1.01,1.22,2.23
+soccer,mls,2026_08_22,07:30 PM,CF Montreal,LA Galaxy,44.2%,26.2%,29.6%,1.44,1.13,2.57
+soccer,mls,2026_08_22,07:30 PM,FC Cincinnati,Seattle Sounders,50.3%,25.6%,24.1%,1.54,0.98,2.52
+soccer,mls,2026_08_22,07:30 PM,Inter Miami,Toronto FC,67.5%,19.1%,13.3%,2.15,0.83,2.98
+soccer,mls,2026_08_22,08:30 PM,Nashville SC,Columbus Crew,55.6%,23.0%,21.4%,1.80,1.03,2.83
+soccer,mls,2026_08_22,08:30 PM,Austin FC,Philadelphia Union,31.5%,28.1%,40.4%,1.07,1.25,2.32
+soccer,mls,2026_08_22,08:30 PM,St Louis City,Houston Dynamo,45.7%,26.9%,27.4%,1.40,1.02,2.42
+soccer,mls,2026_08_22,09:30 PM,Vancouver Whitecaps,FC Dallas,62.7%,21.6%,15.7%,1.90,0.82,2.72
+soccer,mls,2026_08_22,10:30 PM,San Jose Earthquakes,Minnesota United,46.1%,25.7%,28.2%,1.51,1.11,2.62
+soccer,mls,2026_08_22,10:30 PM,San Diego FC,Colorado Rapids,47.8%,25.4%,26.8%,1.54,1.09,2.63
+soccer,mls,2026_08_22,10:30 PM,Los Angeles FC,Portland Timbers,60.6%,21.5%,17.9%,1.96,0.96,2.92

@@ -1,0 +1,15 @@
+game_id,sport,league,match_date,match_time,home_team,away_team,home_prob,draw_prob,away_prob,home_xg,away_xg,expected_total_goals,dk_over25_decimal,dk_under25_decimal
+118700,soccer,mls,2026_04_25,03:00 PM,Toronto FC,Atlanta United,0.545,0.242,0.214,1.69,0.95,2.64,1.69,2.20
+118701,soccer,mls,2026_04_25,04:30 PM,CF Montreal,New York City FC,0.321,0.288,0.391,1.05,1.18,2.23,1.97,1.91
+118702,soccer,mls,2026_04_25,06:45 PM,Minnesota United,Los Angeles FC,0.399,0.272,0.328,1.30,1.15,2.45,1.89,2.00
+118803,soccer,mls,2026_04_25,09:30 PM,Columbus Crew,Philadelphia Union,0.504,0.253,0.243,1.57,1.00,2.57,1.89,2.00
+118804,soccer,mls,2026_04_25,09:30 PM,DC United,Orlando City,0.432,0.276,0.292,1.32,1.04,2.36,1.75,2.10
+118805,soccer,mls,2026_04_25,09:30 PM,FC Cincinnati,New York Red Bulls,0.54,0.25,0.209,1.60,0.89,2.49,1.33,3.40
+118806,soccer,mls,2026_04_25,09:30 PM,Inter Miami,New England Revolution,0.652,0.201,0.147,2.06,0.85,2.91,1.46,2.75
+118807,soccer,mls,2026_04_25,10:30 PM,Austin FC,Houston Dynamo,0.457,0.275,0.268,1.36,0.97,2.33,1.89,2.00
+118808,soccer,mls,2026_04_25,10:30 PM,Chicago Fire,Sporting Kansas City,0.64,0.213,0.146,1.91,0.79,2.7,1.40,3.00
+118809,soccer,mls,2026_04_25,10:30 PM,Nashville SC,Charlotte FC,0.522,0.259,0.219,1.52,0.89,2.41,1.80,2.10
+118810,soccer,mls,2026_04_25,10:30 PM,St Louis City,San Jose Earthquakes,0.398,0.278,0.324,1.26,1.11,2.37,1.54,2.50
+118811,soccer,mls,2026_04_25,10:30 PM,San Diego FC,Portland Timbers,0.579,0.232,0.189,1.77,0.91,2.68,1.40,3.00
+118812,soccer,mls,2026_04_25,10:30 PM,Seattle Sounders,FC Dallas,0.565,0.246,0.189,1.63,0.83,2.46,1.66,2.25
+118813,soccer,mls,2026_04_25,10:30 PM,Vancouver Whitecaps,Colorado Rapids,0.648,0.205,0.146,2.01,0.83,2.84,1.40,3.00

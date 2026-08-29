@@ -1,0 +1,3 @@
+game_id,sport,league,match_date,match_time,home_team,away_team,home_prob,draw_prob,away_prob,home_xg,away_xg,expected_total_goals,dk_over25_decimal,dk_under25_decimal,fair_over_decimal,fair_under_decimal
+401874929,soccer,seriea,2026_08_22,02:45 PM,Genoa,Napoli,0.245,0.251,0.504,1.03,1.59,2.62,2.4,1.57,2.0551619830810806,1.9477217868293482
+401874745,soccer,seriea,2026_08_22,12:30 PM,Udinese,Como,0.335,0.277,0.387,1.14,1.24,2.38,2.0,1.8,2.352623974171601,1.739303767414324

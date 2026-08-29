@@ -1,0 +1,3 @@
+game_id,sport,league,match_date,match_time,home_team,away_team,home_prob,draw_prob,away_prob,home_xg,away_xg,expected_total_goals,btts_yes,btts_no,engine_lambda_home,engine_lambda_away,engine_match_distance,fair_btts_yes_decimal,fair_btts_no_decimal,engine_btts_yes_prob,engine_btts_no_prob
+66299202,soccer,mls,2026_05_17,06:00 PM,Inter Miami,Portland Timbers,0.638,0.203,0.16,2.07,0.93,3.0,,,2.0807072959793844,0.8878153380974046,0.001894191887026429,1.906670059625901,2.1029370490215675,0.5244745911603633,0.4755254088396367
+66299204,soccer,mls,2026_05_17,08:00 PM,Nashville SC,Los Angeles FC,0.454,0.268,0.278,1.4,1.04,2.44,,,1.405320492371229,1.0347122890281604,5.626752639402077e-05,2.003146422078006,1.996863446842098,0.4992146300331999,0.5007853699668002

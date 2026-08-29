@@ -1,0 +1,2 @@
+game_id,sport,league,match_date,match_time,home_team,away_team,home_prob,draw_prob,away_prob,home_xg,away_xg,expected_total_goals,btts_yes,btts_no,engine_lambda_home,engine_lambda_away,engine_match_distance,fair_btts_yes_decimal,fair_btts_no_decimal,engine_btts_yes_prob,engine_btts_no_prob,yes_edge,yes_ev,yes_kelly,no_edge,no_ev,no_kelly
+33899675,soccer,ligue1,2026_04_22,05:00 PM,Paris Saint Germain,Nantes,0.87,0.088,0.042,3.36,0.68,4.04,,,2.738986750623207,1.5650333498793056,1.1689414863001084,1.352540054547571,3.836557114859872,0.7393496382142288,0.2606503617857711,,,0,,,0

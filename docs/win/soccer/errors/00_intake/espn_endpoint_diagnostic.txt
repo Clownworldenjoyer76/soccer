@@ -1,0 +1,93 @@
+=== ESPN endpoint diagnostic ===
+utc_time=2026-08-29T16:45:47Z
+runner=GitHub Actions 1000098096
+date=20260829
+league=usa.1
+
+[production_limit_1000]
+url=https://site.api.espn.com/apis/site/v2/sports/soccer/usa.1/scoreboard?dates=20260829&limit=1000
+curl_exit=0
+http|content_type|bytes|effective_url=403|text/html|451|https://site.api.espn.com/apis/site/v2/sports/soccer/usa.1/scoreboard?dates=20260829&limit=1000
+json=no
+
+[site_api_limit_100]
+url=https://site.api.espn.com/apis/site/v2/sports/soccer/usa.1/scoreboard?dates=20260829&limit=100
+curl_exit=0
+http|content_type|bytes|effective_url=403|text/html|449|https://site.api.espn.com/apis/site/v2/sports/soccer/usa.1/scoreboard?dates=20260829&limit=100
+json=no
+
+[site_api_no_limit]
+url=https://site.api.espn.com/apis/site/v2/sports/soccer/usa.1/scoreboard?dates=20260829
+curl_exit=0
+http|content_type|bytes|effective_url=403|text/html|451|https://site.api.espn.com/apis/site/v2/sports/soccer/usa.1/scoreboard?dates=20260829
+json=no
+
+[site_web_api]
+url=https://site.web.api.espn.com/apis/v2/sports/soccer/usa.1/scoreboard?region=us&lang=en&contentorigin=espn&isqualified=true&limit=1000&dates=20260829
+curl_exit=0
+http|content_type|bytes|effective_url=404||12|https://site.web.api.espn.com/apis/v2/sports/soccer/usa.1/scoreboard?region=us&lang=en&contentorigin=espn&isqualified=true&limit=1000&dates=20260829
+json=yes type=dict | keys=code
+
+[cdn_scoreboard]
+url=https://cdn.espn.com/core/soccer/scoreboard?xhr=1&league=usa.1&dates=20260829
+curl_exit=0
+http|content_type|bytes|effective_url=200|application/json;charset=utf-8|368241|https://cdn.espn.com/core/soccer/scoreboard?xhr=1&league=usa.1&dates=20260829
+json=yes type=dict | keys=news,pinnedCount,nowFeedMD5Hash,type,content,analytics,nowFeed,ads,targeting,nowFeedCount,meta,nowFeedSupported,sport,tier2Nav
+
+[public_scoreboard_page]
+url=https://www.espn.com/soccer/scoreboard/_/league/usa.1/date/20260829
+curl_exit=0
+http|content_type|bytes|effective_url=202|text/html; charset=UTF-8|0|https://www.espn.com/soccer/scoreboard/_/league/usa.1/date/20260829
+json=no
+
+[cdn_structure]
+top_level_keys=news,pinnedCount,nowFeedMD5Hash,type,content,analytics,nowFeed,ads,targeting,nowFeedCount,meta,nowFeedSupported,sport,tier2Nav
+event_list_paths_found=1
+event_list_path=$.content.sbData.events count=13
+event_candidates_found=13
+event_1=id:761755 competition:761755 date:2026-08-29T20:30Z home:Seattle Sounders FC away:Chicago Fire FC path:$.content.sbData.events[0]
+event_2=id:761759 competition:761759 date:2026-08-29T23:30Z home:Atlanta United FC away:Charlotte FC path:$.content.sbData.events[1]
+event_3=id:761756 competition:761756 date:2026-08-29T23:30Z home:D.C. United away:LAFC path:$.content.sbData.events[2]
+event_4=id:761757 competition:761757 date:2026-08-29T23:30Z home:Inter Miami CF away:CF Montréal path:$.content.sbData.events[3]
+event_5=id:761761 competition:761761 date:2026-08-29T23:30Z home:Red Bull New York away:Philadelphia Union path:$.content.sbData.events[4]
+event_6=id:761760 competition:761760 date:2026-08-29T23:30Z home:Toronto FC away:New York City FC path:$.content.sbData.events[5]
+event_7=id:761765 competition:761765 date:2026-08-30T00:30Z home:Houston Dynamo FC away:San Jose Earthquakes path:$.content.sbData.events[6]
+event_8=id:761763 competition:761763 date:2026-08-30T00:30Z home:Minnesota United FC away:Orlando City SC path:$.content.sbData.events[7]
+event_9=id:761764 competition:761764 date:2026-08-30T00:30Z home:Nashville SC away:FC Cincinnati path:$.content.sbData.events[8]
+event_10=id:761762 competition:761762 date:2026-08-30T00:30Z home:Sporting Kansas City away:Vancouver Whitecaps path:$.content.sbData.events[9]
+event_11=id:761766 competition:761766 date:2026-08-30T01:30Z home:Colorado Rapids away:Real Salt Lake path:$.content.sbData.events[10]
+event_12=id:761768 competition:761768 date:2026-08-30T02:30Z home:Portland Timbers away:Austin FC path:$.content.sbData.events[11]
+event_13=id:761767 competition:761767 date:2026-08-30T02:30Z home:San Diego FC away:LA Galaxy path:$.content.sbData.events[12]
+selected_event_id=761755
+selected_competition_id=761755
+
+[core_event]
+url=https://sports.core.api.espn.com/v2/sports/soccer/leagues/usa.1/events/761755
+curl_exit=0
+http|content_type|bytes|effective_url=200|application/json;charset=utf-8|9985|https://sports.core.api.espn.com/v2/sports/soccer/leagues/usa.1/events/761755
+json=yes type=dict | keys=$ref,id,uid,date,name,shortName,season,seasonType,timeValid,competitions,links,venues,league
+
+[site_summary]
+url=https://site.api.espn.com/apis/site/v2/sports/soccer/usa.1/summary?event=761755
+curl_exit=0
+http|content_type|bytes|effective_url=403|text/html|446|https://site.api.espn.com/apis/site/v2/sports/soccer/usa.1/summary?event=761755
+json=no
+
+[cdn_game]
+url=https://cdn.espn.com/core/soccer/game?xhr=1&gameId=761755
+curl_exit=0
+http|content_type|bytes|effective_url=200|text/html;charset=UTF-8|400474|http://cdn.espn.com/core/soccer/match?gameId=761755
+json=no
+
+[core_odds]
+url=https://sports.core.api.espn.com/v2/sports/soccer/leagues/usa.1/events/761755/competitions/761755/odds?limit=100
+curl_exit=0
+http|content_type|bytes|effective_url=200|application/json;charset=utf-8|40305|https://sports.core.api.espn.com/v2/sports/soccer/leagues/usa.1/events/761755/competitions/761755/odds?limit=100
+json=yes type=dict | keys=count,pageIndex,pageSize,pageCount,items | items=2
+
+[core_propbets]
+url=https://sports.core.api.espn.com/v2/sports/soccer/leagues/usa.1/events/761755/competitions/761755/propbets?limit=2000
+curl_exit=0
+http|content_type|bytes|effective_url=404||52|https://sports.core.api.espn.com/v2/sports/soccer/leagues/usa.1/events/761755/competitions/761755/propbets?limit=2000
+json=yes type=dict | keys=error
+

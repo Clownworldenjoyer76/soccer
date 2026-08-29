@@ -1,0 +1,5 @@
+game_id,sport,league,match_date,match_time,home_team,away_team,home_prob,draw_prob,away_prob,home_xg,away_xg,expected_total_goals,btts_yes,btts_no,fair_btts_yes_decimal,fair_btts_no_decimal
+33657528,soccer,epl,2026_04_19,01:00 PM,Everton,Liverpool,0.288,0.247,0.465,1.21,1.6,2.81,1.659,2.248,1.737989323843416,2.3550331525015067
+33657539,soccer,epl,2026_04_19,01:00 PM,Nottingham Forest,Burnley,0.639,0.214,0.147,1.9,0.78,2.68,1.906,1.906,2.0,2.0
+33657523,soccer,epl,2026_04_19,02:00 PM,Aston Villa,Sunderland,0.604,0.218,0.178,1.91,0.93,2.84,1.898,1.915,1.9911227154046993,2.0089567966280297
+33657526,soccer,epl,2026_04_19,03:30 PM,Manchester City,Arsenal,0.522,0.246,0.231,1.64,1.0,2.64,1.795,2.03,1.8842364532019704,2.13091922005571

@@ -1,0 +1,5 @@
+sport,league,game_id,match_date,match_time,home_team,away_team,dk_home_decimal,dk_draw_decimal,dk_away_decimal,dk_over25_decimal,dk_under25_decimal,dk_over35_decimal,dk_under35_decimal,btts_yes,btts_no
+soccer,epl,33642701,2026_04_12,02:00 PM,Crystal Palace,Newcastle,2.89,3.5,2.53,1.775,2.14,2.86,1.456,1.598,2.44
+soccer,epl,33642702,2026_04_12,02:00 PM,Nottingham Forest,Aston Villa,2.79,3.38,2.68,2.009,1.9,3.43,1.343,1.74,2.18
+soccer,epl,33550029,2026_04_12,02:00 PM,Sunderland,Tottenham Hotspur,2.76,3.37,2.71,1.961,1.942,3.34,1.357,1.709,2.23
+soccer,epl,33550031,2026_04_12,04:30 PM,Chelsea,Manchester City,3.57,3.99,2.029,1.531,2.61,2.31,1.675,1.495,2.74

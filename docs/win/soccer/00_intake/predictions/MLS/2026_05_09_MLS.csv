@@ -1,0 +1,13 @@
+sport,league,match_date,match_time,home_team,away_team,home_prob,draw_prob,away_prob,home_xg,away_xg,expected_total_goals
+soccer,mls,2026_05_09,01:00 PM,Toronto FC,Inter Miami,34.7%,28.5%,36.8%,1.12,1.16,2.28
+soccer,mls,2026_05_09,02:30 PM,Chicago Fire,New York Red Bulls,61.0%,22.8%,16.2%,1.78,0.79,2.57
+soccer,mls,2026_05_09,04:30 PM,CF Montreal,Orlando City,45.7%,27.2%,27.1%,1.38,0.99,2.37
+soccer,mls,2026_05_09,07:30 PM,New England Revolution,Philadelphia Union,48.4%,26.1%,25.5%,1.49,1.01,2.50
+soccer,mls,2026_05_09,07:30 PM,Atlanta United,LA Galaxy,43.7%,25.9%,30.4%,1.46,1.17,2.63
+soccer,mls,2026_05_09,07:30 PM,Charlotte FC,FC Cincinnati,50.8%,25.6%,23.6%,1.54,0.96,2.50
+soccer,mls,2026_05_09,08:30 PM,FC Dallas,Real Salt Lake,48.5%,26.5%,25.0%,1.45,0.96,2.41
+soccer,mls,2026_05_09,09:00 PM,Nashville SC,DC United,62.6%,22.0%,15.3%,1.85,0.79,2.64
+soccer,mls,2026_05_09,09:30 PM,Colorado Rapids,St Louis City,50.5%,25.4%,24.1%,1.56,0.99,2.55
+soccer,mls,2026_05_09,10:30 PM,Seattle Sounders,San Diego FC,55.6%,24.6%,19.7%,1.63,0.87,2.50
+soccer,mls,2026_05_09,10:30 PM,San Jose Earthquakes,Vancouver Whitecaps,41.0%,27.5%,31.5%,1.30,1.11,2.41
+soccer,mls,2026_05_09,10:30 PM,Portland Timbers,Sporting Kansas City,60.2%,22.3%,17.5%,1.85,0.88,2.73

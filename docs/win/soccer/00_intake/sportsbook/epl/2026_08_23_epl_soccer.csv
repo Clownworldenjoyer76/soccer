@@ -1,0 +1,4 @@
+sport,league,game_id,match_date,match_time,home_team,away_team,dk_home_decimal,dk_draw_decimal,dk_away_decimal,dk_over25_decimal,dk_under25_decimal,dk_over35_decimal,dk_under35_decimal,btts_yes,btts_no
+soccer,epl,401879297,2026_08_23,09:00 AM,Brighton,Aston Villa,2.10,3.45,3.60,1.95,1.83,,,11.00,1.03
+soccer,epl,401879320,2026_08_23,09:00 AM,Manchester City,Bournemouth,1.47,4.80,6.50,2.31,1.64,2.35,1.59,5.50,1.05
+soccer,epl,401879319,2026_08_23,11:30 AM,Newcastle,Liverpool,3.65,3.90,1.95,,,2.15,1.69,,

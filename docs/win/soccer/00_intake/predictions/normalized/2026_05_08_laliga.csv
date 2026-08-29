@@ -1,0 +1,2 @@
+sport,league,game_id,match_date,match_time,home_team,away_team,home_prob,draw_prob,away_prob,home_xg,away_xg,expected_total_goals
+soccer,laliga,61624624,2026_05_08,03:00 PM,Levante,Osasuna,0.38,0.279,0.341,1.22,1.15,2.37

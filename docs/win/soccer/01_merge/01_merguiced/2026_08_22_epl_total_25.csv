@@ -1,0 +1,6 @@
+game_id,sport,league,match_date,match_time,home_team,away_team,home_prob,draw_prob,away_prob,home_xg,away_xg,expected_total_goals,dk_over25_decimal,dk_under25_decimal,fair_over_decimal,fair_under_decimal
+401879322,soccer,epl,2026_08_22,07:30 AM,Hull,Manchester United,0.086,0.151,0.763,0.73,2.51,3.24,1.59,2.4,1.5913896090871422,2.6909326519002943
+401879300,soccer,epl,2026_08_22,10:00 AM,Everton,Crystal Palace,0.414,0.278,0.307,1.28,1.06,2.34,1.95,1.83,2.412313138907242,1.7080582715344108
+401879299,soccer,epl,2026_08_22,10:00 AM,Ipswich,Sunderland,0.334,0.286,0.38,1.09,1.17,2.26,2.15,1.69,2.5424128377475115,1.648334852723585
+401879298,soccer,epl,2026_08_22,10:00 AM,Nottingham Forest,Leeds,0.538,0.244,0.218,1.66,0.97,2.63,2.15,1.69,2.044674400358772,1.9572360533162967
+401879321,soccer,epl,2026_08_22,12:30 PM,Brentford,Tottenham Hotspur,0.438,0.261,0.301,1.45,1.15,2.6,1.69,2.15,2.0765394842171747,1.9289022972781793

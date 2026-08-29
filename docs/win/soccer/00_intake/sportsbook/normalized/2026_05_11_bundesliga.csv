@@ -1,0 +1,10 @@
+sport,league,game_id,match_date,match_time,home_team,away_team,dk_home_decimal,dk_draw_decimal,dk_away_decimal,dk_over25_decimal,dk_under25_decimal,dk_over35_decimal,dk_under35_decimal,btts_yes,btts_no
+soccer,bundesliga,61515274,2026_05_16,09:30 AM,Bayern Munich,Koln,1.18,7.00,9.50,,,,,1.45,2.60
+soccer,bundesliga,61515276,2026_05_16,09:30 AM,Leverkusen,Hamburg,1.27,5.75,7.50,,,1.80,1.86,1.60,2.25
+soccer,bundesliga,61515278,2026_05_16,09:30 AM,Eintracht Frankfurt,VfB Stuttgart,3.20,3.90,1.90,,,,,1.27,3.50
+soccer,bundesliga,61515282,2026_05_16,09:30 AM,Freiburg,RB Leipzig,2.65,3.95,2.15,,,2.00,1.66,1.39,2.85
+soccer,bundesliga,61515284,2026_05_16,09:30 AM,Werder Bremen,Borussia Dortmund,3.30,3.85,1.86,,,1.95,1.74,1.40,2.85
+soccer,bundesliga,61515288,2026_05_16,09:30 AM,Borussia Monchengladbach,Hoffenheim,3.90,4.50,1.62,,,1.86,1.80,1.42,2.75
+soccer,bundesliga,61515290,2026_05_16,09:30 AM,Union Berlin,Augsburg,2.45,3.55,2.50,1.55,2.20,,,1.48,2.55
+soccer,bundesliga,61515292,2026_05_16,09:30 AM,St Pauli,Wolfsburg,2.55,3.40,2.45,1.64,2.05,,,1.54,2.35
+soccer,bundesliga,61515296,2026_05_16,09:30 AM,Heidenheim,Mainz,1.90,4.20,3.00,,,2.15,1.58,1.46,2.60

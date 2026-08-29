@@ -1,0 +1,7 @@
+sport,league,match_date,match_time,home_team,away_team,home_prob,draw_prob,away_prob,home_xg,away_xg,expected_total_goals
+soccer,bundesliga,2026_08_29,09:30 AM,Elversberg,Leverkusen,19.0%,22.7%,58.4%,0.94,1.83,2.77
+soccer,bundesliga,2026_08_29,09:30 AM,Koln,Hoffenheim,32.4%,25.0%,42.6%,1.30,1.52,2.82
+soccer,bundesliga,2026_08_29,09:30 AM,Mainz,Paderborn,59.2%,20.3%,20.5%,2.16,1.20,3.36
+soccer,bundesliga,2026_08_29,09:30 AM,RB Leipzig,Borussia Monchengladbach,63.5%,18.7%,17.7%,2.35,1.18,3.53
+soccer,bundesliga,2026_08_29,09:30 AM,Union Berlin,Eintracht Frankfurt,39.5%,24.8%,35.6%,1.49,1.40,2.89
+soccer,bundesliga,2026_08_29,12:30 PM,Borussia Dortmund,Hamburg,73.8%,14.8%,11.3%,2.78,1.03,3.81

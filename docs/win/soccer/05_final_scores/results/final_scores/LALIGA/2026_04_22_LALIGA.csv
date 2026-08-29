@@ -1,0 +1,4 @@
+sport,league,game_id,game_date,match_time,home_team,away_team,home_score,away_score
+soccer,laliga,,2026_04_22,03:30 PM,Barcelona,Celta Vigo,1,0
+soccer,laliga,,2026_04_22,02:00 PM,Real Sociedad,Getafe,0,1
+soccer,laliga,33890645.0,2026_04_22,01:00 PM,Elche,Atletico Madrid,3,2

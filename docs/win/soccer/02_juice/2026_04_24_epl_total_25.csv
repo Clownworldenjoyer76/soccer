@@ -1,0 +1,2 @@
+game_id,sport,league,match_date,match_time,home_team,away_team,home_prob,draw_prob,away_prob,home_xg,away_xg,expected_total_goals,dk_over25_decimal,dk_under25_decimal,engine_lambda_home,engine_lambda_away,engine_match_distance,fair_over_decimal,fair_under_decimal,engine_over_prob,engine_under_prob
+33981325,soccer,epl,2026_04_24,07:00 PM,Sunderland,Nottingham Forest,0.358,0.288,0.354,1.13,1.11,2.24,2.07,1.74,1.0877071513787386,1.1359109390735227,0.0024600618081727205,2.6068029044570378,1.622353866318106,0.3836116640388225,0.6163883359611775

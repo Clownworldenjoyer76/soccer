@@ -1,0 +1,2 @@
+game_id,sport,league,match_date,match_time,home_team,away_team,market,side,odds,american_odds,ev,kelly,model_prob,edge,game_date,league_lower,market_type,take_bet,odds_decimal,odds_american,edge_pct,home_score,away_score,score_league,score_game_date,score_match_time,score_home_team,score_away_team,bet_result
+401882919,soccer,laliga,2026_08_26,03:00 PM,Real Madrid,Real Sociedad,total35,under,2.0,100,0.1500313055398159,0.1500313055398159,0.575015652769908,0.1500313055398159,2026_08_26,laliga,total35,under35,2.0,100,0.1500313055398159,,,,,,,,Missing Score

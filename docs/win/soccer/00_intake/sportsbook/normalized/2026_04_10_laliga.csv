@@ -1,0 +1,2 @@
+sport,league,game_id,match_date,match_time,home_team,away_team,dk_home_decimal,dk_draw_decimal,dk_away_decimal,dk_over25_decimal,dk_under25_decimal,dk_over35_decimal,dk_under35_decimal,btts_yes,btts_no
+soccer,laliga,33674548,2026_04_10,07:00 PM,Real Madrid,Girona,1.304,6.195,8.349,1.419,2.845,2.114,1.747,1.759,2.094

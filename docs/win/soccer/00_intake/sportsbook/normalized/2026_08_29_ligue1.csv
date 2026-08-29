@@ -1,0 +1,6 @@
+sport,league,game_id,match_date,match_time,home_team,away_team,dk_home_decimal,dk_draw_decimal,dk_away_decimal,dk_over25_decimal,dk_under25_decimal,dk_over35_decimal,dk_under35_decimal,btts_yes,btts_no
+soccer,ligue1,401876484,2026_08_29,02:45 PM,Auxerre,Angers,2.05,3.40,3.70,2.00,1.77,,,,
+soccer,ligue1,401876483,2026_08_29,02:45 PM,Stade Brest,Toulouse,2.65,3.40,2.70,1.91,1.87,,,,
+soccer,ligue1,401876482,2026_08_29,02:45 PM,Lorient,Troyes,1.87,3.60,4.20,2.05,1.74,,,,
+soccer,ligue1,401876481,2026_08_29,02:45 PM,Lyon,Le Havre,1.49,4.50,6.50,1.71,2.10,,,,
+soccer,ligue1,401876477,2026_08_29,11:15 AM,Strasbourg,Lens,3.95,2.10,2.95,1.53,2.43,2.35,1.59,,

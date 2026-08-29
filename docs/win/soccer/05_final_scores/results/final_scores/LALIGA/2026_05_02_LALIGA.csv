@@ -1,0 +1,5 @@
+sport,league,game_id,game_date,match_time,home_team,away_team,home_score,away_score
+soccer,laliga,,2026_05_02,03:00 PM,Osasuna,Barcelona,1,2
+soccer,laliga,,2026_05_02,12:30 PM,Alaves,Athletic Club,2,4
+soccer,laliga,,2026_05_02,10:15 AM,Valencia,Atletico Madrid,0,2
+soccer,laliga,,2026_05_02,08:00 AM,Villarreal,Levante,5,1

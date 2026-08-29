@@ -1,0 +1,2 @@
+game_id,sport,league,match_date,match_time,home_team,away_team,home_prob,draw_prob,away_prob,home_xg,away_xg,expected_total_goals,dk_home_decimal,dk_draw_decimal,dk_away_decimal
+66299308,soccer,mls,2026_07_31,07:30 PM,New York City FC,Toronto FC,0.672,0.199,0.128,2.03,0.75,2.78,1.61,3.90,4.90

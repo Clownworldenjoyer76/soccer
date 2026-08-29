@@ -1,0 +1,6 @@
+sport,league,market,match_date,match_time,home_team,away_team,home_prob,draw_prob,away_prob,home_xg,away_xg,expected_total_goals
+soccer,ligue1,,2026_04_26,01:00 PM,Lorient,Strasbourg,41.0%,27.2%,31.8%,1.32,1.12,2.44
+soccer,ligue1,,2026_04_26,03:15 PM,Rennes,Nantes,69.3%,18.3%,12.5%,2.24,0.82,3.06
+soccer,ligue1,,2026_04_26,03:15 PM,Paris FC,Lille,24.2%,26.8%,49.0%,0.93,1.43,2.36
+soccer,ligue1,,2026_04_26,03:15 PM,Le Havre,Metz,53.6%,27.3%,19.0%,1.41,0.72,2.13
+soccer,ligue1,,2026_04_26,06:45 PM,Marseille,Nice,64.2%,21.1%,14.7%,1.94,0.79,2.73

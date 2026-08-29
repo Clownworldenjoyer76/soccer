@@ -1,0 +1,4 @@
+sport,league,match_date,match_time,home_team,away_team,home_prob,draw_prob,away_prob,home_xg,away_xg,expected_total_goals
+soccer,mls,2026_05_24,05:00 PM,Columbus Crew,Atlanta United,56.0%,23.2%,20.7%,1.78,0.99,2.77
+soccer,mls,2026_05_24,07:00 PM,Inter Miami,Philadelphia Union,64.8%,20.1%,15.1%,2.07,0.88,2.95
+soccer,mls,2026_05_24,09:00 PM,Los Angeles FC,Seattle Sounders,49.0%,25.8%,25.2%,1.52,1.01,2.53

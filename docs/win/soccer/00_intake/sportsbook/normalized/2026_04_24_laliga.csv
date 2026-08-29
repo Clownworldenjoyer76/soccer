@@ -1,0 +1,2 @@
+sport,league,game_id,match_date,match_time,home_team,away_team,dk_home_decimal,dk_draw_decimal,dk_away_decimal,dk_over25_decimal,dk_under25_decimal,dk_over35_decimal,dk_under35_decimal,btts_yes,btts_no
+soccer,laliga,33999004,2026_04_24,07:00 PM,Real Betis,Real Madrid,3.556,4.289,1.822,1.497,2.545,2.288,1.605,,

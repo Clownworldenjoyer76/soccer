@@ -1,0 +1,7 @@
+game_id,sport,league,match_date,match_time,home_team,away_team,home_prob,draw_prob,away_prob,home_xg,away_xg,expected_total_goals,dk_over35_decimal,dk_under35_decimal,fair_over_decimal,fair_under_decimal
+61301261,soccer,epl,2026_05_17,07:30 AM,Manchester United,Nottingham Forest,0.592,0.229,0.179,1.8,0.87,2.67,2.25,1.58,3.580312676158966,1.3875499311535346
+61301265,soccer,epl,2026_05_17,10:00 AM,Wolverhampton,Fulham,0.362,0.292,0.345,1.11,1.08,2.19,,,5.596447466387336,1.2175593232192359
+61301253,soccer,epl,2026_05_17,10:00 AM,Brentford,Crystal Palace,0.391,0.285,0.324,1.2,1.07,2.27,,,5.139222024977097,1.2415912927515729
+61301257,soccer,epl,2026_05_17,10:00 AM,Everton,Sunderland,0.567,0.234,0.199,1.75,0.94,2.69,,,3.5247956876051854,1.3960716524149794
+61301259,soccer,epl,2026_05_17,10:00 AM,Leeds,Brighton,0.334,0.274,0.392,1.15,1.28,2.43,,,4.394240783789922,1.2946166944831257
+61301263,soccer,epl,2026_05_17,12:30 PM,Newcastle,West Ham,0.687,0.186,0.127,2.19,0.83,3.02,2.2,1.58,2.799169277203779,1.5558120698649174

@@ -1,0 +1,1207 @@
+=== merge_intake RUN 2026-08-29T16:46:10.017189+00:00 ===
+2026-08-29T16:46:10.018056+00:00 | 2026_04_10 bundesliga | matched=1 | unmatched=0
+2026-08-29T16:46:10.018160+00:00 | WROTE docs/win/soccer/01_merge/2026_04_10_bundesliga_match_odds.csv (1 rows)
+2026-08-29T16:46:10.018261+00:00 | WROTE docs/win/soccer/01_merge/2026_04_10_bundesliga_total_25.csv (1 rows)
+2026-08-29T16:46:10.018375+00:00 | WROTE docs/win/soccer/01_merge/2026_04_10_bundesliga_total_35.csv (1 rows)
+2026-08-29T16:46:10.018472+00:00 | WROTE docs/win/soccer/01_merge/2026_04_10_bundesliga_btts.csv (1 rows)
+2026-08-29T16:46:10.018615+00:00 | 2026_04_10 epl | matched=1 | unmatched=0
+2026-08-29T16:46:10.018702+00:00 | WROTE docs/win/soccer/01_merge/2026_04_10_epl_match_odds.csv (1 rows)
+2026-08-29T16:46:10.018776+00:00 | WROTE docs/win/soccer/01_merge/2026_04_10_epl_total_25.csv (1 rows)
+2026-08-29T16:46:10.018895+00:00 | WROTE docs/win/soccer/01_merge/2026_04_10_epl_total_35.csv (1 rows)
+2026-08-29T16:46:10.018976+00:00 | WROTE docs/win/soccer/01_merge/2026_04_10_epl_btts.csv (1 rows)
+2026-08-29T16:46:10.019122+00:00 | 2026_04_10 laliga | matched=1 | unmatched=0
+2026-08-29T16:46:10.019205+00:00 | WROTE docs/win/soccer/01_merge/2026_04_10_laliga_match_odds.csv (1 rows)
+2026-08-29T16:46:10.019274+00:00 | WROTE docs/win/soccer/01_merge/2026_04_10_laliga_total_25.csv (1 rows)
+2026-08-29T16:46:10.019341+00:00 | WROTE docs/win/soccer/01_merge/2026_04_10_laliga_total_35.csv (1 rows)
+2026-08-29T16:46:10.019458+00:00 | WROTE docs/win/soccer/01_merge/2026_04_10_laliga_btts.csv (1 rows)
+2026-08-29T16:46:10.019608+00:00 | 2026_04_10 ligue1 | matched=2 | unmatched=0
+2026-08-29T16:46:10.019691+00:00 | WROTE docs/win/soccer/01_merge/2026_04_10_ligue1_match_odds.csv (2 rows)
+2026-08-29T16:46:10.019762+00:00 | WROTE docs/win/soccer/01_merge/2026_04_10_ligue1_total_25.csv (2 rows)
+2026-08-29T16:46:10.019860+00:00 | WROTE docs/win/soccer/01_merge/2026_04_10_ligue1_total_35.csv (2 rows)
+2026-08-29T16:46:10.019935+00:00 | WROTE docs/win/soccer/01_merge/2026_04_10_ligue1_btts.csv (2 rows)
+2026-08-29T16:46:10.020086+00:00 | 2026_04_10 seriea | matched=1 | unmatched=0
+2026-08-29T16:46:10.020166+00:00 | WROTE docs/win/soccer/01_merge/2026_04_10_seriea_match_odds.csv (1 rows)
+2026-08-29T16:46:10.020234+00:00 | WROTE docs/win/soccer/01_merge/2026_04_10_seriea_total_25.csv (1 rows)
+2026-08-29T16:46:10.020341+00:00 | WROTE docs/win/soccer/01_merge/2026_04_10_seriea_total_35.csv (1 rows)
+2026-08-29T16:46:10.020442+00:00 | WROTE docs/win/soccer/01_merge/2026_04_10_seriea_btts.csv (1 rows)
+2026-08-29T16:46:10.020539+00:00 | 2026_04_11 laliga | matched=1 | unmatched=0
+2026-08-29T16:46:10.020639+00:00 | WROTE docs/win/soccer/01_merge/2026_04_11_laliga_match_odds.csv (1 rows)
+2026-08-29T16:46:10.020708+00:00 | WROTE docs/win/soccer/01_merge/2026_04_11_laliga_total_25.csv (1 rows)
+2026-08-29T16:46:10.020802+00:00 | WROTE docs/win/soccer/01_merge/2026_04_11_laliga_total_35.csv (1 rows)
+2026-08-29T16:46:10.020898+00:00 | WROTE docs/win/soccer/01_merge/2026_04_11_laliga_btts.csv (1 rows)
+2026-08-29T16:46:10.021035+00:00 | 2026_04_11 ligue1 | matched=1 | unmatched=0
+2026-08-29T16:46:10.021114+00:00 | WROTE docs/win/soccer/01_merge/2026_04_11_ligue1_match_odds.csv (1 rows)
+2026-08-29T16:46:10.021181+00:00 | WROTE docs/win/soccer/01_merge/2026_04_11_ligue1_total_25.csv (1 rows)
+2026-08-29T16:46:10.021247+00:00 | WROTE docs/win/soccer/01_merge/2026_04_11_ligue1_total_35.csv (1 rows)
+2026-08-29T16:46:10.021346+00:00 | WROTE docs/win/soccer/01_merge/2026_04_11_ligue1_btts.csv (1 rows)
+2026-08-29T16:46:10.021532+00:00 | 2026_04_11 mls | matched=7 | unmatched=0
+2026-08-29T16:46:10.021623+00:00 | WROTE docs/win/soccer/01_merge/2026_04_11_mls_match_odds.csv (7 rows)
+2026-08-29T16:46:10.021712+00:00 | WROTE docs/win/soccer/01_merge/2026_04_11_mls_total_25.csv (7 rows)
+2026-08-29T16:46:10.021825+00:00 | WROTE docs/win/soccer/01_merge/2026_04_11_mls_total_35.csv (7 rows)
+2026-08-29T16:46:10.021912+00:00 | WROTE docs/win/soccer/01_merge/2026_04_11_mls_btts.csv (7 rows)
+2026-08-29T16:46:10.022049+00:00 | 2026_04_11 seriea | matched=1 | unmatched=0
+2026-08-29T16:46:10.022133+00:00 | WROTE docs/win/soccer/01_merge/2026_04_11_seriea_match_odds.csv (1 rows)
+2026-08-29T16:46:10.022199+00:00 | WROTE docs/win/soccer/01_merge/2026_04_11_seriea_total_25.csv (1 rows)
+2026-08-29T16:46:10.022310+00:00 | WROTE docs/win/soccer/01_merge/2026_04_11_seriea_total_35.csv (1 rows)
+2026-08-29T16:46:10.022385+00:00 | WROTE docs/win/soccer/01_merge/2026_04_11_seriea_btts.csv (1 rows)
+2026-08-29T16:46:10.022528+00:00 | 2026_04_12 bundesliga | matched=3 | unmatched=0
+2026-08-29T16:46:10.022609+00:00 | WROTE docs/win/soccer/01_merge/2026_04_12_bundesliga_match_odds.csv (3 rows)
+2026-08-29T16:46:10.022694+00:00 | WROTE docs/win/soccer/01_merge/2026_04_12_bundesliga_total_25.csv (3 rows)
+2026-08-29T16:46:10.022796+00:00 | WROTE docs/win/soccer/01_merge/2026_04_12_bundesliga_total_35.csv (3 rows)
+2026-08-29T16:46:10.022884+00:00 | WROTE docs/win/soccer/01_merge/2026_04_12_bundesliga_btts.csv (3 rows)
+2026-08-29T16:46:10.023026+00:00 | 2026_04_12 epl | matched=4 | unmatched=0
+2026-08-29T16:46:10.023108+00:00 | WROTE docs/win/soccer/01_merge/2026_04_12_epl_match_odds.csv (4 rows)
+2026-08-29T16:46:10.023178+00:00 | WROTE docs/win/soccer/01_merge/2026_04_12_epl_total_25.csv (4 rows)
+2026-08-29T16:46:10.023290+00:00 | WROTE docs/win/soccer/01_merge/2026_04_12_epl_total_35.csv (4 rows)
+2026-08-29T16:46:10.023369+00:00 | WROTE docs/win/soccer/01_merge/2026_04_12_epl_btts.csv (4 rows)
+2026-08-29T16:46:10.023524+00:00 | 2026_04_12 laliga | matched=4 | unmatched=0
+2026-08-29T16:46:10.023606+00:00 | WROTE docs/win/soccer/01_merge/2026_04_12_laliga_match_odds.csv (4 rows)
+2026-08-29T16:46:10.023690+00:00 | WROTE docs/win/soccer/01_merge/2026_04_12_laliga_total_25.csv (4 rows)
+2026-08-29T16:46:10.023796+00:00 | WROTE docs/win/soccer/01_merge/2026_04_12_laliga_total_35.csv (4 rows)
+2026-08-29T16:46:10.023890+00:00 | WROTE docs/win/soccer/01_merge/2026_04_12_laliga_btts.csv (4 rows)
+2026-08-29T16:46:10.024027+00:00 | 2026_04_12 ligue1 | matched=3 | unmatched=0
+2026-08-29T16:46:10.024110+00:00 | WROTE docs/win/soccer/01_merge/2026_04_12_ligue1_match_odds.csv (3 rows)
+2026-08-29T16:46:10.024193+00:00 | WROTE docs/win/soccer/01_merge/2026_04_12_ligue1_total_25.csv (3 rows)
+2026-08-29T16:46:10.024276+00:00 | WROTE docs/win/soccer/01_merge/2026_04_12_ligue1_total_35.csv (3 rows)
+2026-08-29T16:46:10.024344+00:00 | WROTE docs/win/soccer/01_merge/2026_04_12_ligue1_btts.csv (3 rows)
+2026-08-29T16:46:10.024491+00:00 | 2026_04_12 mls | matched=1 | unmatched=0
+2026-08-29T16:46:10.024569+00:00 | WROTE docs/win/soccer/01_merge/2026_04_12_mls_match_odds.csv (1 rows)
+2026-08-29T16:46:10.024649+00:00 | WROTE docs/win/soccer/01_merge/2026_04_12_mls_total_25.csv (1 rows)
+2026-08-29T16:46:10.024747+00:00 | WROTE docs/win/soccer/01_merge/2026_04_12_mls_total_35.csv (1 rows)
+2026-08-29T16:46:10.024844+00:00 | WROTE docs/win/soccer/01_merge/2026_04_12_mls_btts.csv (1 rows)
+2026-08-29T16:46:10.024980+00:00 | 2026_04_12 seriea | matched=4 | unmatched=0
+2026-08-29T16:46:10.025060+00:00 | WROTE docs/win/soccer/01_merge/2026_04_12_seriea_match_odds.csv (4 rows)
+2026-08-29T16:46:10.025130+00:00 | WROTE docs/win/soccer/01_merge/2026_04_12_seriea_total_25.csv (4 rows)
+2026-08-29T16:46:10.025225+00:00 | WROTE docs/win/soccer/01_merge/2026_04_12_seriea_total_35.csv (4 rows)
+2026-08-29T16:46:10.025316+00:00 | WROTE docs/win/soccer/01_merge/2026_04_12_seriea_btts.csv (4 rows)
+2026-08-29T16:46:10.025451+00:00 | 2026_04_13 laliga | matched=1 | unmatched=0
+2026-08-29T16:46:10.025527+00:00 | WROTE docs/win/soccer/01_merge/2026_04_13_laliga_match_odds.csv (1 rows)
+2026-08-29T16:46:10.025606+00:00 | WROTE docs/win/soccer/01_merge/2026_04_13_laliga_total_25.csv (1 rows)
+2026-08-29T16:46:10.025687+00:00 | WROTE docs/win/soccer/01_merge/2026_04_13_laliga_total_35.csv (1 rows)
+2026-08-29T16:46:10.025797+00:00 | WROTE docs/win/soccer/01_merge/2026_04_13_laliga_btts.csv (1 rows)
+2026-08-29T16:46:10.025893+00:00 | 2026_04_13 seriea | matched=1 | unmatched=0
+2026-08-29T16:46:10.025990+00:00 | WROTE docs/win/soccer/01_merge/2026_04_13_seriea_match_odds.csv (1 rows)
+2026-08-29T16:46:10.026084+00:00 | WROTE docs/win/soccer/01_merge/2026_04_13_seriea_total_25.csv (1 rows)
+2026-08-29T16:46:10.026159+00:00 | WROTE docs/win/soccer/01_merge/2026_04_13_seriea_total_35.csv (1 rows)
+2026-08-29T16:46:10.026223+00:00 | WROTE docs/win/soccer/01_merge/2026_04_13_seriea_btts.csv (1 rows)
+2026-08-29T16:46:10.026356+00:00 | 2026_04_17 bundesliga | matched=1 | unmatched=0
+2026-08-29T16:46:10.026445+00:00 | WROTE docs/win/soccer/01_merge/2026_04_17_bundesliga_match_odds.csv (1 rows)
+2026-08-29T16:46:10.026531+00:00 | WROTE docs/win/soccer/01_merge/2026_04_17_bundesliga_total_25.csv (1 rows)
+2026-08-29T16:46:10.026624+00:00 | WROTE docs/win/soccer/01_merge/2026_04_17_bundesliga_total_35.csv (1 rows)
+2026-08-29T16:46:10.026720+00:00 | WROTE docs/win/soccer/01_merge/2026_04_17_bundesliga_btts.csv (1 rows)
+2026-08-29T16:46:10.026840+00:00 | 2026_04_17 ligue1 | matched=1 | unmatched=0
+2026-08-29T16:46:10.026915+00:00 | WROTE docs/win/soccer/01_merge/2026_04_17_ligue1_match_odds.csv (1 rows)
+2026-08-29T16:46:10.026982+00:00 | WROTE docs/win/soccer/01_merge/2026_04_17_ligue1_total_25.csv (1 rows)
+2026-08-29T16:46:10.027072+00:00 | WROTE docs/win/soccer/01_merge/2026_04_17_ligue1_total_35.csv (1 rows)
+2026-08-29T16:46:10.027161+00:00 | WROTE docs/win/soccer/01_merge/2026_04_17_ligue1_btts.csv (1 rows)
+2026-08-29T16:46:10.027280+00:00 | 2026_04_17 mls | matched=1 | unmatched=0
+2026-08-29T16:46:10.027358+00:00 | WROTE docs/win/soccer/01_merge/2026_04_17_mls_match_odds.csv (1 rows)
+2026-08-29T16:46:10.027465+00:00 | WROTE docs/win/soccer/01_merge/2026_04_17_mls_total_25.csv (1 rows)
+2026-08-29T16:46:10.027540+00:00 | WROTE docs/win/soccer/01_merge/2026_04_17_mls_total_35.csv (1 rows)
+2026-08-29T16:46:10.027646+00:00 | WROTE docs/win/soccer/01_merge/2026_04_17_mls_btts.csv (1 rows)
+2026-08-29T16:46:10.027772+00:00 | 2026_04_17 seriea | matched=2 | unmatched=0
+2026-08-29T16:46:10.027851+00:00 | WROTE docs/win/soccer/01_merge/2026_04_17_seriea_match_odds.csv (2 rows)
+2026-08-29T16:46:10.027934+00:00 | WROTE docs/win/soccer/01_merge/2026_04_17_seriea_total_25.csv (2 rows)
+2026-08-29T16:46:10.028017+00:00 | WROTE docs/win/soccer/01_merge/2026_04_17_seriea_total_35.csv (2 rows)
+2026-08-29T16:46:10.028084+00:00 | WROTE docs/win/soccer/01_merge/2026_04_17_seriea_btts.csv (2 rows)
+2026-08-29T16:46:10.028243+00:00 | 2026_04_18 bundesliga | matched=5 | unmatched=0
+2026-08-29T16:46:10.028327+00:00 | WROTE docs/win/soccer/01_merge/2026_04_18_bundesliga_match_odds.csv (5 rows)
+2026-08-29T16:46:10.028411+00:00 | WROTE docs/win/soccer/01_merge/2026_04_18_bundesliga_total_25.csv (5 rows)
+2026-08-29T16:46:10.028528+00:00 | WROTE docs/win/soccer/01_merge/2026_04_18_bundesliga_total_35.csv (5 rows)
+2026-08-29T16:46:10.028627+00:00 | WROTE docs/win/soccer/01_merge/2026_04_18_bundesliga_btts.csv (5 rows)
+2026-08-29T16:46:10.028771+00:00 | 2026_04_18 epl | matched=5 | unmatched=0
+2026-08-29T16:46:10.028854+00:00 | WROTE docs/win/soccer/01_merge/2026_04_18_epl_match_odds.csv (5 rows)
+2026-08-29T16:46:10.028925+00:00 | WROTE docs/win/soccer/01_merge/2026_04_18_epl_total_25.csv (5 rows)
+2026-08-29T16:46:10.029024+00:00 | WROTE docs/win/soccer/01_merge/2026_04_18_epl_total_35.csv (5 rows)
+2026-08-29T16:46:10.029121+00:00 | WROTE docs/win/soccer/01_merge/2026_04_18_epl_btts.csv (5 rows)
+2026-08-29T16:46:10.029253+00:00 | 2026_04_18 ligue1 | matched=3 | unmatched=0
+2026-08-29T16:46:10.029334+00:00 | WROTE docs/win/soccer/01_merge/2026_04_18_ligue1_match_odds.csv (3 rows)
+2026-08-29T16:46:10.029433+00:00 | WROTE docs/win/soccer/01_merge/2026_04_18_ligue1_total_25.csv (3 rows)
+2026-08-29T16:46:10.029529+00:00 | WROTE docs/win/soccer/01_merge/2026_04_18_ligue1_total_35.csv (3 rows)
+2026-08-29T16:46:10.029613+00:00 | WROTE docs/win/soccer/01_merge/2026_04_18_ligue1_btts.csv (3 rows)
+2026-08-29T16:46:10.029795+00:00 | 2026_04_18 mls | matched=9 | unmatched=0
+2026-08-29T16:46:10.029886+00:00 | WROTE docs/win/soccer/01_merge/2026_04_18_mls_match_odds.csv (9 rows)
+2026-08-29T16:46:10.029964+00:00 | WROTE docs/win/soccer/01_merge/2026_04_18_mls_total_25.csv (9 rows)
+2026-08-29T16:46:10.030043+00:00 | WROTE docs/win/soccer/01_merge/2026_04_18_mls_total_35.csv (9 rows)
+2026-08-29T16:46:10.030165+00:00 | WROTE docs/win/soccer/01_merge/2026_04_18_mls_btts.csv (9 rows)
+2026-08-29T16:46:10.030300+00:00 | 2026_04_18 seriea | matched=3 | unmatched=0
+2026-08-29T16:46:10.030380+00:00 | WROTE docs/win/soccer/01_merge/2026_04_18_seriea_match_odds.csv (3 rows)
+2026-08-29T16:46:10.030466+00:00 | WROTE docs/win/soccer/01_merge/2026_04_18_seriea_total_25.csv (3 rows)
+2026-08-29T16:46:10.030534+00:00 | WROTE docs/win/soccer/01_merge/2026_04_18_seriea_total_35.csv (3 rows)
+2026-08-29T16:46:10.030650+00:00 | WROTE docs/win/soccer/01_merge/2026_04_18_seriea_btts.csv (3 rows)
+2026-08-29T16:46:10.030775+00:00 | 2026_04_19 bundesliga | matched=3 | unmatched=0
+2026-08-29T16:46:10.030861+00:00 | WROTE docs/win/soccer/01_merge/2026_04_19_bundesliga_match_odds.csv (3 rows)
+2026-08-29T16:46:10.030930+00:00 | WROTE docs/win/soccer/01_merge/2026_04_19_bundesliga_total_25.csv (3 rows)
+2026-08-29T16:46:10.030998+00:00 | WROTE docs/win/soccer/01_merge/2026_04_19_bundesliga_total_35.csv (3 rows)
+2026-08-29T16:46:10.031111+00:00 | WROTE docs/win/soccer/01_merge/2026_04_19_bundesliga_btts.csv (3 rows)
+2026-08-29T16:46:10.031249+00:00 | 2026_04_19 epl | matched=4 | unmatched=0
+2026-08-29T16:46:10.031329+00:00 | WROTE docs/win/soccer/01_merge/2026_04_19_epl_match_odds.csv (4 rows)
+2026-08-29T16:46:10.031419+00:00 | WROTE docs/win/soccer/01_merge/2026_04_19_epl_total_25.csv (4 rows)
+2026-08-29T16:46:10.031504+00:00 | WROTE docs/win/soccer/01_merge/2026_04_19_epl_total_35.csv (4 rows)
+2026-08-29T16:46:10.031591+00:00 | WROTE docs/win/soccer/01_merge/2026_04_19_epl_btts.csv (4 rows)
+2026-08-29T16:46:10.031750+00:00 | 2026_04_19 ligue1 | matched=5 | unmatched=0
+2026-08-29T16:46:10.031833+00:00 | WROTE docs/win/soccer/01_merge/2026_04_19_ligue1_match_odds.csv (5 rows)
+2026-08-29T16:46:10.031904+00:00 | WROTE docs/win/soccer/01_merge/2026_04_19_ligue1_total_25.csv (5 rows)
+2026-08-29T16:46:10.032018+00:00 | WROTE docs/win/soccer/01_merge/2026_04_19_ligue1_total_35.csv (5 rows)
+2026-08-29T16:46:10.032115+00:00 | WROTE docs/win/soccer/01_merge/2026_04_19_ligue1_btts.csv (5 rows)
+2026-08-29T16:46:10.032236+00:00 | 2026_04_19 mls | matched=1 | unmatched=0
+2026-08-29T16:46:10.032312+00:00 | WROTE docs/win/soccer/01_merge/2026_04_19_mls_match_odds.csv (1 rows)
+2026-08-29T16:46:10.032377+00:00 | WROTE docs/win/soccer/01_merge/2026_04_19_mls_total_25.csv (1 rows)
+2026-08-29T16:46:10.032482+00:00 | WROTE docs/win/soccer/01_merge/2026_04_19_mls_total_35.csv (1 rows)
+2026-08-29T16:46:10.032558+00:00 | WROTE docs/win/soccer/01_merge/2026_04_19_mls_btts.csv (1 rows)
+2026-08-29T16:46:10.032703+00:00 | 2026_04_19 seriea | matched=3 | unmatched=0
+2026-08-29T16:46:10.032782+00:00 | WROTE docs/win/soccer/01_merge/2026_04_19_seriea_match_odds.csv (3 rows)
+2026-08-29T16:46:10.032851+00:00 | WROTE docs/win/soccer/01_merge/2026_04_19_seriea_total_25.csv (3 rows)
+2026-08-29T16:46:10.032961+00:00 | WROTE docs/win/soccer/01_merge/2026_04_19_seriea_total_35.csv (3 rows)
+2026-08-29T16:46:10.033057+00:00 | WROTE docs/win/soccer/01_merge/2026_04_19_seriea_btts.csv (3 rows)
+2026-08-29T16:46:10.033179+00:00 | 2026_04_20 epl | matched=1 | unmatched=0
+2026-08-29T16:46:10.033259+00:00 | WROTE docs/win/soccer/01_merge/2026_04_20_epl_match_odds.csv (1 rows)
+2026-08-29T16:46:10.033326+00:00 | WROTE docs/win/soccer/01_merge/2026_04_20_epl_total_25.csv (1 rows)
+2026-08-29T16:46:10.033421+00:00 | WROTE docs/win/soccer/01_merge/2026_04_20_epl_total_35.csv (1 rows)
+2026-08-29T16:46:10.033522+00:00 | WROTE docs/win/soccer/01_merge/2026_04_20_epl_btts.csv (1 rows)
+2026-08-29T16:46:10.033621+00:00 | 2026_04_20 seriea | matched=1 | unmatched=0
+2026-08-29T16:46:10.033694+00:00 | WROTE docs/win/soccer/01_merge/2026_04_20_seriea_match_odds.csv (1 rows)
+2026-08-29T16:46:10.033761+00:00 | WROTE docs/win/soccer/01_merge/2026_04_20_seriea_total_25.csv (1 rows)
+2026-08-29T16:46:10.033861+00:00 | WROTE docs/win/soccer/01_merge/2026_04_20_seriea_total_35.csv (1 rows)
+2026-08-29T16:46:10.033933+00:00 | WROTE docs/win/soccer/01_merge/2026_04_20_seriea_btts.csv (1 rows)
+2026-08-29T16:46:10.034056+00:00 | 2026_04_21 epl | matched=1 | unmatched=0
+2026-08-29T16:46:10.034132+00:00 | WROTE docs/win/soccer/01_merge/2026_04_21_epl_match_odds.csv (1 rows)
+2026-08-29T16:46:10.034196+00:00 | WROTE docs/win/soccer/01_merge/2026_04_21_epl_total_25.csv (1 rows)
+2026-08-29T16:46:10.034260+00:00 | WROTE docs/win/soccer/01_merge/2026_04_21_epl_total_35.csv (1 rows)
+2026-08-29T16:46:10.034369+00:00 | WROTE docs/win/soccer/01_merge/2026_04_21_epl_btts.csv (1 rows)
+2026-08-29T16:46:10.034533+00:00 | 2026_04_21 laliga | matched=4 | unmatched=0
+2026-08-29T16:46:10.034614+00:00 | WROTE docs/win/soccer/01_merge/2026_04_21_laliga_match_odds.csv (4 rows)
+2026-08-29T16:46:10.034697+00:00 | WROTE docs/win/soccer/01_merge/2026_04_21_laliga_total_25.csv (4 rows)
+2026-08-29T16:46:10.034804+00:00 | WROTE docs/win/soccer/01_merge/2026_04_21_laliga_total_35.csv (4 rows)
+2026-08-29T16:46:10.034879+00:00 | WROTE docs/win/soccer/01_merge/2026_04_21_laliga_btts.csv (4 rows)
+2026-08-29T16:46:10.035018+00:00 | 2026_04_22 epl | matched=2 | unmatched=0
+2026-08-29T16:46:10.035096+00:00 | WROTE docs/win/soccer/01_merge/2026_04_22_epl_match_odds.csv (2 rows)
+2026-08-29T16:46:10.035162+00:00 | WROTE docs/win/soccer/01_merge/2026_04_22_epl_total_25.csv (2 rows)
+2026-08-29T16:46:10.035271+00:00 | WROTE docs/win/soccer/01_merge/2026_04_22_epl_total_35.csv (2 rows)
+2026-08-29T16:46:10.035350+00:00 | WROTE docs/win/soccer/01_merge/2026_04_22_epl_btts.csv (2 rows)
+2026-08-29T16:46:10.035485+00:00 | 2026_04_22 laliga | matched=2 | unmatched=0
+2026-08-29T16:46:10.035565+00:00 | WROTE docs/win/soccer/01_merge/2026_04_22_laliga_match_odds.csv (2 rows)
+2026-08-29T16:46:10.035634+00:00 | WROTE docs/win/soccer/01_merge/2026_04_22_laliga_total_25.csv (2 rows)
+2026-08-29T16:46:10.035741+00:00 | WROTE docs/win/soccer/01_merge/2026_04_22_laliga_total_35.csv (2 rows)
+2026-08-29T16:46:10.035821+00:00 | WROTE docs/win/soccer/01_merge/2026_04_22_laliga_btts.csv (2 rows)
+2026-08-29T16:46:10.035956+00:00 | 2026_04_22 ligue1 | matched=1 | unmatched=0
+2026-08-29T16:46:10.036033+00:00 | WROTE docs/win/soccer/01_merge/2026_04_22_ligue1_match_odds.csv (1 rows)
+2026-08-29T16:46:10.036099+00:00 | WROTE docs/win/soccer/01_merge/2026_04_22_ligue1_total_25.csv (1 rows)
+2026-08-29T16:46:10.036192+00:00 | WROTE docs/win/soccer/01_merge/2026_04_22_ligue1_total_35.csv (1 rows)
+2026-08-29T16:46:10.036283+00:00 | WROTE docs/win/soccer/01_merge/2026_04_22_ligue1_btts.csv (1 rows)
+2026-08-29T16:46:10.036483+00:00 | 2026_04_22 mls | matched=11 | unmatched=0
+2026-08-29T16:46:10.036578+00:00 | WROTE docs/win/soccer/01_merge/2026_04_22_mls_match_odds.csv (11 rows)
+2026-08-29T16:46:10.036659+00:00 | WROTE docs/win/soccer/01_merge/2026_04_22_mls_total_25.csv (11 rows)
+2026-08-29T16:46:10.036786+00:00 | WROTE docs/win/soccer/01_merge/2026_04_22_mls_total_35.csv (11 rows)
+2026-08-29T16:46:10.036883+00:00 | WROTE docs/win/soccer/01_merge/2026_04_22_mls_btts.csv (11 rows)
+2026-08-29T16:46:10.037023+00:00 | 2026_04_23 laliga | matched=3 | unmatched=0
+2026-08-29T16:46:10.037102+00:00 | WROTE docs/win/soccer/01_merge/2026_04_23_laliga_match_odds.csv (3 rows)
+2026-08-29T16:46:10.037171+00:00 | WROTE docs/win/soccer/01_merge/2026_04_23_laliga_total_25.csv (3 rows)
+2026-08-29T16:46:10.037279+00:00 | WROTE docs/win/soccer/01_merge/2026_04_23_laliga_total_35.csv (3 rows)
+2026-08-29T16:46:10.037357+00:00 | WROTE docs/win/soccer/01_merge/2026_04_23_laliga_btts.csv (3 rows)
+2026-08-29T16:46:10.037484+00:00 | 2026_04_24 bundesliga | matched=1 | unmatched=0
+2026-08-29T16:46:10.037562+00:00 | WROTE docs/win/soccer/01_merge/2026_04_24_bundesliga_match_odds.csv (1 rows)
+2026-08-29T16:46:10.037644+00:00 | WROTE docs/win/soccer/01_merge/2026_04_24_bundesliga_total_25.csv (1 rows)
+2026-08-29T16:46:10.037726+00:00 | WROTE docs/win/soccer/01_merge/2026_04_24_bundesliga_total_35.csv (1 rows)
+2026-08-29T16:46:10.037836+00:00 | WROTE docs/win/soccer/01_merge/2026_04_24_bundesliga_btts.csv (1 rows)
+2026-08-29T16:46:10.037958+00:00 | 2026_04_24 epl | matched=1 | unmatched=0
+2026-08-29T16:46:10.038035+00:00 | WROTE docs/win/soccer/01_merge/2026_04_24_epl_match_odds.csv (1 rows)
+2026-08-29T16:46:10.038100+00:00 | WROTE docs/win/soccer/01_merge/2026_04_24_epl_total_25.csv (1 rows)
+2026-08-29T16:46:10.038193+00:00 | WROTE docs/win/soccer/01_merge/2026_04_24_epl_total_35.csv (1 rows)
+2026-08-29T16:46:10.038286+00:00 | WROTE docs/win/soccer/01_merge/2026_04_24_epl_btts.csv (1 rows)
+2026-08-29T16:46:10.038415+00:00 | 2026_04_24 laliga | matched=1 | unmatched=0
+2026-08-29T16:46:10.038492+00:00 | WROTE docs/win/soccer/01_merge/2026_04_24_laliga_match_odds.csv (1 rows)
+2026-08-29T16:46:10.038559+00:00 | WROTE docs/win/soccer/01_merge/2026_04_24_laliga_total_25.csv (1 rows)
+2026-08-29T16:46:10.038654+00:00 | WROTE docs/win/soccer/01_merge/2026_04_24_laliga_total_35.csv (1 rows)
+2026-08-29T16:46:10.038762+00:00 | WROTE docs/win/soccer/01_merge/2026_04_24_laliga_btts.csv (1 rows)
+2026-08-29T16:46:10.038881+00:00 | 2026_04_24 ligue1 | matched=1 | unmatched=0
+2026-08-29T16:46:10.038957+00:00 | WROTE docs/win/soccer/01_merge/2026_04_24_ligue1_match_odds.csv (1 rows)
+2026-08-29T16:46:10.039023+00:00 | WROTE docs/win/soccer/01_merge/2026_04_24_ligue1_total_25.csv (1 rows)
+2026-08-29T16:46:10.039132+00:00 | WROTE docs/win/soccer/01_merge/2026_04_24_ligue1_total_35.csv (1 rows)
+2026-08-29T16:46:10.039206+00:00 | WROTE docs/win/soccer/01_merge/2026_04_24_ligue1_btts.csv (1 rows)
+2026-08-29T16:46:10.039322+00:00 | 2026_04_24 seriea | matched=1 | unmatched=0
+2026-08-29T16:46:10.039411+00:00 | WROTE docs/win/soccer/01_merge/2026_04_24_seriea_match_odds.csv (1 rows)
+2026-08-29T16:46:10.039498+00:00 | WROTE docs/win/soccer/01_merge/2026_04_24_seriea_total_25.csv (1 rows)
+2026-08-29T16:46:10.039577+00:00 | WROTE docs/win/soccer/01_merge/2026_04_24_seriea_total_35.csv (1 rows)
+2026-08-29T16:46:10.039683+00:00 | WROTE docs/win/soccer/01_merge/2026_04_24_seriea_btts.csv (1 rows)
+2026-08-29T16:46:10.039831+00:00 | 2026_04_25 bundesliga | matched=6 | unmatched=0
+2026-08-29T16:46:10.039914+00:00 | WROTE docs/win/soccer/01_merge/2026_04_25_bundesliga_match_odds.csv (6 rows)
+2026-08-29T16:46:10.040004+00:00 | WROTE docs/win/soccer/01_merge/2026_04_25_bundesliga_total_25.csv (6 rows)
+2026-08-29T16:46:10.040092+00:00 | WROTE docs/win/soccer/01_merge/2026_04_25_bundesliga_total_35.csv (6 rows)
+2026-08-29T16:46:10.040194+00:00 | WROTE docs/win/soccer/01_merge/2026_04_25_bundesliga_btts.csv (6 rows)
+2026-08-29T16:46:10.040337+00:00 | 2026_04_25 epl | matched=5 | unmatched=0
+2026-08-29T16:46:10.040430+00:00 | WROTE docs/win/soccer/01_merge/2026_04_25_epl_match_odds.csv (5 rows)
+2026-08-29T16:46:10.040525+00:00 | WROTE docs/win/soccer/01_merge/2026_04_25_epl_total_25.csv (5 rows)
+2026-08-29T16:46:10.040628+00:00 | WROTE docs/win/soccer/01_merge/2026_04_25_epl_total_35.csv (5 rows)
+2026-08-29T16:46:10.040706+00:00 | WROTE docs/win/soccer/01_merge/2026_04_25_epl_btts.csv (5 rows)
+2026-08-29T16:46:10.040860+00:00 | 2026_04_25 laliga | matched=4 | unmatched=0
+2026-08-29T16:46:10.040942+00:00 | WROTE docs/win/soccer/01_merge/2026_04_25_laliga_match_odds.csv (4 rows)
+2026-08-29T16:46:10.041025+00:00 | WROTE docs/win/soccer/01_merge/2026_04_25_laliga_total_25.csv (4 rows)
+2026-08-29T16:46:10.041131+00:00 | WROTE docs/win/soccer/01_merge/2026_04_25_laliga_total_35.csv (4 rows)
+2026-08-29T16:46:10.041207+00:00 | WROTE docs/win/soccer/01_merge/2026_04_25_laliga_btts.csv (4 rows)
+2026-08-29T16:46:10.041334+00:00 | 2026_04_25 ligue1 | matched=3 | unmatched=0
+2026-08-29T16:46:10.041425+00:00 | WROTE docs/win/soccer/01_merge/2026_04_25_ligue1_match_odds.csv (3 rows)
+2026-08-29T16:46:10.041496+00:00 | WROTE docs/win/soccer/01_merge/2026_04_25_ligue1_total_25.csv (3 rows)
+2026-08-29T16:46:10.041602+00:00 | WROTE docs/win/soccer/01_merge/2026_04_25_ligue1_total_35.csv (3 rows)
+2026-08-29T16:46:10.041679+00:00 | WROTE docs/win/soccer/01_merge/2026_04_25_ligue1_btts.csv (3 rows)
+2026-08-29T16:46:10.041892+00:00 | 2026_04_25 mls | matched=14 | unmatched=0
+2026-08-29T16:46:10.041992+00:00 | WROTE docs/win/soccer/01_merge/2026_04_25_mls_match_odds.csv (14 rows)
+2026-08-29T16:46:10.042102+00:00 | WROTE docs/win/soccer/01_merge/2026_04_25_mls_total_25.csv (14 rows)
+2026-08-29T16:46:10.042197+00:00 | WROTE docs/win/soccer/01_merge/2026_04_25_mls_total_35.csv (14 rows)
+2026-08-29T16:46:10.042306+00:00 | WROTE docs/win/soccer/01_merge/2026_04_25_mls_btts.csv (14 rows)
+2026-08-29T16:46:10.042446+00:00 | 2026_04_25 seriea | matched=2 | unmatched=0
+2026-08-29T16:46:10.042525+00:00 | WROTE docs/win/soccer/01_merge/2026_04_25_seriea_match_odds.csv (2 rows)
+2026-08-29T16:46:10.042592+00:00 | WROTE docs/win/soccer/01_merge/2026_04_25_seriea_total_25.csv (2 rows)
+2026-08-29T16:46:10.042699+00:00 | WROTE docs/win/soccer/01_merge/2026_04_25_seriea_total_35.csv (2 rows)
+2026-08-29T16:46:10.042787+00:00 | WROTE docs/win/soccer/01_merge/2026_04_25_seriea_btts.csv (2 rows)
+2026-08-29T16:46:10.042916+00:00 | 2026_04_26 bundesliga | matched=2 | unmatched=0
+2026-08-29T16:46:10.042994+00:00 | WROTE docs/win/soccer/01_merge/2026_04_26_bundesliga_match_odds.csv (2 rows)
+2026-08-29T16:46:10.043075+00:00 | WROTE docs/win/soccer/01_merge/2026_04_26_bundesliga_total_25.csv (2 rows)
+2026-08-29T16:46:10.043183+00:00 | WROTE docs/win/soccer/01_merge/2026_04_26_bundesliga_total_35.csv (2 rows)
+2026-08-29T16:46:10.043257+00:00 | WROTE docs/win/soccer/01_merge/2026_04_26_bundesliga_btts.csv (2 rows)
+2026-08-29T16:46:10.043383+00:00 | 2026_04_26 laliga | matched=3 | unmatched=0
+2026-08-29T16:46:10.043476+00:00 | WROTE docs/win/soccer/01_merge/2026_04_26_laliga_match_odds.csv (3 rows)
+2026-08-29T16:46:10.043548+00:00 | WROTE docs/win/soccer/01_merge/2026_04_26_laliga_total_25.csv (3 rows)
+2026-08-29T16:46:10.043664+00:00 | WROTE docs/win/soccer/01_merge/2026_04_26_laliga_total_35.csv (3 rows)
+2026-08-29T16:46:10.043754+00:00 | WROTE docs/win/soccer/01_merge/2026_04_26_laliga_btts.csv (3 rows)
+2026-08-29T16:46:10.043903+00:00 | 2026_04_26 ligue1 | matched=5 | unmatched=0
+2026-08-29T16:46:10.043984+00:00 | WROTE docs/win/soccer/01_merge/2026_04_26_ligue1_match_odds.csv (5 rows)
+2026-08-29T16:46:10.044054+00:00 | WROTE docs/win/soccer/01_merge/2026_04_26_ligue1_total_25.csv (5 rows)
+2026-08-29T16:46:10.044153+00:00 | WROTE docs/win/soccer/01_merge/2026_04_26_ligue1_total_35.csv (5 rows)
+2026-08-29T16:46:10.044249+00:00 | WROTE docs/win/soccer/01_merge/2026_04_26_ligue1_btts.csv (5 rows)
+2026-08-29T16:46:10.044367+00:00 | 2026_04_26 mls | matched=1 | unmatched=0
+2026-08-29T16:46:10.044454+00:00 | WROTE docs/win/soccer/01_merge/2026_04_26_mls_match_odds.csv (1 rows)
+2026-08-29T16:46:10.044535+00:00 | WROTE docs/win/soccer/01_merge/2026_04_26_mls_total_25.csv (1 rows)
+2026-08-29T16:46:10.044615+00:00 | WROTE docs/win/soccer/01_merge/2026_04_26_mls_total_35.csv (1 rows)
+2026-08-29T16:46:10.044718+00:00 | WROTE docs/win/soccer/01_merge/2026_04_26_mls_btts.csv (1 rows)
+2026-08-29T16:46:10.044851+00:00 | 2026_04_26 seriea | matched=3 | unmatched=0
+2026-08-29T16:46:10.044929+00:00 | WROTE docs/win/soccer/01_merge/2026_04_26_seriea_match_odds.csv (3 rows)
+2026-08-29T16:46:10.045013+00:00 | WROTE docs/win/soccer/01_merge/2026_04_26_seriea_total_25.csv (3 rows)
+2026-08-29T16:46:10.045118+00:00 | WROTE docs/win/soccer/01_merge/2026_04_26_seriea_total_35.csv (3 rows)
+2026-08-29T16:46:10.045192+00:00 | WROTE docs/win/soccer/01_merge/2026_04_26_seriea_btts.csv (3 rows)
+2026-08-29T16:46:10.045306+00:00 | 2026_04_27 epl | matched=1 | unmatched=0
+2026-08-29T16:46:10.045384+00:00 | WROTE docs/win/soccer/01_merge/2026_04_27_epl_match_odds.csv (1 rows)
+2026-08-29T16:46:10.045484+00:00 | WROTE docs/win/soccer/01_merge/2026_04_27_epl_total_25.csv (1 rows)
+2026-08-29T16:46:10.045563+00:00 | WROTE docs/win/soccer/01_merge/2026_04_27_epl_total_35.csv (1 rows)
+2026-08-29T16:46:10.045665+00:00 | WROTE docs/win/soccer/01_merge/2026_04_27_epl_btts.csv (1 rows)
+2026-08-29T16:46:10.045784+00:00 | 2026_04_27 laliga | matched=1 | unmatched=0
+2026-08-29T16:46:10.045860+00:00 | WROTE docs/win/soccer/01_merge/2026_04_27_laliga_match_odds.csv (1 rows)
+2026-08-29T16:46:10.045932+00:00 | WROTE docs/win/soccer/01_merge/2026_04_27_laliga_total_25.csv (1 rows)
+2026-08-29T16:46:10.046025+00:00 | WROTE docs/win/soccer/01_merge/2026_04_27_laliga_total_35.csv (1 rows)
+2026-08-29T16:46:10.046120+00:00 | WROTE docs/win/soccer/01_merge/2026_04_27_laliga_btts.csv (1 rows)
+2026-08-29T16:46:10.046243+00:00 | 2026_04_27 seriea | matched=2 | unmatched=0
+2026-08-29T16:46:10.046321+00:00 | WROTE docs/win/soccer/01_merge/2026_04_27_seriea_match_odds.csv (2 rows)
+2026-08-29T16:46:10.046412+00:00 | WROTE docs/win/soccer/01_merge/2026_04_27_seriea_total_25.csv (2 rows)
+2026-08-29T16:46:10.046521+00:00 | WROTE docs/win/soccer/01_merge/2026_04_27_seriea_total_35.csv (2 rows)
+2026-08-29T16:46:10.046593+00:00 | WROTE docs/win/soccer/01_merge/2026_04_27_seriea_btts.csv (2 rows)
+2026-08-29T16:46:10.046722+00:00 | 2026_05_01 epl | matched=1 | unmatched=0
+2026-08-29T16:46:10.046798+00:00 | WROTE docs/win/soccer/01_merge/2026_05_01_epl_match_odds.csv (1 rows)
+2026-08-29T16:46:10.046875+00:00 | WROTE docs/win/soccer/01_merge/2026_05_01_epl_total_25.csv (1 rows)
+2026-08-29T16:46:10.046974+00:00 | WROTE docs/win/soccer/01_merge/2026_05_01_epl_total_35.csv (1 rows)
+2026-08-29T16:46:10.047048+00:00 | WROTE docs/win/soccer/01_merge/2026_05_01_epl_btts.csv (1 rows)
+2026-08-29T16:46:10.047235+00:00 | 2026_05_02 mls | matched=13 | unmatched=0
+2026-08-29T16:46:10.047332+00:00 | WROTE docs/win/soccer/01_merge/2026_05_02_mls_match_odds.csv (13 rows)
+2026-08-29T16:46:10.047431+00:00 | WROTE docs/win/soccer/01_merge/2026_05_02_mls_total_25.csv (13 rows)
+2026-08-29T16:46:10.047558+00:00 | WROTE docs/win/soccer/01_merge/2026_05_02_mls_total_35.csv (13 rows)
+2026-08-29T16:46:10.047676+00:00 | WROTE docs/win/soccer/01_merge/2026_05_02_mls_btts.csv (13 rows)
+2026-08-29T16:46:10.047808+00:00 | 2026_05_03 mls | matched=2 | unmatched=0
+2026-08-29T16:46:10.047885+00:00 | WROTE docs/win/soccer/01_merge/2026_05_03_mls_match_odds.csv (2 rows)
+2026-08-29T16:46:10.047966+00:00 | WROTE docs/win/soccer/01_merge/2026_05_03_mls_total_25.csv (2 rows)
+2026-08-29T16:46:10.048050+00:00 | WROTE docs/win/soccer/01_merge/2026_05_03_mls_total_35.csv (2 rows)
+2026-08-29T16:46:10.048144+00:00 | WROTE docs/win/soccer/01_merge/2026_05_03_mls_btts.csv (2 rows)
+2026-08-29T16:46:10.048270+00:00 | 2026_05_04 epl | matched=3 | unmatched=0
+2026-08-29T16:46:10.048349+00:00 | WROTE docs/win/soccer/01_merge/2026_05_04_epl_match_odds.csv (3 rows)
+2026-08-29T16:46:10.048452+00:00 | WROTE docs/win/soccer/01_merge/2026_05_04_epl_total_25.csv (3 rows)
+2026-08-29T16:46:10.048550+00:00 | WROTE docs/win/soccer/01_merge/2026_05_04_epl_total_35.csv (3 rows)
+2026-08-29T16:46:10.048628+00:00 | WROTE docs/win/soccer/01_merge/2026_05_04_epl_btts.csv (3 rows)
+2026-08-29T16:46:10.048768+00:00 | 2026_05_04 laliga | matched=2 | unmatched=0
+2026-08-29T16:46:10.048846+00:00 | WROTE docs/win/soccer/01_merge/2026_05_04_laliga_match_odds.csv (2 rows)
+2026-08-29T16:46:10.048929+00:00 | WROTE docs/win/soccer/01_merge/2026_05_04_laliga_total_25.csv (2 rows)
+2026-08-29T16:46:10.049032+00:00 | WROTE docs/win/soccer/01_merge/2026_05_04_laliga_total_35.csv (2 rows)
+2026-08-29T16:46:10.049104+00:00 | WROTE docs/win/soccer/01_merge/2026_05_04_laliga_btts.csv (2 rows)
+2026-08-29T16:46:10.049233+00:00 | 2026_05_04 seriea | matched=4 | unmatched=0
+2026-08-29T16:46:10.049315+00:00 | WROTE docs/win/soccer/01_merge/2026_05_04_seriea_match_odds.csv (4 rows)
+2026-08-29T16:46:10.049414+00:00 | WROTE docs/win/soccer/01_merge/2026_05_04_seriea_total_25.csv (4 rows)
+2026-08-29T16:46:10.049518+00:00 | WROTE docs/win/soccer/01_merge/2026_05_04_seriea_total_35.csv (4 rows)
+2026-08-29T16:46:10.049605+00:00 | WROTE docs/win/soccer/01_merge/2026_05_04_seriea_btts.csv (4 rows)
+2026-08-29T16:46:10.049749+00:00 | UNMATCHED game_id=61514194: 2026_05_08 bundesliga | Augsburg vs Borussia Monchengladbach
+2026-08-29T16:46:10.049768+00:00 | UNMATCHED game_id=61514196: 2026_05_08 bundesliga | Hoffenheim vs Werder Bremen
+2026-08-29T16:46:10.049783+00:00 | UNMATCHED game_id=61514188: 2026_05_08 bundesliga | RB Leipzig vs St Pauli
+2026-08-29T16:46:10.049802+00:00 | UNMATCHED game_id=61514190: 2026_05_08 bundesliga | VfB Stuttgart vs Leverkusen
+2026-08-29T16:46:10.049817+00:00 | UNMATCHED game_id=61514192: 2026_05_08 bundesliga | Wolfsburg vs Bayern Munich
+2026-08-29T16:46:10.049832+00:00 | UNMATCHED game_id=61514200: 2026_05_08 bundesliga | Hamburg vs Freiburg
+2026-08-29T16:46:10.049846+00:00 | UNMATCHED game_id=61514198: 2026_05_08 bundesliga | Koln vs Heidenheim
+2026-08-29T16:46:10.049860+00:00 | UNMATCHED game_id=61514186: 2026_05_08 bundesliga | Mainz vs Union Berlin
+2026-08-29T16:46:10.049875+00:00 | 2026_05_08 bundesliga | matched=1 | unmatched=8
+2026-08-29T16:46:10.049947+00:00 | WROTE docs/win/soccer/01_merge/2026_05_08_bundesliga_match_odds.csv (1 rows)
+2026-08-29T16:46:10.050031+00:00 | WROTE docs/win/soccer/01_merge/2026_05_08_bundesliga_total_25.csv (1 rows)
+2026-08-29T16:46:10.050122+00:00 | WROTE docs/win/soccer/01_merge/2026_05_08_bundesliga_total_35.csv (1 rows)
+2026-08-29T16:46:10.050203+00:00 | WROTE docs/win/soccer/01_merge/2026_05_08_bundesliga_btts.csv (1 rows)
+2026-08-29T16:46:10.050352+00:00 | UNMATCHED game_id=61624628: 2026_05_08 laliga | Elche vs Alaves
+2026-08-29T16:46:10.050371+00:00 | UNMATCHED game_id=61624632: 2026_05_08 laliga | Sevilla vs Espanyol
+2026-08-29T16:46:10.050396+00:00 | UNMATCHED game_id=61624620: 2026_05_08 laliga | Atletico Madrid vs Celta Vigo
+2026-08-29T16:46:10.050411+00:00 | UNMATCHED game_id=61624642: 2026_05_08 laliga | Celta Vigo vs Levante
+2026-08-29T16:46:10.050425+00:00 | UNMATCHED game_id=61624652: 2026_05_08 laliga | Valencia vs Vallecano
+2026-08-29T16:46:10.050440+00:00 | UNMATCHED game_id=61624658: 2026_05_08 laliga | Athletic Club vs Celta Vigo
+2026-08-29T16:46:10.050454+00:00 | UNMATCHED game_id=61624660: 2026_05_08 laliga | Atletico Madrid vs Girona
+2026-08-29T16:46:10.050468+00:00 | UNMATCHED game_id=61624662: 2026_05_08 laliga | Barcelona vs Real Betis
+2026-08-29T16:46:10.050483+00:00 | UNMATCHED game_id=61624664: 2026_05_08 laliga | Elche vs Getafe
+2026-08-29T16:46:10.050497+00:00 | UNMATCHED game_id=61624666: 2026_05_08 laliga | Levante vs Mallorca
+2026-08-29T16:46:10.050511+00:00 | UNMATCHED game_id=61624668: 2026_05_08 laliga | Vallecano vs Villarreal
+2026-08-29T16:46:10.050525+00:00 | UNMATCHED game_id=61624670: 2026_05_08 laliga | Real Sociedad vs Valencia
+2026-08-29T16:46:10.050540+00:00 | UNMATCHED game_id=61624672: 2026_05_08 laliga | Real Oviedo vs Alaves
+2026-08-29T16:46:10.050554+00:00 | UNMATCHED game_id=61624674: 2026_05_08 laliga | Osasuna vs Espanyol
+2026-08-29T16:46:10.050568+00:00 | UNMATCHED game_id=61624676: 2026_05_08 laliga | Sevilla vs Real Madrid
+2026-08-29T16:46:10.050582+00:00 | 2026_05_08 laliga | matched=0 | unmatched=15
+2026-08-29T16:46:10.050598+00:00 | NO ROWS: 2026_05_08_laliga_match_odds.csv — skipping
+2026-08-29T16:46:10.050619+00:00 | NO ROWS: 2026_05_08_laliga_total_25.csv — skipping
+2026-08-29T16:46:10.050634+00:00 | NO ROWS: 2026_05_08_laliga_total_35.csv — skipping
+2026-08-29T16:46:10.050649+00:00 | NO ROWS: 2026_05_08_laliga_btts.csv — skipping
+2026-08-29T16:46:10.050753+00:00 | UNMATCHED game_id=61526572: 2026_05_08 ligue1 | Le Havre vs Marseille
+2026-08-29T16:46:10.050770+00:00 | UNMATCHED game_id=61526574: 2026_05_08 ligue1 | Toulouse vs Lyon
+2026-08-29T16:46:10.050784+00:00 | UNMATCHED game_id=61526578: 2026_05_08 ligue1 | Auxerre vs Nice
+2026-08-29T16:46:10.050799+00:00 | UNMATCHED game_id=61526584: 2026_05_08 ligue1 | Rennes vs Paris FC
+2026-08-29T16:46:10.050813+00:00 | UNMATCHED game_id=61526586: 2026_05_08 ligue1 | Metz vs Lorient
+2026-08-29T16:46:10.050828+00:00 | UNMATCHED game_id=61526588: 2026_05_08 ligue1 | Angers vs Strasbourg
+2026-08-29T16:46:10.050842+00:00 | UNMATCHED game_id=61526570: 2026_05_08 ligue1 | Paris Saint Germain vs Stade Brest
+2026-08-29T16:46:10.050856+00:00 | UNMATCHED game_id=61526590: 2026_05_08 ligue1 | Monaco vs Lille
+2026-08-29T16:46:10.050871+00:00 | 2026_05_08 ligue1 | matched=1 | unmatched=8
+2026-08-29T16:46:10.050942+00:00 | WROTE docs/win/soccer/01_merge/2026_05_08_ligue1_match_odds.csv (1 rows)
+2026-08-29T16:46:10.051012+00:00 | WROTE docs/win/soccer/01_merge/2026_05_08_ligue1_total_25.csv (1 rows)
+2026-08-29T16:46:10.051119+00:00 | WROTE docs/win/soccer/01_merge/2026_05_08_ligue1_total_35.csv (1 rows)
+2026-08-29T16:46:10.051217+00:00 | WROTE docs/win/soccer/01_merge/2026_05_08_ligue1_btts.csv (1 rows)
+2026-08-29T16:46:10.051379+00:00 | UNMATCHED game_id=61061645: 2026_05_08 seriea | Cagliari vs Udinese
+2026-08-29T16:46:10.051408+00:00 | UNMATCHED game_id=61061651: 2026_05_08 seriea | Lazio vs Inter Milan
+2026-08-29T16:46:10.051424+00:00 | UNMATCHED game_id=61061653: 2026_05_08 seriea | Lecce vs Juventus
+2026-08-29T16:46:10.051438+00:00 | UNMATCHED game_id=61061663: 2026_05_08 seriea | Verona vs Como
+2026-08-29T16:46:10.051453+00:00 | UNMATCHED game_id=61061647: 2026_05_08 seriea | Cremonese vs Pisa
+2026-08-29T16:46:10.051467+00:00 | UNMATCHED game_id=61061649: 2026_05_08 seriea | Fiorentina vs Genoa
+2026-08-29T16:46:10.051481+00:00 | UNMATCHED game_id=61061659: 2026_05_08 seriea | Parma vs Roma
+2026-08-29T16:46:10.051496+00:00 | UNMATCHED game_id=61061655: 2026_05_08 seriea | Milan vs Atalanta
+2026-08-29T16:46:10.051510+00:00 | UNMATCHED game_id=61061683: 2026_05_08 seriea | Udinese vs Cremonese
+2026-08-29T16:46:10.051524+00:00 | UNMATCHED game_id=61061665: 2026_05_08 seriea | Atalanta vs Bologna
+2026-08-29T16:46:10.051538+00:00 | UNMATCHED game_id=61061667: 2026_05_08 seriea | Cagliari vs Torino
+2026-08-29T16:46:10.051553+00:00 | UNMATCHED game_id=61061669: 2026_05_08 seriea | Como vs Parma
+2026-08-29T16:46:10.051567+00:00 | UNMATCHED game_id=61061671: 2026_05_08 seriea | Genoa vs Milan
+2026-08-29T16:46:10.051581+00:00 | UNMATCHED game_id=61061673: 2026_05_08 seriea | Inter Milan vs Verona
+2026-08-29T16:46:10.051595+00:00 | UNMATCHED game_id=61061675: 2026_05_08 seriea | Juventus vs Fiorentina
+2026-08-29T16:46:10.051610+00:00 | UNMATCHED game_id=61061677: 2026_05_08 seriea | Pisa vs Napoli
+2026-08-29T16:46:10.051624+00:00 | UNMATCHED game_id=61061679: 2026_05_08 seriea | Roma vs Lazio
+2026-08-29T16:46:10.051638+00:00 | UNMATCHED game_id=61061681: 2026_05_08 seriea | Sassuolo vs Lecce
+2026-08-29T16:46:10.051652+00:00 | 2026_05_08 seriea | matched=1 | unmatched=18
+2026-08-29T16:46:10.051727+00:00 | WROTE docs/win/soccer/01_merge/2026_05_08_seriea_match_odds.csv (1 rows)
+2026-08-29T16:46:10.051793+00:00 | WROTE docs/win/soccer/01_merge/2026_05_08_seriea_total_25.csv (1 rows)
+2026-08-29T16:46:10.051874+00:00 | WROTE docs/win/soccer/01_merge/2026_05_08_seriea_total_35.csv (1 rows)
+2026-08-29T16:46:10.051972+00:00 | WROTE docs/win/soccer/01_merge/2026_05_08_seriea_btts.csv (1 rows)
+2026-08-29T16:46:10.052128+00:00 | UNMATCHED game_id=61514200: 2026_05_09 bundesliga | Hamburg vs Freiburg
+2026-08-29T16:46:10.052147+00:00 | UNMATCHED game_id=61514198: 2026_05_09 bundesliga | Koln vs Heidenheim
+2026-08-29T16:46:10.052162+00:00 | UNMATCHED game_id=61514186: 2026_05_09 bundesliga | Mainz vs Union Berlin
+2026-08-29T16:46:10.052177+00:00 | 2026_05_09 bundesliga | matched=5 | unmatched=3
+2026-08-29T16:46:10.052257+00:00 | WROTE docs/win/soccer/01_merge/2026_05_09_bundesliga_match_odds.csv (5 rows)
+2026-08-29T16:46:10.052329+00:00 | WROTE docs/win/soccer/01_merge/2026_05_09_bundesliga_total_25.csv (5 rows)
+2026-08-29T16:46:10.052454+00:00 | WROTE docs/win/soccer/01_merge/2026_05_09_bundesliga_total_35.csv (5 rows)
+2026-08-29T16:46:10.052556+00:00 | WROTE docs/win/soccer/01_merge/2026_05_09_bundesliga_btts.csv (5 rows)
+2026-08-29T16:46:10.052728+00:00 | UNMATCHED game_id=61301245: 2026_05_09 epl | West Ham vs Arsenal
+2026-08-29T16:46:10.052747+00:00 | UNMATCHED game_id=61301243: 2026_05_09 epl | Tottenham Hotspur vs Leeds
+2026-08-29T16:46:10.052762+00:00 | UNMATCHED game_id=70784812: 2026_05_09 epl | Manchester City vs Crystal Palace
+2026-08-29T16:46:10.052776+00:00 | UNMATCHED game_id=61301251: 2026_05_09 epl | Aston Villa vs Liverpool
+2026-08-29T16:46:10.052790+00:00 | UNMATCHED game_id=61301261: 2026_05_09 epl | Manchester United vs Nottingham Forest
+2026-08-29T16:46:10.052804+00:00 | UNMATCHED game_id=61301257: 2026_05_09 epl | Everton vs Sunderland
+2026-08-29T16:46:10.052823+00:00 | UNMATCHED game_id=61301259: 2026_05_09 epl | Leeds vs Brighton
+2026-08-29T16:46:10.052838+00:00 | UNMATCHED game_id=61301265: 2026_05_09 epl | Wolverhampton vs Fulham
+2026-08-29T16:46:10.052852+00:00 | UNMATCHED game_id=61301253: 2026_05_09 epl | Brentford vs Crystal Palace
+2026-08-29T16:46:10.052866+00:00 | UNMATCHED game_id=61301263: 2026_05_09 epl | Newcastle vs West Ham
+2026-08-29T16:46:10.052880+00:00 | UNMATCHED game_id=61301249: 2026_05_09 epl | Arsenal vs Burnley
+2026-08-29T16:46:10.052895+00:00 | 2026_05_09 epl | matched=5 | unmatched=11
+2026-08-29T16:46:10.052974+00:00 | WROTE docs/win/soccer/01_merge/2026_05_09_epl_match_odds.csv (5 rows)
+2026-08-29T16:46:10.053046+00:00 | WROTE docs/win/soccer/01_merge/2026_05_09_epl_total_25.csv (5 rows)
+2026-08-29T16:46:10.053145+00:00 | WROTE docs/win/soccer/01_merge/2026_05_09_epl_total_35.csv (5 rows)
+2026-08-29T16:46:10.053247+00:00 | WROTE docs/win/soccer/01_merge/2026_05_09_epl_btts.csv (5 rows)
+2026-08-29T16:46:10.053451+00:00 | UNMATCHED game_id=61624618: 2026_05_09 laliga | Athletic Club vs Valencia
+2026-08-29T16:46:10.053471+00:00 | UNMATCHED game_id=61624634: 2026_05_09 laliga | Real Oviedo vs Getafe
+2026-08-29T16:46:10.053486+00:00 | UNMATCHED game_id=61624622: 2026_05_09 laliga | Barcelona vs Real Madrid
+2026-08-29T16:46:10.053500+00:00 | UNMATCHED game_id=61624636: 2026_05_09 laliga | Vallecano vs Girona
+2026-08-29T16:46:10.053514+00:00 | UNMATCHED game_id=61624642: 2026_05_09 laliga | Celta Vigo vs Levante
+2026-08-29T16:46:10.053528+00:00 | UNMATCHED game_id=61624640: 2026_05_09 laliga | Real Betis vs Elche
+2026-08-29T16:46:10.053543+00:00 | UNMATCHED game_id=61624650: 2026_05_09 laliga | Osasuna vs Atletico Madrid
+2026-08-29T16:46:10.053557+00:00 | UNMATCHED game_id=61624648: 2026_05_09 laliga | Espanyol vs Athletic Club
+2026-08-29T16:46:10.053571+00:00 | UNMATCHED game_id=61624654: 2026_05_09 laliga | Villarreal vs Sevilla
+2026-08-29T16:46:10.053585+00:00 | UNMATCHED game_id=61624644: 2026_05_09 laliga | Getafe vs Mallorca
+2026-08-29T16:46:10.053599+00:00 | UNMATCHED game_id=61624638: 2026_05_09 laliga | Alaves vs Barcelona
+2026-08-29T16:46:10.053613+00:00 | UNMATCHED game_id=61624652: 2026_05_09 laliga | Valencia vs Vallecano
+2026-08-29T16:46:10.053628+00:00 | UNMATCHED game_id=61624646: 2026_05_09 laliga | Girona vs Real Sociedad
+2026-08-29T16:46:10.053642+00:00 | UNMATCHED game_id=61624656: 2026_05_09 laliga | Real Madrid vs Real Oviedo
+2026-08-29T16:46:10.053656+00:00 | UNMATCHED game_id=61624658: 2026_05_09 laliga | Athletic Club vs Celta Vigo
+2026-08-29T16:46:10.053670+00:00 | UNMATCHED game_id=61624660: 2026_05_09 laliga | Atletico Madrid vs Girona
+2026-08-29T16:46:10.053684+00:00 | UNMATCHED game_id=61624662: 2026_05_09 laliga | Barcelona vs Real Betis
+2026-08-29T16:46:10.053698+00:00 | UNMATCHED game_id=61624664: 2026_05_09 laliga | Elche vs Getafe
+2026-08-29T16:46:10.053713+00:00 | UNMATCHED game_id=61624666: 2026_05_09 laliga | Levante vs Mallorca
+2026-08-29T16:46:10.053727+00:00 | UNMATCHED game_id=61624668: 2026_05_09 laliga | Vallecano vs Villarreal
+2026-08-29T16:46:10.053741+00:00 | UNMATCHED game_id=61624670: 2026_05_09 laliga | Real Sociedad vs Valencia
+2026-08-29T16:46:10.053755+00:00 | UNMATCHED game_id=61624672: 2026_05_09 laliga | Real Oviedo vs Alaves
+2026-08-29T16:46:10.053769+00:00 | UNMATCHED game_id=61624674: 2026_05_09 laliga | Osasuna vs Espanyol
+2026-08-29T16:46:10.053783+00:00 | UNMATCHED game_id=61624676: 2026_05_09 laliga | Sevilla vs Real Madrid
+2026-08-29T16:46:10.053797+00:00 | 2026_05_09 laliga | matched=3 | unmatched=24
+2026-08-29T16:46:10.053875+00:00 | WROTE docs/win/soccer/01_merge/2026_05_09_laliga_match_odds.csv (3 rows)
+2026-08-29T16:46:10.053944+00:00 | WROTE docs/win/soccer/01_merge/2026_05_09_laliga_total_25.csv (3 rows)
+2026-08-29T16:46:10.054049+00:00 | WROTE docs/win/soccer/01_merge/2026_05_09_laliga_total_35.csv (3 rows)
+2026-08-29T16:46:10.054142+00:00 | WROTE docs/win/soccer/01_merge/2026_05_09_laliga_btts.csv (3 rows)
+2026-08-29T16:46:10.054335+00:00 | UNMATCHED game_id=66299142: 2026_05_09 mls | New York City FC vs Columbus Crew
+2026-08-29T16:46:10.054353+00:00 | UNMATCHED game_id=66299144: 2026_05_09 mls | Minnesota United vs Austin FC
+2026-08-29T16:46:10.054368+00:00 | UNMATCHED game_id=66299146: 2026_05_09 mls | Los Angeles FC vs Houston Dynamo
+2026-08-29T16:46:10.054383+00:00 | 2026_05_09 mls | matched=11 | unmatched=3
+2026-08-29T16:46:10.054484+00:00 | WROTE docs/win/soccer/01_merge/2026_05_09_mls_match_odds.csv (11 rows)
+2026-08-29T16:46:10.054565+00:00 | WROTE docs/win/soccer/01_merge/2026_05_09_mls_total_25.csv (11 rows)
+2026-08-29T16:46:10.054688+00:00 | WROTE docs/win/soccer/01_merge/2026_05_09_mls_total_35.csv (11 rows)
+2026-08-29T16:46:10.054774+00:00 | WROTE docs/win/soccer/01_merge/2026_05_09_mls_btts.csv (11 rows)
+2026-08-29T16:46:10.054922+00:00 | UNMATCHED game_id=61061655: 2026_05_09 seriea | Milan vs Atalanta
+2026-08-29T16:46:10.054941+00:00 | UNMATCHED game_id=61061681: 2026_05_09 seriea | Sassuolo vs Lecce
+2026-08-29T16:46:10.054955+00:00 | UNMATCHED game_id=61061683: 2026_05_09 seriea | Udinese vs Cremonese
+2026-08-29T16:46:10.054970+00:00 | UNMATCHED game_id=61061665: 2026_05_09 seriea | Atalanta vs Bologna
+2026-08-29T16:46:10.054984+00:00 | UNMATCHED game_id=61061667: 2026_05_09 seriea | Cagliari vs Torino
+2026-08-29T16:46:10.054998+00:00 | UNMATCHED game_id=61061669: 2026_05_09 seriea | Como vs Parma
+2026-08-29T16:46:10.055012+00:00 | UNMATCHED game_id=61061671: 2026_05_09 seriea | Genoa vs Milan
+2026-08-29T16:46:10.055026+00:00 | UNMATCHED game_id=61061673: 2026_05_09 seriea | Inter Milan vs Verona
+2026-08-29T16:46:10.055040+00:00 | UNMATCHED game_id=61061675: 2026_05_09 seriea | Juventus vs Fiorentina
+2026-08-29T16:46:10.055054+00:00 | UNMATCHED game_id=61061677: 2026_05_09 seriea | Pisa vs Napoli
+2026-08-29T16:46:10.055068+00:00 | UNMATCHED game_id=61061679: 2026_05_09 seriea | Roma vs Lazio
+2026-08-29T16:46:10.055082+00:00 | 2026_05_09 seriea | matched=1 | unmatched=11
+2026-08-29T16:46:10.055155+00:00 | WROTE docs/win/soccer/01_merge/2026_05_09_seriea_match_odds.csv (1 rows)
+2026-08-29T16:46:10.055220+00:00 | WROTE docs/win/soccer/01_merge/2026_05_09_seriea_total_25.csv (1 rows)
+2026-08-29T16:46:10.055322+00:00 | WROTE docs/win/soccer/01_merge/2026_05_09_seriea_total_35.csv (1 rows)
+2026-08-29T16:46:10.055432+00:00 | WROTE docs/win/soccer/01_merge/2026_05_09_seriea_btts.csv (1 rows)
+2026-08-29T16:46:10.055568+00:00 | 2026_05_10 bundesliga | matched=3 | unmatched=0
+2026-08-29T16:46:10.055648+00:00 | WROTE docs/win/soccer/01_merge/2026_05_10_bundesliga_match_odds.csv (3 rows)
+2026-08-29T16:46:10.055717+00:00 | WROTE docs/win/soccer/01_merge/2026_05_10_bundesliga_total_25.csv (3 rows)
+2026-08-29T16:46:10.055812+00:00 | WROTE docs/win/soccer/01_merge/2026_05_10_bundesliga_total_35.csv (3 rows)
+2026-08-29T16:46:10.055901+00:00 | WROTE docs/win/soccer/01_merge/2026_05_10_bundesliga_btts.csv (3 rows)
+2026-08-29T16:46:10.056059+00:00 | UNMATCHED game_id=61301243: 2026_05_10 epl | Tottenham Hotspur vs Leeds
+2026-08-29T16:46:10.056077+00:00 | UNMATCHED game_id=70784812: 2026_05_10 epl | Manchester City vs Crystal Palace
+2026-08-29T16:46:10.056092+00:00 | UNMATCHED game_id=61301251: 2026_05_10 epl | Aston Villa vs Liverpool
+2026-08-29T16:46:10.056106+00:00 | UNMATCHED game_id=61301261: 2026_05_10 epl | Manchester United vs Nottingham Forest
+2026-08-29T16:46:10.056121+00:00 | UNMATCHED game_id=61301257: 2026_05_10 epl | Everton vs Sunderland
+2026-08-29T16:46:10.056135+00:00 | UNMATCHED game_id=61301259: 2026_05_10 epl | Leeds vs Brighton
+2026-08-29T16:46:10.056150+00:00 | UNMATCHED game_id=61301253: 2026_05_10 epl | Brentford vs Crystal Palace
+2026-08-29T16:46:10.056164+00:00 | UNMATCHED game_id=61301265: 2026_05_10 epl | Wolverhampton vs Fulham
+2026-08-29T16:46:10.056178+00:00 | UNMATCHED game_id=61301263: 2026_05_10 epl | Newcastle vs West Ham
+2026-08-29T16:46:10.056192+00:00 | UNMATCHED game_id=61301249: 2026_05_10 epl | Arsenal vs Burnley
+2026-08-29T16:46:10.056207+00:00 | 2026_05_10 epl | matched=4 | unmatched=10
+2026-08-29T16:46:10.056286+00:00 | WROTE docs/win/soccer/01_merge/2026_05_10_epl_match_odds.csv (4 rows)
+2026-08-29T16:46:10.056371+00:00 | WROTE docs/win/soccer/01_merge/2026_05_10_epl_total_25.csv (4 rows)
+2026-08-29T16:46:10.056490+00:00 | WROTE docs/win/soccer/01_merge/2026_05_10_epl_total_35.csv (4 rows)
+2026-08-29T16:46:10.056565+00:00 | WROTE docs/win/soccer/01_merge/2026_05_10_epl_btts.csv (4 rows)
+2026-08-29T16:46:10.056764+00:00 | UNMATCHED game_id=61624642: 2026_05_10 laliga | Celta Vigo vs Levante
+2026-08-29T16:46:10.056783+00:00 | UNMATCHED game_id=61624640: 2026_05_10 laliga | Real Betis vs Elche
+2026-08-29T16:46:10.056798+00:00 | UNMATCHED game_id=61624650: 2026_05_10 laliga | Osasuna vs Atletico Madrid
+2026-08-29T16:46:10.056812+00:00 | UNMATCHED game_id=61624654: 2026_05_10 laliga | Villarreal vs Sevilla
+2026-08-29T16:46:10.056826+00:00 | UNMATCHED game_id=61624648: 2026_05_10 laliga | Espanyol vs Athletic Club
+2026-08-29T16:46:10.056840+00:00 | UNMATCHED game_id=61624638: 2026_05_10 laliga | Alaves vs Barcelona
+2026-08-29T16:46:10.056854+00:00 | UNMATCHED game_id=61624644: 2026_05_10 laliga | Getafe vs Mallorca
+2026-08-29T16:46:10.056868+00:00 | UNMATCHED game_id=61624652: 2026_05_10 laliga | Valencia vs Vallecano
+2026-08-29T16:46:10.056882+00:00 | UNMATCHED game_id=61624646: 2026_05_10 laliga | Girona vs Real Sociedad
+2026-08-29T16:46:10.056896+00:00 | UNMATCHED game_id=61624656: 2026_05_10 laliga | Real Madrid vs Real Oviedo
+2026-08-29T16:46:10.056910+00:00 | UNMATCHED game_id=61624658: 2026_05_10 laliga | Athletic Club vs Celta Vigo
+2026-08-29T16:46:10.056924+00:00 | UNMATCHED game_id=61624660: 2026_05_10 laliga | Atletico Madrid vs Girona
+2026-08-29T16:46:10.056938+00:00 | UNMATCHED game_id=61624662: 2026_05_10 laliga | Barcelona vs Real Betis
+2026-08-29T16:46:10.056952+00:00 | UNMATCHED game_id=61624664: 2026_05_10 laliga | Elche vs Getafe
+2026-08-29T16:46:10.056966+00:00 | UNMATCHED game_id=61624666: 2026_05_10 laliga | Levante vs Mallorca
+2026-08-29T16:46:10.056980+00:00 | UNMATCHED game_id=61624668: 2026_05_10 laliga | Vallecano vs Villarreal
+2026-08-29T16:46:10.056994+00:00 | UNMATCHED game_id=61624670: 2026_05_10 laliga | Real Sociedad vs Valencia
+2026-08-29T16:46:10.057007+00:00 | UNMATCHED game_id=61624672: 2026_05_10 laliga | Real Oviedo vs Alaves
+2026-08-29T16:46:10.057022+00:00 | UNMATCHED game_id=61624674: 2026_05_10 laliga | Osasuna vs Espanyol
+2026-08-29T16:46:10.057036+00:00 | UNMATCHED game_id=61624676: 2026_05_10 laliga | Sevilla vs Real Madrid
+2026-08-29T16:46:10.057050+00:00 | 2026_05_10 laliga | matched=4 | unmatched=20
+2026-08-29T16:46:10.057128+00:00 | WROTE docs/win/soccer/01_merge/2026_05_10_laliga_match_odds.csv (4 rows)
+2026-08-29T16:46:10.057197+00:00 | WROTE docs/win/soccer/01_merge/2026_05_10_laliga_total_25.csv (4 rows)
+2026-08-29T16:46:10.057316+00:00 | WROTE docs/win/soccer/01_merge/2026_05_10_laliga_total_35.csv (4 rows)
+2026-08-29T16:46:10.057403+00:00 | WROTE docs/win/soccer/01_merge/2026_05_10_laliga_btts.csv (4 rows)
+2026-08-29T16:46:10.057567+00:00 | 2026_05_10 ligue1 | matched=8 | unmatched=0
+2026-08-29T16:46:10.057653+00:00 | WROTE docs/win/soccer/01_merge/2026_05_10_ligue1_match_odds.csv (8 rows)
+2026-08-29T16:46:10.057754+00:00 | WROTE docs/win/soccer/01_merge/2026_05_10_ligue1_total_25.csv (8 rows)
+2026-08-29T16:46:10.057860+00:00 | WROTE docs/win/soccer/01_merge/2026_05_10_ligue1_total_35.csv (8 rows)
+2026-08-29T16:46:10.057954+00:00 | WROTE docs/win/soccer/01_merge/2026_05_10_ligue1_btts.csv (8 rows)
+2026-08-29T16:46:10.058111+00:00 | UNMATCHED game_id=66299150: 2026_05_10 mls | FC Cincinnati vs Inter Miami
+2026-08-29T16:46:10.058130+00:00 | UNMATCHED game_id=66299152: 2026_05_10 mls | DC United vs Chicago Fire
+2026-08-29T16:46:10.058145+00:00 | UNMATCHED game_id=66299154: 2026_05_10 mls | CF Montreal vs Portland Timbers
+2026-08-29T16:46:10.058159+00:00 | UNMATCHED game_id=66299156: 2026_05_10 mls | New England Revolution vs Nashville SC
+2026-08-29T16:46:10.058173+00:00 | UNMATCHED game_id=66299160: 2026_05_10 mls | Orlando City vs Philadelphia Union
+2026-08-29T16:46:10.058192+00:00 | UNMATCHED game_id=66299162: 2026_05_10 mls | FC Dallas vs Vancouver Whitecaps
+2026-08-29T16:46:10.058206+00:00 | UNMATCHED game_id=66299164: 2026_05_10 mls | Sporting Kansas City vs LA Galaxy
+2026-08-29T16:46:10.058220+00:00 | UNMATCHED game_id=66299174: 2026_05_10 mls | Seattle Sounders vs San Jose Earthquakes
+2026-08-29T16:46:10.058235+00:00 | 2026_05_10 mls | matched=3 | unmatched=8
+2026-08-29T16:46:10.058309+00:00 | WROTE docs/win/soccer/01_merge/2026_05_10_mls_match_odds.csv (3 rows)
+2026-08-29T16:46:10.058378+00:00 | WROTE docs/win/soccer/01_merge/2026_05_10_mls_total_25.csv (3 rows)
+2026-08-29T16:46:10.058501+00:00 | WROTE docs/win/soccer/01_merge/2026_05_10_mls_total_35.csv (3 rows)
+2026-08-29T16:46:10.058585+00:00 | WROTE docs/win/soccer/01_merge/2026_05_10_mls_btts.csv (3 rows)
+2026-08-29T16:46:10.058750+00:00 | UNMATCHED game_id=61061657: 2026_05_10 seriea | Napoli vs Bologna
+2026-08-29T16:46:10.058768+00:00 | UNMATCHED game_id=61061675: 2026_05_10 seriea | Juventus vs Fiorentina
+2026-08-29T16:46:10.058783+00:00 | UNMATCHED game_id=61061677: 2026_05_10 seriea | Pisa vs Napoli
+2026-08-29T16:46:10.058798+00:00 | UNMATCHED game_id=61061679: 2026_05_10 seriea | Roma vs Lazio
+2026-08-29T16:46:10.058812+00:00 | UNMATCHED game_id=61061681: 2026_05_10 seriea | Sassuolo vs Lecce
+2026-08-29T16:46:10.058826+00:00 | UNMATCHED game_id=61061683: 2026_05_10 seriea | Udinese vs Cremonese
+2026-08-29T16:46:10.058841+00:00 | UNMATCHED game_id=61061665: 2026_05_10 seriea | Atalanta vs Bologna
+2026-08-29T16:46:10.058855+00:00 | UNMATCHED game_id=61061667: 2026_05_10 seriea | Cagliari vs Torino
+2026-08-29T16:46:10.058869+00:00 | UNMATCHED game_id=61061669: 2026_05_10 seriea | Como vs Parma
+2026-08-29T16:46:10.058883+00:00 | UNMATCHED game_id=61061671: 2026_05_10 seriea | Genoa vs Milan
+2026-08-29T16:46:10.058897+00:00 | UNMATCHED game_id=61061673: 2026_05_10 seriea | Inter Milan vs Verona
+2026-08-29T16:46:10.058912+00:00 | 2026_05_10 seriea | matched=5 | unmatched=11
+2026-08-29T16:46:10.058989+00:00 | WROTE docs/win/soccer/01_merge/2026_05_10_seriea_match_odds.csv (5 rows)
+2026-08-29T16:46:10.059080+00:00 | WROTE docs/win/soccer/01_merge/2026_05_10_seriea_total_25.csv (5 rows)
+2026-08-29T16:46:10.059180+00:00 | WROTE docs/win/soccer/01_merge/2026_05_10_seriea_total_35.csv (5 rows)
+2026-08-29T16:46:10.059258+00:00 | WROTE docs/win/soccer/01_merge/2026_05_10_seriea_btts.csv (5 rows)
+2026-08-29T16:46:10.059425+00:00 | UNMATCHED game_id=70784812: 2026_05_11 epl | Manchester City vs Crystal Palace
+2026-08-29T16:46:10.059445+00:00 | UNMATCHED game_id=61301251: 2026_05_11 epl | Aston Villa vs Liverpool
+2026-08-29T16:46:10.059460+00:00 | UNMATCHED game_id=61301261: 2026_05_11 epl | Manchester United vs Nottingham Forest
+2026-08-29T16:46:10.059474+00:00 | UNMATCHED game_id=61301257: 2026_05_11 epl | Everton vs Sunderland
+2026-08-29T16:46:10.059489+00:00 | UNMATCHED game_id=61301259: 2026_05_11 epl | Leeds vs Brighton
+2026-08-29T16:46:10.059503+00:00 | UNMATCHED game_id=61301265: 2026_05_11 epl | Wolverhampton vs Fulham
+2026-08-29T16:46:10.059517+00:00 | UNMATCHED game_id=61301253: 2026_05_11 epl | Brentford vs Crystal Palace
+2026-08-29T16:46:10.059532+00:00 | UNMATCHED game_id=61301263: 2026_05_11 epl | Newcastle vs West Ham
+2026-08-29T16:46:10.059546+00:00 | 2026_05_11 epl | matched=1 | unmatched=8
+2026-08-29T16:46:10.059621+00:00 | WROTE docs/win/soccer/01_merge/2026_05_11_epl_match_odds.csv (1 rows)
+2026-08-29T16:46:10.059687+00:00 | WROTE docs/win/soccer/01_merge/2026_05_11_epl_total_25.csv (1 rows)
+2026-08-29T16:46:10.059802+00:00 | WROTE docs/win/soccer/01_merge/2026_05_11_epl_total_35.csv (1 rows)
+2026-08-29T16:46:10.059873+00:00 | WROTE docs/win/soccer/01_merge/2026_05_11_epl_btts.csv (1 rows)
+2026-08-29T16:46:10.060037+00:00 | UNMATCHED game_id=61624642: 2026_05_11 laliga | Celta Vigo vs Levante
+2026-08-29T16:46:10.060056+00:00 | UNMATCHED game_id=61624640: 2026_05_11 laliga | Real Betis vs Elche
+2026-08-29T16:46:10.060071+00:00 | UNMATCHED game_id=61624650: 2026_05_11 laliga | Osasuna vs Atletico Madrid
+2026-08-29T16:46:10.060091+00:00 | UNMATCHED game_id=61624654: 2026_05_11 laliga | Villarreal vs Sevilla
+2026-08-29T16:46:10.060105+00:00 | UNMATCHED game_id=61624648: 2026_05_11 laliga | Espanyol vs Athletic Club
+2026-08-29T16:46:10.060119+00:00 | UNMATCHED game_id=61624638: 2026_05_11 laliga | Alaves vs Barcelona
+2026-08-29T16:46:10.060134+00:00 | UNMATCHED game_id=61624644: 2026_05_11 laliga | Getafe vs Mallorca
+2026-08-29T16:46:10.060148+00:00 | UNMATCHED game_id=61624652: 2026_05_11 laliga | Valencia vs Vallecano
+2026-08-29T16:46:10.060163+00:00 | UNMATCHED game_id=61624646: 2026_05_11 laliga | Girona vs Real Sociedad
+2026-08-29T16:46:10.060177+00:00 | UNMATCHED game_id=61624656: 2026_05_11 laliga | Real Madrid vs Real Oviedo
+2026-08-29T16:46:10.060192+00:00 | UNMATCHED game_id=61624658: 2026_05_11 laliga | Athletic Club vs Celta Vigo
+2026-08-29T16:46:10.060206+00:00 | UNMATCHED game_id=61624660: 2026_05_11 laliga | Atletico Madrid vs Girona
+2026-08-29T16:46:10.060220+00:00 | UNMATCHED game_id=61624662: 2026_05_11 laliga | Barcelona vs Real Betis
+2026-08-29T16:46:10.060234+00:00 | UNMATCHED game_id=61624664: 2026_05_11 laliga | Elche vs Getafe
+2026-08-29T16:46:10.060249+00:00 | UNMATCHED game_id=61624666: 2026_05_11 laliga | Levante vs Mallorca
+2026-08-29T16:46:10.060263+00:00 | UNMATCHED game_id=61624668: 2026_05_11 laliga | Vallecano vs Villarreal
+2026-08-29T16:46:10.060277+00:00 | UNMATCHED game_id=61624670: 2026_05_11 laliga | Real Sociedad vs Valencia
+2026-08-29T16:46:10.060291+00:00 | UNMATCHED game_id=61624672: 2026_05_11 laliga | Real Oviedo vs Alaves
+2026-08-29T16:46:10.060306+00:00 | UNMATCHED game_id=61624674: 2026_05_11 laliga | Osasuna vs Espanyol
+2026-08-29T16:46:10.060320+00:00 | UNMATCHED game_id=61624676: 2026_05_11 laliga | Sevilla vs Real Madrid
+2026-08-29T16:46:10.060334+00:00 | 2026_05_11 laliga | matched=1 | unmatched=20
+2026-08-29T16:46:10.060420+00:00 | WROTE docs/win/soccer/01_merge/2026_05_11_laliga_match_odds.csv (1 rows)
+2026-08-29T16:46:10.060490+00:00 | WROTE docs/win/soccer/01_merge/2026_05_11_laliga_total_25.csv (1 rows)
+2026-08-29T16:46:10.060602+00:00 | WROTE docs/win/soccer/01_merge/2026_05_11_laliga_total_35.csv (1 rows)
+2026-08-29T16:46:10.060689+00:00 | WROTE docs/win/soccer/01_merge/2026_05_11_laliga_btts.csv (1 rows)
+2026-08-29T16:46:10.060839+00:00 | UNMATCHED game_id=61061665: 2026_05_11 seriea | Atalanta vs Bologna
+2026-08-29T16:46:10.060857+00:00 | UNMATCHED game_id=61061667: 2026_05_11 seriea | Cagliari vs Torino
+2026-08-29T16:46:10.060872+00:00 | UNMATCHED game_id=61061669: 2026_05_11 seriea | Como vs Parma
+2026-08-29T16:46:10.060887+00:00 | UNMATCHED game_id=61061671: 2026_05_11 seriea | Genoa vs Milan
+2026-08-29T16:46:10.060902+00:00 | UNMATCHED game_id=61061673: 2026_05_11 seriea | Inter Milan vs Verona
+2026-08-29T16:46:10.060916+00:00 | UNMATCHED game_id=61061675: 2026_05_11 seriea | Juventus vs Fiorentina
+2026-08-29T16:46:10.060931+00:00 | UNMATCHED game_id=61061677: 2026_05_11 seriea | Pisa vs Napoli
+2026-08-29T16:46:10.060945+00:00 | UNMATCHED game_id=61061679: 2026_05_11 seriea | Roma vs Lazio
+2026-08-29T16:46:10.060960+00:00 | UNMATCHED game_id=61061681: 2026_05_11 seriea | Sassuolo vs Lecce
+2026-08-29T16:46:10.060974+00:00 | UNMATCHED game_id=61061683: 2026_05_11 seriea | Udinese vs Cremonese
+2026-08-29T16:46:10.060988+00:00 | 2026_05_11 seriea | matched=1 | unmatched=10
+2026-08-29T16:46:10.061060+00:00 | WROTE docs/win/soccer/01_merge/2026_05_11_seriea_match_odds.csv (1 rows)
+2026-08-29T16:46:10.061127+00:00 | WROTE docs/win/soccer/01_merge/2026_05_11_seriea_total_25.csv (1 rows)
+2026-08-29T16:46:10.061219+00:00 | WROTE docs/win/soccer/01_merge/2026_05_11_seriea_total_35.csv (1 rows)
+2026-08-29T16:46:10.061315+00:00 | WROTE docs/win/soccer/01_merge/2026_05_11_seriea_btts.csv (1 rows)
+2026-08-29T16:46:10.061499+00:00 | UNMATCHED game_id=61624654: 2026_05_12 laliga | Villarreal vs Sevilla
+2026-08-29T16:46:10.061518+00:00 | UNMATCHED game_id=61624648: 2026_05_12 laliga | Espanyol vs Athletic Club
+2026-08-29T16:46:10.061533+00:00 | UNMATCHED game_id=61624644: 2026_05_12 laliga | Getafe vs Mallorca
+2026-08-29T16:46:10.061552+00:00 | UNMATCHED game_id=61624638: 2026_05_12 laliga | Alaves vs Barcelona
+2026-08-29T16:46:10.061566+00:00 | UNMATCHED game_id=61624652: 2026_05_12 laliga | Valencia vs Vallecano
+2026-08-29T16:46:10.061580+00:00 | UNMATCHED game_id=61624646: 2026_05_12 laliga | Girona vs Real Sociedad
+2026-08-29T16:46:10.061594+00:00 | UNMATCHED game_id=61624656: 2026_05_12 laliga | Real Madrid vs Real Oviedo
+2026-08-29T16:46:10.061609+00:00 | UNMATCHED game_id=61624676: 2026_05_12 laliga | Sevilla vs Real Madrid
+2026-08-29T16:46:10.061623+00:00 | UNMATCHED game_id=61624658: 2026_05_12 laliga | Athletic Club vs Celta Vigo
+2026-08-29T16:46:10.061637+00:00 | UNMATCHED game_id=61624660: 2026_05_12 laliga | Atletico Madrid vs Girona
+2026-08-29T16:46:10.061651+00:00 | UNMATCHED game_id=61624662: 2026_05_12 laliga | Barcelona vs Real Betis
+2026-08-29T16:46:10.061665+00:00 | UNMATCHED game_id=61624664: 2026_05_12 laliga | Elche vs Getafe
+2026-08-29T16:46:10.061679+00:00 | UNMATCHED game_id=61624666: 2026_05_12 laliga | Levante vs Mallorca
+2026-08-29T16:46:10.061693+00:00 | UNMATCHED game_id=61624668: 2026_05_12 laliga | Vallecano vs Villarreal
+2026-08-29T16:46:10.061707+00:00 | UNMATCHED game_id=61624670: 2026_05_12 laliga | Real Sociedad vs Valencia
+2026-08-29T16:46:10.061721+00:00 | UNMATCHED game_id=61624672: 2026_05_12 laliga | Real Oviedo vs Alaves
+2026-08-29T16:46:10.061736+00:00 | UNMATCHED game_id=61624674: 2026_05_12 laliga | Osasuna vs Espanyol
+2026-08-29T16:46:10.061750+00:00 | 2026_05_12 laliga | matched=3 | unmatched=17
+2026-08-29T16:46:10.061825+00:00 | WROTE docs/win/soccer/01_merge/2026_05_12_laliga_match_odds.csv (3 rows)
+2026-08-29T16:46:10.061896+00:00 | WROTE docs/win/soccer/01_merge/2026_05_12_laliga_total_25.csv (3 rows)
+2026-08-29T16:46:10.062006+00:00 | WROTE docs/win/soccer/01_merge/2026_05_12_laliga_total_35.csv (3 rows)
+2026-08-29T16:46:10.062081+00:00 | WROTE docs/win/soccer/01_merge/2026_05_12_laliga_btts.csv (3 rows)
+2026-08-29T16:46:10.062230+00:00 | UNMATCHED game_id=61301261: 2026_05_13 epl | Manchester United vs Nottingham Forest
+2026-08-29T16:46:10.062249+00:00 | UNMATCHED game_id=61301253: 2026_05_13 epl | Brentford vs Crystal Palace
+2026-08-29T16:46:10.062264+00:00 | UNMATCHED game_id=61301259: 2026_05_13 epl | Leeds vs Brighton
+2026-08-29T16:46:10.062278+00:00 | UNMATCHED game_id=61301257: 2026_05_13 epl | Everton vs Sunderland
+2026-08-29T16:46:10.062292+00:00 | UNMATCHED game_id=61301265: 2026_05_13 epl | Wolverhampton vs Fulham
+2026-08-29T16:46:10.062306+00:00 | UNMATCHED game_id=61301263: 2026_05_13 epl | Newcastle vs West Ham
+2026-08-29T16:46:10.062321+00:00 | UNMATCHED game_id=61301249: 2026_05_13 epl | Arsenal vs Burnley
+2026-08-29T16:46:10.062335+00:00 | 2026_05_13 epl | matched=1 | unmatched=7
+2026-08-29T16:46:10.062431+00:00 | WROTE docs/win/soccer/01_merge/2026_05_13_epl_match_odds.csv (1 rows)
+2026-08-29T16:46:10.062529+00:00 | WROTE docs/win/soccer/01_merge/2026_05_13_epl_total_25.csv (1 rows)
+2026-08-29T16:46:10.062617+00:00 | WROTE docs/win/soccer/01_merge/2026_05_13_epl_total_35.csv (1 rows)
+2026-08-29T16:46:10.062694+00:00 | WROTE docs/win/soccer/01_merge/2026_05_13_epl_btts.csv (1 rows)
+2026-08-29T16:46:10.062855+00:00 | UNMATCHED game_id=61624652: 2026_05_13 laliga | Valencia vs Vallecano
+2026-08-29T16:46:10.062874+00:00 | UNMATCHED game_id=61624646: 2026_05_13 laliga | Girona vs Real Sociedad
+2026-08-29T16:46:10.062889+00:00 | UNMATCHED game_id=61624656: 2026_05_13 laliga | Real Madrid vs Real Oviedo
+2026-08-29T16:46:10.062903+00:00 | UNMATCHED game_id=61624670: 2026_05_13 laliga | Real Sociedad vs Valencia
+2026-08-29T16:46:10.062918+00:00 | UNMATCHED game_id=61624672: 2026_05_13 laliga | Real Oviedo vs Alaves
+2026-08-29T16:46:10.062932+00:00 | UNMATCHED game_id=61624674: 2026_05_13 laliga | Osasuna vs Espanyol
+2026-08-29T16:46:10.062947+00:00 | UNMATCHED game_id=61624676: 2026_05_13 laliga | Sevilla vs Real Madrid
+2026-08-29T16:46:10.062961+00:00 | UNMATCHED game_id=61624658: 2026_05_13 laliga | Athletic Club vs Celta Vigo
+2026-08-29T16:46:10.062979+00:00 | UNMATCHED game_id=61624660: 2026_05_13 laliga | Atletico Madrid vs Girona
+2026-08-29T16:46:10.062993+00:00 | UNMATCHED game_id=61624662: 2026_05_13 laliga | Barcelona vs Real Betis
+2026-08-29T16:46:10.063007+00:00 | UNMATCHED game_id=61624664: 2026_05_13 laliga | Elche vs Getafe
+2026-08-29T16:46:10.063022+00:00 | UNMATCHED game_id=61624666: 2026_05_13 laliga | Levante vs Mallorca
+2026-08-29T16:46:10.063036+00:00 | UNMATCHED game_id=61624668: 2026_05_13 laliga | Vallecano vs Villarreal
+2026-08-29T16:46:10.063050+00:00 | 2026_05_13 laliga | matched=4 | unmatched=13
+2026-08-29T16:46:10.063130+00:00 | WROTE docs/win/soccer/01_merge/2026_05_13_laliga_match_odds.csv (4 rows)
+2026-08-29T16:46:10.063200+00:00 | WROTE docs/win/soccer/01_merge/2026_05_13_laliga_total_25.csv (4 rows)
+2026-08-29T16:46:10.063311+00:00 | WROTE docs/win/soccer/01_merge/2026_05_13_laliga_total_35.csv (4 rows)
+2026-08-29T16:46:10.063414+00:00 | WROTE docs/win/soccer/01_merge/2026_05_13_laliga_btts.csv (4 rows)
+2026-08-29T16:46:10.063562+00:00 | UNMATCHED game_id=61512164: 2026_05_13 ligue1 | Lille vs Auxerre
+2026-08-29T16:46:10.063580+00:00 | UNMATCHED game_id=61512166: 2026_05_13 ligue1 | Nice vs Metz
+2026-08-29T16:46:10.063596+00:00 | UNMATCHED game_id=61512168: 2026_05_13 ligue1 | Stade Brest vs Angers
+2026-08-29T16:46:10.063610+00:00 | UNMATCHED game_id=61512160: 2026_05_13 ligue1 | Lorient vs Le Havre
+2026-08-29T16:46:10.063626+00:00 | UNMATCHED game_id=61512174: 2026_05_13 ligue1 | Marseille vs Rennes
+2026-08-29T16:46:10.063640+00:00 | UNMATCHED game_id=61512176: 2026_05_13 ligue1 | Strasbourg vs Monaco
+2026-08-29T16:46:10.063654+00:00 | UNMATCHED game_id=61512256: 2026_05_13 ligue1 | Lyon vs Lens
+2026-08-29T16:46:10.063669+00:00 | UNMATCHED game_id=61512170: 2026_05_13 ligue1 | Paris FC vs Paris Saint Germain
+2026-08-29T16:46:10.063683+00:00 | UNMATCHED game_id=61512162: 2026_05_13 ligue1 | Nantes vs Toulouse
+2026-08-29T16:46:10.063697+00:00 | 2026_05_13 ligue1 | matched=2 | unmatched=9
+2026-08-29T16:46:10.063772+00:00 | WROTE docs/win/soccer/01_merge/2026_05_13_ligue1_match_odds.csv (2 rows)
+2026-08-29T16:46:10.063841+00:00 | WROTE docs/win/soccer/01_merge/2026_05_13_ligue1_total_25.csv (2 rows)
+2026-08-29T16:46:10.063933+00:00 | WROTE docs/win/soccer/01_merge/2026_05_13_ligue1_total_35.csv (2 rows)
+2026-08-29T16:46:10.064023+00:00 | WROTE docs/win/soccer/01_merge/2026_05_13_ligue1_btts.csv (2 rows)
+2026-08-29T16:46:10.064251+00:00 | UNMATCHED game_id=66299180: 2026_05_13 mls | CF Montreal vs Chicago Fire
+2026-08-29T16:46:10.064271+00:00 | UNMATCHED game_id=66299176: 2026_05_13 mls | Charlotte FC vs Toronto FC
+2026-08-29T16:46:10.064285+00:00 | UNMATCHED game_id=66299178: 2026_05_13 mls | DC United vs St Louis City
+2026-08-29T16:46:10.064300+00:00 | UNMATCHED game_id=66299182: 2026_05_13 mls | New England Revolution vs Minnesota United
+2026-08-29T16:46:10.064315+00:00 | UNMATCHED game_id=66299184: 2026_05_13 mls | New York Red Bulls vs New York City FC
+2026-08-29T16:46:10.064329+00:00 | UNMATCHED game_id=66299186: 2026_05_13 mls | Orlando City vs Atlanta United
+2026-08-29T16:46:10.064344+00:00 | UNMATCHED game_id=66299188: 2026_05_13 mls | Philadelphia Union vs Columbus Crew
+2026-08-29T16:46:10.064358+00:00 | UNMATCHED game_id=66299190: 2026_05_13 mls | Austin FC vs Sporting Kansas City
+2026-08-29T16:46:10.064372+00:00 | UNMATCHED game_id=66299192: 2026_05_13 mls | Houston Dynamo vs Vancouver Whitecaps
+2026-08-29T16:46:10.064400+00:00 | UNMATCHED game_id=66299194: 2026_05_13 mls | Seattle Sounders vs LA Galaxy
+2026-08-29T16:46:10.064417+00:00 | UNMATCHED game_id=66299196: 2026_05_13 mls | Real Salt Lake vs Colorado Rapids
+2026-08-29T16:46:10.064432+00:00 | UNMATCHED game_id=66299198: 2026_05_13 mls | San Diego FC vs FC Cincinnati
+2026-08-29T16:46:10.064446+00:00 | UNMATCHED game_id=66299200: 2026_05_13 mls | San Jose Earthquakes vs FC Dallas
+2026-08-29T16:46:10.064460+00:00 | UNMATCHED game_id=66299202: 2026_05_13 mls | Inter Miami vs Portland Timbers
+2026-08-29T16:46:10.064474+00:00 | UNMATCHED game_id=66299204: 2026_05_13 mls | Nashville SC vs Los Angeles FC
+2026-08-29T16:46:10.064493+00:00 | 2026_05_13 mls | matched=14 | unmatched=15
+2026-08-29T16:46:10.064601+00:00 | WROTE docs/win/soccer/01_merge/2026_05_13_mls_match_odds.csv (14 rows)
+2026-08-29T16:46:10.064719+00:00 | WROTE docs/win/soccer/01_merge/2026_05_13_mls_total_25.csv (14 rows)
+2026-08-29T16:46:10.064828+00:00 | WROTE docs/win/soccer/01_merge/2026_05_13_mls_total_35.csv (14 rows)
+2026-08-29T16:46:10.064936+00:00 | WROTE docs/win/soccer/01_merge/2026_05_13_mls_btts.csv (14 rows)
+2026-08-29T16:46:10.065088+00:00 | UNMATCHED game_id=61624666: 2026_05_14 laliga | Levante vs Mallorca
+2026-08-29T16:46:10.065106+00:00 | UNMATCHED game_id=61624670: 2026_05_14 laliga | Real Sociedad vs Valencia
+2026-08-29T16:46:10.065121+00:00 | UNMATCHED game_id=61624672: 2026_05_14 laliga | Real Oviedo vs Alaves
+2026-08-29T16:46:10.065135+00:00 | UNMATCHED game_id=61624674: 2026_05_14 laliga | Osasuna vs Espanyol
+2026-08-29T16:46:10.065150+00:00 | UNMATCHED game_id=61624676: 2026_05_14 laliga | Sevilla vs Real Madrid
+2026-08-29T16:46:10.065164+00:00 | UNMATCHED game_id=61624662: 2026_05_14 laliga | Barcelona vs Real Betis
+2026-08-29T16:46:10.065178+00:00 | 2026_05_14 laliga | matched=3 | unmatched=6
+2026-08-29T16:46:10.065254+00:00 | WROTE docs/win/soccer/01_merge/2026_05_14_laliga_match_odds.csv (3 rows)
+2026-08-29T16:46:10.065353+00:00 | WROTE docs/win/soccer/01_merge/2026_05_14_laliga_total_25.csv (3 rows)
+2026-08-29T16:46:10.065455+00:00 | WROTE docs/win/soccer/01_merge/2026_05_14_laliga_total_35.csv (3 rows)
+2026-08-29T16:46:10.065584+00:00 | WROTE docs/win/soccer/01_merge/2026_05_14_laliga_btts.csv (3 rows)
+2026-08-29T16:46:10.065698+00:00 | UNMATCHED game_id=61301261: 2026_05_15 epl | Manchester United vs Nottingham Forest
+2026-08-29T16:46:10.065714+00:00 | UNMATCHED game_id=61301257: 2026_05_15 epl | Everton vs Sunderland
+2026-08-29T16:46:10.065729+00:00 | UNMATCHED game_id=61301259: 2026_05_15 epl | Leeds vs Brighton
+2026-08-29T16:46:10.065743+00:00 | UNMATCHED game_id=61301253: 2026_05_15 epl | Brentford vs Crystal Palace
+2026-08-29T16:46:10.065758+00:00 | UNMATCHED game_id=61301265: 2026_05_15 epl | Wolverhampton vs Fulham
+2026-08-29T16:46:10.065772+00:00 | UNMATCHED game_id=61301263: 2026_05_15 epl | Newcastle vs West Ham
+2026-08-29T16:46:10.065786+00:00 | UNMATCHED game_id=61301249: 2026_05_15 epl | Arsenal vs Burnley
+2026-08-29T16:46:10.065800+00:00 | 2026_05_15 epl | matched=1 | unmatched=7
+2026-08-29T16:46:10.065869+00:00 | WROTE docs/win/soccer/01_merge/2026_05_15_epl_match_odds.csv (1 rows)
+2026-08-29T16:46:10.065934+00:00 | WROTE docs/win/soccer/01_merge/2026_05_15_epl_total_25.csv (1 rows)
+2026-08-29T16:46:10.066070+00:00 | WROTE docs/win/soccer/01_merge/2026_05_15_epl_total_35.csv (1 rows)
+2026-08-29T16:46:10.066163+00:00 | WROTE docs/win/soccer/01_merge/2026_05_15_epl_btts.csv (1 rows)
+2026-08-29T16:46:10.066322+00:00 | 2026_05_16 bundesliga | matched=7 | unmatched=0
+2026-08-29T16:46:10.066432+00:00 | WROTE docs/win/soccer/01_merge/2026_05_16_bundesliga_match_odds.csv (7 rows)
+2026-08-29T16:46:10.066518+00:00 | WROTE docs/win/soccer/01_merge/2026_05_16_bundesliga_total_25.csv (7 rows)
+2026-08-29T16:46:10.066605+00:00 | WROTE docs/win/soccer/01_merge/2026_05_16_bundesliga_total_35.csv (7 rows)
+2026-08-29T16:46:10.066692+00:00 | WROTE docs/win/soccer/01_merge/2026_05_16_bundesliga_btts.csv (7 rows)
+2026-08-29T16:46:10.066889+00:00 | UNMATCHED game_id=66299202: 2026_05_16 mls | Inter Miami vs Portland Timbers
+2026-08-29T16:46:10.066908+00:00 | UNMATCHED game_id=66299204: 2026_05_16 mls | Nashville SC vs Los Angeles FC
+2026-08-29T16:46:10.066923+00:00 | 2026_05_16 mls | matched=13 | unmatched=2
+2026-08-29T16:46:10.067014+00:00 | WROTE docs/win/soccer/01_merge/2026_05_16_mls_match_odds.csv (13 rows)
+2026-08-29T16:46:10.067111+00:00 | WROTE docs/win/soccer/01_merge/2026_05_16_mls_total_25.csv (13 rows)
+2026-08-29T16:46:10.067220+00:00 | WROTE docs/win/soccer/01_merge/2026_05_16_mls_total_35.csv (13 rows)
+2026-08-29T16:46:10.067330+00:00 | WROTE docs/win/soccer/01_merge/2026_05_16_mls_btts.csv (13 rows)
+2026-08-29T16:46:10.067510+00:00 | UNMATCHED game_id=61301249: 2026_05_17 epl | Arsenal vs Burnley
+2026-08-29T16:46:10.067530+00:00 | UNMATCHED game_id=61301247: 2026_05_17 epl | Bournemouth vs Manchester City
+2026-08-29T16:46:10.067545+00:00 | UNMATCHED game_id=71173724: 2026_05_17 epl | Chelsea vs Tottenham Hotspur
+2026-08-29T16:46:10.067559+00:00 | 2026_05_17 epl | matched=6 | unmatched=3
+2026-08-29T16:46:10.067641+00:00 | WROTE docs/win/soccer/01_merge/2026_05_17_epl_match_odds.csv (6 rows)
+2026-08-29T16:46:10.067714+00:00 | WROTE docs/win/soccer/01_merge/2026_05_17_epl_total_25.csv (6 rows)
+2026-08-29T16:46:10.067823+00:00 | WROTE docs/win/soccer/01_merge/2026_05_17_epl_total_35.csv (6 rows)
+2026-08-29T16:46:10.067903+00:00 | WROTE docs/win/soccer/01_merge/2026_05_17_epl_btts.csv (6 rows)
+2026-08-29T16:46:10.068074+00:00 | 2026_05_17 laliga | matched=10 | unmatched=0
+2026-08-29T16:46:10.068163+00:00 | WROTE docs/win/soccer/01_merge/2026_05_17_laliga_match_odds.csv (10 rows)
+2026-08-29T16:46:10.068241+00:00 | WROTE docs/win/soccer/01_merge/2026_05_17_laliga_total_25.csv (10 rows)
+2026-08-29T16:46:10.068358+00:00 | WROTE docs/win/soccer/01_merge/2026_05_17_laliga_total_35.csv (10 rows)
+2026-08-29T16:46:10.068479+00:00 | WROTE docs/win/soccer/01_merge/2026_05_17_laliga_btts.csv (10 rows)
+2026-08-29T16:46:10.068646+00:00 | 2026_05_17 ligue1 | matched=9 | unmatched=0
+2026-08-29T16:46:10.068732+00:00 | WROTE docs/win/soccer/01_merge/2026_05_17_ligue1_match_odds.csv (9 rows)
+2026-08-29T16:46:10.068824+00:00 | WROTE docs/win/soccer/01_merge/2026_05_17_ligue1_total_25.csv (9 rows)
+2026-08-29T16:46:10.068914+00:00 | WROTE docs/win/soccer/01_merge/2026_05_17_ligue1_total_35.csv (9 rows)
+2026-08-29T16:46:10.069031+00:00 | WROTE docs/win/soccer/01_merge/2026_05_17_ligue1_btts.csv (9 rows)
+2026-08-29T16:46:10.069179+00:00 | UNMATCHED game_id=66299206: 2026_05_17 mls | St Louis City vs Austin FC
+2026-08-29T16:46:10.069198+00:00 | UNMATCHED game_id=66299218: 2026_05_17 mls | Minnesota United vs Real Salt Lake
+2026-08-29T16:46:10.069213+00:00 | UNMATCHED game_id=66299208: 2026_05_17 mls | Charlotte FC vs New England Revolution
+2026-08-29T16:46:10.069228+00:00 | UNMATCHED game_id=66299210: 2026_05_17 mls | FC Cincinnati vs Orlando City
+2026-08-29T16:46:10.069242+00:00 | UNMATCHED game_id=66299212: 2026_05_17 mls | DC United vs CF Montreal
+2026-08-29T16:46:10.069256+00:00 | UNMATCHED game_id=66299214: 2026_05_17 mls | Chicago Fire vs Toronto FC
+2026-08-29T16:46:10.069271+00:00 | UNMATCHED game_id=66299216: 2026_05_17 mls | Sporting Kansas City vs New York Red Bulls
+2026-08-29T16:46:10.069285+00:00 | UNMATCHED game_id=66299222: 2026_05_17 mls | Colorado Rapids vs FC Dallas
+2026-08-29T16:46:10.069299+00:00 | UNMATCHED game_id=66299226: 2026_05_17 mls | San Diego FC vs Vancouver Whitecaps
+2026-08-29T16:46:10.069314+00:00 | UNMATCHED game_id=66299228: 2026_05_17 mls | LA Galaxy vs Houston Dynamo
+2026-08-29T16:46:10.069328+00:00 | 2026_05_17 mls | matched=2 | unmatched=10
+2026-08-29T16:46:10.069424+00:00 | WROTE docs/win/soccer/01_merge/2026_05_17_mls_match_odds.csv (2 rows)
+2026-08-29T16:46:10.069499+00:00 | WROTE docs/win/soccer/01_merge/2026_05_17_mls_total_25.csv (2 rows)
+2026-08-29T16:46:10.069604+00:00 | WROTE docs/win/soccer/01_merge/2026_05_17_mls_total_35.csv (2 rows)
+2026-08-29T16:46:10.069676+00:00 | WROTE docs/win/soccer/01_merge/2026_05_17_mls_btts.csv (2 rows)
+2026-08-29T16:46:10.069843+00:00 | UNMATCHED game_id=61061669: 2026_05_17 seriea | Como vs Parma
+2026-08-29T16:46:10.069868+00:00 | 2026_05_17 seriea | matched=9 | unmatched=1
+2026-08-29T16:46:10.069952+00:00 | WROTE docs/win/soccer/01_merge/2026_05_17_seriea_match_odds.csv (9 rows)
+2026-08-29T16:46:10.070030+00:00 | WROTE docs/win/soccer/01_merge/2026_05_17_seriea_total_25.csv (9 rows)
+2026-08-29T16:46:10.070143+00:00 | WROTE docs/win/soccer/01_merge/2026_05_17_seriea_total_35.csv (9 rows)
+2026-08-29T16:46:10.070225+00:00 | WROTE docs/win/soccer/01_merge/2026_05_17_seriea_btts.csv (9 rows)
+2026-08-29T16:46:10.070369+00:00 | UNMATCHED game_id=61301247: 2026_05_18 epl | Bournemouth vs Manchester City
+2026-08-29T16:46:10.070412+00:00 | UNMATCHED game_id=71173724: 2026_05_18 epl | Chelsea vs Tottenham Hotspur
+2026-08-29T16:46:10.070429+00:00 | UNMATCHED game_id=61301267: 2026_05_18 epl | Brighton vs Manchester United
+2026-08-29T16:46:10.070444+00:00 | UNMATCHED game_id=61301281: 2026_05_18 epl | Sunderland vs Chelsea
+2026-08-29T16:46:10.070458+00:00 | UNMATCHED game_id=61301269: 2026_05_18 epl | Burnley vs Wolverhampton
+2026-08-29T16:46:10.070472+00:00 | UNMATCHED game_id=61301273: 2026_05_18 epl | Fulham vs Newcastle
+2026-08-29T16:46:10.070487+00:00 | 2026_05_18 epl | matched=1 | unmatched=6
+2026-08-29T16:46:10.070561+00:00 | WROTE docs/win/soccer/01_merge/2026_05_18_epl_match_odds.csv (1 rows)
+2026-08-29T16:46:10.070626+00:00 | WROTE docs/win/soccer/01_merge/2026_05_18_epl_total_25.csv (1 rows)
+2026-08-29T16:46:10.070729+00:00 | WROTE docs/win/soccer/01_merge/2026_05_18_epl_total_35.csv (1 rows)
+2026-08-29T16:46:10.070802+00:00 | WROTE docs/win/soccer/01_merge/2026_05_18_epl_btts.csv (1 rows)
+2026-08-29T16:46:10.070954+00:00 | UNMATCHED game_id=61301269: 2026_05_19 epl | Burnley vs Wolverhampton
+2026-08-29T16:46:10.070973+00:00 | UNMATCHED game_id=61301271: 2026_05_19 epl | Crystal Palace vs Arsenal
+2026-08-29T16:46:10.070988+00:00 | UNMATCHED game_id=61301273: 2026_05_19 epl | Fulham vs Newcastle
+2026-08-29T16:46:10.071002+00:00 | UNMATCHED game_id=61301275: 2026_05_19 epl | Liverpool vs Brentford
+2026-08-29T16:46:10.071017+00:00 | UNMATCHED game_id=61301277: 2026_05_19 epl | Manchester City vs Aston Villa
+2026-08-29T16:46:10.071031+00:00 | UNMATCHED game_id=61301279: 2026_05_19 epl | Nottingham Forest vs Bournemouth
+2026-08-29T16:46:10.071045+00:00 | UNMATCHED game_id=61301281: 2026_05_19 epl | Sunderland vs Chelsea
+2026-08-29T16:46:10.071060+00:00 | UNMATCHED game_id=61301267: 2026_05_19 epl | Brighton vs Manchester United
+2026-08-29T16:46:10.071074+00:00 | 2026_05_19 epl | matched=2 | unmatched=8
+2026-08-29T16:46:10.071147+00:00 | WROTE docs/win/soccer/01_merge/2026_05_19_epl_match_odds.csv (2 rows)
+2026-08-29T16:46:10.071214+00:00 | WROTE docs/win/soccer/01_merge/2026_05_19_epl_total_25.csv (2 rows)
+2026-08-29T16:46:10.071316+00:00 | WROTE docs/win/soccer/01_merge/2026_05_19_epl_total_35.csv (2 rows)
+2026-08-29T16:46:10.071411+00:00 | WROTE docs/win/soccer/01_merge/2026_05_19_epl_btts.csv (2 rows)
+2026-08-29T16:46:10.071553+00:00 | UNMATCHED game_id=61061685: 2026_05_22 seriea | Bologna vs Inter Milan
+2026-08-29T16:46:10.071571+00:00 | UNMATCHED game_id=61061691: 2026_05_22 seriea | Lazio vs Pisa
+2026-08-29T16:46:10.071585+00:00 | UNMATCHED game_id=61061699: 2026_05_22 seriea | Parma vs Sassuolo
+2026-08-29T16:46:10.071600+00:00 | UNMATCHED game_id=61061697: 2026_05_22 seriea | Napoli vs Udinese
+2026-08-29T16:46:10.071614+00:00 | UNMATCHED game_id=61061703: 2026_05_22 seriea | Verona vs Roma
+2026-08-29T16:46:10.071628+00:00 | UNMATCHED game_id=61061687: 2026_05_22 seriea | Cremonese vs Como
+2026-08-29T16:46:10.071643+00:00 | UNMATCHED game_id=61061693: 2026_05_22 seriea | Lecce vs Genoa
+2026-08-29T16:46:10.071657+00:00 | UNMATCHED game_id=61061695: 2026_05_22 seriea | Milan vs Cagliari
+2026-08-29T16:46:10.071671+00:00 | UNMATCHED game_id=61061701: 2026_05_22 seriea | Torino vs Juventus
+2026-08-29T16:46:10.071686+00:00 | 2026_05_22 seriea | matched=1 | unmatched=9
+2026-08-29T16:46:10.071757+00:00 | WROTE docs/win/soccer/01_merge/2026_05_22_seriea_match_odds.csv (1 rows)
+2026-08-29T16:46:10.071859+00:00 | WROTE docs/win/soccer/01_merge/2026_05_22_seriea_total_25.csv (1 rows)
+2026-08-29T16:46:10.071958+00:00 | WROTE docs/win/soccer/01_merge/2026_05_22_seriea_total_35.csv (1 rows)
+2026-08-29T16:46:10.072048+00:00 | WROTE docs/win/soccer/01_merge/2026_05_22_seriea_btts.csv (1 rows)
+2026-08-29T16:46:10.072212+00:00 | UNMATCHED game_id=61624692: 2026_05_23 laliga | Villarreal vs Atletico Madrid
+2026-08-29T16:46:10.072231+00:00 | 2026_05_23 laliga | matched=9 | unmatched=1
+2026-08-29T16:46:10.072317+00:00 | WROTE docs/win/soccer/01_merge/2026_05_23_laliga_match_odds.csv (9 rows)
+2026-08-29T16:46:10.072431+00:00 | WROTE docs/win/soccer/01_merge/2026_05_23_laliga_total_25.csv (9 rows)
+2026-08-29T16:46:10.072539+00:00 | WROTE docs/win/soccer/01_merge/2026_05_23_laliga_total_35.csv (9 rows)
+2026-08-29T16:46:10.072640+00:00 | WROTE docs/win/soccer/01_merge/2026_05_23_laliga_btts.csv (9 rows)
+2026-08-29T16:46:10.072827+00:00 | UNMATCHED game_id=66299230: 2026_05_23 mls | Columbus Crew vs Atlanta United
+2026-08-29T16:46:10.072846+00:00 | UNMATCHED game_id=66299232: 2026_05_23 mls | Inter Miami vs Philadelphia Union
+2026-08-29T16:46:10.072861+00:00 | UNMATCHED game_id=66299234: 2026_05_23 mls | Los Angeles FC vs Seattle Sounders
+2026-08-29T16:46:10.072876+00:00 | 2026_05_23 mls | matched=12 | unmatched=3
+2026-08-29T16:46:10.072966+00:00 | WROTE docs/win/soccer/01_merge/2026_05_23_mls_match_odds.csv (12 rows)
+2026-08-29T16:46:10.073066+00:00 | WROTE docs/win/soccer/01_merge/2026_05_23_mls_total_25.csv (12 rows)
+2026-08-29T16:46:10.073184+00:00 | WROTE docs/win/soccer/01_merge/2026_05_23_mls_total_35.csv (12 rows)
+2026-08-29T16:46:10.073270+00:00 | WROTE docs/win/soccer/01_merge/2026_05_23_mls_btts.csv (12 rows)
+2026-08-29T16:46:10.073465+00:00 | 2026_05_24 epl | matched=10 | unmatched=0
+2026-08-29T16:46:10.073558+00:00 | WROTE docs/win/soccer/01_merge/2026_05_24_epl_match_odds.csv (10 rows)
+2026-08-29T16:46:10.073637+00:00 | WROTE docs/win/soccer/01_merge/2026_05_24_epl_total_25.csv (10 rows)
+2026-08-29T16:46:10.073760+00:00 | WROTE docs/win/soccer/01_merge/2026_05_24_epl_total_35.csv (10 rows)
+2026-08-29T16:46:10.073843+00:00 | WROTE docs/win/soccer/01_merge/2026_05_24_epl_btts.csv (10 rows)
+2026-08-29T16:46:10.073956+00:00 | 2026_05_24 laliga | matched=1 | unmatched=0
+2026-08-29T16:46:10.074047+00:00 | WROTE docs/win/soccer/01_merge/2026_05_24_laliga_match_odds.csv (1 rows)
+2026-08-29T16:46:10.074113+00:00 | WROTE docs/win/soccer/01_merge/2026_05_24_laliga_total_25.csv (1 rows)
+2026-08-29T16:46:10.074215+00:00 | WROTE docs/win/soccer/01_merge/2026_05_24_laliga_total_35.csv (1 rows)
+2026-08-29T16:46:10.074299+00:00 | WROTE docs/win/soccer/01_merge/2026_05_24_laliga_btts.csv (1 rows)
+2026-08-29T16:46:10.074441+00:00 | 2026_05_24 mls | matched=3 | unmatched=0
+2026-08-29T16:46:10.074523+00:00 | WROTE docs/win/soccer/01_merge/2026_05_24_mls_match_odds.csv (3 rows)
+2026-08-29T16:46:10.074592+00:00 | WROTE docs/win/soccer/01_merge/2026_05_24_mls_total_25.csv (3 rows)
+2026-08-29T16:46:10.074698+00:00 | WROTE docs/win/soccer/01_merge/2026_05_24_mls_total_35.csv (3 rows)
+2026-08-29T16:46:10.074771+00:00 | WROTE docs/win/soccer/01_merge/2026_05_24_mls_btts.csv (3 rows)
+2026-08-29T16:46:10.074935+00:00 | 2026_05_24 seriea | matched=7 | unmatched=0
+2026-08-29T16:46:10.075019+00:00 | WROTE docs/win/soccer/01_merge/2026_05_24_seriea_match_odds.csv (7 rows)
+2026-08-29T16:46:10.075092+00:00 | WROTE docs/win/soccer/01_merge/2026_05_24_seriea_total_25.csv (7 rows)
+2026-08-29T16:46:10.075201+00:00 | WROTE docs/win/soccer/01_merge/2026_05_24_seriea_total_35.csv (7 rows)
+2026-08-29T16:46:10.075298+00:00 | WROTE docs/win/soccer/01_merge/2026_05_24_seriea_btts.csv (7 rows)
+2026-08-29T16:46:10.075436+00:00 | 2026_05_26 ligue1 | matched=1 | unmatched=0
+2026-08-29T16:46:10.075519+00:00 | WROTE docs/win/soccer/01_merge/2026_05_26_ligue1_match_odds.csv (1 rows)
+2026-08-29T16:46:10.075584+00:00 | WROTE docs/win/soccer/01_merge/2026_05_26_ligue1_total_25.csv (1 rows)
+2026-08-29T16:46:10.075688+00:00 | WROTE docs/win/soccer/01_merge/2026_05_26_ligue1_total_35.csv (1 rows)
+2026-08-29T16:46:10.075758+00:00 | WROTE docs/win/soccer/01_merge/2026_05_26_ligue1_btts.csv (1 rows)
+2026-08-29T16:46:10.075884+00:00 | 2026_05_29 ligue1 | matched=1 | unmatched=0
+2026-08-29T16:46:10.075958+00:00 | WROTE docs/win/soccer/01_merge/2026_05_29_ligue1_match_odds.csv (1 rows)
+2026-08-29T16:46:10.076023+00:00 | WROTE docs/win/soccer/01_merge/2026_05_29_ligue1_total_25.csv (1 rows)
+2026-08-29T16:46:10.076122+00:00 | WROTE docs/win/soccer/01_merge/2026_05_29_ligue1_total_35.csv (1 rows)
+2026-08-29T16:46:10.076210+00:00 | WROTE docs/win/soccer/01_merge/2026_05_29_ligue1_btts.csv (1 rows)
+2026-08-29T16:46:10.076382+00:00 | UNMATCHED game_id=66299244: 2026_07_16 mls | Nashville SC vs Atlanta United
+2026-08-29T16:46:10.076420+00:00 | UNMATCHED game_id=66299246: 2026_07_16 mls | LA Galaxy vs Los Angeles FC
+2026-08-29T16:46:10.076436+00:00 | UNMATCHED game_id=66299248: 2026_07_16 mls | FC Cincinnati vs Vancouver Whitecaps
+2026-08-29T16:46:10.076450+00:00 | UNMATCHED game_id=66299250: 2026_07_16 mls | Columbus Crew vs New York City FC
+2026-08-29T16:46:10.076465+00:00 | UNMATCHED game_id=66299252: 2026_07_16 mls | Inter Miami vs Chicago Fire
+2026-08-29T16:46:10.076479+00:00 | UNMATCHED game_id=66299254: 2026_07_16 mls | New England Revolution vs Toronto FC
+2026-08-29T16:46:10.076494+00:00 | UNMATCHED game_id=66299256: 2026_07_16 mls | Philadelphia Union vs New York Red Bulls
+2026-08-29T16:46:10.076508+00:00 | UNMATCHED game_id=66299258: 2026_07_16 mls | Charlotte FC vs Atlanta United
+2026-08-29T16:46:10.076522+00:00 | UNMATCHED game_id=66299260: 2026_07_16 mls | Austin FC vs Seattle Sounders
+2026-08-29T16:46:10.076536+00:00 | UNMATCHED game_id=66299262: 2026_07_16 mls | Houston Dynamo vs DC United
+2026-08-29T16:46:10.076551+00:00 | UNMATCHED game_id=66299264: 2026_07_16 mls | Sporting Kansas City vs Minnesota United
+2026-08-29T16:46:10.076565+00:00 | UNMATCHED game_id=66299266: 2026_07_16 mls | Nashville SC vs CF Montreal
+2026-08-29T16:46:10.076581+00:00 | UNMATCHED game_id=66299268: 2026_07_16 mls | Colorado Rapids vs San Diego FC
+2026-08-29T16:46:10.076596+00:00 | UNMATCHED game_id=66299270: 2026_07_16 mls | LA Galaxy vs St Louis City
+2026-08-29T16:46:10.076610+00:00 | UNMATCHED game_id=66299272: 2026_07_16 mls | Los Angeles FC vs Real Salt Lake
+2026-08-29T16:46:10.076624+00:00 | UNMATCHED game_id=66299274: 2026_07_16 mls | Portland Timbers vs FC Dallas
+2026-08-29T16:46:10.076638+00:00 | UNMATCHED game_id=66299276: 2026_07_16 mls | San Jose Earthquakes vs Orlando City
+2026-08-29T16:46:10.076653+00:00 | 2026_07_16 mls | matched=4 | unmatched=17
+2026-08-29T16:46:10.076735+00:00 | WROTE docs/win/soccer/01_merge/2026_07_16_mls_match_odds.csv (4 rows)
+2026-08-29T16:46:10.076805+00:00 | WROTE docs/win/soccer/01_merge/2026_07_16_mls_total_25.csv (4 rows)
+2026-08-29T16:46:10.076915+00:00 | WROTE docs/win/soccer/01_merge/2026_07_16_mls_total_35.csv (4 rows)
+2026-08-29T16:46:10.076990+00:00 | WROTE docs/win/soccer/01_merge/2026_07_16_mls_btts.csv (4 rows)
+2026-08-29T16:46:10.077155+00:00 | UNMATCHED game_id=66299248: 2026_07_17 mls | FC Cincinnati vs Vancouver Whitecaps
+2026-08-29T16:46:10.077174+00:00 | UNMATCHED game_id=66299250: 2026_07_17 mls | Columbus Crew vs New York City FC
+2026-08-29T16:46:10.077189+00:00 | UNMATCHED game_id=66299252: 2026_07_17 mls | Inter Miami vs Chicago Fire
+2026-08-29T16:46:10.077204+00:00 | UNMATCHED game_id=66299254: 2026_07_17 mls | New England Revolution vs Toronto FC
+2026-08-29T16:46:10.077218+00:00 | UNMATCHED game_id=66299256: 2026_07_17 mls | Philadelphia Union vs New York Red Bulls
+2026-08-29T16:46:10.077232+00:00 | UNMATCHED game_id=66299258: 2026_07_17 mls | Charlotte FC vs Atlanta United
+2026-08-29T16:46:10.077246+00:00 | UNMATCHED game_id=66299260: 2026_07_17 mls | Austin FC vs Seattle Sounders
+2026-08-29T16:46:10.077260+00:00 | UNMATCHED game_id=66299262: 2026_07_17 mls | Houston Dynamo vs DC United
+2026-08-29T16:46:10.077275+00:00 | UNMATCHED game_id=66299264: 2026_07_17 mls | Sporting Kansas City vs Minnesota United
+2026-08-29T16:46:10.077289+00:00 | UNMATCHED game_id=66299266: 2026_07_17 mls | Nashville SC vs CF Montreal
+2026-08-29T16:46:10.077303+00:00 | UNMATCHED game_id=66299268: 2026_07_17 mls | Colorado Rapids vs San Diego FC
+2026-08-29T16:46:10.077317+00:00 | UNMATCHED game_id=66299270: 2026_07_17 mls | LA Galaxy vs St Louis City
+2026-08-29T16:46:10.077331+00:00 | UNMATCHED game_id=66299272: 2026_07_17 mls | Los Angeles FC vs Real Salt Lake
+2026-08-29T16:46:10.077345+00:00 | UNMATCHED game_id=66299274: 2026_07_17 mls | Portland Timbers vs FC Dallas
+2026-08-29T16:46:10.077360+00:00 | UNMATCHED game_id=66299276: 2026_07_17 mls | San Jose Earthquakes vs Orlando City
+2026-08-29T16:46:10.077378+00:00 | 2026_07_17 mls | matched=2 | unmatched=15
+2026-08-29T16:46:10.077473+00:00 | WROTE docs/win/soccer/01_merge/2026_07_17_mls_match_odds.csv (2 rows)
+2026-08-29T16:46:10.077543+00:00 | WROTE docs/win/soccer/01_merge/2026_07_17_mls_total_25.csv (2 rows)
+2026-08-29T16:46:10.077643+00:00 | WROTE docs/win/soccer/01_merge/2026_07_17_mls_total_35.csv (2 rows)
+2026-08-29T16:46:10.077734+00:00 | WROTE docs/win/soccer/01_merge/2026_07_17_mls_btts.csv (2 rows)
+2026-08-29T16:46:10.077949+00:00 | UNMATCHED game_id=66299252: 2026_07_22 mls | Inter Miami vs Chicago Fire
+2026-08-29T16:46:10.077977+00:00 | UNMATCHED game_id=66299288: 2026_07_22 mls | New York Red Bulls vs Charlotte FC
+2026-08-29T16:46:10.077993+00:00 | UNMATCHED game_id=66299278: 2026_07_22 mls | Columbus Crew vs FC Cincinnati
+2026-08-29T16:46:10.078007+00:00 | UNMATCHED game_id=66299282: 2026_07_22 mls | CF Montreal vs Inter Miami
+2026-08-29T16:46:10.078021+00:00 | UNMATCHED game_id=66299284: 2026_07_22 mls | New England Revolution vs Atlanta United
+2026-08-29T16:46:10.078035+00:00 | UNMATCHED game_id=66299286: 2026_07_22 mls | New York City FC vs Chicago Fire
+2026-08-29T16:46:10.078050+00:00 | UNMATCHED game_id=66299280: 2026_07_22 mls | DC United vs Toronto FC
+2026-08-29T16:46:10.078064+00:00 | UNMATCHED game_id=66299290: 2026_07_22 mls | Orlando City vs Nashville SC
+2026-08-29T16:46:10.078078+00:00 | UNMATCHED game_id=66299292: 2026_07_22 mls | Philadelphia Union vs Seattle Sounders
+2026-08-29T16:46:10.078092+00:00 | UNMATCHED game_id=66299294: 2026_07_22 mls | Houston Dynamo vs Austin FC
+2026-08-29T16:46:10.078106+00:00 | UNMATCHED game_id=66299296: 2026_07_22 mls | Minnesota United vs Vancouver Whitecaps
+2026-08-29T16:46:10.078120+00:00 | UNMATCHED game_id=66299298: 2026_07_22 mls | St Louis City vs Colorado Rapids
+2026-08-29T16:46:10.078135+00:00 | UNMATCHED game_id=66299300: 2026_07_22 mls | San Diego FC vs FC Dallas
+2026-08-29T16:46:10.078149+00:00 | UNMATCHED game_id=66299302: 2026_07_22 mls | Los Angeles FC vs Sporting Kansas City
+2026-08-29T16:46:10.078163+00:00 | UNMATCHED game_id=66299304: 2026_07_22 mls | Portland Timbers vs Real Salt Lake
+2026-08-29T16:46:10.078177+00:00 | UNMATCHED game_id=66299306: 2026_07_22 mls | San Jose Earthquakes vs LA Galaxy
+2026-08-29T16:46:10.078192+00:00 | 2026_07_22 mls | matched=14 | unmatched=16
+2026-08-29T16:46:10.078284+00:00 | WROTE docs/win/soccer/01_merge/2026_07_22_mls_match_odds.csv (14 rows)
+2026-08-29T16:46:10.078368+00:00 | WROTE docs/win/soccer/01_merge/2026_07_22_mls_total_25.csv (14 rows)
+2026-08-29T16:46:10.078508+00:00 | WROTE docs/win/soccer/01_merge/2026_07_22_mls_total_35.csv (14 rows)
+2026-08-29T16:46:10.078610+00:00 | WROTE docs/win/soccer/01_merge/2026_07_22_mls_btts.csv (14 rows)
+2026-08-29T16:46:10.078794+00:00 | UNMATCHED game_id=66299282: 2026_07_25 mls | CF Montreal vs Inter Miami
+2026-08-29T16:46:10.078820+00:00 | 2026_07_25 mls | matched=14 | unmatched=1
+2026-08-29T16:46:10.078912+00:00 | WROTE docs/win/soccer/01_merge/2026_07_25_mls_match_odds.csv (14 rows)
+2026-08-29T16:46:10.079022+00:00 | WROTE docs/win/soccer/01_merge/2026_07_25_mls_total_25.csv (14 rows)
+2026-08-29T16:46:10.079130+00:00 | WROTE docs/win/soccer/01_merge/2026_07_25_mls_total_35.csv (14 rows)
+2026-08-29T16:46:10.079238+00:00 | WROTE docs/win/soccer/01_merge/2026_07_25_mls_btts.csv (14 rows)
+2026-08-29T16:46:10.079441+00:00 | UNMATCHED game_id=66299310: 2026_07_31 mls | FC Cincinnati vs San Jose Earthquakes
+2026-08-29T16:46:10.079461+00:00 | UNMATCHED game_id=66299312: 2026_07_31 mls | DC United vs Nashville SC
+2026-08-29T16:46:10.079476+00:00 | UNMATCHED game_id=66299314: 2026_07_31 mls | Inter Miami vs Columbus Crew
+2026-08-29T16:46:10.079491+00:00 | UNMATCHED game_id=66299316: 2026_07_31 mls | CF Montreal vs New England Revolution
+2026-08-29T16:46:10.079505+00:00 | UNMATCHED game_id=66299318: 2026_07_31 mls | New York Red Bulls vs Orlando City
+2026-08-29T16:46:10.079519+00:00 | UNMATCHED game_id=66299320: 2026_07_31 mls | Philadelphia Union vs Atlanta United
+2026-08-29T16:46:10.079538+00:00 | UNMATCHED game_id=66299322: 2026_07_31 mls | Vancouver Whitecaps vs Los Angeles FC
+2026-08-29T16:46:10.079552+00:00 | UNMATCHED game_id=66299324: 2026_07_31 mls | Chicago Fire vs Charlotte FC
+2026-08-29T16:46:10.079566+00:00 | UNMATCHED game_id=66299326: 2026_07_31 mls | Sporting Kansas City vs Houston Dynamo
+2026-08-29T16:46:10.079581+00:00 | UNMATCHED game_id=66299328: 2026_07_31 mls | Minnesota United vs San Diego FC
+2026-08-29T16:46:10.079595+00:00 | UNMATCHED game_id=66299330: 2026_07_31 mls | St Louis City vs Real Salt Lake
+2026-08-29T16:46:10.079609+00:00 | UNMATCHED game_id=66299332: 2026_07_31 mls | Colorado Rapids vs Austin FC
+2026-08-29T16:46:10.079624+00:00 | UNMATCHED game_id=66299334: 2026_07_31 mls | LA Galaxy vs FC Dallas
+2026-08-29T16:46:10.079638+00:00 | UNMATCHED game_id=66299336: 2026_07_31 mls | Portland Timbers vs Seattle Sounders
+2026-08-29T16:46:10.079652+00:00 | UNMATCHED game_id=69829676: 2026_07_31 mls | New England Revolution vs Houston Dynamo
+2026-08-29T16:46:10.079666+00:00 | UNMATCHED game_id=66299340: 2026_07_31 mls | Charlotte FC vs Columbus Crew
+2026-08-29T16:46:10.079681+00:00 | UNMATCHED game_id=66299342: 2026_07_31 mls | CF Montreal vs DC United
+2026-08-29T16:46:10.079695+00:00 | UNMATCHED game_id=66299344: 2026_07_31 mls | Orlando City vs FC Cincinnati
+2026-08-29T16:46:10.079709+00:00 | UNMATCHED game_id=66299346: 2026_07_31 mls | Toronto FC vs New England Revolution
+2026-08-29T16:46:10.079723+00:00 | UNMATCHED game_id=66299338: 2026_07_31 mls | Atlanta United vs New York Red Bulls
+2026-08-29T16:46:10.079738+00:00 | UNMATCHED game_id=66299352: 2026_07_31 mls | Nashville SC vs Inter Miami
+2026-08-29T16:46:10.079752+00:00 | UNMATCHED game_id=66299350: 2026_07_31 mls | Houston Dynamo vs LA Galaxy
+2026-08-29T16:46:10.079766+00:00 | UNMATCHED game_id=66299354: 2026_07_31 mls | Colorado Rapids vs Sporting Kansas City
+2026-08-29T16:46:10.079780+00:00 | UNMATCHED game_id=66299356: 2026_07_31 mls | Real Salt Lake vs Minnesota United
+2026-08-29T16:46:10.079794+00:00 | UNMATCHED game_id=66299360: 2026_07_31 mls | San Jose Earthquakes vs St Louis City
+2026-08-29T16:46:10.079809+00:00 | UNMATCHED game_id=66299358: 2026_07_31 mls | Los Angeles FC vs San Diego FC
+2026-08-29T16:46:10.079823+00:00 | UNMATCHED game_id=66299362: 2026_07_31 mls | Chicago Fire vs Portland Timbers
+2026-08-29T16:46:10.079837+00:00 | UNMATCHED game_id=66299364: 2026_07_31 mls | New York City FC vs Philadelphia Union
+2026-08-29T16:46:10.079851+00:00 | UNMATCHED game_id=66299348: 2026_07_31 mls | Austin FC vs FC Dallas
+2026-08-29T16:46:10.079866+00:00 | UNMATCHED game_id=66299366: 2026_07_31 mls | Seattle Sounders vs Vancouver Whitecaps
+2026-08-29T16:46:10.079880+00:00 | 2026_07_31 mls | matched=1 | unmatched=30
+2026-08-29T16:46:10.079956+00:00 | WROTE docs/win/soccer/01_merge/2026_07_31_mls_match_odds.csv (1 rows)
+2026-08-29T16:46:10.080022+00:00 | WROTE docs/win/soccer/01_merge/2026_07_31_mls_total_25.csv (1 rows)
+2026-08-29T16:46:10.080125+00:00 | WROTE docs/win/soccer/01_merge/2026_07_31_mls_total_35.csv (1 rows)
+2026-08-29T16:46:10.080199+00:00 | WROTE docs/win/soccer/01_merge/2026_07_31_mls_btts.csv (1 rows)
+2026-08-29T16:46:10.080451+00:00 | UNMATCHED game_id=69829676: 2026_08_01 mls | New England Revolution vs Houston Dynamo
+2026-08-29T16:46:10.080471+00:00 | UNMATCHED game_id=66299340: 2026_08_01 mls | Charlotte FC vs Columbus Crew
+2026-08-29T16:46:10.080486+00:00 | UNMATCHED game_id=66299342: 2026_08_01 mls | CF Montreal vs DC United
+2026-08-29T16:46:10.080500+00:00 | UNMATCHED game_id=66299344: 2026_08_01 mls | Orlando City vs FC Cincinnati
+2026-08-29T16:46:10.080514+00:00 | UNMATCHED game_id=66299346: 2026_08_01 mls | Toronto FC vs New England Revolution
+2026-08-29T16:46:10.080529+00:00 | UNMATCHED game_id=66299338: 2026_08_01 mls | Atlanta United vs New York Red Bulls
+2026-08-29T16:46:10.080543+00:00 | UNMATCHED game_id=66299352: 2026_08_01 mls | Nashville SC vs Inter Miami
+2026-08-29T16:46:10.080557+00:00 | UNMATCHED game_id=66299350: 2026_08_01 mls | Houston Dynamo vs LA Galaxy
+2026-08-29T16:46:10.080575+00:00 | UNMATCHED game_id=66299354: 2026_08_01 mls | Colorado Rapids vs Sporting Kansas City
+2026-08-29T16:46:10.080590+00:00 | UNMATCHED game_id=66299356: 2026_08_01 mls | Real Salt Lake vs Minnesota United
+2026-08-29T16:46:10.080604+00:00 | UNMATCHED game_id=66299360: 2026_08_01 mls | San Jose Earthquakes vs St Louis City
+2026-08-29T16:46:10.080618+00:00 | UNMATCHED game_id=66299358: 2026_08_01 mls | Los Angeles FC vs San Diego FC
+2026-08-29T16:46:10.080632+00:00 | UNMATCHED game_id=66299362: 2026_08_01 mls | Chicago Fire vs Portland Timbers
+2026-08-29T16:46:10.080646+00:00 | UNMATCHED game_id=66299364: 2026_08_01 mls | New York City FC vs Philadelphia Union
+2026-08-29T16:46:10.080660+00:00 | UNMATCHED game_id=66299348: 2026_08_01 mls | Austin FC vs FC Dallas
+2026-08-29T16:46:10.080674+00:00 | UNMATCHED game_id=66299366: 2026_08_01 mls | Seattle Sounders vs Vancouver Whitecaps
+2026-08-29T16:46:10.080689+00:00 | 2026_08_01 mls | matched=14 | unmatched=16
+2026-08-29T16:46:10.080783+00:00 | WROTE docs/win/soccer/01_merge/2026_08_01_mls_match_odds.csv (14 rows)
+2026-08-29T16:46:10.080898+00:00 | WROTE docs/win/soccer/01_merge/2026_08_01_mls_total_25.csv (14 rows)
+2026-08-29T16:46:10.081014+00:00 | WROTE docs/win/soccer/01_merge/2026_08_01_mls_total_35.csv (14 rows)
+2026-08-29T16:46:10.081130+00:00 | WROTE docs/win/soccer/01_merge/2026_08_01_mls_btts.csv (14 rows)
+2026-08-29T16:46:10.081321+00:00 | UNMATCHED game_id=66299338: 2026_08_08 mls | Atlanta United vs New York Red Bulls
+2026-08-29T16:46:10.081340+00:00 | UNMATCHED game_id=66299340: 2026_08_08 mls | Charlotte FC vs Columbus Crew
+2026-08-29T16:46:10.081354+00:00 | UNMATCHED game_id=66299342: 2026_08_08 mls | CF Montreal vs DC United
+2026-08-29T16:46:10.081369+00:00 | UNMATCHED game_id=66299344: 2026_08_08 mls | Orlando City vs FC Cincinnati
+2026-08-29T16:46:10.081383+00:00 | UNMATCHED game_id=66299346: 2026_08_08 mls | Toronto FC vs New England Revolution
+2026-08-29T16:46:10.081411+00:00 | UNMATCHED game_id=66299350: 2026_08_08 mls | Houston Dynamo vs LA Galaxy
+2026-08-29T16:46:10.081425+00:00 | UNMATCHED game_id=66299352: 2026_08_08 mls | Nashville SC vs Inter Miami
+2026-08-29T16:46:10.081439+00:00 | UNMATCHED game_id=66299356: 2026_08_08 mls | Real Salt Lake vs Minnesota United
+2026-08-29T16:46:10.081453+00:00 | UNMATCHED game_id=66299354: 2026_08_08 mls | Colorado Rapids vs Sporting Kansas City
+2026-08-29T16:46:10.081468+00:00 | UNMATCHED game_id=66299358: 2026_08_08 mls | Los Angeles FC vs San Diego FC
+2026-08-29T16:46:10.081482+00:00 | UNMATCHED game_id=66299360: 2026_08_08 mls | San Jose Earthquakes vs St Louis City
+2026-08-29T16:46:10.081496+00:00 | UNMATCHED game_id=66299362: 2026_08_08 mls | Chicago Fire vs Portland Timbers
+2026-08-29T16:46:10.081510+00:00 | UNMATCHED game_id=66299364: 2026_08_08 mls | New York City FC vs Philadelphia Union
+2026-08-29T16:46:10.081524+00:00 | UNMATCHED game_id=66299348: 2026_08_08 mls | Austin FC vs FC Dallas
+2026-08-29T16:46:10.081538+00:00 | UNMATCHED game_id=66299366: 2026_08_08 mls | Seattle Sounders vs Vancouver Whitecaps
+2026-08-29T16:46:10.081552+00:00 | UNMATCHED game_id=66299368: 2026_08_08 mls | FC Cincinnati vs New York City FC
+2026-08-29T16:46:10.081566+00:00 | UNMATCHED game_id=66299370: 2026_08_08 mls | Columbus Crew vs CF Montreal
+2026-08-29T16:46:10.081580+00:00 | UNMATCHED game_id=66299372: 2026_08_08 mls | DC United vs New England Revolution
+2026-08-29T16:46:10.081594+00:00 | UNMATCHED game_id=66299374: 2026_08_08 mls | New York Red Bulls vs Nashville SC
+2026-08-29T16:46:10.081608+00:00 | UNMATCHED game_id=66299376: 2026_08_08 mls | Orlando City vs Chicago Fire
+2026-08-29T16:46:10.081622+00:00 | UNMATCHED game_id=66299378: 2026_08_08 mls | Philadelphia Union vs Inter Miami
+2026-08-29T16:46:10.081636+00:00 | UNMATCHED game_id=66299380: 2026_08_08 mls | Toronto FC vs Charlotte FC
+2026-08-29T16:46:10.081650+00:00 | UNMATCHED game_id=66299382: 2026_08_08 mls | Sporting Kansas City vs St Louis City
+2026-08-29T16:46:10.081665+00:00 | UNMATCHED game_id=66299384: 2026_08_08 mls | Minnesota United vs Atlanta United
+2026-08-29T16:46:10.081683+00:00 | UNMATCHED game_id=66299386: 2026_08_08 mls | Colorado Rapids vs Los Angeles FC
+2026-08-29T16:46:10.081697+00:00 | UNMATCHED game_id=66299388: 2026_08_08 mls | Real Salt Lake vs FC Dallas
+2026-08-29T16:46:10.081711+00:00 | UNMATCHED game_id=66299390: 2026_08_08 mls | Seattle Sounders vs Austin FC
+2026-08-29T16:46:10.081725+00:00 | UNMATCHED game_id=66299392: 2026_08_08 mls | LA Galaxy vs San Jose Earthquakes
+2026-08-29T16:46:10.081739+00:00 | UNMATCHED game_id=66299394: 2026_08_08 mls | Portland Timbers vs San Diego FC
+2026-08-29T16:46:10.081753+00:00 | UNMATCHED game_id=66299396: 2026_08_08 mls | Vancouver Whitecaps vs Houston Dynamo
+2026-08-29T16:46:10.081767+00:00 | 2026_08_08 mls | matched=1 | unmatched=30
+2026-08-29T16:46:10.081841+00:00 | WROTE docs/win/soccer/01_merge/2026_08_08_mls_match_odds.csv (1 rows)
+2026-08-29T16:46:10.081907+00:00 | WROTE docs/win/soccer/01_merge/2026_08_08_mls_total_25.csv (1 rows)
+2026-08-29T16:46:10.082000+00:00 | WROTE docs/win/soccer/01_merge/2026_08_08_mls_total_35.csv (1 rows)
+2026-08-29T16:46:10.082098+00:00 | WROTE docs/win/soccer/01_merge/2026_08_08_mls_btts.csv (1 rows)
+2026-08-29T16:46:10.082230+00:00 | 2026_08_15 laliga | matched=2 | unmatched=0
+2026-08-29T16:46:10.082308+00:00 | WROTE docs/win/soccer/01_merge/2026_08_15_laliga_match_odds.csv (2 rows)
+2026-08-29T16:46:10.082405+00:00 | WROTE docs/win/soccer/01_merge/2026_08_15_laliga_total_25.csv (2 rows)
+2026-08-29T16:46:10.082506+00:00 | WROTE docs/win/soccer/01_merge/2026_08_15_laliga_total_35.csv (2 rows)
+2026-08-29T16:46:10.082576+00:00 | WROTE docs/win/soccer/01_merge/2026_08_15_laliga_btts.csv (2 rows)
+2026-08-29T16:46:10.082724+00:00 | 2026_08_15 mls | matched=11 | unmatched=0
+2026-08-29T16:46:10.082843+00:00 | WROTE docs/win/soccer/01_merge/2026_08_15_mls_match_odds.csv (11 rows)
+2026-08-29T16:46:10.082928+00:00 | WROTE docs/win/soccer/01_merge/2026_08_15_mls_total_25.csv (11 rows)
+2026-08-29T16:46:10.083049+00:00 | WROTE docs/win/soccer/01_merge/2026_08_15_mls_total_35.csv (11 rows)
+2026-08-29T16:46:10.083141+00:00 | WROTE docs/win/soccer/01_merge/2026_08_15_mls_btts.csv (11 rows)
+2026-08-29T16:46:10.083285+00:00 | UNMATCHED game_id=401882920: 2026_08_16 laliga | Santander vs Villarreal
+2026-08-29T16:46:10.083305+00:00 | 2026_08_16 laliga | matched=1 | unmatched=1
+2026-08-29T16:46:10.083378+00:00 | WROTE docs/win/soccer/01_merge/2026_08_16_laliga_match_odds.csv (1 rows)
+2026-08-29T16:46:10.083486+00:00 | WROTE docs/win/soccer/01_merge/2026_08_16_laliga_total_25.csv (1 rows)
+2026-08-29T16:46:10.083577+00:00 | WROTE docs/win/soccer/01_merge/2026_08_16_laliga_total_35.csv (1 rows)
+2026-08-29T16:46:10.083672+00:00 | WROTE docs/win/soccer/01_merge/2026_08_16_laliga_btts.csv (1 rows)
+2026-08-29T16:46:10.083814+00:00 | 2026_08_16 mls | matched=4 | unmatched=0
+2026-08-29T16:46:10.083902+00:00 | WROTE docs/win/soccer/01_merge/2026_08_16_mls_match_odds.csv (4 rows)
+2026-08-29T16:46:10.083973+00:00 | WROTE docs/win/soccer/01_merge/2026_08_16_mls_total_25.csv (4 rows)
+2026-08-29T16:46:10.084086+00:00 | WROTE docs/win/soccer/01_merge/2026_08_16_mls_total_35.csv (4 rows)
+2026-08-29T16:46:10.084184+00:00 | WROTE docs/win/soccer/01_merge/2026_08_16_mls_btts.csv (4 rows)
+2026-08-29T16:46:10.084311+00:00 | MISSING FILE: docs/win/soccer/00_intake/sportsbook/normalized/2026_08_16_seriea.csv
+2026-08-29T16:46:10.084331+00:00 | SKIP 2026_08_16 seriea: no sportsbook
+2026-08-29T16:46:10.084433+00:00 | UNMATCHED game_id=401882925: 2026_08_19 laliga | Atletico Madrid vs Málaga
+2026-08-29T16:46:10.084452+00:00 | 2026_08_19 laliga | matched=0 | unmatched=1
+2026-08-29T16:46:10.084469+00:00 | NO ROWS: 2026_08_19_laliga_match_odds.csv — skipping
+2026-08-29T16:46:10.084485+00:00 | NO ROWS: 2026_08_19_laliga_total_25.csv — skipping
+2026-08-29T16:46:10.084500+00:00 | NO ROWS: 2026_08_19_laliga_total_35.csv — skipping
+2026-08-29T16:46:10.084515+00:00 | NO ROWS: 2026_08_19_laliga_btts.csv — skipping
+2026-08-29T16:46:10.084674+00:00 | 2026_08_19 mls | matched=15 | unmatched=0
+2026-08-29T16:46:10.084776+00:00 | WROTE docs/win/soccer/01_merge/2026_08_19_mls_match_odds.csv (15 rows)
+2026-08-29T16:46:10.084880+00:00 | WROTE docs/win/soccer/01_merge/2026_08_19_mls_total_25.csv (15 rows)
+2026-08-29T16:46:10.085002+00:00 | WROTE docs/win/soccer/01_merge/2026_08_19_mls_total_35.csv (15 rows)
+2026-08-29T16:46:10.085098+00:00 | WROTE docs/win/soccer/01_merge/2026_08_19_mls_btts.csv (15 rows)
+2026-08-29T16:46:10.085260+00:00 | MISSING FILE: docs/win/soccer/00_intake/sportsbook/normalized/2026_08_19_seriea.csv
+2026-08-29T16:46:10.085279+00:00 | SKIP 2026_08_19 seriea: no sportsbook
+2026-08-29T16:46:10.085365+00:00 | 2026_08_20 laliga | matched=1 | unmatched=0
+2026-08-29T16:46:10.085454+00:00 | WROTE docs/win/soccer/01_merge/2026_08_20_laliga_match_odds.csv (1 rows)
+2026-08-29T16:46:10.085522+00:00 | WROTE docs/win/soccer/01_merge/2026_08_20_laliga_total_25.csv (1 rows)
+2026-08-29T16:46:10.085626+00:00 | WROTE docs/win/soccer/01_merge/2026_08_20_laliga_total_35.csv (1 rows)
+2026-08-29T16:46:10.085707+00:00 | WROTE docs/win/soccer/01_merge/2026_08_20_laliga_btts.csv (1 rows)
+2026-08-29T16:46:10.085844+00:00 | 2026_08_21 epl | matched=1 | unmatched=0
+2026-08-29T16:46:10.085920+00:00 | WROTE docs/win/soccer/01_merge/2026_08_21_epl_match_odds.csv (1 rows)
+2026-08-29T16:46:10.085986+00:00 | WROTE docs/win/soccer/01_merge/2026_08_21_epl_total_25.csv (1 rows)
+2026-08-29T16:46:10.086077+00:00 | WROTE docs/win/soccer/01_merge/2026_08_21_epl_total_35.csv (1 rows)
+2026-08-29T16:46:10.086186+00:00 | WROTE docs/win/soccer/01_merge/2026_08_21_epl_btts.csv (1 rows)
+2026-08-29T16:46:10.086298+00:00 | 2026_08_21 laliga | matched=1 | unmatched=0
+2026-08-29T16:46:10.086379+00:00 | WROTE docs/win/soccer/01_merge/2026_08_21_laliga_match_odds.csv (1 rows)
+2026-08-29T16:46:10.086474+00:00 | WROTE docs/win/soccer/01_merge/2026_08_21_laliga_total_25.csv (1 rows)
+2026-08-29T16:46:10.086556+00:00 | WROTE docs/win/soccer/01_merge/2026_08_21_laliga_total_35.csv (1 rows)
+2026-08-29T16:46:10.086660+00:00 | WROTE docs/win/soccer/01_merge/2026_08_21_laliga_btts.csv (1 rows)
+2026-08-29T16:46:10.086780+00:00 | 2026_08_21 ligue1 | matched=1 | unmatched=0
+2026-08-29T16:46:10.086856+00:00 | WROTE docs/win/soccer/01_merge/2026_08_21_ligue1_match_odds.csv (1 rows)
+2026-08-29T16:46:10.086922+00:00 | WROTE docs/win/soccer/01_merge/2026_08_21_ligue1_total_25.csv (1 rows)
+2026-08-29T16:46:10.087025+00:00 | WROTE docs/win/soccer/01_merge/2026_08_21_ligue1_total_35.csv (1 rows)
+2026-08-29T16:46:10.087121+00:00 | WROTE docs/win/soccer/01_merge/2026_08_21_ligue1_btts.csv (1 rows)
+2026-08-29T16:46:10.087265+00:00 | 2026_08_22 epl | matched=5 | unmatched=0
+2026-08-29T16:46:10.087349+00:00 | WROTE docs/win/soccer/01_merge/2026_08_22_epl_match_odds.csv (5 rows)
+2026-08-29T16:46:10.087477+00:00 | WROTE docs/win/soccer/01_merge/2026_08_22_epl_total_25.csv (5 rows)
+2026-08-29T16:46:10.087592+00:00 | WROTE docs/win/soccer/01_merge/2026_08_22_epl_total_35.csv (5 rows)
+2026-08-29T16:46:10.087673+00:00 | WROTE docs/win/soccer/01_merge/2026_08_22_epl_btts.csv (5 rows)
+2026-08-29T16:46:10.087819+00:00 | 2026_08_22 laliga | matched=3 | unmatched=0
+2026-08-29T16:46:10.087898+00:00 | WROTE docs/win/soccer/01_merge/2026_08_22_laliga_match_odds.csv (3 rows)
+2026-08-29T16:46:10.087984+00:00 | WROTE docs/win/soccer/01_merge/2026_08_22_laliga_total_25.csv (3 rows)
+2026-08-29T16:46:10.088087+00:00 | WROTE docs/win/soccer/01_merge/2026_08_22_laliga_total_35.csv (3 rows)
+2026-08-29T16:46:10.088196+00:00 | WROTE docs/win/soccer/01_merge/2026_08_22_laliga_btts.csv (3 rows)
+2026-08-29T16:46:10.088366+00:00 | 2026_08_22 ligue1 | matched=5 | unmatched=0
+2026-08-29T16:46:10.088486+00:00 | WROTE docs/win/soccer/01_merge/2026_08_22_ligue1_match_odds.csv (5 rows)
+2026-08-29T16:46:10.088574+00:00 | WROTE docs/win/soccer/01_merge/2026_08_22_ligue1_total_25.csv (5 rows)
+2026-08-29T16:46:10.088656+00:00 | WROTE docs/win/soccer/01_merge/2026_08_22_ligue1_total_35.csv (5 rows)
+2026-08-29T16:46:10.088735+00:00 | WROTE docs/win/soccer/01_merge/2026_08_22_ligue1_btts.csv (5 rows)
+2026-08-29T16:46:10.088919+00:00 | 2026_08_22 mls | matched=13 | unmatched=0
+2026-08-29T16:46:10.089012+00:00 | WROTE docs/win/soccer/01_merge/2026_08_22_mls_match_odds.csv (13 rows)
+2026-08-29T16:46:10.089106+00:00 | WROTE docs/win/soccer/01_merge/2026_08_22_mls_total_25.csv (13 rows)
+2026-08-29T16:46:10.089198+00:00 | WROTE docs/win/soccer/01_merge/2026_08_22_mls_total_35.csv (13 rows)
+2026-08-29T16:46:10.089290+00:00 | WROTE docs/win/soccer/01_merge/2026_08_22_mls_btts.csv (13 rows)
+2026-08-29T16:46:10.089421+00:00 | UNMATCHED game_id=401874747: 2026_08_22 seriea | Parma vs Cagliari
+2026-08-29T16:46:10.089439+00:00 | UNMATCHED game_id=401874931: 2026_08_22 seriea | Internazionale vs Monza
+2026-08-29T16:46:10.089456+00:00 | 2026_08_22 seriea | matched=2 | unmatched=2
+2026-08-29T16:46:10.089531+00:00 | WROTE docs/win/soccer/01_merge/2026_08_22_seriea_match_odds.csv (2 rows)
+2026-08-29T16:46:10.089607+00:00 | WROTE docs/win/soccer/01_merge/2026_08_22_seriea_total_25.csv (2 rows)
+2026-08-29T16:46:10.089683+00:00 | WROTE docs/win/soccer/01_merge/2026_08_22_seriea_total_35.csv (2 rows)
+2026-08-29T16:46:10.089752+00:00 | WROTE docs/win/soccer/01_merge/2026_08_22_seriea_btts.csv (2 rows)
+2026-08-29T16:46:10.089867+00:00 | 2026_08_23 epl | matched=3 | unmatched=0
+2026-08-29T16:46:10.089942+00:00 | WROTE docs/win/soccer/01_merge/2026_08_23_epl_match_odds.csv (3 rows)
+2026-08-29T16:46:10.090011+00:00 | WROTE docs/win/soccer/01_merge/2026_08_23_epl_total_25.csv (3 rows)
+2026-08-29T16:46:10.090098+00:00 | WROTE docs/win/soccer/01_merge/2026_08_23_epl_total_35.csv (3 rows)
+2026-08-29T16:46:10.090175+00:00 | WROTE docs/win/soccer/01_merge/2026_08_23_epl_btts.csv (3 rows)
+2026-08-29T16:46:10.090281+00:00 | UNMATCHED game_id=401882911: 2026_08_23 laliga | Getafe vs Santander
+2026-08-29T16:46:10.090300+00:00 | 2026_08_23 laliga | matched=2 | unmatched=1
+2026-08-29T16:46:10.090371+00:00 | WROTE docs/win/soccer/01_merge/2026_08_23_laliga_match_odds.csv (2 rows)
+2026-08-29T16:46:10.090464+00:00 | WROTE docs/win/soccer/01_merge/2026_08_23_laliga_total_25.csv (2 rows)
+2026-08-29T16:46:10.090540+00:00 | WROTE docs/win/soccer/01_merge/2026_08_23_laliga_total_35.csv (2 rows)
+2026-08-29T16:46:10.090615+00:00 | WROTE docs/win/soccer/01_merge/2026_08_23_laliga_btts.csv (2 rows)
+2026-08-29T16:46:10.090720+00:00 | UNMATCHED game_id=401876487: 2026_08_23 ligue1 | Rennes vs Paris Saint Germain
+2026-08-29T16:46:10.090739+00:00 | 2026_08_23 ligue1 | matched=2 | unmatched=1
+2026-08-29T16:46:10.090810+00:00 | WROTE docs/win/soccer/01_merge/2026_08_23_ligue1_match_odds.csv (2 rows)
+2026-08-29T16:46:10.090876+00:00 | WROTE docs/win/soccer/01_merge/2026_08_23_ligue1_total_25.csv (2 rows)
+2026-08-29T16:46:10.090951+00:00 | WROTE docs/win/soccer/01_merge/2026_08_23_ligue1_total_35.csv (2 rows)
+2026-08-29T16:46:10.091032+00:00 | WROTE docs/win/soccer/01_merge/2026_08_23_ligue1_btts.csv (2 rows)
+2026-08-29T16:46:10.091127+00:00 | 2026_08_23 mls | matched=2 | unmatched=0
+2026-08-29T16:46:10.091210+00:00 | WROTE docs/win/soccer/01_merge/2026_08_23_mls_match_odds.csv (2 rows)
+2026-08-29T16:46:10.091287+00:00 | WROTE docs/win/soccer/01_merge/2026_08_23_mls_total_25.csv (2 rows)
+2026-08-29T16:46:10.091363+00:00 | WROTE docs/win/soccer/01_merge/2026_08_23_mls_total_35.csv (2 rows)
+2026-08-29T16:46:10.091444+00:00 | WROTE docs/win/soccer/01_merge/2026_08_23_mls_btts.csv (2 rows)
+2026-08-29T16:46:10.091564+00:00 | 2026_08_23 seriea | matched=4 | unmatched=0
+2026-08-29T16:46:10.091640+00:00 | WROTE docs/win/soccer/01_merge/2026_08_23_seriea_match_odds.csv (4 rows)
+2026-08-29T16:46:10.091720+00:00 | WROTE docs/win/soccer/01_merge/2026_08_23_seriea_total_25.csv (4 rows)
+2026-08-29T16:46:10.091799+00:00 | WROTE docs/win/soccer/01_merge/2026_08_23_seriea_total_35.csv (4 rows)
+2026-08-29T16:46:10.091871+00:00 | WROTE docs/win/soccer/01_merge/2026_08_23_seriea_btts.csv (4 rows)
+2026-08-29T16:46:10.091972+00:00 | 2026_08_24 epl | matched=1 | unmatched=0
+2026-08-29T16:46:10.092044+00:00 | WROTE docs/win/soccer/01_merge/2026_08_24_epl_match_odds.csv (1 rows)
+2026-08-29T16:46:10.092111+00:00 | WROTE docs/win/soccer/01_merge/2026_08_24_epl_total_25.csv (1 rows)
+2026-08-29T16:46:10.092195+00:00 | WROTE docs/win/soccer/01_merge/2026_08_24_epl_total_35.csv (1 rows)
+2026-08-29T16:46:10.092270+00:00 | WROTE docs/win/soccer/01_merge/2026_08_24_epl_btts.csv (1 rows)
+2026-08-29T16:46:10.092370+00:00 | UNMATCHED game_id=401882910: 2026_08_24 laliga | Málaga vs Deportivo
+2026-08-29T16:46:10.092398+00:00 | 2026_08_24 laliga | matched=1 | unmatched=1
+2026-08-29T16:46:10.092470+00:00 | WROTE docs/win/soccer/01_merge/2026_08_24_laliga_match_odds.csv (1 rows)
+2026-08-29T16:46:10.092535+00:00 | WROTE docs/win/soccer/01_merge/2026_08_24_laliga_total_25.csv (1 rows)
+2026-08-29T16:46:10.092611+00:00 | WROTE docs/win/soccer/01_merge/2026_08_24_laliga_total_35.csv (1 rows)
+2026-08-29T16:46:10.092691+00:00 | WROTE docs/win/soccer/01_merge/2026_08_24_laliga_btts.csv (1 rows)
+2026-08-29T16:46:10.092793+00:00 | 2026_08_24 seriea | matched=2 | unmatched=0
+2026-08-29T16:46:10.092867+00:00 | WROTE docs/win/soccer/01_merge/2026_08_24_seriea_match_odds.csv (2 rows)
+2026-08-29T16:46:10.092942+00:00 | WROTE docs/win/soccer/01_merge/2026_08_24_seriea_total_25.csv (2 rows)
+2026-08-29T16:46:10.093019+00:00 | WROTE docs/win/soccer/01_merge/2026_08_24_seriea_total_35.csv (2 rows)
+2026-08-29T16:46:10.093087+00:00 | WROTE docs/win/soccer/01_merge/2026_08_24_seriea_btts.csv (2 rows)
+2026-08-29T16:46:10.093187+00:00 | 2026_08_25 laliga | matched=1 | unmatched=0
+2026-08-29T16:46:10.093257+00:00 | WROTE docs/win/soccer/01_merge/2026_08_25_laliga_match_odds.csv (1 rows)
+2026-08-29T16:46:10.093330+00:00 | WROTE docs/win/soccer/01_merge/2026_08_25_laliga_total_25.csv (1 rows)
+2026-08-29T16:46:10.093417+00:00 | WROTE docs/win/soccer/01_merge/2026_08_25_laliga_total_35.csv (1 rows)
+2026-08-29T16:46:10.093494+00:00 | WROTE docs/win/soccer/01_merge/2026_08_25_laliga_btts.csv (1 rows)
+2026-08-29T16:46:10.093588+00:00 | 2026_08_26 laliga | matched=1 | unmatched=0
+2026-08-29T16:46:10.093658+00:00 | WROTE docs/win/soccer/01_merge/2026_08_26_laliga_match_odds.csv (1 rows)
+2026-08-29T16:46:10.093737+00:00 | WROTE docs/win/soccer/01_merge/2026_08_26_laliga_total_25.csv (1 rows)
+2026-08-29T16:46:10.093811+00:00 | WROTE docs/win/soccer/01_merge/2026_08_26_laliga_total_35.csv (1 rows)
+2026-08-29T16:46:10.093878+00:00 | WROTE docs/win/soccer/01_merge/2026_08_26_laliga_btts.csv (1 rows)
+2026-08-29T16:46:10.093976+00:00 | 2026_08_28 bundesliga | matched=1 | unmatched=0
+2026-08-29T16:46:10.094046+00:00 | WROTE docs/win/soccer/01_merge/2026_08_28_bundesliga_match_odds.csv (1 rows)
+2026-08-29T16:46:10.094110+00:00 | WROTE docs/win/soccer/01_merge/2026_08_28_bundesliga_total_25.csv (1 rows)
+2026-08-29T16:46:10.094185+00:00 | WROTE docs/win/soccer/01_merge/2026_08_28_bundesliga_total_35.csv (1 rows)
+2026-08-29T16:46:10.094266+00:00 | WROTE docs/win/soccer/01_merge/2026_08_28_bundesliga_btts.csv (1 rows)
+2026-08-29T16:46:10.094357+00:00 | 2026_08_28 epl | matched=1 | unmatched=0
+2026-08-29T16:46:10.094442+00:00 | WROTE docs/win/soccer/01_merge/2026_08_28_epl_match_odds.csv (1 rows)
+2026-08-29T16:46:10.094518+00:00 | WROTE docs/win/soccer/01_merge/2026_08_28_epl_total_25.csv (1 rows)
+2026-08-29T16:46:10.094592+00:00 | WROTE docs/win/soccer/01_merge/2026_08_28_epl_total_35.csv (1 rows)
+2026-08-29T16:46:10.094660+00:00 | WROTE docs/win/soccer/01_merge/2026_08_28_epl_btts.csv (1 rows)
+2026-08-29T16:46:10.094787+00:00 | UNMATCHED game_id=401884811: 2026_08_29 bundesliga | 1. FC Union Berlin vs Eintracht Frankfurt
+2026-08-29T16:46:10.094805+00:00 | UNMATCHED game_id=401884810: 2026_08_29 bundesliga | FC Cologne vs Hoffenheim
+2026-08-29T16:46:10.094822+00:00 | UNMATCHED game_id=401884809: 2026_08_29 bundesliga | SV Elversberg vs Leverkusen
+2026-08-29T16:46:10.094837+00:00 | UNMATCHED game_id=401884816: 2026_08_29 bundesliga | Borussia Dortmund vs Hamburg SV
+2026-08-29T16:46:10.094852+00:00 | 2026_08_29 bundesliga | matched=2 | unmatched=4
+2026-08-29T16:46:10.094922+00:00 | WROTE docs/win/soccer/01_merge/2026_08_29_bundesliga_match_odds.csv (2 rows)
+2026-08-29T16:46:10.094999+00:00 | WROTE docs/win/soccer/01_merge/2026_08_29_bundesliga_total_25.csv (2 rows)
+2026-08-29T16:46:10.095068+00:00 | WROTE docs/win/soccer/01_merge/2026_08_29_bundesliga_total_35.csv (2 rows)
+2026-08-29T16:46:10.095151+00:00 | WROTE docs/win/soccer/01_merge/2026_08_29_bundesliga_btts.csv (2 rows)
+2026-08-29T16:46:10.095262+00:00 | UNMATCHED game_id=401879316: 2026_08_29 epl | Coventry vs Hull
+2026-08-29T16:46:10.095281+00:00 | 2026_08_29 epl | matched=3 | unmatched=1
+2026-08-29T16:46:10.095352+00:00 | WROTE docs/win/soccer/01_merge/2026_08_29_epl_match_odds.csv (3 rows)
+2026-08-29T16:46:10.095441+00:00 | WROTE docs/win/soccer/01_merge/2026_08_29_epl_total_25.csv (3 rows)
+2026-08-29T16:46:10.095520+00:00 | WROTE docs/win/soccer/01_merge/2026_08_29_epl_total_35.csv (3 rows)
+2026-08-29T16:46:10.095596+00:00 | WROTE docs/win/soccer/01_merge/2026_08_29_epl_btts.csv (3 rows)
+2026-08-29T16:46:10.095703+00:00 | 2026_08_29 laliga | matched=3 | unmatched=0
+2026-08-29T16:46:10.095777+00:00 | WROTE docs/win/soccer/01_merge/2026_08_29_laliga_match_odds.csv (3 rows)
+2026-08-29T16:46:10.095844+00:00 | WROTE docs/win/soccer/01_merge/2026_08_29_laliga_total_25.csv (3 rows)
+2026-08-29T16:46:10.095926+00:00 | WROTE docs/win/soccer/01_merge/2026_08_29_laliga_total_35.csv (3 rows)
+2026-08-29T16:46:10.096004+00:00 | WROTE docs/win/soccer/01_merge/2026_08_29_laliga_btts.csv (3 rows)
+2026-08-29T16:46:10.096120+00:00 | 2026_08_29 ligue1 | matched=5 | unmatched=0
+2026-08-29T16:46:10.096197+00:00 | WROTE docs/win/soccer/01_merge/2026_08_29_ligue1_match_odds.csv (5 rows)
+2026-08-29T16:46:10.096277+00:00 | WROTE docs/win/soccer/01_merge/2026_08_29_ligue1_total_25.csv (5 rows)
+2026-08-29T16:46:10.096357+00:00 | WROTE docs/win/soccer/01_merge/2026_08_29_ligue1_total_35.csv (5 rows)
+2026-08-29T16:46:10.096441+00:00 | WROTE docs/win/soccer/01_merge/2026_08_29_ligue1_btts.csv (5 rows)
+2026-08-29T16:46:10.096615+00:00 | 2026_08_29 mls | matched=13 | unmatched=0
+2026-08-29T16:46:10.096706+00:00 | WROTE docs/win/soccer/01_merge/2026_08_29_mls_match_odds.csv (13 rows)
+2026-08-29T16:46:10.096800+00:00 | WROTE docs/win/soccer/01_merge/2026_08_29_mls_total_25.csv (13 rows)
+2026-08-29T16:46:10.096893+00:00 | WROTE docs/win/soccer/01_merge/2026_08_29_mls_total_35.csv (13 rows)
+2026-08-29T16:46:10.096984+00:00 | WROTE docs/win/soccer/01_merge/2026_08_29_mls_btts.csv (13 rows)
+2026-08-29T16:46:10.097118+00:00 | 2026_08_29 seriea | matched=4 | unmatched=0
+2026-08-29T16:46:10.097194+00:00 | WROTE docs/win/soccer/01_merge/2026_08_29_seriea_match_odds.csv (4 rows)
+2026-08-29T16:46:10.097273+00:00 | WROTE docs/win/soccer/01_merge/2026_08_29_seriea_total_25.csv (4 rows)
+2026-08-29T16:46:10.097352+00:00 | WROTE docs/win/soccer/01_merge/2026_08_29_seriea_total_35.csv (4 rows)
+2026-08-29T16:46:10.097443+00:00 | WROTE docs/win/soccer/01_merge/2026_08_29_seriea_btts.csv (4 rows)
+2026-08-29T16:46:10.097535+00:00 | MISSING FILE: docs/win/soccer/00_intake/sportsbook/normalized/2026_08_30_bundesliga.csv
+2026-08-29T16:46:10.097552+00:00 | SKIP 2026_08_30 bundesliga: no sportsbook
+2026-08-29T16:46:10.097625+00:00 | MISSING FILE: docs/win/soccer/00_intake/sportsbook/normalized/2026_08_30_epl.csv
+2026-08-29T16:46:10.097641+00:00 | SKIP 2026_08_30 epl: no sportsbook
+2026-08-29T16:46:10.097707+00:00 | MISSING FILE: docs/win/soccer/00_intake/sportsbook/normalized/2026_08_30_laliga.csv
+2026-08-29T16:46:10.097723+00:00 | SKIP 2026_08_30 laliga: no sportsbook
+2026-08-29T16:46:10.097786+00:00 | MISSING FILE: docs/win/soccer/00_intake/sportsbook/normalized/2026_08_30_ligue1.csv
+2026-08-29T16:46:10.097802+00:00 | SKIP 2026_08_30 ligue1: no sportsbook
+2026-08-29T16:46:10.097862+00:00 | MISSING FILE: docs/win/soccer/00_intake/sportsbook/normalized/2026_08_30_mls.csv
+2026-08-29T16:46:10.097878+00:00 | SKIP 2026_08_30 mls: no sportsbook
+2026-08-29T16:46:10.097936+00:00 | MISSING FILE: docs/win/soccer/00_intake/sportsbook/normalized/2026_08_31_epl.csv
+2026-08-29T16:46:10.097952+00:00 | SKIP 2026_08_31 epl: no sportsbook
+2026-08-29T16:46:10.098011+00:00 | MISSING FILE: docs/win/soccer/00_intake/sportsbook/normalized/2026_08_31_laliga.csv
+2026-08-29T16:46:10.098031+00:00 | SKIP 2026_08_31 laliga: no sportsbook
+2026-08-29T16:46:10.098089+00:00 | MISSING FILE: docs/win/soccer/00_intake/sportsbook/normalized/2026_09_03_laliga.csv
+2026-08-29T16:46:10.098104+00:00 | SKIP 2026_09_03 laliga: no sportsbook
+2026-08-29T16:46:10.098160+00:00 | MISSING FILE: docs/win/soccer/00_intake/sportsbook/normalized/2026_09_03_ligue1.csv
+2026-08-29T16:46:10.098176+00:00 | SKIP 2026_09_03 ligue1: no sportsbook
+2026-08-29T16:46:10.098220+00:00 | SUMMARY: slates_processed=159 | skipped=11 | files_written=584 | total_matched=547 | total_unmatched=442 | errors=0
+2026-08-29T16:46:10.098235+00:00 | STATUS: SUCCESS

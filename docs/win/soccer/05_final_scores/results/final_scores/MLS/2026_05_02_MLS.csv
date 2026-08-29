@@ -1,0 +1,14 @@
+sport,league,game_id,game_date,match_time,home_team,away_team,home_score,away_score
+soccer,mls,119150,2026_05_02,10:30 PM,LA Galaxy,Vancouver Whitecaps,1,1
+soccer,mls,119149,2026_05_02,09:30 PM,San Diego FC,Los Angeles FC,2,2
+soccer,mls,119147,2026_05_02,08:30 PM,Chicago Fire,FC Cincinnati,2,3
+soccer,mls,119148,2026_05_02,08:30 PM,Houston Dynamo,Colorado Rapids,1,0
+soccer,mls,119146,2026_05_02,07:30 PM,Philadelphia Union,Nashville SC,0,0
+soccer,mls,119145,2026_05_02,07:30 PM,New York Red Bulls,FC Dallas,0,2
+soccer,mls,119143,2026_05_02,07:30 PM,Columbus Crew,Minnesota United,2,3
+soccer,mls,119144,2026_05_02,07:30 PM,New England Revolution,Charlotte FC,1,0
+soccer,mls,119142,2026_05_02,07:30 PM,Atlanta United,CF Montreal,3,1
+soccer,mls,119141,2026_05_02,07:15 PM,Inter Miami,Orlando City,3,4
+soccer,mls,119039,2026_05_02,04:45 PM,Real Salt Lake,Portland Timbers,2,0
+soccer,mls,119038,2026_05_02,02:30 PM,Sporting Kansas City,Seattle Sounders,1,1
+soccer,mls,119037,2026_05_02,01:00 PM,Toronto FC,San Jose Earthquakes,1,1

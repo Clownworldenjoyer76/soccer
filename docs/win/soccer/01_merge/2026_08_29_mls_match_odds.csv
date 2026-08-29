@@ -1,0 +1,14 @@
+game_id,sport,league,match_date,match_time,home_team,away_team,home_prob,draw_prob,away_prob,home_xg,away_xg,expected_total_goals,dk_home_decimal,dk_draw_decimal,dk_away_decimal
+761755,soccer,mls,2026_08_29,04:30 PM,Seattle Sounders,Chicago Fire,0.324,0.282,0.394,1.08,1.23,2.31,2.75,3.75,2.25
+761759,soccer,mls,2026_08_29,07:30 PM,Atlanta United,Charlotte FC,0.39,0.278,0.333,1.25,1.13,2.38,2.45,3.60,2.55
+761756,soccer,mls,2026_08_29,07:30 PM,DC United,Los Angeles FC,0.262,0.272,0.466,0.97,1.39,2.36,3.75,3.65,1.87
+761757,soccer,mls,2026_08_29,07:30 PM,Inter Miami,CF Montreal,0.639,0.204,0.157,2.05,0.90,2.95,1.41,5.25,5.50
+761761,soccer,mls,2026_08_29,07:30 PM,New York Red Bulls,Philadelphia Union,0.3,0.277,0.423,1.05,1.30,2.35,2.90,3.85,2.10
+761760,soccer,mls,2026_08_29,07:30 PM,Toronto FC,New York City FC,0.361,0.287,0.352,1.14,1.12,2.26,2.40,3.50,2.60
+761765,soccer,mls,2026_08_29,08:30 PM,Houston Dynamo,San Jose Earthquakes,0.551,0.242,0.207,1.68,0.92,2.60,1.59,4.10,4.80
+761763,soccer,mls,2026_08_29,08:30 PM,Minnesota United,Orlando City,0.523,0.248,0.229,1.62,0.99,2.61,1.77,4.00,3.75
+761764,soccer,mls,2026_08_29,08:30 PM,Nashville SC,FC Cincinnati,0.522,0.244,0.234,1.66,1.02,2.68,1.77,4.00,3.70
+761762,soccer,mls,2026_08_29,08:30 PM,Sporting Kansas City,Vancouver Whitecaps,0.139,0.211,0.651,0.76,1.92,2.68,6.00,5.00,1.39
+761766,soccer,mls,2026_08_29,09:30 PM,Colorado Rapids,Real Salt Lake,0.481,0.26,0.259,1.49,1.02,2.51,1.91,3.70,3.45
+761768,soccer,mls,2026_08_29,10:30 PM,Portland Timbers,Austin FC,0.58,0.233,0.187,1.76,0.88,2.64,1.54,4.50,4.90
+761767,soccer,mls,2026_08_29,10:30 PM,San Diego FC,LA Galaxy,0.499,0.242,0.259,1.67,1.14,2.81,1.69,4.20,3.90

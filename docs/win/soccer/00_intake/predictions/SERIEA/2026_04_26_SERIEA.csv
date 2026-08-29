@@ -1,0 +1,4 @@
+sport,league,market,match_date,match_time,home_team,away_team,home_prob,draw_prob,away_prob,home_xg,away_xg,expected_total_goals
+soccer,seriea,,2026_04_26,10:30 AM,Fiorentina,Sassuolo,54.3%,22.0%,23.6%,1.94,1.22,3.16
+soccer,seriea,,2026_04_26,04:00 PM,Torino,Inter Milan,12.8%,19.9%,67.3%,0.75,2.03,2.78
+soccer,seriea,,2026_04_26,06:45 PM,Milan,Juventus,35.0%,26.7%,38.3%,1.24,1.30,2.54

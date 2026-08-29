@@ -1,0 +1,4 @@
+sport,league,game_id,match_date,match_time,home_team,away_team,dk_home_decimal,dk_draw_decimal,dk_away_decimal,dk_over25_decimal,dk_under25_decimal,dk_over35_decimal,dk_under35_decimal,btts_yes,btts_no
+soccer,bundesliga,61514200,2026_05_10,09:30 AM,Hamburg,Freiburg,2.65,3.60,2.35,1.66,2.20,2.65,1.47,1.55,2.45
+soccer,bundesliga,61514198,2026_05_10,11:30 AM,Koln,Heidenheim,1.95,3.85,3.20,1.43,2.80,,,1.40,2.90
+soccer,bundesliga,61514186,2026_05_10,01:30 PM,Mainz,Union Berlin,1.64,3.95,4.50,1.64,2.20,2.60,1.48,1.62,2.25

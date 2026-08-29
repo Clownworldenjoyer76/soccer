@@ -1,0 +1,4 @@
+game_id,sport,league,match_date,match_time,home_team,away_team,home_prob,draw_prob,away_prob,home_xg,away_xg,expected_total_goals,dk_over25_decimal,dk_under25_decimal,fair_over_decimal,fair_under_decimal
+61301209,soccer,epl,2026_05_04,10:00 AM,Chelsea,Nottingham Forest,0.66,0.206,0.134,1.97,0.75,2.72,1.71,2.1,1.9559442263422395,2.0460861339435383
+61301211,soccer,epl,2026_05_04,03:00 PM,Everton,Manchester City,0.236,0.244,0.521,1.04,1.66,2.7,1.62,2.25,1.9748190470741613,2.0258314125082157
+61301211,soccer,epl,2026_05_04,03:00 PM,Everton,Manchester City,0.236,0.244,0.521,1.04,1.66,2.7,1.6,2.3,1.9748190470741613,2.0258314125082157

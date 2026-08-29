@@ -1,0 +1,2 @@
+game_id,sport,league,match_date,match_time,home_team,away_team,home_prob,draw_prob,away_prob,home_xg,away_xg,expected_total_goals,btts_yes,btts_no,engine_lambda_home,engine_lambda_away,engine_match_distance,fair_btts_yes_decimal,fair_btts_no_decimal,engine_btts_yes_prob,engine_btts_no_prob
+61624692,soccer,laliga,2026_05_24,03:00 PM,Villarreal,Atletico Madrid,0.375,0.276,0.349,1.23,1.18,2.41,1.4,2.9,1.2244943415261198,1.195103648423629,0.0002584324709356025,2.0309614434446788,1.9699683788937543,0.4923776387915652,0.5076223612084347

@@ -1,0 +1,5 @@
+game_id,sport,league,match_date,match_time,home_team,away_team,home_prob,draw_prob,away_prob,home_xg,away_xg,expected_total_goals,btts_yes,btts_no,fair_btts_yes_decimal,fair_btts_no_decimal
+61061631,soccer,seriea,2026_05_04,12:30 PM,Cremonese,Lazio,0.22,0.245,0.535,0.97,1.65,2.62,1.8,2.0,1.9000000000000001,2.111111111111111
+61061639,soccer,seriea,2026_05_04,02:45 PM,Roma,Fiorentina,0.602,0.217,0.181,1.93,0.96,2.89,1.9,1.86,2.0215053763440856,1.9789473684210526
+61061631,soccer,seriea,2026_05_04,12:30 PM,Cremonese,Lazio,0.22,0.245,0.535,0.97,1.65,2.62,1.86,1.86,2.0,2.0
+61061639,soccer,seriea,2026_05_04,02:45 PM,Roma,Fiorentina,0.602,0.217,0.181,1.93,0.96,2.89,1.9,1.86,2.0215053763440856,1.9789473684210526

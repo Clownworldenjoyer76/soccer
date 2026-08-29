@@ -1,0 +1,2 @@
+game_id,sport,league,match_date,match_time,home_team,away_team,home_prob,draw_prob,away_prob,home_xg,away_xg,expected_total_goals,btts_yes,btts_no,fair_btts_yes_decimal,fair_btts_no_decimal
+33674548,soccer,laliga,2026_04_10,07:00 PM,Real Madrid,Girona,0.765,0.148,0.087,2.56,0.75,3.31,1.759,2.094,1.8400191021967525,2.1904491188175097

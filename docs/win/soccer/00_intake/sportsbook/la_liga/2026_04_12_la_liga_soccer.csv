@@ -1,0 +1,5 @@
+sport,league,game_id,match_date,match_time,home_team,away_team,dk_home_decimal,dk_draw_decimal,dk_away_decimal,dk_over25_decimal,dk_under25_decimal,dk_over35_decimal,dk_under35_decimal,btts_yes,btts_no
+soccer,laliga,33674616,2026_04_12,12:00 PM,Osasuna,Real Betis,2.184,3.521,3.471,1.965,1.929,3.351,1.349,1.752,2.144
+soccer,laliga,33674618,2026_04_12,02:15 PM,Mallorca,Vallecano,2.424,3.212,3.252,2.204,1.73,,,1.947,1.912
+soccer,laliga,33674619,2026_04_12,04:30 PM,Celta Vigo,Real Oviedo,1.735,3.81,5.037,2.084,1.828,3.681,1.302,2.005,1.864
+soccer,laliga,33674617,2026_04_12,07:00 PM,Athletic Club,Villarreal,2.064,3.487,3.685,1.937,1.919,3.339,1.332,1.759,2.094

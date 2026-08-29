@@ -1,0 +1,2 @@
+game_id,sport,league,match_date,match_time,home_team,away_team,home_prob,draw_prob,away_prob,home_xg,away_xg,expected_total_goals,dk_over25_decimal,dk_under25_decimal,fair_over_decimal,fair_under_decimal
+33674588,soccer,laliga,2026_04_11,07:00 PM,Sevilla,Atletico Madrid,0.276,0.263,0.46,1.06,1.45,2.51,,,2.1798390627626194,1.8475732255028732

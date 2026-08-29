@@ -1,0 +1,4 @@
+game_id,sport,league,match_date,match_time,home_team,away_team,home_prob,draw_prob,away_prob,home_xg,away_xg,expected_total_goals,dk_home_decimal,dk_draw_decimal,dk_away_decimal,fair_home_decimal,fair_draw_decimal,fair_away_decimal
+33890499,soccer,seriea,2026_04_19,10:30 AM,Cremonese,Torino,0.337,0.281,0.381,1.12,1.21,2.33,2.972,3.011,2.599,2.9673590504451037,3.558718861209964,2.6246719160104988
+33890516,soccer,seriea,2026_04_19,01:00 PM,Verona,Milan,0.155,0.207,0.638,0.88,2.01,2.89,6.426,4.012,1.531,6.451612903225807,4.830917874396135,1.567398119122257
+33890586,soccer,seriea,2026_04_19,06:45 PM,Juventus,Bologna,0.647,0.212,0.141,1.92,0.76,2.68,1.445,4.63,6.661,1.5455950540958268,4.716981132075472,7.092198581560284

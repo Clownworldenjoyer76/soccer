@@ -1,0 +1,6 @@
+sport,league,game_id,game_date,match_time,home_team,away_team,home_score,away_score
+soccer,seriea,61061655.0,2026_05_10,02:45 PM,Milan,Atalanta,2,3
+soccer,seriea,61061659.0,2026_05_10,12:00 PM,Parma,Roma,2,3
+soccer,seriea,,2026_05_10,09:00 AM,Fiorentina,Genoa,0,0
+soccer,seriea,,2026_05_10,09:00 AM,Cremonese,Pisa,3,0
+soccer,seriea,,2026_05_10,06:30 AM,Hellas Verona,Como,0,1

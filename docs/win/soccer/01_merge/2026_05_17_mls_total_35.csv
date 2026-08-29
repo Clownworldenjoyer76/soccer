@@ -1,0 +1,3 @@
+game_id,sport,league,match_date,match_time,home_team,away_team,home_prob,draw_prob,away_prob,home_xg,away_xg,expected_total_goals,dk_over35_decimal,dk_under35_decimal
+66299202,soccer,mls,2026_05_17,06:00 PM,Inter Miami,Portland Timbers,0.638,0.203,0.16,2.07,0.93,3.00,,
+66299204,soccer,mls,2026_05_17,08:00 PM,Nashville SC,Los Angeles FC,0.454,0.268,0.278,1.40,1.04,2.44,,

@@ -1,0 +1,12 @@
+sport,league,game_id,match_date,match_time,home_team,away_team,dk_home_decimal,dk_draw_decimal,dk_away_decimal,dk_over25_decimal,dk_under25_decimal,dk_over35_decimal,dk_under35_decimal,btts_yes,btts_no
+soccer,mls,66299142,2026_05_10,04:30 PM,New York City FC,Columbus Crew,2.50,3.60,2.55,,,,,,
+soccer,mls,66299144,2026_05_10,07:00 PM,Minnesota United,Austin FC,1.61,4.00,4.60,,,,,,
+soccer,mls,66299146,2026_05_10,09:00 PM,Los Angeles FC,Houston Dynamo,1.59,4.10,5.30,,,,,,
+soccer,mls,66299150,2026_05_13,07:30 PM,FC Cincinnati,Inter Miami,2.80,4.10,2.15,,,,,,
+soccer,mls,66299152,2026_05_13,07:30 PM,DC United,Chicago Fire,2.90,3.50,2.25,,,,,,
+soccer,mls,66299154,2026_05_13,07:30 PM,CF Montreal,Portland Timbers,1.83,4.00,3.50,,,,,,
+soccer,mls,66299156,2026_05_13,07:30 PM,New England Revolution,Nashville SC,3.00,3.50,2.20,,,,,,
+soccer,mls,66299160,2026_05_13,07:30 PM,Orlando City,Philadelphia Union,3.00,3.60,2.15,,,,,,
+soccer,mls,66299162,2026_05_13,08:30 PM,FC Dallas,Vancouver Whitecaps,3.40,3.70,2.00,,,,,,
+soccer,mls,66299164,2026_05_13,08:30 PM,Sporting Kansas City,LA Galaxy,3.40,4.10,1.83,,,,,,
+soccer,mls,66299174,2026_05_13,09:30 PM,Seattle Sounders,San Jose Earthquakes,2.10,3.80,3.10,,,,,,

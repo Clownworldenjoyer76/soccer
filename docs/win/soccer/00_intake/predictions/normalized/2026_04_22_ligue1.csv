@@ -1,0 +1,2 @@
+sport,league,game_id,match_date,match_time,home_team,away_team,home_prob,draw_prob,away_prob,home_xg,away_xg,expected_total_goals
+soccer,ligue1,33899675,2026_04_22,05:00 PM,Paris Saint Germain,Nantes,0.87,0.088,0.042,3.36,0.68,4.04

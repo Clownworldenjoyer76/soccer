@@ -1,0 +1,2 @@
+game_id,sport,league,match_date,match_time,home_team,away_team,home_prob,draw_prob,away_prob,home_xg,away_xg,expected_total_goals,dk_home_decimal,dk_draw_decimal,dk_away_decimal,fair_home_decimal,fair_draw_decimal,fair_away_decimal
+33891336,soccer,mls,2026_04_17,10:30 PM,Vancouver Whitecaps,Sporting Kansas City,0.101,0.171,0.728,0.72,2.29,3.01,1.137,8.156,12.769,9.900990099009901,5.847953216374268,1.3736263736263736

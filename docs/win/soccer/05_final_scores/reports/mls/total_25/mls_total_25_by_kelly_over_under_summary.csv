@@ -1,0 +1,5 @@
+bucket,side,Win,Loss,Push,Total,Win_Pct
+0.15_to_0.20,over,0,1,0,1,0.0
+0.30_to_0.35,over,1,0,0,1,1.0
+0.35_to_0.40,under,3,1,0,4,0.75
+0.40_to_0.45,under,1,0,0,1,1.0

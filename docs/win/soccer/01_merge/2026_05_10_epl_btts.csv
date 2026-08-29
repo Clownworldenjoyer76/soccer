@@ -1,0 +1,5 @@
+game_id,sport,league,match_date,match_time,home_team,away_team,home_prob,draw_prob,away_prob,home_xg,away_xg,expected_total_goals,btts_yes,btts_no
+61301227,soccer,epl,2026_05_10,09:00 AM,Burnley,Aston Villa,0.181,0.234,0.585,0.85,1.75,2.60,1.83,1.95
+61301229,soccer,epl,2026_05_10,09:00 AM,Crystal Palace,Everton,0.36,0.266,0.374,1.27,1.30,2.57,1.71,2.10
+61301237,soccer,epl,2026_05_10,09:00 AM,Nottingham Forest,Newcastle,0.355,0.29,0.355,1.11,1.11,2.22,1.55,2.40
+61301245,soccer,epl,2026_05_10,11:30 AM,West Ham,Arsenal,0.183,0.211,0.605,1.01,2.00,3.01,1.76,2.00

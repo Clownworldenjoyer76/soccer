@@ -1,0 +1,4 @@
+sport,league,match_date,match_time,home_team,away_team,home_prob,draw_prob,away_prob,home_xg,away_xg,expected_total_goals
+soccer,laliga,2026_08_29,11:00 AM,Levante,Real Betis,30.0%,26.0%,43.9%,1.15,1.45,2.60
+soccer,laliga,2026_08_29,01:00 PM,Real Sociedad,Espanyol,52.2%,24.6%,23.2%,1.64,1.01,2.65
+soccer,laliga,2026_08_29,03:30 PM,Sevilla,Atletico Madrid,26.2%,26.1%,47.6%,1.03,1.48,2.51

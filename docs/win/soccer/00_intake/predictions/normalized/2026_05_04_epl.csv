@@ -1,0 +1,3 @@
+sport,league,game_id,match_date,match_time,home_team,away_team,home_prob,draw_prob,away_prob,home_xg,away_xg,expected_total_goals
+soccer,epl,61301209,2026_05_04,02:00 PM,Chelsea,Nottingham Forest,0.66,0.206,0.134,1.97,0.75,2.72
+soccer,epl,61301211,2026_05_04,07:00 PM,Everton,Manchester City,0.236,0.244,0.521,1.04,1.66,2.70

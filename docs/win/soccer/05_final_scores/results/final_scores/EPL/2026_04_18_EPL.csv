@@ -1,0 +1,6 @@
+sport,league,game_id,game_date,match_time,home_team,away_team,home_score,away_score
+soccer,epl,33657527,2026_04_18,03:00 PM,Chelsea,Manchester United,0,1
+soccer,epl,33657532,2026_04_18,12:30 PM,Tottenham Hotspur,Brighton,2,2
+soccer,epl,33657529,2026_04_18,10:00 AM,Newcastle,Bournemouth,1,2
+soccer,epl,33657520,2026_04_18,10:00 AM,Leeds,Wolverhampton,3,0
+soccer,epl,33657525,2026_04_18,07:30 AM,Brentford,Fulham,0,0

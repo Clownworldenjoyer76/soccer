@@ -1,0 +1,4 @@
+sport,league,game_id,match_date,match_time,home_team,away_team,dk_home_decimal,dk_draw_decimal,dk_away_decimal,dk_over25_decimal,dk_under25_decimal,dk_over35_decimal,dk_under35_decimal,btts_yes,btts_no
+soccer,bundesliga,33673484,2026_04_12,01:30 PM,Koln,Werder Bremen,2.301,3.467,3.151,1.735,2.153,2.776,1.451,1.578,2.42
+soccer,bundesliga,33673482,2026_04_12,03:30 PM,VfB Stuttgart,Hamburg,1.298,5.75,9.357,1.344,3.152,1.919,1.919,1.637,2.262
+soccer,bundesliga,33673492,2026_04_12,05:30 PM,Mainz,Freiburg,2.311,3.299,3.289,1.839,2.035,3.003,1.396,1.616,2.331

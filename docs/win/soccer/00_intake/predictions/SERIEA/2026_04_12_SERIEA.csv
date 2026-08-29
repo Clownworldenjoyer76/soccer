@@ -1,0 +1,5 @@
+sport,league,market,match_date,match_time,home_team,away_team,home_prob,draw_prob,away_prob,home_xg,away_xg,expected_total_goals
+soccer,seriea,,2026_04_12,10:30 AM,Genoa,Sassuolo,47.1%,24.6%,28.2%,1.61,1.19,2.80
+soccer,seriea,,2026_04_12,01:00 PM,Parma,Napoli,17.2%,21.7%,61.0%,0.90,1.92,2.82
+soccer,seriea,,2026_04_12,04:00 PM,Bologna,Lecce,61.3%,19.9%,18.7%,2.18,1.13,3.31
+soccer,seriea,,2026_04_12,06:45 PM,Como,Inter Milan,30.9%,25.3%,43.8%,1.23,1.50,2.73

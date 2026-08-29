@@ -1,0 +1,2 @@
+game_id,sport,league,match_date,match_time,home_team,away_team,home_prob,draw_prob,away_prob,home_xg,away_xg,expected_total_goals,dk_over35_decimal,dk_under35_decimal,fair_over_decimal,fair_under_decimal
+61061661,soccer,seriea,2026_05_08,02:45 PM,Torino,Sassuolo,0.414,0.254,0.331,1.47,1.28,2.75,3.2,1.34,3.367456833826462,1.422394185064707

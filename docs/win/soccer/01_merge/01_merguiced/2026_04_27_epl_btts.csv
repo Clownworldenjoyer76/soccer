@@ -1,0 +1,2 @@
+game_id,sport,league,match_date,match_time,home_team,away_team,home_prob,draw_prob,away_prob,home_xg,away_xg,expected_total_goals,btts_yes,btts_no,fair_btts_yes_decimal,fair_btts_no_decimal
+33981368,soccer,epl,2026_04_27,07:00 PM,Manchester United,Brentford,0.522,0.239,0.239,1.71,1.08,2.79,1.56,2.28,1.6842105263157894,2.4615384615384612

@@ -1,0 +1,6 @@
+sport,league,game_id,match_date,match_time,home_team,away_team,dk_home_decimal,dk_draw_decimal,dk_away_decimal,dk_over25_decimal,dk_under25_decimal,dk_over35_decimal,dk_under35_decimal,btts_yes,btts_no
+soccer,ligue1,33890612,2026_04_19,01:00 PM,Monaco,Auxerre,1.558,4.328,5.714,1.718,2.149,2.763,1.451,1.815,2.01
+soccer,ligue1,33890617,2026_04_19,03:15 PM,Metz,Paris FC,3.457,3.486,2.06,1.815,1.99,3.001,1.367,1.646,2.199
+soccer,ligue1,33890618,2026_04_19,03:15 PM,Nantes,Stade Brest,2.347,3.278,3.199,2.198,1.697,,,1.89,1.924
+soccer,ligue1,33890616,2026_04_19,03:15 PM,Strasbourg,Rennes,2.555,3.704,2.614,1.702,2.188,2.723,1.463,1.586,2.396
+soccer,ligue1,33890619,2026_04_19,06:45 PM,Paris Saint Germain,Lyon,1.288,6.061,8.805,1.4,2.862,2.05,1.77,1.746,2.08

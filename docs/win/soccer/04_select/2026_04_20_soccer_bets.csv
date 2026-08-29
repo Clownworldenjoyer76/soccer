@@ -1,0 +1,3 @@
+game_id,sport,league,match_date,match_time,home_team,away_team,market,side,odds,american_odds,ev,kelly,model_prob,edge
+33657522,soccer,epl,2026_04_20,07:00 PM,Crystal Palace,West Ham,match_odds,away,3.387,239,0.0059389999999999,0.0024880603267699,0.4570777850271153,0.0045404246840379
+33657522,soccer,epl,2026_04_20,07:00 PM,Crystal Palace,West Ham,total25,over,1.924,-108,0.0801924418938904,0.0867883570280199,0.5614305831049327,0.0801924418938904

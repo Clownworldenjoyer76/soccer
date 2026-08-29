@@ -1,0 +1,8 @@
+game_id,sport,league,match_date,match_time,home_team,away_team,home_prob,draw_prob,away_prob,home_xg,away_xg,expected_total_goals,btts_yes,btts_no,fair_btts_yes_decimal,fair_btts_no_decimal
+61515274,soccer,bundesliga,2026_05_16,09:30 AM,Bayern Munich,Koln,0.897,0.07,0.033,3.71,0.69,4.4,1.47,2.65,1.5547169811320756,2.802721088435374
+61515276,soccer,bundesliga,2026_05_16,09:30 AM,Leverkusen,Hamburg,0.739,0.152,0.109,2.67,0.95,3.62,1.55,2.45,1.6326530612244896,2.5806451612903225
+61515278,soccer,bundesliga,2026_05_16,09:30 AM,Eintracht Frankfurt,VfB Stuttgart,0.574,0.212,0.214,2.03,1.17,3.2,1.3,3.5,1.3714285714285712,3.6923076923076916
+61515288,soccer,bundesliga,2026_05_16,09:30 AM,Borussia Monchengladbach,Hoffenheim,0.412,0.247,0.341,1.53,1.37,2.9,,,,
+61515290,soccer,bundesliga,2026_05_16,09:30 AM,Union Berlin,Augsburg,0.465,0.252,0.283,1.55,1.15,2.7,1.39,2.95,1.4711864406779658,3.1223021582733814
+61515292,soccer,bundesliga,2026_05_16,09:30 AM,St Pauli,Wolfsburg,0.418,0.256,0.326,1.46,1.26,2.72,1.55,2.45,1.6326530612244896,2.5806451612903225
+61515296,soccer,bundesliga,2026_05_16,09:30 AM,Heidenheim,Mainz,0.302,0.255,0.443,1.2,1.5,2.7,1.38,3.0,1.4599999999999997,3.173913043478261

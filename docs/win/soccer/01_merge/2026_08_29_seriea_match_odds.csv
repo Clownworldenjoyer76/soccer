@@ -1,0 +1,5 @@
+game_id,sport,league,match_date,match_time,home_team,away_team,home_prob,draw_prob,away_prob,home_xg,away_xg,expected_total_goals,dk_home_decimal,dk_draw_decimal,dk_away_decimal
+401874746,soccer,seriea,2026_08_29,02:45 PM,Juventus,Parma,0.791,0.141,0.068,2.52,0.60,3.12,1.21,5.75,13.00
+401874942,soccer,seriea,2026_08_29,12:30 PM,Fiorentina,Frosinone,0.639,0.192,0.169,2.25,1.07,3.32,1.74,3.85,4.50
+401874749,soccer,seriea,2026_08_29,12:30 PM,Monza,Udinese,0.3,0.262,0.439,1.14,1.44,2.58,2.85,3.00,2.50
+401874743,soccer,seriea,2026_08_29,12:30 PM,Sassuolo,Torino,0.45,0.255,0.296,1.51,1.18,2.69,2.20,3.00,3.65

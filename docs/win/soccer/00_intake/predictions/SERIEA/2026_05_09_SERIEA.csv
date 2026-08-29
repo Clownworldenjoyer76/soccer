@@ -1,0 +1,4 @@
+sport,league,match_date,match_time,home_team,away_team,home_prob,draw_prob,away_prob,home_xg,away_xg,expected_total_goals
+soccer,seriea,2026_05_09,09:00 AM,Cagliari,Udinese,39.5%,26.9%,33.6%,1.31,1.19,2.50
+soccer,seriea,2026_05_09,12:00 PM,Lazio,Inter Milan,21.6%,23.8%,54.6%,0.99,1.72,2.71
+soccer,seriea,2026_05_09,02:45 PM,Lecce,Juventus,14.4%,20.4%,65.2%,0.82,2.02,2.84

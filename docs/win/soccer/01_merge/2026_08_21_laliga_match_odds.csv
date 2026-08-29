@@ -1,0 +1,2 @@
+game_id,sport,league,match_date,match_time,home_team,away_team,home_prob,draw_prob,away_prob,home_xg,away_xg,expected_total_goals,dk_home_decimal,dk_draw_decimal,dk_away_decimal
+401882914,soccer,laliga,2026_08_21,03:00 PM,Real Betis,Real Sociedad,0.542,0.243,0.215,1.67,0.96,2.63,2.10,3.50,3.55

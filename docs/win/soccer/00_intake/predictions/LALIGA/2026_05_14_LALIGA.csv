@@ -1,0 +1,4 @@
+sport,league,match_date,match_time,home_team,away_team,home_prob,draw_prob,away_prob,home_xg,away_xg,expected_total_goals
+soccer,laliga,2026_05_14,01:00 PM,Valencia,Vallecano,33.8%,28.6%,37.6%,1.10,1.17,2.27
+soccer,laliga,2026_05_14,02:00 PM,Girona,Real Sociedad,36.7%,29.2%,34.1%,1.12,1.08,2.20
+soccer,laliga,2026_05_14,03:30 PM,Real Madrid,Real Oviedo,85.3%,10.5%,4.2%,2.87,0.52,3.39

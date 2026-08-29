@@ -1,0 +1,5 @@
+sport,league,game_id,match_date,match_time,home_team,away_team,dk_home_decimal,dk_draw_decimal,dk_away_decimal,dk_over25_decimal,dk_under25_decimal,dk_over35_decimal,dk_under35_decimal,btts_yes,btts_no
+soccer,seriea,401874748,2026_08_23,02:45 PM,Atalanta,Sassuolo,1.50,4.20,6.00,1.60,2.34,,,1.71,2.10
+soccer,seriea,401874932,2026_08_23,02:45 PM,Torino,Milan,4.40,3.35,1.87,2.18,1.68,,,,
+soccer,seriea,401874930,2026_08_23,12:30 PM,Frosinone,Juventus,6.50,4.50,1.42,1.59,2.35,,,,
+soccer,seriea,401874946,2026_08_23,12:30 PM,Venezia,Lecce,1.77,3.40,4.50,1.95,1.83,,,,

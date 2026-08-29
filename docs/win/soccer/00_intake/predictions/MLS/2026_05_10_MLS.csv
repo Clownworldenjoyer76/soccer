@@ -1,0 +1,4 @@
+sport,league,match_date,match_time,home_team,away_team,home_prob,draw_prob,away_prob,home_xg,away_xg,expected_total_goals
+soccer,mls,2026_05_10,04:30 PM,New York City FC,Columbus Crew,60.2%,22.3%,17.5%,1.85,0.89,2.74
+soccer,mls,2026_05_10,07:00 PM,Minnesota United,Austin FC,54.9%,24.2%,20.8%,1.68,0.93,2.61
+soccer,mls,2026_05_10,09:00 PM,Los Angeles FC,Houston Dynamo,64.7%,20.6%,14.7%,2.00,0.82,2.82

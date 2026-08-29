@@ -1,0 +1,5 @@
+sport,league,game_id,game_date,match_time,home_team,away_team,home_score,away_score
+soccer,laliga,33674588.0,2026_04_11,03:00 PM,Sevilla,Atletico Madrid,2,1
+soccer,laliga,,2026_04_11,12:30 PM,Barcelona,Espanyol,4,1
+soccer,laliga,,2026_04_11,10:15 AM,Elche,Valencia,1,0
+soccer,laliga,,2026_04_11,08:00 AM,Real Sociedad,Alaves,3,3

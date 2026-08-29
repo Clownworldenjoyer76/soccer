@@ -1,0 +1,2 @@
+game_id,sport,league,match_date,match_time,home_team,away_team,home_prob,draw_prob,away_prob,home_xg,away_xg,expected_total_goals,dk_over25_decimal,dk_under25_decimal,fair_over_decimal,fair_under_decimal
+33999029,soccer,laliga,2026_04_27,07:00 PM,Espanyol,Levante,0.527,0.246,0.227,1.64,0.99,2.63,1.906,1.89,2.044674400358772,1.9572360533162967

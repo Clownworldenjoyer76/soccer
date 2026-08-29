@@ -1,0 +1,4 @@
+sport,league,match_date,match_time,home_team,away_team,home_prob,draw_prob,away_prob,home_xg,away_xg,expected_total_goals
+soccer,epl,2026_08_29,07:30 AM,Liverpool,Nottingham Forest,66.4%,19.0%,14.6%,2.21,0.93,3.14
+soccer,epl,2026_08_29,10:00 AM,Bournemouth,Everton,46.4%,26.2%,27.3%,1.46,1.06,2.52
+soccer,epl,2026_08_29,12:30 PM,Tottenham Hotspur,Newcastle,42.5%,26.0%,31.5%,1.43,1.20,2.63

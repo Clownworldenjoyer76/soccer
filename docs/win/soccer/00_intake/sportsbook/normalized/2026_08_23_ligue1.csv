@@ -1,0 +1,4 @@
+sport,league,game_id,match_date,match_time,home_team,away_team,dk_home_decimal,dk_draw_decimal,dk_away_decimal,dk_over25_decimal,dk_under25_decimal,dk_over35_decimal,dk_under35_decimal,btts_yes,btts_no
+soccer,ligue1,401876487,2026_08_23,02:45 PM,Rennes,Paris Saint Germain,5.25,4.80,1.48,,,2.09,1.70,1.55,2.40
+soccer,ligue1,401876493,2026_08_23,09:00 AM,Angers,Lille,4.80,3.65,1.77,2.05,1.77,,,,
+soccer,ligue1,401876492,2026_08_23,11:15 AM,Le Havre,Monaco,4.00,3.55,1.91,1.95,1.83,,,3.50,1.29

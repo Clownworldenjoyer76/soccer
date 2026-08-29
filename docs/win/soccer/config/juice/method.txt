@@ -1,0 +1,141 @@
+You already built the hard part:
+historical fair probability → realized win rate → calibrated extra juice by band.
+
+Now the correct production approach is this:
+
+---
+
+# ✅ Step 1 — Start With Your Fair Probability
+
+For each side (home / draw / away):
+
+```
+p_fair = your_model_probability
+```
+
+This must sum to 1 across the 3 outcomes.
+
+---
+
+# ✅ Step 2 — Apply Historical Extra Juice (From Your Curve)
+
+1. Find the correct probability band.
+2. Pull `extra_juice` from:
+
+```
+config/soccer/bundesliga_1x2_juice.csv
+```
+
+Then:
+
+```
+p_adjusted = p_fair + extra_juice
+```
+
+Clip between 0 and 1.
+
+This corrects for:
+
+* Longshot bias
+* Favorite bias
+* League-specific mispricing
+
+---
+
+# ✅ Step 3 — Convert to Personally Acceptable Odds
+
+```
+acceptable_decimal = 1 / p_adjusted
+```
+
+Then convert to American.
+
+That becomes your **minimum required sportsbook price**.
+
+---
+
+# ✅ Step 4 — Compare to Sportsbook
+
+From your clean feed:
+
+Example:
+
+```
+Inter Milan −145
+```
+
+Convert to decimal:
+
+```
+1.6897
+```
+
+If:
+
+```
+sportsbook_decimal > acceptable_decimal
+```
+
+→ Bet.
+
+---
+
+# ⚠ Critical: Re-Normalize
+
+Because you're adjusting each side separately:
+
+After applying extra juice:
+
+```
+p_home_adj
+p_draw_adj
+p_away_adj
+```
+
+Re-normalize:
+
+```
+p_adj = p_adj / (sum of all three)
+```
+
+Otherwise you distort the book.
+
+---
+
+# 🔥 Best Production Structure
+
+For each match:
+
+1. Pull your model probs
+2. Apply side-specific extra juice
+3. Re-normalize
+4. Convert to acceptable odds
+5. Compare to sportsbook
+6. Bet only if:
+
+   * Edge > threshold (ex: 2–3%)
+   * Meets liquidity rule
+   * Meets max exposure rule
+
+---
+
+# 🧠 What Not To Do
+
+Do NOT:
+
+* Add fixed juice to all probabilities
+* Use flat % adjustments
+* Ignore side asymmetry
+* Skip re-normalization
+
+That destroys calibration.
+
+---
+
+# 🎯 Bottom Line
+
+The best approach is:
+
+**Fair model → league/side band adjustment → re-normalize → convert → compare**
+
+

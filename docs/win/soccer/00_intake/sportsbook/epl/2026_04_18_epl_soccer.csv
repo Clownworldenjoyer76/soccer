@@ -1,0 +1,6 @@
+sport,league,game_id,match_date,match_time,home_team,away_team,dk_home_decimal,dk_draw_decimal,dk_away_decimal,dk_over25_decimal,dk_under25_decimal,dk_over35_decimal,dk_under35_decimal,btts_yes,btts_no
+soccer,epl,33657525,2026_04_18,11:30 AM,Brentford,Fulham,2.099,3.793,3.298,1.757,2.109,2.872,1.422,1.655,2.248
+soccer,epl,33657520,2026_04_18,02:00 PM,Leeds,Wolverhampton,1.62,4.031,5.467,1.942,1.906,3.258,1.344,1.906,1.906
+soccer,epl,33657529,2026_04_18,02:00 PM,Newcastle,Bournemouth,1.99,3.842,3.535,1.477,2.624,2.179,1.697,1.458,2.753
+soccer,epl,33657532,2026_04_18,04:30 PM,Tottenham Hotspur,Brighton,2.783,3.723,2.406,1.663,2.258,2.624,1.492,1.546,2.486
+soccer,epl,33657527,2026_04_18,07:00 PM,Chelsea,Manchester United,2.238,3.585,3.139,1.546,2.495,2.347,1.612,1.448,2.793

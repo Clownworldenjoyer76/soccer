@@ -1,0 +1,4 @@
+sport,league,market,match_date,match_time,home_team,away_team,home_prob,draw_prob,away_prob,home_xg,away_xg,expected_total_goals
+soccer,ligue1,,2026_04_25,01:00 PM,Lyon,Auxerre,59.8%,21.2%,19.0%,2.01,1.04,3.05
+soccer,ligue1,,2026_04_25,05:00 PM,Angers,Paris Saint Germain,8.3%,14.5%,77.2%,0.73,2.59,3.32
+soccer,ligue1,,2026_04_25,07:05 PM,Toulouse,Monaco,28.7%,24.4%,46.9%,1.23,1.64,2.87

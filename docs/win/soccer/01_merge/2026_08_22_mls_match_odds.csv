@@ -1,0 +1,14 @@
+game_id,sport,league,match_date,match_time,home_team,away_team,home_prob,draw_prob,away_prob,home_xg,away_xg,expected_total_goals,dk_home_decimal,dk_draw_decimal,dk_away_decimal
+761745,soccer,mls,2026_08_22,07:30 PM,CF Montreal,LA Galaxy,0.442,0.262,0.296,1.44,1.13,2.57,2.05,3.60,3.20
+761741,soccer,mls,2026_08_22,07:30 PM,Charlotte FC,DC United,0.51,0.256,0.234,1.55,0.96,2.51,1.74,3.80,4.10
+761743,soccer,mls,2026_08_22,07:30 PM,FC Cincinnati,Seattle Sounders,0.503,0.256,0.241,1.54,0.98,2.52,1.69,4.20,3.95
+761742,soccer,mls,2026_08_22,07:30 PM,Inter Miami,Toronto FC,0.675,0.191,0.133,2.15,0.83,2.98,1.32,5.75,6.50
+761740,soccer,mls,2026_08_22,07:30 PM,Orlando City,Real Salt Lake,0.485,0.266,0.249,1.44,0.96,2.40,2.00,4.00,3.05
+761744,soccer,mls,2026_08_22,07:30 PM,New York Red Bulls,Chicago Fire,0.306,0.287,0.408,1.01,1.22,2.23,2.55,3.85,2.35
+761748,soccer,mls,2026_08_22,08:30 PM,Austin FC,Philadelphia Union,0.315,0.281,0.404,1.07,1.25,2.32,3.35,3.70,1.95
+761746,soccer,mls,2026_08_22,08:30 PM,Nashville SC,Columbus Crew,0.556,0.23,0.214,1.80,1.03,2.83,1.65,3.90,4.60
+761747,soccer,mls,2026_08_22,08:30 PM,St Louis City,Houston Dynamo,0.457,0.269,0.274,1.40,1.02,2.42,2.10,3.45,3.15
+761749,soccer,mls,2026_08_22,09:30 PM,Vancouver Whitecaps,FC Dallas,0.627,0.216,0.157,1.90,0.82,2.72,1.51,4.40,5.25
+761751,soccer,mls,2026_08_22,10:30 PM,Los Angeles FC,Portland Timbers,0.606,0.215,0.179,1.96,0.96,2.92,1.62,4.30,4.30
+761750,soccer,mls,2026_08_22,10:30 PM,San Diego FC,Colorado Rapids,0.478,0.254,0.268,1.54,1.09,2.63,2.00,3.70,3.35
+761752,soccer,mls,2026_08_22,10:30 PM,San Jose Earthquakes,Minnesota United,0.461,0.257,0.282,1.51,1.11,2.62,2.20,3.70,2.80

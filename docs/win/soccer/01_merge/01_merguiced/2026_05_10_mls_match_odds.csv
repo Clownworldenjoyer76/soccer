@@ -1,0 +1,4 @@
+game_id,sport,league,match_date,match_time,home_team,away_team,home_prob,draw_prob,away_prob,home_xg,away_xg,expected_total_goals,dk_home_decimal,dk_draw_decimal,dk_away_decimal,fair_home_decimal,fair_draw_decimal,fair_away_decimal
+66299142,soccer,mls,2026_05_10,04:30 PM,New York City FC,Columbus Crew,0.602,0.223,0.175,1.85,0.89,2.74,2.5,3.6,2.55,1.6611295681063123,4.484304932735426,5.714285714285714
+66299144,soccer,mls,2026_05_10,07:00 PM,Minnesota United,Austin FC,0.549,0.242,0.208,1.68,0.93,2.61,1.61,4.0,4.6,1.8214936247723132,4.132231404958678,4.8076923076923075
+66299146,soccer,mls,2026_05_10,09:00 PM,Los Angeles FC,Houston Dynamo,0.647,0.206,0.147,2.0,0.82,2.82,1.59,4.1,5.3,1.5455950540958268,4.8543689320388355,6.802721088435375

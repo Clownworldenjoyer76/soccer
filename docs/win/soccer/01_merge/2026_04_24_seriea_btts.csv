@@ -1,0 +1,2 @@
+game_id,sport,league,match_date,match_time,home_team,away_team,home_prob,draw_prob,away_prob,home_xg,away_xg,expected_total_goals,btts_yes,btts_no
+33996797,soccer,seriea,2026_04_24,06:45 PM,Napoli,Cremonese,0.772,0.142,0.087,2.69,0.80,3.49,,

@@ -1,0 +1,4 @@
+sport,league,game_id,game_date,match_time,home_team,away_team,home_score,away_score
+soccer,bundesliga,33673492.0,2026_04_12,01:30 PM,Mainz,Freiburg,0,1
+soccer,bundesliga,33673482.0,2026_04_12,11:30 AM,VfB Stuttgart,Hamburg,4,0
+soccer,bundesliga,,2026_04_12,09:30 AM,Koln,Werder Bremen,3,1

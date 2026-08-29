@@ -1,0 +1,2 @@
+game_id,sport,league,match_date,match_time,home_team,away_team,home_prob,draw_prob,away_prob,home_xg,away_xg,expected_total_goals,btts_yes,btts_no,fair_btts_yes_decimal,fair_btts_no_decimal
+61301243,soccer,epl,2026_05_11,03:00 PM,Tottenham Hotspur,Leeds,0.546,0.222,0.232,1.92,1.18,3.1,1.66,2.15,1.7720930232558139,2.2951807228915664

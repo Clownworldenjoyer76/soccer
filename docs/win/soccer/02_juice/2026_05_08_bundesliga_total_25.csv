@@ -1,0 +1,2 @@
+game_id,sport,league,match_date,match_time,home_team,away_team,home_prob,draw_prob,away_prob,home_xg,away_xg,expected_total_goals,dk_over25_decimal,dk_under25_decimal,engine_lambda_home,engine_lambda_away,engine_match_distance,fair_over_decimal,fair_under_decimal,engine_over_prob,engine_under_prob
+61514184,soccer,bundesliga,2026_05_08,02:30 PM,Borussia Dortmund,Eintracht Frankfurt,0.633,0.195,0.171,2.21,1.06,3.27,1.39,2.95,2.081099373192008,1.3334734911296002,0.09140312194210473,1.5083026313303978,2.967331936454207,0.6629969206630306,0.3370030793369694

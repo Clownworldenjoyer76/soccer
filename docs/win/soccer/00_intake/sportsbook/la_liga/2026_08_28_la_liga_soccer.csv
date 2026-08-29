@@ -1,0 +1,3 @@
+sport,league,game_id,match_date,match_time,home_team,away_team,dk_home_decimal,dk_draw_decimal,dk_away_decimal,dk_over25_decimal,dk_under25_decimal,dk_over35_decimal,dk_under35_decimal,btts_yes,btts_no
+soccer,laliga,401882900,2026_08_28,01:00 PM,Santander,Elche,1.12,6.50,91.00,1.74,2.10,,,,
+soccer,laliga,401882906,2026_08_28,03:30 PM,Alaves,Villarreal,3.20,3.50,2.25,1.80,2.00,,,,

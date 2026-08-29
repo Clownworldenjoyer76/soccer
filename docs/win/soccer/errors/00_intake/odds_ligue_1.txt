@@ -1,0 +1,18 @@
+=== odds_ligue_1 RUN 2026-08-10T01:05:26.473368-04:00 ===
+2026-08-10T01:05:26.473507-04:00 | START league=LIGUE_1 slug=france-ligue-1 bookmaker=DraftKings
+2026-08-10T01:05:26.825684-04:00 | EVENTS league=LIGUE_1 count=9
+2026-08-10T01:05:27.117630-04:00 | ROW league=LIGUE_1 game_id=72036118 Strasbourg Alsace at Olympique Marseille ML=(1.66,4.20,4.30) O25/U25=(,) O35/U35=(2.15,1.55) BTTS=(1.47,2.50)
+2026-08-10T01:05:27.545962-04:00 | ROW league=LIGUE_1 game_id=72036116 AJ Auxerre at Racing Club De Lens ML=(1.60,4.10,4.90) O25/U25=(,) O35/U35=(,) BTTS=(1.62,2.15)
+2026-08-10T01:05:28.048745-04:00 | ROW league=LIGUE_1 game_id=72036126 Paris FC at ESTAC Troyes ML=(2.75,3.45,2.40) O25/U25=(1.62,2.05) O35/U35=(,) BTTS=(1.51,2.40)
+2026-08-10T01:05:28.484993-04:00 | ROW league=LIGUE_1 game_id=72036114 Stade Brest 29 at Le Mans FC ML=(2.45,3.40,2.70) O25/U25=(,) O35/U35=(,) BTTS=(1.57,2.25)
+2026-08-10T01:05:28.919462-04:00 | ROW league=LIGUE_1 game_id=72036120 FC Lorient at OGC Nice ML=(2.15,3.45,3.15) O25/U25=(1.68,1.95) O35/U35=(,) BTTS=(1.57,2.25)
+2026-08-10T01:05:29.403741-04:00 | ROW league=LIGUE_1 game_id=72036124 Olympique Lyon at Toulouse FC ML=(3.30,3.65,2.05) O25/U25=(,) O35/U35=(,) BTTS=(1.58,2.20)
+2026-08-10T01:05:29.855394-04:00 | ROW league=LIGUE_1 game_id=72036110 Lille OSC at Angers SCO ML=(4.90,3.75,1.66) O25/U25=(,) O35/U35=(,) BTTS=(,)
+2026-08-10T01:05:30.312303-04:00 | ROW league=LIGUE_1 game_id=72036112 AS Monaco at Le Havre AC ML=(3.20,3.75,2.05) O25/U25=(1.54,2.20) O35/U35=(,) BTTS=(1.50,2.40)
+2026-08-10T01:05:30.752072-04:00 | ROW league=LIGUE_1 game_id=72036122 Stade Rennais FC at Paris Saint-Germain ML=(1.37,5.25,6.50) O25/U25=(,) O35/U35=(1.86,1.74) BTTS=(1.52,2.35)
+2026-08-10T01:05:30.955467-04:00 | --- SUMMARY ---
+2026-08-10T01:05:30.955514-04:00 | Rows written: 9
+2026-08-10T01:05:30.955555-04:00 | Odds errors: 0
+2026-08-10T01:05:30.955586-04:00 | CSV output: docs/win/soccer/00_intake/sportsbook/ligue_1/2026_08_10_ligue_1_soccer.csv
+2026-08-10T01:05:30.955607-04:00 | JSON output: docs/win/soccer/00_intake/odds_api_raw/ligue_1/2026_08_10_ligue_1_soccer_odds.json
+2026-08-10T01:05:30.955628-04:00 | STATUS: SUCCESS

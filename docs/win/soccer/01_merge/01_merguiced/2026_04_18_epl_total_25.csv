@@ -1,0 +1,6 @@
+game_id,sport,league,match_date,match_time,home_team,away_team,home_prob,draw_prob,away_prob,home_xg,away_xg,expected_total_goals,dk_over25_decimal,dk_under25_decimal,fair_over_decimal,fair_under_decimal
+33657525,soccer,epl,2026_04_18,11:30 AM,Brentford,Fulham,0.455,0.26,0.284,1.47,1.11,2.58,1.757,2.109,2.0984684257692368,1.910358437749104
+33657520,soccer,epl,2026_04_18,02:00 PM,Leeds,Wolverhampton,0.611,0.223,0.166,1.84,0.84,2.68,1.942,1.906,1.9941627127777712,2.005871561211463
+33657529,soccer,epl,2026_04_18,02:00 PM,Newcastle,Bournemouth,0.483,0.253,0.263,1.55,1.08,2.63,1.477,2.624,2.044674400358772,1.9572360533162967
+33657532,soccer,epl,2026_04_18,04:30 PM,Tottenham Hotspur,Brighton,0.353,0.265,0.382,1.26,1.32,2.58,1.663,2.258,2.0984684257692368,1.910358437749104
+33657527,soccer,epl,2026_04_18,07:00 PM,Chelsea,Manchester United,0.43,0.255,0.314,1.48,1.23,2.71,1.546,2.495,1.9653239577727135,2.0359216633422155

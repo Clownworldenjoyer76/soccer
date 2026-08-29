@@ -1,0 +1,7 @@
+sport,league,market,match_date,match_time,home_team,away_team,home_prob,draw_prob,away_prob,home_xg,away_xg,expected_total_goals
+soccer,bundesliga,,2026_04_25,01:30 PM,Mainz,Bayern Munich,19.7%,19.1%,61.2%,1.28,2.34,3.62
+soccer,bundesliga,,2026_04_25,01:30 PM,Wolfsburg,Borussia Monchengladbach,43.4%,24.3%,32.2%,1.60,1.35,2.95
+soccer,bundesliga,,2026_04_25,01:30 PM,Koln,Leverkusen,24.6%,22.3%,53.2%,1.24,1.91,3.15
+soccer,bundesliga,,2026_04_25,01:30 PM,Augsburg,Eintracht Frankfurt,40.2%,24.5%,35.3%,1.53,1.42,2.95
+soccer,bundesliga,,2026_04_25,01:30 PM,Heidenheim,St Pauli,39.9%,26.4%,33.7%,1.36,1.23,2.59
+soccer,bundesliga,,2026_04_25,04:30 PM,Hamburg,Hoffenheim,23.3%,23.0%,53.7%,1.12,1.81,2.93

@@ -1,0 +1,4 @@
+game_id,sport,league,match_date,match_time,home_team,away_team,home_prob,draw_prob,away_prob,home_xg,away_xg,expected_total_goals,dk_over35_decimal,dk_under35_decimal,fair_over_decimal,fair_under_decimal
+33890628,soccer,bundesliga,2026_04_19,01:30 PM,Freiburg,Heidenheim,0.601,0.208,0.191,2.07,1.07,3.14,2.531,1.51,2.603484489815427,1.623641828998987
+33890629,soccer,bundesliga,2026_04_19,03:30 PM,Bayern Munich,VfB Stuttgart,0.703,0.159,0.138,2.71,1.16,3.87,1.594,2.295,1.8493554293443857,2.177363404590109
+33890630,soccer,bundesliga,2026_04_19,05:30 PM,Borussia Monchengladbach,Mainz,0.405,0.242,0.353,1.56,1.45,3.01,3.198,1.335,2.8168338292878725,1.5504080691804163

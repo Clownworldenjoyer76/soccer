@@ -1,0 +1,200 @@
+A band is simply a range of win probabilities.
+
+For example:
+	•	0.20–0.25 band = outcomes priced around 20–25% win probability
+	•	0.60–0.65 band = outcomes priced around 60–65%
+
+It’s just grouping bets by similar probability so you can measure how they actually performed and adjust juice accordingly.
+
+Extra juice means the extra safety cushion you add to your win probability before you decide to bet.
+
+It represents how much outcomes in that probability range have historically underperformed.
+
+juice:
+If bets in the 25% range actually only win 20% of the time, the extra juice is 5%.
+So when your model says 25%, you treat it like 20% before pricing the bet.
+
+In simple terms:
+
+Extra juice = how much you downgrade your probability to stay safe.
+
+########
+Good. Let’s make this very simple.
+
+You already have:
+	•	p_model → your model’s win probability
+	•	extra_juice → the safety adjustment from the band
+	•	Sportsbook decimal odds
+
+Here is exactly how you implement it.
+
+⸻
+
+Step 1 — Get Your Model Probability
+
+Example:
+
+p_model = 0.27
+
+
+⸻
+
+Step 2 — Find the Band
+
+If your config says:
+
+0.25–0.30 band
+extra_juice = 0.03
+
+That means outcomes in this range historically underperform by 3%.
+
+⸻
+
+Step 3 — Adjust the Probability
+
+Subtract the extra juice:
+
+p_adjusted = p_model - extra_juice
+
+So:
+
+p_adjusted = 0.27 - 0.03 = 0.24
+
+You now treat this as a 24% bet, not 27%.
+
+⸻
+
+Step 4 — Convert to Acceptable Odds
+
+acceptable_decimal = 1 / p_adjusted
+
+So:
+
+1 / 0.24 = 4.17
+
+That means:
+
+You only bet if the sportsbook offers odds higher than 4.17.
+
+⸻
+
+Step 5 — Compare to Market
+
+If sportsbook offers:
+
+4.40 → BET
+3.90 → NO BET
+
+
+⸻
+
+That’s It
+
+You are not modifying the sportsbook odds.
+
+You are modifying your required probability threshold before betting.
+
+⸻
+
+In one sentence:
+
+Extra juice lowers your probability before you convert it to acceptable odds.
+
+⸻
+
+If you want, I can show the exact 3-line formula to drop into your engine.
+______________
+Good. Let’s apply this directly to your real input.
+
+You have:
+
+Win: 73.7%
+Draw: 10.7%
+Away: 15.6%
+
+Convert to decimals:
+
+p_home = 0.737
+p_draw = 0.107
+p_away = 0.156
+
+
+⸻
+
+Step 1 — Find the Band
+
+For home:
+
+p_home = 0.737
+
+That falls into the 0.70–0.75 band (for example).
+
+Assume your config says:
+
+side = home
+band = 0.70–0.75
+extra_juice = 0.02
+
+
+⸻
+
+Step 2 — Adjust Probability
+
+Subtract the extra juice:
+
+p_home_adjusted = 0.737 - 0.02
+                 = 0.717
+
+You now treat Newcastle as a 71.7% team — not 73.7%.
+
+⸻
+
+Step 3 — Convert to Acceptable Odds
+
+acceptable_decimal = 1 / 0.717
+                   = 1.39
+
+That means:
+
+You only bet Newcastle if the sportsbook offers greater than 1.39.
+
+⸻
+
+Same Logic For Draw
+
+If draw band says:
+
+extra_juice = 0.04
+
+Then:
+
+p_draw_adjusted = 0.107 - 0.04 = 0.067
+acceptable_decimal = 1 / 0.067 = 14.93
+
+You now demand 14.93 before betting draw.
+
+⸻
+
+The Entire Logic In One Block
+
+For each outcome:
+
+1. Take model probability
+2. Look up band
+3. Subtract extra_juice
+4. acceptable_odds = 1 / adjusted_probability
+5. Bet only if sportsbook_odds > acceptable_odds
+
+That is it.
+
+⸻
+
+You are not modifying the sportsbook price.
+You are raising your required threshold.
+
+⸻
+
+If you want, I can now show you:
+
+• Why subtraction is correct (and when to add instead)
+• Or how to integrate this cleanly into your existing edge pipeline

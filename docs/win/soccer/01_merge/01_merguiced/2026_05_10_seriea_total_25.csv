@@ -1,0 +1,6 @@
+game_id,sport,league,match_date,match_time,home_team,away_team,home_prob,draw_prob,away_prob,home_xg,away_xg,expected_total_goals,dk_over25_decimal,dk_under25_decimal,fair_over_decimal,fair_under_decimal
+61061663,soccer,seriea,2026_05_10,06:30 AM,Verona,Como,0.139,0.227,0.634,0.68,1.76,2.44,1.9,1.86,2.2690851417911544,1.787969196919779
+61061649,soccer,seriea,2026_05_10,09:00 AM,Fiorentina,Genoa,0.484,0.247,0.269,1.62,1.14,2.76,2.1,1.74,1.9195432520006037,2.0874964258879074
+61061647,soccer,seriea,2026_05_10,09:00 AM,Cremonese,Pisa,0.555,0.249,0.196,1.61,0.84,2.45,,,2.2558163399686344,1.796294783061173
+61061659,soccer,seriea,2026_05_10,12:00 PM,Parma,Roma,0.171,0.22,0.608,0.88,1.88,2.76,2.0,1.8,1.9195432520006037,2.0874964258879074
+61061655,soccer,seriea,2026_05_10,02:45 PM,Milan,Atalanta,0.494,0.237,0.27,1.73,1.22,2.95,1.8,1.95,1.7682996414153982,2.3015755131132853

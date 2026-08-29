@@ -1,0 +1,4 @@
+sport,league,game_id,game_date,match_time,home_team,away_team,home_score,away_score
+soccer,laliga,61624650.0,2026_05_12,03:30 PM,Osasuna,Atletico Madrid,1,2
+soccer,laliga,,2026_05_12,02:00 PM,Real Betis,Elche,2,1
+soccer,laliga,,2026_05_12,01:00 PM,Celta Vigo,Levante,2,3

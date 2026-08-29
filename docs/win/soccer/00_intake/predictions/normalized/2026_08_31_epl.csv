@@ -1,0 +1,2 @@
+sport,league,game_id,match_date,match_time,home_team,away_team,home_prob,draw_prob,away_prob,home_xg,away_xg,expected_total_goals
+soccer,epl,,2026_08_31,03:00 PM,Aston Villa,Arsenal,0.156,0.224,0.62,0.78,1.82,2.60

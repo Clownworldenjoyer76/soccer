@@ -1,0 +1,6 @@
+sport,league,match_date,match_time,home_team,away_team,home_prob,draw_prob,away_prob,home_xg,away_xg,expected_total_goals
+soccer,bundesliga,2026_05_09,09:30 AM,VfB Stuttgart,Leverkusen,43.9%,25.4%,30.6%,1.50,1.21,2.71
+soccer,bundesliga,2026_05_09,09:30 AM,Hoffenheim,Werder Bremen,64.3%,19.6%,16.1%,2.17,0.98,3.15
+soccer,bundesliga,2026_05_09,09:30 AM,RB Leipzig,St Pauli,73.9%,15.1%,10.9%,2.68,0.95,3.63
+soccer,bundesliga,2026_05_09,09:30 AM,Augsburg,Borussia Monchengladbach,46.1%,24.0%,29.8%,1.66,1.30,2.96
+soccer,bundesliga,2026_05_09,12:30 PM,Wolfsburg,Bayern Munich,21.6%,19.9%,58.5%,1.31,2.24,3.55

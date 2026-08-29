@@ -1,0 +1,6 @@
+sport,league,game_id,game_date,match_time,home_team,away_team,home_score,away_score
+soccer,bundesliga,,2026_04_11,12:30 PM,St Pauli,Bayern Munich,0,5
+soccer,bundesliga,,2026_04_11,09:30 AM,Wolfsburg,Eintracht Frankfurt,1,2
+soccer,bundesliga,,2026_04_11,09:30 AM,RB Leipzig,Borussia Monchengladbach,1,0
+soccer,bundesliga,,2026_04_11,09:30 AM,Borussia Dortmund,Leverkusen,0,1
+soccer,bundesliga,,2026_04_11,09:30 AM,Heidenheim,Union Berlin,3,1
