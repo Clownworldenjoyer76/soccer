@@ -1,0 +1,4 @@
+game_id,sport,league,match_date,match_time,home_team,away_team,home_prob,draw_prob,away_prob,home_xg,away_xg,expected_total_goals,dk_over35_decimal,dk_under35_decimal,engine_lambda_home,engine_lambda_away,fair_over_decimal,fair_under_decimal,engine_over_prob,engine_under_prob
+401876480,soccer,ligue1,2026_08_30,02:45 PM,Monaco,Marseille,0.384,0.241,0.375,1.54,1.51,3.05,,,1.54,1.51,2.7474893122514654,1.5722495656992614,0.3639686587827114,0.6360313412172881
+401876479,soccer,ligue1,2026_08_30,09:00 AM,Paris FC,Nice,0.45,0.288,0.262,1.26,0.9,2.16,,,1.26,0.9,5.785689163492645,1.2089563207799716,0.17284025666465813,0.8271597433353415
+401876478,soccer,ligue1,2026_08_30,11:15 AM,Rennes,Le Mans,0.668,0.193,0.139,2.14,0.87,3.01,2.25,1.65,2.14,0.87,2.816833829287896,1.550408069180409,0.3550085168683177,0.6449914831316824

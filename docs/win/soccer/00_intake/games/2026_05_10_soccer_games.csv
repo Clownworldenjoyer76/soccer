@@ -1,0 +1,28 @@
+game_id,sport,league,match_date,match_time,home_team,away_team
+61514186,soccer,bundesliga,2026_05_10,01:30 PM,Mainz,Union Berlin
+61514200,soccer,bundesliga,2026_05_10,09:30 AM,Hamburg,Freiburg
+61514198,soccer,bundesliga,2026_05_10,11:30 AM,Koln,Heidenheim
+61301227,soccer,epl,2026_05_10,09:00 AM,Burnley,Aston Villa
+61301229,soccer,epl,2026_05_10,09:00 AM,Crystal Palace,Everton
+61301237,soccer,epl,2026_05_10,09:00 AM,Nottingham Forest,Newcastle
+61301245,soccer,epl,2026_05_10,11:30 AM,West Ham,Arsenal
+61624622,soccer,laliga,2026_05_10,03:00 PM,Barcelona,Real Madrid
+61624626,soccer,laliga,2026_05_10,08:00 AM,Mallorca,Villarreal
+61624618,soccer,laliga,2026_05_10,10:15 AM,Athletic Club,Valencia
+61624634,soccer,laliga,2026_05_10,12:30 PM,Real Oviedo,Getafe
+61526588,soccer,ligue1,2026_05_10,03:00 PM,Angers,Strasbourg
+61526578,soccer,ligue1,2026_05_10,03:00 PM,Auxerre,Nice
+61526572,soccer,ligue1,2026_05_10,03:00 PM,Le Havre,Marseille
+61526586,soccer,ligue1,2026_05_10,03:00 PM,Metz,Lorient
+61526590,soccer,ligue1,2026_05_10,03:00 PM,Monaco,Lille
+61526570,soccer,ligue1,2026_05_10,03:00 PM,Paris Saint Germain,Stade Brest
+61526584,soccer,ligue1,2026_05_10,03:00 PM,Rennes,Paris FC
+61526574,soccer,ligue1,2026_05_10,03:00 PM,Toulouse,Lyon
+66299142,soccer,mls,2026_05_10,04:30 PM,New York City FC,Columbus Crew
+66299144,soccer,mls,2026_05_10,07:00 PM,Minnesota United,Austin FC
+66299146,soccer,mls,2026_05_10,09:00 PM,Los Angeles FC,Houston Dynamo
+61061655,soccer,seriea,2026_05_10,02:45 PM,Milan,Atalanta
+61061663,soccer,seriea,2026_05_10,06:30 AM,Verona,Como
+61061647,soccer,seriea,2026_05_10,09:00 AM,Cremonese,Pisa
+61061649,soccer,seriea,2026_05_10,09:00 AM,Fiorentina,Genoa
+61061659,soccer,seriea,2026_05_10,12:00 PM,Parma,Roma

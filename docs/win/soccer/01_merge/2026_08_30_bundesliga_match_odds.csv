@@ -1,0 +1,3 @@
+game_id,sport,league,match_date,match_time,home_team,away_team,home_prob,draw_prob,away_prob,home_xg,away_xg,expected_total_goals,dk_home_decimal,dk_draw_decimal,dk_away_decimal
+401884814,soccer,bundesliga,2026_08_30,09:30 AM,Freiburg,Werder Bremen,0.487,0.245,0.268,1.63,1.15,2.78,1.77,3.65,4.20
+401884813,soccer,bundesliga,2026_08_30,11:30 AM,Augsburg,Schalke,0.479,0.209,0.312,2.10,1.67,3.77,2.20,3.40,2.95

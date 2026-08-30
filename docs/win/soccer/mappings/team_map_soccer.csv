@@ -62,9 +62,9 @@ epl,Fulham FC,Fulham
 epl,Liverpool FC,Liverpool
 laliga,CA Osasuna,Osasuna
 laliga,RC Celta de Vigo,Celta Vigo
-laliga,Real Bs Seville,Real Betis Seville
-laliga,Real Betis Seville,Real Betis Seville
-laliga,Real Bs,Real Betis Seville
+laliga,Real Bs Seville,Real Betis
+laliga,Real Betis Seville,Real Betis
+laliga,Real Bs,Real Betis
 laliga,Real Sociedad San Sebastian,Real Sociedad
 ligue1,FC Metz,Metz
 ligue1,Olympique Lyon,Lyon
@@ -318,3 +318,12 @@ mls,Saint Louis City SC,St Louis City
 mls,Vancouver Whitecaps FC,Vancouver Whitecaps
 mls,Inter Miami,Inter Miami
 mls,LA Galaxy,LA Galaxy
+bundesliga,1. FC Union Berlin,Union Berlin
+bundesliga,FC Cologne,Koln
+bundesliga,Hamburg SV,Hamburg
+bundesliga,SV Elversberg,Elversberg
+laliga,Deportivo,Deportivo De La Coruna
+laliga,La Coruna,Deportivo De La Coruna
+laliga,Málaga,Malaga
+laliga,Racing Sant,Santander
+seriea,Internazionale,Inter Milan

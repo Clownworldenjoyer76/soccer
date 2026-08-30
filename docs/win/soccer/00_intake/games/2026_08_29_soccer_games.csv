@@ -1,0 +1,42 @@
+game_id,sport,league,match_date,match_time,home_team,away_team
+401884809,soccer,bundesliga,2026_08_29,09:30 AM,Elversberg,Leverkusen
+72513164,soccer,bundesliga,2026_08_29,09:30 AM,Elversberg,Leverkusen
+401884810,soccer,bundesliga,2026_08_29,09:30 AM,Koln,Hoffenheim
+72513162,soccer,bundesliga,2026_08_29,09:30 AM,Koln,Hoffenheim
+401884812,soccer,bundesliga,2026_08_29,09:30 AM,Mainz,Paderborn
+72513158,soccer,bundesliga,2026_08_29,09:30 AM,Mainz,Paderborn
+401884815,soccer,bundesliga,2026_08_29,09:30 AM,RB Leipzig,Borussia Monchengladbach
+72513152,soccer,bundesliga,2026_08_29,09:30 AM,RB Leipzig,Borussia Monchengladbach
+401884811,soccer,bundesliga,2026_08_29,09:30 AM,Union Berlin,Eintracht Frankfurt
+72513160,soccer,bundesliga,2026_08_29,09:30 AM,Union Berlin,Eintracht Frankfurt
+401884816,soccer,bundesliga,2026_08_29,12:30 PM,Borussia Dortmund,Hamburg
+72513150,soccer,bundesliga,2026_08_29,12:30 PM,Borussia Dortmund,Hamburg
+401879314,soccer,epl,2026_08_29,07:30 AM,Liverpool,Nottingham Forest
+401879296,soccer,epl,2026_08_29,10:00 AM,Bournemouth,Everton
+401879316,soccer,epl,2026_08_29,10:00 AM,Coventry,Hull
+401879312,soccer,epl,2026_08_29,12:30 PM,Tottenham Hotspur,Newcastle
+401882898,soccer,laliga,2026_08_29,01:00 PM,Real Sociedad,Espanyol
+401882897,soccer,laliga,2026_08_29,03:30 PM,Sevilla,Atletico Madrid
+401882902,soccer,laliga,2026_08_29,11:00 AM,Levante,Real Betis
+401876484,soccer,ligue1,2026_08_29,02:45 PM,Auxerre,Angers
+401876482,soccer,ligue1,2026_08_29,02:45 PM,Lorient,Troyes
+401876481,soccer,ligue1,2026_08_29,02:45 PM,Lyon,Le Havre
+401876483,soccer,ligue1,2026_08_29,02:45 PM,Stade Brest,Toulouse
+401876477,soccer,ligue1,2026_08_29,11:15 AM,Strasbourg,Lens
+761755,soccer,mls,2026_08_29,04:30 PM,Seattle Sounders,Chicago Fire
+761759,soccer,mls,2026_08_29,07:30 PM,Atlanta United,Charlotte FC
+761756,soccer,mls,2026_08_29,07:30 PM,DC United,Los Angeles FC
+761757,soccer,mls,2026_08_29,07:30 PM,Inter Miami,CF Montreal
+761761,soccer,mls,2026_08_29,07:30 PM,New York Red Bulls,Philadelphia Union
+761760,soccer,mls,2026_08_29,07:30 PM,Toronto FC,New York City FC
+761765,soccer,mls,2026_08_29,08:30 PM,Houston Dynamo,San Jose Earthquakes
+761763,soccer,mls,2026_08_29,08:30 PM,Minnesota United,Orlando City
+761764,soccer,mls,2026_08_29,08:30 PM,Nashville SC,FC Cincinnati
+761762,soccer,mls,2026_08_29,08:30 PM,Sporting Kansas City,Vancouver Whitecaps
+761766,soccer,mls,2026_08_29,09:30 PM,Colorado Rapids,Real Salt Lake
+761768,soccer,mls,2026_08_29,10:30 PM,Portland Timbers,Austin FC
+761767,soccer,mls,2026_08_29,10:30 PM,San Diego FC,LA Galaxy
+401874746,soccer,seriea,2026_08_29,02:45 PM,Juventus,Parma
+401874942,soccer,seriea,2026_08_29,12:30 PM,Fiorentina,Frosinone
+401874749,soccer,seriea,2026_08_29,12:30 PM,Monza,Udinese
+401874743,soccer,seriea,2026_08_29,12:30 PM,Sassuolo,Torino

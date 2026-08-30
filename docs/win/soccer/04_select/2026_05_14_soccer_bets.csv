@@ -1,0 +1,4 @@
+game_id,sport,league,match_date,match_time,home_team,away_team,market,side,odds,american_odds,ev,kelly,model_prob,edge
+61624646,soccer,laliga,2026_05_14,02:00 PM,Girona,Real Sociedad,btts,no,2.25,125,0.2187561767078131,0.1750049413662505,0.5416694118701392,0.218756176707813
+61624646,soccer,laliga,2026_05_14,02:00 PM,Girona,Real Sociedad,match_odds,draw,3.7,270,0.0804,0.0297777777777777,0.3180457168409948,0.0793914783240932
+61624656,soccer,laliga,2026_05_14,03:30 PM,Real Madrid,Real Oviedo,match_odds,home,1.27,-370,0.08331,0.3085555555555555,0.8458883798254346,0.0860326004672689

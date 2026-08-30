@@ -1,636 +1,627 @@
-[2026-08-30T10:36:50.825648] === START 01_soccer_add_game_id.py 2026-08-30T10:36:50.825505 ===
-[2026-08-30T10:36:50.833311] Dirty final score files found: 224
-[2026-08-30T10:36:50.833633] PROCESSING | score_file=docs\win\soccer\05_final_scores\results\final_scores_dirty\BUNDESLIGA\2026_03_01_BUNDESLIGA.csv | select_file=docs\win\soccer\04_select\2026_03_01_soccer_bets.csv
-[2026-08-30T10:36:50.839513] PROCESSING | score_file=docs\win\soccer\05_final_scores\results\final_scores_dirty\BUNDESLIGA\2026_03_04_BUNDESLIGA.csv | select_file=docs\win\soccer\04_select\2026_03_04_soccer_bets.csv
-[2026-08-30T10:36:50.841685] PROCESSING | score_file=docs\win\soccer\05_final_scores\results\final_scores_dirty\BUNDESLIGA\2026_03_06_BUNDESLIGA.csv | select_file=docs\win\soccer\04_select\2026_03_06_soccer_bets.csv
-[2026-08-30T10:36:50.843687] PROCESSING | score_file=docs\win\soccer\05_final_scores\results\final_scores_dirty\BUNDESLIGA\2026_03_07_BUNDESLIGA.csv | select_file=docs\win\soccer\04_select\2026_03_07_soccer_bets.csv
-[2026-08-30T10:36:50.845727] PROCESSING | score_file=docs\win\soccer\05_final_scores\results\final_scores_dirty\BUNDESLIGA\2026_03_08_BUNDESLIGA.csv | select_file=docs\win\soccer\04_select\2026_03_08_soccer_bets.csv
-[2026-08-30T10:36:50.847738] PROCESSING | score_file=docs\win\soccer\05_final_scores\results\final_scores_dirty\BUNDESLIGA\2026_03_13_BUNDESLIGA.csv | select_file=docs\win\soccer\04_select\2026_03_13_soccer_bets.csv
-[2026-08-30T10:36:50.849751] PROCESSING | score_file=docs\win\soccer\05_final_scores\results\final_scores_dirty\BUNDESLIGA\2026_03_14_BUNDESLIGA.csv | select_file=docs\win\soccer\04_select\2026_03_14_soccer_bets.csv
-[2026-08-30T10:36:50.851744] PROCESSING | score_file=docs\win\soccer\05_final_scores\results\final_scores_dirty\BUNDESLIGA\2026_03_15_BUNDESLIGA.csv | select_file=docs\win\soccer\04_select\2026_03_15_soccer_bets.csv
-[2026-08-30T10:36:50.853731] PROCESSING | score_file=docs\win\soccer\05_final_scores\results\final_scores_dirty\BUNDESLIGA\2026_03_20_BUNDESLIGA.csv | select_file=docs\win\soccer\04_select\2026_03_20_soccer_bets.csv
-[2026-08-30T10:36:50.855691] PROCESSING | score_file=docs\win\soccer\05_final_scores\results\final_scores_dirty\BUNDESLIGA\2026_03_21_BUNDESLIGA.csv | select_file=docs\win\soccer\04_select\2026_03_21_soccer_bets.csv
-[2026-08-30T10:36:50.857685] PROCESSING | score_file=docs\win\soccer\05_final_scores\results\final_scores_dirty\BUNDESLIGA\2026_03_22_BUNDESLIGA.csv | select_file=docs\win\soccer\04_select\2026_03_22_soccer_bets.csv
-[2026-08-30T10:36:50.859671] PROCESSING | score_file=docs\win\soccer\05_final_scores\results\final_scores_dirty\BUNDESLIGA\2026_04_04_BUNDESLIGA.csv | select_file=docs\win\soccer\04_select\2026_04_04_soccer_bets.csv
-[2026-08-30T10:36:50.861680] PROCESSING | score_file=docs\win\soccer\05_final_scores\results\final_scores_dirty\BUNDESLIGA\2026_04_05_BUNDESLIGA.csv | select_file=docs\win\soccer\04_select\2026_04_05_soccer_bets.csv
-[2026-08-30T10:36:50.863692] PROCESSING | score_file=docs\win\soccer\05_final_scores\results\final_scores_dirty\BUNDESLIGA\2026_04_10_BUNDESLIGA.csv | select_file=docs\win\soccer\04_select\2026_04_10_soccer_bets.csv
-[2026-08-30T10:36:50.881224] GAME_ID MAP | 2026_04_10_soccer_bets.csv | raw_rows=7 unique_games=4
-[2026-08-30T10:36:50.893021] MATCH RESULT | 2026_04_10_BUNDESLIGA.csv | rows=1 attached=0 missing=1
-[2026-08-30T10:36:50.901437] WROTE | docs\win\soccer\05_final_scores\results\final_scores\BUNDESLIGA\2026_04_10_BUNDESLIGA.csv
-[2026-08-30T10:36:50.901769] PROCESSING | score_file=docs\win\soccer\05_final_scores\results\final_scores_dirty\BUNDESLIGA\2026_04_11_BUNDESLIGA.csv | select_file=docs\win\soccer\04_select\2026_04_11_soccer_bets.csv
-[2026-08-30T10:36:50.912933] GAME_ID MAP | 2026_04_11_soccer_bets.csv | raw_rows=10 unique_games=9
-[2026-08-30T10:36:50.918062] MATCH RESULT | 2026_04_11_BUNDESLIGA.csv | rows=5 attached=0 missing=5
-[2026-08-30T10:36:50.923570] WROTE | docs\win\soccer\05_final_scores\results\final_scores\BUNDESLIGA\2026_04_11_BUNDESLIGA.csv
-[2026-08-30T10:36:50.923885] PROCESSING | score_file=docs\win\soccer\05_final_scores\results\final_scores_dirty\BUNDESLIGA\2026_04_12_BUNDESLIGA.csv | select_file=docs\win\soccer\04_select\2026_04_12_soccer_bets.csv
-[2026-08-30T10:36:50.934840] GAME_ID MAP | 2026_04_12_soccer_bets.csv | raw_rows=19 unique_games=13
-[2026-08-30T10:36:50.941282] MATCH RESULT | 2026_04_12_BUNDESLIGA.csv | rows=3 attached=2 missing=1
-[2026-08-30T10:36:50.947200] WROTE | docs\win\soccer\05_final_scores\results\final_scores\BUNDESLIGA\2026_04_12_BUNDESLIGA.csv
-[2026-08-30T10:36:50.947513] PROCESSING | score_file=docs\win\soccer\05_final_scores\results\final_scores_dirty\BUNDESLIGA\2026_04_17_BUNDESLIGA.csv | select_file=docs\win\soccer\04_select\2026_04_17_soccer_bets.csv
-[2026-08-30T10:36:50.958188] GAME_ID MAP | 2026_04_17_soccer_bets.csv | raw_rows=7 unique_games=4
-[2026-08-30T10:36:50.963064] MATCH RESULT | 2026_04_17_BUNDESLIGA.csv | rows=1 attached=1 missing=0
-[2026-08-30T10:36:50.965371] WROTE | docs\win\soccer\05_final_scores\results\final_scores\BUNDESLIGA\2026_04_17_BUNDESLIGA.csv
-[2026-08-30T10:36:50.965736] PROCESSING | score_file=docs\win\soccer\05_final_scores\results\final_scores_dirty\BUNDESLIGA\2026_04_18_BUNDESLIGA.csv | select_file=docs\win\soccer\04_select\2026_04_18_soccer_bets.csv
-[2026-08-30T10:36:50.976448] GAME_ID MAP | 2026_04_18_soccer_bets.csv | raw_rows=23 unique_games=17
-[2026-08-30T10:36:50.981380] MATCH RESULT | 2026_04_18_BUNDESLIGA.csv | rows=5 attached=2 missing=3
-[2026-08-30T10:36:50.986930] WROTE | docs\win\soccer\05_final_scores\results\final_scores\BUNDESLIGA\2026_04_18_BUNDESLIGA.csv
-[2026-08-30T10:36:50.987242] PROCESSING | score_file=docs\win\soccer\05_final_scores\results\final_scores_dirty\BUNDESLIGA\2026_04_19_BUNDESLIGA.csv | select_file=docs\win\soccer\04_select\2026_04_19_soccer_bets.csv
-[2026-08-30T10:36:50.997873] GAME_ID MAP | 2026_04_19_soccer_bets.csv | raw_rows=13 unique_games=8
-[2026-08-30T10:36:51.002851] MATCH RESULT | 2026_04_19_BUNDESLIGA.csv | rows=3 attached=2 missing=1
-[2026-08-30T10:36:51.008513] WROTE | docs\win\soccer\05_final_scores\results\final_scores\BUNDESLIGA\2026_04_19_BUNDESLIGA.csv
-[2026-08-30T10:36:51.008825] PROCESSING | score_file=docs\win\soccer\05_final_scores\results\final_scores_dirty\BUNDESLIGA\2026_04_24_BUNDESLIGA.csv | select_file=docs\win\soccer\04_select\2026_04_24_soccer_bets.csv
-[2026-08-30T10:36:51.019389] GAME_ID MAP | 2026_04_24_soccer_bets.csv | raw_rows=8 unique_games=4
-[2026-08-30T10:36:51.024314] MATCH RESULT | 2026_04_24_BUNDESLIGA.csv | rows=1 attached=1 missing=0
-[2026-08-30T10:36:51.026636] WROTE | docs\win\soccer\05_final_scores\results\final_scores\BUNDESLIGA\2026_04_24_BUNDESLIGA.csv
-[2026-08-30T10:36:51.026956] PROCESSING | score_file=docs\win\soccer\05_final_scores\results\final_scores_dirty\BUNDESLIGA\2026_04_25_BUNDESLIGA.csv | select_file=docs\win\soccer\04_select\2026_04_25_soccer_bets.csv
-[2026-08-30T10:36:51.037577] GAME_ID MAP | 2026_04_25_soccer_bets.csv | raw_rows=25 unique_games=21
-[2026-08-30T10:36:51.042471] MATCH RESULT | 2026_04_25_BUNDESLIGA.csv | rows=6 attached=0 missing=6
-[2026-08-30T10:36:51.047627] WROTE | docs\win\soccer\05_final_scores\results\final_scores\BUNDESLIGA\2026_04_25_BUNDESLIGA.csv
-[2026-08-30T10:36:51.047936] PROCESSING | score_file=docs\win\soccer\05_final_scores\results\final_scores_dirty\BUNDESLIGA\2026_04_26_BUNDESLIGA.csv | select_file=docs\win\soccer\04_select\2026_04_26_soccer_bets.csv
-[2026-08-30T10:36:51.058875] GAME_ID MAP | 2026_04_26_soccer_bets.csv | raw_rows=8 unique_games=6
-[2026-08-30T10:36:51.063791] MATCH RESULT | 2026_04_26_BUNDESLIGA.csv | rows=2 attached=1 missing=1
-[2026-08-30T10:36:51.069504] WROTE | docs\win\soccer\05_final_scores\results\final_scores\BUNDESLIGA\2026_04_26_BUNDESLIGA.csv
-[2026-08-30T10:36:51.069836] PROCESSING | score_file=docs\win\soccer\05_final_scores\results\final_scores_dirty\BUNDESLIGA\2026_05_02_BUNDESLIGA.csv | select_file=docs\win\soccer\04_select\2026_05_02_soccer_bets.csv
-[2026-08-30T10:36:51.080285] GAME_ID MAP | 2026_05_02_soccer_bets.csv | raw_rows=17 unique_games=13
-[2026-08-30T10:36:51.085147] MATCH RESULT | 2026_05_02_BUNDESLIGA.csv | rows=6 attached=0 missing=6
-[2026-08-30T10:36:51.090442] WROTE | docs\win\soccer\05_final_scores\results\final_scores\BUNDESLIGA\2026_05_02_BUNDESLIGA.csv
-[2026-08-30T10:36:51.090754] PROCESSING | score_file=docs\win\soccer\05_final_scores\results\final_scores_dirty\BUNDESLIGA\2026_05_03_BUNDESLIGA.csv | select_file=docs\win\soccer\04_select\2026_05_03_soccer_bets.csv
-[2026-08-30T10:36:51.100704] GAME_ID MAP | 2026_05_03_soccer_bets.csv | raw_rows=2 unique_games=2
-[2026-08-30T10:36:51.105564] MATCH RESULT | 2026_05_03_BUNDESLIGA.csv | rows=3 attached=0 missing=3
-[2026-08-30T10:36:51.110598] WROTE | docs\win\soccer\05_final_scores\results\final_scores\BUNDESLIGA\2026_05_03_BUNDESLIGA.csv
-[2026-08-30T10:36:51.110906] PROCESSING | score_file=docs\win\soccer\05_final_scores\results\final_scores_dirty\BUNDESLIGA\2026_05_08_BUNDESLIGA.csv | select_file=docs\win\soccer\04_select\2026_05_08_soccer_bets.csv
-[2026-08-30T10:36:51.121860] GAME_ID MAP | 2026_05_08_soccer_bets.csv | raw_rows=2 unique_games=1
-[2026-08-30T10:36:51.126773] MATCH RESULT | 2026_05_08_BUNDESLIGA.csv | rows=1 attached=0 missing=1
-[2026-08-30T10:36:51.131901] WROTE | docs\win\soccer\05_final_scores\results\final_scores\BUNDESLIGA\2026_05_08_BUNDESLIGA.csv
-[2026-08-30T10:36:51.132237] PROCESSING | score_file=docs\win\soccer\05_final_scores\results\final_scores_dirty\BUNDESLIGA\2026_05_09_BUNDESLIGA.csv | select_file=docs\win\soccer\04_select\2026_05_09_soccer_bets.csv
-[2026-08-30T10:36:51.142785] GAME_ID MAP | 2026_05_09_soccer_bets.csv | raw_rows=18 unique_games=13
-[2026-08-30T10:36:51.147669] MATCH RESULT | 2026_05_09_BUNDESLIGA.csv | rows=5 attached=4 missing=1
-[2026-08-30T10:36:51.153140] WROTE | docs\win\soccer\05_final_scores\results\final_scores\BUNDESLIGA\2026_05_09_BUNDESLIGA.csv
-[2026-08-30T10:36:51.153451] PROCESSING | score_file=docs\win\soccer\05_final_scores\results\final_scores_dirty\BUNDESLIGA\2026_05_10_BUNDESLIGA.csv | select_file=docs\win\soccer\04_select\2026_05_10_soccer_bets.csv
-[2026-08-30T10:36:51.163740] GAME_ID MAP | 2026_05_10_soccer_bets.csv | raw_rows=15 unique_games=13
-[2026-08-30T10:36:51.168754] MATCH RESULT | 2026_05_10_BUNDESLIGA.csv | rows=3 attached=0 missing=3
-[2026-08-30T10:36:51.174098] WROTE | docs\win\soccer\05_final_scores\results\final_scores\BUNDESLIGA\2026_05_10_BUNDESLIGA.csv
-[2026-08-30T10:36:51.174424] PROCESSING | score_file=docs\win\soccer\05_final_scores\results\final_scores_dirty\BUNDESLIGA\2026_05_16_BUNDESLIGA.csv | select_file=docs\win\soccer\04_select\2026_05_16_soccer_bets.csv
-[2026-08-30T10:36:51.186139] GAME_ID MAP | 2026_05_16_soccer_bets.csv | raw_rows=7 unique_games=6
-[2026-08-30T10:36:51.191176] MATCH RESULT | 2026_05_16_BUNDESLIGA.csv | rows=9 attached=5 missing=4
-[2026-08-30T10:36:51.196886] WROTE | docs\win\soccer\05_final_scores\results\final_scores\BUNDESLIGA\2026_05_16_BUNDESLIGA.csv
-[2026-08-30T10:36:51.197314] PROCESSING | score_file=docs\win\soccer\05_final_scores\results\final_scores_dirty\EPL\2026_03_04_EPL.csv | select_file=docs\win\soccer\04_select\2026_03_04_soccer_bets.csv
-[2026-08-30T10:36:51.199693] PROCESSING | score_file=docs\win\soccer\05_final_scores\results\final_scores_dirty\EPL\2026_03_05_EPL.csv | select_file=docs\win\soccer\04_select\2026_03_05_soccer_bets.csv
-[2026-08-30T10:36:51.201905] PROCESSING | score_file=docs\win\soccer\05_final_scores\results\final_scores_dirty\EPL\2026_03_14_EPL.csv | select_file=docs\win\soccer\04_select\2026_03_14_soccer_bets.csv
-[2026-08-30T10:36:51.204668] PROCESSING | score_file=docs\win\soccer\05_final_scores\results\final_scores_dirty\EPL\2026_03_15_EPL.csv | select_file=docs\win\soccer\04_select\2026_03_15_soccer_bets.csv
-[2026-08-30T10:36:51.207511] PROCESSING | score_file=docs\win\soccer\05_final_scores\results\final_scores_dirty\EPL\2026_03_16_EPL.csv | select_file=docs\win\soccer\04_select\2026_03_16_soccer_bets.csv
-[2026-08-30T10:36:51.209789] PROCESSING | score_file=docs\win\soccer\05_final_scores\results\final_scores_dirty\EPL\2026_03_20_EPL.csv | select_file=docs\win\soccer\04_select\2026_03_20_soccer_bets.csv
-[2026-08-30T10:36:51.211948] PROCESSING | score_file=docs\win\soccer\05_final_scores\results\final_scores_dirty\EPL\2026_03_21_EPL.csv | select_file=docs\win\soccer\04_select\2026_03_21_soccer_bets.csv
-[2026-08-30T10:36:51.214185] PROCESSING | score_file=docs\win\soccer\05_final_scores\results\final_scores_dirty\EPL\2026_03_22_EPL.csv | select_file=docs\win\soccer\04_select\2026_03_22_soccer_bets.csv
-[2026-08-30T10:36:51.216388] PROCESSING | score_file=docs\win\soccer\05_final_scores\results\final_scores_dirty\EPL\2026_04_10_EPL.csv | select_file=docs\win\soccer\04_select\2026_04_10_soccer_bets.csv
-[2026-08-30T10:36:51.227028] GAME_ID MAP | 2026_04_10_soccer_bets.csv | raw_rows=7 unique_games=4
-[2026-08-30T10:36:51.232959] MATCH RESULT | 2026_04_10_EPL.csv | rows=1 attached=1 missing=0
-[2026-08-30T10:36:51.235846] WROTE | docs\win\soccer\05_final_scores\results\final_scores\EPL\2026_04_10_EPL.csv
-[2026-08-30T10:36:51.236195] PROCESSING | score_file=docs\win\soccer\05_final_scores\results\final_scores_dirty\EPL\2026_04_11_EPL.csv | select_file=docs\win\soccer\04_select\2026_04_11_soccer_bets.csv
-[2026-08-30T10:36:51.247225] GAME_ID MAP | 2026_04_11_soccer_bets.csv | raw_rows=10 unique_games=9
-[2026-08-30T10:36:51.253130] MATCH RESULT | 2026_04_11_EPL.csv | rows=4 attached=0 missing=4
-[2026-08-30T10:36:51.259634] WROTE | docs\win\soccer\05_final_scores\results\final_scores\EPL\2026_04_11_EPL.csv
-[2026-08-30T10:36:51.260058] PROCESSING | score_file=docs\win\soccer\05_final_scores\results\final_scores_dirty\EPL\2026_04_12_EPL.csv | select_file=docs\win\soccer\04_select\2026_04_12_soccer_bets.csv
-[2026-08-30T10:36:51.271846] GAME_ID MAP | 2026_04_12_soccer_bets.csv | raw_rows=19 unique_games=13
-[2026-08-30T10:36:51.277785] MATCH RESULT | 2026_04_12_EPL.csv | rows=4 attached=4 missing=0
-[2026-08-30T10:36:51.280271] WROTE | docs\win\soccer\05_final_scores\results\final_scores\EPL\2026_04_12_EPL.csv
-[2026-08-30T10:36:51.280604] PROCESSING | score_file=docs\win\soccer\05_final_scores\results\final_scores_dirty\EPL\2026_04_13_EPL.csv | select_file=docs\win\soccer\04_select\2026_04_13_soccer_bets.csv
-[2026-08-30T10:36:51.282770] PROCESSING | score_file=docs\win\soccer\05_final_scores\results\final_scores_dirty\EPL\2026_04_18_EPL.csv | select_file=docs\win\soccer\04_select\2026_04_18_soccer_bets.csv
-[2026-08-30T10:36:51.294019] GAME_ID MAP | 2026_04_18_soccer_bets.csv | raw_rows=23 unique_games=17
-[2026-08-30T10:36:51.299108] MATCH RESULT | 2026_04_18_EPL.csv | rows=5 attached=5 missing=0
-[2026-08-30T10:36:51.301893] WROTE | docs\win\soccer\05_final_scores\results\final_scores\EPL\2026_04_18_EPL.csv
-[2026-08-30T10:36:51.302196] PROCESSING | score_file=docs\win\soccer\05_final_scores\results\final_scores_dirty\EPL\2026_04_19_EPL.csv | select_file=docs\win\soccer\04_select\2026_04_19_soccer_bets.csv
-[2026-08-30T10:36:51.312452] GAME_ID MAP | 2026_04_19_soccer_bets.csv | raw_rows=13 unique_games=8
-[2026-08-30T10:36:51.317472] MATCH RESULT | 2026_04_19_EPL.csv | rows=4 attached=1 missing=3
-[2026-08-30T10:36:51.322972] WROTE | docs\win\soccer\05_final_scores\results\final_scores\EPL\2026_04_19_EPL.csv
-[2026-08-30T10:36:51.323281] PROCESSING | score_file=docs\win\soccer\05_final_scores\results\final_scores_dirty\EPL\2026_04_20_EPL.csv | select_file=docs\win\soccer\04_select\2026_04_20_soccer_bets.csv
-[2026-08-30T10:36:51.333544] GAME_ID MAP | 2026_04_20_soccer_bets.csv | raw_rows=2 unique_games=1
-[2026-08-30T10:36:51.338360] MATCH RESULT | 2026_04_20_EPL.csv | rows=1 attached=1 missing=0
-[2026-08-30T10:36:51.340638] WROTE | docs\win\soccer\05_final_scores\results\final_scores\EPL\2026_04_20_EPL.csv
-[2026-08-30T10:36:51.340948] PROCESSING | score_file=docs\win\soccer\05_final_scores\results\final_scores_dirty\EPL\2026_04_21_EPL.csv | select_file=docs\win\soccer\04_select\2026_04_21_soccer_bets.csv
-[2026-08-30T10:36:51.352671] GAME_ID MAP | 2026_04_21_soccer_bets.csv | raw_rows=3 unique_games=2
-[2026-08-30T10:36:51.358672] MATCH RESULT | 2026_04_21_EPL.csv | rows=1 attached=1 missing=0
-[2026-08-30T10:36:51.361018] WROTE | docs\win\soccer\05_final_scores\results\final_scores\EPL\2026_04_21_EPL.csv
-[2026-08-30T10:36:51.361331] PROCESSING | score_file=docs\win\soccer\05_final_scores\results\final_scores_dirty\EPL\2026_04_22_EPL.csv | select_file=docs\win\soccer\04_select\2026_04_22_soccer_bets.csv
-[2026-08-30T10:36:51.372203] GAME_ID MAP | 2026_04_22_soccer_bets.csv | raw_rows=17 unique_games=14
-[2026-08-30T10:36:51.377094] MATCH RESULT | 2026_04_22_EPL.csv | rows=2 attached=1 missing=1
-[2026-08-30T10:36:51.382872] WROTE | docs\win\soccer\05_final_scores\results\final_scores\EPL\2026_04_22_EPL.csv
-[2026-08-30T10:36:51.383193] PROCESSING | score_file=docs\win\soccer\05_final_scores\results\final_scores_dirty\EPL\2026_04_24_EPL.csv | select_file=docs\win\soccer\04_select\2026_04_24_soccer_bets.csv
-[2026-08-30T10:36:51.393427] GAME_ID MAP | 2026_04_24_soccer_bets.csv | raw_rows=8 unique_games=4
-[2026-08-30T10:36:51.398366] MATCH RESULT | 2026_04_24_EPL.csv | rows=1 attached=1 missing=0
-[2026-08-30T10:36:51.400698] WROTE | docs\win\soccer\05_final_scores\results\final_scores\EPL\2026_04_24_EPL.csv
-[2026-08-30T10:36:51.401007] PROCESSING | score_file=docs\win\soccer\05_final_scores\results\final_scores_dirty\EPL\2026_04_25_EPL.csv | select_file=docs\win\soccer\04_select\2026_04_25_soccer_bets.csv
-[2026-08-30T10:36:51.411210] GAME_ID MAP | 2026_04_25_soccer_bets.csv | raw_rows=25 unique_games=21
-[2026-08-30T10:36:51.416122] MATCH RESULT | 2026_04_25_EPL.csv | rows=5 attached=3 missing=2
-[2026-08-30T10:36:51.421662] WROTE | docs\win\soccer\05_final_scores\results\final_scores\EPL\2026_04_25_EPL.csv
-[2026-08-30T10:36:51.421981] PROCESSING | score_file=docs\win\soccer\05_final_scores\results\final_scores_dirty\EPL\2026_04_27_EPL.csv | select_file=docs\win\soccer\04_select\2026_04_27_soccer_bets.csv
-[2026-08-30T10:36:51.432296] GAME_ID MAP | 2026_04_27_soccer_bets.csv | raw_rows=5 unique_games=3
-[2026-08-30T10:36:51.437374] MATCH RESULT | 2026_04_27_EPL.csv | rows=1 attached=1 missing=0
-[2026-08-30T10:36:51.439681] WROTE | docs\win\soccer\05_final_scores\results\final_scores\EPL\2026_04_27_EPL.csv
-[2026-08-30T10:36:51.440023] PROCESSING | score_file=docs\win\soccer\05_final_scores\results\final_scores_dirty\EPL\2026_05_01_EPL.csv | select_file=docs\win\soccer\04_select\2026_05_01_soccer_bets.csv
-[2026-08-30T10:36:51.442081] PROCESSING | score_file=docs\win\soccer\05_final_scores\results\final_scores_dirty\EPL\2026_05_02_EPL.csv | select_file=docs\win\soccer\04_select\2026_05_02_soccer_bets.csv
-[2026-08-30T10:36:51.452332] GAME_ID MAP | 2026_05_02_soccer_bets.csv | raw_rows=17 unique_games=13
-[2026-08-30T10:36:51.457264] MATCH RESULT | 2026_05_02_EPL.csv | rows=4 attached=0 missing=4
-[2026-08-30T10:36:51.462633] WROTE | docs\win\soccer\05_final_scores\results\final_scores\EPL\2026_05_02_EPL.csv
-[2026-08-30T10:36:51.462937] PROCESSING | score_file=docs\win\soccer\05_final_scores\results\final_scores_dirty\EPL\2026_05_03_EPL.csv | select_file=docs\win\soccer\04_select\2026_05_03_soccer_bets.csv
-[2026-08-30T10:36:51.472898] GAME_ID MAP | 2026_05_03_soccer_bets.csv | raw_rows=2 unique_games=2
-[2026-08-30T10:36:51.477702] MATCH RESULT | 2026_05_03_EPL.csv | rows=3 attached=0 missing=3
-[2026-08-30T10:36:51.482937] WROTE | docs\win\soccer\05_final_scores\results\final_scores\EPL\2026_05_03_EPL.csv
-[2026-08-30T10:36:51.483251] PROCESSING | score_file=docs\win\soccer\05_final_scores\results\final_scores_dirty\EPL\2026_05_04_EPL.csv | select_file=docs\win\soccer\04_select\2026_05_04_soccer_bets.csv
-[2026-08-30T10:36:51.493553] GAME_ID MAP | 2026_05_04_soccer_bets.csv | raw_rows=12 unique_games=4
-[2026-08-30T10:36:51.498976] MATCH RESULT | 2026_05_04_EPL.csv | rows=2 attached=1 missing=1
-[2026-08-30T10:36:51.504731] WROTE | docs\win\soccer\05_final_scores\results\final_scores\EPL\2026_05_04_EPL.csv
-[2026-08-30T10:36:51.505046] PROCESSING | score_file=docs\win\soccer\05_final_scores\results\final_scores_dirty\EPL\2026_05_09_EPL.csv | select_file=docs\win\soccer\04_select\2026_05_09_soccer_bets.csv
-[2026-08-30T10:36:51.515186] GAME_ID MAP | 2026_05_09_soccer_bets.csv | raw_rows=18 unique_games=13
-[2026-08-30T10:36:51.520160] MATCH RESULT | 2026_05_09_EPL.csv | rows=5 attached=4 missing=1
-[2026-08-30T10:36:51.525760] WROTE | docs\win\soccer\05_final_scores\results\final_scores\EPL\2026_05_09_EPL.csv
-[2026-08-30T10:36:51.526092] PROCESSING | score_file=docs\win\soccer\05_final_scores\results\final_scores_dirty\EPL\2026_05_10_EPL.csv | select_file=docs\win\soccer\04_select\2026_05_10_soccer_bets.csv
-[2026-08-30T10:36:51.536318] GAME_ID MAP | 2026_05_10_soccer_bets.csv | raw_rows=15 unique_games=13
-[2026-08-30T10:36:51.541195] MATCH RESULT | 2026_05_10_EPL.csv | rows=4 attached=2 missing=2
-[2026-08-30T10:36:51.546566] WROTE | docs\win\soccer\05_final_scores\results\final_scores\EPL\2026_05_10_EPL.csv
-[2026-08-30T10:36:51.546876] PROCESSING | score_file=docs\win\soccer\05_final_scores\results\final_scores_dirty\EPL\2026_05_11_EPL.csv | select_file=docs\win\soccer\04_select\2026_05_11_soccer_bets.csv
-[2026-08-30T10:36:51.557014] GAME_ID MAP | 2026_05_11_soccer_bets.csv | raw_rows=2 unique_games=1
-[2026-08-30T10:36:51.561765] MATCH RESULT | 2026_05_11_EPL.csv | rows=1 attached=1 missing=0
-[2026-08-30T10:36:51.564004] WROTE | docs\win\soccer\05_final_scores\results\final_scores\EPL\2026_05_11_EPL.csv
-[2026-08-30T10:36:51.564318] PROCESSING | score_file=docs\win\soccer\05_final_scores\results\final_scores_dirty\EPL\2026_05_13_EPL.csv | select_file=docs\win\soccer\04_select\2026_05_13_soccer_bets.csv
-[2026-08-30T10:36:51.574679] GAME_ID MAP | 2026_05_13_soccer_bets.csv | raw_rows=4 unique_games=2
-[2026-08-30T10:36:51.579478] MATCH RESULT | 2026_05_13_EPL.csv | rows=1 attached=1 missing=0
-[2026-08-30T10:36:51.581975] WROTE | docs\win\soccer\05_final_scores\results\final_scores\EPL\2026_05_13_EPL.csv
-[2026-08-30T10:36:51.582280] PROCESSING | score_file=docs\win\soccer\05_final_scores\results\final_scores_dirty\EPL\2026_05_15_EPL.csv | select_file=docs\win\soccer\04_select\2026_05_15_soccer_bets.csv
-[2026-08-30T10:36:51.584373] PROCESSING | score_file=docs\win\soccer\05_final_scores\results\final_scores_dirty\EPL\2026_05_17_EPL.csv | select_file=docs\win\soccer\04_select\2026_05_17_soccer_bets.csv
-[2026-08-30T10:36:51.594701] GAME_ID MAP | 2026_05_17_soccer_bets.csv | raw_rows=19 unique_games=16
-[2026-08-30T10:36:51.600438] MATCH RESULT | 2026_05_17_EPL.csv | rows=6 attached=3 missing=3
-[2026-08-30T10:36:51.605984] WROTE | docs\win\soccer\05_final_scores\results\final_scores\EPL\2026_05_17_EPL.csv
-[2026-08-30T10:36:51.606291] PROCESSING | score_file=docs\win\soccer\05_final_scores\results\final_scores_dirty\EPL\2026_05_19_EPL.csv | select_file=docs\win\soccer\04_select\2026_05_19_soccer_bets.csv
-[2026-08-30T10:36:51.616841] GAME_ID MAP | 2026_05_19_soccer_bets.csv | raw_rows=4 unique_games=2
-[2026-08-30T10:36:51.621689] MATCH RESULT | 2026_05_19_EPL.csv | rows=2 attached=2 missing=0
-[2026-08-30T10:36:51.623955] WROTE | docs\win\soccer\05_final_scores\results\final_scores\EPL\2026_05_19_EPL.csv
-[2026-08-30T10:36:51.624259] PROCESSING | score_file=docs\win\soccer\05_final_scores\results\final_scores_dirty\EPL\2026_05_24_EPL.csv | select_file=docs\win\soccer\04_select\2026_05_24_soccer_bets.csv
-[2026-08-30T10:36:51.634796] GAME_ID MAP | 2026_05_24_soccer_bets.csv | raw_rows=21 unique_games=15
-[2026-08-30T10:36:51.639679] MATCH RESULT | 2026_05_24_EPL.csv | rows=10 attached=8 missing=2
-[2026-08-30T10:36:51.645331] WROTE | docs\win\soccer\05_final_scores\results\final_scores\EPL\2026_05_24_EPL.csv
-[2026-08-30T10:36:51.645639] PROCESSING | score_file=docs\win\soccer\05_final_scores\results\final_scores_dirty\EPL\2026_08_21_EPL.csv | select_file=docs\win\soccer\04_select\2026_08_21_soccer_bets.csv
-[2026-08-30T10:36:51.655545] GAME_ID MAP | 2026_08_21_soccer_bets.csv | raw_rows=2 unique_games=2
-[2026-08-30T10:36:51.660332] MATCH RESULT | 2026_08_21_EPL.csv | rows=1 attached=1 missing=0
-[2026-08-30T10:36:51.662774] WROTE | docs\win\soccer\05_final_scores\results\final_scores\EPL\2026_08_21_EPL.csv
-[2026-08-30T10:36:51.663110] PROCESSING | score_file=docs\win\soccer\05_final_scores\results\final_scores_dirty\EPL\2026_08_22_EPL.csv | select_file=docs\win\soccer\04_select\2026_08_22_soccer_bets.csv
-[2026-08-30T10:36:51.673744] GAME_ID MAP | 2026_08_22_soccer_bets.csv | raw_rows=22 unique_games=17
-[2026-08-30T10:36:51.678630] MATCH RESULT | 2026_08_22_EPL.csv | rows=5 attached=5 missing=0
-[2026-08-30T10:36:51.680908] WROTE | docs\win\soccer\05_final_scores\results\final_scores\EPL\2026_08_22_EPL.csv
-[2026-08-30T10:36:51.681211] PROCESSING | score_file=docs\win\soccer\05_final_scores\results\final_scores_dirty\EPL\2026_08_23_EPL.csv | select_file=docs\win\soccer\04_select\2026_08_23_soccer_bets.csv
-[2026-08-30T10:36:51.691822] GAME_ID MAP | 2026_08_23_soccer_bets.csv | raw_rows=13 unique_games=11
-[2026-08-30T10:36:51.696750] MATCH RESULT | 2026_08_23_EPL.csv | rows=3 attached=3 missing=0
-[2026-08-30T10:36:51.699224] WROTE | docs\win\soccer\05_final_scores\results\final_scores\EPL\2026_08_23_EPL.csv
-[2026-08-30T10:36:51.699536] PROCESSING | score_file=docs\win\soccer\05_final_scores\results\final_scores_dirty\EPL\2026_08_24_EPL.csv | select_file=docs\win\soccer\04_select\2026_08_24_soccer_bets.csv
-[2026-08-30T10:36:51.709975] GAME_ID MAP | 2026_08_24_soccer_bets.csv | raw_rows=3 unique_games=3
-[2026-08-30T10:36:51.714766] MATCH RESULT | 2026_08_24_EPL.csv | rows=1 attached=1 missing=0
-[2026-08-30T10:36:51.717045] WROTE | docs\win\soccer\05_final_scores\results\final_scores\EPL\2026_08_24_EPL.csv
-[2026-08-30T10:36:51.717354] PROCESSING | score_file=docs\win\soccer\05_final_scores\results\final_scores_dirty\LALIGA\2026_03_01_LALIGA.csv | select_file=docs\win\soccer\04_select\2026_03_01_soccer_bets.csv
-[2026-08-30T10:36:51.719413] PROCESSING | score_file=docs\win\soccer\05_final_scores\results\final_scores_dirty\LALIGA\2026_03_02_LALIGA.csv | select_file=docs\win\soccer\04_select\2026_03_02_soccer_bets.csv
-[2026-08-30T10:36:51.721348] PROCESSING | score_file=docs\win\soccer\05_final_scores\results\final_scores_dirty\LALIGA\2026_03_04_LALIGA.csv | select_file=docs\win\soccer\04_select\2026_03_04_soccer_bets.csv
-[2026-08-30T10:36:51.723282] PROCESSING | score_file=docs\win\soccer\05_final_scores\results\final_scores_dirty\LALIGA\2026_03_06_LALIGA.csv | select_file=docs\win\soccer\04_select\2026_03_06_soccer_bets.csv
-[2026-08-30T10:36:51.725212] PROCESSING | score_file=docs\win\soccer\05_final_scores\results\final_scores_dirty\LALIGA\2026_03_07_LALIGA.csv | select_file=docs\win\soccer\04_select\2026_03_07_soccer_bets.csv
-[2026-08-30T10:36:51.727140] PROCESSING | score_file=docs\win\soccer\05_final_scores\results\final_scores_dirty\LALIGA\2026_03_08_LALIGA.csv | select_file=docs\win\soccer\04_select\2026_03_08_soccer_bets.csv
-[2026-08-30T10:36:51.729077] PROCESSING | score_file=docs\win\soccer\05_final_scores\results\final_scores_dirty\LALIGA\2026_03_09_LALIGA.csv | select_file=docs\win\soccer\04_select\2026_03_09_soccer_bets.csv
-[2026-08-30T10:36:51.731039] PROCESSING | score_file=docs\win\soccer\05_final_scores\results\final_scores_dirty\LALIGA\2026_03_13_LALIGA.csv | select_file=docs\win\soccer\04_select\2026_03_13_soccer_bets.csv
-[2026-08-30T10:36:51.733037] PROCESSING | score_file=docs\win\soccer\05_final_scores\results\final_scores_dirty\LALIGA\2026_03_14_LALIGA.csv | select_file=docs\win\soccer\04_select\2026_03_14_soccer_bets.csv
-[2026-08-30T10:36:51.734973] PROCESSING | score_file=docs\win\soccer\05_final_scores\results\final_scores_dirty\LALIGA\2026_03_15_LALIGA.csv | select_file=docs\win\soccer\04_select\2026_03_15_soccer_bets.csv
-[2026-08-30T10:36:51.736925] PROCESSING | score_file=docs\win\soccer\05_final_scores\results\final_scores_dirty\LALIGA\2026_03_16_LALIGA.csv | select_file=docs\win\soccer\04_select\2026_03_16_soccer_bets.csv
-[2026-08-30T10:36:51.738846] PROCESSING | score_file=docs\win\soccer\05_final_scores\results\final_scores_dirty\LALIGA\2026_03_20_LALIGA.csv | select_file=docs\win\soccer\04_select\2026_03_20_soccer_bets.csv
-[2026-08-30T10:36:51.740856] PROCESSING | score_file=docs\win\soccer\05_final_scores\results\final_scores_dirty\LALIGA\2026_03_21_LALIGA.csv | select_file=docs\win\soccer\04_select\2026_03_21_soccer_bets.csv
-[2026-08-30T10:36:51.742791] PROCESSING | score_file=docs\win\soccer\05_final_scores\results\final_scores_dirty\LALIGA\2026_03_22_LALIGA.csv | select_file=docs\win\soccer\04_select\2026_03_22_soccer_bets.csv
-[2026-08-30T10:36:51.744712] PROCESSING | score_file=docs\win\soccer\05_final_scores\results\final_scores_dirty\LALIGA\2026_04_03_LALIGA.csv | select_file=docs\win\soccer\04_select\2026_04_03_soccer_bets.csv
-[2026-08-30T10:36:51.746639] PROCESSING | score_file=docs\win\soccer\05_final_scores\results\final_scores_dirty\LALIGA\2026_04_04_LALIGA.csv | select_file=docs\win\soccer\04_select\2026_04_04_soccer_bets.csv
-[2026-08-30T10:36:51.748565] PROCESSING | score_file=docs\win\soccer\05_final_scores\results\final_scores_dirty\LALIGA\2026_04_05_LALIGA.csv | select_file=docs\win\soccer\04_select\2026_04_05_soccer_bets.csv
-[2026-08-30T10:36:51.750548] PROCESSING | score_file=docs\win\soccer\05_final_scores\results\final_scores_dirty\LALIGA\2026_04_06_LALIGA.csv | select_file=docs\win\soccer\04_select\2026_04_06_soccer_bets.csv
-[2026-08-30T10:36:51.752476] PROCESSING | score_file=docs\win\soccer\05_final_scores\results\final_scores_dirty\LALIGA\2026_04_10_LALIGA.csv | select_file=docs\win\soccer\04_select\2026_04_10_soccer_bets.csv
-[2026-08-30T10:36:51.762587] GAME_ID MAP | 2026_04_10_soccer_bets.csv | raw_rows=7 unique_games=4
-[2026-08-30T10:36:51.767528] MATCH RESULT | 2026_04_10_LALIGA.csv | rows=1 attached=1 missing=0
-[2026-08-30T10:36:51.769818] WROTE | docs\win\soccer\05_final_scores\results\final_scores\LALIGA\2026_04_10_LALIGA.csv
-[2026-08-30T10:36:51.770116] PROCESSING | score_file=docs\win\soccer\05_final_scores\results\final_scores_dirty\LALIGA\2026_04_11_LALIGA.csv | select_file=docs\win\soccer\04_select\2026_04_11_soccer_bets.csv
-[2026-08-30T10:36:51.780097] GAME_ID MAP | 2026_04_11_soccer_bets.csv | raw_rows=10 unique_games=9
-[2026-08-30T10:36:51.784938] MATCH RESULT | 2026_04_11_LALIGA.csv | rows=4 attached=1 missing=3
-[2026-08-30T10:36:51.790348] WROTE | docs\win\soccer\05_final_scores\results\final_scores\LALIGA\2026_04_11_LALIGA.csv
-[2026-08-30T10:36:51.790684] PROCESSING | score_file=docs\win\soccer\05_final_scores\results\final_scores_dirty\LALIGA\2026_04_12_LALIGA.csv | select_file=docs\win\soccer\04_select\2026_04_12_soccer_bets.csv
-[2026-08-30T10:36:51.800770] GAME_ID MAP | 2026_04_12_soccer_bets.csv | raw_rows=19 unique_games=13
-[2026-08-30T10:36:51.805712] MATCH RESULT | 2026_04_12_LALIGA.csv | rows=4 attached=1 missing=3
-[2026-08-30T10:36:51.811360] WROTE | docs\win\soccer\05_final_scores\results\final_scores\LALIGA\2026_04_12_LALIGA.csv
-[2026-08-30T10:36:51.811670] PROCESSING | score_file=docs\win\soccer\05_final_scores\results\final_scores_dirty\LALIGA\2026_04_13_LALIGA.csv | select_file=docs\win\soccer\04_select\2026_04_13_soccer_bets.csv
-[2026-08-30T10:36:51.813731] PROCESSING | score_file=docs\win\soccer\05_final_scores\results\final_scores_dirty\LALIGA\2026_04_21_LALIGA.csv | select_file=docs\win\soccer\04_select\2026_04_21_soccer_bets.csv
-[2026-08-30T10:36:51.823703] GAME_ID MAP | 2026_04_21_soccer_bets.csv | raw_rows=3 unique_games=2
-[2026-08-30T10:36:51.828553] MATCH RESULT | 2026_04_21_LALIGA.csv | rows=4 attached=1 missing=3
-[2026-08-30T10:36:51.834019] WROTE | docs\win\soccer\05_final_scores\results\final_scores\LALIGA\2026_04_21_LALIGA.csv
-[2026-08-30T10:36:51.834330] PROCESSING | score_file=docs\win\soccer\05_final_scores\results\final_scores_dirty\LALIGA\2026_04_22_LALIGA.csv | select_file=docs\win\soccer\04_select\2026_04_22_soccer_bets.csv
-[2026-08-30T10:36:51.844355] GAME_ID MAP | 2026_04_22_soccer_bets.csv | raw_rows=17 unique_games=14
-[2026-08-30T10:36:51.849167] MATCH RESULT | 2026_04_22_LALIGA.csv | rows=3 attached=1 missing=2
-[2026-08-30T10:36:51.855029] WROTE | docs\win\soccer\05_final_scores\results\final_scores\LALIGA\2026_04_22_LALIGA.csv
-[2026-08-30T10:36:51.855375] PROCESSING | score_file=docs\win\soccer\05_final_scores\results\final_scores_dirty\LALIGA\2026_04_23_LALIGA.csv | select_file=docs\win\soccer\04_select\2026_04_23_soccer_bets.csv
-[2026-08-30T10:36:51.857431] PROCESSING | score_file=docs\win\soccer\05_final_scores\results\final_scores_dirty\LALIGA\2026_04_24_LALIGA.csv | select_file=docs\win\soccer\04_select\2026_04_24_soccer_bets.csv
-[2026-08-30T10:36:51.867563] GAME_ID MAP | 2026_04_24_soccer_bets.csv | raw_rows=8 unique_games=4
-[2026-08-30T10:36:51.872498] MATCH RESULT | 2026_04_24_LALIGA.csv | rows=1 attached=1 missing=0
-[2026-08-30T10:36:51.875094] WROTE | docs\win\soccer\05_final_scores\results\final_scores\LALIGA\2026_04_24_LALIGA.csv
-[2026-08-30T10:36:51.875393] PROCESSING | score_file=docs\win\soccer\05_final_scores\results\final_scores_dirty\LALIGA\2026_04_25_LALIGA.csv | select_file=docs\win\soccer\04_select\2026_04_25_soccer_bets.csv
-[2026-08-30T10:36:51.885547] GAME_ID MAP | 2026_04_25_soccer_bets.csv | raw_rows=25 unique_games=21
-[2026-08-30T10:36:51.890447] MATCH RESULT | 2026_04_25_LALIGA.csv | rows=4 attached=2 missing=2
-[2026-08-30T10:36:51.895853] WROTE | docs\win\soccer\05_final_scores\results\final_scores\LALIGA\2026_04_25_LALIGA.csv
-[2026-08-30T10:36:51.896163] PROCESSING | score_file=docs\win\soccer\05_final_scores\results\final_scores_dirty\LALIGA\2026_04_26_LALIGA.csv | select_file=docs\win\soccer\04_select\2026_04_26_soccer_bets.csv
-[2026-08-30T10:36:51.906642] GAME_ID MAP | 2026_04_26_soccer_bets.csv | raw_rows=8 unique_games=6
-[2026-08-30T10:36:51.911529] MATCH RESULT | 2026_04_26_LALIGA.csv | rows=3 attached=1 missing=2
-[2026-08-30T10:36:51.917060] WROTE | docs\win\soccer\05_final_scores\results\final_scores\LALIGA\2026_04_26_LALIGA.csv
-[2026-08-30T10:36:51.917411] PROCESSING | score_file=docs\win\soccer\05_final_scores\results\final_scores_dirty\LALIGA\2026_04_27_LALIGA.csv | select_file=docs\win\soccer\04_select\2026_04_27_soccer_bets.csv
-[2026-08-30T10:36:51.927657] GAME_ID MAP | 2026_04_27_soccer_bets.csv | raw_rows=5 unique_games=3
-[2026-08-30T10:36:51.932532] MATCH RESULT | 2026_04_27_LALIGA.csv | rows=1 attached=0 missing=1
-[2026-08-30T10:36:51.937725] WROTE | docs\win\soccer\05_final_scores\results\final_scores\LALIGA\2026_04_27_LALIGA.csv
-[2026-08-30T10:36:51.938035] PROCESSING | score_file=docs\win\soccer\05_final_scores\results\final_scores_dirty\LALIGA\2026_05_01_LALIGA.csv | select_file=docs\win\soccer\04_select\2026_05_01_soccer_bets.csv
-[2026-08-30T10:36:51.940038] PROCESSING | score_file=docs\win\soccer\05_final_scores\results\final_scores_dirty\LALIGA\2026_05_02_LALIGA.csv | select_file=docs\win\soccer\04_select\2026_05_02_soccer_bets.csv
-[2026-08-30T10:36:51.950136] GAME_ID MAP | 2026_05_02_soccer_bets.csv | raw_rows=17 unique_games=13
-[2026-08-30T10:36:51.954985] MATCH RESULT | 2026_05_02_LALIGA.csv | rows=4 attached=0 missing=4
-[2026-08-30T10:36:51.960050] WROTE | docs\win\soccer\05_final_scores\results\final_scores\LALIGA\2026_05_02_LALIGA.csv
-[2026-08-30T10:36:51.960355] PROCESSING | score_file=docs\win\soccer\05_final_scores\results\final_scores_dirty\LALIGA\2026_05_03_LALIGA.csv | select_file=docs\win\soccer\04_select\2026_05_03_soccer_bets.csv
-[2026-08-30T10:36:51.970222] GAME_ID MAP | 2026_05_03_soccer_bets.csv | raw_rows=2 unique_games=2
-[2026-08-30T10:36:51.975013] MATCH RESULT | 2026_05_03_LALIGA.csv | rows=4 attached=0 missing=4
-[2026-08-30T10:36:51.980377] WROTE | docs\win\soccer\05_final_scores\results\final_scores\LALIGA\2026_05_03_LALIGA.csv
-[2026-08-30T10:36:51.980688] PROCESSING | score_file=docs\win\soccer\05_final_scores\results\final_scores_dirty\LALIGA\2026_05_04_LALIGA.csv | select_file=docs\win\soccer\04_select\2026_05_04_soccer_bets.csv
-[2026-08-30T10:36:51.990853] GAME_ID MAP | 2026_05_04_soccer_bets.csv | raw_rows=12 unique_games=4
-[2026-08-30T10:36:51.995710] MATCH RESULT | 2026_05_04_LALIGA.csv | rows=1 attached=1 missing=0
-[2026-08-30T10:36:51.998124] WROTE | docs\win\soccer\05_final_scores\results\final_scores\LALIGA\2026_05_04_LALIGA.csv
-[2026-08-30T10:36:51.998467] PROCESSING | score_file=docs\win\soccer\05_final_scores\results\final_scores_dirty\LALIGA\2026_05_08_LALIGA.csv | select_file=docs\win\soccer\04_select\2026_05_08_soccer_bets.csv
-[2026-08-30T10:36:52.008619] GAME_ID MAP | 2026_05_08_soccer_bets.csv | raw_rows=2 unique_games=1
-[2026-08-30T10:36:52.013391] MATCH RESULT | 2026_05_08_LALIGA.csv | rows=1 attached=1 missing=0
-[2026-08-30T10:36:52.015652] WROTE | docs\win\soccer\05_final_scores\results\final_scores\LALIGA\2026_05_08_LALIGA.csv
-[2026-08-30T10:36:52.015959] PROCESSING | score_file=docs\win\soccer\05_final_scores\results\final_scores_dirty\LALIGA\2026_05_09_LALIGA.csv | select_file=docs\win\soccer\04_select\2026_05_09_soccer_bets.csv
-[2026-08-30T10:36:52.026235] GAME_ID MAP | 2026_05_09_soccer_bets.csv | raw_rows=18 unique_games=13
-[2026-08-30T10:36:52.031084] MATCH RESULT | 2026_05_09_LALIGA.csv | rows=4 attached=2 missing=2
-[2026-08-30T10:36:52.036591] WROTE | docs\win\soccer\05_final_scores\results\final_scores\LALIGA\2026_05_09_LALIGA.csv
-[2026-08-30T10:36:52.036905] PROCESSING | score_file=docs\win\soccer\05_final_scores\results\final_scores_dirty\LALIGA\2026_05_10_LALIGA.csv | select_file=docs\win\soccer\04_select\2026_05_10_soccer_bets.csv
-[2026-08-30T10:36:52.046914] GAME_ID MAP | 2026_05_10_soccer_bets.csv | raw_rows=15 unique_games=13
-[2026-08-30T10:36:52.051828] MATCH RESULT | 2026_05_10_LALIGA.csv | rows=4 attached=3 missing=1
-[2026-08-30T10:36:52.057248] WROTE | docs\win\soccer\05_final_scores\results\final_scores\LALIGA\2026_05_10_LALIGA.csv
-[2026-08-30T10:36:52.057559] PROCESSING | score_file=docs\win\soccer\05_final_scores\results\final_scores_dirty\LALIGA\2026_05_11_LALIGA.csv | select_file=docs\win\soccer\04_select\2026_05_11_soccer_bets.csv
-[2026-08-30T10:36:52.067559] GAME_ID MAP | 2026_05_11_soccer_bets.csv | raw_rows=2 unique_games=1
-[2026-08-30T10:36:52.072387] MATCH RESULT | 2026_05_11_LALIGA.csv | rows=1 attached=0 missing=1
-[2026-08-30T10:36:52.077513] WROTE | docs\win\soccer\05_final_scores\results\final_scores\LALIGA\2026_05_11_LALIGA.csv
-[2026-08-30T10:36:52.077821] PROCESSING | score_file=docs\win\soccer\05_final_scores\results\final_scores_dirty\LALIGA\2026_05_12_LALIGA.csv | select_file=docs\win\soccer\04_select\2026_05_12_soccer_bets.csv
-[2026-08-30T10:36:52.079842] PROCESSING | score_file=docs\win\soccer\05_final_scores\results\final_scores_dirty\LALIGA\2026_05_13_LALIGA.csv | select_file=docs\win\soccer\04_select\2026_05_13_soccer_bets.csv
-[2026-08-30T10:36:52.089789] GAME_ID MAP | 2026_05_13_soccer_bets.csv | raw_rows=4 unique_games=2
-[2026-08-30T10:36:52.094640] MATCH RESULT | 2026_05_13_LALIGA.csv | rows=4 attached=1 missing=3
-[2026-08-30T10:36:52.100110] WROTE | docs\win\soccer\05_final_scores\results\final_scores\LALIGA\2026_05_13_LALIGA.csv
-[2026-08-30T10:36:52.100423] PROCESSING | score_file=docs\win\soccer\05_final_scores\results\final_scores_dirty\LALIGA\2026_05_14_LALIGA.csv | select_file=docs\win\soccer\04_select\2026_05_14_soccer_bets.csv
-[2026-08-30T10:36:52.102479] PROCESSING | score_file=docs\win\soccer\05_final_scores\results\final_scores_dirty\LALIGA\2026_05_17_LALIGA.csv | select_file=docs\win\soccer\04_select\2026_05_17_soccer_bets.csv
-[2026-08-30T10:36:52.112741] GAME_ID MAP | 2026_05_17_soccer_bets.csv | raw_rows=19 unique_games=16
-[2026-08-30T10:36:52.117709] MATCH RESULT | 2026_05_17_LALIGA.csv | rows=10 attached=3 missing=7
-[2026-08-30T10:36:52.123310] WROTE | docs\win\soccer\05_final_scores\results\final_scores\LALIGA\2026_05_17_LALIGA.csv
-[2026-08-30T10:36:52.123614] PROCESSING | score_file=docs\win\soccer\05_final_scores\results\final_scores_dirty\LALIGA\2026_05_23_LALIGA.csv | select_file=docs\win\soccer\04_select\2026_05_23_soccer_bets.csv
-[2026-08-30T10:36:52.133736] GAME_ID MAP | 2026_05_23_soccer_bets.csv | raw_rows=6 unique_games=6
-[2026-08-30T10:36:52.138618] MATCH RESULT | 2026_05_23_LALIGA.csv | rows=9 attached=6 missing=3
-[2026-08-30T10:36:52.144094] WROTE | docs\win\soccer\05_final_scores\results\final_scores\LALIGA\2026_05_23_LALIGA.csv
-[2026-08-30T10:36:52.144425] PROCESSING | score_file=docs\win\soccer\05_final_scores\results\final_scores_dirty\LALIGA\2026_05_24_LALIGA.csv | select_file=docs\win\soccer\04_select\2026_05_24_soccer_bets.csv
-[2026-08-30T10:36:52.155918] GAME_ID MAP | 2026_05_24_soccer_bets.csv | raw_rows=21 unique_games=15
-[2026-08-30T10:36:52.160972] MATCH RESULT | 2026_05_24_LALIGA.csv | rows=1 attached=1 missing=0
-[2026-08-30T10:36:52.163242] WROTE | docs\win\soccer\05_final_scores\results\final_scores\LALIGA\2026_05_24_LALIGA.csv
-[2026-08-30T10:36:52.163558] PROCESSING | score_file=docs\win\soccer\05_final_scores\results\final_scores_dirty\LALIGA\2026_08_15_LALIGA.csv | select_file=docs\win\soccer\04_select\2026_08_15_soccer_bets.csv
-[2026-08-30T10:36:52.220775] GAME_ID MAP | 2026_08_15_soccer_bets.csv | raw_rows=9 unique_games=8
-[2026-08-30T10:36:52.225655] MATCH RESULT | 2026_08_15_LALIGA.csv | rows=2 attached=0 missing=2
-[2026-08-30T10:36:52.267628] WROTE | docs\win\soccer\05_final_scores\results\final_scores\LALIGA\2026_08_15_LALIGA.csv
-[2026-08-30T10:36:52.267978] PROCESSING | score_file=docs\win\soccer\05_final_scores\results\final_scores_dirty\LALIGA\2026_08_16_LALIGA.csv | select_file=docs\win\soccer\04_select\2026_08_16_soccer_bets.csv
-[2026-08-30T10:36:52.317997] GAME_ID MAP | 2026_08_16_soccer_bets.csv | raw_rows=1 unique_games=1
-[2026-08-30T10:36:52.323207] MATCH RESULT | 2026_08_16_LALIGA.csv | rows=2 attached=0 missing=2
-[2026-08-30T10:36:52.328473] WROTE | docs\win\soccer\05_final_scores\results\final_scores\LALIGA\2026_08_16_LALIGA.csv
-[2026-08-30T10:36:52.328782] PROCESSING | score_file=docs\win\soccer\05_final_scores\results\final_scores_dirty\LALIGA\2026_08_19_LALIGA.csv | select_file=docs\win\soccer\04_select\2026_08_19_soccer_bets.csv
-[2026-08-30T10:36:52.356820] GAME_ID MAP | 2026_08_19_soccer_bets.csv | raw_rows=10 unique_games=9
-[2026-08-30T10:36:52.362391] MATCH RESULT | 2026_08_19_LALIGA.csv | rows=1 attached=0 missing=1
-[2026-08-30T10:36:52.367513] WROTE | docs\win\soccer\05_final_scores\results\final_scores\LALIGA\2026_08_19_LALIGA.csv
-[2026-08-30T10:36:52.367874] PROCESSING | score_file=docs\win\soccer\05_final_scores\results\final_scores_dirty\LALIGA\2026_08_20_LALIGA.csv | select_file=docs\win\soccer\04_select\2026_08_20_soccer_bets.csv
-[2026-08-30T10:36:52.369921] PROCESSING | score_file=docs\win\soccer\05_final_scores\results\final_scores_dirty\LALIGA\2026_08_21_LALIGA.csv | select_file=docs\win\soccer\04_select\2026_08_21_soccer_bets.csv
-[2026-08-30T10:36:52.379698] GAME_ID MAP | 2026_08_21_soccer_bets.csv | raw_rows=2 unique_games=2
-[2026-08-30T10:36:52.384506] MATCH RESULT | 2026_08_21_LALIGA.csv | rows=1 attached=0 missing=1
-[2026-08-30T10:36:52.389505] WROTE | docs\win\soccer\05_final_scores\results\final_scores\LALIGA\2026_08_21_LALIGA.csv
-[2026-08-30T10:36:52.389806] PROCESSING | score_file=docs\win\soccer\05_final_scores\results\final_scores_dirty\LALIGA\2026_08_22_LALIGA.csv | select_file=docs\win\soccer\04_select\2026_08_22_soccer_bets.csv
-[2026-08-30T10:36:52.399909] GAME_ID MAP | 2026_08_22_soccer_bets.csv | raw_rows=22 unique_games=17
-[2026-08-30T10:36:52.404793] MATCH RESULT | 2026_08_22_LALIGA.csv | rows=3 attached=2 missing=1
-[2026-08-30T10:36:52.410455] WROTE | docs\win\soccer\05_final_scores\results\final_scores\LALIGA\2026_08_22_LALIGA.csv
-[2026-08-30T10:36:52.410766] PROCESSING | score_file=docs\win\soccer\05_final_scores\results\final_scores_dirty\LALIGA\2026_08_23_LALIGA.csv | select_file=docs\win\soccer\04_select\2026_08_23_soccer_bets.csv
-[2026-08-30T10:36:52.420854] GAME_ID MAP | 2026_08_23_soccer_bets.csv | raw_rows=13 unique_games=11
-[2026-08-30T10:36:52.425739] MATCH RESULT | 2026_08_23_LALIGA.csv | rows=3 attached=1 missing=2
-[2026-08-30T10:36:52.431089] WROTE | docs\win\soccer\05_final_scores\results\final_scores\LALIGA\2026_08_23_LALIGA.csv
-[2026-08-30T10:36:52.431398] PROCESSING | score_file=docs\win\soccer\05_final_scores\results\final_scores_dirty\LALIGA\2026_08_24_LALIGA.csv | select_file=docs\win\soccer\04_select\2026_08_24_soccer_bets.csv
-[2026-08-30T10:36:52.441261] GAME_ID MAP | 2026_08_24_soccer_bets.csv | raw_rows=3 unique_games=3
-[2026-08-30T10:36:52.446080] MATCH RESULT | 2026_08_24_LALIGA.csv | rows=1 attached=0 missing=1
-[2026-08-30T10:36:52.451106] WROTE | docs\win\soccer\05_final_scores\results\final_scores\LALIGA\2026_08_24_LALIGA.csv
-[2026-08-30T10:36:52.451415] PROCESSING | score_file=docs\win\soccer\05_final_scores\results\final_scores_dirty\LALIGA\2026_08_25_LALIGA.csv | select_file=docs\win\soccer\04_select\2026_08_25_soccer_bets.csv
-[2026-08-30T10:36:52.453416] PROCESSING | score_file=docs\win\soccer\05_final_scores\results\final_scores_dirty\LIGUE1\2026_03_01_LIGUE1.csv | select_file=docs\win\soccer\04_select\2026_03_01_soccer_bets.csv
-[2026-08-30T10:36:52.455431] PROCESSING | score_file=docs\win\soccer\05_final_scores\results\final_scores_dirty\LIGUE1\2026_03_06_LIGUE1.csv | select_file=docs\win\soccer\04_select\2026_03_06_soccer_bets.csv
-[2026-08-30T10:36:52.457350] PROCESSING | score_file=docs\win\soccer\05_final_scores\results\final_scores_dirty\LIGUE1\2026_03_07_LIGUE1.csv | select_file=docs\win\soccer\04_select\2026_03_07_soccer_bets.csv
-[2026-08-30T10:36:52.459267] PROCESSING | score_file=docs\win\soccer\05_final_scores\results\final_scores_dirty\LIGUE1\2026_03_08_LIGUE1.csv | select_file=docs\win\soccer\04_select\2026_03_08_soccer_bets.csv
-[2026-08-30T10:36:52.461310] PROCESSING | score_file=docs\win\soccer\05_final_scores\results\final_scores_dirty\LIGUE1\2026_03_13_LIGUE1.csv | select_file=docs\win\soccer\04_select\2026_03_13_soccer_bets.csv
-[2026-08-30T10:36:52.463312] PROCESSING | score_file=docs\win\soccer\05_final_scores\results\final_scores_dirty\LIGUE1\2026_03_14_LIGUE1.csv | select_file=docs\win\soccer\04_select\2026_03_14_soccer_bets.csv
-[2026-08-30T10:36:52.465249] PROCESSING | score_file=docs\win\soccer\05_final_scores\results\final_scores_dirty\LIGUE1\2026_03_15_LIGUE1.csv | select_file=docs\win\soccer\04_select\2026_03_15_soccer_bets.csv
-[2026-08-30T10:36:52.467251] PROCESSING | score_file=docs\win\soccer\05_final_scores\results\final_scores_dirty\LIGUE1\2026_03_20_LIGUE1.csv | select_file=docs\win\soccer\04_select\2026_03_20_soccer_bets.csv
-[2026-08-30T10:36:52.469399] PROCESSING | score_file=docs\win\soccer\05_final_scores\results\final_scores_dirty\LIGUE1\2026_03_21_LIGUE1.csv | select_file=docs\win\soccer\04_select\2026_03_21_soccer_bets.csv
-[2026-08-30T10:36:52.471344] PROCESSING | score_file=docs\win\soccer\05_final_scores\results\final_scores_dirty\LIGUE1\2026_03_22_LIGUE1.csv | select_file=docs\win\soccer\04_select\2026_03_22_soccer_bets.csv
-[2026-08-30T10:36:52.473287] PROCESSING | score_file=docs\win\soccer\05_final_scores\results\final_scores_dirty\LIGUE1\2026_04_03_LIGUE1.csv | select_file=docs\win\soccer\04_select\2026_04_03_soccer_bets.csv
-[2026-08-30T10:36:52.475241] PROCESSING | score_file=docs\win\soccer\05_final_scores\results\final_scores_dirty\LIGUE1\2026_04_04_LIGUE1.csv | select_file=docs\win\soccer\04_select\2026_04_04_soccer_bets.csv
-[2026-08-30T10:36:52.477187] PROCESSING | score_file=docs\win\soccer\05_final_scores\results\final_scores_dirty\LIGUE1\2026_04_05_LIGUE1.csv | select_file=docs\win\soccer\04_select\2026_04_05_soccer_bets.csv
-[2026-08-30T10:36:52.479109] PROCESSING | score_file=docs\win\soccer\05_final_scores\results\final_scores_dirty\LIGUE1\2026_04_10_LIGUE1.csv | select_file=docs\win\soccer\04_select\2026_04_10_soccer_bets.csv
-[2026-08-30T10:36:52.489314] GAME_ID MAP | 2026_04_10_soccer_bets.csv | raw_rows=7 unique_games=4
-[2026-08-30T10:36:52.494172] MATCH RESULT | 2026_04_10_LIGUE1.csv | rows=2 attached=1 missing=1
-[2026-08-30T10:36:52.499871] WROTE | docs\win\soccer\05_final_scores\results\final_scores\LIGUE1\2026_04_10_LIGUE1.csv
-[2026-08-30T10:36:52.500195] PROCESSING | score_file=docs\win\soccer\05_final_scores\results\final_scores_dirty\LIGUE1\2026_04_11_LIGUE1.csv | select_file=docs\win\soccer\04_select\2026_04_11_soccer_bets.csv
-[2026-08-30T10:36:52.510372] GAME_ID MAP | 2026_04_11_soccer_bets.csv | raw_rows=10 unique_games=9
-[2026-08-30T10:36:52.515260] MATCH RESULT | 2026_04_11_LIGUE1.csv | rows=2 attached=1 missing=1
-[2026-08-30T10:36:52.520862] WROTE | docs\win\soccer\05_final_scores\results\final_scores\LIGUE1\2026_04_11_LIGUE1.csv
-[2026-08-30T10:36:52.521179] PROCESSING | score_file=docs\win\soccer\05_final_scores\results\final_scores_dirty\LIGUE1\2026_04_12_LIGUE1.csv | select_file=docs\win\soccer\04_select\2026_04_12_soccer_bets.csv
-[2026-08-30T10:36:52.531449] GAME_ID MAP | 2026_04_12_soccer_bets.csv | raw_rows=19 unique_games=13
-[2026-08-30T10:36:52.536458] MATCH RESULT | 2026_04_12_LIGUE1.csv | rows=3 attached=2 missing=1
-[2026-08-30T10:36:52.541870] WROTE | docs\win\soccer\05_final_scores\results\final_scores\LIGUE1\2026_04_12_LIGUE1.csv
-[2026-08-30T10:36:52.542182] PROCESSING | score_file=docs\win\soccer\05_final_scores\results\final_scores_dirty\LIGUE1\2026_04_17_LIGUE1.csv | select_file=docs\win\soccer\04_select\2026_04_17_soccer_bets.csv
-[2026-08-30T10:36:52.552215] GAME_ID MAP | 2026_04_17_soccer_bets.csv | raw_rows=7 unique_games=4
-[2026-08-30T10:36:52.557014] MATCH RESULT | 2026_04_17_LIGUE1.csv | rows=1 attached=0 missing=1
-[2026-08-30T10:36:52.561981] WROTE | docs\win\soccer\05_final_scores\results\final_scores\LIGUE1\2026_04_17_LIGUE1.csv
-[2026-08-30T10:36:52.562285] PROCESSING | score_file=docs\win\soccer\05_final_scores\results\final_scores_dirty\LIGUE1\2026_04_18_LIGUE1.csv | select_file=docs\win\soccer\04_select\2026_04_18_soccer_bets.csv
-[2026-08-30T10:36:52.572376] GAME_ID MAP | 2026_04_18_soccer_bets.csv | raw_rows=23 unique_games=17
-[2026-08-30T10:36:52.577228] MATCH RESULT | 2026_04_18_LIGUE1.csv | rows=3 attached=2 missing=1
-[2026-08-30T10:36:52.582735] WROTE | docs\win\soccer\05_final_scores\results\final_scores\LIGUE1\2026_04_18_LIGUE1.csv
-[2026-08-30T10:36:52.583042] PROCESSING | score_file=docs\win\soccer\05_final_scores\results\final_scores_dirty\LIGUE1\2026_04_19_LIGUE1.csv | select_file=docs\win\soccer\04_select\2026_04_19_soccer_bets.csv
-[2026-08-30T10:36:52.593200] GAME_ID MAP | 2026_04_19_soccer_bets.csv | raw_rows=13 unique_games=8
-[2026-08-30T10:36:52.598136] MATCH RESULT | 2026_04_19_LIGUE1.csv | rows=5 attached=3 missing=2
-[2026-08-30T10:36:52.603589] WROTE | docs\win\soccer\05_final_scores\results\final_scores\LIGUE1\2026_04_19_LIGUE1.csv
-[2026-08-30T10:36:52.603903] PROCESSING | score_file=docs\win\soccer\05_final_scores\results\final_scores_dirty\LIGUE1\2026_04_22_LIGUE1.csv | select_file=docs\win\soccer\04_select\2026_04_22_soccer_bets.csv
-[2026-08-30T10:36:52.613996] GAME_ID MAP | 2026_04_22_soccer_bets.csv | raw_rows=17 unique_games=14
-[2026-08-30T10:36:52.618914] MATCH RESULT | 2026_04_22_LIGUE1.csv | rows=1 attached=1 missing=0
-[2026-08-30T10:36:52.621151] WROTE | docs\win\soccer\05_final_scores\results\final_scores\LIGUE1\2026_04_22_LIGUE1.csv
-[2026-08-30T10:36:52.621456] PROCESSING | score_file=docs\win\soccer\05_final_scores\results\final_scores_dirty\LIGUE1\2026_04_24_LIGUE1.csv | select_file=docs\win\soccer\04_select\2026_04_24_soccer_bets.csv
-[2026-08-30T10:36:52.631366] GAME_ID MAP | 2026_04_24_soccer_bets.csv | raw_rows=8 unique_games=4
-[2026-08-30T10:36:52.636348] MATCH RESULT | 2026_04_24_LIGUE1.csv | rows=1 attached=0 missing=1
-[2026-08-30T10:36:52.641784] WROTE | docs\win\soccer\05_final_scores\results\final_scores\LIGUE1\2026_04_24_LIGUE1.csv
-[2026-08-30T10:36:52.642092] PROCESSING | score_file=docs\win\soccer\05_final_scores\results\final_scores_dirty\LIGUE1\2026_04_25_LIGUE1.csv | select_file=docs\win\soccer\04_select\2026_04_25_soccer_bets.csv
-[2026-08-30T10:36:52.652264] GAME_ID MAP | 2026_04_25_soccer_bets.csv | raw_rows=25 unique_games=21
-[2026-08-30T10:36:52.657137] MATCH RESULT | 2026_04_25_LIGUE1.csv | rows=3 attached=2 missing=1
-[2026-08-30T10:36:52.662494] WROTE | docs\win\soccer\05_final_scores\results\final_scores\LIGUE1\2026_04_25_LIGUE1.csv
-[2026-08-30T10:36:52.662807] PROCESSING | score_file=docs\win\soccer\05_final_scores\results\final_scores_dirty\LIGUE1\2026_04_26_LIGUE1.csv | select_file=docs\win\soccer\04_select\2026_04_26_soccer_bets.csv
-[2026-08-30T10:36:52.672858] GAME_ID MAP | 2026_04_26_soccer_bets.csv | raw_rows=8 unique_games=6
-[2026-08-30T10:36:52.677703] MATCH RESULT | 2026_04_26_LIGUE1.csv | rows=5 attached=2 missing=3
-[2026-08-30T10:36:52.683117] WROTE | docs\win\soccer\05_final_scores\results\final_scores\LIGUE1\2026_04_26_LIGUE1.csv
-[2026-08-30T10:36:52.683423] PROCESSING | score_file=docs\win\soccer\05_final_scores\results\final_scores_dirty\LIGUE1\2026_05_02_LIGUE1.csv | select_file=docs\win\soccer\04_select\2026_05_02_soccer_bets.csv
-[2026-08-30T10:36:52.693457] GAME_ID MAP | 2026_05_02_soccer_bets.csv | raw_rows=17 unique_games=13
-[2026-08-30T10:36:52.698296] MATCH RESULT | 2026_05_02_LIGUE1.csv | rows=4 attached=0 missing=4
-[2026-08-30T10:36:52.703366] WROTE | docs\win\soccer\05_final_scores\results\final_scores\LIGUE1\2026_05_02_LIGUE1.csv
-[2026-08-30T10:36:52.703679] PROCESSING | score_file=docs\win\soccer\05_final_scores\results\final_scores_dirty\LIGUE1\2026_05_03_LIGUE1.csv | select_file=docs\win\soccer\04_select\2026_05_03_soccer_bets.csv
-[2026-08-30T10:36:52.713465] GAME_ID MAP | 2026_05_03_soccer_bets.csv | raw_rows=2 unique_games=2
-[2026-08-30T10:36:52.718615] MATCH RESULT | 2026_05_03_LIGUE1.csv | rows=5 attached=0 missing=5
-[2026-08-30T10:36:52.724045] WROTE | docs\win\soccer\05_final_scores\results\final_scores\LIGUE1\2026_05_03_LIGUE1.csv
-[2026-08-30T10:36:52.724383] PROCESSING | score_file=docs\win\soccer\05_final_scores\results\final_scores_dirty\LIGUE1\2026_05_08_LIGUE1.csv | select_file=docs\win\soccer\04_select\2026_05_08_soccer_bets.csv
-[2026-08-30T10:36:52.734456] GAME_ID MAP | 2026_05_08_soccer_bets.csv | raw_rows=2 unique_games=1
-[2026-08-30T10:36:52.739289] MATCH RESULT | 2026_05_08_LIGUE1.csv | rows=1 attached=0 missing=1
-[2026-08-30T10:36:52.744315] WROTE | docs\win\soccer\05_final_scores\results\final_scores\LIGUE1\2026_05_08_LIGUE1.csv
-[2026-08-30T10:36:52.744634] PROCESSING | score_file=docs\win\soccer\05_final_scores\results\final_scores_dirty\LIGUE1\2026_05_10_LIGUE1.csv | select_file=docs\win\soccer\04_select\2026_05_10_soccer_bets.csv
-[2026-08-30T10:36:52.754674] GAME_ID MAP | 2026_05_10_soccer_bets.csv | raw_rows=15 unique_games=13
-[2026-08-30T10:36:52.759577] MATCH RESULT | 2026_05_10_LIGUE1.csv | rows=8 attached=5 missing=3
-[2026-08-30T10:36:52.765005] WROTE | docs\win\soccer\05_final_scores\results\final_scores\LIGUE1\2026_05_10_LIGUE1.csv
-[2026-08-30T10:36:52.765314] PROCESSING | score_file=docs\win\soccer\05_final_scores\results\final_scores_dirty\LIGUE1\2026_05_13_LIGUE1.csv | select_file=docs\win\soccer\04_select\2026_05_13_soccer_bets.csv
-[2026-08-30T10:36:52.775300] GAME_ID MAP | 2026_05_13_soccer_bets.csv | raw_rows=4 unique_games=2
-[2026-08-30T10:36:52.780090] MATCH RESULT | 2026_05_13_LIGUE1.csv | rows=2 attached=0 missing=2
-[2026-08-30T10:36:52.785096] WROTE | docs\win\soccer\05_final_scores\results\final_scores\LIGUE1\2026_05_13_LIGUE1.csv
-[2026-08-30T10:36:52.785407] PROCESSING | score_file=docs\win\soccer\05_final_scores\results\final_scores_dirty\LIGUE1\2026_05_17_LIGUE1.csv | select_file=docs\win\soccer\04_select\2026_05_17_soccer_bets.csv
-[2026-08-30T10:36:52.795507] GAME_ID MAP | 2026_05_17_soccer_bets.csv | raw_rows=19 unique_games=16
-[2026-08-30T10:36:52.800385] MATCH RESULT | 2026_05_17_LIGUE1.csv | rows=8 attached=4 missing=4
-[2026-08-30T10:36:52.805850] WROTE | docs\win\soccer\05_final_scores\results\final_scores\LIGUE1\2026_05_17_LIGUE1.csv
-[2026-08-30T10:36:52.806165] PROCESSING | score_file=docs\win\soccer\05_final_scores\results\final_scores_dirty\LIGUE1\2026_05_26_LIGUE1.csv | select_file=docs\win\soccer\04_select\2026_05_26_soccer_bets.csv
-[2026-08-30T10:36:52.808250] PROCESSING | score_file=docs\win\soccer\05_final_scores\results\final_scores_dirty\LIGUE1\2026_05_29_LIGUE1.csv | select_file=docs\win\soccer\04_select\2026_05_29_soccer_bets.csv
-[2026-08-30T10:36:52.810190] PROCESSING | score_file=docs\win\soccer\05_final_scores\results\final_scores_dirty\LIGUE1\2026_08_21_LIGUE1.csv | select_file=docs\win\soccer\04_select\2026_08_21_soccer_bets.csv
-[2026-08-30T10:36:52.820005] GAME_ID MAP | 2026_08_21_soccer_bets.csv | raw_rows=2 unique_games=2
-[2026-08-30T10:36:52.824856] MATCH RESULT | 2026_08_21_LIGUE1.csv | rows=1 attached=1 missing=0
-[2026-08-30T10:36:52.827068] WROTE | docs\win\soccer\05_final_scores\results\final_scores\LIGUE1\2026_08_21_LIGUE1.csv
-[2026-08-30T10:36:52.827367] PROCESSING | score_file=docs\win\soccer\05_final_scores\results\final_scores_dirty\LIGUE1\2026_08_22_LIGUE1.csv | select_file=docs\win\soccer\04_select\2026_08_22_soccer_bets.csv
-[2026-08-30T10:36:52.837449] GAME_ID MAP | 2026_08_22_soccer_bets.csv | raw_rows=22 unique_games=17
-[2026-08-30T10:36:52.842289] MATCH RESULT | 2026_08_22_LIGUE1.csv | rows=5 attached=1 missing=4
-[2026-08-30T10:36:52.851798] WROTE | docs\win\soccer\05_final_scores\results\final_scores\LIGUE1\2026_08_22_LIGUE1.csv
-[2026-08-30T10:36:52.852139] PROCESSING | score_file=docs\win\soccer\05_final_scores\results\final_scores_dirty\LIGUE1\2026_08_23_LIGUE1.csv | select_file=docs\win\soccer\04_select\2026_08_23_soccer_bets.csv
-[2026-08-30T10:36:52.862270] GAME_ID MAP | 2026_08_23_soccer_bets.csv | raw_rows=13 unique_games=11
-[2026-08-30T10:36:52.867166] MATCH RESULT | 2026_08_23_LIGUE1.csv | rows=3 attached=2 missing=1
-[2026-08-30T10:36:52.872561] WROTE | docs\win\soccer\05_final_scores\results\final_scores\LIGUE1\2026_08_23_LIGUE1.csv
-[2026-08-30T10:36:52.872876] PROCESSING | score_file=docs\win\soccer\05_final_scores\results\final_scores_dirty\MLS\2026_03_22_MLS.csv | select_file=docs\win\soccer\04_select\2026_03_22_soccer_bets.csv
-[2026-08-30T10:36:52.874944] PROCESSING | score_file=docs\win\soccer\05_final_scores\results\final_scores_dirty\MLS\2026_04_04_MLS.csv | select_file=docs\win\soccer\04_select\2026_04_04_soccer_bets.csv
-[2026-08-30T10:36:52.876975] PROCESSING | score_file=docs\win\soccer\05_final_scores\results\final_scores_dirty\MLS\2026_04_11_MLS.csv | select_file=docs\win\soccer\04_select\2026_04_11_soccer_bets.csv
-[2026-08-30T10:36:52.886982] GAME_ID MAP | 2026_04_11_soccer_bets.csv | raw_rows=10 unique_games=9
-[2026-08-30T10:36:52.891858] MATCH RESULT | 2026_04_11_MLS.csv | rows=13 attached=7 missing=6
-[2026-08-30T10:36:52.897535] WROTE | docs\win\soccer\05_final_scores\results\final_scores\MLS\2026_04_11_MLS.csv
-[2026-08-30T10:36:52.897865] PROCESSING | score_file=docs\win\soccer\05_final_scores\results\final_scores_dirty\MLS\2026_04_12_MLS.csv | select_file=docs\win\soccer\04_select\2026_04_12_soccer_bets.csv
-[2026-08-30T10:36:52.908059] GAME_ID MAP | 2026_04_12_soccer_bets.csv | raw_rows=19 unique_games=13
-[2026-08-30T10:36:52.913023] MATCH RESULT | 2026_04_12_MLS.csv | rows=1 attached=1 missing=0
-[2026-08-30T10:36:52.915273] WROTE | docs\win\soccer\05_final_scores\results\final_scores\MLS\2026_04_12_MLS.csv
-[2026-08-30T10:36:52.915579] PROCESSING | score_file=docs\win\soccer\05_final_scores\results\final_scores_dirty\MLS\2026_04_17_MLS.csv | select_file=docs\win\soccer\04_select\2026_04_17_soccer_bets.csv
-[2026-08-30T10:36:52.925605] GAME_ID MAP | 2026_04_17_soccer_bets.csv | raw_rows=7 unique_games=4
-[2026-08-30T10:36:52.930443] MATCH RESULT | 2026_04_17_MLS.csv | rows=1 attached=1 missing=0
-[2026-08-30T10:36:52.932949] WROTE | docs\win\soccer\05_final_scores\results\final_scores\MLS\2026_04_17_MLS.csv
-[2026-08-30T10:36:52.933257] PROCESSING | score_file=docs\win\soccer\05_final_scores\results\final_scores_dirty\MLS\2026_04_18_MLS.csv | select_file=docs\win\soccer\04_select\2026_04_18_soccer_bets.csv
-[2026-08-30T10:36:52.943453] GAME_ID MAP | 2026_04_18_soccer_bets.csv | raw_rows=23 unique_games=17
-[2026-08-30T10:36:52.948285] MATCH RESULT | 2026_04_18_MLS.csv | rows=13 attached=8 missing=5
-[2026-08-30T10:36:52.953877] WROTE | docs\win\soccer\05_final_scores\results\final_scores\MLS\2026_04_18_MLS.csv
-[2026-08-30T10:36:52.954194] PROCESSING | score_file=docs\win\soccer\05_final_scores\results\final_scores_dirty\MLS\2026_04_19_MLS.csv | select_file=docs\win\soccer\04_select\2026_04_19_soccer_bets.csv
-[2026-08-30T10:36:52.964265] GAME_ID MAP | 2026_04_19_soccer_bets.csv | raw_rows=13 unique_games=8
-[2026-08-30T10:36:52.969286] MATCH RESULT | 2026_04_19_MLS.csv | rows=1 attached=1 missing=0
-[2026-08-30T10:36:52.971596] WROTE | docs\win\soccer\05_final_scores\results\final_scores\MLS\2026_04_19_MLS.csv
-[2026-08-30T10:36:52.971904] PROCESSING | score_file=docs\win\soccer\05_final_scores\results\final_scores_dirty\MLS\2026_04_22_MLS.csv | select_file=docs\win\soccer\04_select\2026_04_22_soccer_bets.csv
-[2026-08-30T10:36:52.981994] GAME_ID MAP | 2026_04_22_soccer_bets.csv | raw_rows=17 unique_games=14
-[2026-08-30T10:36:52.986907] MATCH RESULT | 2026_04_22_MLS.csv | rows=11 attached=11 missing=0
-[2026-08-30T10:36:52.989191] WROTE | docs\win\soccer\05_final_scores\results\final_scores\MLS\2026_04_22_MLS.csv
-[2026-08-30T10:36:52.989530] PROCESSING | score_file=docs\win\soccer\05_final_scores\results\final_scores_dirty\MLS\2026_04_25_MLS.csv | select_file=docs\win\soccer\04_select\2026_04_25_soccer_bets.csv
-[2026-08-30T10:36:52.999647] GAME_ID MAP | 2026_04_25_soccer_bets.csv | raw_rows=25 unique_games=21
-[2026-08-30T10:36:53.004673] MATCH RESULT | 2026_04_25_MLS.csv | rows=14 attached=14 missing=0
-[2026-08-30T10:36:53.007270] WROTE | docs\win\soccer\05_final_scores\results\final_scores\MLS\2026_04_25_MLS.csv
-[2026-08-30T10:36:53.007575] PROCESSING | score_file=docs\win\soccer\05_final_scores\results\final_scores_dirty\MLS\2026_04_26_MLS.csv | select_file=docs\win\soccer\04_select\2026_04_26_soccer_bets.csv
-[2026-08-30T10:36:53.017548] GAME_ID MAP | 2026_04_26_soccer_bets.csv | raw_rows=8 unique_games=6
-[2026-08-30T10:36:53.022638] MATCH RESULT | 2026_04_26_MLS.csv | rows=1 attached=1 missing=0
-[2026-08-30T10:36:53.024957] WROTE | docs\win\soccer\05_final_scores\results\final_scores\MLS\2026_04_26_MLS.csv
-[2026-08-30T10:36:53.025318] PROCESSING | score_file=docs\win\soccer\05_final_scores\results\final_scores_dirty\MLS\2026_05_02_MLS.csv | select_file=docs\win\soccer\04_select\2026_05_02_soccer_bets.csv
-[2026-08-30T10:36:53.035717] GAME_ID MAP | 2026_05_02_soccer_bets.csv | raw_rows=17 unique_games=13
-[2026-08-30T10:36:53.040773] MATCH RESULT | 2026_05_02_MLS.csv | rows=13 attached=13 missing=0
-[2026-08-30T10:36:53.043105] WROTE | docs\win\soccer\05_final_scores\results\final_scores\MLS\2026_05_02_MLS.csv
-[2026-08-30T10:36:53.043445] PROCESSING | score_file=docs\win\soccer\05_final_scores\results\final_scores_dirty\MLS\2026_05_03_MLS.csv | select_file=docs\win\soccer\04_select\2026_05_03_soccer_bets.csv
-[2026-08-30T10:36:53.053364] GAME_ID MAP | 2026_05_03_soccer_bets.csv | raw_rows=2 unique_games=2
-[2026-08-30T10:36:53.058238] MATCH RESULT | 2026_05_03_MLS.csv | rows=2 attached=2 missing=0
-[2026-08-30T10:36:53.060468] WROTE | docs\win\soccer\05_final_scores\results\final_scores\MLS\2026_05_03_MLS.csv
-[2026-08-30T10:36:53.060773] PROCESSING | score_file=docs\win\soccer\05_final_scores\results\final_scores_dirty\MLS\2026_05_09_MLS.csv | select_file=docs\win\soccer\04_select\2026_05_09_soccer_bets.csv
-[2026-08-30T10:36:53.070982] GAME_ID MAP | 2026_05_09_soccer_bets.csv | raw_rows=18 unique_games=13
-[2026-08-30T10:36:53.075867] MATCH RESULT | 2026_05_09_MLS.csv | rows=12 attached=3 missing=9
-[2026-08-30T10:36:53.081569] WROTE | docs\win\soccer\05_final_scores\results\final_scores\MLS\2026_05_09_MLS.csv
-[2026-08-30T10:36:53.081878] PROCESSING | score_file=docs\win\soccer\05_final_scores\results\final_scores_dirty\MLS\2026_05_10_MLS.csv | select_file=docs\win\soccer\04_select\2026_05_10_soccer_bets.csv
-[2026-08-30T10:36:53.091992] GAME_ID MAP | 2026_05_10_soccer_bets.csv | raw_rows=15 unique_games=13
-[2026-08-30T10:36:53.096831] MATCH RESULT | 2026_05_10_MLS.csv | rows=3 attached=0 missing=3
-[2026-08-30T10:36:53.101947] WROTE | docs\win\soccer\05_final_scores\results\final_scores\MLS\2026_05_10_MLS.csv
-[2026-08-30T10:36:53.102260] PROCESSING | score_file=docs\win\soccer\05_final_scores\results\final_scores_dirty\MLS\2026_05_13_MLS.csv | select_file=docs\win\soccer\04_select\2026_05_13_soccer_bets.csv
-[2026-08-30T10:36:53.112255] GAME_ID MAP | 2026_05_13_soccer_bets.csv | raw_rows=4 unique_games=2
-[2026-08-30T10:36:53.117100] MATCH RESULT | 2026_05_13_MLS.csv | rows=14 attached=0 missing=14
-[2026-08-30T10:36:53.122440] WROTE | docs\win\soccer\05_final_scores\results\final_scores\MLS\2026_05_13_MLS.csv
-[2026-08-30T10:36:53.122752] PROCESSING | score_file=docs\win\soccer\05_final_scores\results\final_scores_dirty\MLS\2026_05_16_MLS.csv | select_file=docs\win\soccer\04_select\2026_05_16_soccer_bets.csv
-[2026-08-30T10:36:53.132766] GAME_ID MAP | 2026_05_16_soccer_bets.csv | raw_rows=7 unique_games=6
-[2026-08-30T10:36:53.137692] MATCH RESULT | 2026_05_16_MLS.csv | rows=13 attached=1 missing=12
-[2026-08-30T10:36:53.143348] WROTE | docs\win\soccer\05_final_scores\results\final_scores\MLS\2026_05_16_MLS.csv
-[2026-08-30T10:36:53.143660] PROCESSING | score_file=docs\win\soccer\05_final_scores\results\final_scores_dirty\MLS\2026_05_17_MLS.csv | select_file=docs\win\soccer\04_select\2026_05_17_soccer_bets.csv
-[2026-08-30T10:36:53.153812] GAME_ID MAP | 2026_05_17_soccer_bets.csv | raw_rows=19 unique_games=16
-[2026-08-30T10:36:53.158653] MATCH RESULT | 2026_05_17_MLS.csv | rows=2 attached=0 missing=2
-[2026-08-30T10:36:53.164386] WROTE | docs\win\soccer\05_final_scores\results\final_scores\MLS\2026_05_17_MLS.csv
-[2026-08-30T10:36:53.164729] PROCESSING | score_file=docs\win\soccer\05_final_scores\results\final_scores_dirty\MLS\2026_05_23_MLS.csv | select_file=docs\win\soccer\04_select\2026_05_23_soccer_bets.csv
-[2026-08-30T10:36:53.174754] GAME_ID MAP | 2026_05_23_soccer_bets.csv | raw_rows=6 unique_games=6
-[2026-08-30T10:36:53.179594] MATCH RESULT | 2026_05_23_MLS.csv | rows=12 attached=0 missing=12
-[2026-08-30T10:36:53.184864] WROTE | docs\win\soccer\05_final_scores\results\final_scores\MLS\2026_05_23_MLS.csv
-[2026-08-30T10:36:53.185213] PROCESSING | score_file=docs\win\soccer\05_final_scores\results\final_scores_dirty\MLS\2026_05_24_MLS.csv | select_file=docs\win\soccer\04_select\2026_05_24_soccer_bets.csv
-[2026-08-30T10:36:53.195322] GAME_ID MAP | 2026_05_24_soccer_bets.csv | raw_rows=21 unique_games=15
-[2026-08-30T10:36:53.200138] MATCH RESULT | 2026_05_24_MLS.csv | rows=3 attached=0 missing=3
-[2026-08-30T10:36:53.205214] WROTE | docs\win\soccer\05_final_scores\results\final_scores\MLS\2026_05_24_MLS.csv
-[2026-08-30T10:36:53.205526] PROCESSING | score_file=docs\win\soccer\05_final_scores\results\final_scores_dirty\MLS\2026_07_16_MLS.csv | select_file=docs\win\soccer\04_select\2026_07_16_soccer_bets.csv
-[2026-08-30T10:36:53.207650] PROCESSING | score_file=docs\win\soccer\05_final_scores\results\final_scores_dirty\MLS\2026_07_17_MLS.csv | select_file=docs\win\soccer\04_select\2026_07_17_soccer_bets.csv
-[2026-08-30T10:36:53.209591] PROCESSING | score_file=docs\win\soccer\05_final_scores\results\final_scores_dirty\MLS\2026_07_22_MLS.csv | select_file=docs\win\soccer\04_select\2026_07_22_soccer_bets.csv
-[2026-08-30T10:36:53.211591] PROCESSING | score_file=docs\win\soccer\05_final_scores\results\final_scores_dirty\MLS\2026_07_25_MLS.csv | select_file=docs\win\soccer\04_select\2026_07_25_soccer_bets.csv
-[2026-08-30T10:36:53.221879] GAME_ID MAP | 2026_07_25_soccer_bets.csv | raw_rows=2 unique_games=2
-[2026-08-30T10:36:53.226941] MATCH RESULT | 2026_07_25_MLS.csv | rows=15 attached=2 missing=13
-[2026-08-30T10:36:53.232793] WROTE | docs\win\soccer\05_final_scores\results\final_scores\MLS\2026_07_25_MLS.csv
-[2026-08-30T10:36:53.233109] PROCESSING | score_file=docs\win\soccer\05_final_scores\results\final_scores_dirty\MLS\2026_07_31_MLS.csv | select_file=docs\win\soccer\04_select\2026_07_31_soccer_bets.csv
-[2026-08-30T10:36:53.235321] PROCESSING | score_file=docs\win\soccer\05_final_scores\results\final_scores_dirty\MLS\2026_08_01_MLS.csv | select_file=docs\win\soccer\04_select\2026_08_01_soccer_bets.csv
-[2026-08-30T10:36:53.245413] GAME_ID MAP | 2026_08_01_soccer_bets.csv | raw_rows=1 unique_games=1
-[2026-08-30T10:36:53.250305] MATCH RESULT | 2026_08_01_MLS.csv | rows=14 attached=1 missing=13
-[2026-08-30T10:36:53.256145] WROTE | docs\win\soccer\05_final_scores\results\final_scores\MLS\2026_08_01_MLS.csv
-[2026-08-30T10:36:53.256478] PROCESSING | score_file=docs\win\soccer\05_final_scores\results\final_scores_dirty\MLS\2026_08_08_MLS.csv | select_file=docs\win\soccer\04_select\2026_08_08_soccer_bets.csv
-[2026-08-30T10:36:53.266364] GAME_ID MAP | 2026_08_08_soccer_bets.csv | raw_rows=1 unique_games=1
-[2026-08-30T10:36:53.271205] MATCH RESULT | 2026_08_08_MLS.csv | rows=1 attached=1 missing=0
-[2026-08-30T10:36:53.273447] WROTE | docs\win\soccer\05_final_scores\results\final_scores\MLS\2026_08_08_MLS.csv
-[2026-08-30T10:36:53.273753] PROCESSING | score_file=docs\win\soccer\05_final_scores\results\final_scores_dirty\MLS\2026_08_15_MLS.csv | select_file=docs\win\soccer\04_select\2026_08_15_soccer_bets.csv
-[2026-08-30T10:36:53.283783] GAME_ID MAP | 2026_08_15_soccer_bets.csv | raw_rows=9 unique_games=8
-[2026-08-30T10:36:53.288711] MATCH RESULT | 2026_08_15_MLS.csv | rows=11 attached=8 missing=3
-[2026-08-30T10:36:53.294240] WROTE | docs\win\soccer\05_final_scores\results\final_scores\MLS\2026_08_15_MLS.csv
-[2026-08-30T10:36:53.294550] PROCESSING | score_file=docs\win\soccer\05_final_scores\results\final_scores_dirty\MLS\2026_08_16_MLS.csv | select_file=docs\win\soccer\04_select\2026_08_16_soccer_bets.csv
-[2026-08-30T10:36:53.304512] GAME_ID MAP | 2026_08_16_soccer_bets.csv | raw_rows=1 unique_games=1
-[2026-08-30T10:36:53.309361] MATCH RESULT | 2026_08_16_MLS.csv | rows=4 attached=1 missing=3
-[2026-08-30T10:36:53.314758] WROTE | docs\win\soccer\05_final_scores\results\final_scores\MLS\2026_08_16_MLS.csv
-[2026-08-30T10:36:53.315071] PROCESSING | score_file=docs\win\soccer\05_final_scores\results\final_scores_dirty\MLS\2026_08_19_MLS.csv | select_file=docs\win\soccer\04_select\2026_08_19_soccer_bets.csv
-[2026-08-30T10:36:53.325203] GAME_ID MAP | 2026_08_19_soccer_bets.csv | raw_rows=10 unique_games=9
-[2026-08-30T10:36:53.330051] MATCH RESULT | 2026_08_19_MLS.csv | rows=15 attached=9 missing=6
-[2026-08-30T10:36:53.335745] WROTE | docs\win\soccer\05_final_scores\results\final_scores\MLS\2026_08_19_MLS.csv
-[2026-08-30T10:36:53.336063] PROCESSING | score_file=docs\win\soccer\05_final_scores\results\final_scores_dirty\MLS\2026_08_22_MLS.csv | select_file=docs\win\soccer\04_select\2026_08_22_soccer_bets.csv
-[2026-08-30T10:36:53.346238] GAME_ID MAP | 2026_08_22_soccer_bets.csv | raw_rows=22 unique_games=17
-[2026-08-30T10:36:53.351099] MATCH RESULT | 2026_08_22_MLS.csv | rows=13 attached=8 missing=5
-[2026-08-30T10:36:53.359821] WROTE | docs\win\soccer\05_final_scores\results\final_scores\MLS\2026_08_22_MLS.csv
-[2026-08-30T10:36:53.360133] PROCESSING | score_file=docs\win\soccer\05_final_scores\results\final_scores_dirty\MLS\2026_08_23_MLS.csv | select_file=docs\win\soccer\04_select\2026_08_23_soccer_bets.csv
-[2026-08-30T10:36:53.370376] GAME_ID MAP | 2026_08_23_soccer_bets.csv | raw_rows=13 unique_games=11
-[2026-08-30T10:36:53.375253] MATCH RESULT | 2026_08_23_MLS.csv | rows=2 attached=1 missing=1
-[2026-08-30T10:36:53.380940] WROTE | docs\win\soccer\05_final_scores\results\final_scores\MLS\2026_08_23_MLS.csv
-[2026-08-30T10:36:53.381257] PROCESSING | score_file=docs\win\soccer\05_final_scores\results\final_scores_dirty\SERIEA\2026_03_01_SERIEA.csv | select_file=docs\win\soccer\04_select\2026_03_01_soccer_bets.csv
-[2026-08-30T10:36:53.383289] PROCESSING | score_file=docs\win\soccer\05_final_scores\results\final_scores_dirty\SERIEA\2026_03_02_SERIEA.csv | select_file=docs\win\soccer\04_select\2026_03_02_soccer_bets.csv
-[2026-08-30T10:36:53.385369] PROCESSING | score_file=docs\win\soccer\05_final_scores\results\final_scores_dirty\SERIEA\2026_03_06_SERIEA.csv | select_file=docs\win\soccer\04_select\2026_03_06_soccer_bets.csv
-[2026-08-30T10:36:53.387321] PROCESSING | score_file=docs\win\soccer\05_final_scores\results\final_scores_dirty\SERIEA\2026_03_07_SERIEA.csv | select_file=docs\win\soccer\04_select\2026_03_07_soccer_bets.csv
-[2026-08-30T10:36:53.389271] PROCESSING | score_file=docs\win\soccer\05_final_scores\results\final_scores_dirty\SERIEA\2026_03_08_SERIEA.csv | select_file=docs\win\soccer\04_select\2026_03_08_soccer_bets.csv
-[2026-08-30T10:36:53.391235] PROCESSING | score_file=docs\win\soccer\05_final_scores\results\final_scores_dirty\SERIEA\2026_03_09_SERIEA.csv | select_file=docs\win\soccer\04_select\2026_03_09_soccer_bets.csv
-[2026-08-30T10:36:53.393178] PROCESSING | score_file=docs\win\soccer\05_final_scores\results\final_scores_dirty\SERIEA\2026_03_13_SERIEA.csv | select_file=docs\win\soccer\04_select\2026_03_13_soccer_bets.csv
-[2026-08-30T10:36:53.395117] PROCESSING | score_file=docs\win\soccer\05_final_scores\results\final_scores_dirty\SERIEA\2026_03_14_SERIEA.csv | select_file=docs\win\soccer\04_select\2026_03_14_soccer_bets.csv
-[2026-08-30T10:36:53.397076] PROCESSING | score_file=docs\win\soccer\05_final_scores\results\final_scores_dirty\SERIEA\2026_03_15_SERIEA.csv | select_file=docs\win\soccer\04_select\2026_03_15_soccer_bets.csv
-[2026-08-30T10:36:53.399003] PROCESSING | score_file=docs\win\soccer\05_final_scores\results\final_scores_dirty\SERIEA\2026_03_16_SERIEA.csv | select_file=docs\win\soccer\04_select\2026_03_16_soccer_bets.csv
-[2026-08-30T10:36:53.400945] PROCESSING | score_file=docs\win\soccer\05_final_scores\results\final_scores_dirty\SERIEA\2026_03_20_SERIEA.csv | select_file=docs\win\soccer\04_select\2026_03_20_soccer_bets.csv
-[2026-08-30T10:36:53.402921] PROCESSING | score_file=docs\win\soccer\05_final_scores\results\final_scores_dirty\SERIEA\2026_03_21_SERIEA.csv | select_file=docs\win\soccer\04_select\2026_03_21_soccer_bets.csv
-[2026-08-30T10:36:53.404851] PROCESSING | score_file=docs\win\soccer\05_final_scores\results\final_scores_dirty\SERIEA\2026_03_22_SERIEA.csv | select_file=docs\win\soccer\04_select\2026_03_22_soccer_bets.csv
-[2026-08-30T10:36:53.406779] PROCESSING | score_file=docs\win\soccer\05_final_scores\results\final_scores_dirty\SERIEA\2026_04_04_SERIEA.csv | select_file=docs\win\soccer\04_select\2026_04_04_soccer_bets.csv
-[2026-08-30T10:36:53.408693] PROCESSING | score_file=docs\win\soccer\05_final_scores\results\final_scores_dirty\SERIEA\2026_04_05_SERIEA.csv | select_file=docs\win\soccer\04_select\2026_04_05_soccer_bets.csv
-[2026-08-30T10:36:53.410610] PROCESSING | score_file=docs\win\soccer\05_final_scores\results\final_scores_dirty\SERIEA\2026_04_06_SERIEA.csv | select_file=docs\win\soccer\04_select\2026_04_06_soccer_bets.csv
-[2026-08-30T10:36:53.412532] PROCESSING | score_file=docs\win\soccer\05_final_scores\results\final_scores_dirty\SERIEA\2026_04_10_SERIEA.csv | select_file=docs\win\soccer\04_select\2026_04_10_soccer_bets.csv
-[2026-08-30T10:36:53.422781] GAME_ID MAP | 2026_04_10_soccer_bets.csv | raw_rows=7 unique_games=4
-[2026-08-30T10:36:53.427779] MATCH RESULT | 2026_04_10_SERIEA.csv | rows=1 attached=1 missing=0
-[2026-08-30T10:36:53.430184] WROTE | docs\win\soccer\05_final_scores\results\final_scores\SERIEA\2026_04_10_SERIEA.csv
-[2026-08-30T10:36:53.430492] PROCESSING | score_file=docs\win\soccer\05_final_scores\results\final_scores_dirty\SERIEA\2026_04_11_SERIEA.csv | select_file=docs\win\soccer\04_select\2026_04_11_soccer_bets.csv
-[2026-08-30T10:36:53.440670] GAME_ID MAP | 2026_04_11_soccer_bets.csv | raw_rows=10 unique_games=9
-[2026-08-30T10:36:53.445508] MATCH RESULT | 2026_04_11_SERIEA.csv | rows=4 attached=0 missing=4
-[2026-08-30T10:36:53.450557] WROTE | docs\win\soccer\05_final_scores\results\final_scores\SERIEA\2026_04_11_SERIEA.csv
-[2026-08-30T10:36:53.450881] PROCESSING | score_file=docs\win\soccer\05_final_scores\results\final_scores_dirty\SERIEA\2026_04_12_SERIEA.csv | select_file=docs\win\soccer\04_select\2026_04_12_soccer_bets.csv
-[2026-08-30T10:36:53.460987] GAME_ID MAP | 2026_04_12_soccer_bets.csv | raw_rows=19 unique_games=13
-[2026-08-30T10:36:53.465828] MATCH RESULT | 2026_04_12_SERIEA.csv | rows=4 attached=3 missing=1
-[2026-08-30T10:36:53.471478] WROTE | docs\win\soccer\05_final_scores\results\final_scores\SERIEA\2026_04_12_SERIEA.csv
-[2026-08-30T10:36:53.471810] PROCESSING | score_file=docs\win\soccer\05_final_scores\results\final_scores_dirty\SERIEA\2026_04_13_SERIEA.csv | select_file=docs\win\soccer\04_select\2026_04_13_soccer_bets.csv
-[2026-08-30T10:36:53.473873] PROCESSING | score_file=docs\win\soccer\05_final_scores\results\final_scores_dirty\SERIEA\2026_04_17_SERIEA.csv | select_file=docs\win\soccer\04_select\2026_04_17_soccer_bets.csv
-[2026-08-30T10:36:53.483831] GAME_ID MAP | 2026_04_17_soccer_bets.csv | raw_rows=7 unique_games=4
-[2026-08-30T10:36:53.488787] MATCH RESULT | 2026_04_17_SERIEA.csv | rows=2 attached=2 missing=0
-[2026-08-30T10:36:53.491078] WROTE | docs\win\soccer\05_final_scores\results\final_scores\SERIEA\2026_04_17_SERIEA.csv
-[2026-08-30T10:36:53.491381] PROCESSING | score_file=docs\win\soccer\05_final_scores\results\final_scores_dirty\SERIEA\2026_04_18_SERIEA.csv | select_file=docs\win\soccer\04_select\2026_04_18_soccer_bets.csv
-[2026-08-30T10:36:53.501657] GAME_ID MAP | 2026_04_18_soccer_bets.csv | raw_rows=23 unique_games=17
-[2026-08-30T10:36:53.506505] MATCH RESULT | 2026_04_18_SERIEA.csv | rows=3 attached=0 missing=3
-[2026-08-30T10:36:53.511582] WROTE | docs\win\soccer\05_final_scores\results\final_scores\SERIEA\2026_04_18_SERIEA.csv
-[2026-08-30T10:36:53.511890] PROCESSING | score_file=docs\win\soccer\05_final_scores\results\final_scores_dirty\SERIEA\2026_04_19_SERIEA.csv | select_file=docs\win\soccer\04_select\2026_04_19_soccer_bets.csv
-[2026-08-30T10:36:53.522553] GAME_ID MAP | 2026_04_19_soccer_bets.csv | raw_rows=13 unique_games=8
-[2026-08-30T10:36:53.586729] MATCH RESULT | 2026_04_19_SERIEA.csv | rows=3 attached=1 missing=2
-[2026-08-30T10:36:53.603492] WROTE | docs\win\soccer\05_final_scores\results\final_scores\SERIEA\2026_04_19_SERIEA.csv
-[2026-08-30T10:36:53.603848] PROCESSING | score_file=docs\win\soccer\05_final_scores\results\final_scores_dirty\SERIEA\2026_04_20_SERIEA.csv | select_file=docs\win\soccer\04_select\2026_04_20_soccer_bets.csv
-[2026-08-30T10:36:53.613923] GAME_ID MAP | 2026_04_20_soccer_bets.csv | raw_rows=2 unique_games=1
-[2026-08-30T10:36:53.618847] MATCH RESULT | 2026_04_20_SERIEA.csv | rows=1 attached=0 missing=1
-[2026-08-30T10:36:53.623903] WROTE | docs\win\soccer\05_final_scores\results\final_scores\SERIEA\2026_04_20_SERIEA.csv
-[2026-08-30T10:36:53.624211] PROCESSING | score_file=docs\win\soccer\05_final_scores\results\final_scores_dirty\SERIEA\2026_04_24_SERIEA.csv | select_file=docs\win\soccer\04_select\2026_04_24_soccer_bets.csv
-[2026-08-30T10:36:53.634196] GAME_ID MAP | 2026_04_24_soccer_bets.csv | raw_rows=8 unique_games=4
-[2026-08-30T10:36:53.639152] MATCH RESULT | 2026_04_24_SERIEA.csv | rows=1 attached=1 missing=0
-[2026-08-30T10:36:53.641389] WROTE | docs\win\soccer\05_final_scores\results\final_scores\SERIEA\2026_04_24_SERIEA.csv
-[2026-08-30T10:36:53.641695] PROCESSING | score_file=docs\win\soccer\05_final_scores\results\final_scores_dirty\SERIEA\2026_04_25_SERIEA.csv | select_file=docs\win\soccer\04_select\2026_04_25_soccer_bets.csv
-[2026-08-30T10:36:53.651851] GAME_ID MAP | 2026_04_25_soccer_bets.csv | raw_rows=25 unique_games=21
-[2026-08-30T10:36:53.656708] MATCH RESULT | 2026_04_25_SERIEA.csv | rows=2 attached=0 missing=2
-[2026-08-30T10:36:53.661705] WROTE | docs\win\soccer\05_final_scores\results\final_scores\SERIEA\2026_04_25_SERIEA.csv
-[2026-08-30T10:36:53.662011] PROCESSING | score_file=docs\win\soccer\05_final_scores\results\final_scores_dirty\SERIEA\2026_04_26_SERIEA.csv | select_file=docs\win\soccer\04_select\2026_04_26_soccer_bets.csv
-[2026-08-30T10:36:53.672027] GAME_ID MAP | 2026_04_26_soccer_bets.csv | raw_rows=8 unique_games=6
-[2026-08-30T10:36:53.676960] MATCH RESULT | 2026_04_26_SERIEA.csv | rows=3 attached=1 missing=2
-[2026-08-30T10:36:53.682751] WROTE | docs\win\soccer\05_final_scores\results\final_scores\SERIEA\2026_04_26_SERIEA.csv
-[2026-08-30T10:36:53.683064] PROCESSING | score_file=docs\win\soccer\05_final_scores\results\final_scores_dirty\SERIEA\2026_04_27_SERIEA.csv | select_file=docs\win\soccer\04_select\2026_04_27_soccer_bets.csv
-[2026-08-30T10:36:53.693217] GAME_ID MAP | 2026_04_27_soccer_bets.csv | raw_rows=5 unique_games=3
-[2026-08-30T10:36:53.698105] MATCH RESULT | 2026_04_27_SERIEA.csv | rows=2 attached=2 missing=0
-[2026-08-30T10:36:53.700396] WROTE | docs\win\soccer\05_final_scores\results\final_scores\SERIEA\2026_04_27_SERIEA.csv
-[2026-08-30T10:36:53.700703] PROCESSING | score_file=docs\win\soccer\05_final_scores\results\final_scores_dirty\SERIEA\2026_05_01_SERIEA.csv | select_file=docs\win\soccer\04_select\2026_05_01_soccer_bets.csv
-[2026-08-30T10:36:53.702734] PROCESSING | score_file=docs\win\soccer\05_final_scores\results\final_scores_dirty\SERIEA\2026_05_02_SERIEA.csv | select_file=docs\win\soccer\04_select\2026_05_02_soccer_bets.csv
-[2026-08-30T10:36:53.712683] GAME_ID MAP | 2026_05_02_soccer_bets.csv | raw_rows=17 unique_games=13
-[2026-08-30T10:36:53.717486] MATCH RESULT | 2026_05_02_SERIEA.csv | rows=3 attached=0 missing=3
-[2026-08-30T10:36:53.722697] WROTE | docs\win\soccer\05_final_scores\results\final_scores\SERIEA\2026_05_02_SERIEA.csv
-[2026-08-30T10:36:53.723002] PROCESSING | score_file=docs\win\soccer\05_final_scores\results\final_scores_dirty\SERIEA\2026_05_03_SERIEA.csv | select_file=docs\win\soccer\04_select\2026_05_03_soccer_bets.csv
-[2026-08-30T10:36:53.732742] GAME_ID MAP | 2026_05_03_soccer_bets.csv | raw_rows=2 unique_games=2
-[2026-08-30T10:36:53.737687] MATCH RESULT | 2026_05_03_SERIEA.csv | rows=4 attached=0 missing=4
-[2026-08-30T10:36:53.743069] WROTE | docs\win\soccer\05_final_scores\results\final_scores\SERIEA\2026_05_03_SERIEA.csv
-[2026-08-30T10:36:53.743396] PROCESSING | score_file=docs\win\soccer\05_final_scores\results\final_scores_dirty\SERIEA\2026_05_04_SERIEA.csv | select_file=docs\win\soccer\04_select\2026_05_04_soccer_bets.csv
-[2026-08-30T10:36:53.753551] GAME_ID MAP | 2026_05_04_soccer_bets.csv | raw_rows=12 unique_games=4
-[2026-08-30T10:36:53.758519] MATCH RESULT | 2026_05_04_SERIEA.csv | rows=2 attached=2 missing=0
-[2026-08-30T10:36:53.760813] WROTE | docs\win\soccer\05_final_scores\results\final_scores\SERIEA\2026_05_04_SERIEA.csv
-[2026-08-30T10:36:53.761120] PROCESSING | score_file=docs\win\soccer\05_final_scores\results\final_scores_dirty\SERIEA\2026_05_08_SERIEA.csv | select_file=docs\win\soccer\04_select\2026_05_08_soccer_bets.csv
-[2026-08-30T10:36:53.771099] GAME_ID MAP | 2026_05_08_soccer_bets.csv | raw_rows=2 unique_games=1
-[2026-08-30T10:36:53.776001] MATCH RESULT | 2026_05_08_SERIEA.csv | rows=1 attached=0 missing=1
-[2026-08-30T10:36:53.780998] WROTE | docs\win\soccer\05_final_scores\results\final_scores\SERIEA\2026_05_08_SERIEA.csv
-[2026-08-30T10:36:53.781307] PROCESSING | score_file=docs\win\soccer\05_final_scores\results\final_scores_dirty\SERIEA\2026_05_09_SERIEA.csv | select_file=docs\win\soccer\04_select\2026_05_09_soccer_bets.csv
-[2026-08-30T10:36:53.791371] GAME_ID MAP | 2026_05_09_soccer_bets.csv | raw_rows=18 unique_games=13
-[2026-08-30T10:36:53.796184] MATCH RESULT | 2026_05_09_SERIEA.csv | rows=3 attached=0 missing=3
-[2026-08-30T10:36:53.801223] WROTE | docs\win\soccer\05_final_scores\results\final_scores\SERIEA\2026_05_09_SERIEA.csv
-[2026-08-30T10:36:53.801535] PROCESSING | score_file=docs\win\soccer\05_final_scores\results\final_scores_dirty\SERIEA\2026_05_10_SERIEA.csv | select_file=docs\win\soccer\04_select\2026_05_10_soccer_bets.csv
-[2026-08-30T10:36:53.811646] GAME_ID MAP | 2026_05_10_soccer_bets.csv | raw_rows=15 unique_games=13
-[2026-08-30T10:36:53.816515] MATCH RESULT | 2026_05_10_SERIEA.csv | rows=5 attached=3 missing=2
-[2026-08-30T10:36:53.822299] WROTE | docs\win\soccer\05_final_scores\results\final_scores\SERIEA\2026_05_10_SERIEA.csv
-[2026-08-30T10:36:53.822612] PROCESSING | score_file=docs\win\soccer\05_final_scores\results\final_scores_dirty\SERIEA\2026_05_11_SERIEA.csv | select_file=docs\win\soccer\04_select\2026_05_11_soccer_bets.csv
-[2026-08-30T10:36:53.832545] GAME_ID MAP | 2026_05_11_soccer_bets.csv | raw_rows=2 unique_games=1
-[2026-08-30T10:36:53.837456] MATCH RESULT | 2026_05_11_SERIEA.csv | rows=1 attached=0 missing=1
-[2026-08-30T10:36:53.842575] WROTE | docs\win\soccer\05_final_scores\results\final_scores\SERIEA\2026_05_11_SERIEA.csv
-[2026-08-30T10:36:53.842886] PROCESSING | score_file=docs\win\soccer\05_final_scores\results\final_scores_dirty\SERIEA\2026_05_17_SERIEA.csv | select_file=docs\win\soccer\04_select\2026_05_17_soccer_bets.csv
-[2026-08-30T10:36:53.853104] GAME_ID MAP | 2026_05_17_soccer_bets.csv | raw_rows=19 unique_games=16
-[2026-08-30T10:36:53.857991] MATCH RESULT | 2026_05_17_SERIEA.csv | rows=9 attached=6 missing=3
-[2026-08-30T10:36:53.863525] WROTE | docs\win\soccer\05_final_scores\results\final_scores\SERIEA\2026_05_17_SERIEA.csv
-[2026-08-30T10:36:53.863837] PROCESSING | score_file=docs\win\soccer\05_final_scores\results\final_scores_dirty\SERIEA\2026_05_22_SERIEA.csv | select_file=docs\win\soccer\04_select\2026_05_22_soccer_bets.csv
-[2026-08-30T10:36:53.873817] GAME_ID MAP | 2026_05_22_soccer_bets.csv | raw_rows=1 unique_games=1
-[2026-08-30T10:36:53.878569] MATCH RESULT | 2026_05_22_SERIEA.csv | rows=1 attached=1 missing=0
-[2026-08-30T10:36:53.880809] WROTE | docs\win\soccer\05_final_scores\results\final_scores\SERIEA\2026_05_22_SERIEA.csv
-[2026-08-30T10:36:53.881114] PROCESSING | score_file=docs\win\soccer\05_final_scores\results\final_scores_dirty\SERIEA\2026_05_23_SERIEA.csv | select_file=docs\win\soccer\04_select\2026_05_23_soccer_bets.csv
-[2026-08-30T10:36:53.890926] GAME_ID MAP | 2026_05_23_soccer_bets.csv | raw_rows=6 unique_games=6
-[2026-08-30T10:36:53.895737] MATCH RESULT | 2026_05_23_SERIEA.csv | rows=2 attached=0 missing=2
-[2026-08-30T10:36:53.900754] WROTE | docs\win\soccer\05_final_scores\results\final_scores\SERIEA\2026_05_23_SERIEA.csv
-[2026-08-30T10:36:53.901061] PROCESSING | score_file=docs\win\soccer\05_final_scores\results\final_scores_dirty\SERIEA\2026_05_24_SERIEA.csv | select_file=docs\win\soccer\04_select\2026_05_24_soccer_bets.csv
-[2026-08-30T10:36:53.911337] GAME_ID MAP | 2026_05_24_soccer_bets.csv | raw_rows=21 unique_games=15
-[2026-08-30T10:36:53.916176] MATCH RESULT | 2026_05_24_SERIEA.csv | rows=7 attached=6 missing=1
-[2026-08-30T10:36:53.921651] WROTE | docs\win\soccer\05_final_scores\results\final_scores\SERIEA\2026_05_24_SERIEA.csv
-[2026-08-30T10:36:53.921960] PROCESSING | score_file=docs\win\soccer\05_final_scores\results\final_scores_dirty\SERIEA\2026_08_22_SERIEA.csv | select_file=docs\win\soccer\04_select\2026_08_22_soccer_bets.csv
-[2026-08-30T10:36:53.933002] GAME_ID MAP | 2026_08_22_soccer_bets.csv | raw_rows=22 unique_games=17
-[2026-08-30T10:36:53.937991] MATCH RESULT | 2026_08_22_SERIEA.csv | rows=3 attached=1 missing=2
-[2026-08-30T10:36:53.943409] WROTE | docs\win\soccer\05_final_scores\results\final_scores\SERIEA\2026_08_22_SERIEA.csv
-[2026-08-30T10:36:53.943717] PROCESSING | score_file=docs\win\soccer\05_final_scores\results\final_scores_dirty\SERIEA\2026_08_23_SERIEA.csv | select_file=docs\win\soccer\04_select\2026_08_23_soccer_bets.csv
-[2026-08-30T10:36:53.953807] GAME_ID MAP | 2026_08_23_soccer_bets.csv | raw_rows=13 unique_games=11
-[2026-08-30T10:36:53.958656] MATCH RESULT | 2026_08_23_SERIEA.csv | rows=4 attached=4 missing=0
-[2026-08-30T10:36:53.960914] WROTE | docs\win\soccer\05_final_scores\results\final_scores\SERIEA\2026_08_23_SERIEA.csv
-[2026-08-30T10:36:53.961217] PROCESSING | score_file=docs\win\soccer\05_final_scores\results\final_scores_dirty\SERIEA\2026_08_24_SERIEA.csv | select_file=docs\win\soccer\04_select\2026_08_24_soccer_bets.csv
-[2026-08-30T10:36:53.971299] GAME_ID MAP | 2026_08_24_soccer_bets.csv | raw_rows=3 unique_games=3
-[2026-08-30T10:36:53.976173] MATCH RESULT | 2026_08_24_SERIEA.csv | rows=2 attached=2 missing=0
-[2026-08-30T10:36:53.978440] WROTE | docs\win\soccer\05_final_scores\results\final_scores\SERIEA\2026_08_24_SERIEA.csv
-[2026-08-30T10:36:53.978716] FILES WRITTEN: 136
-[2026-08-30T10:36:53.979140] === END 01_soccer_add_game_id.py 2026-08-30T10:36:53.979005 ===
+[2026-08-30T11:23:07.090317] === START soccer_add_game_id.py 2026-08-30T11:23:07.090294 ===
+[2026-08-30T11:23:07.091611] Dirty final score files found: 224
+[2026-08-30T11:23:07.091668] PROCESSING | score_file=docs/win/soccer/05_final_scores/results/final_scores_dirty/BUNDESLIGA/2026_03_01_BUNDESLIGA.csv | games_file=docs/win/soccer/00_intake/games/2026_03_01_soccer_games.csv
+[2026-08-30T11:23:07.096639] PROCESSING | score_file=docs/win/soccer/05_final_scores/results/final_scores_dirty/BUNDESLIGA/2026_03_04_BUNDESLIGA.csv | games_file=docs/win/soccer/00_intake/games/2026_03_04_soccer_games.csv
+[2026-08-30T11:23:07.098564] PROCESSING | score_file=docs/win/soccer/05_final_scores/results/final_scores_dirty/BUNDESLIGA/2026_03_06_BUNDESLIGA.csv | games_file=docs/win/soccer/00_intake/games/2026_03_06_soccer_games.csv
+[2026-08-30T11:23:07.100621] PROCESSING | score_file=docs/win/soccer/05_final_scores/results/final_scores_dirty/BUNDESLIGA/2026_03_07_BUNDESLIGA.csv | games_file=docs/win/soccer/00_intake/games/2026_03_07_soccer_games.csv
+[2026-08-30T11:23:07.102333] PROCESSING | score_file=docs/win/soccer/05_final_scores/results/final_scores_dirty/BUNDESLIGA/2026_03_08_BUNDESLIGA.csv | games_file=docs/win/soccer/00_intake/games/2026_03_08_soccer_games.csv
+[2026-08-30T11:23:07.103752] PROCESSING | score_file=docs/win/soccer/05_final_scores/results/final_scores_dirty/BUNDESLIGA/2026_03_13_BUNDESLIGA.csv | games_file=docs/win/soccer/00_intake/games/2026_03_13_soccer_games.csv
+[2026-08-30T11:23:07.105243] PROCESSING | score_file=docs/win/soccer/05_final_scores/results/final_scores_dirty/BUNDESLIGA/2026_03_14_BUNDESLIGA.csv | games_file=docs/win/soccer/00_intake/games/2026_03_14_soccer_games.csv
+[2026-08-30T11:23:07.107248] PROCESSING | score_file=docs/win/soccer/05_final_scores/results/final_scores_dirty/BUNDESLIGA/2026_03_15_BUNDESLIGA.csv | games_file=docs/win/soccer/00_intake/games/2026_03_15_soccer_games.csv
+[2026-08-30T11:23:07.108795] PROCESSING | score_file=docs/win/soccer/05_final_scores/results/final_scores_dirty/BUNDESLIGA/2026_03_20_BUNDESLIGA.csv | games_file=docs/win/soccer/00_intake/games/2026_03_20_soccer_games.csv
+[2026-08-30T11:23:07.110084] PROCESSING | score_file=docs/win/soccer/05_final_scores/results/final_scores_dirty/BUNDESLIGA/2026_03_21_BUNDESLIGA.csv | games_file=docs/win/soccer/00_intake/games/2026_03_21_soccer_games.csv
+[2026-08-30T11:23:07.111391] PROCESSING | score_file=docs/win/soccer/05_final_scores/results/final_scores_dirty/BUNDESLIGA/2026_03_22_BUNDESLIGA.csv | games_file=docs/win/soccer/00_intake/games/2026_03_22_soccer_games.csv
+[2026-08-30T11:23:07.112721] PROCESSING | score_file=docs/win/soccer/05_final_scores/results/final_scores_dirty/BUNDESLIGA/2026_04_04_BUNDESLIGA.csv | games_file=docs/win/soccer/00_intake/games/2026_04_04_soccer_games.csv
+[2026-08-30T11:23:07.114009] PROCESSING | score_file=docs/win/soccer/05_final_scores/results/final_scores_dirty/BUNDESLIGA/2026_04_05_BUNDESLIGA.csv | games_file=docs/win/soccer/00_intake/games/2026_04_05_soccer_games.csv
+[2026-08-30T11:23:07.115299] PROCESSING | score_file=docs/win/soccer/05_final_scores/results/final_scores_dirty/BUNDESLIGA/2026_04_10_BUNDESLIGA.csv | games_file=docs/win/soccer/00_intake/games/2026_04_10_soccer_games.csv
+[2026-08-30T11:23:07.130653] GAME_ID MAP | 2026_04_10_soccer_games.csv | unique_games=6
+[2026-08-30T11:23:07.136725] MATCH RESULT | 2026_04_10_BUNDESLIGA.csv | rows=1 attached=1 missing=0
+[2026-08-30T11:23:07.139310] WROTE | docs/win/soccer/05_final_scores/results/final_scores/BUNDESLIGA/2026_04_10_BUNDESLIGA.csv
+[2026-08-30T11:23:07.139415] PROCESSING | score_file=docs/win/soccer/05_final_scores/results/final_scores_dirty/BUNDESLIGA/2026_04_11_BUNDESLIGA.csv | games_file=docs/win/soccer/00_intake/games/2026_04_11_soccer_games.csv
+[2026-08-30T11:23:07.152269] GAME_ID MAP | 2026_04_11_soccer_games.csv | unique_games=10
+[2026-08-30T11:23:07.158976] MATCH RESULT | 2026_04_11_BUNDESLIGA.csv | rows=5 attached=0 missing=5
+[2026-08-30T11:23:07.164809] WROTE | docs/win/soccer/05_final_scores/results/final_scores/BUNDESLIGA/2026_04_11_BUNDESLIGA.csv
+[2026-08-30T11:23:07.164983] PROCESSING | score_file=docs/win/soccer/05_final_scores/results/final_scores_dirty/BUNDESLIGA/2026_04_12_BUNDESLIGA.csv | games_file=docs/win/soccer/00_intake/games/2026_04_12_soccer_games.csv
+[2026-08-30T11:23:07.175788] GAME_ID MAP | 2026_04_12_soccer_games.csv | unique_games=19
+[2026-08-30T11:23:07.181480] MATCH RESULT | 2026_04_12_BUNDESLIGA.csv | rows=3 attached=3 missing=0
+[2026-08-30T11:23:07.184141] WROTE | docs/win/soccer/05_final_scores/results/final_scores/BUNDESLIGA/2026_04_12_BUNDESLIGA.csv
+[2026-08-30T11:23:07.184372] PROCESSING | score_file=docs/win/soccer/05_final_scores/results/final_scores_dirty/BUNDESLIGA/2026_04_17_BUNDESLIGA.csv | games_file=docs/win/soccer/00_intake/games/2026_04_17_soccer_games.csv
+[2026-08-30T11:23:07.195796] GAME_ID MAP | 2026_04_17_soccer_games.csv | unique_games=5
+[2026-08-30T11:23:07.201098] MATCH RESULT | 2026_04_17_BUNDESLIGA.csv | rows=1 attached=1 missing=0
+[2026-08-30T11:23:07.203237] WROTE | docs/win/soccer/05_final_scores/results/final_scores/BUNDESLIGA/2026_04_17_BUNDESLIGA.csv
+[2026-08-30T11:23:07.203393] PROCESSING | score_file=docs/win/soccer/05_final_scores/results/final_scores_dirty/BUNDESLIGA/2026_04_18_BUNDESLIGA.csv | games_file=docs/win/soccer/00_intake/games/2026_04_18_soccer_games.csv
+[2026-08-30T11:23:07.213305] GAME_ID MAP | 2026_04_18_soccer_games.csv | unique_games=25
+[2026-08-30T11:23:07.218315] MATCH RESULT | 2026_04_18_BUNDESLIGA.csv | rows=5 attached=5 missing=0
+[2026-08-30T11:23:07.220134] WROTE | docs/win/soccer/05_final_scores/results/final_scores/BUNDESLIGA/2026_04_18_BUNDESLIGA.csv
+[2026-08-30T11:23:07.220297] PROCESSING | score_file=docs/win/soccer/05_final_scores/results/final_scores_dirty/BUNDESLIGA/2026_04_19_BUNDESLIGA.csv | games_file=docs/win/soccer/00_intake/games/2026_04_19_soccer_games.csv
+[2026-08-30T11:23:07.230107] GAME_ID MAP | 2026_04_19_soccer_games.csv | unique_games=16
+[2026-08-30T11:23:07.235089] MATCH RESULT | 2026_04_19_BUNDESLIGA.csv | rows=3 attached=3 missing=0
+[2026-08-30T11:23:07.237011] WROTE | docs/win/soccer/05_final_scores/results/final_scores/BUNDESLIGA/2026_04_19_BUNDESLIGA.csv
+[2026-08-30T11:23:07.237118] PROCESSING | score_file=docs/win/soccer/05_final_scores/results/final_scores_dirty/BUNDESLIGA/2026_04_24_BUNDESLIGA.csv | games_file=docs/win/soccer/00_intake/games/2026_04_24_soccer_games.csv
+[2026-08-30T11:23:07.246855] GAME_ID MAP | 2026_04_24_soccer_games.csv | unique_games=5
+[2026-08-30T11:23:07.251714] MATCH RESULT | 2026_04_24_BUNDESLIGA.csv | rows=1 attached=1 missing=0
+[2026-08-30T11:23:07.253539] WROTE | docs/win/soccer/05_final_scores/results/final_scores/BUNDESLIGA/2026_04_24_BUNDESLIGA.csv
+[2026-08-30T11:23:07.253645] PROCESSING | score_file=docs/win/soccer/05_final_scores/results/final_scores_dirty/BUNDESLIGA/2026_04_25_BUNDESLIGA.csv | games_file=docs/win/soccer/00_intake/games/2026_04_25_soccer_games.csv
+[2026-08-30T11:23:07.264517] GAME_ID MAP | 2026_04_25_soccer_games.csv | unique_games=34
+[2026-08-30T11:23:07.270590] MATCH RESULT | 2026_04_25_BUNDESLIGA.csv | rows=6 attached=6 missing=0
+[2026-08-30T11:23:07.272587] WROTE | docs/win/soccer/05_final_scores/results/final_scores/BUNDESLIGA/2026_04_25_BUNDESLIGA.csv
+[2026-08-30T11:23:07.272726] PROCESSING | score_file=docs/win/soccer/05_final_scores/results/final_scores_dirty/BUNDESLIGA/2026_04_26_BUNDESLIGA.csv | games_file=docs/win/soccer/00_intake/games/2026_04_26_soccer_games.csv
+[2026-08-30T11:23:07.282700] GAME_ID MAP | 2026_04_26_soccer_games.csv | unique_games=14
+[2026-08-30T11:23:07.287604] MATCH RESULT | 2026_04_26_BUNDESLIGA.csv | rows=2 attached=2 missing=0
+[2026-08-30T11:23:07.289431] WROTE | docs/win/soccer/05_final_scores/results/final_scores/BUNDESLIGA/2026_04_26_BUNDESLIGA.csv
+[2026-08-30T11:23:07.289536] PROCESSING | score_file=docs/win/soccer/05_final_scores/results/final_scores_dirty/BUNDESLIGA/2026_05_02_BUNDESLIGA.csv | games_file=docs/win/soccer/00_intake/games/2026_05_02_soccer_games.csv
+[2026-08-30T11:23:07.299409] GAME_ID MAP | 2026_05_02_soccer_games.csv | unique_games=15
+[2026-08-30T11:23:07.304269] MATCH RESULT | 2026_05_02_BUNDESLIGA.csv | rows=6 attached=2 missing=4
+[2026-08-30T11:23:07.309991] WROTE | docs/win/soccer/05_final_scores/results/final_scores/BUNDESLIGA/2026_05_02_BUNDESLIGA.csv
+[2026-08-30T11:23:07.310134] PROCESSING | score_file=docs/win/soccer/05_final_scores/results/final_scores_dirty/BUNDESLIGA/2026_05_03_BUNDESLIGA.csv | games_file=docs/win/soccer/00_intake/games/2026_05_03_soccer_games.csv
+[2026-08-30T11:23:07.319844] GAME_ID MAP | 2026_05_03_soccer_games.csv | unique_games=2
+[2026-08-30T11:23:07.324715] MATCH RESULT | 2026_05_03_BUNDESLIGA.csv | rows=3 attached=0 missing=3
+[2026-08-30T11:23:07.329340] WROTE | docs/win/soccer/05_final_scores/results/final_scores/BUNDESLIGA/2026_05_03_BUNDESLIGA.csv
+[2026-08-30T11:23:07.329449] PROCESSING | score_file=docs/win/soccer/05_final_scores/results/final_scores_dirty/BUNDESLIGA/2026_05_08_BUNDESLIGA.csv | games_file=docs/win/soccer/00_intake/games/2026_05_08_soccer_games.csv
+[2026-08-30T11:23:07.339219] GAME_ID MAP | 2026_05_08_soccer_games.csv | unique_games=4
+[2026-08-30T11:23:07.344136] MATCH RESULT | 2026_05_08_BUNDESLIGA.csv | rows=1 attached=1 missing=0
+[2026-08-30T11:23:07.345935] WROTE | docs/win/soccer/05_final_scores/results/final_scores/BUNDESLIGA/2026_05_08_BUNDESLIGA.csv
+[2026-08-30T11:23:07.346040] PROCESSING | score_file=docs/win/soccer/05_final_scores/results/final_scores_dirty/BUNDESLIGA/2026_05_09_BUNDESLIGA.csv | games_file=docs/win/soccer/00_intake/games/2026_05_09_soccer_games.csv
+[2026-08-30T11:23:07.355861] GAME_ID MAP | 2026_05_09_soccer_games.csv | unique_games=29
+[2026-08-30T11:23:07.362701] MATCH RESULT | 2026_05_09_BUNDESLIGA.csv | rows=5 attached=5 missing=0
+[2026-08-30T11:23:07.365797] WROTE | docs/win/soccer/05_final_scores/results/final_scores/BUNDESLIGA/2026_05_09_BUNDESLIGA.csv
+[2026-08-30T11:23:07.365970] PROCESSING | score_file=docs/win/soccer/05_final_scores/results/final_scores_dirty/BUNDESLIGA/2026_05_10_BUNDESLIGA.csv | games_file=docs/win/soccer/00_intake/games/2026_05_10_soccer_games.csv
+[2026-08-30T11:23:07.377740] GAME_ID MAP | 2026_05_10_soccer_games.csv | unique_games=27
+[2026-08-30T11:23:07.382775] MATCH RESULT | 2026_05_10_BUNDESLIGA.csv | rows=3 attached=3 missing=0
+[2026-08-30T11:23:07.384602] WROTE | docs/win/soccer/05_final_scores/results/final_scores/BUNDESLIGA/2026_05_10_BUNDESLIGA.csv
+[2026-08-30T11:23:07.384706] PROCESSING | score_file=docs/win/soccer/05_final_scores/results/final_scores_dirty/BUNDESLIGA/2026_05_16_BUNDESLIGA.csv | games_file=docs/win/soccer/00_intake/games/2026_05_16_soccer_games.csv
+[2026-08-30T11:23:07.394557] GAME_ID MAP | 2026_05_16_soccer_games.csv | unique_games=22
+[2026-08-30T11:23:07.399491] MATCH RESULT | 2026_05_16_BUNDESLIGA.csv | rows=9 attached=9 missing=0
+[2026-08-30T11:23:07.401381] WROTE | docs/win/soccer/05_final_scores/results/final_scores/BUNDESLIGA/2026_05_16_BUNDESLIGA.csv
+[2026-08-30T11:23:07.401486] PROCESSING | score_file=docs/win/soccer/05_final_scores/results/final_scores_dirty/EPL/2026_03_04_EPL.csv | games_file=docs/win/soccer/00_intake/games/2026_03_04_soccer_games.csv
+[2026-08-30T11:23:07.402845] PROCESSING | score_file=docs/win/soccer/05_final_scores/results/final_scores_dirty/EPL/2026_03_05_EPL.csv | games_file=docs/win/soccer/00_intake/games/2026_03_05_soccer_games.csv
+[2026-08-30T11:23:07.404140] PROCESSING | score_file=docs/win/soccer/05_final_scores/results/final_scores_dirty/EPL/2026_03_14_EPL.csv | games_file=docs/win/soccer/00_intake/games/2026_03_14_soccer_games.csv
+[2026-08-30T11:23:07.405423] PROCESSING | score_file=docs/win/soccer/05_final_scores/results/final_scores_dirty/EPL/2026_03_15_EPL.csv | games_file=docs/win/soccer/00_intake/games/2026_03_15_soccer_games.csv
+[2026-08-30T11:23:07.406712] PROCESSING | score_file=docs/win/soccer/05_final_scores/results/final_scores_dirty/EPL/2026_03_16_EPL.csv | games_file=docs/win/soccer/00_intake/games/2026_03_16_soccer_games.csv
+[2026-08-30T11:23:07.407971] PROCESSING | score_file=docs/win/soccer/05_final_scores/results/final_scores_dirty/EPL/2026_03_20_EPL.csv | games_file=docs/win/soccer/00_intake/games/2026_03_20_soccer_games.csv
+[2026-08-30T11:23:07.409241] PROCESSING | score_file=docs/win/soccer/05_final_scores/results/final_scores_dirty/EPL/2026_03_21_EPL.csv | games_file=docs/win/soccer/00_intake/games/2026_03_21_soccer_games.csv
+[2026-08-30T11:23:07.410490] PROCESSING | score_file=docs/win/soccer/05_final_scores/results/final_scores_dirty/EPL/2026_03_22_EPL.csv | games_file=docs/win/soccer/00_intake/games/2026_03_22_soccer_games.csv
+[2026-08-30T11:23:07.411773] PROCESSING | score_file=docs/win/soccer/05_final_scores/results/final_scores_dirty/EPL/2026_04_10_EPL.csv | games_file=docs/win/soccer/00_intake/games/2026_04_10_soccer_games.csv
+[2026-08-30T11:23:07.421402] GAME_ID MAP | 2026_04_10_soccer_games.csv | unique_games=6
+[2026-08-30T11:23:07.426310] MATCH RESULT | 2026_04_10_EPL.csv | rows=1 attached=1 missing=0
+[2026-08-30T11:23:07.428113] WROTE | docs/win/soccer/05_final_scores/results/final_scores/EPL/2026_04_10_EPL.csv
+[2026-08-30T11:23:07.428248] PROCESSING | score_file=docs/win/soccer/05_final_scores/results/final_scores_dirty/EPL/2026_04_11_EPL.csv | games_file=docs/win/soccer/00_intake/games/2026_04_11_soccer_games.csv
+[2026-08-30T11:23:07.437913] GAME_ID MAP | 2026_04_11_soccer_games.csv | unique_games=10
+[2026-08-30T11:23:07.442780] MATCH RESULT | 2026_04_11_EPL.csv | rows=4 attached=0 missing=4
+[2026-08-30T11:23:07.447410] WROTE | docs/win/soccer/05_final_scores/results/final_scores/EPL/2026_04_11_EPL.csv
+[2026-08-30T11:23:07.447519] PROCESSING | score_file=docs/win/soccer/05_final_scores/results/final_scores_dirty/EPL/2026_04_12_EPL.csv | games_file=docs/win/soccer/00_intake/games/2026_04_12_soccer_games.csv
+[2026-08-30T11:23:07.457274] GAME_ID MAP | 2026_04_12_soccer_games.csv | unique_games=19
+[2026-08-30T11:23:07.462126] MATCH RESULT | 2026_04_12_EPL.csv | rows=4 attached=4 missing=0
+[2026-08-30T11:23:07.464019] WROTE | docs/win/soccer/05_final_scores/results/final_scores/EPL/2026_04_12_EPL.csv
+[2026-08-30T11:23:07.464124] PROCESSING | score_file=docs/win/soccer/05_final_scores/results/final_scores_dirty/EPL/2026_04_13_EPL.csv | games_file=docs/win/soccer/00_intake/games/2026_04_13_soccer_games.csv
+[2026-08-30T11:23:07.473790] GAME_ID MAP | 2026_04_13_soccer_games.csv | unique_games=2
+[2026-08-30T11:23:07.478699] MATCH RESULT | 2026_04_13_EPL.csv | rows=1 attached=0 missing=1
+[2026-08-30T11:23:07.483171] WROTE | docs/win/soccer/05_final_scores/results/final_scores/EPL/2026_04_13_EPL.csv
+[2026-08-30T11:23:07.483319] PROCESSING | score_file=docs/win/soccer/05_final_scores/results/final_scores_dirty/EPL/2026_04_18_EPL.csv | games_file=docs/win/soccer/00_intake/games/2026_04_18_soccer_games.csv
+[2026-08-30T11:23:07.493073] GAME_ID MAP | 2026_04_18_soccer_games.csv | unique_games=25
+[2026-08-30T11:23:07.497943] MATCH RESULT | 2026_04_18_EPL.csv | rows=5 attached=5 missing=0
+[2026-08-30T11:23:07.499779] WROTE | docs/win/soccer/05_final_scores/results/final_scores/EPL/2026_04_18_EPL.csv
+[2026-08-30T11:23:07.499885] PROCESSING | score_file=docs/win/soccer/05_final_scores/results/final_scores_dirty/EPL/2026_04_19_EPL.csv | games_file=docs/win/soccer/00_intake/games/2026_04_19_soccer_games.csv
+[2026-08-30T11:23:07.509716] GAME_ID MAP | 2026_04_19_soccer_games.csv | unique_games=16
+[2026-08-30T11:23:07.514681] MATCH RESULT | 2026_04_19_EPL.csv | rows=4 attached=4 missing=0
+[2026-08-30T11:23:07.516602] WROTE | docs/win/soccer/05_final_scores/results/final_scores/EPL/2026_04_19_EPL.csv
+[2026-08-30T11:23:07.516709] PROCESSING | score_file=docs/win/soccer/05_final_scores/results/final_scores_dirty/EPL/2026_04_20_EPL.csv | games_file=docs/win/soccer/00_intake/games/2026_04_20_soccer_games.csv
+[2026-08-30T11:23:07.526398] GAME_ID MAP | 2026_04_20_soccer_games.csv | unique_games=2
+[2026-08-30T11:23:07.531326] MATCH RESULT | 2026_04_20_EPL.csv | rows=1 attached=1 missing=0
+[2026-08-30T11:23:07.533130] WROTE | docs/win/soccer/05_final_scores/results/final_scores/EPL/2026_04_20_EPL.csv
+[2026-08-30T11:23:07.533277] PROCESSING | score_file=docs/win/soccer/05_final_scores/results/final_scores_dirty/EPL/2026_04_21_EPL.csv | games_file=docs/win/soccer/00_intake/games/2026_04_21_soccer_games.csv
+[2026-08-30T11:23:07.542900] GAME_ID MAP | 2026_04_21_soccer_games.csv | unique_games=5
+[2026-08-30T11:23:07.547749] MATCH RESULT | 2026_04_21_EPL.csv | rows=1 attached=1 missing=0
+[2026-08-30T11:23:07.549619] WROTE | docs/win/soccer/05_final_scores/results/final_scores/EPL/2026_04_21_EPL.csv
+[2026-08-30T11:23:07.549724] PROCESSING | score_file=docs/win/soccer/05_final_scores/results/final_scores_dirty/EPL/2026_04_22_EPL.csv | games_file=docs/win/soccer/00_intake/games/2026_04_22_soccer_games.csv
+[2026-08-30T11:23:07.559481] GAME_ID MAP | 2026_04_22_soccer_games.csv | unique_games=16
+[2026-08-30T11:23:07.564360] MATCH RESULT | 2026_04_22_EPL.csv | rows=2 attached=2 missing=0
+[2026-08-30T11:23:07.566206] WROTE | docs/win/soccer/05_final_scores/results/final_scores/EPL/2026_04_22_EPL.csv
+[2026-08-30T11:23:07.566319] PROCESSING | score_file=docs/win/soccer/05_final_scores/results/final_scores_dirty/EPL/2026_04_24_EPL.csv | games_file=docs/win/soccer/00_intake/games/2026_04_24_soccer_games.csv
+[2026-08-30T11:23:07.576266] GAME_ID MAP | 2026_04_24_soccer_games.csv | unique_games=5
+[2026-08-30T11:23:07.581168] MATCH RESULT | 2026_04_24_EPL.csv | rows=1 attached=1 missing=0
+[2026-08-30T11:23:07.583045] WROTE | docs/win/soccer/05_final_scores/results/final_scores/EPL/2026_04_24_EPL.csv
+[2026-08-30T11:23:07.583151] PROCESSING | score_file=docs/win/soccer/05_final_scores/results/final_scores_dirty/EPL/2026_04_25_EPL.csv | games_file=docs/win/soccer/00_intake/games/2026_04_25_soccer_games.csv
+[2026-08-30T11:23:07.593009] GAME_ID MAP | 2026_04_25_soccer_games.csv | unique_games=34
+[2026-08-30T11:23:07.597907] MATCH RESULT | 2026_04_25_EPL.csv | rows=5 attached=5 missing=0
+[2026-08-30T11:23:07.599788] WROTE | docs/win/soccer/05_final_scores/results/final_scores/EPL/2026_04_25_EPL.csv
+[2026-08-30T11:23:07.599893] PROCESSING | score_file=docs/win/soccer/05_final_scores/results/final_scores_dirty/EPL/2026_04_27_EPL.csv | games_file=docs/win/soccer/00_intake/games/2026_04_27_soccer_games.csv
+[2026-08-30T11:23:07.609629] GAME_ID MAP | 2026_04_27_soccer_games.csv | unique_games=4
+[2026-08-30T11:23:07.614481] MATCH RESULT | 2026_04_27_EPL.csv | rows=1 attached=1 missing=0
+[2026-08-30T11:23:07.616292] WROTE | docs/win/soccer/05_final_scores/results/final_scores/EPL/2026_04_27_EPL.csv
+[2026-08-30T11:23:07.616417] PROCESSING | score_file=docs/win/soccer/05_final_scores/results/final_scores_dirty/EPL/2026_05_01_EPL.csv | games_file=docs/win/soccer/00_intake/games/2026_05_01_soccer_games.csv
+[2026-08-30T11:23:07.626123] GAME_ID MAP | 2026_05_01_soccer_games.csv | unique_games=1
+[2026-08-30T11:23:07.630907] MATCH RESULT | 2026_05_01_EPL.csv | rows=1 attached=1 missing=0
+[2026-08-30T11:23:07.632704] WROTE | docs/win/soccer/05_final_scores/results/final_scores/EPL/2026_05_01_EPL.csv
+[2026-08-30T11:23:07.632824] PROCESSING | score_file=docs/win/soccer/05_final_scores/results/final_scores_dirty/EPL/2026_05_02_EPL.csv | games_file=docs/win/soccer/00_intake/games/2026_05_02_soccer_games.csv
+[2026-08-30T11:23:07.642604] GAME_ID MAP | 2026_05_02_soccer_games.csv | unique_games=15
+[2026-08-30T11:23:07.647454] MATCH RESULT | 2026_05_02_EPL.csv | rows=4 attached=0 missing=4
+[2026-08-30T11:23:07.651997] WROTE | docs/win/soccer/05_final_scores/results/final_scores/EPL/2026_05_02_EPL.csv
+[2026-08-30T11:23:07.652125] PROCESSING | score_file=docs/win/soccer/05_final_scores/results/final_scores_dirty/EPL/2026_05_03_EPL.csv | games_file=docs/win/soccer/00_intake/games/2026_05_03_soccer_games.csv
+[2026-08-30T11:23:07.661898] GAME_ID MAP | 2026_05_03_soccer_games.csv | unique_games=2
+[2026-08-30T11:23:07.666734] MATCH RESULT | 2026_05_03_EPL.csv | rows=3 attached=0 missing=3
+[2026-08-30T11:23:07.671325] WROTE | docs/win/soccer/05_final_scores/results/final_scores/EPL/2026_05_03_EPL.csv
+[2026-08-30T11:23:07.671451] PROCESSING | score_file=docs/win/soccer/05_final_scores/results/final_scores_dirty/EPL/2026_05_04_EPL.csv | games_file=docs/win/soccer/00_intake/games/2026_05_04_soccer_games.csv
+[2026-08-30T11:23:07.681171] GAME_ID MAP | 2026_05_04_soccer_games.csv | unique_games=5
+[2026-08-30T11:23:07.686113] MATCH RESULT | 2026_05_04_EPL.csv | rows=2 attached=2 missing=0
+[2026-08-30T11:23:07.687913] WROTE | docs/win/soccer/05_final_scores/results/final_scores/EPL/2026_05_04_EPL.csv
+[2026-08-30T11:23:07.688017] PROCESSING | score_file=docs/win/soccer/05_final_scores/results/final_scores_dirty/EPL/2026_05_09_EPL.csv | games_file=docs/win/soccer/00_intake/games/2026_05_09_soccer_games.csv
+[2026-08-30T11:23:07.697851] GAME_ID MAP | 2026_05_09_soccer_games.csv | unique_games=29
+[2026-08-30T11:23:07.702773] MATCH RESULT | 2026_05_09_EPL.csv | rows=5 attached=5 missing=0
+[2026-08-30T11:23:07.704589] WROTE | docs/win/soccer/05_final_scores/results/final_scores/EPL/2026_05_09_EPL.csv
+[2026-08-30T11:23:07.704693] PROCESSING | score_file=docs/win/soccer/05_final_scores/results/final_scores_dirty/EPL/2026_05_10_EPL.csv | games_file=docs/win/soccer/00_intake/games/2026_05_10_soccer_games.csv
+[2026-08-30T11:23:07.714521] GAME_ID MAP | 2026_05_10_soccer_games.csv | unique_games=27
+[2026-08-30T11:23:07.719411] MATCH RESULT | 2026_05_10_EPL.csv | rows=4 attached=4 missing=0
+[2026-08-30T11:23:07.721224] WROTE | docs/win/soccer/05_final_scores/results/final_scores/EPL/2026_05_10_EPL.csv
+[2026-08-30T11:23:07.721329] PROCESSING | score_file=docs/win/soccer/05_final_scores/results/final_scores_dirty/EPL/2026_05_11_EPL.csv | games_file=docs/win/soccer/00_intake/games/2026_05_11_soccer_games.csv
+[2026-08-30T11:23:07.730977] GAME_ID MAP | 2026_05_11_soccer_games.csv | unique_games=3
+[2026-08-30T11:23:07.736074] MATCH RESULT | 2026_05_11_EPL.csv | rows=1 attached=1 missing=0
+[2026-08-30T11:23:07.737902] WROTE | docs/win/soccer/05_final_scores/results/final_scores/EPL/2026_05_11_EPL.csv
+[2026-08-30T11:23:07.738006] PROCESSING | score_file=docs/win/soccer/05_final_scores/results/final_scores_dirty/EPL/2026_05_13_EPL.csv | games_file=docs/win/soccer/00_intake/games/2026_05_13_soccer_games.csv
+[2026-08-30T11:23:07.747771] GAME_ID MAP | 2026_05_13_soccer_games.csv | unique_games=21
+[2026-08-30T11:23:07.752622] MATCH RESULT | 2026_05_13_EPL.csv | rows=1 attached=1 missing=0
+[2026-08-30T11:23:07.754442] WROTE | docs/win/soccer/05_final_scores/results/final_scores/EPL/2026_05_13_EPL.csv
+[2026-08-30T11:23:07.754564] PROCESSING | score_file=docs/win/soccer/05_final_scores/results/final_scores_dirty/EPL/2026_05_15_EPL.csv | games_file=docs/win/soccer/00_intake/games/2026_05_15_soccer_games.csv
+[2026-08-30T11:23:07.764215] GAME_ID MAP | 2026_05_15_soccer_games.csv | unique_games=2
+[2026-08-30T11:23:07.769058] MATCH RESULT | 2026_05_15_EPL.csv | rows=1 attached=1 missing=0
+[2026-08-30T11:23:07.770878] WROTE | docs/win/soccer/05_final_scores/results/final_scores/EPL/2026_05_15_EPL.csv
+[2026-08-30T11:23:07.770985] PROCESSING | score_file=docs/win/soccer/05_final_scores/results/final_scores_dirty/EPL/2026_05_17_EPL.csv | games_file=docs/win/soccer/00_intake/games/2026_05_17_soccer_games.csv
+[2026-08-30T11:23:07.780857] GAME_ID MAP | 2026_05_17_soccer_games.csv | unique_games=38
+[2026-08-30T11:23:07.785852] MATCH RESULT | 2026_05_17_EPL.csv | rows=6 attached=6 missing=0
+[2026-08-30T11:23:07.787688] WROTE | docs/win/soccer/05_final_scores/results/final_scores/EPL/2026_05_17_EPL.csv
+[2026-08-30T11:23:07.787791] PROCESSING | score_file=docs/win/soccer/05_final_scores/results/final_scores_dirty/EPL/2026_05_19_EPL.csv | games_file=docs/win/soccer/00_intake/games/2026_05_19_soccer_games.csv
+[2026-08-30T11:23:07.797662] GAME_ID MAP | 2026_05_19_soccer_games.csv | unique_games=2
+[2026-08-30T11:23:07.802605] MATCH RESULT | 2026_05_19_EPL.csv | rows=2 attached=2 missing=0
+[2026-08-30T11:23:07.804492] WROTE | docs/win/soccer/05_final_scores/results/final_scores/EPL/2026_05_19_EPL.csv
+[2026-08-30T11:23:07.804612] PROCESSING | score_file=docs/win/soccer/05_final_scores/results/final_scores_dirty/EPL/2026_05_24_EPL.csv | games_file=docs/win/soccer/00_intake/games/2026_05_24_soccer_games.csv
+[2026-08-30T11:23:07.814379] GAME_ID MAP | 2026_05_24_soccer_games.csv | unique_games=21
+[2026-08-30T11:23:07.819355] MATCH RESULT | 2026_05_24_EPL.csv | rows=10 attached=10 missing=0
+[2026-08-30T11:23:07.821202] WROTE | docs/win/soccer/05_final_scores/results/final_scores/EPL/2026_05_24_EPL.csv
+[2026-08-30T11:23:07.821328] PROCESSING | score_file=docs/win/soccer/05_final_scores/results/final_scores_dirty/EPL/2026_08_21_EPL.csv | games_file=docs/win/soccer/00_intake/games/2026_08_21_soccer_games.csv
+[2026-08-30T11:23:07.832075] PROCESSING | score_file=docs/win/soccer/05_final_scores/results/final_scores_dirty/EPL/2026_08_22_EPL.csv | games_file=docs/win/soccer/00_intake/games/2026_08_22_soccer_games.csv
+[2026-08-30T11:23:07.843091] PROCESSING | score_file=docs/win/soccer/05_final_scores/results/final_scores_dirty/EPL/2026_08_23_EPL.csv | games_file=docs/win/soccer/00_intake/games/2026_08_23_soccer_games.csv
+[2026-08-30T11:23:07.853790] PROCESSING | score_file=docs/win/soccer/05_final_scores/results/final_scores_dirty/EPL/2026_08_24_EPL.csv | games_file=docs/win/soccer/00_intake/games/2026_08_24_soccer_games.csv
+[2026-08-30T11:23:07.864430] PROCESSING | score_file=docs/win/soccer/05_final_scores/results/final_scores_dirty/LALIGA/2026_03_01_LALIGA.csv | games_file=docs/win/soccer/00_intake/games/2026_03_01_soccer_games.csv
+[2026-08-30T11:23:07.865740] PROCESSING | score_file=docs/win/soccer/05_final_scores/results/final_scores_dirty/LALIGA/2026_03_02_LALIGA.csv | games_file=docs/win/soccer/00_intake/games/2026_03_02_soccer_games.csv
+[2026-08-30T11:23:07.867032] PROCESSING | score_file=docs/win/soccer/05_final_scores/results/final_scores_dirty/LALIGA/2026_03_04_LALIGA.csv | games_file=docs/win/soccer/00_intake/games/2026_03_04_soccer_games.csv
+[2026-08-30T11:23:07.868327] PROCESSING | score_file=docs/win/soccer/05_final_scores/results/final_scores_dirty/LALIGA/2026_03_06_LALIGA.csv | games_file=docs/win/soccer/00_intake/games/2026_03_06_soccer_games.csv
+[2026-08-30T11:23:07.869581] PROCESSING | score_file=docs/win/soccer/05_final_scores/results/final_scores_dirty/LALIGA/2026_03_07_LALIGA.csv | games_file=docs/win/soccer/00_intake/games/2026_03_07_soccer_games.csv
+[2026-08-30T11:23:07.870841] PROCESSING | score_file=docs/win/soccer/05_final_scores/results/final_scores_dirty/LALIGA/2026_03_08_LALIGA.csv | games_file=docs/win/soccer/00_intake/games/2026_03_08_soccer_games.csv
+[2026-08-30T11:23:07.872096] PROCESSING | score_file=docs/win/soccer/05_final_scores/results/final_scores_dirty/LALIGA/2026_03_09_LALIGA.csv | games_file=docs/win/soccer/00_intake/games/2026_03_09_soccer_games.csv
+[2026-08-30T11:23:07.873377] PROCESSING | score_file=docs/win/soccer/05_final_scores/results/final_scores_dirty/LALIGA/2026_03_13_LALIGA.csv | games_file=docs/win/soccer/00_intake/games/2026_03_13_soccer_games.csv
+[2026-08-30T11:23:07.874616] PROCESSING | score_file=docs/win/soccer/05_final_scores/results/final_scores_dirty/LALIGA/2026_03_14_LALIGA.csv | games_file=docs/win/soccer/00_intake/games/2026_03_14_soccer_games.csv
+[2026-08-30T11:23:07.875898] PROCESSING | score_file=docs/win/soccer/05_final_scores/results/final_scores_dirty/LALIGA/2026_03_15_LALIGA.csv | games_file=docs/win/soccer/00_intake/games/2026_03_15_soccer_games.csv
+[2026-08-30T11:23:07.877130] PROCESSING | score_file=docs/win/soccer/05_final_scores/results/final_scores_dirty/LALIGA/2026_03_16_LALIGA.csv | games_file=docs/win/soccer/00_intake/games/2026_03_16_soccer_games.csv
+[2026-08-30T11:23:07.878390] PROCESSING | score_file=docs/win/soccer/05_final_scores/results/final_scores_dirty/LALIGA/2026_03_20_LALIGA.csv | games_file=docs/win/soccer/00_intake/games/2026_03_20_soccer_games.csv
+[2026-08-30T11:23:07.879623] PROCESSING | score_file=docs/win/soccer/05_final_scores/results/final_scores_dirty/LALIGA/2026_03_21_LALIGA.csv | games_file=docs/win/soccer/00_intake/games/2026_03_21_soccer_games.csv
+[2026-08-30T11:23:07.880881] PROCESSING | score_file=docs/win/soccer/05_final_scores/results/final_scores_dirty/LALIGA/2026_03_22_LALIGA.csv | games_file=docs/win/soccer/00_intake/games/2026_03_22_soccer_games.csv
+[2026-08-30T11:23:07.882126] PROCESSING | score_file=docs/win/soccer/05_final_scores/results/final_scores_dirty/LALIGA/2026_04_03_LALIGA.csv | games_file=docs/win/soccer/00_intake/games/2026_04_03_soccer_games.csv
+[2026-08-30T11:23:07.883404] PROCESSING | score_file=docs/win/soccer/05_final_scores/results/final_scores_dirty/LALIGA/2026_04_04_LALIGA.csv | games_file=docs/win/soccer/00_intake/games/2026_04_04_soccer_games.csv
+[2026-08-30T11:23:07.884639] PROCESSING | score_file=docs/win/soccer/05_final_scores/results/final_scores_dirty/LALIGA/2026_04_05_LALIGA.csv | games_file=docs/win/soccer/00_intake/games/2026_04_05_soccer_games.csv
+[2026-08-30T11:23:07.885875] PROCESSING | score_file=docs/win/soccer/05_final_scores/results/final_scores_dirty/LALIGA/2026_04_06_LALIGA.csv | games_file=docs/win/soccer/00_intake/games/2026_04_06_soccer_games.csv
+[2026-08-30T11:23:07.895485] GAME_ID MAP | 2026_04_06_soccer_games.csv | unique_games=2
+[2026-08-30T11:23:07.900410] MATCH RESULT | 2026_04_06_LALIGA.csv | rows=1 attached=1 missing=0
+[2026-08-30T11:23:07.902225] WROTE | docs/win/soccer/05_final_scores/results/final_scores/LALIGA/2026_04_06_LALIGA.csv
+[2026-08-30T11:23:07.902323] PROCESSING | score_file=docs/win/soccer/05_final_scores/results/final_scores_dirty/LALIGA/2026_04_10_LALIGA.csv | games_file=docs/win/soccer/00_intake/games/2026_04_10_soccer_games.csv
+[2026-08-30T11:23:07.911992] GAME_ID MAP | 2026_04_10_soccer_games.csv | unique_games=6
+[2026-08-30T11:23:07.916870] MATCH RESULT | 2026_04_10_LALIGA.csv | rows=1 attached=1 missing=0
+[2026-08-30T11:23:07.918712] WROTE | docs/win/soccer/05_final_scores/results/final_scores/LALIGA/2026_04_10_LALIGA.csv
+[2026-08-30T11:23:07.918836] PROCESSING | score_file=docs/win/soccer/05_final_scores/results/final_scores_dirty/LALIGA/2026_04_11_LALIGA.csv | games_file=docs/win/soccer/00_intake/games/2026_04_11_soccer_games.csv
+[2026-08-30T11:23:07.928564] GAME_ID MAP | 2026_04_11_soccer_games.csv | unique_games=10
+[2026-08-30T11:23:07.933438] MATCH RESULT | 2026_04_11_LALIGA.csv | rows=4 attached=1 missing=3
+[2026-08-30T11:23:07.938419] WROTE | docs/win/soccer/05_final_scores/results/final_scores/LALIGA/2026_04_11_LALIGA.csv
+[2026-08-30T11:23:07.938532] PROCESSING | score_file=docs/win/soccer/05_final_scores/results/final_scores_dirty/LALIGA/2026_04_12_LALIGA.csv | games_file=docs/win/soccer/00_intake/games/2026_04_12_soccer_games.csv
+[2026-08-30T11:23:07.948325] GAME_ID MAP | 2026_04_12_soccer_games.csv | unique_games=19
+[2026-08-30T11:23:07.953130] MATCH RESULT | 2026_04_12_LALIGA.csv | rows=4 attached=4 missing=0
+[2026-08-30T11:23:07.954928] WROTE | docs/win/soccer/05_final_scores/results/final_scores/LALIGA/2026_04_12_LALIGA.csv
+[2026-08-30T11:23:07.955034] PROCESSING | score_file=docs/win/soccer/05_final_scores/results/final_scores_dirty/LALIGA/2026_04_13_LALIGA.csv | games_file=docs/win/soccer/00_intake/games/2026_04_13_soccer_games.csv
+[2026-08-30T11:23:07.964719] GAME_ID MAP | 2026_04_13_soccer_games.csv | unique_games=2
+[2026-08-30T11:23:07.969571] MATCH RESULT | 2026_04_13_LALIGA.csv | rows=1 attached=1 missing=0
+[2026-08-30T11:23:07.971378] WROTE | docs/win/soccer/05_final_scores/results/final_scores/LALIGA/2026_04_13_LALIGA.csv
+[2026-08-30T11:23:07.971502] PROCESSING | score_file=docs/win/soccer/05_final_scores/results/final_scores_dirty/LALIGA/2026_04_21_LALIGA.csv | games_file=docs/win/soccer/00_intake/games/2026_04_21_soccer_games.csv
+[2026-08-30T11:23:07.981122] GAME_ID MAP | 2026_04_21_soccer_games.csv | unique_games=5
+[2026-08-30T11:23:07.985995] MATCH RESULT | 2026_04_21_LALIGA.csv | rows=4 attached=4 missing=0
+[2026-08-30T11:23:07.987827] WROTE | docs/win/soccer/05_final_scores/results/final_scores/LALIGA/2026_04_21_LALIGA.csv
+[2026-08-30T11:23:07.987950] PROCESSING | score_file=docs/win/soccer/05_final_scores/results/final_scores_dirty/LALIGA/2026_04_22_LALIGA.csv | games_file=docs/win/soccer/00_intake/games/2026_04_22_soccer_games.csv
+[2026-08-30T11:23:07.997673] GAME_ID MAP | 2026_04_22_soccer_games.csv | unique_games=16
+[2026-08-30T11:23:08.002543] MATCH RESULT | 2026_04_22_LALIGA.csv | rows=3 attached=2 missing=1
+[2026-08-30T11:23:08.007450] WROTE | docs/win/soccer/05_final_scores/results/final_scores/LALIGA/2026_04_22_LALIGA.csv
+[2026-08-30T11:23:08.007564] PROCESSING | score_file=docs/win/soccer/05_final_scores/results/final_scores_dirty/LALIGA/2026_04_23_LALIGA.csv | games_file=docs/win/soccer/00_intake/games/2026_04_23_soccer_games.csv
+[2026-08-30T11:23:08.017298] GAME_ID MAP | 2026_04_23_soccer_games.csv | unique_games=3
+[2026-08-30T11:23:08.022218] MATCH RESULT | 2026_04_23_LALIGA.csv | rows=3 attached=3 missing=0
+[2026-08-30T11:23:08.023999] WROTE | docs/win/soccer/05_final_scores/results/final_scores/LALIGA/2026_04_23_LALIGA.csv
+[2026-08-30T11:23:08.024122] PROCESSING | score_file=docs/win/soccer/05_final_scores/results/final_scores_dirty/LALIGA/2026_04_24_LALIGA.csv | games_file=docs/win/soccer/00_intake/games/2026_04_24_soccer_games.csv
+[2026-08-30T11:23:08.033869] GAME_ID MAP | 2026_04_24_soccer_games.csv | unique_games=5
+[2026-08-30T11:23:08.038733] MATCH RESULT | 2026_04_24_LALIGA.csv | rows=1 attached=1 missing=0
+[2026-08-30T11:23:08.040538] WROTE | docs/win/soccer/05_final_scores/results/final_scores/LALIGA/2026_04_24_LALIGA.csv
+[2026-08-30T11:23:08.040660] PROCESSING | score_file=docs/win/soccer/05_final_scores/results/final_scores_dirty/LALIGA/2026_04_25_LALIGA.csv | games_file=docs/win/soccer/00_intake/games/2026_04_25_soccer_games.csv
+[2026-08-30T11:23:08.050557] GAME_ID MAP | 2026_04_25_soccer_games.csv | unique_games=34
+[2026-08-30T11:23:08.055489] MATCH RESULT | 2026_04_25_LALIGA.csv | rows=4 attached=4 missing=0
+[2026-08-30T11:23:08.057301] WROTE | docs/win/soccer/05_final_scores/results/final_scores/LALIGA/2026_04_25_LALIGA.csv
+[2026-08-30T11:23:08.057406] PROCESSING | score_file=docs/win/soccer/05_final_scores/results/final_scores_dirty/LALIGA/2026_04_26_LALIGA.csv | games_file=docs/win/soccer/00_intake/games/2026_04_26_soccer_games.csv
+[2026-08-30T11:23:08.067246] GAME_ID MAP | 2026_04_26_soccer_games.csv | unique_games=14
+[2026-08-30T11:23:08.072107] MATCH RESULT | 2026_04_26_LALIGA.csv | rows=3 attached=3 missing=0
+[2026-08-30T11:23:08.074010] WROTE | docs/win/soccer/05_final_scores/results/final_scores/LALIGA/2026_04_26_LALIGA.csv
+[2026-08-30T11:23:08.074115] PROCESSING | score_file=docs/win/soccer/05_final_scores/results/final_scores_dirty/LALIGA/2026_04_27_LALIGA.csv | games_file=docs/win/soccer/00_intake/games/2026_04_27_soccer_games.csv
+[2026-08-30T11:23:08.083792] GAME_ID MAP | 2026_04_27_soccer_games.csv | unique_games=4
+[2026-08-30T11:23:08.088652] MATCH RESULT | 2026_04_27_LALIGA.csv | rows=1 attached=1 missing=0
+[2026-08-30T11:23:08.090454] WROTE | docs/win/soccer/05_final_scores/results/final_scores/LALIGA/2026_04_27_LALIGA.csv
+[2026-08-30T11:23:08.090558] PROCESSING | score_file=docs/win/soccer/05_final_scores/results/final_scores_dirty/LALIGA/2026_05_01_LALIGA.csv | games_file=docs/win/soccer/00_intake/games/2026_05_01_soccer_games.csv
+[2026-08-30T11:23:08.100244] GAME_ID MAP | 2026_05_01_soccer_games.csv | unique_games=1
+[2026-08-30T11:23:08.105085] MATCH RESULT | 2026_05_01_LALIGA.csv | rows=1 attached=0 missing=1
+[2026-08-30T11:23:08.109630] WROTE | docs/win/soccer/05_final_scores/results/final_scores/LALIGA/2026_05_01_LALIGA.csv
+[2026-08-30T11:23:08.109739] PROCESSING | score_file=docs/win/soccer/05_final_scores/results/final_scores_dirty/LALIGA/2026_05_02_LALIGA.csv | games_file=docs/win/soccer/00_intake/games/2026_05_02_soccer_games.csv
+[2026-08-30T11:23:08.119484] GAME_ID MAP | 2026_05_02_soccer_games.csv | unique_games=15
+[2026-08-30T11:23:08.124342] MATCH RESULT | 2026_05_02_LALIGA.csv | rows=4 attached=0 missing=4
+[2026-08-30T11:23:08.128820] WROTE | docs/win/soccer/05_final_scores/results/final_scores/LALIGA/2026_05_02_LALIGA.csv
+[2026-08-30T11:23:08.128929] PROCESSING | score_file=docs/win/soccer/05_final_scores/results/final_scores_dirty/LALIGA/2026_05_03_LALIGA.csv | games_file=docs/win/soccer/00_intake/games/2026_05_03_soccer_games.csv
+[2026-08-30T11:23:08.138676] GAME_ID MAP | 2026_05_03_soccer_games.csv | unique_games=2
+[2026-08-30T11:23:08.143541] MATCH RESULT | 2026_05_03_LALIGA.csv | rows=4 attached=0 missing=4
+[2026-08-30T11:23:08.147988] WROTE | docs/win/soccer/05_final_scores/results/final_scores/LALIGA/2026_05_03_LALIGA.csv
+[2026-08-30T11:23:08.148114] PROCESSING | score_file=docs/win/soccer/05_final_scores/results/final_scores_dirty/LALIGA/2026_05_04_LALIGA.csv | games_file=docs/win/soccer/00_intake/games/2026_05_04_soccer_games.csv
+[2026-08-30T11:23:08.157809] GAME_ID MAP | 2026_05_04_soccer_games.csv | unique_games=5
+[2026-08-30T11:23:08.162826] MATCH RESULT | 2026_05_04_LALIGA.csv | rows=1 attached=1 missing=0
+[2026-08-30T11:23:08.164628] WROTE | docs/win/soccer/05_final_scores/results/final_scores/LALIGA/2026_05_04_LALIGA.csv
+[2026-08-30T11:23:08.164733] PROCESSING | score_file=docs/win/soccer/05_final_scores/results/final_scores_dirty/LALIGA/2026_05_08_LALIGA.csv | games_file=docs/win/soccer/00_intake/games/2026_05_08_soccer_games.csv
+[2026-08-30T11:23:08.174441] GAME_ID MAP | 2026_05_08_soccer_games.csv | unique_games=4
+[2026-08-30T11:23:08.179349] MATCH RESULT | 2026_05_08_LALIGA.csv | rows=1 attached=1 missing=0
+[2026-08-30T11:23:08.181155] WROTE | docs/win/soccer/05_final_scores/results/final_scores/LALIGA/2026_05_08_LALIGA.csv
+[2026-08-30T11:23:08.181299] PROCESSING | score_file=docs/win/soccer/05_final_scores/results/final_scores_dirty/LALIGA/2026_05_09_LALIGA.csv | games_file=docs/win/soccer/00_intake/games/2026_05_09_soccer_games.csv
+[2026-08-30T11:23:08.191141] GAME_ID MAP | 2026_05_09_soccer_games.csv | unique_games=29
+[2026-08-30T11:23:08.196083] MATCH RESULT | 2026_05_09_LALIGA.csv | rows=4 attached=4 missing=0
+[2026-08-30T11:23:08.197895] WROTE | docs/win/soccer/05_final_scores/results/final_scores/LALIGA/2026_05_09_LALIGA.csv
+[2026-08-30T11:23:08.198014] PROCESSING | score_file=docs/win/soccer/05_final_scores/results/final_scores_dirty/LALIGA/2026_05_10_LALIGA.csv | games_file=docs/win/soccer/00_intake/games/2026_05_10_soccer_games.csv
+[2026-08-30T11:23:08.207737] GAME_ID MAP | 2026_05_10_soccer_games.csv | unique_games=27
+[2026-08-30T11:23:08.212633] MATCH RESULT | 2026_05_10_LALIGA.csv | rows=4 attached=4 missing=0
+[2026-08-30T11:23:08.214461] WROTE | docs/win/soccer/05_final_scores/results/final_scores/LALIGA/2026_05_10_LALIGA.csv
+[2026-08-30T11:23:08.214581] PROCESSING | score_file=docs/win/soccer/05_final_scores/results/final_scores_dirty/LALIGA/2026_05_11_LALIGA.csv | games_file=docs/win/soccer/00_intake/games/2026_05_11_soccer_games.csv
+[2026-08-30T11:23:08.224242] GAME_ID MAP | 2026_05_11_soccer_games.csv | unique_games=3
+[2026-08-30T11:23:08.229131] MATCH RESULT | 2026_05_11_LALIGA.csv | rows=1 attached=1 missing=0
+[2026-08-30T11:23:08.230980] WROTE | docs/win/soccer/05_final_scores/results/final_scores/LALIGA/2026_05_11_LALIGA.csv
+[2026-08-30T11:23:08.231099] PROCESSING | score_file=docs/win/soccer/05_final_scores/results/final_scores_dirty/LALIGA/2026_05_12_LALIGA.csv | games_file=docs/win/soccer/00_intake/games/2026_05_12_soccer_games.csv
+[2026-08-30T11:23:08.240753] GAME_ID MAP | 2026_05_12_soccer_games.csv | unique_games=3
+[2026-08-30T11:23:08.245651] MATCH RESULT | 2026_05_12_LALIGA.csv | rows=3 attached=3 missing=0
+[2026-08-30T11:23:08.247464] WROTE | docs/win/soccer/05_final_scores/results/final_scores/LALIGA/2026_05_12_LALIGA.csv
+[2026-08-30T11:23:08.247568] PROCESSING | score_file=docs/win/soccer/05_final_scores/results/final_scores_dirty/LALIGA/2026_05_13_LALIGA.csv | games_file=docs/win/soccer/00_intake/games/2026_05_13_soccer_games.csv
+[2026-08-30T11:23:08.257323] GAME_ID MAP | 2026_05_13_soccer_games.csv | unique_games=21
+[2026-08-30T11:23:08.262391] MATCH RESULT | 2026_05_13_LALIGA.csv | rows=4 attached=4 missing=0
+[2026-08-30T11:23:08.264173] WROTE | docs/win/soccer/05_final_scores/results/final_scores/LALIGA/2026_05_13_LALIGA.csv
+[2026-08-30T11:23:08.264319] PROCESSING | score_file=docs/win/soccer/05_final_scores/results/final_scores_dirty/LALIGA/2026_05_14_LALIGA.csv | games_file=docs/win/soccer/00_intake/games/2026_05_14_soccer_games.csv
+[2026-08-30T11:23:08.273966] GAME_ID MAP | 2026_05_14_soccer_games.csv | unique_games=3
+[2026-08-30T11:23:08.278814] MATCH RESULT | 2026_05_14_LALIGA.csv | rows=3 attached=3 missing=0
+[2026-08-30T11:23:08.280674] WROTE | docs/win/soccer/05_final_scores/results/final_scores/LALIGA/2026_05_14_LALIGA.csv
+[2026-08-30T11:23:08.280796] PROCESSING | score_file=docs/win/soccer/05_final_scores/results/final_scores_dirty/LALIGA/2026_05_17_LALIGA.csv | games_file=docs/win/soccer/00_intake/games/2026_05_17_soccer_games.csv
+[2026-08-30T11:23:08.290680] GAME_ID MAP | 2026_05_17_soccer_games.csv | unique_games=38
+[2026-08-30T11:23:08.295584] MATCH RESULT | 2026_05_17_LALIGA.csv | rows=10 attached=10 missing=0
+[2026-08-30T11:23:08.297397] WROTE | docs/win/soccer/05_final_scores/results/final_scores/LALIGA/2026_05_17_LALIGA.csv
+[2026-08-30T11:23:08.297519] PROCESSING | score_file=docs/win/soccer/05_final_scores/results/final_scores_dirty/LALIGA/2026_05_23_LALIGA.csv | games_file=docs/win/soccer/00_intake/games/2026_05_23_soccer_games.csv
+[2026-08-30T11:23:08.307336] GAME_ID MAP | 2026_05_23_soccer_games.csv | unique_games=23
+[2026-08-30T11:23:08.312314] MATCH RESULT | 2026_05_23_LALIGA.csv | rows=9 attached=9 missing=0
+[2026-08-30T11:23:08.314109] WROTE | docs/win/soccer/05_final_scores/results/final_scores/LALIGA/2026_05_23_LALIGA.csv
+[2026-08-30T11:23:08.314252] PROCESSING | score_file=docs/win/soccer/05_final_scores/results/final_scores_dirty/LALIGA/2026_05_24_LALIGA.csv | games_file=docs/win/soccer/00_intake/games/2026_05_24_soccer_games.csv
+[2026-08-30T11:23:08.324094] GAME_ID MAP | 2026_05_24_soccer_games.csv | unique_games=21
+[2026-08-30T11:23:08.329005] MATCH RESULT | 2026_05_24_LALIGA.csv | rows=1 attached=1 missing=0
+[2026-08-30T11:23:08.330808] WROTE | docs/win/soccer/05_final_scores/results/final_scores/LALIGA/2026_05_24_LALIGA.csv
+[2026-08-30T11:23:08.330913] PROCESSING | score_file=docs/win/soccer/05_final_scores/results/final_scores_dirty/LALIGA/2026_08_15_LALIGA.csv | games_file=docs/win/soccer/00_intake/games/2026_08_15_soccer_games.csv
+[2026-08-30T11:23:08.341691] PROCESSING | score_file=docs/win/soccer/05_final_scores/results/final_scores_dirty/LALIGA/2026_08_16_LALIGA.csv | games_file=docs/win/soccer/00_intake/games/2026_08_16_soccer_games.csv
+[2026-08-30T11:23:08.352369] PROCESSING | score_file=docs/win/soccer/05_final_scores/results/final_scores_dirty/LALIGA/2026_08_19_LALIGA.csv | games_file=docs/win/soccer/00_intake/games/2026_08_19_soccer_games.csv
+[2026-08-30T11:23:08.363025] PROCESSING | score_file=docs/win/soccer/05_final_scores/results/final_scores_dirty/LALIGA/2026_08_20_LALIGA.csv | games_file=docs/win/soccer/00_intake/games/2026_08_20_soccer_games.csv
+[2026-08-30T11:23:08.372707] GAME_ID MAP | 2026_08_20_soccer_games.csv | unique_games=1
+[2026-08-30T11:23:08.377488] MATCH RESULT | 2026_08_20_LALIGA.csv | rows=1 attached=1 missing=0
+[2026-08-30T11:23:08.379293] WROTE | docs/win/soccer/05_final_scores/results/final_scores/LALIGA/2026_08_20_LALIGA.csv
+[2026-08-30T11:23:08.379387] PROCESSING | score_file=docs/win/soccer/05_final_scores/results/final_scores_dirty/LALIGA/2026_08_21_LALIGA.csv | games_file=docs/win/soccer/00_intake/games/2026_08_21_soccer_games.csv
+[2026-08-30T11:23:08.389965] PROCESSING | score_file=docs/win/soccer/05_final_scores/results/final_scores_dirty/LALIGA/2026_08_22_LALIGA.csv | games_file=docs/win/soccer/00_intake/games/2026_08_22_soccer_games.csv
+[2026-08-30T11:23:08.400870] PROCESSING | score_file=docs/win/soccer/05_final_scores/results/final_scores_dirty/LALIGA/2026_08_23_LALIGA.csv | games_file=docs/win/soccer/00_intake/games/2026_08_23_soccer_games.csv
+[2026-08-30T11:23:08.411825] PROCESSING | score_file=docs/win/soccer/05_final_scores/results/final_scores_dirty/LALIGA/2026_08_24_LALIGA.csv | games_file=docs/win/soccer/00_intake/games/2026_08_24_soccer_games.csv
+[2026-08-30T11:23:08.422422] PROCESSING | score_file=docs/win/soccer/05_final_scores/results/final_scores_dirty/LALIGA/2026_08_25_LALIGA.csv | games_file=docs/win/soccer/00_intake/games/2026_08_25_soccer_games.csv
+[2026-08-30T11:23:08.432718] PROCESSING | score_file=docs/win/soccer/05_final_scores/results/final_scores_dirty/LIGUE1/2026_03_01_LIGUE1.csv | games_file=docs/win/soccer/00_intake/games/2026_03_01_soccer_games.csv
+[2026-08-30T11:23:08.434025] PROCESSING | score_file=docs/win/soccer/05_final_scores/results/final_scores_dirty/LIGUE1/2026_03_06_LIGUE1.csv | games_file=docs/win/soccer/00_intake/games/2026_03_06_soccer_games.csv
+[2026-08-30T11:23:08.435321] PROCESSING | score_file=docs/win/soccer/05_final_scores/results/final_scores_dirty/LIGUE1/2026_03_07_LIGUE1.csv | games_file=docs/win/soccer/00_intake/games/2026_03_07_soccer_games.csv
+[2026-08-30T11:23:08.436569] PROCESSING | score_file=docs/win/soccer/05_final_scores/results/final_scores_dirty/LIGUE1/2026_03_08_LIGUE1.csv | games_file=docs/win/soccer/00_intake/games/2026_03_08_soccer_games.csv
+[2026-08-30T11:23:08.437818] PROCESSING | score_file=docs/win/soccer/05_final_scores/results/final_scores_dirty/LIGUE1/2026_03_13_LIGUE1.csv | games_file=docs/win/soccer/00_intake/games/2026_03_13_soccer_games.csv
+[2026-08-30T11:23:08.439054] PROCESSING | score_file=docs/win/soccer/05_final_scores/results/final_scores_dirty/LIGUE1/2026_03_14_LIGUE1.csv | games_file=docs/win/soccer/00_intake/games/2026_03_14_soccer_games.csv
+[2026-08-30T11:23:08.440346] PROCESSING | score_file=docs/win/soccer/05_final_scores/results/final_scores_dirty/LIGUE1/2026_03_15_LIGUE1.csv | games_file=docs/win/soccer/00_intake/games/2026_03_15_soccer_games.csv
+[2026-08-30T11:23:08.441601] PROCESSING | score_file=docs/win/soccer/05_final_scores/results/final_scores_dirty/LIGUE1/2026_03_20_LIGUE1.csv | games_file=docs/win/soccer/00_intake/games/2026_03_20_soccer_games.csv
+[2026-08-30T11:23:08.442840] PROCESSING | score_file=docs/win/soccer/05_final_scores/results/final_scores_dirty/LIGUE1/2026_03_21_LIGUE1.csv | games_file=docs/win/soccer/00_intake/games/2026_03_21_soccer_games.csv
+[2026-08-30T11:23:08.444069] PROCESSING | score_file=docs/win/soccer/05_final_scores/results/final_scores_dirty/LIGUE1/2026_03_22_LIGUE1.csv | games_file=docs/win/soccer/00_intake/games/2026_03_22_soccer_games.csv
+[2026-08-30T11:23:08.445338] PROCESSING | score_file=docs/win/soccer/05_final_scores/results/final_scores_dirty/LIGUE1/2026_04_03_LIGUE1.csv | games_file=docs/win/soccer/00_intake/games/2026_04_03_soccer_games.csv
+[2026-08-30T11:23:08.446564] PROCESSING | score_file=docs/win/soccer/05_final_scores/results/final_scores_dirty/LIGUE1/2026_04_04_LIGUE1.csv | games_file=docs/win/soccer/00_intake/games/2026_04_04_soccer_games.csv
+[2026-08-30T11:23:08.447824] PROCESSING | score_file=docs/win/soccer/05_final_scores/results/final_scores_dirty/LIGUE1/2026_04_05_LIGUE1.csv | games_file=docs/win/soccer/00_intake/games/2026_04_05_soccer_games.csv
+[2026-08-30T11:23:08.449072] PROCESSING | score_file=docs/win/soccer/05_final_scores/results/final_scores_dirty/LIGUE1/2026_04_10_LIGUE1.csv | games_file=docs/win/soccer/00_intake/games/2026_04_10_soccer_games.csv
+[2026-08-30T11:23:08.458783] GAME_ID MAP | 2026_04_10_soccer_games.csv | unique_games=6
+[2026-08-30T11:23:08.463759] MATCH RESULT | 2026_04_10_LIGUE1.csv | rows=2 attached=2 missing=0
+[2026-08-30T11:23:08.465612] WROTE | docs/win/soccer/05_final_scores/results/final_scores/LIGUE1/2026_04_10_LIGUE1.csv
+[2026-08-30T11:23:08.465710] PROCESSING | score_file=docs/win/soccer/05_final_scores/results/final_scores_dirty/LIGUE1/2026_04_11_LIGUE1.csv | games_file=docs/win/soccer/00_intake/games/2026_04_11_soccer_games.csv
+[2026-08-30T11:23:08.475530] GAME_ID MAP | 2026_04_11_soccer_games.csv | unique_games=10
+[2026-08-30T11:23:08.480432] MATCH RESULT | 2026_04_11_LIGUE1.csv | rows=2 attached=1 missing=1
+[2026-08-30T11:23:08.485388] WROTE | docs/win/soccer/05_final_scores/results/final_scores/LIGUE1/2026_04_11_LIGUE1.csv
+[2026-08-30T11:23:08.485499] PROCESSING | score_file=docs/win/soccer/05_final_scores/results/final_scores_dirty/LIGUE1/2026_04_12_LIGUE1.csv | games_file=docs/win/soccer/00_intake/games/2026_04_12_soccer_games.csv
+[2026-08-30T11:23:08.495277] GAME_ID MAP | 2026_04_12_soccer_games.csv | unique_games=19
+[2026-08-30T11:23:08.500284] MATCH RESULT | 2026_04_12_LIGUE1.csv | rows=3 attached=3 missing=0
+[2026-08-30T11:23:08.502085] WROTE | docs/win/soccer/05_final_scores/results/final_scores/LIGUE1/2026_04_12_LIGUE1.csv
+[2026-08-30T11:23:08.502227] PROCESSING | score_file=docs/win/soccer/05_final_scores/results/final_scores_dirty/LIGUE1/2026_04_17_LIGUE1.csv | games_file=docs/win/soccer/00_intake/games/2026_04_17_soccer_games.csv
+[2026-08-30T11:23:08.511950] GAME_ID MAP | 2026_04_17_soccer_games.csv | unique_games=5
+[2026-08-30T11:23:08.516863] MATCH RESULT | 2026_04_17_LIGUE1.csv | rows=1 attached=1 missing=0
+[2026-08-30T11:23:08.518662] WROTE | docs/win/soccer/05_final_scores/results/final_scores/LIGUE1/2026_04_17_LIGUE1.csv
+[2026-08-30T11:23:08.518785] PROCESSING | score_file=docs/win/soccer/05_final_scores/results/final_scores_dirty/LIGUE1/2026_04_18_LIGUE1.csv | games_file=docs/win/soccer/00_intake/games/2026_04_18_soccer_games.csv
+[2026-08-30T11:23:08.528561] GAME_ID MAP | 2026_04_18_soccer_games.csv | unique_games=25
+[2026-08-30T11:23:08.533518] MATCH RESULT | 2026_04_18_LIGUE1.csv | rows=3 attached=3 missing=0
+[2026-08-30T11:23:08.535336] WROTE | docs/win/soccer/05_final_scores/results/final_scores/LIGUE1/2026_04_18_LIGUE1.csv
+[2026-08-30T11:23:08.535461] PROCESSING | score_file=docs/win/soccer/05_final_scores/results/final_scores_dirty/LIGUE1/2026_04_19_LIGUE1.csv | games_file=docs/win/soccer/00_intake/games/2026_04_19_soccer_games.csv
+[2026-08-30T11:23:08.545297] GAME_ID MAP | 2026_04_19_soccer_games.csv | unique_games=16
+[2026-08-30T11:23:08.550231] MATCH RESULT | 2026_04_19_LIGUE1.csv | rows=5 attached=5 missing=0
+[2026-08-30T11:23:08.552057] WROTE | docs/win/soccer/05_final_scores/results/final_scores/LIGUE1/2026_04_19_LIGUE1.csv
+[2026-08-30T11:23:08.552204] PROCESSING | score_file=docs/win/soccer/05_final_scores/results/final_scores_dirty/LIGUE1/2026_04_22_LIGUE1.csv | games_file=docs/win/soccer/00_intake/games/2026_04_22_soccer_games.csv
+[2026-08-30T11:23:08.562016] GAME_ID MAP | 2026_04_22_soccer_games.csv | unique_games=16
+[2026-08-30T11:23:08.566923] MATCH RESULT | 2026_04_22_LIGUE1.csv | rows=1 attached=1 missing=0
+[2026-08-30T11:23:08.568713] WROTE | docs/win/soccer/05_final_scores/results/final_scores/LIGUE1/2026_04_22_LIGUE1.csv
+[2026-08-30T11:23:08.568836] PROCESSING | score_file=docs/win/soccer/05_final_scores/results/final_scores_dirty/LIGUE1/2026_04_24_LIGUE1.csv | games_file=docs/win/soccer/00_intake/games/2026_04_24_soccer_games.csv
+[2026-08-30T11:23:08.578504] GAME_ID MAP | 2026_04_24_soccer_games.csv | unique_games=5
+[2026-08-30T11:23:08.583391] MATCH RESULT | 2026_04_24_LIGUE1.csv | rows=1 attached=1 missing=0
+[2026-08-30T11:23:08.585168] WROTE | docs/win/soccer/05_final_scores/results/final_scores/LIGUE1/2026_04_24_LIGUE1.csv
+[2026-08-30T11:23:08.585313] PROCESSING | score_file=docs/win/soccer/05_final_scores/results/final_scores_dirty/LIGUE1/2026_04_25_LIGUE1.csv | games_file=docs/win/soccer/00_intake/games/2026_04_25_soccer_games.csv
+[2026-08-30T11:23:08.595064] GAME_ID MAP | 2026_04_25_soccer_games.csv | unique_games=34
+[2026-08-30T11:23:08.599958] MATCH RESULT | 2026_04_25_LIGUE1.csv | rows=3 attached=3 missing=0
+[2026-08-30T11:23:08.601791] WROTE | docs/win/soccer/05_final_scores/results/final_scores/LIGUE1/2026_04_25_LIGUE1.csv
+[2026-08-30T11:23:08.601900] PROCESSING | score_file=docs/win/soccer/05_final_scores/results/final_scores_dirty/LIGUE1/2026_04_26_LIGUE1.csv | games_file=docs/win/soccer/00_intake/games/2026_04_26_soccer_games.csv
+[2026-08-30T11:23:08.611681] GAME_ID MAP | 2026_04_26_soccer_games.csv | unique_games=14
+[2026-08-30T11:23:08.616520] MATCH RESULT | 2026_04_26_LIGUE1.csv | rows=5 attached=5 missing=0
+[2026-08-30T11:23:08.618329] WROTE | docs/win/soccer/05_final_scores/results/final_scores/LIGUE1/2026_04_26_LIGUE1.csv
+[2026-08-30T11:23:08.618453] PROCESSING | score_file=docs/win/soccer/05_final_scores/results/final_scores_dirty/LIGUE1/2026_05_02_LIGUE1.csv | games_file=docs/win/soccer/00_intake/games/2026_05_02_soccer_games.csv
+[2026-08-30T11:23:08.628148] GAME_ID MAP | 2026_05_02_soccer_games.csv | unique_games=15
+[2026-08-30T11:23:08.633000] MATCH RESULT | 2026_05_02_LIGUE1.csv | rows=4 attached=0 missing=4
+[2026-08-30T11:23:08.637610] WROTE | docs/win/soccer/05_final_scores/results/final_scores/LIGUE1/2026_05_02_LIGUE1.csv
+[2026-08-30T11:23:08.637721] PROCESSING | score_file=docs/win/soccer/05_final_scores/results/final_scores_dirty/LIGUE1/2026_05_03_LIGUE1.csv | games_file=docs/win/soccer/00_intake/games/2026_05_03_soccer_games.csv
+[2026-08-30T11:23:08.647440] GAME_ID MAP | 2026_05_03_soccer_games.csv | unique_games=2
+[2026-08-30T11:23:08.652301] MATCH RESULT | 2026_05_03_LIGUE1.csv | rows=5 attached=0 missing=5
+[2026-08-30T11:23:08.656771] WROTE | docs/win/soccer/05_final_scores/results/final_scores/LIGUE1/2026_05_03_LIGUE1.csv
+[2026-08-30T11:23:08.656882] PROCESSING | score_file=docs/win/soccer/05_final_scores/results/final_scores_dirty/LIGUE1/2026_05_08_LIGUE1.csv | games_file=docs/win/soccer/00_intake/games/2026_05_08_soccer_games.csv
+[2026-08-30T11:23:08.666858] GAME_ID MAP | 2026_05_08_soccer_games.csv | unique_games=4
+[2026-08-30T11:23:08.671845] MATCH RESULT | 2026_05_08_LIGUE1.csv | rows=1 attached=1 missing=0
+[2026-08-30T11:23:08.673659] WROTE | docs/win/soccer/05_final_scores/results/final_scores/LIGUE1/2026_05_08_LIGUE1.csv
+[2026-08-30T11:23:08.673766] PROCESSING | score_file=docs/win/soccer/05_final_scores/results/final_scores_dirty/LIGUE1/2026_05_10_LIGUE1.csv | games_file=docs/win/soccer/00_intake/games/2026_05_10_soccer_games.csv
+[2026-08-30T11:23:08.683697] GAME_ID MAP | 2026_05_10_soccer_games.csv | unique_games=27
+[2026-08-30T11:23:08.688617] MATCH RESULT | 2026_05_10_LIGUE1.csv | rows=8 attached=8 missing=0
+[2026-08-30T11:23:08.690461] WROTE | docs/win/soccer/05_final_scores/results/final_scores/LIGUE1/2026_05_10_LIGUE1.csv
+[2026-08-30T11:23:08.690566] PROCESSING | score_file=docs/win/soccer/05_final_scores/results/final_scores_dirty/LIGUE1/2026_05_13_LIGUE1.csv | games_file=docs/win/soccer/00_intake/games/2026_05_13_soccer_games.csv
+[2026-08-30T11:23:08.700376] GAME_ID MAP | 2026_05_13_soccer_games.csv | unique_games=21
+[2026-08-30T11:23:08.705305] MATCH RESULT | 2026_05_13_LIGUE1.csv | rows=2 attached=2 missing=0
+[2026-08-30T11:23:08.707087] WROTE | docs/win/soccer/05_final_scores/results/final_scores/LIGUE1/2026_05_13_LIGUE1.csv
+[2026-08-30T11:23:08.707246] PROCESSING | score_file=docs/win/soccer/05_final_scores/results/final_scores_dirty/LIGUE1/2026_05_17_LIGUE1.csv | games_file=docs/win/soccer/00_intake/games/2026_05_17_soccer_games.csv
+[2026-08-30T11:23:08.717052] GAME_ID MAP | 2026_05_17_soccer_games.csv | unique_games=38
+[2026-08-30T11:23:08.721938] MATCH RESULT | 2026_05_17_LIGUE1.csv | rows=8 attached=8 missing=0
+[2026-08-30T11:23:08.723765] WROTE | docs/win/soccer/05_final_scores/results/final_scores/LIGUE1/2026_05_17_LIGUE1.csv
+[2026-08-30T11:23:08.723908] PROCESSING | score_file=docs/win/soccer/05_final_scores/results/final_scores_dirty/LIGUE1/2026_05_26_LIGUE1.csv | games_file=docs/win/soccer/00_intake/games/2026_05_26_soccer_games.csv
+[2026-08-30T11:23:08.733792] GAME_ID MAP | 2026_05_26_soccer_games.csv | unique_games=1
+[2026-08-30T11:23:08.738632] MATCH RESULT | 2026_05_26_LIGUE1.csv | rows=1 attached=1 missing=0
+[2026-08-30T11:23:08.740422] WROTE | docs/win/soccer/05_final_scores/results/final_scores/LIGUE1/2026_05_26_LIGUE1.csv
+[2026-08-30T11:23:08.740525] PROCESSING | score_file=docs/win/soccer/05_final_scores/results/final_scores_dirty/LIGUE1/2026_05_29_LIGUE1.csv | games_file=docs/win/soccer/00_intake/games/2026_05_29_soccer_games.csv
+[2026-08-30T11:23:08.750169] GAME_ID MAP | 2026_05_29_soccer_games.csv | unique_games=1
+[2026-08-30T11:23:08.754938] MATCH RESULT | 2026_05_29_LIGUE1.csv | rows=1 attached=1 missing=0
+[2026-08-30T11:23:08.756696] WROTE | docs/win/soccer/05_final_scores/results/final_scores/LIGUE1/2026_05_29_LIGUE1.csv
+[2026-08-30T11:23:08.756802] PROCESSING | score_file=docs/win/soccer/05_final_scores/results/final_scores_dirty/LIGUE1/2026_08_21_LIGUE1.csv | games_file=docs/win/soccer/00_intake/games/2026_08_21_soccer_games.csv
+[2026-08-30T11:23:08.767400] PROCESSING | score_file=docs/win/soccer/05_final_scores/results/final_scores_dirty/LIGUE1/2026_08_22_LIGUE1.csv | games_file=docs/win/soccer/00_intake/games/2026_08_22_soccer_games.csv
+[2026-08-30T11:23:08.778294] PROCESSING | score_file=docs/win/soccer/05_final_scores/results/final_scores_dirty/LIGUE1/2026_08_23_LIGUE1.csv | games_file=docs/win/soccer/00_intake/games/2026_08_23_soccer_games.csv
+[2026-08-30T11:23:08.789017] PROCESSING | score_file=docs/win/soccer/05_final_scores/results/final_scores_dirty/MLS/2026_03_22_MLS.csv | games_file=docs/win/soccer/00_intake/games/2026_03_22_soccer_games.csv
+[2026-08-30T11:23:08.790346] PROCESSING | score_file=docs/win/soccer/05_final_scores/results/final_scores_dirty/MLS/2026_04_04_MLS.csv | games_file=docs/win/soccer/00_intake/games/2026_04_04_soccer_games.csv
+[2026-08-30T11:23:08.791649] PROCESSING | score_file=docs/win/soccer/05_final_scores/results/final_scores_dirty/MLS/2026_04_11_MLS.csv | games_file=docs/win/soccer/00_intake/games/2026_04_11_soccer_games.csv
+[2026-08-30T11:23:08.801455] GAME_ID MAP | 2026_04_11_soccer_games.csv | unique_games=10
+[2026-08-30T11:23:08.806448] MATCH RESULT | 2026_04_11_MLS.csv | rows=13 attached=7 missing=6
+[2026-08-30T11:23:08.811541] WROTE | docs/win/soccer/05_final_scores/results/final_scores/MLS/2026_04_11_MLS.csv
+[2026-08-30T11:23:08.811643] PROCESSING | score_file=docs/win/soccer/05_final_scores/results/final_scores_dirty/MLS/2026_04_12_MLS.csv | games_file=docs/win/soccer/00_intake/games/2026_04_12_soccer_games.csv
+[2026-08-30T11:23:08.821618] GAME_ID MAP | 2026_04_12_soccer_games.csv | unique_games=19
+[2026-08-30T11:23:08.826479] MATCH RESULT | 2026_04_12_MLS.csv | rows=1 attached=1 missing=0
+[2026-08-30T11:23:08.828277] WROTE | docs/win/soccer/05_final_scores/results/final_scores/MLS/2026_04_12_MLS.csv
+[2026-08-30T11:23:08.828382] PROCESSING | score_file=docs/win/soccer/05_final_scores/results/final_scores_dirty/MLS/2026_04_17_MLS.csv | games_file=docs/win/soccer/00_intake/games/2026_04_17_soccer_games.csv
+[2026-08-30T11:23:08.838259] GAME_ID MAP | 2026_04_17_soccer_games.csv | unique_games=5
+[2026-08-30T11:23:08.843205] MATCH RESULT | 2026_04_17_MLS.csv | rows=1 attached=1 missing=0
+[2026-08-30T11:23:08.844984] WROTE | docs/win/soccer/05_final_scores/results/final_scores/MLS/2026_04_17_MLS.csv
+[2026-08-30T11:23:08.845090] PROCESSING | score_file=docs/win/soccer/05_final_scores/results/final_scores_dirty/MLS/2026_04_18_MLS.csv | games_file=docs/win/soccer/00_intake/games/2026_04_18_soccer_games.csv
+[2026-08-30T11:23:08.855114] GAME_ID MAP | 2026_04_18_soccer_games.csv | unique_games=25
+[2026-08-30T11:23:08.860053] MATCH RESULT | 2026_04_18_MLS.csv | rows=13 attached=9 missing=4
+[2026-08-30T11:23:08.865054] WROTE | docs/win/soccer/05_final_scores/results/final_scores/MLS/2026_04_18_MLS.csv
+[2026-08-30T11:23:08.865173] PROCESSING | score_file=docs/win/soccer/05_final_scores/results/final_scores_dirty/MLS/2026_04_19_MLS.csv | games_file=docs/win/soccer/00_intake/games/2026_04_19_soccer_games.csv
+[2026-08-30T11:23:08.874976] GAME_ID MAP | 2026_04_19_soccer_games.csv | unique_games=16
+[2026-08-30T11:23:08.879898] MATCH RESULT | 2026_04_19_MLS.csv | rows=1 attached=1 missing=0
+[2026-08-30T11:23:08.881712] WROTE | docs/win/soccer/05_final_scores/results/final_scores/MLS/2026_04_19_MLS.csv
+[2026-08-30T11:23:08.881820] PROCESSING | score_file=docs/win/soccer/05_final_scores/results/final_scores_dirty/MLS/2026_04_22_MLS.csv | games_file=docs/win/soccer/00_intake/games/2026_04_22_soccer_games.csv
+[2026-08-30T11:23:08.891635] GAME_ID MAP | 2026_04_22_soccer_games.csv | unique_games=16
+[2026-08-30T11:23:08.896522] MATCH RESULT | 2026_04_22_MLS.csv | rows=11 attached=11 missing=0
+[2026-08-30T11:23:08.898341] WROTE | docs/win/soccer/05_final_scores/results/final_scores/MLS/2026_04_22_MLS.csv
+[2026-08-30T11:23:08.898447] PROCESSING | score_file=docs/win/soccer/05_final_scores/results/final_scores_dirty/MLS/2026_04_25_MLS.csv | games_file=docs/win/soccer/00_intake/games/2026_04_25_soccer_games.csv
+[2026-08-30T11:23:08.908307] GAME_ID MAP | 2026_04_25_soccer_games.csv | unique_games=34
+[2026-08-30T11:23:08.913227] MATCH RESULT | 2026_04_25_MLS.csv | rows=14 attached=14 missing=0
+[2026-08-30T11:23:08.915052] WROTE | docs/win/soccer/05_final_scores/results/final_scores/MLS/2026_04_25_MLS.csv
+[2026-08-30T11:23:08.915161] PROCESSING | score_file=docs/win/soccer/05_final_scores/results/final_scores_dirty/MLS/2026_04_26_MLS.csv | games_file=docs/win/soccer/00_intake/games/2026_04_26_soccer_games.csv
+[2026-08-30T11:23:08.924898] GAME_ID MAP | 2026_04_26_soccer_games.csv | unique_games=14
+[2026-08-30T11:23:08.929791] MATCH RESULT | 2026_04_26_MLS.csv | rows=1 attached=1 missing=0
+[2026-08-30T11:23:08.931639] WROTE | docs/win/soccer/05_final_scores/results/final_scores/MLS/2026_04_26_MLS.csv
+[2026-08-30T11:23:08.931749] PROCESSING | score_file=docs/win/soccer/05_final_scores/results/final_scores_dirty/MLS/2026_05_02_MLS.csv | games_file=docs/win/soccer/00_intake/games/2026_05_02_soccer_games.csv
+[2026-08-30T11:23:08.941598] GAME_ID MAP | 2026_05_02_soccer_games.csv | unique_games=15
+[2026-08-30T11:23:08.946544] MATCH RESULT | 2026_05_02_MLS.csv | rows=13 attached=13 missing=0
+[2026-08-30T11:23:08.948406] WROTE | docs/win/soccer/05_final_scores/results/final_scores/MLS/2026_05_02_MLS.csv
+[2026-08-30T11:23:08.948531] PROCESSING | score_file=docs/win/soccer/05_final_scores/results/final_scores_dirty/MLS/2026_05_03_MLS.csv | games_file=docs/win/soccer/00_intake/games/2026_05_03_soccer_games.csv
+[2026-08-30T11:23:08.958152] GAME_ID MAP | 2026_05_03_soccer_games.csv | unique_games=2
+[2026-08-30T11:23:08.963017] MATCH RESULT | 2026_05_03_MLS.csv | rows=2 attached=2 missing=0
+[2026-08-30T11:23:08.964821] WROTE | docs/win/soccer/05_final_scores/results/final_scores/MLS/2026_05_03_MLS.csv
+[2026-08-30T11:23:08.964947] PROCESSING | score_file=docs/win/soccer/05_final_scores/results/final_scores_dirty/MLS/2026_05_09_MLS.csv | games_file=docs/win/soccer/00_intake/games/2026_05_09_soccer_games.csv
+[2026-08-30T11:23:08.974793] GAME_ID MAP | 2026_05_09_soccer_games.csv | unique_games=29
+[2026-08-30T11:23:08.979748] MATCH RESULT | 2026_05_09_MLS.csv | rows=12 attached=12 missing=0
+[2026-08-30T11:23:08.981710] WROTE | docs/win/soccer/05_final_scores/results/final_scores/MLS/2026_05_09_MLS.csv
+[2026-08-30T11:23:08.981843] PROCESSING | score_file=docs/win/soccer/05_final_scores/results/final_scores_dirty/MLS/2026_05_10_MLS.csv | games_file=docs/win/soccer/00_intake/games/2026_05_10_soccer_games.csv
+[2026-08-30T11:23:08.991676] GAME_ID MAP | 2026_05_10_soccer_games.csv | unique_games=27
+[2026-08-30T11:23:08.996618] MATCH RESULT | 2026_05_10_MLS.csv | rows=3 attached=3 missing=0
+[2026-08-30T11:23:08.998459] WROTE | docs/win/soccer/05_final_scores/results/final_scores/MLS/2026_05_10_MLS.csv
+[2026-08-30T11:23:08.998594] PROCESSING | score_file=docs/win/soccer/05_final_scores/results/final_scores_dirty/MLS/2026_05_13_MLS.csv | games_file=docs/win/soccer/00_intake/games/2026_05_13_soccer_games.csv
+[2026-08-30T11:23:09.008476] GAME_ID MAP | 2026_05_13_soccer_games.csv | unique_games=21
+[2026-08-30T11:23:09.013457] MATCH RESULT | 2026_05_13_MLS.csv | rows=14 attached=14 missing=0
+[2026-08-30T11:23:09.015317] WROTE | docs/win/soccer/05_final_scores/results/final_scores/MLS/2026_05_13_MLS.csv
+[2026-08-30T11:23:09.015445] PROCESSING | score_file=docs/win/soccer/05_final_scores/results/final_scores_dirty/MLS/2026_05_16_MLS.csv | games_file=docs/win/soccer/00_intake/games/2026_05_16_soccer_games.csv
+[2026-08-30T11:23:09.025352] GAME_ID MAP | 2026_05_16_soccer_games.csv | unique_games=22
+[2026-08-30T11:23:09.032294] MATCH RESULT | 2026_05_16_MLS.csv | rows=13 attached=13 missing=0
+[2026-08-30T11:23:09.034980] WROTE | docs/win/soccer/05_final_scores/results/final_scores/MLS/2026_05_16_MLS.csv
+[2026-08-30T11:23:09.035165] PROCESSING | score_file=docs/win/soccer/05_final_scores/results/final_scores_dirty/MLS/2026_05_17_MLS.csv | games_file=docs/win/soccer/00_intake/games/2026_05_17_soccer_games.csv
+[2026-08-30T11:23:09.048768] GAME_ID MAP | 2026_05_17_soccer_games.csv | unique_games=38
+[2026-08-30T11:23:09.053815] MATCH RESULT | 2026_05_17_MLS.csv | rows=2 attached=2 missing=0
+[2026-08-30T11:23:09.055715] WROTE | docs/win/soccer/05_final_scores/results/final_scores/MLS/2026_05_17_MLS.csv
+[2026-08-30T11:23:09.055844] PROCESSING | score_file=docs/win/soccer/05_final_scores/results/final_scores_dirty/MLS/2026_05_23_MLS.csv | games_file=docs/win/soccer/00_intake/games/2026_05_23_soccer_games.csv
+[2026-08-30T11:23:09.065796] GAME_ID MAP | 2026_05_23_soccer_games.csv | unique_games=23
+[2026-08-30T11:23:09.070726] MATCH RESULT | 2026_05_23_MLS.csv | rows=12 attached=12 missing=0
+[2026-08-30T11:23:09.072574] WROTE | docs/win/soccer/05_final_scores/results/final_scores/MLS/2026_05_23_MLS.csv
+[2026-08-30T11:23:09.072702] PROCESSING | score_file=docs/win/soccer/05_final_scores/results/final_scores_dirty/MLS/2026_05_24_MLS.csv | games_file=docs/win/soccer/00_intake/games/2026_05_24_soccer_games.csv
+[2026-08-30T11:23:09.082564] GAME_ID MAP | 2026_05_24_soccer_games.csv | unique_games=21
+[2026-08-30T11:23:09.087453] MATCH RESULT | 2026_05_24_MLS.csv | rows=3 attached=3 missing=0
+[2026-08-30T11:23:09.089257] WROTE | docs/win/soccer/05_final_scores/results/final_scores/MLS/2026_05_24_MLS.csv
+[2026-08-30T11:23:09.089384] PROCESSING | score_file=docs/win/soccer/05_final_scores/results/final_scores_dirty/MLS/2026_07_16_MLS.csv | games_file=docs/win/soccer/00_intake/games/2026_07_16_soccer_games.csv
+[2026-08-30T11:23:09.099086] GAME_ID MAP | 2026_07_16_soccer_games.csv | unique_games=4
+[2026-08-30T11:23:09.103987] MATCH RESULT | 2026_07_16_MLS.csv | rows=3 attached=3 missing=0
+[2026-08-30T11:23:09.105772] WROTE | docs/win/soccer/05_final_scores/results/final_scores/MLS/2026_07_16_MLS.csv
+[2026-08-30T11:23:09.105878] PROCESSING | score_file=docs/win/soccer/05_final_scores/results/final_scores_dirty/MLS/2026_07_17_MLS.csv | games_file=docs/win/soccer/00_intake/games/2026_07_17_soccer_games.csv
+[2026-08-30T11:23:09.115552] GAME_ID MAP | 2026_07_17_soccer_games.csv | unique_games=2
+[2026-08-30T11:23:09.120483] MATCH RESULT | 2026_07_17_MLS.csv | rows=2 attached=2 missing=0
+[2026-08-30T11:23:09.122252] WROTE | docs/win/soccer/05_final_scores/results/final_scores/MLS/2026_07_17_MLS.csv
+[2026-08-30T11:23:09.122358] PROCESSING | score_file=docs/win/soccer/05_final_scores/results/final_scores_dirty/MLS/2026_07_22_MLS.csv | games_file=docs/win/soccer/00_intake/games/2026_07_22_soccer_games.csv
+[2026-08-30T11:23:09.132138] GAME_ID MAP | 2026_07_22_soccer_games.csv | unique_games=15
+[2026-08-30T11:23:09.137053] MATCH RESULT | 2026_07_22_MLS.csv | rows=14 attached=14 missing=0
+[2026-08-30T11:23:09.139073] WROTE | docs/win/soccer/05_final_scores/results/final_scores/MLS/2026_07_22_MLS.csv
+[2026-08-30T11:23:09.139217] PROCESSING | score_file=docs/win/soccer/05_final_scores/results/final_scores_dirty/MLS/2026_07_25_MLS.csv | games_file=docs/win/soccer/00_intake/games/2026_07_25_soccer_games.csv
+[2026-08-30T11:23:09.149106] GAME_ID MAP | 2026_07_25_soccer_games.csv | unique_games=15
+[2026-08-30T11:23:09.153996] MATCH RESULT | 2026_07_25_MLS.csv | rows=15 attached=15 missing=0
+[2026-08-30T11:23:09.155940] WROTE | docs/win/soccer/05_final_scores/results/final_scores/MLS/2026_07_25_MLS.csv
+[2026-08-30T11:23:09.156069] PROCESSING | score_file=docs/win/soccer/05_final_scores/results/final_scores_dirty/MLS/2026_07_31_MLS.csv | games_file=docs/win/soccer/00_intake/games/2026_07_31_soccer_games.csv
+[2026-08-30T11:23:09.166020] GAME_ID MAP | 2026_07_31_soccer_games.csv | unique_games=1
+[2026-08-30T11:23:09.170804] MATCH RESULT | 2026_07_31_MLS.csv | rows=1 attached=1 missing=0
+[2026-08-30T11:23:09.172569] WROTE | docs/win/soccer/05_final_scores/results/final_scores/MLS/2026_07_31_MLS.csv
+[2026-08-30T11:23:09.172674] PROCESSING | score_file=docs/win/soccer/05_final_scores/results/final_scores_dirty/MLS/2026_08_01_MLS.csv | games_file=docs/win/soccer/00_intake/games/2026_08_01_soccer_games.csv
+[2026-08-30T11:23:09.182514] GAME_ID MAP | 2026_08_01_soccer_games.csv | unique_games=14
+[2026-08-30T11:23:09.187481] MATCH RESULT | 2026_08_01_MLS.csv | rows=14 attached=14 missing=0
+[2026-08-30T11:23:09.189315] WROTE | docs/win/soccer/05_final_scores/results/final_scores/MLS/2026_08_01_MLS.csv
+[2026-08-30T11:23:09.189428] PROCESSING | score_file=docs/win/soccer/05_final_scores/results/final_scores_dirty/MLS/2026_08_08_MLS.csv | games_file=docs/win/soccer/00_intake/games/2026_08_08_soccer_games.csv
+[2026-08-30T11:23:09.199270] GAME_ID MAP | 2026_08_08_soccer_games.csv | unique_games=1
+[2026-08-30T11:23:09.204052] MATCH RESULT | 2026_08_08_MLS.csv | rows=1 attached=1 missing=0
+[2026-08-30T11:23:09.205851] WROTE | docs/win/soccer/05_final_scores/results/final_scores/MLS/2026_08_08_MLS.csv
+[2026-08-30T11:23:09.205995] PROCESSING | score_file=docs/win/soccer/05_final_scores/results/final_scores_dirty/MLS/2026_08_15_MLS.csv | games_file=docs/win/soccer/00_intake/games/2026_08_15_soccer_games.csv
+[2026-08-30T11:23:09.216681] PROCESSING | score_file=docs/win/soccer/05_final_scores/results/final_scores_dirty/MLS/2026_08_16_MLS.csv | games_file=docs/win/soccer/00_intake/games/2026_08_16_soccer_games.csv
+[2026-08-30T11:23:09.227358] PROCESSING | score_file=docs/win/soccer/05_final_scores/results/final_scores_dirty/MLS/2026_08_19_MLS.csv | games_file=docs/win/soccer/00_intake/games/2026_08_19_soccer_games.csv
+[2026-08-30T11:23:09.238160] PROCESSING | score_file=docs/win/soccer/05_final_scores/results/final_scores_dirty/MLS/2026_08_22_MLS.csv | games_file=docs/win/soccer/00_intake/games/2026_08_22_soccer_games.csv
+[2026-08-30T11:23:09.249023] PROCESSING | score_file=docs/win/soccer/05_final_scores/results/final_scores_dirty/MLS/2026_08_23_MLS.csv | games_file=docs/win/soccer/00_intake/games/2026_08_23_soccer_games.csv
+[2026-08-30T11:23:09.259743] PROCESSING | score_file=docs/win/soccer/05_final_scores/results/final_scores_dirty/SERIEA/2026_03_01_SERIEA.csv | games_file=docs/win/soccer/00_intake/games/2026_03_01_soccer_games.csv
+[2026-08-30T11:23:09.261041] PROCESSING | score_file=docs/win/soccer/05_final_scores/results/final_scores_dirty/SERIEA/2026_03_02_SERIEA.csv | games_file=docs/win/soccer/00_intake/games/2026_03_02_soccer_games.csv
+[2026-08-30T11:23:09.262345] PROCESSING | score_file=docs/win/soccer/05_final_scores/results/final_scores_dirty/SERIEA/2026_03_06_SERIEA.csv | games_file=docs/win/soccer/00_intake/games/2026_03_06_soccer_games.csv
+[2026-08-30T11:23:09.263600] PROCESSING | score_file=docs/win/soccer/05_final_scores/results/final_scores_dirty/SERIEA/2026_03_07_SERIEA.csv | games_file=docs/win/soccer/00_intake/games/2026_03_07_soccer_games.csv
+[2026-08-30T11:23:09.264873] PROCESSING | score_file=docs/win/soccer/05_final_scores/results/final_scores_dirty/SERIEA/2026_03_08_SERIEA.csv | games_file=docs/win/soccer/00_intake/games/2026_03_08_soccer_games.csv
+[2026-08-30T11:23:09.266120] PROCESSING | score_file=docs/win/soccer/05_final_scores/results/final_scores_dirty/SERIEA/2026_03_09_SERIEA.csv | games_file=docs/win/soccer/00_intake/games/2026_03_09_soccer_games.csv
+[2026-08-30T11:23:09.267391] PROCESSING | score_file=docs/win/soccer/05_final_scores/results/final_scores_dirty/SERIEA/2026_03_13_SERIEA.csv | games_file=docs/win/soccer/00_intake/games/2026_03_13_soccer_games.csv
+[2026-08-30T11:23:09.268621] PROCESSING | score_file=docs/win/soccer/05_final_scores/results/final_scores_dirty/SERIEA/2026_03_14_SERIEA.csv | games_file=docs/win/soccer/00_intake/games/2026_03_14_soccer_games.csv
+[2026-08-30T11:23:09.269873] PROCESSING | score_file=docs/win/soccer/05_final_scores/results/final_scores_dirty/SERIEA/2026_03_15_SERIEA.csv | games_file=docs/win/soccer/00_intake/games/2026_03_15_soccer_games.csv
+[2026-08-30T11:23:09.271106] PROCESSING | score_file=docs/win/soccer/05_final_scores/results/final_scores_dirty/SERIEA/2026_03_16_SERIEA.csv | games_file=docs/win/soccer/00_intake/games/2026_03_16_soccer_games.csv
+[2026-08-30T11:23:09.272382] PROCESSING | score_file=docs/win/soccer/05_final_scores/results/final_scores_dirty/SERIEA/2026_03_20_SERIEA.csv | games_file=docs/win/soccer/00_intake/games/2026_03_20_soccer_games.csv
+[2026-08-30T11:23:09.273609] PROCESSING | score_file=docs/win/soccer/05_final_scores/results/final_scores_dirty/SERIEA/2026_03_21_SERIEA.csv | games_file=docs/win/soccer/00_intake/games/2026_03_21_soccer_games.csv
+[2026-08-30T11:23:09.274861] PROCESSING | score_file=docs/win/soccer/05_final_scores/results/final_scores_dirty/SERIEA/2026_03_22_SERIEA.csv | games_file=docs/win/soccer/00_intake/games/2026_03_22_soccer_games.csv
+[2026-08-30T11:23:09.276099] PROCESSING | score_file=docs/win/soccer/05_final_scores/results/final_scores_dirty/SERIEA/2026_04_04_SERIEA.csv | games_file=docs/win/soccer/00_intake/games/2026_04_04_soccer_games.csv
+[2026-08-30T11:23:09.277367] PROCESSING | score_file=docs/win/soccer/05_final_scores/results/final_scores_dirty/SERIEA/2026_04_05_SERIEA.csv | games_file=docs/win/soccer/00_intake/games/2026_04_05_soccer_games.csv
+[2026-08-30T11:23:09.278607] PROCESSING | score_file=docs/win/soccer/05_final_scores/results/final_scores_dirty/SERIEA/2026_04_06_SERIEA.csv | games_file=docs/win/soccer/00_intake/games/2026_04_06_soccer_games.csv
+[2026-08-30T11:23:09.288361] GAME_ID MAP | 2026_04_06_soccer_games.csv | unique_games=2
+[2026-08-30T11:23:09.293450] MATCH RESULT | 2026_04_06_SERIEA.csv | rows=4 attached=1 missing=3
+[2026-08-30T11:23:09.298332] WROTE | docs/win/soccer/05_final_scores/results/final_scores/SERIEA/2026_04_06_SERIEA.csv
+[2026-08-30T11:23:09.298434] PROCESSING | score_file=docs/win/soccer/05_final_scores/results/final_scores_dirty/SERIEA/2026_04_10_SERIEA.csv | games_file=docs/win/soccer/00_intake/games/2026_04_10_soccer_games.csv
+[2026-08-30T11:23:09.308140] GAME_ID MAP | 2026_04_10_soccer_games.csv | unique_games=6
+[2026-08-30T11:23:09.313040] MATCH RESULT | 2026_04_10_SERIEA.csv | rows=1 attached=1 missing=0
+[2026-08-30T11:23:09.314851] WROTE | docs/win/soccer/05_final_scores/results/final_scores/SERIEA/2026_04_10_SERIEA.csv
+[2026-08-30T11:23:09.314956] PROCESSING | score_file=docs/win/soccer/05_final_scores/results/final_scores_dirty/SERIEA/2026_04_11_SERIEA.csv | games_file=docs/win/soccer/00_intake/games/2026_04_11_soccer_games.csv
+[2026-08-30T11:23:09.324741] GAME_ID MAP | 2026_04_11_soccer_games.csv | unique_games=10
+[2026-08-30T11:23:09.329627] MATCH RESULT | 2026_04_11_SERIEA.csv | rows=4 attached=1 missing=3
+[2026-08-30T11:23:09.334621] WROTE | docs/win/soccer/05_final_scores/results/final_scores/SERIEA/2026_04_11_SERIEA.csv
+[2026-08-30T11:23:09.334734] PROCESSING | score_file=docs/win/soccer/05_final_scores/results/final_scores_dirty/SERIEA/2026_04_12_SERIEA.csv | games_file=docs/win/soccer/00_intake/games/2026_04_12_soccer_games.csv
+[2026-08-30T11:23:09.344580] GAME_ID MAP | 2026_04_12_soccer_games.csv | unique_games=19
+[2026-08-30T11:23:09.349483] MATCH RESULT | 2026_04_12_SERIEA.csv | rows=4 attached=4 missing=0
+[2026-08-30T11:23:09.351290] WROTE | docs/win/soccer/05_final_scores/results/final_scores/SERIEA/2026_04_12_SERIEA.csv
+[2026-08-30T11:23:09.351397] PROCESSING | score_file=docs/win/soccer/05_final_scores/results/final_scores_dirty/SERIEA/2026_04_13_SERIEA.csv | games_file=docs/win/soccer/00_intake/games/2026_04_13_soccer_games.csv
+[2026-08-30T11:23:09.361126] GAME_ID MAP | 2026_04_13_soccer_games.csv | unique_games=2
+[2026-08-30T11:23:09.366062] MATCH RESULT | 2026_04_13_SERIEA.csv | rows=1 attached=1 missing=0
+[2026-08-30T11:23:09.367859] WROTE | docs/win/soccer/05_final_scores/results/final_scores/SERIEA/2026_04_13_SERIEA.csv
+[2026-08-30T11:23:09.367966] PROCESSING | score_file=docs/win/soccer/05_final_scores/results/final_scores_dirty/SERIEA/2026_04_17_SERIEA.csv | games_file=docs/win/soccer/00_intake/games/2026_04_17_soccer_games.csv
+[2026-08-30T11:23:09.377713] GAME_ID MAP | 2026_04_17_soccer_games.csv | unique_games=5
+[2026-08-30T11:23:09.382587] MATCH RESULT | 2026_04_17_SERIEA.csv | rows=2 attached=2 missing=0
+[2026-08-30T11:23:09.384387] WROTE | docs/win/soccer/05_final_scores/results/final_scores/SERIEA/2026_04_17_SERIEA.csv
+[2026-08-30T11:23:09.384493] PROCESSING | score_file=docs/win/soccer/05_final_scores/results/final_scores_dirty/SERIEA/2026_04_18_SERIEA.csv | games_file=docs/win/soccer/00_intake/games/2026_04_18_soccer_games.csv
+[2026-08-30T11:23:09.394322] GAME_ID MAP | 2026_04_18_soccer_games.csv | unique_games=25
+[2026-08-30T11:23:09.399230] MATCH RESULT | 2026_04_18_SERIEA.csv | rows=3 attached=3 missing=0
+[2026-08-30T11:23:09.401002] WROTE | docs/win/soccer/05_final_scores/results/final_scores/SERIEA/2026_04_18_SERIEA.csv
+[2026-08-30T11:23:09.401110] PROCESSING | score_file=docs/win/soccer/05_final_scores/results/final_scores_dirty/SERIEA/2026_04_19_SERIEA.csv | games_file=docs/win/soccer/00_intake/games/2026_04_19_soccer_games.csv
+[2026-08-30T11:23:09.410905] GAME_ID MAP | 2026_04_19_soccer_games.csv | unique_games=16
+[2026-08-30T11:23:09.415871] MATCH RESULT | 2026_04_19_SERIEA.csv | rows=3 attached=3 missing=0
+[2026-08-30T11:23:09.417681] WROTE | docs/win/soccer/05_final_scores/results/final_scores/SERIEA/2026_04_19_SERIEA.csv
+[2026-08-30T11:23:09.417791] PROCESSING | score_file=docs/win/soccer/05_final_scores/results/final_scores_dirty/SERIEA/2026_04_20_SERIEA.csv | games_file=docs/win/soccer/00_intake/games/2026_04_20_soccer_games.csv
+[2026-08-30T11:23:09.427510] GAME_ID MAP | 2026_04_20_soccer_games.csv | unique_games=2
+[2026-08-30T11:23:09.432436] MATCH RESULT | 2026_04_20_SERIEA.csv | rows=1 attached=1 missing=0
+[2026-08-30T11:23:09.434225] WROTE | docs/win/soccer/05_final_scores/results/final_scores/SERIEA/2026_04_20_SERIEA.csv
+[2026-08-30T11:23:09.434354] PROCESSING | score_file=docs/win/soccer/05_final_scores/results/final_scores_dirty/SERIEA/2026_04_24_SERIEA.csv | games_file=docs/win/soccer/00_intake/games/2026_04_24_soccer_games.csv
+[2026-08-30T11:23:09.444116] GAME_ID MAP | 2026_04_24_soccer_games.csv | unique_games=5
+[2026-08-30T11:23:09.449006] MATCH RESULT | 2026_04_24_SERIEA.csv | rows=1 attached=1 missing=0
+[2026-08-30T11:23:09.450809] WROTE | docs/win/soccer/05_final_scores/results/final_scores/SERIEA/2026_04_24_SERIEA.csv
+[2026-08-30T11:23:09.450917] PROCESSING | score_file=docs/win/soccer/05_final_scores/results/final_scores_dirty/SERIEA/2026_04_25_SERIEA.csv | games_file=docs/win/soccer/00_intake/games/2026_04_25_soccer_games.csv
+[2026-08-30T11:23:09.460733] GAME_ID MAP | 2026_04_25_soccer_games.csv | unique_games=34
+[2026-08-30T11:23:09.465657] MATCH RESULT | 2026_04_25_SERIEA.csv | rows=2 attached=2 missing=0
+[2026-08-30T11:23:09.467473] WROTE | docs/win/soccer/05_final_scores/results/final_scores/SERIEA/2026_04_25_SERIEA.csv
+[2026-08-30T11:23:09.467581] PROCESSING | score_file=docs/win/soccer/05_final_scores/results/final_scores_dirty/SERIEA/2026_04_26_SERIEA.csv | games_file=docs/win/soccer/00_intake/games/2026_04_26_soccer_games.csv
+[2026-08-30T11:23:09.477322] GAME_ID MAP | 2026_04_26_soccer_games.csv | unique_games=14
+[2026-08-30T11:23:09.482211] MATCH RESULT | 2026_04_26_SERIEA.csv | rows=3 attached=3 missing=0
+[2026-08-30T11:23:09.483987] WROTE | docs/win/soccer/05_final_scores/results/final_scores/SERIEA/2026_04_26_SERIEA.csv
+[2026-08-30T11:23:09.484096] PROCESSING | score_file=docs/win/soccer/05_final_scores/results/final_scores_dirty/SERIEA/2026_04_27_SERIEA.csv | games_file=docs/win/soccer/00_intake/games/2026_04_27_soccer_games.csv
+[2026-08-30T11:23:09.493785] GAME_ID MAP | 2026_04_27_soccer_games.csv | unique_games=4
+[2026-08-30T11:23:09.498677] MATCH RESULT | 2026_04_27_SERIEA.csv | rows=2 attached=2 missing=0
+[2026-08-30T11:23:09.500564] WROTE | docs/win/soccer/05_final_scores/results/final_scores/SERIEA/2026_04_27_SERIEA.csv
+[2026-08-30T11:23:09.500672] PROCESSING | score_file=docs/win/soccer/05_final_scores/results/final_scores_dirty/SERIEA/2026_05_01_SERIEA.csv | games_file=docs/win/soccer/00_intake/games/2026_05_01_soccer_games.csv
+[2026-08-30T11:23:09.510390] GAME_ID MAP | 2026_05_01_soccer_games.csv | unique_games=1
+[2026-08-30T11:23:09.515278] MATCH RESULT | 2026_05_01_SERIEA.csv | rows=1 attached=0 missing=1
+[2026-08-30T11:23:09.519746] WROTE | docs/win/soccer/05_final_scores/results/final_scores/SERIEA/2026_05_01_SERIEA.csv
+[2026-08-30T11:23:09.519899] PROCESSING | score_file=docs/win/soccer/05_final_scores/results/final_scores_dirty/SERIEA/2026_05_02_SERIEA.csv | games_file=docs/win/soccer/00_intake/games/2026_05_02_soccer_games.csv
+[2026-08-30T11:23:09.529669] GAME_ID MAP | 2026_05_02_soccer_games.csv | unique_games=15
+[2026-08-30T11:23:09.534576] MATCH RESULT | 2026_05_02_SERIEA.csv | rows=3 attached=0 missing=3
+[2026-08-30T11:23:09.539132] WROTE | docs/win/soccer/05_final_scores/results/final_scores/SERIEA/2026_05_02_SERIEA.csv
+[2026-08-30T11:23:09.539324] PROCESSING | score_file=docs/win/soccer/05_final_scores/results/final_scores_dirty/SERIEA/2026_05_03_SERIEA.csv | games_file=docs/win/soccer/00_intake/games/2026_05_03_soccer_games.csv
+[2026-08-30T11:23:09.549054] GAME_ID MAP | 2026_05_03_soccer_games.csv | unique_games=2
+[2026-08-30T11:23:09.553945] MATCH RESULT | 2026_05_03_SERIEA.csv | rows=4 attached=0 missing=4
+[2026-08-30T11:23:09.558499] WROTE | docs/win/soccer/05_final_scores/results/final_scores/SERIEA/2026_05_03_SERIEA.csv
+[2026-08-30T11:23:09.558614] PROCESSING | score_file=docs/win/soccer/05_final_scores/results/final_scores_dirty/SERIEA/2026_05_04_SERIEA.csv | games_file=docs/win/soccer/00_intake/games/2026_05_04_soccer_games.csv
+[2026-08-30T11:23:09.568432] GAME_ID MAP | 2026_05_04_soccer_games.csv | unique_games=5
+[2026-08-30T11:23:09.573361] MATCH RESULT | 2026_05_04_SERIEA.csv | rows=2 attached=2 missing=0
+[2026-08-30T11:23:09.575148] WROTE | docs/win/soccer/05_final_scores/results/final_scores/SERIEA/2026_05_04_SERIEA.csv
+[2026-08-30T11:23:09.575311] PROCESSING | score_file=docs/win/soccer/05_final_scores/results/final_scores_dirty/SERIEA/2026_05_08_SERIEA.csv | games_file=docs/win/soccer/00_intake/games/2026_05_08_soccer_games.csv
+[2026-08-30T11:23:09.585002] GAME_ID MAP | 2026_05_08_soccer_games.csv | unique_games=4
+[2026-08-30T11:23:09.589908] MATCH RESULT | 2026_05_08_SERIEA.csv | rows=1 attached=1 missing=0
+[2026-08-30T11:23:09.591722] WROTE | docs/win/soccer/05_final_scores/results/final_scores/SERIEA/2026_05_08_SERIEA.csv
+[2026-08-30T11:23:09.591855] PROCESSING | score_file=docs/win/soccer/05_final_scores/results/final_scores_dirty/SERIEA/2026_05_09_SERIEA.csv | games_file=docs/win/soccer/00_intake/games/2026_05_09_soccer_games.csv
+[2026-08-30T11:23:09.601729] GAME_ID MAP | 2026_05_09_soccer_games.csv | unique_games=29
+[2026-08-30T11:23:09.606644] MATCH RESULT | 2026_05_09_SERIEA.csv | rows=3 attached=3 missing=0
+[2026-08-30T11:23:09.608481] WROTE | docs/win/soccer/05_final_scores/results/final_scores/SERIEA/2026_05_09_SERIEA.csv
+[2026-08-30T11:23:09.608589] PROCESSING | score_file=docs/win/soccer/05_final_scores/results/final_scores_dirty/SERIEA/2026_05_10_SERIEA.csv | games_file=docs/win/soccer/00_intake/games/2026_05_10_soccer_games.csv
+[2026-08-30T11:23:09.618453] GAME_ID MAP | 2026_05_10_soccer_games.csv | unique_games=27
+[2026-08-30T11:23:09.623430] MATCH RESULT | 2026_05_10_SERIEA.csv | rows=5 attached=5 missing=0
+[2026-08-30T11:23:09.625250] WROTE | docs/win/soccer/05_final_scores/results/final_scores/SERIEA/2026_05_10_SERIEA.csv
+[2026-08-30T11:23:09.625394] PROCESSING | score_file=docs/win/soccer/05_final_scores/results/final_scores_dirty/SERIEA/2026_05_11_SERIEA.csv | games_file=docs/win/soccer/00_intake/games/2026_05_11_soccer_games.csv
+[2026-08-30T11:23:09.635113] GAME_ID MAP | 2026_05_11_soccer_games.csv | unique_games=3
+[2026-08-30T11:23:09.639988] MATCH RESULT | 2026_05_11_SERIEA.csv | rows=1 attached=1 missing=0
+[2026-08-30T11:23:09.641800] WROTE | docs/win/soccer/05_final_scores/results/final_scores/SERIEA/2026_05_11_SERIEA.csv
+[2026-08-30T11:23:09.641906] PROCESSING | score_file=docs/win/soccer/05_final_scores/results/final_scores_dirty/SERIEA/2026_05_17_SERIEA.csv | games_file=docs/win/soccer/00_intake/games/2026_05_17_soccer_games.csv
+[2026-08-30T11:23:09.651823] GAME_ID MAP | 2026_05_17_soccer_games.csv | unique_games=38
+[2026-08-30T11:23:09.656718] MATCH RESULT | 2026_05_17_SERIEA.csv | rows=9 attached=9 missing=0
+[2026-08-30T11:23:09.658550] WROTE | docs/win/soccer/05_final_scores/results/final_scores/SERIEA/2026_05_17_SERIEA.csv
+[2026-08-30T11:23:09.658657] PROCESSING | score_file=docs/win/soccer/05_final_scores/results/final_scores_dirty/SERIEA/2026_05_22_SERIEA.csv | games_file=docs/win/soccer/00_intake/games/2026_05_22_soccer_games.csv
+[2026-08-30T11:23:09.668642] GAME_ID MAP | 2026_05_22_soccer_games.csv | unique_games=1
+[2026-08-30T11:23:09.673428] MATCH RESULT | 2026_05_22_SERIEA.csv | rows=1 attached=1 missing=0
+[2026-08-30T11:23:09.675210] WROTE | docs/win/soccer/05_final_scores/results/final_scores/SERIEA/2026_05_22_SERIEA.csv
+[2026-08-30T11:23:09.675319] PROCESSING | score_file=docs/win/soccer/05_final_scores/results/final_scores_dirty/SERIEA/2026_05_23_SERIEA.csv | games_file=docs/win/soccer/00_intake/games/2026_05_23_soccer_games.csv
+[2026-08-30T11:23:09.685211] GAME_ID MAP | 2026_05_23_soccer_games.csv | unique_games=23
+[2026-08-30T11:23:09.690066] MATCH RESULT | 2026_05_23_SERIEA.csv | rows=2 attached=2 missing=0
+[2026-08-30T11:23:09.691869] WROTE | docs/win/soccer/05_final_scores/results/final_scores/SERIEA/2026_05_23_SERIEA.csv
+[2026-08-30T11:23:09.691976] PROCESSING | score_file=docs/win/soccer/05_final_scores/results/final_scores_dirty/SERIEA/2026_05_24_SERIEA.csv | games_file=docs/win/soccer/00_intake/games/2026_05_24_soccer_games.csv
+[2026-08-30T11:23:09.701824] GAME_ID MAP | 2026_05_24_soccer_games.csv | unique_games=21
+[2026-08-30T11:23:09.706716] MATCH RESULT | 2026_05_24_SERIEA.csv | rows=7 attached=7 missing=0
+[2026-08-30T11:23:09.708545] WROTE | docs/win/soccer/05_final_scores/results/final_scores/SERIEA/2026_05_24_SERIEA.csv
+[2026-08-30T11:23:09.708680] PROCESSING | score_file=docs/win/soccer/05_final_scores/results/final_scores_dirty/SERIEA/2026_08_22_SERIEA.csv | games_file=docs/win/soccer/00_intake/games/2026_08_22_soccer_games.csv
+[2026-08-30T11:23:09.719635] PROCESSING | score_file=docs/win/soccer/05_final_scores/results/final_scores_dirty/SERIEA/2026_08_23_SERIEA.csv | games_file=docs/win/soccer/00_intake/games/2026_08_23_soccer_games.csv
+[2026-08-30T11:23:09.730485] PROCESSING | score_file=docs/win/soccer/05_final_scores/results/final_scores_dirty/SERIEA/2026_08_24_SERIEA.csv | games_file=docs/win/soccer/00_intake/games/2026_08_24_soccer_games.csv
+[2026-08-30T11:23:09.741424] FILES WRITTEN: 133
+[2026-08-30T11:23:09.741555] === END soccer_add_game_id.py 2026-08-30T11:23:09.741535 ===

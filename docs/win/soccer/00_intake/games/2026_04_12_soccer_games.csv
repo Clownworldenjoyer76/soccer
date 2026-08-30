@@ -1,0 +1,20 @@
+game_id,sport,league,match_date,match_time,home_team,away_team
+33673484,soccer,bundesliga,2026_04_12,01:30 PM,Koln,Werder Bremen
+33673482,soccer,bundesliga,2026_04_12,03:30 PM,VfB Stuttgart,Hamburg
+33673492,soccer,bundesliga,2026_04_12,05:30 PM,Mainz,Freiburg
+33642701,soccer,epl,2026_04_12,02:00 PM,Crystal Palace,Newcastle
+33642702,soccer,epl,2026_04_12,02:00 PM,Nottingham Forest,Aston Villa
+33550029,soccer,epl,2026_04_12,02:00 PM,Sunderland,Tottenham Hotspur
+33550031,soccer,epl,2026_04_12,04:30 PM,Chelsea,Manchester City
+33674618,soccer,laliga,2026_04_12,02:15 PM,Mallorca,Vallecano
+33674619,soccer,laliga,2026_04_12,04:30 PM,Celta Vigo,Real Oviedo
+33674617,soccer,laliga,2026_04_12,07:00 PM,Athletic Club,Villarreal
+33674616,soccer,laliga,2026_04_12,12:00 PM,Osasuna,Real Betis
+33675988,soccer,ligue1,2026_04_12,03:15 PM,Nice,Le Havre
+33675989,soccer,ligue1,2026_04_12,03:15 PM,Toulouse,Lille
+33675990,soccer,ligue1,2026_04_12,06:45 PM,Lyon,Lorient
+33780426,soccer,mls,2026_04_12,11:00 PM,Columbus Crew,Orlando City
+33676097,soccer,seriea,2026_04_12,01:00 PM,Parma,Napoli
+33676103,soccer,seriea,2026_04_12,04:00 PM,Bologna,Lecce
+33676110,soccer,seriea,2026_04_12,06:45 PM,Como,Inter Milan
+33676098,soccer,seriea,2026_04_12,10:30 AM,Genoa,Sassuolo

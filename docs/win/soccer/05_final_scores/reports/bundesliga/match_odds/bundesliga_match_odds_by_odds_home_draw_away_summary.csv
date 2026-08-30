@@ -1,3 +1,5 @@
 bucket,side,Win,Loss,Push,Total,Win_Pct
 +150_to_+199,home,1,0,0,1,1.0
++200_to_+249,away,1,0,0,1,1.0
++200_to_+249,home,0,1,0,1,0.0
 +300_or_higher,home,1,0,0,1,1.0

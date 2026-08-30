@@ -1,0 +1,35 @@
+game_id,sport,league,match_date,match_time,home_team,away_team
+33994101,soccer,bundesliga,2026_04_25,01:30 PM,Augsburg,Eintracht Frankfurt
+33994151,soccer,bundesliga,2026_04_25,01:30 PM,Heidenheim,St Pauli
+33994104,soccer,bundesliga,2026_04_25,01:30 PM,Koln,Leverkusen
+33994100,soccer,bundesliga,2026_04_25,01:30 PM,Mainz,Bayern Munich
+33994099,soccer,bundesliga,2026_04_25,01:30 PM,Wolfsburg,Borussia Monchengladbach
+33994153,soccer,bundesliga,2026_04_25,04:30 PM,Hamburg,Hoffenheim
+33981320,soccer,epl,2026_04_25,02:00 PM,Liverpool,Crystal Palace
+33981318,soccer,epl,2026_04_25,02:00 PM,West Ham,Everton
+33981323,soccer,epl,2026_04_25,02:00 PM,Wolverhampton,Tottenham Hotspur
+33981322,soccer,epl,2026_04_25,04:30 PM,Arsenal,Newcastle
+33981317,soccer,epl,2026_04_25,11:30 AM,Fulham,Aston Villa
+33999012,soccer,laliga,2026_04_25,02:15 PM,Getafe,Barcelona
+33999015,soccer,laliga,2026_04_25,04:30 PM,Valencia,Girona
+33999024,soccer,laliga,2026_04_25,07:00 PM,Atletico Madrid,Athletic Club
+33999005,soccer,laliga,2026_04_25,12:00 PM,Alaves,Mallorca
+33999620,soccer,ligue1,2026_04_25,01:00 PM,Lyon,Auxerre
+33999628,soccer,ligue1,2026_04_25,05:00 PM,Angers,Paris Saint Germain
+33999630,soccer,ligue1,2026_04_25,07:05 PM,Toulouse,Monaco
+118700,soccer,mls,2026_04_25,03:00 PM,Toronto FC,Atlanta United
+118701,soccer,mls,2026_04_25,04:30 PM,CF Montreal,New York City FC
+118702,soccer,mls,2026_04_25,06:45 PM,Minnesota United,Los Angeles FC
+118803,soccer,mls,2026_04_25,09:30 PM,Columbus Crew,Philadelphia Union
+118804,soccer,mls,2026_04_25,09:30 PM,DC United,Orlando City
+118805,soccer,mls,2026_04_25,09:30 PM,FC Cincinnati,New York Red Bulls
+118806,soccer,mls,2026_04_25,09:30 PM,Inter Miami,New England Revolution
+118807,soccer,mls,2026_04_25,10:30 PM,Austin FC,Houston Dynamo
+118808,soccer,mls,2026_04_25,10:30 PM,Chicago Fire,Sporting Kansas City
+118809,soccer,mls,2026_04_25,10:30 PM,Nashville SC,Charlotte FC
+118811,soccer,mls,2026_04_25,10:30 PM,San Diego FC,Portland Timbers
+118812,soccer,mls,2026_04_25,10:30 PM,Seattle Sounders,FC Dallas
+118810,soccer,mls,2026_04_25,10:30 PM,St Louis City,San Jose Earthquakes
+118813,soccer,mls,2026_04_25,10:30 PM,Vancouver Whitecaps,Colorado Rapids
+33996728,soccer,seriea,2026_04_25,04:00 PM,Bologna,Roma
+33996754,soccer,seriea,2026_04_25,06:45 PM,Verona,Lecce
