@@ -1,0 +1,20 @@
+game_id,sport,league,match_date,match_time,home_team,away_team
+401884814,soccer,bundesliga,2026_08_30,09:30 AM,Freiburg,Werder Bremen
+72513154,soccer,bundesliga,2026_08_30,09:30 AM,Freiburg,Werder Bremen
+401884813,soccer,bundesliga,2026_08_30,11:30 AM,Augsburg,Schalke
+72513156,soccer,bundesliga,2026_08_30,11:30 AM,Augsburg,Schalke
+401879317,soccer,epl,2026_08_30,09:00 AM,Chelsea,Brighton
+401879315,soccer,epl,2026_08_30,09:00 AM,Leeds,Brentford
+401879313,soccer,epl,2026_08_30,09:00 AM,Sunderland,Fulham
+401879293,soccer,epl,2026_08_30,11:30 AM,Manchester United,Ipswich
+401882904,soccer,laliga,2026_08_30,01:30 PM,Deportivo De La Coruna,Valencia
+401882905,soccer,laliga,2026_08_30,03:30 PM,Celta Vigo,Athletic Club
+401882899,soccer,laliga,2026_08_30,11:00 AM,Real Madrid,Malaga
+401876480,soccer,ligue1,2026_08_30,02:45 PM,Monaco,Marseille
+401876479,soccer,ligue1,2026_08_30,09:00 AM,Paris FC,Nice
+401876478,soccer,ligue1,2026_08_30,11:15 AM,Rennes,Le Mans
+761758,soccer,mls,2026_08_30,04:30 PM,Columbus Crew,New England Revolution
+761769,soccer,mls,2026_08_30,07:00 PM,St Louis City,FC Dallas
+401874938,soccer,seriea,2026_08_30,02:45 PM,Cagliari,Inter Milan
+401874742,soccer,seriea,2026_08_30,02:45 PM,Lazio,Genoa
+401874755,soccer,seriea,2026_08_30,12:30 PM,Napoli,Como

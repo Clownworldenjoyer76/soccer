@@ -1,0 +1,2 @@
+game_id,sport,league,match_date,match_time,home_team,away_team,home_prob,draw_prob,away_prob,home_xg,away_xg,expected_total_goals,dk_over35_decimal,dk_under35_decimal
+401882925,soccer,laliga,2026_08_19,03:00 PM,Atletico Madrid,Malaga,0.896,0.086,0.018,2.82,0.25,3.07,,

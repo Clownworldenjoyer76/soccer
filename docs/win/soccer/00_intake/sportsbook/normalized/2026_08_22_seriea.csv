@@ -1,5 +1,5 @@
 sport,league,game_id,match_date,match_time,home_team,away_team,dk_home_decimal,dk_draw_decimal,dk_away_decimal,dk_over25_decimal,dk_under25_decimal,dk_over35_decimal,dk_under35_decimal,btts_yes,btts_no
 soccer,seriea,401874929,2026_08_22,02:45 PM,Genoa,Napoli,3.75,3.20,2.10,2.40,1.57,,,2.15,1.68
 soccer,seriea,401874747,2026_08_22,02:45 PM,Parma,Cagliari,2.80,2.90,2.80,2.40,1.56,,,2.15,1.66
-soccer,seriea,401874931,2026_08_22,12:30 PM,Internazionale,Monza,1.13,7.00,16.00,,,2.25,1.65,,
+soccer,seriea,401874931,2026_08_22,12:30 PM,Inter Milan,Monza,1.13,7.00,16.00,,,2.25,1.65,,
 soccer,seriea,401874745,2026_08_22,12:30 PM,Udinese,Como,5.00,3.50,1.69,2.00,1.80,,,,

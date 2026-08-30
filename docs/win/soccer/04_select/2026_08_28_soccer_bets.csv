@@ -1,2 +1,2 @@
 game_id,sport,league,match_date,match_time,home_team,away_team,market,side,odds,american_odds,ev,kelly,model_prob,edge
-401884817,soccer,bundesliga,2026_08_28,02:30 PM,Bayern Munich,VfB Stuttgart,total35,over,1.92,-109,0.2627917647975851,0.2856432226060707,0.657704044165409,0.262791764797585
+401884817,soccer,bundesliga,2026_08_28,02:30 PM,Bayern Munich,VfB Stuttgart,match_odds,home,1.29,-345,0.0603799999999999,0.2082068965517237,0.8158146545879154,0.0622328664360734

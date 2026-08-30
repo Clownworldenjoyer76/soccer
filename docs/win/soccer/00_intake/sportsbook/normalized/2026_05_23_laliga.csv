@@ -1,6 +1,6 @@
 sport,league,game_id,match_date,match_time,home_team,away_team,dk_home_decimal,dk_draw_decimal,dk_away_decimal,dk_over25_decimal,dk_under25_decimal,dk_over35_decimal,dk_under35_decimal,btts_yes,btts_no
 soccer,laliga,61624678,2026_05_23,03:00 PM,Alaves,Vallecano,2.45,3.35,2.90,1.47,2.50,,,1.74,2.10
-soccer,laliga,61624680,2026_05_23,03:00 PM,Real Betis Seville,Levante,2.30,3.25,3.25,1.66,2.05,,,1.51,2.55
+soccer,laliga,61624680,2026_05_23,03:00 PM,Real Betis,Levante,2.30,3.25,3.25,1.66,2.05,,,1.51,2.55
 soccer,laliga,61624682,2026_05_23,03:00 PM,Celta Vigo,Sevilla,1.76,3.70,4.80,1.46,2.55,,,1.83,1.95
 soccer,laliga,61624684,2026_05_23,03:00 PM,Espanyol,Real Sociedad,2.20,3.60,3.20,1.68,2.05,,,1.58,2.35
 soccer,laliga,61624686,2026_05_23,03:00 PM,Getafe,Osasuna,2.75,2.75,3.15,2.50,1.47,,,2.25,1.64

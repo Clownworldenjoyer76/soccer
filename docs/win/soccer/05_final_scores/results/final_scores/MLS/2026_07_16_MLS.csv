@@ -1,0 +1,4 @@
+sport,league,game_id,game_date,match_time,home_team,away_team,home_score,away_score
+soccer,mls,66299242,2026_07_16,10:30 PM,Seattle Sounders,Portland Timbers,1,5
+soccer,mls,66299240,2026_07_16,08:30 PM,St Louis City,Sporting Kansas City,3,2
+soccer,mls,66299236,2026_07_16,07:30 PM,CF Montreal,Toronto FC,0,0

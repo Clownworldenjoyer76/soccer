@@ -1,4 +1,4 @@
 sport,league,game_id,match_date,match_time,home_team,away_team,home_prob,draw_prob,away_prob,home_xg,away_xg,expected_total_goals
-soccer,laliga,,2026_08_30,11:00 AM,Real Madrid,Malaga,0.839,0.113,0.048,2.82,0.55,3.37
-soccer,laliga,,2026_08_30,01:30 PM,La Coruna,Valencia,0.388,0.265,0.347,1.33,1.24,2.57
-soccer,laliga,,2026_08_30,03:30 PM,Celta Vigo,Athletic Club,0.396,0.283,0.321,1.22,1.07,2.29
+soccer,laliga,401882899,2026_08_30,11:00 AM,Real Madrid,Malaga,0.839,0.113,0.048,2.82,0.55,3.37
+soccer,laliga,401882904,2026_08_30,01:30 PM,Deportivo De La Coruna,Valencia,0.388,0.265,0.347,1.33,1.24,2.57
+soccer,laliga,401882905,2026_08_30,03:30 PM,Celta Vigo,Athletic Club,0.396,0.283,0.321,1.22,1.07,2.29
