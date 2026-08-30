@@ -1,4 +1,4 @@
 sport,league,game_id,match_date,match_time,home_team,away_team,dk_home_decimal,dk_draw_decimal,dk_away_decimal,dk_over25_decimal,dk_under25_decimal,dk_over35_decimal,dk_under35_decimal,btts_yes,btts_no
 soccer,ligue1,401876480,2026_08_30,02:45 PM,Monaco,Marseille,2.20,3.60,3.15,1.59,2.30,,,,
 soccer,ligue1,401876479,2026_08_30,09:00 AM,Paris FC,Nice,1.95,3.45,4.00,2.00,1.80,,,,
-soccer,ligue1,401876478,2026_08_30,11:15 AM,Rennes,Le Mans,1.36,5.25,8.00,,,2.25,1.65,,
+soccer,ligue1,401876478,2026_08_30,11:15 AM,Rennes,Le Mans,1.15,7.00,14.00,,,1.72,2.06,,

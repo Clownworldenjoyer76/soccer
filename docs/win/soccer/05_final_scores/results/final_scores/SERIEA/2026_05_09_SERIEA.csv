@@ -1,4 +1,4 @@
 sport,league,game_id,game_date,match_time,home_team,away_team,home_score,away_score
-soccer,seriea,61061653,2026_05_09,02:45 PM,Lecce,Juventus,0,1
-soccer,seriea,61061651,2026_05_09,12:00 PM,Lazio,Inter Milan,0,3
-soccer,seriea,61061645,2026_05_09,09:00 AM,Cagliari,Udinese,0,2
+soccer,seriea,61061653.0,2026_05_09,02:45 PM,Lecce,Juventus,0,1
+soccer,seriea,,2026_05_09,12:00 PM,Lazio,Inter Milan,0,3
+soccer,seriea,,2026_05_09,09:00 AM,Cagliari,Udinese,0,2

@@ -1,27 +1,17 @@
 game_id,sport,league,match_date,match_time,home_team,away_team
 401879322,soccer,epl,2026_08_22,07:30 AM,Hull,Manchester United
-72221156,soccer,epl,2026_08_22,07:30 AM,Hull,Manchester United
 401879300,soccer,epl,2026_08_22,10:00 AM,Everton,Crystal Palace
-72221158,soccer,epl,2026_08_22,10:00 AM,Everton,Crystal Palace
 401879299,soccer,epl,2026_08_22,10:00 AM,Ipswich,Sunderland
-72221160,soccer,epl,2026_08_22,10:00 AM,Ipswich,Sunderland
 401879298,soccer,epl,2026_08_22,10:00 AM,Nottingham Forest,Leeds
-72221162,soccer,epl,2026_08_22,10:00 AM,Nottingham Forest,Leeds
 401879321,soccer,epl,2026_08_22,12:30 PM,Brentford,Tottenham Hotspur
-72221164,soccer,epl,2026_08_22,12:30 PM,Brentford,Tottenham Hotspur
 401882907,soccer,laliga,2026_08_22,01:30 PM,Valencia,Celta Vigo
 401882912,soccer,laliga,2026_08_22,03:30 PM,Espanyol,Real Madrid
 401882916,soccer,laliga,2026_08_22,11:00 AM,Athletic Club,Sevilla
 401876491,soccer,ligue1,2026_08_22,02:45 PM,Le Mans,Stade Brest
-72036114,soccer,ligue1,2026_08_22,02:45 PM,Le Mans,Stade Brest
 401876488,soccer,ligue1,2026_08_22,02:45 PM,Nice,Lorient
-72036120,soccer,ligue1,2026_08_22,02:45 PM,Nice,Lorient
 401876486,soccer,ligue1,2026_08_22,02:45 PM,Toulouse,Lyon
-72036124,soccer,ligue1,2026_08_22,02:45 PM,Toulouse,Lyon
 401876485,soccer,ligue1,2026_08_22,02:45 PM,Troyes,Paris FC
-72036126,soccer,ligue1,2026_08_22,02:45 PM,Troyes,Paris FC
 401876490,soccer,ligue1,2026_08_22,11:15 AM,Lens,Auxerre
-72036116,soccer,ligue1,2026_08_22,11:15 AM,Lens,Auxerre
 761745,soccer,mls,2026_08_22,07:30 PM,CF Montreal,LA Galaxy
 761741,soccer,mls,2026_08_22,07:30 PM,Charlotte FC,DC United
 761743,soccer,mls,2026_08_22,07:30 PM,FC Cincinnati,Seattle Sounders
@@ -36,10 +26,6 @@ game_id,sport,league,match_date,match_time,home_team,away_team
 761750,soccer,mls,2026_08_22,10:30 PM,San Diego FC,Colorado Rapids
 761752,soccer,mls,2026_08_22,10:30 PM,San Jose Earthquakes,Minnesota United
 401874929,soccer,seriea,2026_08_22,02:45 PM,Genoa,Napoli
-71944896,soccer,seriea,2026_08_22,02:45 PM,Genoa,Napoli
 401874747,soccer,seriea,2026_08_22,02:45 PM,Parma,Cagliari
-71944900,soccer,seriea,2026_08_22,02:45 PM,Parma,Cagliari
 401874931,soccer,seriea,2026_08_22,12:30 PM,Inter Milan,Monza
-71944898,soccer,seriea,2026_08_22,12:30 PM,Inter Milan,Monza
 401874745,soccer,seriea,2026_08_22,12:30 PM,Udinese,Como
-71944906,soccer,seriea,2026_08_22,12:30 PM,Udinese,Como

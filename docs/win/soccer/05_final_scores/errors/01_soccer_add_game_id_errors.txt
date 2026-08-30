@@ -1,521 +1,271 @@
-[2026-08-30T11:23:07.096163] MISSING FILE | docs/win/soccer/00_intake/games/2026_03_01_soccer_games.csv
-[2026-08-30T11:23:07.096455] NO GAME_ID MAP AVAILABLE | score_file=docs/win/soccer/05_final_scores/results/final_scores_dirty/BUNDESLIGA/2026_03_01_BUNDESLIGA.csv
-[2026-08-30T11:23:07.098116] MISSING FILE | docs/win/soccer/00_intake/games/2026_03_04_soccer_games.csv
-[2026-08-30T11:23:07.098383] NO GAME_ID MAP AVAILABLE | score_file=docs/win/soccer/05_final_scores/results/final_scores_dirty/BUNDESLIGA/2026_03_04_BUNDESLIGA.csv
-[2026-08-30T11:23:07.100229] MISSING FILE | docs/win/soccer/00_intake/games/2026_03_06_soccer_games.csv
-[2026-08-30T11:23:07.100446] NO GAME_ID MAP AVAILABLE | score_file=docs/win/soccer/05_final_scores/results/final_scores_dirty/BUNDESLIGA/2026_03_06_BUNDESLIGA.csv
-[2026-08-30T11:23:07.101974] MISSING FILE | docs/win/soccer/00_intake/games/2026_03_07_soccer_games.csv
-[2026-08-30T11:23:07.102196] NO GAME_ID MAP AVAILABLE | score_file=docs/win/soccer/05_final_scores/results/final_scores_dirty/BUNDESLIGA/2026_03_07_BUNDESLIGA.csv
-[2026-08-30T11:23:07.103461] MISSING FILE | docs/win/soccer/00_intake/games/2026_03_08_soccer_games.csv
-[2026-08-30T11:23:07.103621] NO GAME_ID MAP AVAILABLE | score_file=docs/win/soccer/05_final_scores/results/final_scores_dirty/BUNDESLIGA/2026_03_08_BUNDESLIGA.csv
-[2026-08-30T11:23:07.104858] MISSING FILE | docs/win/soccer/00_intake/games/2026_03_13_soccer_games.csv
-[2026-08-30T11:23:07.105062] NO GAME_ID MAP AVAILABLE | score_file=docs/win/soccer/05_final_scores/results/final_scores_dirty/BUNDESLIGA/2026_03_13_BUNDESLIGA.csv
-[2026-08-30T11:23:07.106791] MISSING FILE | docs/win/soccer/00_intake/games/2026_03_14_soccer_games.csv
-[2026-08-30T11:23:07.107026] NO GAME_ID MAP AVAILABLE | score_file=docs/win/soccer/05_final_scores/results/final_scores_dirty/BUNDESLIGA/2026_03_14_BUNDESLIGA.csv
-[2026-08-30T11:23:07.108504] MISSING FILE | docs/win/soccer/00_intake/games/2026_03_15_soccer_games.csv
-[2026-08-30T11:23:07.108668] NO GAME_ID MAP AVAILABLE | score_file=docs/win/soccer/05_final_scores/results/final_scores_dirty/BUNDESLIGA/2026_03_15_BUNDESLIGA.csv
-[2026-08-30T11:23:07.109798] MISSING FILE | docs/win/soccer/00_intake/games/2026_03_20_soccer_games.csv
-[2026-08-30T11:23:07.109958] NO GAME_ID MAP AVAILABLE | score_file=docs/win/soccer/05_final_scores/results/final_scores_dirty/BUNDESLIGA/2026_03_20_BUNDESLIGA.csv
-[2026-08-30T11:23:07.111078] MISSING FILE | docs/win/soccer/00_intake/games/2026_03_21_soccer_games.csv
-[2026-08-30T11:23:07.111265] NO GAME_ID MAP AVAILABLE | score_file=docs/win/soccer/05_final_scores/results/final_scores_dirty/BUNDESLIGA/2026_03_21_BUNDESLIGA.csv
-[2026-08-30T11:23:07.112399] MISSING FILE | docs/win/soccer/00_intake/games/2026_03_22_soccer_games.csv
-[2026-08-30T11:23:07.112572] NO GAME_ID MAP AVAILABLE | score_file=docs/win/soccer/05_final_scores/results/final_scores_dirty/BUNDESLIGA/2026_03_22_BUNDESLIGA.csv
-[2026-08-30T11:23:07.113729] MISSING FILE | docs/win/soccer/00_intake/games/2026_04_04_soccer_games.csv
-[2026-08-30T11:23:07.113887] NO GAME_ID MAP AVAILABLE | score_file=docs/win/soccer/05_final_scores/results/final_scores_dirty/BUNDESLIGA/2026_04_04_BUNDESLIGA.csv
-[2026-08-30T11:23:07.114989] MISSING FILE | docs/win/soccer/00_intake/games/2026_04_05_soccer_games.csv
-[2026-08-30T11:23:07.115147] NO GAME_ID MAP AVAILABLE | score_file=docs/win/soccer/05_final_scores/results/final_scores_dirty/BUNDESLIGA/2026_04_05_BUNDESLIGA.csv
-[2026-08-30T11:23:07.160654] MISSING GAME_ID | docs/win/soccer/05_final_scores/results/final_scores_dirty/BUNDESLIGA/2026_04_11_BUNDESLIGA.csv
-[2026-08-30T11:23:07.162728]     league match_date         home_team                away_team
+[2026-08-30T11:38:33.366846] MISSING FILE | docs/win/soccer/00_intake/games/2026_03_01_soccer_games.csv
+[2026-08-30T11:38:33.367050] NO GAME_ID MAP AVAILABLE | score_file=docs/win/soccer/05_final_scores/results/final_scores_dirty/BUNDESLIGA/2026_03_01_BUNDESLIGA.csv
+[2026-08-30T11:38:33.368203] MISSING FILE | docs/win/soccer/00_intake/games/2026_03_04_soccer_games.csv
+[2026-08-30T11:38:33.368378] NO GAME_ID MAP AVAILABLE | score_file=docs/win/soccer/05_final_scores/results/final_scores_dirty/BUNDESLIGA/2026_03_04_BUNDESLIGA.csv
+[2026-08-30T11:38:33.369412] MISSING FILE | docs/win/soccer/00_intake/games/2026_03_06_soccer_games.csv
+[2026-08-30T11:38:33.369564] NO GAME_ID MAP AVAILABLE | score_file=docs/win/soccer/05_final_scores/results/final_scores_dirty/BUNDESLIGA/2026_03_06_BUNDESLIGA.csv
+[2026-08-30T11:38:33.370552] MISSING FILE | docs/win/soccer/00_intake/games/2026_03_07_soccer_games.csv
+[2026-08-30T11:38:33.370676] NO GAME_ID MAP AVAILABLE | score_file=docs/win/soccer/05_final_scores/results/final_scores_dirty/BUNDESLIGA/2026_03_07_BUNDESLIGA.csv
+[2026-08-30T11:38:33.371479] MISSING FILE | docs/win/soccer/00_intake/games/2026_03_08_soccer_games.csv
+[2026-08-30T11:38:33.371587] NO GAME_ID MAP AVAILABLE | score_file=docs/win/soccer/05_final_scores/results/final_scores_dirty/BUNDESLIGA/2026_03_08_BUNDESLIGA.csv
+[2026-08-30T11:38:33.372374] MISSING FILE | docs/win/soccer/00_intake/games/2026_03_13_soccer_games.csv
+[2026-08-30T11:38:33.372482] NO GAME_ID MAP AVAILABLE | score_file=docs/win/soccer/05_final_scores/results/final_scores_dirty/BUNDESLIGA/2026_03_13_BUNDESLIGA.csv
+[2026-08-30T11:38:33.373292] MISSING FILE | docs/win/soccer/00_intake/games/2026_03_14_soccer_games.csv
+[2026-08-30T11:38:33.373403] NO GAME_ID MAP AVAILABLE | score_file=docs/win/soccer/05_final_scores/results/final_scores_dirty/BUNDESLIGA/2026_03_14_BUNDESLIGA.csv
+[2026-08-30T11:38:33.374224] MISSING FILE | docs/win/soccer/00_intake/games/2026_03_15_soccer_games.csv
+[2026-08-30T11:38:33.374331] NO GAME_ID MAP AVAILABLE | score_file=docs/win/soccer/05_final_scores/results/final_scores_dirty/BUNDESLIGA/2026_03_15_BUNDESLIGA.csv
+[2026-08-30T11:38:33.375103] MISSING FILE | docs/win/soccer/00_intake/games/2026_03_20_soccer_games.csv
+[2026-08-30T11:38:33.375209] NO GAME_ID MAP AVAILABLE | score_file=docs/win/soccer/05_final_scores/results/final_scores_dirty/BUNDESLIGA/2026_03_20_BUNDESLIGA.csv
+[2026-08-30T11:38:33.376009] MISSING FILE | docs/win/soccer/00_intake/games/2026_03_21_soccer_games.csv
+[2026-08-30T11:38:33.376116] NO GAME_ID MAP AVAILABLE | score_file=docs/win/soccer/05_final_scores/results/final_scores_dirty/BUNDESLIGA/2026_03_21_BUNDESLIGA.csv
+[2026-08-30T11:38:33.376878] MISSING FILE | docs/win/soccer/00_intake/games/2026_03_22_soccer_games.csv
+[2026-08-30T11:38:33.376983] NO GAME_ID MAP AVAILABLE | score_file=docs/win/soccer/05_final_scores/results/final_scores_dirty/BUNDESLIGA/2026_03_22_BUNDESLIGA.csv
+[2026-08-30T11:38:33.377700] MISSING FILE | docs/win/soccer/00_intake/games/2026_04_04_soccer_games.csv
+[2026-08-30T11:38:33.377823] NO GAME_ID MAP AVAILABLE | score_file=docs/win/soccer/05_final_scores/results/final_scores_dirty/BUNDESLIGA/2026_04_04_BUNDESLIGA.csv
+[2026-08-30T11:38:33.378518] MISSING FILE | docs/win/soccer/00_intake/games/2026_04_05_soccer_games.csv
+[2026-08-30T11:38:33.378621] NO GAME_ID MAP AVAILABLE | score_file=docs/win/soccer/05_final_scores/results/final_scores_dirty/BUNDESLIGA/2026_04_05_BUNDESLIGA.csv
+[2026-08-30T11:38:33.409272] MISSING GAME_ID | docs/win/soccer/05_final_scores/results/final_scores_dirty/BUNDESLIGA/2026_04_11_BUNDESLIGA.csv
+[2026-08-30T11:38:33.411060]     league match_date         home_team                away_team
 bundesliga 2026_04_11          St Pauli            Bayern Munich
 bundesliga 2026_04_11         Wolfsburg      Eintracht Frankfurt
 bundesliga 2026_04_11        RB Leipzig Borussia Monchengladbach
 bundesliga 2026_04_11 Borussia Dortmund               Leverkusen
 bundesliga 2026_04_11        Heidenheim             Union Berlin
-[2026-08-30T11:23:07.306355] MISSING GAME_ID | docs/win/soccer/05_final_scores/results/final_scores_dirty/BUNDESLIGA/2026_05_02_BUNDESLIGA.csv
-[2026-08-30T11:23:07.307615]     league match_date           home_team  away_team
+[2026-08-30T11:38:33.509292] MISSING GAME_ID | docs/win/soccer/05_final_scores/results/final_scores_dirty/BUNDESLIGA/2026_05_02_BUNDESLIGA.csv
+[2026-08-30T11:38:33.510179]     league match_date           home_team  away_team
 bundesliga 2026_05_02          Leverkusen RB Leipzig
 bundesliga 2026_05_02        Union Berlin       Koln
 bundesliga 2026_05_02 Eintracht Frankfurt    Hamburg
 bundesliga 2026_05_02       Werder Bremen   Augsburg
-[2026-08-30T11:23:07.326400] MISSING GAME_ID | docs/win/soccer/05_final_scores/results/final_scores_dirty/BUNDESLIGA/2026_05_03_BUNDESLIGA.csv
-[2026-08-30T11:23:07.327520]     league match_date                home_team         away_team
+[2026-08-30T11:38:33.523295] MISSING GAME_ID | docs/win/soccer/05_final_scores/results/final_scores_dirty/BUNDESLIGA/2026_05_03_BUNDESLIGA.csv
+[2026-08-30T11:38:33.524069]     league match_date                home_team         away_team
 bundesliga 2026_05_03                 Freiburg         Wolfsburg
 bundesliga 2026_05_03 Borussia Monchengladbach Borussia Dortmund
 bundesliga 2026_05_03                 St Pauli             Mainz
-[2026-08-30T11:23:07.402542] MISSING FILE | docs/win/soccer/00_intake/games/2026_03_04_soccer_games.csv
-[2026-08-30T11:23:07.402708] NO GAME_ID MAP AVAILABLE | score_file=docs/win/soccer/05_final_scores/results/final_scores_dirty/EPL/2026_03_04_EPL.csv
-[2026-08-30T11:23:07.403858] MISSING FILE | docs/win/soccer/00_intake/games/2026_03_05_soccer_games.csv
-[2026-08-30T11:23:07.404016] NO GAME_ID MAP AVAILABLE | score_file=docs/win/soccer/05_final_scores/results/final_scores_dirty/EPL/2026_03_05_EPL.csv
-[2026-08-30T11:23:07.405113] MISSING FILE | docs/win/soccer/00_intake/games/2026_03_14_soccer_games.csv
-[2026-08-30T11:23:07.405298] NO GAME_ID MAP AVAILABLE | score_file=docs/win/soccer/05_final_scores/results/final_scores_dirty/EPL/2026_03_14_EPL.csv
-[2026-08-30T11:23:07.406431] MISSING FILE | docs/win/soccer/00_intake/games/2026_03_15_soccer_games.csv
-[2026-08-30T11:23:07.406587] NO GAME_ID MAP AVAILABLE | score_file=docs/win/soccer/05_final_scores/results/final_scores_dirty/EPL/2026_03_15_EPL.csv
-[2026-08-30T11:23:07.407689] MISSING FILE | docs/win/soccer/00_intake/games/2026_03_16_soccer_games.csv
-[2026-08-30T11:23:07.407847] NO GAME_ID MAP AVAILABLE | score_file=docs/win/soccer/05_final_scores/results/final_scores_dirty/EPL/2026_03_16_EPL.csv
-[2026-08-30T11:23:07.408936] MISSING FILE | docs/win/soccer/00_intake/games/2026_03_20_soccer_games.csv
-[2026-08-30T11:23:07.409092] NO GAME_ID MAP AVAILABLE | score_file=docs/win/soccer/05_final_scores/results/final_scores_dirty/EPL/2026_03_20_EPL.csv
-[2026-08-30T11:23:07.410203] MISSING FILE | docs/win/soccer/00_intake/games/2026_03_21_soccer_games.csv
-[2026-08-30T11:23:07.410365] NO GAME_ID MAP AVAILABLE | score_file=docs/win/soccer/05_final_scores/results/final_scores_dirty/EPL/2026_03_21_EPL.csv
-[2026-08-30T11:23:07.411494] MISSING FILE | docs/win/soccer/00_intake/games/2026_03_22_soccer_games.csv
-[2026-08-30T11:23:07.411650] NO GAME_ID MAP AVAILABLE | score_file=docs/win/soccer/05_final_scores/results/final_scores_dirty/EPL/2026_03_22_EPL.csv
-[2026-08-30T11:23:07.444453] MISSING GAME_ID | docs/win/soccer/05_final_scores/results/final_scores_dirty/EPL/2026_04_11_EPL.csv
-[2026-08-30T11:23:07.445600] league match_date home_team   away_team
+[2026-08-30T11:38:33.570185] MISSING GAME_ID | docs/win/soccer/05_final_scores/results/final_scores_dirty/BUNDESLIGA/2026_05_16_BUNDESLIGA.csv
+[2026-08-30T11:38:33.570944]     league match_date     home_team         away_team
+bundesliga 2026_05_16      Freiburg        RB Leipzig
+bundesliga 2026_05_16 Werder Bremen Borussia Dortmund
+[2026-08-30T11:38:33.573096] MISSING FILE | docs/win/soccer/00_intake/games/2026_03_04_soccer_games.csv
+[2026-08-30T11:38:33.573209] NO GAME_ID MAP AVAILABLE | score_file=docs/win/soccer/05_final_scores/results/final_scores_dirty/EPL/2026_03_04_EPL.csv
+[2026-08-30T11:38:33.573966] MISSING FILE | docs/win/soccer/00_intake/games/2026_03_05_soccer_games.csv
+[2026-08-30T11:38:33.574073] NO GAME_ID MAP AVAILABLE | score_file=docs/win/soccer/05_final_scores/results/final_scores_dirty/EPL/2026_03_05_EPL.csv
+[2026-08-30T11:38:33.574788] MISSING FILE | docs/win/soccer/00_intake/games/2026_03_14_soccer_games.csv
+[2026-08-30T11:38:33.574895] NO GAME_ID MAP AVAILABLE | score_file=docs/win/soccer/05_final_scores/results/final_scores_dirty/EPL/2026_03_14_EPL.csv
+[2026-08-30T11:38:33.575602] MISSING FILE | docs/win/soccer/00_intake/games/2026_03_15_soccer_games.csv
+[2026-08-30T11:38:33.575707] NO GAME_ID MAP AVAILABLE | score_file=docs/win/soccer/05_final_scores/results/final_scores_dirty/EPL/2026_03_15_EPL.csv
+[2026-08-30T11:38:33.576437] MISSING FILE | docs/win/soccer/00_intake/games/2026_03_16_soccer_games.csv
+[2026-08-30T11:38:33.576541] NO GAME_ID MAP AVAILABLE | score_file=docs/win/soccer/05_final_scores/results/final_scores_dirty/EPL/2026_03_16_EPL.csv
+[2026-08-30T11:38:33.577254] MISSING FILE | docs/win/soccer/00_intake/games/2026_03_20_soccer_games.csv
+[2026-08-30T11:38:33.577360] NO GAME_ID MAP AVAILABLE | score_file=docs/win/soccer/05_final_scores/results/final_scores_dirty/EPL/2026_03_20_EPL.csv
+[2026-08-30T11:38:33.578090] MISSING FILE | docs/win/soccer/00_intake/games/2026_03_21_soccer_games.csv
+[2026-08-30T11:38:33.578194] NO GAME_ID MAP AVAILABLE | score_file=docs/win/soccer/05_final_scores/results/final_scores_dirty/EPL/2026_03_21_EPL.csv
+[2026-08-30T11:38:33.578920] MISSING FILE | docs/win/soccer/00_intake/games/2026_03_22_soccer_games.csv
+[2026-08-30T11:38:33.579024] NO GAME_ID MAP AVAILABLE | score_file=docs/win/soccer/05_final_scores/results/final_scores_dirty/EPL/2026_03_22_EPL.csv
+[2026-08-30T11:38:33.601310] MISSING GAME_ID | docs/win/soccer/05_final_scores/results/final_scores_dirty/EPL/2026_04_11_EPL.csv
+[2026-08-30T11:38:33.602124] league match_date home_team   away_team
    epl 2026_04_11 Liverpool      Fulham
    epl 2026_04_11 Brentford     Everton
    epl 2026_04_11   Burnley    Brighton
    epl 2026_04_11   Arsenal Bournemouth
-[2026-08-30T11:23:07.480293] MISSING GAME_ID | docs/win/soccer/05_final_scores/results/final_scores_dirty/EPL/2026_04_13_EPL.csv
-[2026-08-30T11:23:07.481376] league match_date         home_team away_team
+[2026-08-30T11:38:33.625817] MISSING GAME_ID | docs/win/soccer/05_final_scores/results/final_scores_dirty/EPL/2026_04_13_EPL.csv
+[2026-08-30T11:38:33.626530] league match_date         home_team away_team
    epl 2026_04_13 Manchester United     Leeds
-[2026-08-30T11:23:07.649026] MISSING GAME_ID | docs/win/soccer/05_final_scores/results/final_scores_dirty/EPL/2026_05_02_EPL.csv
-[2026-08-30T11:23:07.650202] league match_date     home_team  away_team
+[2026-08-30T11:38:33.739151] MISSING GAME_ID | docs/win/soccer/05_final_scores/results/final_scores_dirty/EPL/2026_05_02_EPL.csv
+[2026-08-30T11:38:33.739980] league match_date     home_team  away_team
    epl 2026_05_02       Arsenal     Fulham
    epl 2026_05_02 Wolverhampton Sunderland
    epl 2026_05_02     Brentford   West Ham
    epl 2026_05_02     Newcastle   Brighton
-[2026-08-30T11:23:07.668345] MISSING GAME_ID | docs/win/soccer/05_final_scores/results/final_scores_dirty/EPL/2026_05_03_EPL.csv
-[2026-08-30T11:23:07.669462] league match_date         home_team         away_team
+[2026-08-30T11:38:33.753161] MISSING GAME_ID | docs/win/soccer/05_final_scores/results/final_scores_dirty/EPL/2026_05_03_EPL.csv
+[2026-08-30T11:38:33.753946] league match_date         home_team         away_team
    epl 2026_05_03       Aston Villa Tottenham Hotspur
    epl 2026_05_03 Manchester United         Liverpool
    epl 2026_05_03       Bournemouth    Crystal Palace
-[2026-08-30T11:23:07.830461] GAME_ID CONFLICTS | docs/win/soccer/00_intake/games/2026_08_21_soccer_games.csv
-[2026-08-30T11:23:07.831767] league_key match_date_key home_team_key away_team_key  game_id_count
-       epl     2026_08_21       arsenal      coventry              2
-    ligue1     2026_08_21     marseille    strasbourg              2
-[2026-08-30T11:23:07.831920] NO GAME_ID MAP AVAILABLE | score_file=docs/win/soccer/05_final_scores/results/final_scores_dirty/EPL/2026_08_21_EPL.csv
-[2026-08-30T11:23:07.841404] GAME_ID CONFLICTS | docs/win/soccer/00_intake/games/2026_08_22_soccer_games.csv
-[2026-08-30T11:23:07.842808] league_key match_date_key     home_team_key     away_team_key  game_id_count
-       epl     2026_08_22         brentford tottenham hotspur              2
-       epl     2026_08_22           everton    crystal palace              2
-       epl     2026_08_22              hull manchester united              2
-       epl     2026_08_22           ipswich        sunderland              2
-       epl     2026_08_22 nottingham forest             leeds              2
-    ligue1     2026_08_22           le mans       stade brest              2
-    ligue1     2026_08_22              lens           auxerre              2
-    ligue1     2026_08_22              nice           lorient              2
-    ligue1     2026_08_22          toulouse              lyon              2
-    ligue1     2026_08_22            troyes          paris fc              2
-    seriea     2026_08_22             genoa            napoli              2
-    seriea     2026_08_22       inter milan             monza              2
-    seriea     2026_08_22             parma          cagliari              2
-    seriea     2026_08_22           udinese              como              2
-[2026-08-30T11:23:07.842955] NO GAME_ID MAP AVAILABLE | score_file=docs/win/soccer/05_final_scores/results/final_scores_dirty/EPL/2026_08_22_EPL.csv
-[2026-08-30T11:23:07.852172] GAME_ID CONFLICTS | docs/win/soccer/00_intake/games/2026_08_23_soccer_games.csv
-[2026-08-30T11:23:07.853508] league_key match_date_key   home_team_key away_team_key  game_id_count
-       epl     2026_08_23        brighton   aston villa              2
-       epl     2026_08_23 manchester city   bournemouth              2
-       epl     2026_08_23       newcastle     liverpool              2
-    ligue1     2026_08_23          angers         lille              2
-    ligue1     2026_08_23        le havre        monaco              2
-    seriea     2026_08_23        atalanta      sassuolo              2
-    seriea     2026_08_23       frosinone      juventus              2
-    seriea     2026_08_23          torino         milan              2
-    seriea     2026_08_23         venezia         lecce              2
-[2026-08-30T11:23:07.853655] NO GAME_ID MAP AVAILABLE | score_file=docs/win/soccer/05_final_scores/results/final_scores_dirty/EPL/2026_08_23_EPL.csv
-[2026-08-30T11:23:07.862862] GAME_ID CONFLICTS | docs/win/soccer/00_intake/games/2026_08_24_soccer_games.csv
-[2026-08-30T11:23:07.864119] league_key match_date_key home_team_key away_team_key  game_id_count
-       epl     2026_08_24        fulham       chelsea              2
-    seriea     2026_08_24       bologna         lazio              2
-    seriea     2026_08_24          roma    fiorentina              2
-[2026-08-30T11:23:07.864293] NO GAME_ID MAP AVAILABLE | score_file=docs/win/soccer/05_final_scores/results/final_scores_dirty/EPL/2026_08_24_EPL.csv
-[2026-08-30T11:23:07.865452] MISSING FILE | docs/win/soccer/00_intake/games/2026_03_01_soccer_games.csv
-[2026-08-30T11:23:07.865613] NO GAME_ID MAP AVAILABLE | score_file=docs/win/soccer/05_final_scores/results/final_scores_dirty/LALIGA/2026_03_01_LALIGA.csv
-[2026-08-30T11:23:07.866737] MISSING FILE | docs/win/soccer/00_intake/games/2026_03_02_soccer_games.csv
-[2026-08-30T11:23:07.866897] NO GAME_ID MAP AVAILABLE | score_file=docs/win/soccer/05_final_scores/results/final_scores_dirty/LALIGA/2026_03_02_LALIGA.csv
-[2026-08-30T11:23:07.868013] MISSING FILE | docs/win/soccer/00_intake/games/2026_03_04_soccer_games.csv
-[2026-08-30T11:23:07.868172] NO GAME_ID MAP AVAILABLE | score_file=docs/win/soccer/05_final_scores/results/final_scores_dirty/LALIGA/2026_03_04_LALIGA.csv
-[2026-08-30T11:23:07.869301] MISSING FILE | docs/win/soccer/00_intake/games/2026_03_06_soccer_games.csv
-[2026-08-30T11:23:07.869458] NO GAME_ID MAP AVAILABLE | score_file=docs/win/soccer/05_final_scores/results/final_scores_dirty/LALIGA/2026_03_06_LALIGA.csv
-[2026-08-30T11:23:07.870556] MISSING FILE | docs/win/soccer/00_intake/games/2026_03_07_soccer_games.csv
-[2026-08-30T11:23:07.870710] NO GAME_ID MAP AVAILABLE | score_file=docs/win/soccer/05_final_scores/results/final_scores_dirty/LALIGA/2026_03_07_LALIGA.csv
-[2026-08-30T11:23:07.871819] MISSING FILE | docs/win/soccer/00_intake/games/2026_03_08_soccer_games.csv
-[2026-08-30T11:23:07.871973] NO GAME_ID MAP AVAILABLE | score_file=docs/win/soccer/05_final_scores/results/final_scores_dirty/LALIGA/2026_03_08_LALIGA.csv
-[2026-08-30T11:23:07.873065] MISSING FILE | docs/win/soccer/00_intake/games/2026_03_09_soccer_games.csv
-[2026-08-30T11:23:07.873251] NO GAME_ID MAP AVAILABLE | score_file=docs/win/soccer/05_final_scores/results/final_scores_dirty/LALIGA/2026_03_09_LALIGA.csv
-[2026-08-30T11:23:07.874338] MISSING FILE | docs/win/soccer/00_intake/games/2026_03_13_soccer_games.csv
-[2026-08-30T11:23:07.874494] NO GAME_ID MAP AVAILABLE | score_file=docs/win/soccer/05_final_scores/results/final_scores_dirty/LALIGA/2026_03_13_LALIGA.csv
-[2026-08-30T11:23:07.875619] MISSING FILE | docs/win/soccer/00_intake/games/2026_03_14_soccer_games.csv
-[2026-08-30T11:23:07.875775] NO GAME_ID MAP AVAILABLE | score_file=docs/win/soccer/05_final_scores/results/final_scores_dirty/LALIGA/2026_03_14_LALIGA.csv
-[2026-08-30T11:23:07.876855] MISSING FILE | docs/win/soccer/00_intake/games/2026_03_15_soccer_games.csv
-[2026-08-30T11:23:07.877009] NO GAME_ID MAP AVAILABLE | score_file=docs/win/soccer/05_final_scores/results/final_scores_dirty/LALIGA/2026_03_15_LALIGA.csv
-[2026-08-30T11:23:07.878082] MISSING FILE | docs/win/soccer/00_intake/games/2026_03_16_soccer_games.csv
-[2026-08-30T11:23:07.878265] NO GAME_ID MAP AVAILABLE | score_file=docs/win/soccer/05_final_scores/results/final_scores_dirty/LALIGA/2026_03_16_LALIGA.csv
-[2026-08-30T11:23:07.879345] MISSING FILE | docs/win/soccer/00_intake/games/2026_03_20_soccer_games.csv
-[2026-08-30T11:23:07.879500] NO GAME_ID MAP AVAILABLE | score_file=docs/win/soccer/05_final_scores/results/final_scores_dirty/LALIGA/2026_03_20_LALIGA.csv
-[2026-08-30T11:23:07.880595] MISSING FILE | docs/win/soccer/00_intake/games/2026_03_21_soccer_games.csv
-[2026-08-30T11:23:07.880751] NO GAME_ID MAP AVAILABLE | score_file=docs/win/soccer/05_final_scores/results/final_scores_dirty/LALIGA/2026_03_21_LALIGA.csv
-[2026-08-30T11:23:07.881848] MISSING FILE | docs/win/soccer/00_intake/games/2026_03_22_soccer_games.csv
-[2026-08-30T11:23:07.882003] NO GAME_ID MAP AVAILABLE | score_file=docs/win/soccer/05_final_scores/results/final_scores_dirty/LALIGA/2026_03_22_LALIGA.csv
-[2026-08-30T11:23:07.883094] MISSING FILE | docs/win/soccer/00_intake/games/2026_04_03_soccer_games.csv
-[2026-08-30T11:23:07.883279] NO GAME_ID MAP AVAILABLE | score_file=docs/win/soccer/05_final_scores/results/final_scores_dirty/LALIGA/2026_04_03_LALIGA.csv
-[2026-08-30T11:23:07.884363] MISSING FILE | docs/win/soccer/00_intake/games/2026_04_04_soccer_games.csv
-[2026-08-30T11:23:07.884518] NO GAME_ID MAP AVAILABLE | score_file=docs/win/soccer/05_final_scores/results/final_scores_dirty/LALIGA/2026_04_04_LALIGA.csv
-[2026-08-30T11:23:07.885600] MISSING FILE | docs/win/soccer/00_intake/games/2026_04_05_soccer_games.csv
-[2026-08-30T11:23:07.885754] NO GAME_ID MAP AVAILABLE | score_file=docs/win/soccer/05_final_scores/results/final_scores_dirty/LALIGA/2026_04_05_LALIGA.csv
-[2026-08-30T11:23:07.935447] MISSING GAME_ID | docs/win/soccer/05_final_scores/results/final_scores_dirty/LALIGA/2026_04_11_LALIGA.csv
-[2026-08-30T11:23:07.936556] league match_date     home_team away_team
+[2026-08-30T11:38:33.903252] MISSING FILE | docs/win/soccer/00_intake/games/2026_03_01_soccer_games.csv
+[2026-08-30T11:38:33.903363] NO GAME_ID MAP AVAILABLE | score_file=docs/win/soccer/05_final_scores/results/final_scores_dirty/LALIGA/2026_03_01_LALIGA.csv
+[2026-08-30T11:38:33.904124] MISSING FILE | docs/win/soccer/00_intake/games/2026_03_02_soccer_games.csv
+[2026-08-30T11:38:33.904231] NO GAME_ID MAP AVAILABLE | score_file=docs/win/soccer/05_final_scores/results/final_scores_dirty/LALIGA/2026_03_02_LALIGA.csv
+[2026-08-30T11:38:33.904952] MISSING FILE | docs/win/soccer/00_intake/games/2026_03_04_soccer_games.csv
+[2026-08-30T11:38:33.905054] NO GAME_ID MAP AVAILABLE | score_file=docs/win/soccer/05_final_scores/results/final_scores_dirty/LALIGA/2026_03_04_LALIGA.csv
+[2026-08-30T11:38:33.905746] MISSING FILE | docs/win/soccer/00_intake/games/2026_03_06_soccer_games.csv
+[2026-08-30T11:38:33.905867] NO GAME_ID MAP AVAILABLE | score_file=docs/win/soccer/05_final_scores/results/final_scores_dirty/LALIGA/2026_03_06_LALIGA.csv
+[2026-08-30T11:38:33.906560] MISSING FILE | docs/win/soccer/00_intake/games/2026_03_07_soccer_games.csv
+[2026-08-30T11:38:33.906661] NO GAME_ID MAP AVAILABLE | score_file=docs/win/soccer/05_final_scores/results/final_scores_dirty/LALIGA/2026_03_07_LALIGA.csv
+[2026-08-30T11:38:33.907369] MISSING FILE | docs/win/soccer/00_intake/games/2026_03_08_soccer_games.csv
+[2026-08-30T11:38:33.907472] NO GAME_ID MAP AVAILABLE | score_file=docs/win/soccer/05_final_scores/results/final_scores_dirty/LALIGA/2026_03_08_LALIGA.csv
+[2026-08-30T11:38:33.908179] MISSING FILE | docs/win/soccer/00_intake/games/2026_03_09_soccer_games.csv
+[2026-08-30T11:38:33.908281] NO GAME_ID MAP AVAILABLE | score_file=docs/win/soccer/05_final_scores/results/final_scores_dirty/LALIGA/2026_03_09_LALIGA.csv
+[2026-08-30T11:38:33.909011] MISSING FILE | docs/win/soccer/00_intake/games/2026_03_13_soccer_games.csv
+[2026-08-30T11:38:33.909112] NO GAME_ID MAP AVAILABLE | score_file=docs/win/soccer/05_final_scores/results/final_scores_dirty/LALIGA/2026_03_13_LALIGA.csv
+[2026-08-30T11:38:33.909816] MISSING FILE | docs/win/soccer/00_intake/games/2026_03_14_soccer_games.csv
+[2026-08-30T11:38:33.909922] NO GAME_ID MAP AVAILABLE | score_file=docs/win/soccer/05_final_scores/results/final_scores_dirty/LALIGA/2026_03_14_LALIGA.csv
+[2026-08-30T11:38:33.910605] MISSING FILE | docs/win/soccer/00_intake/games/2026_03_15_soccer_games.csv
+[2026-08-30T11:38:33.910706] NO GAME_ID MAP AVAILABLE | score_file=docs/win/soccer/05_final_scores/results/final_scores_dirty/LALIGA/2026_03_15_LALIGA.csv
+[2026-08-30T11:38:33.911405] MISSING FILE | docs/win/soccer/00_intake/games/2026_03_16_soccer_games.csv
+[2026-08-30T11:38:33.911505] NO GAME_ID MAP AVAILABLE | score_file=docs/win/soccer/05_final_scores/results/final_scores_dirty/LALIGA/2026_03_16_LALIGA.csv
+[2026-08-30T11:38:33.912207] MISSING FILE | docs/win/soccer/00_intake/games/2026_03_20_soccer_games.csv
+[2026-08-30T11:38:33.912310] NO GAME_ID MAP AVAILABLE | score_file=docs/win/soccer/05_final_scores/results/final_scores_dirty/LALIGA/2026_03_20_LALIGA.csv
+[2026-08-30T11:38:33.913017] MISSING FILE | docs/win/soccer/00_intake/games/2026_03_21_soccer_games.csv
+[2026-08-30T11:38:33.913120] NO GAME_ID MAP AVAILABLE | score_file=docs/win/soccer/05_final_scores/results/final_scores_dirty/LALIGA/2026_03_21_LALIGA.csv
+[2026-08-30T11:38:33.913824] MISSING FILE | docs/win/soccer/00_intake/games/2026_03_22_soccer_games.csv
+[2026-08-30T11:38:33.913928] NO GAME_ID MAP AVAILABLE | score_file=docs/win/soccer/05_final_scores/results/final_scores_dirty/LALIGA/2026_03_22_LALIGA.csv
+[2026-08-30T11:38:33.914622] MISSING FILE | docs/win/soccer/00_intake/games/2026_04_03_soccer_games.csv
+[2026-08-30T11:38:33.914732] NO GAME_ID MAP AVAILABLE | score_file=docs/win/soccer/05_final_scores/results/final_scores_dirty/LALIGA/2026_04_03_LALIGA.csv
+[2026-08-30T11:38:33.915438] MISSING FILE | docs/win/soccer/00_intake/games/2026_04_04_soccer_games.csv
+[2026-08-30T11:38:33.915538] NO GAME_ID MAP AVAILABLE | score_file=docs/win/soccer/05_final_scores/results/final_scores_dirty/LALIGA/2026_04_04_LALIGA.csv
+[2026-08-30T11:38:33.916247] MISSING FILE | docs/win/soccer/00_intake/games/2026_04_05_soccer_games.csv
+[2026-08-30T11:38:33.916348] NO GAME_ID MAP AVAILABLE | score_file=docs/win/soccer/05_final_scores/results/final_scores_dirty/LALIGA/2026_04_05_LALIGA.csv
+[2026-08-30T11:38:33.951191] MISSING GAME_ID | docs/win/soccer/05_final_scores/results/final_scores_dirty/LALIGA/2026_04_11_LALIGA.csv
+[2026-08-30T11:38:33.952056] league match_date     home_team away_team
 laliga 2026_04_11     Barcelona  Espanyol
 laliga 2026_04_11         Elche  Valencia
 laliga 2026_04_11 Real Sociedad    Alaves
-[2026-08-30T11:23:08.004603] MISSING GAME_ID | docs/win/soccer/05_final_scores/results/final_scores_dirty/LALIGA/2026_04_22_LALIGA.csv
-[2026-08-30T11:23:08.005656] league match_date home_team  away_team
+[2026-08-30T11:38:34.000108] MISSING GAME_ID | docs/win/soccer/05_final_scores/results/final_scores_dirty/LALIGA/2026_04_22_LALIGA.csv
+[2026-08-30T11:38:34.000867] league match_date home_team  away_team
 laliga 2026_04_22 Barcelona Celta Vigo
-[2026-08-30T11:23:08.106695] MISSING GAME_ID | docs/win/soccer/05_final_scores/results/final_scores_dirty/LALIGA/2026_05_01_LALIGA.csv
-[2026-08-30T11:23:08.107769] league match_date home_team away_team
+[2026-08-30T11:38:34.070821] MISSING GAME_ID | docs/win/soccer/05_final_scores/results/final_scores_dirty/LALIGA/2026_05_01_LALIGA.csv
+[2026-08-30T11:38:34.071537] league match_date home_team away_team
 laliga 2026_05_01    Girona  Mallorca
-[2026-08-30T11:23:08.125917] MISSING GAME_ID | docs/win/soccer/05_final_scores/results/final_scores_dirty/LALIGA/2026_05_02_LALIGA.csv
-[2026-08-30T11:23:08.127024] league match_date  home_team       away_team
+[2026-08-30T11:38:34.083707] MISSING GAME_ID | docs/win/soccer/05_final_scores/results/final_scores_dirty/LALIGA/2026_05_02_LALIGA.csv
+[2026-08-30T11:38:34.084444] league match_date  home_team       away_team
 laliga 2026_05_02    Osasuna       Barcelona
 laliga 2026_05_02     Alaves   Athletic Club
 laliga 2026_05_02   Valencia Atletico Madrid
 laliga 2026_05_02 Villarreal         Levante
-[2026-08-30T11:23:08.145119] MISSING GAME_ID | docs/win/soccer/05_final_scores/results/final_scores_dirty/LALIGA/2026_05_03_LALIGA.csv
-[2026-08-30T11:23:08.146237] league match_date  home_team   away_team
+[2026-08-30T11:38:34.096490] MISSING GAME_ID | docs/win/soccer/05_final_scores/results/final_scores_dirty/LALIGA/2026_05_03_LALIGA.csv
+[2026-08-30T11:38:34.097267] league match_date  home_team   away_team
 laliga 2026_05_03   Espanyol Real Madrid
 laliga 2026_05_03 Real Betis Real Oviedo
 laliga 2026_05_03     Getafe   Vallecano
 laliga 2026_05_03 Celta Vigo       Elche
-[2026-08-30T11:23:08.339963] GAME_ID CONFLICTS | docs/win/soccer/00_intake/games/2026_08_15_soccer_games.csv
-[2026-08-30T11:23:08.341398] league_key match_date_key        home_team_key          away_team_key  game_id_count
-    laliga     2026_08_15               alaves                 getafe              2
-    laliga     2026_08_15              sevilla              vallecano              2
-       mls     2026_08_15       atlanta united     new york red bulls              2
-       mls     2026_08_15          cf montreal              dc united              2
-       mls     2026_08_15         charlotte fc          columbus crew              2
-       mls     2026_08_15      colorado rapids   sporting kansas city              2
-       mls     2026_08_15       houston dynamo              la galaxy              2
-       mls     2026_08_15       los angeles fc           san diego fc              2
-       mls     2026_08_15         nashville sc            inter miami              2
-       mls     2026_08_15         orlando city          fc cincinnati              2
-       mls     2026_08_15       real salt lake       minnesota united              2
-       mls     2026_08_15 san jose earthquakes          st louis city              2
-       mls     2026_08_15           toronto fc new england revolution              2
-[2026-08-30T11:23:08.341545] NO GAME_ID MAP AVAILABLE | score_file=docs/win/soccer/05_final_scores/results/final_scores_dirty/LALIGA/2026_08_15_LALIGA.csv
-[2026-08-30T11:23:08.350787] GAME_ID CONFLICTS | docs/win/soccer/00_intake/games/2026_08_16_soccer_games.csv
-[2026-08-30T11:23:08.352058] league_key match_date_key    home_team_key       away_team_key  game_id_count
-    laliga     2026_08_16         espanyol             levante              2
-    laliga     2026_08_16        santander          villarreal              2
-       mls     2026_08_16        austin fc           fc dallas              2
-       mls     2026_08_16     chicago fire    portland timbers              2
-       mls     2026_08_16 new york city fc  philadelphia union              2
-       mls     2026_08_16 seattle sounders vancouver whitecaps              2
-[2026-08-30T11:23:08.352227] NO GAME_ID MAP AVAILABLE | score_file=docs/win/soccer/05_final_scores/results/final_scores_dirty/LALIGA/2026_08_16_LALIGA.csv
-[2026-08-30T11:23:08.361307] GAME_ID CONFLICTS | docs/win/soccer/00_intake/games/2026_08_19_soccer_games.csv
-[2026-08-30T11:23:08.362734] league_key match_date_key        home_team_key          away_team_key  game_id_count
-    laliga     2026_08_19      atletico madrid                 malaga              2
-       mls     2026_08_19      colorado rapids         los angeles fc              2
-       mls     2026_08_19        columbus crew            cf montreal              2
-       mls     2026_08_19            dc united new england revolution              2
-       mls     2026_08_19        fc cincinnati       new york city fc              2
-       mls     2026_08_19            la galaxy   san jose earthquakes              2
-       mls     2026_08_19     minnesota united         atlanta united              2
-       mls     2026_08_19   new york red bulls           nashville sc              2
-       mls     2026_08_19         orlando city           chicago fire              2
-       mls     2026_08_19   philadelphia union            inter miami              2
-       mls     2026_08_19     portland timbers           san diego fc              2
-       mls     2026_08_19       real salt lake              fc dallas              2
-       mls     2026_08_19     seattle sounders              austin fc              2
-       mls     2026_08_19 sporting kansas city          st louis city              2
-       mls     2026_08_19           toronto fc           charlotte fc              2
-       mls     2026_08_19  vancouver whitecaps         houston dynamo              2
-[2026-08-30T11:23:08.362888] NO GAME_ID MAP AVAILABLE | score_file=docs/win/soccer/05_final_scores/results/final_scores_dirty/LALIGA/2026_08_19_LALIGA.csv
-[2026-08-30T11:23:08.388445] GAME_ID CONFLICTS | docs/win/soccer/00_intake/games/2026_08_21_soccer_games.csv
-[2026-08-30T11:23:08.389675] league_key match_date_key home_team_key away_team_key  game_id_count
-       epl     2026_08_21       arsenal      coventry              2
-    ligue1     2026_08_21     marseille    strasbourg              2
-[2026-08-30T11:23:08.389820] NO GAME_ID MAP AVAILABLE | score_file=docs/win/soccer/05_final_scores/results/final_scores_dirty/LALIGA/2026_08_21_LALIGA.csv
-[2026-08-30T11:23:08.399150] GAME_ID CONFLICTS | docs/win/soccer/00_intake/games/2026_08_22_soccer_games.csv
-[2026-08-30T11:23:08.400587] league_key match_date_key     home_team_key     away_team_key  game_id_count
-       epl     2026_08_22         brentford tottenham hotspur              2
-       epl     2026_08_22           everton    crystal palace              2
-       epl     2026_08_22              hull manchester united              2
-       epl     2026_08_22           ipswich        sunderland              2
-       epl     2026_08_22 nottingham forest             leeds              2
-    ligue1     2026_08_22           le mans       stade brest              2
-    ligue1     2026_08_22              lens           auxerre              2
-    ligue1     2026_08_22              nice           lorient              2
-    ligue1     2026_08_22          toulouse              lyon              2
-    ligue1     2026_08_22            troyes          paris fc              2
-    seriea     2026_08_22             genoa            napoli              2
-    seriea     2026_08_22       inter milan             monza              2
-    seriea     2026_08_22             parma          cagliari              2
-    seriea     2026_08_22           udinese              como              2
-[2026-08-30T11:23:08.400734] NO GAME_ID MAP AVAILABLE | score_file=docs/win/soccer/05_final_scores/results/final_scores_dirty/LALIGA/2026_08_22_LALIGA.csv
-[2026-08-30T11:23:08.410150] GAME_ID CONFLICTS | docs/win/soccer/00_intake/games/2026_08_23_soccer_games.csv
-[2026-08-30T11:23:08.411528] league_key match_date_key   home_team_key away_team_key  game_id_count
-       epl     2026_08_23        brighton   aston villa              2
-       epl     2026_08_23 manchester city   bournemouth              2
-       epl     2026_08_23       newcastle     liverpool              2
-    ligue1     2026_08_23          angers         lille              2
-    ligue1     2026_08_23        le havre        monaco              2
-    seriea     2026_08_23        atalanta      sassuolo              2
-    seriea     2026_08_23       frosinone      juventus              2
-    seriea     2026_08_23          torino         milan              2
-    seriea     2026_08_23         venezia         lecce              2
-[2026-08-30T11:23:08.411683] NO GAME_ID MAP AVAILABLE | score_file=docs/win/soccer/05_final_scores/results/final_scores_dirty/LALIGA/2026_08_23_LALIGA.csv
-[2026-08-30T11:23:08.420872] GAME_ID CONFLICTS | docs/win/soccer/00_intake/games/2026_08_24_soccer_games.csv
-[2026-08-30T11:23:08.422109] league_key match_date_key home_team_key away_team_key  game_id_count
-       epl     2026_08_24        fulham       chelsea              2
-    seriea     2026_08_24       bologna         lazio              2
-    seriea     2026_08_24          roma    fiorentina              2
-[2026-08-30T11:23:08.422281] NO GAME_ID MAP AVAILABLE | score_file=docs/win/soccer/05_final_scores/results/final_scores_dirty/LALIGA/2026_08_24_LALIGA.csv
-[2026-08-30T11:23:08.431234] GAME_ID CONFLICTS | docs/win/soccer/00_intake/games/2026_08_25_soccer_games.csv
-[2026-08-30T11:23:08.432425] league_key match_date_key home_team_key away_team_key  game_id_count
-    laliga     2026_08_25      valencia    real betis              2
-[2026-08-30T11:23:08.432582] NO GAME_ID MAP AVAILABLE | score_file=docs/win/soccer/05_final_scores/results/final_scores_dirty/LALIGA/2026_08_25_LALIGA.csv
-[2026-08-30T11:23:08.433739] MISSING FILE | docs/win/soccer/00_intake/games/2026_03_01_soccer_games.csv
-[2026-08-30T11:23:08.433900] NO GAME_ID MAP AVAILABLE | score_file=docs/win/soccer/05_final_scores/results/final_scores_dirty/LIGUE1/2026_03_01_LIGUE1.csv
-[2026-08-30T11:23:08.435008] MISSING FILE | docs/win/soccer/00_intake/games/2026_03_06_soccer_games.csv
-[2026-08-30T11:23:08.435166] NO GAME_ID MAP AVAILABLE | score_file=docs/win/soccer/05_final_scores/results/final_scores_dirty/LIGUE1/2026_03_06_LIGUE1.csv
-[2026-08-30T11:23:08.436290] MISSING FILE | docs/win/soccer/00_intake/games/2026_03_07_soccer_games.csv
-[2026-08-30T11:23:08.436445] NO GAME_ID MAP AVAILABLE | score_file=docs/win/soccer/05_final_scores/results/final_scores_dirty/LIGUE1/2026_03_07_LIGUE1.csv
-[2026-08-30T11:23:08.437540] MISSING FILE | docs/win/soccer/00_intake/games/2026_03_08_soccer_games.csv
-[2026-08-30T11:23:08.437694] NO GAME_ID MAP AVAILABLE | score_file=docs/win/soccer/05_final_scores/results/final_scores_dirty/LIGUE1/2026_03_08_LIGUE1.csv
-[2026-08-30T11:23:08.438780] MISSING FILE | docs/win/soccer/00_intake/games/2026_03_13_soccer_games.csv
-[2026-08-30T11:23:08.438934] NO GAME_ID MAP AVAILABLE | score_file=docs/win/soccer/05_final_scores/results/final_scores_dirty/LIGUE1/2026_03_13_LIGUE1.csv
-[2026-08-30T11:23:08.440016] MISSING FILE | docs/win/soccer/00_intake/games/2026_03_14_soccer_games.csv
-[2026-08-30T11:23:08.440173] NO GAME_ID MAP AVAILABLE | score_file=docs/win/soccer/05_final_scores/results/final_scores_dirty/LIGUE1/2026_03_14_LIGUE1.csv
-[2026-08-30T11:23:08.441323] MISSING FILE | docs/win/soccer/00_intake/games/2026_03_15_soccer_games.csv
-[2026-08-30T11:23:08.441478] NO GAME_ID MAP AVAILABLE | score_file=docs/win/soccer/05_final_scores/results/final_scores_dirty/LIGUE1/2026_03_15_LIGUE1.csv
-[2026-08-30T11:23:08.442565] MISSING FILE | docs/win/soccer/00_intake/games/2026_03_20_soccer_games.csv
-[2026-08-30T11:23:08.442718] NO GAME_ID MAP AVAILABLE | score_file=docs/win/soccer/05_final_scores/results/final_scores_dirty/LIGUE1/2026_03_20_LIGUE1.csv
-[2026-08-30T11:23:08.443795] MISSING FILE | docs/win/soccer/00_intake/games/2026_03_21_soccer_games.csv
-[2026-08-30T11:23:08.443947] NO GAME_ID MAP AVAILABLE | score_file=docs/win/soccer/05_final_scores/results/final_scores_dirty/LIGUE1/2026_03_21_LIGUE1.csv
-[2026-08-30T11:23:08.445034] MISSING FILE | docs/win/soccer/00_intake/games/2026_03_22_soccer_games.csv
-[2026-08-30T11:23:08.445209] NO GAME_ID MAP AVAILABLE | score_file=docs/win/soccer/05_final_scores/results/final_scores_dirty/LIGUE1/2026_03_22_LIGUE1.csv
-[2026-08-30T11:23:08.446286] MISSING FILE | docs/win/soccer/00_intake/games/2026_04_03_soccer_games.csv
-[2026-08-30T11:23:08.446442] NO GAME_ID MAP AVAILABLE | score_file=docs/win/soccer/05_final_scores/results/final_scores_dirty/LIGUE1/2026_04_03_LIGUE1.csv
-[2026-08-30T11:23:08.447539] MISSING FILE | docs/win/soccer/00_intake/games/2026_04_04_soccer_games.csv
-[2026-08-30T11:23:08.447701] NO GAME_ID MAP AVAILABLE | score_file=docs/win/soccer/05_final_scores/results/final_scores_dirty/LIGUE1/2026_04_04_LIGUE1.csv
-[2026-08-30T11:23:08.448796] MISSING FILE | docs/win/soccer/00_intake/games/2026_04_05_soccer_games.csv
-[2026-08-30T11:23:08.448951] NO GAME_ID MAP AVAILABLE | score_file=docs/win/soccer/05_final_scores/results/final_scores_dirty/LIGUE1/2026_04_05_LIGUE1.csv
-[2026-08-30T11:23:08.482446] MISSING GAME_ID | docs/win/soccer/05_final_scores/results/final_scores_dirty/LIGUE1/2026_04_11_LIGUE1.csv
-[2026-08-30T11:23:08.483516] league match_date home_team away_team
+[2026-08-30T11:38:34.120737] MISSING GAME_ID | docs/win/soccer/05_final_scores/results/final_scores_dirty/LALIGA/2026_05_08_LALIGA.csv
+[2026-08-30T11:38:34.121449] league match_date home_team away_team
+laliga 2026_05_08   Levante   Osasuna
+[2026-08-30T11:38:34.134334] MISSING GAME_ID | docs/win/soccer/05_final_scores/results/final_scores_dirty/LALIGA/2026_05_09_LALIGA.csv
+[2026-08-30T11:38:34.135038] league match_date       home_team  away_team
+laliga 2026_05_09 Atletico Madrid Celta Vigo
+[2026-08-30T11:38:34.329510] MISSING FILE | docs/win/soccer/00_intake/games/2026_03_01_soccer_games.csv
+[2026-08-30T11:38:34.329627] NO GAME_ID MAP AVAILABLE | score_file=docs/win/soccer/05_final_scores/results/final_scores_dirty/LIGUE1/2026_03_01_LIGUE1.csv
+[2026-08-30T11:38:34.330380] MISSING FILE | docs/win/soccer/00_intake/games/2026_03_06_soccer_games.csv
+[2026-08-30T11:38:34.330488] NO GAME_ID MAP AVAILABLE | score_file=docs/win/soccer/05_final_scores/results/final_scores_dirty/LIGUE1/2026_03_06_LIGUE1.csv
+[2026-08-30T11:38:34.331217] MISSING FILE | docs/win/soccer/00_intake/games/2026_03_07_soccer_games.csv
+[2026-08-30T11:38:34.331324] NO GAME_ID MAP AVAILABLE | score_file=docs/win/soccer/05_final_scores/results/final_scores_dirty/LIGUE1/2026_03_07_LIGUE1.csv
+[2026-08-30T11:38:34.332043] MISSING FILE | docs/win/soccer/00_intake/games/2026_03_08_soccer_games.csv
+[2026-08-30T11:38:34.332149] NO GAME_ID MAP AVAILABLE | score_file=docs/win/soccer/05_final_scores/results/final_scores_dirty/LIGUE1/2026_03_08_LIGUE1.csv
+[2026-08-30T11:38:34.332860] MISSING FILE | docs/win/soccer/00_intake/games/2026_03_13_soccer_games.csv
+[2026-08-30T11:38:34.332964] NO GAME_ID MAP AVAILABLE | score_file=docs/win/soccer/05_final_scores/results/final_scores_dirty/LIGUE1/2026_03_13_LIGUE1.csv
+[2026-08-30T11:38:34.333661] MISSING FILE | docs/win/soccer/00_intake/games/2026_03_14_soccer_games.csv
+[2026-08-30T11:38:34.333789] NO GAME_ID MAP AVAILABLE | score_file=docs/win/soccer/05_final_scores/results/final_scores_dirty/LIGUE1/2026_03_14_LIGUE1.csv
+[2026-08-30T11:38:34.334499] MISSING FILE | docs/win/soccer/00_intake/games/2026_03_15_soccer_games.csv
+[2026-08-30T11:38:34.334602] NO GAME_ID MAP AVAILABLE | score_file=docs/win/soccer/05_final_scores/results/final_scores_dirty/LIGUE1/2026_03_15_LIGUE1.csv
+[2026-08-30T11:38:34.335315] MISSING FILE | docs/win/soccer/00_intake/games/2026_03_20_soccer_games.csv
+[2026-08-30T11:38:34.335417] NO GAME_ID MAP AVAILABLE | score_file=docs/win/soccer/05_final_scores/results/final_scores_dirty/LIGUE1/2026_03_20_LIGUE1.csv
+[2026-08-30T11:38:34.336132] MISSING FILE | docs/win/soccer/00_intake/games/2026_03_21_soccer_games.csv
+[2026-08-30T11:38:34.336236] NO GAME_ID MAP AVAILABLE | score_file=docs/win/soccer/05_final_scores/results/final_scores_dirty/LIGUE1/2026_03_21_LIGUE1.csv
+[2026-08-30T11:38:34.336950] MISSING FILE | docs/win/soccer/00_intake/games/2026_03_22_soccer_games.csv
+[2026-08-30T11:38:34.337055] NO GAME_ID MAP AVAILABLE | score_file=docs/win/soccer/05_final_scores/results/final_scores_dirty/LIGUE1/2026_03_22_LIGUE1.csv
+[2026-08-30T11:38:34.337744] MISSING FILE | docs/win/soccer/00_intake/games/2026_04_03_soccer_games.csv
+[2026-08-30T11:38:34.337865] NO GAME_ID MAP AVAILABLE | score_file=docs/win/soccer/05_final_scores/results/final_scores_dirty/LIGUE1/2026_04_03_LIGUE1.csv
+[2026-08-30T11:38:34.338567] MISSING FILE | docs/win/soccer/00_intake/games/2026_04_04_soccer_games.csv
+[2026-08-30T11:38:34.338672] NO GAME_ID MAP AVAILABLE | score_file=docs/win/soccer/05_final_scores/results/final_scores_dirty/LIGUE1/2026_04_04_LIGUE1.csv
+[2026-08-30T11:38:34.339388] MISSING FILE | docs/win/soccer/00_intake/games/2026_04_05_soccer_games.csv
+[2026-08-30T11:38:34.339492] NO GAME_ID MAP AVAILABLE | score_file=docs/win/soccer/05_final_scores/results/final_scores_dirty/LIGUE1/2026_04_05_LIGUE1.csv
+[2026-08-30T11:38:34.362742] MISSING GAME_ID | docs/win/soccer/05_final_scores/results/final_scores_dirty/LIGUE1/2026_04_11_LIGUE1.csv
+[2026-08-30T11:38:34.363517] league match_date home_team away_team
 ligue1 2026_04_11   Auxerre    Nantes
-[2026-08-30T11:23:08.634609] MISSING GAME_ID | docs/win/soccer/05_final_scores/results/final_scores_dirty/LIGUE1/2026_05_02_LIGUE1.csv
-[2026-08-30T11:23:08.635762] league match_date           home_team away_team
+[2026-08-30T11:38:34.468567] MISSING GAME_ID | docs/win/soccer/05_final_scores/results/final_scores_dirty/LIGUE1/2026_05_02_LIGUE1.csv
+[2026-08-30T11:38:34.469377] league match_date           home_team away_team
 ligue1 2026_05_02                Nice      Lens
 ligue1 2026_05_02                Metz    Monaco
 ligue1 2026_05_02 Paris Saint Germain   Lorient
 ligue1 2026_05_02              Nantes Marseille
-[2026-08-30T11:23:08.653880] MISSING GAME_ID | docs/win/soccer/05_final_scores/results/final_scores_dirty/LIGUE1/2026_05_03_LIGUE1.csv
-[2026-08-30T11:23:08.655009] league match_date  home_team   away_team
+[2026-08-30T11:38:34.481817] MISSING GAME_ID | docs/win/soccer/05_final_scores/results/final_scores_dirty/LIGUE1/2026_05_03_LIGUE1.csv
+[2026-08-30T11:38:34.482562] league match_date  home_team   away_team
 ligue1 2026_05_03       Lyon      Rennes
 ligue1 2026_05_03 Strasbourg    Toulouse
 ligue1 2026_05_03    Auxerre      Angers
 ligue1 2026_05_03   Paris FC Stade Brest
 ligue1 2026_05_03      Lille    Le Havre
-[2026-08-30T11:23:08.765833] GAME_ID CONFLICTS | docs/win/soccer/00_intake/games/2026_08_21_soccer_games.csv
-[2026-08-30T11:23:08.767080] league_key match_date_key home_team_key away_team_key  game_id_count
-       epl     2026_08_21       arsenal      coventry              2
-    ligue1     2026_08_21     marseille    strasbourg              2
-[2026-08-30T11:23:08.767253] NO GAME_ID MAP AVAILABLE | score_file=docs/win/soccer/05_final_scores/results/final_scores_dirty/LIGUE1/2026_08_21_LIGUE1.csv
-[2026-08-30T11:23:08.776582] GAME_ID CONFLICTS | docs/win/soccer/00_intake/games/2026_08_22_soccer_games.csv
-[2026-08-30T11:23:08.777983] league_key match_date_key     home_team_key     away_team_key  game_id_count
-       epl     2026_08_22         brentford tottenham hotspur              2
-       epl     2026_08_22           everton    crystal palace              2
-       epl     2026_08_22              hull manchester united              2
-       epl     2026_08_22           ipswich        sunderland              2
-       epl     2026_08_22 nottingham forest             leeds              2
-    ligue1     2026_08_22           le mans       stade brest              2
-    ligue1     2026_08_22              lens           auxerre              2
-    ligue1     2026_08_22              nice           lorient              2
-    ligue1     2026_08_22          toulouse              lyon              2
-    ligue1     2026_08_22            troyes          paris fc              2
-    seriea     2026_08_22             genoa            napoli              2
-    seriea     2026_08_22       inter milan             monza              2
-    seriea     2026_08_22             parma          cagliari              2
-    seriea     2026_08_22           udinese              como              2
-[2026-08-30T11:23:08.778129] NO GAME_ID MAP AVAILABLE | score_file=docs/win/soccer/05_final_scores/results/final_scores_dirty/LIGUE1/2026_08_22_LIGUE1.csv
-[2026-08-30T11:23:08.787420] GAME_ID CONFLICTS | docs/win/soccer/00_intake/games/2026_08_23_soccer_games.csv
-[2026-08-30T11:23:08.788733] league_key match_date_key   home_team_key away_team_key  game_id_count
-       epl     2026_08_23        brighton   aston villa              2
-       epl     2026_08_23 manchester city   bournemouth              2
-       epl     2026_08_23       newcastle     liverpool              2
-    ligue1     2026_08_23          angers         lille              2
-    ligue1     2026_08_23        le havre        monaco              2
-    seriea     2026_08_23        atalanta      sassuolo              2
-    seriea     2026_08_23       frosinone      juventus              2
-    seriea     2026_08_23          torino         milan              2
-    seriea     2026_08_23         venezia         lecce              2
-[2026-08-30T11:23:08.788886] NO GAME_ID MAP AVAILABLE | score_file=docs/win/soccer/05_final_scores/results/final_scores_dirty/LIGUE1/2026_08_23_LIGUE1.csv
-[2026-08-30T11:23:08.790029] MISSING FILE | docs/win/soccer/00_intake/games/2026_03_22_soccer_games.csv
-[2026-08-30T11:23:08.790214] NO GAME_ID MAP AVAILABLE | score_file=docs/win/soccer/05_final_scores/results/final_scores_dirty/MLS/2026_03_22_MLS.csv
-[2026-08-30T11:23:08.791363] MISSING FILE | docs/win/soccer/00_intake/games/2026_04_04_soccer_games.csv
-[2026-08-30T11:23:08.791523] NO GAME_ID MAP AVAILABLE | score_file=docs/win/soccer/05_final_scores/results/final_scores_dirty/MLS/2026_04_04_MLS.csv
-[2026-08-30T11:23:08.808490] MISSING GAME_ID | docs/win/soccer/05_final_scores/results/final_scores_dirty/MLS/2026_04_11_MLS.csv
-[2026-08-30T11:23:08.809639] league match_date            home_team            away_team
+[2026-08-30T11:38:34.586388] MISSING GAME_ID | docs/win/soccer/05_final_scores/results/final_scores_dirty/LIGUE1/2026_08_23_LIGUE1.csv
+[2026-08-30T11:38:34.587146] league match_date           home_team away_team
+ligue1 2026_08_23 Paris Saint Germain    Rennes
+[2026-08-30T11:38:34.589280] MISSING FILE | docs/win/soccer/00_intake/games/2026_03_22_soccer_games.csv
+[2026-08-30T11:38:34.589395] NO GAME_ID MAP AVAILABLE | score_file=docs/win/soccer/05_final_scores/results/final_scores_dirty/MLS/2026_03_22_MLS.csv
+[2026-08-30T11:38:34.590160] MISSING FILE | docs/win/soccer/00_intake/games/2026_04_04_soccer_games.csv
+[2026-08-30T11:38:34.590268] NO GAME_ID MAP AVAILABLE | score_file=docs/win/soccer/05_final_scores/results/final_scores_dirty/MLS/2026_04_04_MLS.csv
+[2026-08-30T11:38:34.601457] MISSING GAME_ID | docs/win/soccer/05_final_scores/results/final_scores_dirty/MLS/2026_04_11_MLS.csv
+[2026-08-30T11:38:34.602239] league match_date            home_team            away_team
    mls 2026_04_11         San Diego FC     Minnesota United
    mls 2026_04_11      Colorado Rapids       Houston Dynamo
    mls 2026_04_11 Sporting Kansas City San Jose Earthquakes
    mls 2026_04_11            FC Dallas        St Louis City
    mls 2026_04_11         Chicago Fire       Atlanta United
    mls 2026_04_11           Toronto FC        FC Cincinnati
-[2026-08-30T11:23:08.862072] MISSING GAME_ID | docs/win/soccer/05_final_scores/results/final_scores_dirty/MLS/2026_04_18_MLS.csv
-[2026-08-30T11:23:08.863220] league match_date        home_team        away_team
+[2026-08-30T11:38:34.637171] MISSING GAME_ID | docs/win/soccer/05_final_scores/results/final_scores_dirty/MLS/2026_04_18_MLS.csv
+[2026-08-30T11:38:34.637940] league match_date        home_team        away_team
    mls 2026_04_18 Seattle Sounders    St Louis City
    mls 2026_04_18   Real Salt Lake     San Diego FC
    mls 2026_04_18 Minnesota United Portland Timbers
    mls 2026_04_18        FC Dallas        LA Galaxy
-[2026-08-30T11:23:09.214937] GAME_ID CONFLICTS | docs/win/soccer/00_intake/games/2026_08_15_soccer_games.csv
-[2026-08-30T11:23:09.216372] league_key match_date_key        home_team_key          away_team_key  game_id_count
-    laliga     2026_08_15               alaves                 getafe              2
-    laliga     2026_08_15              sevilla              vallecano              2
-       mls     2026_08_15       atlanta united     new york red bulls              2
-       mls     2026_08_15          cf montreal              dc united              2
-       mls     2026_08_15         charlotte fc          columbus crew              2
-       mls     2026_08_15      colorado rapids   sporting kansas city              2
-       mls     2026_08_15       houston dynamo              la galaxy              2
-       mls     2026_08_15       los angeles fc           san diego fc              2
-       mls     2026_08_15         nashville sc            inter miami              2
-       mls     2026_08_15         orlando city          fc cincinnati              2
-       mls     2026_08_15       real salt lake       minnesota united              2
-       mls     2026_08_15 san jose earthquakes          st louis city              2
-       mls     2026_08_15           toronto fc new england revolution              2
-[2026-08-30T11:23:09.216523] NO GAME_ID MAP AVAILABLE | score_file=docs/win/soccer/05_final_scores/results/final_scores_dirty/MLS/2026_08_15_MLS.csv
-[2026-08-30T11:23:09.225775] GAME_ID CONFLICTS | docs/win/soccer/00_intake/games/2026_08_16_soccer_games.csv
-[2026-08-30T11:23:09.227042] league_key match_date_key    home_team_key       away_team_key  game_id_count
-    laliga     2026_08_16         espanyol             levante              2
-    laliga     2026_08_16        santander          villarreal              2
-       mls     2026_08_16        austin fc           fc dallas              2
-       mls     2026_08_16     chicago fire    portland timbers              2
-       mls     2026_08_16 new york city fc  philadelphia union              2
-       mls     2026_08_16 seattle sounders vancouver whitecaps              2
-[2026-08-30T11:23:09.227212] NO GAME_ID MAP AVAILABLE | score_file=docs/win/soccer/05_final_scores/results/final_scores_dirty/MLS/2026_08_16_MLS.csv
-[2026-08-30T11:23:09.236456] GAME_ID CONFLICTS | docs/win/soccer/00_intake/games/2026_08_19_soccer_games.csv
-[2026-08-30T11:23:09.237876] league_key match_date_key        home_team_key          away_team_key  game_id_count
-    laliga     2026_08_19      atletico madrid                 malaga              2
-       mls     2026_08_19      colorado rapids         los angeles fc              2
-       mls     2026_08_19        columbus crew            cf montreal              2
-       mls     2026_08_19            dc united new england revolution              2
-       mls     2026_08_19        fc cincinnati       new york city fc              2
-       mls     2026_08_19            la galaxy   san jose earthquakes              2
-       mls     2026_08_19     minnesota united         atlanta united              2
-       mls     2026_08_19   new york red bulls           nashville sc              2
-       mls     2026_08_19         orlando city           chicago fire              2
-       mls     2026_08_19   philadelphia union            inter miami              2
-       mls     2026_08_19     portland timbers           san diego fc              2
-       mls     2026_08_19       real salt lake              fc dallas              2
-       mls     2026_08_19     seattle sounders              austin fc              2
-       mls     2026_08_19 sporting kansas city          st louis city              2
-       mls     2026_08_19           toronto fc           charlotte fc              2
-       mls     2026_08_19  vancouver whitecaps         houston dynamo              2
-[2026-08-30T11:23:09.238023] NO GAME_ID MAP AVAILABLE | score_file=docs/win/soccer/05_final_scores/results/final_scores_dirty/MLS/2026_08_19_MLS.csv
-[2026-08-30T11:23:09.247344] GAME_ID CONFLICTS | docs/win/soccer/00_intake/games/2026_08_22_soccer_games.csv
-[2026-08-30T11:23:09.248737] league_key match_date_key     home_team_key     away_team_key  game_id_count
-       epl     2026_08_22         brentford tottenham hotspur              2
-       epl     2026_08_22           everton    crystal palace              2
-       epl     2026_08_22              hull manchester united              2
-       epl     2026_08_22           ipswich        sunderland              2
-       epl     2026_08_22 nottingham forest             leeds              2
-    ligue1     2026_08_22           le mans       stade brest              2
-    ligue1     2026_08_22              lens           auxerre              2
-    ligue1     2026_08_22              nice           lorient              2
-    ligue1     2026_08_22          toulouse              lyon              2
-    ligue1     2026_08_22            troyes          paris fc              2
-    seriea     2026_08_22             genoa            napoli              2
-    seriea     2026_08_22       inter milan             monza              2
-    seriea     2026_08_22             parma          cagliari              2
-    seriea     2026_08_22           udinese              como              2
-[2026-08-30T11:23:09.248885] NO GAME_ID MAP AVAILABLE | score_file=docs/win/soccer/05_final_scores/results/final_scores_dirty/MLS/2026_08_22_MLS.csv
-[2026-08-30T11:23:09.258103] GAME_ID CONFLICTS | docs/win/soccer/00_intake/games/2026_08_23_soccer_games.csv
-[2026-08-30T11:23:09.259453] league_key match_date_key   home_team_key away_team_key  game_id_count
-       epl     2026_08_23        brighton   aston villa              2
-       epl     2026_08_23 manchester city   bournemouth              2
-       epl     2026_08_23       newcastle     liverpool              2
-    ligue1     2026_08_23          angers         lille              2
-    ligue1     2026_08_23        le havre        monaco              2
-    seriea     2026_08_23        atalanta      sassuolo              2
-    seriea     2026_08_23       frosinone      juventus              2
-    seriea     2026_08_23          torino         milan              2
-    seriea     2026_08_23         venezia         lecce              2
-[2026-08-30T11:23:09.259607] NO GAME_ID MAP AVAILABLE | score_file=docs/win/soccer/05_final_scores/results/final_scores_dirty/MLS/2026_08_23_MLS.csv
-[2026-08-30T11:23:09.260753] MISSING FILE | docs/win/soccer/00_intake/games/2026_03_01_soccer_games.csv
-[2026-08-30T11:23:09.260914] NO GAME_ID MAP AVAILABLE | score_file=docs/win/soccer/05_final_scores/results/final_scores_dirty/SERIEA/2026_03_01_SERIEA.csv
-[2026-08-30T11:23:09.262031] MISSING FILE | docs/win/soccer/00_intake/games/2026_03_02_soccer_games.csv
-[2026-08-30T11:23:09.262212] NO GAME_ID MAP AVAILABLE | score_file=docs/win/soccer/05_final_scores/results/final_scores_dirty/SERIEA/2026_03_02_SERIEA.csv
-[2026-08-30T11:23:09.263319] MISSING FILE | docs/win/soccer/00_intake/games/2026_03_06_soccer_games.csv
-[2026-08-30T11:23:09.263477] NO GAME_ID MAP AVAILABLE | score_file=docs/win/soccer/05_final_scores/results/final_scores_dirty/SERIEA/2026_03_06_SERIEA.csv
-[2026-08-30T11:23:09.264595] MISSING FILE | docs/win/soccer/00_intake/games/2026_03_07_soccer_games.csv
-[2026-08-30T11:23:09.264750] NO GAME_ID MAP AVAILABLE | score_file=docs/win/soccer/05_final_scores/results/final_scores_dirty/SERIEA/2026_03_07_SERIEA.csv
-[2026-08-30T11:23:09.265844] MISSING FILE | docs/win/soccer/00_intake/games/2026_03_08_soccer_games.csv
-[2026-08-30T11:23:09.265998] NO GAME_ID MAP AVAILABLE | score_file=docs/win/soccer/05_final_scores/results/final_scores_dirty/SERIEA/2026_03_08_SERIEA.csv
-[2026-08-30T11:23:09.267082] MISSING FILE | docs/win/soccer/00_intake/games/2026_03_09_soccer_games.csv
-[2026-08-30T11:23:09.267268] NO GAME_ID MAP AVAILABLE | score_file=docs/win/soccer/05_final_scores/results/final_scores_dirty/SERIEA/2026_03_09_SERIEA.csv
-[2026-08-30T11:23:09.268343] MISSING FILE | docs/win/soccer/00_intake/games/2026_03_13_soccer_games.csv
-[2026-08-30T11:23:09.268499] NO GAME_ID MAP AVAILABLE | score_file=docs/win/soccer/05_final_scores/results/final_scores_dirty/SERIEA/2026_03_13_SERIEA.csv
-[2026-08-30T11:23:09.269591] MISSING FILE | docs/win/soccer/00_intake/games/2026_03_14_soccer_games.csv
-[2026-08-30T11:23:09.269749] NO GAME_ID MAP AVAILABLE | score_file=docs/win/soccer/05_final_scores/results/final_scores_dirty/SERIEA/2026_03_14_SERIEA.csv
-[2026-08-30T11:23:09.270832] MISSING FILE | docs/win/soccer/00_intake/games/2026_03_15_soccer_games.csv
-[2026-08-30T11:23:09.270985] NO GAME_ID MAP AVAILABLE | score_file=docs/win/soccer/05_final_scores/results/final_scores_dirty/SERIEA/2026_03_15_SERIEA.csv
-[2026-08-30T11:23:09.272073] MISSING FILE | docs/win/soccer/00_intake/games/2026_03_16_soccer_games.csv
-[2026-08-30T11:23:09.272258] NO GAME_ID MAP AVAILABLE | score_file=docs/win/soccer/05_final_scores/results/final_scores_dirty/SERIEA/2026_03_16_SERIEA.csv
-[2026-08-30T11:23:09.273333] MISSING FILE | docs/win/soccer/00_intake/games/2026_03_20_soccer_games.csv
-[2026-08-30T11:23:09.273487] NO GAME_ID MAP AVAILABLE | score_file=docs/win/soccer/05_final_scores/results/final_scores_dirty/SERIEA/2026_03_20_SERIEA.csv
-[2026-08-30T11:23:09.274581] MISSING FILE | docs/win/soccer/00_intake/games/2026_03_21_soccer_games.csv
-[2026-08-30T11:23:09.274737] NO GAME_ID MAP AVAILABLE | score_file=docs/win/soccer/05_final_scores/results/final_scores_dirty/SERIEA/2026_03_21_SERIEA.csv
-[2026-08-30T11:23:09.275823] MISSING FILE | docs/win/soccer/00_intake/games/2026_03_22_soccer_games.csv
-[2026-08-30T11:23:09.275976] NO GAME_ID MAP AVAILABLE | score_file=docs/win/soccer/05_final_scores/results/final_scores_dirty/SERIEA/2026_03_22_SERIEA.csv
-[2026-08-30T11:23:09.277057] MISSING FILE | docs/win/soccer/00_intake/games/2026_04_04_soccer_games.csv
-[2026-08-30T11:23:09.277239] NO GAME_ID MAP AVAILABLE | score_file=docs/win/soccer/05_final_scores/results/final_scores_dirty/SERIEA/2026_04_04_SERIEA.csv
-[2026-08-30T11:23:09.278329] MISSING FILE | docs/win/soccer/00_intake/games/2026_04_05_soccer_games.csv
-[2026-08-30T11:23:09.278484] NO GAME_ID MAP AVAILABLE | score_file=docs/win/soccer/05_final_scores/results/final_scores_dirty/SERIEA/2026_04_05_SERIEA.csv
-[2026-08-30T11:23:09.295449] MISSING GAME_ID | docs/win/soccer/05_final_scores/results/final_scores_dirty/SERIEA/2026_04_06_SERIEA.csv
-[2026-08-30T11:23:09.296555] league match_date home_team away_team
+[2026-08-30T11:38:34.718052] MISSING GAME_ID | docs/win/soccer/05_final_scores/results/final_scores_dirty/MLS/2026_05_09_MLS.csv
+[2026-08-30T11:38:34.718803] league match_date    home_team          away_team
+   mls 2026_05_09 Chicago Fire New York Red Bulls
+[2026-08-30T11:38:34.922652] MISSING FILE | docs/win/soccer/00_intake/games/2026_03_01_soccer_games.csv
+[2026-08-30T11:38:34.922764] NO GAME_ID MAP AVAILABLE | score_file=docs/win/soccer/05_final_scores/results/final_scores_dirty/SERIEA/2026_03_01_SERIEA.csv
+[2026-08-30T11:38:34.923515] MISSING FILE | docs/win/soccer/00_intake/games/2026_03_02_soccer_games.csv
+[2026-08-30T11:38:34.923621] NO GAME_ID MAP AVAILABLE | score_file=docs/win/soccer/05_final_scores/results/final_scores_dirty/SERIEA/2026_03_02_SERIEA.csv
+[2026-08-30T11:38:34.924366] MISSING FILE | docs/win/soccer/00_intake/games/2026_03_06_soccer_games.csv
+[2026-08-30T11:38:34.924470] NO GAME_ID MAP AVAILABLE | score_file=docs/win/soccer/05_final_scores/results/final_scores_dirty/SERIEA/2026_03_06_SERIEA.csv
+[2026-08-30T11:38:34.925197] MISSING FILE | docs/win/soccer/00_intake/games/2026_03_07_soccer_games.csv
+[2026-08-30T11:38:34.925300] NO GAME_ID MAP AVAILABLE | score_file=docs/win/soccer/05_final_scores/results/final_scores_dirty/SERIEA/2026_03_07_SERIEA.csv
+[2026-08-30T11:38:34.926034] MISSING FILE | docs/win/soccer/00_intake/games/2026_03_08_soccer_games.csv
+[2026-08-30T11:38:34.926137] NO GAME_ID MAP AVAILABLE | score_file=docs/win/soccer/05_final_scores/results/final_scores_dirty/SERIEA/2026_03_08_SERIEA.csv
+[2026-08-30T11:38:34.926839] MISSING FILE | docs/win/soccer/00_intake/games/2026_03_09_soccer_games.csv
+[2026-08-30T11:38:34.926943] NO GAME_ID MAP AVAILABLE | score_file=docs/win/soccer/05_final_scores/results/final_scores_dirty/SERIEA/2026_03_09_SERIEA.csv
+[2026-08-30T11:38:34.927623] MISSING FILE | docs/win/soccer/00_intake/games/2026_03_13_soccer_games.csv
+[2026-08-30T11:38:34.927724] NO GAME_ID MAP AVAILABLE | score_file=docs/win/soccer/05_final_scores/results/final_scores_dirty/SERIEA/2026_03_13_SERIEA.csv
+[2026-08-30T11:38:34.928429] MISSING FILE | docs/win/soccer/00_intake/games/2026_03_14_soccer_games.csv
+[2026-08-30T11:38:34.928531] NO GAME_ID MAP AVAILABLE | score_file=docs/win/soccer/05_final_scores/results/final_scores_dirty/SERIEA/2026_03_14_SERIEA.csv
+[2026-08-30T11:38:34.929244] MISSING FILE | docs/win/soccer/00_intake/games/2026_03_15_soccer_games.csv
+[2026-08-30T11:38:34.929349] NO GAME_ID MAP AVAILABLE | score_file=docs/win/soccer/05_final_scores/results/final_scores_dirty/SERIEA/2026_03_15_SERIEA.csv
+[2026-08-30T11:38:34.930059] MISSING FILE | docs/win/soccer/00_intake/games/2026_03_16_soccer_games.csv
+[2026-08-30T11:38:34.930163] NO GAME_ID MAP AVAILABLE | score_file=docs/win/soccer/05_final_scores/results/final_scores_dirty/SERIEA/2026_03_16_SERIEA.csv
+[2026-08-30T11:38:34.930867] MISSING FILE | docs/win/soccer/00_intake/games/2026_03_20_soccer_games.csv
+[2026-08-30T11:38:34.930971] NO GAME_ID MAP AVAILABLE | score_file=docs/win/soccer/05_final_scores/results/final_scores_dirty/SERIEA/2026_03_20_SERIEA.csv
+[2026-08-30T11:38:34.931655] MISSING FILE | docs/win/soccer/00_intake/games/2026_03_21_soccer_games.csv
+[2026-08-30T11:38:34.931756] NO GAME_ID MAP AVAILABLE | score_file=docs/win/soccer/05_final_scores/results/final_scores_dirty/SERIEA/2026_03_21_SERIEA.csv
+[2026-08-30T11:38:34.932479] MISSING FILE | docs/win/soccer/00_intake/games/2026_03_22_soccer_games.csv
+[2026-08-30T11:38:34.932581] NO GAME_ID MAP AVAILABLE | score_file=docs/win/soccer/05_final_scores/results/final_scores_dirty/SERIEA/2026_03_22_SERIEA.csv
+[2026-08-30T11:38:34.933299] MISSING FILE | docs/win/soccer/00_intake/games/2026_04_04_soccer_games.csv
+[2026-08-30T11:38:34.933401] NO GAME_ID MAP AVAILABLE | score_file=docs/win/soccer/05_final_scores/results/final_scores_dirty/SERIEA/2026_04_04_SERIEA.csv
+[2026-08-30T11:38:34.934103] MISSING FILE | docs/win/soccer/00_intake/games/2026_04_05_soccer_games.csv
+[2026-08-30T11:38:34.934205] NO GAME_ID MAP AVAILABLE | score_file=docs/win/soccer/05_final_scores/results/final_scores_dirty/SERIEA/2026_04_05_SERIEA.csv
+[2026-08-30T11:38:34.945301] MISSING GAME_ID | docs/win/soccer/05_final_scores/results/final_scores_dirty/SERIEA/2026_04_06_SERIEA.csv
+[2026-08-30T11:38:34.946160] league match_date home_team away_team
 seriea 2026_04_06  Juventus     Genoa
 seriea 2026_04_06     Lecce  Atalanta
 seriea 2026_04_06   Udinese      Como
-[2026-08-30T11:23:09.331685] MISSING GAME_ID | docs/win/soccer/05_final_scores/results/final_scores_dirty/SERIEA/2026_04_11_SERIEA.csv
-[2026-08-30T11:23:09.332776] league match_date home_team away_team
+[2026-08-30T11:38:34.969893] MISSING GAME_ID | docs/win/soccer/05_final_scores/results/final_scores_dirty/SERIEA/2026_04_11_SERIEA.csv
+[2026-08-30T11:38:34.970621] league match_date home_team away_team
 seriea 2026_04_11     Milan   Udinese
 seriea 2026_04_11    Torino    Verona
 seriea 2026_04_11  Cagliari Cremonese
-[2026-08-30T11:23:09.516889] MISSING GAME_ID | docs/win/soccer/05_final_scores/results/final_scores_dirty/SERIEA/2026_05_01_SERIEA.csv
-[2026-08-30T11:23:09.517973] league match_date home_team away_team
+[2026-08-30T11:38:35.103248] MISSING GAME_ID | docs/win/soccer/05_final_scores/results/final_scores_dirty/SERIEA/2026_05_01_SERIEA.csv
+[2026-08-30T11:38:35.104108] league match_date home_team away_team
 seriea 2026_05_01      Pisa     Lecce
-[2026-08-30T11:23:09.536302] MISSING GAME_ID | docs/win/soccer/05_final_scores/results/final_scores_dirty/SERIEA/2026_05_02_SERIEA.csv
-[2026-08-30T11:23:09.537387] league match_date home_team away_team
+[2026-08-30T11:38:35.116388] MISSING GAME_ID | docs/win/soccer/05_final_scores/results/final_scores_dirty/SERIEA/2026_05_02_SERIEA.csv
+[2026-08-30T11:38:35.117182] league match_date home_team away_team
 seriea 2026_05_02  Atalanta     Genoa
 seriea 2026_05_02      Como    Napoli
 seriea 2026_05_02   Udinese    Torino
-[2026-08-30T11:23:09.555572] MISSING GAME_ID | docs/win/soccer/05_final_scores/results/final_scores_dirty/SERIEA/2026_05_03_SERIEA.csv
-[2026-08-30T11:23:09.556700] league match_date   home_team away_team
+[2026-08-30T11:38:35.129610] MISSING GAME_ID | docs/win/soccer/05_final_scores/results/final_scores_dirty/SERIEA/2026_05_03_SERIEA.csv
+[2026-08-30T11:38:35.130363] league match_date   home_team away_team
 seriea 2026_05_03 Inter Milan     Parma
 seriea 2026_05_03    Juventus    Verona
 seriea 2026_05_03    Sassuolo     Milan
 seriea 2026_05_03     Bologna  Cagliari
-[2026-08-30T11:23:09.717883] GAME_ID CONFLICTS | docs/win/soccer/00_intake/games/2026_08_22_soccer_games.csv
-[2026-08-30T11:23:09.719337] league_key match_date_key     home_team_key     away_team_key  game_id_count
-       epl     2026_08_22         brentford tottenham hotspur              2
-       epl     2026_08_22           everton    crystal palace              2
-       epl     2026_08_22              hull manchester united              2
-       epl     2026_08_22           ipswich        sunderland              2
-       epl     2026_08_22 nottingham forest             leeds              2
-    ligue1     2026_08_22           le mans       stade brest              2
-    ligue1     2026_08_22              lens           auxerre              2
-    ligue1     2026_08_22              nice           lorient              2
-    ligue1     2026_08_22          toulouse              lyon              2
-    ligue1     2026_08_22            troyes          paris fc              2
-    seriea     2026_08_22             genoa            napoli              2
-    seriea     2026_08_22       inter milan             monza              2
-    seriea     2026_08_22             parma          cagliari              2
-    seriea     2026_08_22           udinese              como              2
-[2026-08-30T11:23:09.719487] NO GAME_ID MAP AVAILABLE | score_file=docs/win/soccer/05_final_scores/results/final_scores_dirty/SERIEA/2026_08_22_SERIEA.csv
-[2026-08-30T11:23:09.728832] GAME_ID CONFLICTS | docs/win/soccer/00_intake/games/2026_08_23_soccer_games.csv
-[2026-08-30T11:23:09.730196] league_key match_date_key   home_team_key away_team_key  game_id_count
-       epl     2026_08_23        brighton   aston villa              2
-       epl     2026_08_23 manchester city   bournemouth              2
-       epl     2026_08_23       newcastle     liverpool              2
-    ligue1     2026_08_23          angers         lille              2
-    ligue1     2026_08_23        le havre        monaco              2
-    seriea     2026_08_23        atalanta      sassuolo              2
-    seriea     2026_08_23       frosinone      juventus              2
-    seriea     2026_08_23          torino         milan              2
-    seriea     2026_08_23         venezia         lecce              2
-[2026-08-30T11:23:09.730346] NO GAME_ID MAP AVAILABLE | score_file=docs/win/soccer/05_final_scores/results/final_scores_dirty/SERIEA/2026_08_23_SERIEA.csv
-[2026-08-30T11:23:09.739860] GAME_ID CONFLICTS | docs/win/soccer/00_intake/games/2026_08_24_soccer_games.csv
-[2026-08-30T11:23:09.741106] league_key match_date_key home_team_key away_team_key  game_id_count
-       epl     2026_08_24        fulham       chelsea              2
-    seriea     2026_08_24       bologna         lazio              2
-    seriea     2026_08_24          roma    fiorentina              2
-[2026-08-30T11:23:09.741298] NO GAME_ID MAP AVAILABLE | score_file=docs/win/soccer/05_final_scores/results/final_scores_dirty/SERIEA/2026_08_24_SERIEA.csv
+[2026-08-30T11:38:35.165325] MISSING GAME_ID | docs/win/soccer/05_final_scores/results/final_scores_dirty/SERIEA/2026_05_09_SERIEA.csv
+[2026-08-30T11:38:35.166073] league match_date home_team   away_team
+seriea 2026_05_09     Lazio Inter Milan
+seriea 2026_05_09  Cagliari     Udinese

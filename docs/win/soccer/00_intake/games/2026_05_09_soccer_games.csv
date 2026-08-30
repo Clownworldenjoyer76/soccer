@@ -12,9 +12,7 @@ game_id,sport,league,match_date,match_time,home_team,away_team
 61624630,soccer,laliga,2026_05_09,03:00 PM,Real Sociedad,Real Betis
 61624628,soccer,laliga,2026_05_09,08:00 AM,Elche,Alaves
 61624632,soccer,laliga,2026_05_09,10:15 AM,Sevilla,Espanyol
-61624620,soccer,laliga,2026_05_09,12:30 PM,Atletico Madrid,Celta Vigo
 66299122,soccer,mls,2026_05_09,01:00 PM,Toronto FC,Inter Miami
-66299118,soccer,mls,2026_05_09,02:30 PM,Chicago Fire,New York Red Bulls
 66299120,soccer,mls,2026_05_09,04:30 PM,CF Montreal,Orlando City
 66299124,soccer,mls,2026_05_09,07:30 PM,Atlanta United,LA Galaxy
 66299126,soccer,mls,2026_05_09,07:30 PM,Charlotte FC,FC Cincinnati
@@ -26,5 +24,3 @@ game_id,sport,league,match_date,match_time,home_team,away_team
 66299138,soccer,mls,2026_05_09,10:30 PM,San Jose Earthquakes,Vancouver Whitecaps
 66299140,soccer,mls,2026_05_09,10:30 PM,Seattle Sounders,San Diego FC
 61061653,soccer,seriea,2026_05_09,02:45 PM,Lecce,Juventus
-61061645,soccer,seriea,2026_05_09,09:00 AM,Cagliari,Udinese
-61061651,soccer,seriea,2026_05_09,12:00 PM,Lazio,Inter Milan
