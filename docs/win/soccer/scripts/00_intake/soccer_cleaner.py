@@ -5,94 +5,131 @@ import csv
 import math
 import re
 import traceback
-from pathlib import Path
 from datetime import datetime, timezone
+from pathlib import Path
 
 SPORTSBOOK_DIR = Path("docs/win/soccer/00_intake/sportsbook")
 PREDICTIONS_DIR = Path("docs/win/soccer/00_intake/predictions")
 
 SB_NORM_DIR = SPORTSBOOK_DIR / "normalized"
 PRED_NORM_DIR = PREDICTIONS_DIR / "normalized"
-
 SB_NORM_DIR.mkdir(parents=True, exist_ok=True)
 PRED_NORM_DIR.mkdir(parents=True, exist_ok=True)
 
 ERROR_DIR = Path("docs/win/soccer/errors/00_intake")
 ERROR_DIR.mkdir(parents=True, exist_ok=True)
-
 LOG_FILE = ERROR_DIR / "soccer_cleaner.txt"
 
 DATE_PAT = re.compile(r"\d{4}_\d{2}_\d{2}")
-
-with open(LOG_FILE, "w", encoding="utf-8") as f:
-    f.write(
-        f"=== soccer_cleaner RUN "
-        f"{datetime.now(timezone.utc).isoformat()} ===\n"
-    )
-
-
-def log(msg: str) -> None:
-    with open(LOG_FILE, "a", encoding="utf-8") as f:
-        f.write(
-            f"{datetime.now(timezone.utc).isoformat()} | {msg}\n"
-        )
-
-
-# summary counters
-sb_files_written = []
-pred_files_written = []
-total_missing_ids = 0
-total_invalid_probability_rows = 0
-
-
-# =========================
-# LEAGUE NORMALIZATION
-# =========================
 
 LEAGUE_MAP = {
     "la liga": "laliga",
     "la_liga": "laliga",
     "laliga": "laliga",
-
     "epl": "epl",
-
     "serie a": "seriea",
     "serie_a": "seriea",
     "seriea": "seriea",
-
     "bundesliga": "bundesliga",
-
     "ligue 1": "ligue1",
     "ligue_1": "ligue1",
     "ligue1": "ligue1",
-
     "mls": "mls",
 }
+
+PROB_COLS = ["home_prob", "draw_prob", "away_prob"]
+PROB_SUM_TOLERANCE = 0.001
+
+XG_COLS = ["home_xg", "away_xg", "expected_total_goals"]
+
+# Source xG values are normally rounded to two decimals.
+# This allows only a small separate-rounding difference.
+XG_TOTAL_TOLERANCE = 0.01
+
+PRED_FIELDS = [
+    "sport",
+    "league",
+    "game_id",
+    "match_date",
+    "match_time",
+    "home_team",
+    "away_team",
+    "home_prob",
+    "draw_prob",
+    "away_prob",
+    "home_xg",
+    "away_xg",
+    "expected_total_goals",
+]
+
+SB_FIELDS = [
+    "sport",
+    "league",
+    "game_id",
+    "match_date",
+    "match_time",
+    "home_team",
+    "away_team",
+    "dk_home_decimal",
+    "dk_draw_decimal",
+    "dk_away_decimal",
+    "dk_over25_decimal",
+    "dk_under25_decimal",
+    "dk_over35_decimal",
+    "dk_under35_decimal",
+    "btts_yes",
+    "btts_no",
+]
+
+sb_files_written = []
+pred_files_written = []
+total_missing_ids = 0
+total_invalid_probability_rows = 0
+total_invalid_xg_rows = 0
+
+
+def reset_log() -> None:
+    with open(LOG_FILE, "w", encoding="utf-8") as f:
+        f.write(
+            f"=== soccer_cleaner RUN "
+            f"{datetime.now(timezone.utc).isoformat()} ===\n"
+        )
+
+
+def log(msg: str) -> None:
+    with open(LOG_FILE, "a", encoding="utf-8") as f:
+        f.write(
+            f"{datetime.now(timezone.utc).isoformat()} | "
+            f"{msg}\n"
+        )
 
 
 def normalize_league(value: str) -> str:
     if not value:
         return ""
 
-    return LEAGUE_MAP.get(
-        value.strip().lower(),
-        value.strip().lower(),
-    )
+    cleaned = value.strip().lower()
+    return LEAGUE_MAP.get(cleaned, cleaned)
 
 
-# =========================
-# 1X2 PROBABILITY VALIDATION
-# =========================
+def finite_float(value):
+    if value is None:
+        return None
 
-PROB_COLS = [
-    "home_prob",
-    "draw_prob",
-    "away_prob",
-]
+    text = str(value).strip()
 
-# Raw prediction probabilities are percentage values.
-# Allow a maximum 0.1 percentage-point source rounding difference.
-PROB_SUM_TOLERANCE = 0.001
+    if not text:
+        return None
+
+    try:
+        number = float(text)
+    except (TypeError, ValueError):
+        return None
+
+    if not math.isfinite(number):
+        return None
+
+    return number
 
 
 def pct_to_decimal(value):
@@ -105,22 +142,12 @@ def pct_to_decimal(value):
         return None
 
     cleaned = text.rstrip("%").strip()
+    number = finite_float(cleaned)
 
-    if not cleaned:
+    if number is None:
         return None
 
-    try:
-        number = float(cleaned)
-    except (TypeError, ValueError):
-        return None
-
-    if not math.isfinite(number):
-        return None
-
-    return round(
-        number / 100.0,
-        6,
-    )
+    return round(number / 100.0, 6)
 
 
 def validate_1x2_probabilities(row):
@@ -129,10 +156,7 @@ def validate_1x2_probabilities(row):
     for col in PROB_COLS:
         raw_value = row.get(col)
 
-        if (
-            raw_value is None
-            or not str(raw_value).strip()
-        ):
+        if raw_value is None or not str(raw_value).strip():
             return (
                 False,
                 {},
@@ -150,27 +174,19 @@ def validate_1x2_probabilities(row):
                 f"non-numeric {col}={raw_value!r}",
             )
 
-        if (
-            value < 0.0
-            or value > 1.0
-        ):
+        if value < 0.0 or value > 1.0:
             return (
                 False,
                 {},
                 None,
-                (
-                    f"out-of-range {col}={value} "
-                    f"raw={raw_value!r}"
-                ),
+                f"out-of-range {col}={value} "
+                f"raw={raw_value!r}",
             )
 
         converted[col] = value
 
     probability_sum = round(
-        sum(
-            converted[col]
-            for col in PROB_COLS
-        ),
+        sum(converted.values()),
         6,
     )
 
@@ -186,12 +202,10 @@ def validate_1x2_probabilities(row):
             False,
             converted,
             probability_sum,
-            (
-                f"invalid 1X2 sum="
-                f"{probability_sum:.6f} "
-                f"tolerance="
-                f"{PROB_SUM_TOLERANCE:.6f}"
-            ),
+            f"invalid 1X2 sum="
+            f"{probability_sum:.6f} "
+            f"tolerance="
+            f"{PROB_SUM_TOLERANCE:.6f}",
         )
 
     return (
@@ -202,9 +216,81 @@ def validate_1x2_probabilities(row):
     )
 
 
-# =========================
-# SPORTSBOOK GAME_ID INDEX
-# =========================
+def validate_xg_fields(row):
+    parsed = {}
+
+    for col in XG_COLS:
+        raw_value = row.get(col)
+
+        if raw_value is None or not str(raw_value).strip():
+            return (
+                False,
+                {},
+                None,
+                None,
+                f"missing {col}",
+            )
+
+        value = finite_float(raw_value)
+
+        if value is None:
+            return (
+                False,
+                {},
+                None,
+                None,
+                f"non-numeric {col}={raw_value!r}",
+            )
+
+        if value < 0.0:
+            return (
+                False,
+                {},
+                None,
+                None,
+                f"negative {col}={value}",
+            )
+
+        parsed[col] = value
+
+    component_total = round(
+        parsed["home_xg"]
+        + parsed["away_xg"],
+        6,
+    )
+
+    total_difference = abs(
+        round(
+            parsed["expected_total_goals"]
+            - component_total,
+            6,
+        )
+    )
+
+    if total_difference > XG_TOTAL_TOLERANCE:
+        return (
+            False,
+            parsed,
+            component_total,
+            total_difference,
+            f"inconsistent expected_total_goals="
+            f"{parsed['expected_total_goals']:.6f} "
+            f"home_plus_away="
+            f"{component_total:.6f} "
+            f"difference="
+            f"{total_difference:.6f} "
+            f"tolerance="
+            f"{XG_TOTAL_TOLERANCE:.6f}",
+        )
+
+    return (
+        True,
+        parsed,
+        component_total,
+        total_difference,
+        "",
+    )
+
 
 def build_game_id_index() -> dict:
     index = {}
@@ -281,30 +367,7 @@ def build_game_id_index() -> dict:
     return index
 
 
-# =========================
-# 1. CLEAN SPORTSBOOK
-# =========================
-
 def clean_sportsbook():
-    sb_fields = [
-        "sport",
-        "league",
-        "game_id",
-        "match_date",
-        "match_time",
-        "home_team",
-        "away_team",
-        "dk_home_decimal",
-        "dk_draw_decimal",
-        "dk_away_decimal",
-        "dk_over25_decimal",
-        "dk_under25_decimal",
-        "dk_over35_decimal",
-        "dk_under35_decimal",
-        "btts_yes",
-        "btts_no",
-    ]
-
     for sb_file in sorted(
         SPORTSBOOK_DIR.glob("*/*.csv")
     ):
@@ -344,16 +407,12 @@ def clean_sportsbook():
                 reader = csv.DictReader(f)
 
                 for row in reader:
-                    league_raw = (
-                        row.get(
-                            "league",
-                        )
-                        or ""
-                    ).strip()
-
                     league_norm = (
                         normalize_league(
-                            league_raw
+                            row.get(
+                                "league",
+                                "",
+                            )
                         )
                     )
 
@@ -391,7 +450,7 @@ def clean_sportsbook():
                 ) as f:
                     writer = csv.DictWriter(
                         f,
-                        fieldnames=sb_fields,
+                        fieldnames=SB_FIELDS,
                         extrasaction="ignore",
                     )
 
@@ -419,32 +478,12 @@ def clean_sportsbook():
             )
 
 
-# =========================
-# 2. CLEAN PREDICTIONS
-# =========================
-
-PRED_FIELDS = [
-    "sport",
-    "league",
-    "game_id",
-    "match_date",
-    "match_time",
-    "home_team",
-    "away_team",
-    "home_prob",
-    "draw_prob",
-    "away_prob",
-    "home_xg",
-    "away_xg",
-    "expected_total_goals",
-]
-
-
 def clean_predictions(
     game_id_index: dict,
 ):
     global total_missing_ids
     global total_invalid_probability_rows
+    global total_invalid_xg_rows
 
     for league_dir in sorted(
         PREDICTIONS_DIR.iterdir()
@@ -500,6 +539,7 @@ def clean_predictions(
                 rows_out = []
                 missing_id = 0
                 invalid_probability_rows = 0
+                invalid_xg_rows = 0
 
                 with open(
                     pred_file,
@@ -575,43 +615,93 @@ def clean_predictions(
                                 in PROB_COLS
                             }
 
-                            if (
-                                converted_probabilities
-                            ):
-                                converted_text = (
-                                    converted_probabilities
-                                )
-                            else:
-                                converted_text = (
-                                    "unavailable"
-                                )
-
-                            if (
-                                probability_sum
+                            sum_text = (
+                                f"{probability_sum:.6f}"
+                                if probability_sum
                                 is not None
-                            ):
-                                sum_text = (
-                                    f"{probability_sum:.6f}"
-                                )
-                            else:
-                                sum_text = (
-                                    "unavailable"
-                                )
+                                else "unavailable"
+                            )
 
                             log(
                                 "  REJECT INVALID 1X2 | "
                                 f"file={pred_file} | "
                                 f"line={line_number} | "
                                 f"league={row_league} | "
-                                f"match_date={match_date} | "
-                                f"home_team={home_team} | "
-                                f"away_team={away_team} | "
-                                f"raw={raw_probabilities} | "
+                                f"match_date="
+                                f"{match_date} | "
+                                f"home_team="
+                                f"{home_team} | "
+                                f"away_team="
+                                f"{away_team} | "
+                                f"raw="
+                                f"{raw_probabilities} | "
                                 f"converted="
-                                f"{converted_text} | "
+                                f"{converted_probabilities or 'unavailable'} | "
                                 f"sum={sum_text} | "
                                 f"reason="
                                 f"{probability_error}"
+                            )
+
+                            continue
+
+                        (
+                            xg_valid,
+                            parsed_xg,
+                            component_total,
+                            total_difference,
+                            xg_error,
+                        ) = validate_xg_fields(
+                            row
+                        )
+
+                        if not xg_valid:
+                            invalid_xg_rows += 1
+                            total_invalid_xg_rows += 1
+
+                            raw_xg = {
+                                col: row.get(
+                                    col,
+                                    "",
+                                )
+                                for col
+                                in XG_COLS
+                            }
+
+                            component_text = (
+                                f"{component_total:.6f}"
+                                if component_total
+                                is not None
+                                else "unavailable"
+                            )
+
+                            difference_text = (
+                                f"{total_difference:.6f}"
+                                if total_difference
+                                is not None
+                                else "unavailable"
+                            )
+
+                            log(
+                                "  REJECT INVALID XG | "
+                                f"file={pred_file} | "
+                                f"line={line_number} | "
+                                f"league={row_league} | "
+                                f"match_date="
+                                f"{match_date} | "
+                                f"home_team="
+                                f"{home_team} | "
+                                f"away_team="
+                                f"{away_team} | "
+                                f"raw={raw_xg} | "
+                                f"parsed="
+                                f"{parsed_xg or 'unavailable'} | "
+                                f"home_plus_away="
+                                f"{component_text} | "
+                                f"difference="
+                                f"{difference_text} | "
+                                f"tolerance="
+                                f"{XG_TOTAL_TOLERANCE:.6f} | "
+                                f"reason={xg_error}"
                             )
 
                             continue
@@ -621,6 +711,11 @@ def clean_predictions(
                                 converted_probabilities[
                                     col
                                 ]
+                            )
+
+                        for col in XG_COLS:
+                            row[col] = (
+                                parsed_xg[col]
                             )
 
                         key = (
@@ -673,6 +768,7 @@ def clean_predictions(
                         len(rows_out),
                         missing_id,
                         invalid_probability_rows,
+                        invalid_xg_rows,
                     )
                 )
 
@@ -686,7 +782,9 @@ def clean_predictions(
                     f"{missing_id} "
                     f"missing game_id, "
                     f"{invalid_probability_rows} "
-                    f"invalid 1X2 rejected)"
+                    f"invalid 1X2 rejected, "
+                    f"{invalid_xg_rows} "
+                    f"invalid xG rejected)"
                 )
 
             except Exception as e:
@@ -698,11 +796,9 @@ def clean_predictions(
                 )
 
 
-# =========================
-# MAIN
-# =========================
-
 def main():
+    reset_log()
+
     log("START")
 
     log(
@@ -710,6 +806,13 @@ def main():
         f"sum_tolerance="
         f"{PROB_SUM_TOLERANCE:.6f} | "
         "renormalization=disabled"
+    )
+
+    log(
+        "xG validation enabled | "
+        f"total_tolerance="
+        f"{XG_TOTAL_TOLERANCE:.6f} | "
+        "negative_values=reject"
     )
 
     clean_sportsbook()
@@ -726,10 +829,6 @@ def main():
     clean_predictions(
         game_id_index
     )
-
-    # =========================
-    # SUMMARY
-    # =========================
 
     log("--- SUMMARY ---")
 
@@ -756,14 +855,18 @@ def main():
         path,
         rows,
         missing,
-        rejected,
+        prob_rejected,
+        xg_rejected,
     ) in pred_files_written:
+
         log(
             f"  FILE: {path} "
             f"({rows} rows, "
             f"{missing} missing game_id, "
-            f"{rejected} "
-            f"invalid 1X2 rejected)"
+            f"{prob_rejected} "
+            f"invalid 1X2 rejected, "
+            f"{xg_rejected} "
+            f"invalid xG rejected)"
         )
 
     log(
@@ -776,6 +879,12 @@ def main():
         "Total invalid 1X2 "
         "prediction rows rejected: "
         f"{total_invalid_probability_rows}"
+    )
+
+    log(
+        "Total invalid xG "
+        "prediction rows rejected: "
+        f"{total_invalid_xg_rows}"
     )
 
     log("STATUS: SUCCESS")
