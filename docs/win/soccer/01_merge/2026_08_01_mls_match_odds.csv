@@ -1,15 +1,15 @@
 game_id,sport,league,match_date,match_time,home_team,away_team,home_prob,draw_prob,away_prob,home_xg,away_xg,expected_total_goals,dk_home_decimal,dk_draw_decimal,dk_away_decimal
 66299310,soccer,mls,2026_08_01,07:30 PM,FC Cincinnati,San Jose Earthquakes,0.458,0.263,0.279,1.45,1.07,2.52,1.83,4.40,3.30
 66299312,soccer,mls,2026_08_01,07:30 PM,DC United,Nashville SC,0.323,0.288,0.388,1.05,1.18,2.23,2.90,3.40,2.30
-66299314,soccer,mls,2026_08_01,07:30 PM,Inter Miami,Columbus Crew,0.667,0.191,0.142,2.18,0.90,3.08,1.59,4.40,4.80
+66299314,soccer,mls,2026_08_01,07:30 PM,Inter Miami,Columbus Crew,0.667,0.191,0.142,2.18,0.9,3.08,1.59,4.40,4.80
 66299316,soccer,mls,2026_08_01,07:30 PM,CF Montreal,New England Revolution,0.367,0.287,0.346,1.15,1.11,2.26,2.00,3.60,3.40
 66299318,soccer,mls,2026_08_01,07:30 PM,New York Red Bulls,Orlando City,0.474,0.268,0.258,1.43,0.98,2.41,2.15,4.20,2.75
 66299320,soccer,mls,2026_08_01,07:30 PM,Philadelphia Union,Atlanta United,0.56,0.235,0.205,1.75,0.96,2.71,1.67,4.10,4.40
-66299322,soccer,mls,2026_08_01,07:30 PM,Vancouver Whitecaps,Los Angeles FC,0.547,0.236,0.216,1.74,1.00,2.74,1.91,4.00,3.40
+66299322,soccer,mls,2026_08_01,07:30 PM,Vancouver Whitecaps,Los Angeles FC,0.547,0.236,0.216,1.74,1.0,2.74,1.91,4.00,3.40
 66299324,soccer,mls,2026_08_01,08:30 PM,Chicago Fire,Charlotte FC,0.506,0.256,0.237,1.54,0.97,2.51,1.48,4.50,5.50
 66299326,soccer,mls,2026_08_01,08:30 PM,Sporting Kansas City,Houston Dynamo,0.336,0.288,0.376,1.08,1.16,2.24,3.10,3.50,2.20
-66299328,soccer,mls,2026_08_01,08:30 PM,Minnesota United,San Diego FC,0.48,0.259,0.261,1.50,1.04,2.54,2.00,4.00,3.30
+66299328,soccer,mls,2026_08_01,08:30 PM,Minnesota United,San Diego FC,0.48,0.259,0.261,1.5,1.04,2.54,2.00,4.00,3.30
 66299330,soccer,mls,2026_08_01,08:30 PM,St Louis City,Real Salt Lake,0.481,0.259,0.26,1.51,1.03,2.54,2.00,3.80,3.40
 66299332,soccer,mls,2026_08_01,09:30 PM,Colorado Rapids,Austin FC,0.548,0.245,0.207,1.65,0.91,2.56,1.69,4.00,4.30
-66299334,soccer,mls,2026_08_01,10:30 PM,LA Galaxy,FC Dallas,0.431,0.269,0.3,1.37,1.10,2.47,2.10,3.90,2.95
+66299334,soccer,mls,2026_08_01,10:30 PM,LA Galaxy,FC Dallas,0.431,0.269,0.3,1.37,1.1,2.47,2.10,3.90,2.95
 66299336,soccer,mls,2026_08_01,10:45 PM,Portland Timbers,Seattle Sounders,0.457,0.267,0.276,1.41,1.04,2.45,2.10,4.00,2.95

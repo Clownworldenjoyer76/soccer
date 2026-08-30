@@ -1,2 +1,2 @@
 sport,league,game_id,match_date,match_time,home_team,away_team,home_prob,draw_prob,away_prob,home_xg,away_xg,expected_total_goals
-soccer,ligue1,71564470,2026_05_29,02:45 PM,Nice,Saint Etienne,0.542,0.241,0.218,1.70,0.98,2.68
+soccer,ligue1,71564470,2026_05_29,02:45 PM,Nice,Saint Etienne,0.542,0.241,0.218,1.7,0.98,2.68

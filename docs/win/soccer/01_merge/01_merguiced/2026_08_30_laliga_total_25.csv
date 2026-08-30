@@ -1,4 +1,4 @@
 game_id,sport,league,match_date,match_time,home_team,away_team,home_prob,draw_prob,away_prob,home_xg,away_xg,expected_total_goals,dk_over25_decimal,dk_under25_decimal,fair_over_decimal,fair_under_decimal
-401882904,soccer,laliga,2026_08_30,01:30 PM,Deportivo De La Coruna,Valencia,0.388,0.265,0.347,1.33,1.24,2.57,2.45,1.57,2.1096454873739168,1.9011887232260067
-401882905,soccer,laliga,2026_08_30,03:30 PM,Celta Vigo,Athletic Club,0.396,0.283,0.321,1.22,1.07,2.29,2.2,1.67,2.4918540407003853,1.6703068616086107
+401882904,soccer,laliga,2026_08_30,01:30 PM,Deportivo De La Coruna,Valencia,0.388,0.265,0.347,1.33,1.24,2.57,2.45,1.56,2.1096454873739168,1.9011887232260067
+401882905,soccer,laliga,2026_08_30,03:30 PM,Celta Vigo,Athletic Club,0.396,0.283,0.321,1.22,1.07,2.29,2.35,1.59,2.4918540407003853,1.6703068616086107
 401882899,soccer,laliga,2026_08_30,11:00 AM,Real Madrid,Malaga,0.839,0.113,0.048,2.82,0.55,3.37,,,1.528029916509608,2.8938320893070153
