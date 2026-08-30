@@ -1,5 +1,5 @@
 sport,league,game_id,match_date,match_time,home_team,away_team,home_prob,draw_prob,away_prob,home_xg,away_xg,expected_total_goals
-soccer,laliga,61624690,2026_05_23,03:00 PM,Real Madrid,Athletic Club,0.626,0.22,0.155,1.86,0.80,2.66
+soccer,laliga,61624690,2026_05_23,03:00 PM,Real Madrid,Athletic Club,0.626,0.22,0.155,1.86,0.8,2.66
 soccer,laliga,61624688,2026_05_23,03:00 PM,Mallorca,Real Oviedo,0.636,0.226,0.138,1.77,0.68,2.45
 soccer,laliga,61624686,2026_05_23,03:00 PM,Getafe,Osasuna,0.392,0.3,0.308,1.12,0.96,2.08
 soccer,laliga,61624678,2026_05_23,03:00 PM,Alaves,Vallecano,0.399,0.297,0.304,1.15,0.96,2.11
