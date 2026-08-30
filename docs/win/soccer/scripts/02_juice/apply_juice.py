@@ -17,31 +17,13 @@ SOCCER_ROOT = THIS_FILE.parents[2]
 
 INPUT_DIR = SOCCER_ROOT / "01_merge"
 OUTPUT_DIR = SOCCER_ROOT / "02_juice"
-OUTPUT_DIR.mkdir(
-    parents=True,
-    exist_ok=True,
-)
+OUTPUT_DIR.mkdir(parents=True, exist_ok=True)
 
-CONFIG_ROOT = (
-    SOCCER_ROOT
-    / "config"
-    / "juice"
-)
+CONFIG_ROOT = SOCCER_ROOT / "config" / "juice"
 
-ERROR_DIR = (
-    SOCCER_ROOT
-    / "errors"
-    / "02_juice"
-)
-ERROR_DIR.mkdir(
-    parents=True,
-    exist_ok=True,
-)
-
-LOG_FILE = (
-    ERROR_DIR
-    / "apply_juice_log.txt"
-)
+ERROR_DIR = SOCCER_ROOT / "errors" / "02_juice"
+ERROR_DIR.mkdir(parents=True, exist_ok=True)
+LOG_FILE = ERROR_DIR / "apply_juice_log.txt"
 
 
 LEAGUE_TO_CONFIG = {
@@ -53,12 +35,7 @@ LEAGUE_TO_CONFIG = {
     "seriea": "serie_a",
 }
 
-MARKETS = [
-    "match_odds",
-    "total_25",
-    "total_35",
-    "btts",
-]
+MARKETS = ["match_odds", "total_25", "total_35", "btts"]
 
 POISSON_TAIL_TOLERANCE = 1e-14
 POISSON_MAX_GOALS = 100
@@ -69,8 +46,9 @@ XG_COLS = [
     "expected_total_goals",
 ]
 
-# Must match soccer_cleaner.py.
 XG_TOTAL_TOLERANCE = 0.01
+
+ADJUSTED_1X2_SUM_TOLERANCE = 1e-9
 
 
 def log(msg: str) -> None:
@@ -112,40 +90,93 @@ def safe_decimal(prob):
     return 1.0 / prob
 
 
-def normalize_probs(probs):
-    vals = [
-        p
-        for p in probs
+def validate_threeway_probs(
+    probs,
+    tolerance=ADJUSTED_1X2_SUM_TOLERANCE,
+):
+    if len(probs) != 3:
+        return False
+
+    parsed = []
+
+    for prob in probs:
+        value = safe_float(prob)
+
         if (
-            p is not None
-            and not pd.isna(p)
-            and math.isfinite(float(p))
-        )
-    ]
+            value is None
+            or value < 0.0
+            or value > 1.0
+        ):
+            return False
 
-    total = sum(vals)
+        parsed.append(value)
 
-    if total <= 0:
+    total = sum(parsed)
+
+    return (
+        abs(total - 1.0)
+        <= tolerance
+    )
+
+
+def normalize_probs(probs):
+    """
+    Strict three-way normalization.
+
+    All three outcomes must be present,
+    finite, and non-negative.
+    """
+
+    if len(probs) != 3:
         return [
             None
             for _ in probs
         ]
 
-    out = []
+    parsed = []
 
-    for p in probs:
+    for prob in probs:
+        value = safe_float(prob)
+
         if (
-            p is None
-            or pd.isna(p)
+            value is None
+            or value < 0.0
         ):
-            out.append(None)
+            return [
+                None,
+                None,
+                None,
+            ]
 
-        else:
-            out.append(
-                p / total
-            )
+        parsed.append(value)
 
-    return out
+    total = sum(parsed)
+
+    if (
+        not math.isfinite(total)
+        or total <= 0.0
+    ):
+        return [
+            None,
+            None,
+            None,
+        ]
+
+    normalized = [
+        value / total
+        for value in parsed
+    ]
+
+    if not validate_threeway_probs(
+        normalized
+    ):
+        return [
+            None,
+            None,
+            None,
+        ]
+
+    return normalized
 
 
 def parse_stem(stem: str):
@@ -156,15 +187,9 @@ def parse_stem(stem: str):
                 f"{market}"
             )
 
-            if stem.endswith(
-                suffix
-            ):
-                date_str = stem[
-                    :-len(suffix)
-                ]
-
+            if stem.endswith(suffix):
                 return (
-                    date_str,
+                    stem[:-len(suffix)],
                     league,
                     market,
                 )
@@ -279,8 +304,7 @@ def validate_xg_dataframe(
 
             raw_xg = {
                 col: row.get(col)
-                for col
-                in XG_COLS
+                for col in XG_COLS
             }
 
             component_text = (
@@ -877,11 +901,17 @@ def get_pricing(
 def process_match_odds(
     df: pd.DataFrame,
     cfg: LeagueConfig,
+    file_path: Path,
+    summary: dict,
 ) -> pd.DataFrame:
 
     out_rows = []
 
-    for _, row in df.iterrows():
+    for (
+        source_index,
+        row,
+    ) in df.iterrows():
+
         r = row.to_dict()
 
         r.pop(
@@ -979,17 +1009,49 @@ def process_match_odds(
             )
         )
 
+        raw_probs = [
+            raw_home,
+            raw_draw,
+            raw_away,
+        ]
+
+        juiced_probs = (
+            normalize_probs(
+                raw_probs
+            )
+        )
+
+        if not validate_threeway_probs(
+            juiced_probs
+        ):
+            summary[
+                "rows_rejected_invalid_adjusted_1x2"
+            ] += 1
+
+            log(
+                "REJECT INVALID ADJUSTED 1X2 | "
+                f"file={file_path.name} | "
+                f"line={source_index + 2} | "
+                f"game_id="
+                f"{r.get('game_id', '')} | "
+                f"home_team="
+                f"{r.get('home_team', '')} | "
+                f"away_team="
+                f"{r.get('away_team', '')} | "
+                f"raw_home={raw_home!r} | "
+                f"raw_draw={raw_draw!r} | "
+                f"raw_away={raw_away!r} | "
+                f"normalized="
+                f"{juiced_probs!r}"
+            )
+
+            continue
+
         (
             juiced_home_prob,
             juiced_draw_prob,
             juiced_away_prob,
-        ) = normalize_probs(
-            [
-                raw_home,
-                raw_draw,
-                raw_away,
-            ]
-        )
+        ) = juiced_probs
 
         r["home_extra_juice"] = (
             home_extra
@@ -1287,6 +1349,11 @@ def process_file(
     configs: dict,
     summary: dict,
 ):
+    out_path = (
+        OUTPUT_DIR
+        / file_path.name
+    )
+
     try:
         (
             _,
@@ -1331,15 +1398,15 @@ def process_file(
             summary["empty"] += 1
             return
 
+        # Prevent stale output from surviving
+        # when validation fails on this run.
+        if out_path.exists():
+            out_path.unlink()
+
         df = validate_xg_dataframe(
             df,
             file_path,
             summary,
-        )
-
-        out_path = (
-            OUTPUT_DIR
-            / file_path.name
         )
 
         cfg = configs[
@@ -1351,6 +1418,8 @@ def process_file(
                 process_match_odds(
                     df,
                     cfg,
+                    file_path,
+                    summary,
                 )
             )
 
@@ -1416,6 +1485,9 @@ def process_file(
         ] += len(out_df)
 
     except Exception as e:
+        if out_path.exists():
+            out_path.unlink()
+
         log(
             f"ERROR processing "
             f"{file_path}: "
@@ -1443,6 +1515,7 @@ def main():
         "files_written": 0,
         "rows_written": 0,
         "rows_rejected_invalid_xg": 0,
+        "rows_rejected_invalid_adjusted_1x2": 0,
         "empty": 0,
         "skipped": 0,
         "errors": 0,
@@ -1453,6 +1526,13 @@ def main():
         f"total_tolerance="
         f"{XG_TOTAL_TOLERANCE:.6f} | "
         "negative_values=reject"
+    )
+
+    log(
+        "adjusted 1X2 validation enabled | "
+        "normalization_requires_all_three=true | "
+        f"sum_tolerance="
+        f"{ADJUSTED_1X2_SUM_TOLERANCE:.12f}"
     )
 
     configs = (
@@ -1483,6 +1563,8 @@ def main():
         f"{summary['rows_written']} | "
         f"rows_rejected_invalid_xg="
         f"{summary['rows_rejected_invalid_xg']} | "
+        "rows_rejected_invalid_adjusted_1x2="
+        f"{summary['rows_rejected_invalid_adjusted_1x2']} | "
         f"empty="
         f"{summary['empty']} | "
         f"skipped="
@@ -1496,13 +1578,16 @@ def main():
         or summary[
             "rows_rejected_invalid_xg"
         ]
+        or summary[
+            "rows_rejected_invalid_adjusted_1x2"
+        ]
     ):
         log("FAILED")
 
         raise RuntimeError(
             "apply_juice aborted because "
             "one or more input rows/files "
-            "failed xG validation or pricing"
+            "failed validation or pricing"
         )
 
     log("COMPLETE")
