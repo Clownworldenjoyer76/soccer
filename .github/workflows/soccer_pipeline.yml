@@ -47,6 +47,7 @@ jobs:
           mkdir -p docs/win/soccer/00_intake/predictions/normalized
           mkdir -p docs/win/soccer/00_intake/sportsbook
           mkdir -p docs/win/soccer/00_intake/sportsbook/normalized
+          mkdir -p docs/win/soccer/00_intake/games
           mkdir -p docs/win/soccer/mappings/no_map
 
           mkdir -p docs/win/soccer/01_merge/01_merguiced
@@ -180,7 +181,6 @@ jobs:
           probe "public_scoreboard_page" \
             "https://www.espn.com/soccer/scoreboard/_/league/usa.1/date/${DATE_COMPACT}"
 
-          # Inspect the successful CDN payload without assuming ESPN's nesting.
           python - "${CDN_SCOREBOARD}" "${LOG}" "${DIAG_DIR}/selected_event.env" <<'PY'
           import json
           import sys
@@ -255,7 +255,6 @@ jobs:
 
           walk(payload)
 
-          # De-duplicate event objects that can appear in multiple CDN branches.
           unique = {}
           for path, event in event_candidates:
               event_id = str(event.get("id") or "").strip()
@@ -381,6 +380,9 @@ jobs:
       - name: Normalize soccer names
         run: python docs/win/soccer/scripts/00_intake/name_normalization.py
 
+      - name: Build soccer games master
+        run: python docs/win/soccer/scripts/00_intake/build_games_master.py
+
       - name: Normalize sportsbook and predictions
         run: python docs/win/soccer/scripts/00_intake/soccer_cleaner.py
 
@@ -402,7 +404,7 @@ jobs:
       - name: Soccer select
         run: python docs/win/soccer/scripts/04_select/soccer_select_bets.py
 
-      # Selection files are the game_id source for this step, so run it after select.
+      # Master games files are the game_id source for this step.
       - name: Add game IDs to soccer final scores
         run: python docs/win/soccer/scripts/00_intake/soccer_add_game_id.py
 

@@ -1,5 +1,5 @@
 sport,league,game_id,game_date,match_time,home_team,away_team,home_score,away_score
-soccer,mls,,2026_08_19,10:30 PM,Los Angeles Galaxy,San Jose Earthquakes,1,0
+soccer,mls,761738.0,2026_08_19,10:30 PM,LA Galaxy,San Jose Earthquakes,1,0
 soccer,mls,,2026_08_19,10:30 PM,Vancouver Whitecaps,Houston Dynamo,0,1
 soccer,mls,761737.0,2026_08_19,10:30 PM,Portland Timbers,San Diego FC,3,1
 soccer,mls,,2026_08_19,09:30 PM,Seattle Sounders,Austin FC,1,2
@@ -7,10 +7,10 @@ soccer,mls,,2026_08_19,09:30 PM,Colorado Rapids,Los Angeles FC,1,0
 soccer,mls,761735.0,2026_08_19,09:30 PM,Real Salt Lake,FC Dallas,3,4
 soccer,mls,,2026_08_19,08:30 PM,Minnesota United,Atlanta United,1,2
 soccer,mls,761732.0,2026_08_19,08:00 PM,Sporting Kansas City,St Louis City,1,1
-soccer,mls,,2026_08_19,07:30 PM,Philadelphia Union,Inter Miami CF,2,2
+soccer,mls,761727.0,2026_08_19,07:30 PM,Philadelphia Union,Inter Miami,2,2
 soccer,mls,,2026_08_19,07:30 PM,Toronto FC,Charlotte FC,3,3
-soccer,mls,,2026_08_19,07:30 PM,Columbus Crew,Montreal Impact,1,2
+soccer,mls,761726.0,2026_08_19,07:30 PM,Columbus Crew,CF Montreal,1,2
 soccer,mls,761729.0,2026_08_19,07:30 PM,Orlando City,Chicago Fire,1,2
 soccer,mls,761728.0,2026_08_19,07:30 PM,New York Red Bulls,Nashville SC,0,1
-soccer,mls,,2026_08_19,07:30 PM,D.C. United,New England Revolution,0,3
-soccer,mls,,2026_08_19,07:30 PM,FC Cincinnati,New York City,2,1
+soccer,mls,,2026_08_19,07:30 PM,DC United,New England Revolution,0,3
+soccer,mls,761730.0,2026_08_19,07:30 PM,FC Cincinnati,New York City FC,2,1

@@ -1,2 +1,2 @@
-game_id,sport,league,match_date,match_time,home_team,away_team,home_prob,draw_prob,away_prob,home_xg,away_xg,expected_total_goals,btts_yes,btts_no,engine_lambda_home,engine_lambda_away,engine_match_distance,fair_btts_yes_decimal,fair_btts_no_decimal,engine_btts_yes_prob,engine_btts_no_prob
-401882922,soccer,laliga,2026_08_16,01:00 PM,Espanyol,Levante,0.486,0.253,0.261,1.56,1.07,2.63,,,1.5637480630261011,1.0518298264211348,0.0003442031843337207,1.943734297549684,2.059620279348122,0.5144736095157775,0.4855263904842225
+game_id,sport,league,match_date,match_time,home_team,away_team,home_prob,draw_prob,away_prob,home_xg,away_xg,expected_total_goals,btts_yes,btts_no,engine_lambda_home,engine_lambda_away,fair_btts_yes_decimal,fair_btts_no_decimal,engine_btts_yes_prob,engine_btts_no_prob
+401882922,soccer,laliga,2026_08_16,01:00 PM,Espanyol,Levante,0.486,0.253,0.261,1.56,1.07,2.63,,,1.56,1.07,1.8833625634157172,2.1320380118139455,0.5309652105361875,0.46903478946381283

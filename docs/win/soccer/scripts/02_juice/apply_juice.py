@@ -1,8 +1,10 @@
 #!/usr/bin/env python3
 # docs/win/soccer/scripts/02_juice/apply_juice.py
 
+import math
 import traceback
 from dataclasses import dataclass
+from functools import lru_cache
 from pathlib import Path
 from datetime import datetime, timezone
 
@@ -42,6 +44,9 @@ LEAGUE_TO_CONFIG = {
 }
 
 MARKETS = ["match_odds", "total_25", "total_35", "btts"]
+
+POISSON_TAIL_TOLERANCE = 1e-14
+POISSON_MAX_GOALS = 100
 
 
 # =========================
@@ -103,7 +108,7 @@ def parse_stem(stem: str):
 @dataclass
 class LeagueConfig:
     juice: pd.DataFrame
-    engine: pd.DataFrame
+    rho: float
 
 
 def load_league_config(league: str) -> LeagueConfig:
@@ -119,34 +124,26 @@ def load_league_config(league: str) -> LeagueConfig:
         raise FileNotFoundError(f"Missing engine config: {engine_path}")
 
     juice = pd.read_csv(juice_path)
-    engine = pd.read_csv(engine_path)
+    engine = pd.read_csv(engine_path, usecols=["rho"])
 
     required_juice_cols = {"side", "fair_prob", "extra_juice"}
     missing_juice = required_juice_cols - set(juice.columns)
     if missing_juice:
         raise ValueError(f"{juice_path} missing columns: {sorted(missing_juice)}")
 
-    required_engine_cols = {
-        "lambda_home", "lambda_away", "lambda_total", "rho",
-        "home_win", "draw", "away_win",
-        "over2_5", "under2_5", "btts_yes", "btts_no",
-        "home_win_fair_odds", "draw_fair_odds", "away_win_fair_odds",
-        "over2_5_fair_odds", "under2_5_fair_odds",
-        "btts_yes_fair_odds", "btts_no_fair_odds",
-        "under3_5", "over3_5", "over3_5_fair_odds", "under3_5_fair_odds",
-    }
-    missing_engine = required_engine_cols - set(engine.columns)
-    if missing_engine:
-        raise ValueError(f"{engine_path} missing columns: {sorted(missing_engine)}")
-
     juice["fair_prob"] = pd.to_numeric(juice["fair_prob"], errors="coerce")
     juice["extra_juice"] = pd.to_numeric(juice["extra_juice"], errors="coerce")
     juice["side"] = juice["side"].astype(str).str.strip().str.lower()
 
-    for col in engine.columns:
-        engine[col] = pd.to_numeric(engine[col], errors="coerce")
+    rho_values = pd.to_numeric(engine["rho"], errors="coerce").dropna().unique()
+    if len(rho_values) != 1:
+        raise ValueError(
+            f"{engine_path} must contain exactly one non-null rho value; "
+            f"found {len(rho_values)}"
+        )
 
-    return LeagueConfig(juice=juice, engine=engine)
+    rho = float(rho_values[0])
+    return LeagueConfig(juice=juice, rho=rho)
 
 
 def build_all_configs():
@@ -156,13 +153,13 @@ def build_all_configs():
         log(
             f"CONFIG LOADED {league} | "
             f"juice_rows={len(configs[league].juice)} | "
-            f"engine_rows={len(configs[league].engine)}"
+            f"rho={configs[league].rho}"
         )
     return configs
 
 
 # =========================
-# LOOKUP FUNCTIONS
+# PRICING FUNCTIONS
 # =========================
 
 def interp_extra_juice(juice_df: pd.DataFrame, side: str, fair_prob: float):
@@ -177,7 +174,6 @@ def interp_extra_juice(juice_df: pd.DataFrame, side: str, fair_prob: float):
     xs = sub["fair_prob"].to_numpy(dtype=float)
     ys = sub["extra_juice"].to_numpy(dtype=float)
 
-    # clamp outside range, interpolate inside range
     fair_prob = float(fair_prob)
     if fair_prob <= xs[0]:
         return float(ys[0])
@@ -187,23 +183,146 @@ def interp_extra_juice(juice_df: pd.DataFrame, side: str, fair_prob: float):
     return float(np.interp(fair_prob, xs, ys))
 
 
-def nearest_engine_row(engine_df: pd.DataFrame, home_xg: float, away_xg: float):
+def poisson_score_probs(lam: float):
+    lam = float(lam)
+    if not math.isfinite(lam) or lam < 0:
+        raise ValueError(f"Invalid Poisson lambda: {lam}")
+
+    p = math.exp(-lam)
+    probs = [p]
+    cumulative = p
+
+    for goals in range(1, POISSON_MAX_GOALS + 1):
+        if 1.0 - cumulative <= POISSON_TAIL_TOLERANCE:
+            break
+        p *= lam / goals
+        probs.append(p)
+        cumulative += p
+
+    if 1.0 - cumulative > 1e-10:
+        raise ValueError(
+            f"Poisson tail did not converge for lambda={lam}; "
+            f"remaining_mass={1.0 - cumulative}"
+        )
+
+    return probs
+
+
+def dixon_coles_tau(home_goals: int, away_goals: int,
+                    lambda_home: float, lambda_away: float, rho: float) -> float:
+    if home_goals == 0 and away_goals == 0:
+        return 1.0 - (lambda_home * lambda_away * rho)
+    if home_goals == 0 and away_goals == 1:
+        return 1.0 + (lambda_home * rho)
+    if home_goals == 1 and away_goals == 0:
+        return 1.0 + (lambda_away * rho)
+    if home_goals == 1 and away_goals == 1:
+        return 1.0 - rho
+    return 1.0
+
+
+@lru_cache(maxsize=10000)
+def price_from_xg(home_xg: float, away_xg: float, rho: float):
+    lambda_home = float(home_xg)
+    lambda_away = float(away_xg)
+    rho = float(rho)
+
+    if (
+        not math.isfinite(lambda_home)
+        or not math.isfinite(lambda_away)
+        or lambda_home < 0
+        or lambda_away < 0
+    ):
+        return None
+
+    home_scores = poisson_score_probs(lambda_home)
+    away_scores = poisson_score_probs(lambda_away)
+
+    home_win = draw = away_win = 0.0
+    over2_5 = under2_5 = 0.0
+    over3_5 = under3_5 = 0.0
+    btts_yes = btts_no = 0.0
+    total_mass = 0.0
+
+    for home_goals, p_home in enumerate(home_scores):
+        for away_goals, p_away in enumerate(away_scores):
+            tau = dixon_coles_tau(
+                home_goals,
+                away_goals,
+                lambda_home,
+                lambda_away,
+                rho,
+            )
+            if tau < 0:
+                raise ValueError(
+                    "Dixon-Coles produced a negative low-score multiplier: "
+                    f"home_xg={lambda_home}, away_xg={lambda_away}, rho={rho}, "
+                    f"score={home_goals}-{away_goals}, tau={tau}"
+                )
+
+            p = p_home * p_away * tau
+            total_mass += p
+
+            if home_goals > away_goals:
+                home_win += p
+            elif home_goals == away_goals:
+                draw += p
+            else:
+                away_win += p
+
+            total_goals = home_goals + away_goals
+            if total_goals > 2.5:
+                over2_5 += p
+            else:
+                under2_5 += p
+
+            if total_goals > 3.5:
+                over3_5 += p
+            else:
+                under3_5 += p
+
+            if home_goals > 0 and away_goals > 0:
+                btts_yes += p
+            else:
+                btts_no += p
+
+    if total_mass <= 0:
+        raise ValueError(
+            f"Invalid Dixon-Coles total probability mass for "
+            f"home_xg={lambda_home}, away_xg={lambda_away}, rho={rho}"
+        )
+
+    # Remove only the negligible adaptive Poisson tail so every market
+    # is priced from one internally consistent probability distribution.
+    home_win /= total_mass
+    draw /= total_mass
+    away_win /= total_mass
+    over2_5 /= total_mass
+    under2_5 /= total_mass
+    over3_5 /= total_mass
+    under3_5 /= total_mass
+    btts_yes /= total_mass
+    btts_no /= total_mass
+
+    return {
+        "lambda_home": lambda_home,
+        "lambda_away": lambda_away,
+        "home_win": home_win,
+        "draw": draw,
+        "away_win": away_win,
+        "over2_5": over2_5,
+        "under2_5": under2_5,
+        "over3_5": over3_5,
+        "under3_5": under3_5,
+        "btts_yes": btts_yes,
+        "btts_no": btts_no,
+    }
+
+
+def get_pricing(home_xg, away_xg, rho):
     if home_xg is None or away_xg is None:
-        return None, None
-
-    work = engine_df.dropna(subset=["lambda_home", "lambda_away"]).copy()
-    if work.empty:
-        return None, None
-
-    dh = work["lambda_home"] - float(home_xg)
-    da = work["lambda_away"] - float(away_xg)
-
-    # 2D nearest-neighbor on the lambda grid
-    work["_distance"] = (dh ** 2 + da ** 2)
-    idx = work["_distance"].idxmin()
-    row = work.loc[idx].to_dict()
-    dist = float(work.loc[idx, "_distance"])
-    return row, dist
+        return None
+    return price_from_xg(float(home_xg), float(away_xg), float(rho))
 
 
 # =========================
@@ -215,6 +334,7 @@ def process_match_odds(df: pd.DataFrame, cfg: LeagueConfig) -> pd.DataFrame:
 
     for _, row in df.iterrows():
         r = row.to_dict()
+        r.pop("engine_match_distance", None)
 
         home_prob = safe_float(r.get("home_prob"))
         draw_prob = safe_float(r.get("draw_prob"))
@@ -222,7 +342,7 @@ def process_match_odds(df: pd.DataFrame, cfg: LeagueConfig) -> pd.DataFrame:
         home_xg = safe_float(r.get("home_xg"))
         away_xg = safe_float(r.get("away_xg"))
 
-        engine_row, engine_distance = nearest_engine_row(cfg.engine, home_xg, away_xg)
+        pricing = get_pricing(home_xg, away_xg, cfg.rho)
 
         home_extra = interp_extra_juice(cfg.juice, "home", home_prob)
         draw_extra = interp_extra_juice(cfg.juice, "draw", draw_prob)
@@ -248,20 +368,18 @@ def process_match_odds(df: pd.DataFrame, cfg: LeagueConfig) -> pd.DataFrame:
         r["juiced_draw_decimal"] = safe_decimal(juiced_draw_prob)
         r["juiced_away_decimal"] = safe_decimal(juiced_away_prob)
 
-        if engine_row:
-            r["engine_lambda_home"] = engine_row["lambda_home"]
-            r["engine_lambda_away"] = engine_row["lambda_away"]
-            r["engine_match_distance"] = engine_distance
-            r["engine_home_prob"] = engine_row["home_win"]
-            r["engine_draw_prob"] = engine_row["draw"]
-            r["engine_away_prob"] = engine_row["away_win"]
-            r["engine_home_fair_decimal"] = engine_row["home_win_fair_odds"]
-            r["engine_draw_fair_decimal"] = engine_row["draw_fair_odds"]
-            r["engine_away_fair_decimal"] = engine_row["away_win_fair_odds"]
+        if pricing:
+            r["engine_lambda_home"] = pricing["lambda_home"]
+            r["engine_lambda_away"] = pricing["lambda_away"]
+            r["engine_home_prob"] = pricing["home_win"]
+            r["engine_draw_prob"] = pricing["draw"]
+            r["engine_away_prob"] = pricing["away_win"]
+            r["engine_home_fair_decimal"] = safe_decimal(pricing["home_win"])
+            r["engine_draw_fair_decimal"] = safe_decimal(pricing["draw"])
+            r["engine_away_fair_decimal"] = safe_decimal(pricing["away_win"])
         else:
             r["engine_lambda_home"] = None
             r["engine_lambda_away"] = None
-            r["engine_match_distance"] = None
             r["engine_home_prob"] = None
             r["engine_draw_prob"] = None
             r["engine_away_prob"] = None
@@ -279,23 +397,22 @@ def process_total_25(df: pd.DataFrame, cfg: LeagueConfig) -> pd.DataFrame:
 
     for _, row in df.iterrows():
         r = row.to_dict()
+        r.pop("engine_match_distance", None)
+
         home_xg = safe_float(r.get("home_xg"))
         away_xg = safe_float(r.get("away_xg"))
+        pricing = get_pricing(home_xg, away_xg, cfg.rho)
 
-        engine_row, engine_distance = nearest_engine_row(cfg.engine, home_xg, away_xg)
-
-        if engine_row:
-            r["engine_lambda_home"] = engine_row["lambda_home"]
-            r["engine_lambda_away"] = engine_row["lambda_away"]
-            r["engine_match_distance"] = engine_distance
-            r["fair_over_decimal"] = engine_row["over2_5_fair_odds"]
-            r["fair_under_decimal"] = engine_row["under2_5_fair_odds"]
-            r["engine_over_prob"] = engine_row["over2_5"]
-            r["engine_under_prob"] = engine_row["under2_5"]
+        if pricing:
+            r["engine_lambda_home"] = pricing["lambda_home"]
+            r["engine_lambda_away"] = pricing["lambda_away"]
+            r["fair_over_decimal"] = safe_decimal(pricing["over2_5"])
+            r["fair_under_decimal"] = safe_decimal(pricing["under2_5"])
+            r["engine_over_prob"] = pricing["over2_5"]
+            r["engine_under_prob"] = pricing["under2_5"]
         else:
             r["engine_lambda_home"] = None
             r["engine_lambda_away"] = None
-            r["engine_match_distance"] = None
             r["fair_over_decimal"] = None
             r["fair_under_decimal"] = None
             r["engine_over_prob"] = None
@@ -311,23 +428,22 @@ def process_total_35(df: pd.DataFrame, cfg: LeagueConfig) -> pd.DataFrame:
 
     for _, row in df.iterrows():
         r = row.to_dict()
+        r.pop("engine_match_distance", None)
+
         home_xg = safe_float(r.get("home_xg"))
         away_xg = safe_float(r.get("away_xg"))
+        pricing = get_pricing(home_xg, away_xg, cfg.rho)
 
-        engine_row, engine_distance = nearest_engine_row(cfg.engine, home_xg, away_xg)
-
-        if engine_row:
-            r["engine_lambda_home"] = engine_row["lambda_home"]
-            r["engine_lambda_away"] = engine_row["lambda_away"]
-            r["engine_match_distance"] = engine_distance
-            r["fair_over_decimal"] = engine_row["over3_5_fair_odds"]
-            r["fair_under_decimal"] = engine_row["under3_5_fair_odds"]
-            r["engine_over_prob"] = engine_row["over3_5"]
-            r["engine_under_prob"] = engine_row["under3_5"]
+        if pricing:
+            r["engine_lambda_home"] = pricing["lambda_home"]
+            r["engine_lambda_away"] = pricing["lambda_away"]
+            r["fair_over_decimal"] = safe_decimal(pricing["over3_5"])
+            r["fair_under_decimal"] = safe_decimal(pricing["under3_5"])
+            r["engine_over_prob"] = pricing["over3_5"]
+            r["engine_under_prob"] = pricing["under3_5"]
         else:
             r["engine_lambda_home"] = None
             r["engine_lambda_away"] = None
-            r["engine_match_distance"] = None
             r["fair_over_decimal"] = None
             r["fair_under_decimal"] = None
             r["engine_over_prob"] = None
@@ -343,23 +459,22 @@ def process_btts(df: pd.DataFrame, cfg: LeagueConfig) -> pd.DataFrame:
 
     for _, row in df.iterrows():
         r = row.to_dict()
+        r.pop("engine_match_distance", None)
+
         home_xg = safe_float(r.get("home_xg"))
         away_xg = safe_float(r.get("away_xg"))
+        pricing = get_pricing(home_xg, away_xg, cfg.rho)
 
-        engine_row, engine_distance = nearest_engine_row(cfg.engine, home_xg, away_xg)
-
-        if engine_row:
-            r["engine_lambda_home"] = engine_row["lambda_home"]
-            r["engine_lambda_away"] = engine_row["lambda_away"]
-            r["engine_match_distance"] = engine_distance
-            r["fair_btts_yes_decimal"] = engine_row["btts_yes_fair_odds"]
-            r["fair_btts_no_decimal"] = engine_row["btts_no_fair_odds"]
-            r["engine_btts_yes_prob"] = engine_row["btts_yes"]
-            r["engine_btts_no_prob"] = engine_row["btts_no"]
+        if pricing:
+            r["engine_lambda_home"] = pricing["lambda_home"]
+            r["engine_lambda_away"] = pricing["lambda_away"]
+            r["fair_btts_yes_decimal"] = safe_decimal(pricing["btts_yes"])
+            r["fair_btts_no_decimal"] = safe_decimal(pricing["btts_no"])
+            r["engine_btts_yes_prob"] = pricing["btts_yes"]
+            r["engine_btts_no_prob"] = pricing["btts_no"]
         else:
             r["engine_lambda_home"] = None
             r["engine_lambda_away"] = None
-            r["engine_match_distance"] = None
             r["fair_btts_yes_decimal"] = None
             r["fair_btts_no_decimal"] = None
             r["engine_btts_yes_prob"] = None

@@ -8,7 +8,7 @@ from pathlib import Path
 from datetime import datetime, timezone
 
 INTAKE_DIR = Path("docs/win/soccer/00_intake")
-FINAL_SCORES_DIR = Path("docs/win/soccer/05_final_scores/results/final_scores")
+FINAL_SCORES_DIR = Path("docs/win/soccer/05_final_scores/results/final_scores_dirty")
 
 MAP_FILE = Path("docs/win/soccer/mappings/team_map_soccer.csv")
 
@@ -218,3 +218,4 @@ except Exception as e:
     log("STATUS: FAILED")
 
 print("Name normalization complete.")
+
