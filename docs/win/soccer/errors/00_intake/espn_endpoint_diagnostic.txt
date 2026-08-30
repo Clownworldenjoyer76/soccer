@@ -1,6 +1,6 @@
 === ESPN endpoint diagnostic ===
-utc_time=2026-08-30T20:27:25Z
-runner=GitHub Actions 1000098375
+utc_time=2026-08-30T20:43:25Z
+runner=GitHub Actions 1000098376
 date=20260830
 league=usa.1
 
@@ -13,7 +13,7 @@ json=no
 [site_api_limit_100]
 url=https://site.api.espn.com/apis/site/v2/sports/soccer/usa.1/scoreboard?dates=20260830&limit=100
 curl_exit=0
-http|content_type|bytes|effective_url=403|text/html|449|https://site.api.espn.com/apis/site/v2/sports/soccer/usa.1/scoreboard?dates=20260830&limit=100
+http|content_type|bytes|effective_url=403|text/html|451|https://site.api.espn.com/apis/site/v2/sports/soccer/usa.1/scoreboard?dates=20260830&limit=100
 json=no
 
 [site_api_no_limit]
@@ -53,7 +53,7 @@ selected_competition_id=761758
 [core_event]
 url=https://sports.core.api.espn.com/v2/sports/soccer/leagues/usa.1/events/761758
 curl_exit=0
-http|content_type|bytes|effective_url=200|application/json;charset=utf-8|12169|https://sports.core.api.espn.com/v2/sports/soccer/leagues/usa.1/events/761758
+http|content_type|bytes|effective_url=200|application/json;charset=utf-8|12148|https://sports.core.api.espn.com/v2/sports/soccer/leagues/usa.1/events/761758
 json=yes type=dict | keys=$ref,id,uid,date,name,shortName,season,seasonType,timeValid,competitions,links,venues,league
 
 [site_summary]
@@ -65,14 +65,14 @@ json=no
 [cdn_game]
 url=https://cdn.espn.com/core/soccer/game?xhr=1&gameId=761758
 curl_exit=0
-http|content_type|bytes|effective_url=200|text/html;charset=UTF-8|371248|http://cdn.espn.com/core/soccer/match?gameId=761758
+http|content_type|bytes|effective_url=200|text/html;charset=UTF-8|670661|http://cdn.espn.com/core/soccer/match?gameId=761758
 json=no
 
 [core_odds]
 url=https://sports.core.api.espn.com/v2/sports/soccer/leagues/usa.1/events/761758/competitions/761758/odds?limit=100
 curl_exit=0
-http|content_type|bytes|effective_url=200|application/json;charset=utf-8|44410|https://sports.core.api.espn.com/v2/sports/soccer/leagues/usa.1/events/761758/competitions/761758/odds?limit=100
-json=yes type=dict | keys=count,pageIndex,pageSize,pageCount,items | items=2
+http|content_type|bytes|effective_url=200|application/json;charset=utf-8|52004|https://sports.core.api.espn.com/v2/sports/soccer/leagues/usa.1/events/761758/competitions/761758/odds?limit=100
+json=yes type=dict | keys=count,pageIndex,pageSize,pageCount,items | items=3
 
 [core_propbets]
 url=https://sports.core.api.espn.com/v2/sports/soccer/leagues/usa.1/events/761758/competitions/761758/propbets?limit=2000

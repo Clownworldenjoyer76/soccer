@@ -1,11 +1,11 @@
-=== name_normalization RUN 2026-08-30T20:27:41.647081+00:00 ===
-2026-08-30T20:27:41.648129+00:00 | Team map loaded: 323 entries
-2026-08-30T20:27:41.657110+00:00 | Files to process: 1020
-2026-08-30T20:27:41.661913+00:00 | UPDATED: docs/win/soccer/00_intake/sportsbook/bundesliga/2026_08_30_bundesliga_soccer.csv
-2026-08-30T20:27:41.668535+00:00 | UPDATED: docs/win/soccer/00_intake/sportsbook/epl/2026_08_30_epl_soccer.csv
-2026-08-30T20:27:41.674562+00:00 | UPDATED: docs/win/soccer/00_intake/sportsbook/la_liga/2026_08_30_la_liga_soccer.csv
-2026-08-30T20:27:41.679291+00:00 | UPDATED: docs/win/soccer/00_intake/sportsbook/ligue_1/2026_08_30_ligue_1_soccer.csv
-2026-08-30T20:27:41.687330+00:00 | UPDATED: docs/win/soccer/00_intake/sportsbook/mls/2026_08_30_mls_soccer.csv
-2026-08-30T20:27:41.692955+00:00 | UPDATED: docs/win/soccer/00_intake/sportsbook/serie_a/2026_08_30_serie_a_soccer.csv
-2026-08-30T20:27:41.710373+00:00 | SUMMARY | files_processed=1020 | rows_processed=4685 | names_normalized=12 | unmapped=0
-2026-08-30T20:27:41.710404+00:00 | STATUS: SUCCESS
+=== name_normalization RUN 2026-08-30T20:43:39.383224+00:00 ===
+2026-08-30T20:43:39.384224+00:00 | Team map loaded: 323 entries
+2026-08-30T20:43:39.393189+00:00 | Files to process: 1020
+2026-08-30T20:43:39.398003+00:00 | UPDATED: docs/win/soccer/00_intake/sportsbook/bundesliga/2026_08_30_bundesliga_soccer.csv
+2026-08-30T20:43:39.404811+00:00 | UPDATED: docs/win/soccer/00_intake/sportsbook/epl/2026_08_30_epl_soccer.csv
+2026-08-30T20:43:39.410832+00:00 | UPDATED: docs/win/soccer/00_intake/sportsbook/la_liga/2026_08_30_la_liga_soccer.csv
+2026-08-30T20:43:39.415533+00:00 | UPDATED: docs/win/soccer/00_intake/sportsbook/ligue_1/2026_08_30_ligue_1_soccer.csv
+2026-08-30T20:43:39.423619+00:00 | UPDATED: docs/win/soccer/00_intake/sportsbook/mls/2026_08_30_mls_soccer.csv
+2026-08-30T20:43:39.429259+00:00 | UPDATED: docs/win/soccer/00_intake/sportsbook/serie_a/2026_08_30_serie_a_soccer.csv
+2026-08-30T20:43:39.446365+00:00 | SUMMARY | files_processed=1020 | rows_processed=4685 | names_normalized=12 | unmapped=0
+2026-08-30T20:43:39.446395+00:00 | STATUS: SUCCESS

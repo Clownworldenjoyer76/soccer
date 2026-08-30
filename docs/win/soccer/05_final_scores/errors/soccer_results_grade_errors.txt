@@ -1,33 +1,33 @@
-[2026-08-30T16:28:00.713300] SCORE GAME_ID ROWS REMOVED | docs/win/soccer/05_final_scores/results/final_scores/LALIGA/2026_04_11_LALIGA.csv | before=4 after=1
-[2026-08-30T16:28:00.720891] SCORE GAME_ID ROWS REMOVED | docs/win/soccer/05_final_scores/results/final_scores/LIGUE1/2026_04_11_LIGUE1.csv | before=2 after=1
-[2026-08-30T16:28:00.730530] SCORE GAME_ID ROWS REMOVED | docs/win/soccer/05_final_scores/results/final_scores/MLS/2026_04_11_MLS.csv | before=13 after=7
-[2026-08-30T16:28:00.867525] SCORE GAME_ID ROWS REMOVED | docs/win/soccer/05_final_scores/results/final_scores/MLS/2026_04_18_MLS.csv | before=13 after=9
-[2026-08-30T16:28:00.987356] SCORE GAME_ID ROWS REMOVED | docs/win/soccer/05_final_scores/results/final_scores/LALIGA/2026_04_22_LALIGA.csv | before=3 after=2
-[2026-08-30T16:28:01.231348] SCORE GAME_ID ROWS REMOVED | docs/win/soccer/05_final_scores/results/final_scores/LALIGA/2026_05_08_LALIGA.csv | before=1 after=0
-[2026-08-30T16:28:01.231401] NO SCORES LOADED | league=laliga date=2026_05_08
-[2026-08-30T16:28:01.270397] SCORE GAME_ID ROWS REMOVED | docs/win/soccer/05_final_scores/results/final_scores/LALIGA/2026_05_09_LALIGA.csv | before=4 after=3
-[2026-08-30T16:28:01.277783] SCORE GAME_ID ROWS REMOVED | docs/win/soccer/05_final_scores/results/final_scores/MLS/2026_05_09_MLS.csv | before=12 after=11
-[2026-08-30T16:28:01.456344] SCORE GAME_ID ROWS REMOVED | docs/win/soccer/05_final_scores/results/final_scores/BUNDESLIGA/2026_05_16_BUNDESLIGA.csv | before=9 after=7
-[2026-08-30T16:28:01.877922] SCORE GAME_ID ROWS REMOVED | docs/win/soccer/05_final_scores/results/final_scores/LIGUE1/2026_08_23_LIGUE1.csv | before=3 after=2
-[2026-08-30T16:28:01.942164] NO SCORE FILE | league=laliga date=2026_08_26
-[2026-08-30T16:28:01.942336] NO SCORES LOADED | league=laliga date=2026_08_26
-[2026-08-30T16:28:01.955373] NO SCORE FILE | league=bundesliga date=2026_08_28
-[2026-08-30T16:28:01.955487] NO SCORES LOADED | league=bundesliga date=2026_08_28
-[2026-08-30T16:28:01.968960] NO SCORE FILE | league=bundesliga date=2026_08_29
-[2026-08-30T16:28:01.969073] NO SCORES LOADED | league=bundesliga date=2026_08_29
-[2026-08-30T16:28:01.971480] NO SCORE FILE | league=epl date=2026_08_29
-[2026-08-30T16:28:01.971590] NO SCORES LOADED | league=epl date=2026_08_29
-[2026-08-30T16:28:01.974048] NO SCORE FILE | league=ligue1 date=2026_08_29
-[2026-08-30T16:28:01.974159] NO SCORES LOADED | league=ligue1 date=2026_08_29
-[2026-08-30T16:28:01.976645] NO SCORE FILE | league=mls date=2026_08_29
-[2026-08-30T16:28:01.976756] NO SCORES LOADED | league=mls date=2026_08_29
-[2026-08-30T16:28:01.979094] NO SCORE FILE | league=seriea date=2026_08_29
-[2026-08-30T16:28:01.979204] NO SCORES LOADED | league=seriea date=2026_08_29
-[2026-08-30T16:28:01.994664] NO SCORE FILE | league=bundesliga date=2026_08_30
-[2026-08-30T16:28:01.994781] NO SCORES LOADED | league=bundesliga date=2026_08_30
-[2026-08-30T16:28:01.997166] NO SCORE FILE | league=epl date=2026_08_30
-[2026-08-30T16:28:01.997313] NO SCORES LOADED | league=epl date=2026_08_30
-[2026-08-30T16:28:01.999852] NO SCORE FILE | league=laliga date=2026_08_30
-[2026-08-30T16:28:01.999968] NO SCORES LOADED | league=laliga date=2026_08_30
-[2026-08-30T16:28:02.002695] NO SCORE FILE | league=ligue1 date=2026_08_30
-[2026-08-30T16:28:02.002807] NO SCORES LOADED | league=ligue1 date=2026_08_30
+[2026-08-30T16:43:56.757836] SCORE GAME_ID ROWS REMOVED | docs/win/soccer/05_final_scores/results/final_scores/LALIGA/2026_04_11_LALIGA.csv | before=4 after=1
+[2026-08-30T16:43:56.765054] SCORE GAME_ID ROWS REMOVED | docs/win/soccer/05_final_scores/results/final_scores/LIGUE1/2026_04_11_LIGUE1.csv | before=2 after=1
+[2026-08-30T16:43:56.773473] SCORE GAME_ID ROWS REMOVED | docs/win/soccer/05_final_scores/results/final_scores/MLS/2026_04_11_MLS.csv | before=13 after=7
+[2026-08-30T16:43:56.902552] SCORE GAME_ID ROWS REMOVED | docs/win/soccer/05_final_scores/results/final_scores/MLS/2026_04_18_MLS.csv | before=13 after=9
+[2026-08-30T16:43:57.017446] SCORE GAME_ID ROWS REMOVED | docs/win/soccer/05_final_scores/results/final_scores/LALIGA/2026_04_22_LALIGA.csv | before=3 after=2
+[2026-08-30T16:43:57.254435] SCORE GAME_ID ROWS REMOVED | docs/win/soccer/05_final_scores/results/final_scores/LALIGA/2026_05_08_LALIGA.csv | before=1 after=0
+[2026-08-30T16:43:57.254484] NO SCORES LOADED | league=laliga date=2026_05_08
+[2026-08-30T16:43:57.292475] SCORE GAME_ID ROWS REMOVED | docs/win/soccer/05_final_scores/results/final_scores/LALIGA/2026_05_09_LALIGA.csv | before=4 after=3
+[2026-08-30T16:43:57.299856] SCORE GAME_ID ROWS REMOVED | docs/win/soccer/05_final_scores/results/final_scores/MLS/2026_05_09_MLS.csv | before=12 after=11
+[2026-08-30T16:43:57.474531] SCORE GAME_ID ROWS REMOVED | docs/win/soccer/05_final_scores/results/final_scores/BUNDESLIGA/2026_05_16_BUNDESLIGA.csv | before=9 after=7
+[2026-08-30T16:43:57.864153] SCORE GAME_ID ROWS REMOVED | docs/win/soccer/05_final_scores/results/final_scores/LIGUE1/2026_08_23_LIGUE1.csv | before=3 after=2
+[2026-08-30T16:43:57.924480] NO SCORE FILE | league=laliga date=2026_08_26
+[2026-08-30T16:43:57.924641] NO SCORES LOADED | league=laliga date=2026_08_26
+[2026-08-30T16:43:57.937460] NO SCORE FILE | league=bundesliga date=2026_08_28
+[2026-08-30T16:43:57.937595] NO SCORES LOADED | league=bundesliga date=2026_08_28
+[2026-08-30T16:43:57.950689] NO SCORE FILE | league=bundesliga date=2026_08_29
+[2026-08-30T16:43:57.950800] NO SCORES LOADED | league=bundesliga date=2026_08_29
+[2026-08-30T16:43:57.953138] NO SCORE FILE | league=epl date=2026_08_29
+[2026-08-30T16:43:57.953246] NO SCORES LOADED | league=epl date=2026_08_29
+[2026-08-30T16:43:57.955592] NO SCORE FILE | league=ligue1 date=2026_08_29
+[2026-08-30T16:43:57.955702] NO SCORES LOADED | league=ligue1 date=2026_08_29
+[2026-08-30T16:43:57.958079] NO SCORE FILE | league=mls date=2026_08_29
+[2026-08-30T16:43:57.958187] NO SCORES LOADED | league=mls date=2026_08_29
+[2026-08-30T16:43:57.960478] NO SCORE FILE | league=seriea date=2026_08_29
+[2026-08-30T16:43:57.960611] NO SCORES LOADED | league=seriea date=2026_08_29
+[2026-08-30T16:43:57.975337] NO SCORE FILE | league=bundesliga date=2026_08_30
+[2026-08-30T16:43:57.975456] NO SCORES LOADED | league=bundesliga date=2026_08_30
+[2026-08-30T16:43:57.977885] NO SCORE FILE | league=epl date=2026_08_30
+[2026-08-30T16:43:57.977993] NO SCORES LOADED | league=epl date=2026_08_30
+[2026-08-30T16:43:57.980317] NO SCORE FILE | league=laliga date=2026_08_30
+[2026-08-30T16:43:57.980426] NO SCORES LOADED | league=laliga date=2026_08_30
+[2026-08-30T16:43:57.982732] NO SCORE FILE | league=ligue1 date=2026_08_30
+[2026-08-30T16:43:57.982844] NO SCORES LOADED | league=ligue1 date=2026_08_30
