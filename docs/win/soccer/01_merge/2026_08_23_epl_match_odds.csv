@@ -1,4 +1,0 @@
-game_id,sport,league,match_date,match_time,home_team,away_team,home_prob,draw_prob,away_prob,home_xg,away_xg,expected_total_goals,dk_home_decimal,dk_draw_decimal,dk_away_decimal
-401879297,soccer,epl,2026_08_23,09:00 AM,Brighton,Aston Villa,0.492,0.255,0.253,1.54,1.03,2.57,2.10,3.45,3.60
-401879320,soccer,epl,2026_08_23,09:00 AM,Manchester City,Bournemouth,0.734,0.166,0.1,2.36,0.75,3.11,1.47,4.80,6.50
-401879319,soccer,epl,2026_08_23,11:30 AM,Newcastle,Liverpool,0.245,0.248,0.506,1.04,1.62,2.66,3.65,3.90,1.95

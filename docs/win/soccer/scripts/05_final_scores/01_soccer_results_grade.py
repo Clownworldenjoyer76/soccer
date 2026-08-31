@@ -49,6 +49,7 @@ SELECT_REQUIRED = [
     "side",
     "odds",
     "ev",
+    "edge",
     "kelly",
 ]
 
@@ -336,7 +337,10 @@ def process() -> None:
 
         # Prefer american_odds from select output if present; otherwise convert from decimal odds.
         if "american_odds" in bets_df.columns:
-            bets_df["odds_american"] = pd.to_numeric(bets_df["american_odds"], errors="coerce")
+            bets_df["odds_american"] = pd.to_numeric(
+                bets_df["american_odds"],
+                errors="coerce",
+            )
             missing_american = bets_df["odds_american"].isna()
             bets_df.loc[missing_american, "odds_american"] = (
                 bets_df.loc[missing_american, "odds_decimal"].apply(decimal_to_american)
@@ -344,7 +348,10 @@ def process() -> None:
         else:
             bets_df["odds_american"] = bets_df["odds_decimal"].apply(decimal_to_american)
 
-        bets_df["edge_pct"] = pd.to_numeric(bets_df["ev"], errors="coerce")
+        bets_df["edge_pct"] = pd.to_numeric(
+            bets_df["edge"],
+            errors="coerce",
+        )
 
         merged_frames = []
 
