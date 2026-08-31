@@ -35,7 +35,12 @@ LEAGUE_TO_CONFIG = {
     "seriea": "serie_a",
 }
 
-MARKETS = ["match_odds", "total_25", "total_35", "btts"]
+MARKETS = [
+    "match_odds",
+    "total_25",
+    "total_35",
+    "btts",
+]
 
 POISSON_TAIL_TOLERANCE = 1e-14
 POISSON_MAX_GOALS = 100
@@ -49,6 +54,42 @@ XG_COLS = [
 XG_TOTAL_TOLERANCE = 0.01
 
 ADJUSTED_1X2_SUM_TOLERANCE = 1e-9
+ENGINE_PROB_SUM_TOLERANCE = 1e-9
+FAIR_DECIMAL_REL_TOLERANCE = 1e-9
+FAIR_DECIMAL_ABS_TOLERANCE = 1e-12
+HOME_AWAY_SYMMETRY_TOLERANCE = 1e-9
+
+PRICING_PROBABILITY_KEYS = [
+    "home_win",
+    "draw",
+    "away_win",
+    "over2_5",
+    "under2_5",
+    "over3_5",
+    "under3_5",
+    "btts_yes",
+    "btts_no",
+]
+
+PRICING_SUM_GROUPS = {
+    "engine_1x2_sum": [
+        "home_win",
+        "draw",
+        "away_win",
+    ],
+    "engine_total_25_sum": [
+        "over2_5",
+        "under2_5",
+    ],
+    "engine_total_35_sum": [
+        "over3_5",
+        "under3_5",
+    ],
+    "engine_btts_sum": [
+        "btts_yes",
+        "btts_no",
+    ],
+}
 
 
 def log(msg: str) -> None:
@@ -80,14 +121,32 @@ def safe_float(val):
 
 
 def safe_decimal(prob):
+    probability = safe_float(prob)
+
     if (
-        prob is None
-        or pd.isna(prob)
-        or prob <= 0
+        probability is None
+        or probability <= 0.0
     ):
         return None
 
-    return 1.0 / prob
+    decimal = 1.0 / probability
+
+    if (
+        not math.isfinite(decimal)
+        or decimal <= 0.0
+    ):
+        return None
+
+    return decimal
+
+
+def valid_probability(prob) -> bool:
+    value = safe_float(prob)
+
+    return (
+        value is not None
+        and 0.0 <= value <= 1.0
+    )
 
 
 def validate_threeway_probs(
@@ -114,7 +173,8 @@ def validate_threeway_probs(
     total = sum(parsed)
 
     return (
-        abs(total - 1.0)
+        math.isfinite(total)
+        and abs(total - 1.0)
         <= tolerance
     )
 
@@ -476,11 +536,19 @@ def load_league_config(
             f"found {len(rho_values)}"
         )
 
+    rho = safe_float(
+        rho_values[0]
+    )
+
+    if rho is None:
+        raise ValueError(
+            f"{engine_path} contains "
+            "a non-finite rho value"
+        )
+
     return LeagueConfig(
         juice=juice,
-        rho=float(
-            rho_values[0]
-        ),
+        rho=rho,
     )
 
 
@@ -708,6 +776,9 @@ def price_from_xg(
         or not math.isfinite(
             lambda_away
         )
+        or not math.isfinite(
+            rho
+        )
         or lambda_home < 0
         or lambda_away < 0
     ):
@@ -762,10 +833,13 @@ def price_from_xg(
                 )
             )
 
-            if tau < 0:
+            if (
+                not math.isfinite(tau)
+                or tau < 0
+            ):
                 raise ValueError(
-                    "Dixon-Coles produced a "
-                    "negative low-score multiplier: "
+                    "Dixon-Coles produced an "
+                    "invalid low-score multiplier: "
                     f"home_xg={lambda_home}, "
                     f"away_xg={lambda_away}, "
                     f"rho={rho}, "
@@ -780,6 +854,22 @@ def price_from_xg(
                 * p_away
                 * tau
             )
+
+            if (
+                not math.isfinite(p)
+                or p < 0.0
+            ):
+                raise ValueError(
+                    "Dixon-Coles produced "
+                    "invalid probability mass: "
+                    f"home_xg={lambda_home}, "
+                    f"away_xg={lambda_away}, "
+                    f"rho={rho}, "
+                    f"score="
+                    f"{home_goals}-"
+                    f"{away_goals}, "
+                    f"p={p}"
+                )
 
             total_mass += p
 
@@ -830,13 +920,17 @@ def price_from_xg(
             else:
                 btts_no += p
 
-    if total_mass <= 0:
+    if (
+        not math.isfinite(total_mass)
+        or total_mass <= 0
+    ):
         raise ValueError(
             "Invalid Dixon-Coles total "
             "probability mass for "
             f"home_xg={lambda_home}, "
             f"away_xg={lambda_away}, "
-            f"rho={rho}"
+            f"rho={rho}, "
+            f"total_mass={total_mass}"
         )
 
     home_win /= total_mass
@@ -898,6 +992,471 @@ def get_pricing(
     )
 
 
+def validate_pricing_invariants(
+    pricing,
+    home_xg,
+    away_xg,
+    rho,
+):
+    """
+    Validate all mathematical invariants produced by
+    the Dixon-Coles pricing engine.
+
+    Returns:
+        (valid, invariant_name, failing_values)
+    """
+
+    if not isinstance(
+        pricing,
+        dict,
+    ):
+        return (
+            False,
+            "pricing_result_missing",
+            {
+                "pricing": pricing,
+            },
+        )
+
+    for key in PRICING_PROBABILITY_KEYS:
+        value = safe_float(
+            pricing.get(key)
+        )
+
+        if (
+            value is None
+            or value < 0.0
+            or value > 1.0
+        ):
+            return (
+                False,
+                "probability_range",
+                {
+                    "field": key,
+                    "value":
+                        pricing.get(key),
+                },
+            )
+
+    for (
+        invariant_name,
+        keys,
+    ) in PRICING_SUM_GROUPS.items():
+
+        values = [
+            safe_float(
+                pricing.get(key)
+            )
+            for key in keys
+        ]
+
+        if any(
+            value is None
+            for value in values
+        ):
+            return (
+                False,
+                invariant_name,
+                {
+                    key: pricing.get(key)
+                    for key in keys
+                },
+            )
+
+        total = sum(values)
+
+        if (
+            not math.isfinite(total)
+            or abs(total - 1.0)
+            > ENGINE_PROB_SUM_TOLERANCE
+        ):
+            failure = {
+                key: pricing.get(key)
+                for key in keys
+            }
+
+            failure["sum"] = total
+            failure["expected"] = 1.0
+            failure["tolerance"] = (
+                ENGINE_PROB_SUM_TOLERANCE
+            )
+
+            return (
+                False,
+                invariant_name,
+                failure,
+            )
+
+    original_home_xg = safe_float(
+        home_xg
+    )
+
+    original_away_xg = safe_float(
+        away_xg
+    )
+
+    parsed_rho = safe_float(
+        rho
+    )
+
+    if (
+        original_home_xg is None
+        or original_away_xg is None
+        or parsed_rho is None
+    ):
+        return (
+            False,
+            "home_away_symmetry_inputs",
+            {
+                "home_xg": home_xg,
+                "away_xg": away_xg,
+                "rho": rho,
+            },
+        )
+
+    swapped = price_from_xg(
+        original_away_xg,
+        original_home_xg,
+        parsed_rho,
+    )
+
+    if not isinstance(
+        swapped,
+        dict,
+    ):
+        return (
+            False,
+            "home_away_symmetry_swapped_pricing",
+            {
+                "home_xg":
+                    original_home_xg,
+                "away_xg":
+                    original_away_xg,
+                "rho":
+                    parsed_rho,
+                "swapped_pricing":
+                    swapped,
+            },
+        )
+
+    symmetry_pairs = [
+        (
+            "home_win",
+            "away_win",
+        ),
+        (
+            "away_win",
+            "home_win",
+        ),
+        (
+            "draw",
+            "draw",
+        ),
+        (
+            "over2_5",
+            "over2_5",
+        ),
+        (
+            "under2_5",
+            "under2_5",
+        ),
+        (
+            "over3_5",
+            "over3_5",
+        ),
+        (
+            "under3_5",
+            "under3_5",
+        ),
+        (
+            "btts_yes",
+            "btts_yes",
+        ),
+        (
+            "btts_no",
+            "btts_no",
+        ),
+        (
+            "lambda_home",
+            "lambda_away",
+        ),
+        (
+            "lambda_away",
+            "lambda_home",
+        ),
+    ]
+
+    for (
+        original_key,
+        swapped_key,
+    ) in symmetry_pairs:
+
+        original_value = safe_float(
+            pricing.get(
+                original_key
+            )
+        )
+
+        swapped_value = safe_float(
+            swapped.get(
+                swapped_key
+            )
+        )
+
+        if (
+            original_value is None
+            or swapped_value is None
+            or not math.isclose(
+                original_value,
+                swapped_value,
+                rel_tol=(
+                    HOME_AWAY_SYMMETRY_TOLERANCE
+                ),
+                abs_tol=(
+                    HOME_AWAY_SYMMETRY_TOLERANCE
+                ),
+            )
+        ):
+            return (
+                False,
+                "home_away_symmetry",
+                {
+                    "original_home_xg":
+                        original_home_xg,
+                    "original_away_xg":
+                        original_away_xg,
+                    "field":
+                        original_key,
+                    "original_value":
+                        original_value,
+                    "swapped_field":
+                        swapped_key,
+                    "swapped_value":
+                        swapped_value,
+                    "tolerance":
+                        HOME_AWAY_SYMMETRY_TOLERANCE,
+                },
+            )
+
+    return (
+        True,
+        "",
+        {},
+    )
+
+
+def validate_fair_decimal_fields(
+    fields,
+):
+    """
+    fields format:
+
+    {
+        "field_name": (
+            probability,
+            decimal_price,
+        )
+    }
+    """
+
+    for (
+        field_name,
+        pair,
+    ) in fields.items():
+
+        probability = safe_float(
+            pair[0]
+        )
+
+        decimal_price = safe_float(
+            pair[1]
+        )
+
+        if (
+            probability is None
+            or probability < 0.0
+            or probability > 1.0
+        ):
+            return (
+                False,
+                "fair_decimal_probability",
+                {
+                    "field":
+                        field_name,
+                    "probability":
+                        pair[0],
+                    "decimal":
+                        pair[1],
+                },
+            )
+
+        # A finite fair decimal cannot
+        # represent probability zero.
+        if probability <= 0.0:
+            return (
+                False,
+                "fair_decimal_zero_probability",
+                {
+                    "field":
+                        field_name,
+                    "probability":
+                        probability,
+                    "decimal":
+                        decimal_price,
+                },
+            )
+
+        if (
+            decimal_price is None
+            or decimal_price <= 0.0
+        ):
+            return (
+                False,
+                "fair_decimal_positive",
+                {
+                    "field":
+                        field_name,
+                    "probability":
+                        probability,
+                    "decimal":
+                        pair[1],
+                },
+            )
+
+        expected_decimal = (
+            1.0 / probability
+        )
+
+        if (
+            not math.isfinite(
+                expected_decimal
+            )
+            or not math.isclose(
+                decimal_price,
+                expected_decimal,
+                rel_tol=(
+                    FAIR_DECIMAL_REL_TOLERANCE
+                ),
+                abs_tol=(
+                    FAIR_DECIMAL_ABS_TOLERANCE
+                ),
+            )
+        ):
+            return (
+                False,
+                "fair_decimal_consistency",
+                {
+                    "field":
+                        field_name,
+                    "probability":
+                        probability,
+                    "decimal":
+                        decimal_price,
+                    "expected_decimal":
+                        expected_decimal,
+                    "rel_tolerance":
+                        FAIR_DECIMAL_REL_TOLERANCE,
+                    "abs_tolerance":
+                        FAIR_DECIMAL_ABS_TOLERANCE,
+                },
+            )
+
+    return (
+        True,
+        "",
+        {},
+    )
+
+
+def reject_pricing_invariant(
+    file_path: Path,
+    source_index,
+    row: dict,
+    market: str,
+    invariant: str,
+    values,
+    summary: dict,
+):
+    summary[
+        "rows_rejected_pricing_invariant"
+    ] += 1
+
+    log(
+        "REJECT PRICING INVARIANT | "
+        f"file={file_path.name} | "
+        f"line={source_index + 2} | "
+        f"game_id="
+        f"{row.get('game_id', '')} | "
+        f"home_team="
+        f"{row.get('home_team', '')} | "
+        f"away_team="
+        f"{row.get('away_team', '')} | "
+        f"market={market} | "
+        f"invariant={invariant} | "
+        f"values={values!r}"
+    )
+
+
+def validate_row_pricing(
+    pricing,
+    row: dict,
+    cfg: LeagueConfig,
+    file_path: Path,
+    source_index,
+    market: str,
+    summary: dict,
+):
+    if pricing is None:
+        reject_pricing_invariant(
+            file_path,
+            source_index,
+            row,
+            market,
+            "pricing_result_missing",
+            {
+                "home_xg":
+                    row.get("home_xg"),
+                "away_xg":
+                    row.get("away_xg"),
+                "expected_total_goals":
+                    row.get(
+                        "expected_total_goals"
+                    ),
+                "rho":
+                    cfg.rho,
+            },
+            summary,
+        )
+
+        return False
+
+    (
+        valid,
+        invariant,
+        values,
+    ) = validate_pricing_invariants(
+        pricing,
+        row.get("home_xg"),
+        row.get("away_xg"),
+        cfg.rho,
+    )
+
+    if not valid:
+        reject_pricing_invariant(
+            file_path,
+            source_index,
+            row,
+            market,
+            invariant,
+            values,
+            summary,
+        )
+
+        return False
+
+    return True
+
+
 def process_match_odds(
     df: pd.DataFrame,
     cfg: LeagueConfig,
@@ -946,7 +1505,15 @@ def process_match_odds(
             cfg.rho,
         )
 
-        if pricing is None:
+        if not validate_row_pricing(
+            pricing,
+            r,
+            cfg,
+            file_path,
+            source_index,
+            "match_odds",
+            summary,
+        ):
             continue
 
         home_extra = (
@@ -1053,6 +1620,58 @@ def process_match_odds(
             juiced_away_prob,
         ) = juiced_probs
 
+        engine_home_decimal = (
+            safe_decimal(
+                pricing["home_win"]
+            )
+        )
+
+        engine_draw_decimal = (
+            safe_decimal(
+                pricing["draw"]
+            )
+        )
+
+        engine_away_decimal = (
+            safe_decimal(
+                pricing["away_win"]
+            )
+        )
+
+        (
+            fair_valid,
+            invariant,
+            values,
+        ) = validate_fair_decimal_fields(
+            {
+                "engine_home_fair_decimal": (
+                    pricing["home_win"],
+                    engine_home_decimal,
+                ),
+                "engine_draw_fair_decimal": (
+                    pricing["draw"],
+                    engine_draw_decimal,
+                ),
+                "engine_away_fair_decimal": (
+                    pricing["away_win"],
+                    engine_away_decimal,
+                ),
+            }
+        )
+
+        if not fair_valid:
+            reject_pricing_invariant(
+                file_path,
+                source_index,
+                r,
+                "match_odds",
+                invariant,
+                values,
+                summary,
+            )
+
+            continue
+
         r["home_extra_juice"] = (
             home_extra
         )
@@ -1116,21 +1735,15 @@ def process_match_odds(
         )
 
         r["engine_home_fair_decimal"] = (
-            safe_decimal(
-                pricing["home_win"]
-            )
+            engine_home_decimal
         )
 
         r["engine_draw_fair_decimal"] = (
-            safe_decimal(
-                pricing["draw"]
-            )
+            engine_draw_decimal
         )
 
         r["engine_away_fair_decimal"] = (
-            safe_decimal(
-                pricing["away_win"]
-            )
+            engine_away_decimal
         )
 
         out_rows.append(r)
@@ -1143,11 +1756,17 @@ def process_match_odds(
 def process_total_25(
     df: pd.DataFrame,
     cfg: LeagueConfig,
+    file_path: Path,
+    summary: dict,
 ) -> pd.DataFrame:
 
     out_rows = []
 
-    for _, row in df.iterrows():
+    for (
+        source_index,
+        row,
+    ) in df.iterrows():
+
         r = row.to_dict()
 
         r.pop(
@@ -1170,7 +1789,57 @@ def process_total_25(
             cfg.rho,
         )
 
-        if pricing is None:
+        if not validate_row_pricing(
+            pricing,
+            r,
+            cfg,
+            file_path,
+            source_index,
+            "total_25",
+            summary,
+        ):
+            continue
+
+        fair_over_decimal = (
+            safe_decimal(
+                pricing["over2_5"]
+            )
+        )
+
+        fair_under_decimal = (
+            safe_decimal(
+                pricing["under2_5"]
+            )
+        )
+
+        (
+            fair_valid,
+            invariant,
+            values,
+        ) = validate_fair_decimal_fields(
+            {
+                "fair_over_decimal": (
+                    pricing["over2_5"],
+                    fair_over_decimal,
+                ),
+                "fair_under_decimal": (
+                    pricing["under2_5"],
+                    fair_under_decimal,
+                ),
+            }
+        )
+
+        if not fair_valid:
+            reject_pricing_invariant(
+                file_path,
+                source_index,
+                r,
+                "total_25",
+                invariant,
+                values,
+                summary,
+            )
+
             continue
 
         r["engine_lambda_home"] = (
@@ -1182,15 +1851,11 @@ def process_total_25(
         )
 
         r["fair_over_decimal"] = (
-            safe_decimal(
-                pricing["over2_5"]
-            )
+            fair_over_decimal
         )
 
         r["fair_under_decimal"] = (
-            safe_decimal(
-                pricing["under2_5"]
-            )
+            fair_under_decimal
         )
 
         r["engine_over_prob"] = (
@@ -1211,11 +1876,17 @@ def process_total_25(
 def process_total_35(
     df: pd.DataFrame,
     cfg: LeagueConfig,
+    file_path: Path,
+    summary: dict,
 ) -> pd.DataFrame:
 
     out_rows = []
 
-    for _, row in df.iterrows():
+    for (
+        source_index,
+        row,
+    ) in df.iterrows():
+
         r = row.to_dict()
 
         r.pop(
@@ -1238,7 +1909,57 @@ def process_total_35(
             cfg.rho,
         )
 
-        if pricing is None:
+        if not validate_row_pricing(
+            pricing,
+            r,
+            cfg,
+            file_path,
+            source_index,
+            "total_35",
+            summary,
+        ):
+            continue
+
+        fair_over_decimal = (
+            safe_decimal(
+                pricing["over3_5"]
+            )
+        )
+
+        fair_under_decimal = (
+            safe_decimal(
+                pricing["under3_5"]
+            )
+        )
+
+        (
+            fair_valid,
+            invariant,
+            values,
+        ) = validate_fair_decimal_fields(
+            {
+                "fair_over_decimal": (
+                    pricing["over3_5"],
+                    fair_over_decimal,
+                ),
+                "fair_under_decimal": (
+                    pricing["under3_5"],
+                    fair_under_decimal,
+                ),
+            }
+        )
+
+        if not fair_valid:
+            reject_pricing_invariant(
+                file_path,
+                source_index,
+                r,
+                "total_35",
+                invariant,
+                values,
+                summary,
+            )
+
             continue
 
         r["engine_lambda_home"] = (
@@ -1250,15 +1971,11 @@ def process_total_35(
         )
 
         r["fair_over_decimal"] = (
-            safe_decimal(
-                pricing["over3_5"]
-            )
+            fair_over_decimal
         )
 
         r["fair_under_decimal"] = (
-            safe_decimal(
-                pricing["under3_5"]
-            )
+            fair_under_decimal
         )
 
         r["engine_over_prob"] = (
@@ -1279,11 +1996,17 @@ def process_total_35(
 def process_btts(
     df: pd.DataFrame,
     cfg: LeagueConfig,
+    file_path: Path,
+    summary: dict,
 ) -> pd.DataFrame:
 
     out_rows = []
 
-    for _, row in df.iterrows():
+    for (
+        source_index,
+        row,
+    ) in df.iterrows():
+
         r = row.to_dict()
 
         r.pop(
@@ -1306,7 +2029,57 @@ def process_btts(
             cfg.rho,
         )
 
-        if pricing is None:
+        if not validate_row_pricing(
+            pricing,
+            r,
+            cfg,
+            file_path,
+            source_index,
+            "btts",
+            summary,
+        ):
+            continue
+
+        fair_btts_yes_decimal = (
+            safe_decimal(
+                pricing["btts_yes"]
+            )
+        )
+
+        fair_btts_no_decimal = (
+            safe_decimal(
+                pricing["btts_no"]
+            )
+        )
+
+        (
+            fair_valid,
+            invariant,
+            values,
+        ) = validate_fair_decimal_fields(
+            {
+                "fair_btts_yes_decimal": (
+                    pricing["btts_yes"],
+                    fair_btts_yes_decimal,
+                ),
+                "fair_btts_no_decimal": (
+                    pricing["btts_no"],
+                    fair_btts_no_decimal,
+                ),
+            }
+        )
+
+        if not fair_valid:
+            reject_pricing_invariant(
+                file_path,
+                source_index,
+                r,
+                "btts",
+                invariant,
+                values,
+                summary,
+            )
+
             continue
 
         r["engine_lambda_home"] = (
@@ -1318,15 +2091,11 @@ def process_btts(
         )
 
         r["fair_btts_yes_decimal"] = (
-            safe_decimal(
-                pricing["btts_yes"]
-            )
+            fair_btts_yes_decimal
         )
 
         r["fair_btts_no_decimal"] = (
-            safe_decimal(
-                pricing["btts_no"]
-            )
+            fair_btts_no_decimal
         )
 
         r["engine_btts_yes_prob"] = (
@@ -1428,6 +2197,8 @@ def process_file(
                 process_total_25(
                     df,
                     cfg,
+                    file_path,
+                    summary,
                 )
             )
 
@@ -1436,6 +2207,8 @@ def process_file(
                 process_total_35(
                     df,
                     cfg,
+                    file_path,
+                    summary,
                 )
             )
 
@@ -1444,6 +2217,8 @@ def process_file(
                 process_btts(
                     df,
                     cfg,
+                    file_path,
+                    summary,
                 )
             )
 
@@ -1516,6 +2291,7 @@ def main():
         "rows_written": 0,
         "rows_rejected_invalid_xg": 0,
         "rows_rejected_invalid_adjusted_1x2": 0,
+        "rows_rejected_pricing_invariant": 0,
         "empty": 0,
         "skipped": 0,
         "errors": 0,
@@ -1533,6 +2309,18 @@ def main():
         "normalization_requires_all_three=true | "
         f"sum_tolerance="
         f"{ADJUSTED_1X2_SUM_TOLERANCE:.12f}"
+    )
+
+    log(
+        "engine pricing invariants enabled | "
+        f"probability_sum_tolerance="
+        f"{ENGINE_PROB_SUM_TOLERANCE:.12f} | "
+        f"fair_decimal_rel_tolerance="
+        f"{FAIR_DECIMAL_REL_TOLERANCE:.12f} | "
+        f"fair_decimal_abs_tolerance="
+        f"{FAIR_DECIMAL_ABS_TOLERANCE:.12f} | "
+        f"home_away_symmetry_tolerance="
+        f"{HOME_AWAY_SYMMETRY_TOLERANCE:.12f}"
     )
 
     configs = (
@@ -1565,6 +2353,8 @@ def main():
         f"{summary['rows_rejected_invalid_xg']} | "
         "rows_rejected_invalid_adjusted_1x2="
         f"{summary['rows_rejected_invalid_adjusted_1x2']} | "
+        "rows_rejected_pricing_invariant="
+        f"{summary['rows_rejected_pricing_invariant']} | "
         f"empty="
         f"{summary['empty']} | "
         f"skipped="
@@ -1580,6 +2370,9 @@ def main():
         ]
         or summary[
             "rows_rejected_invalid_adjusted_1x2"
+        ]
+        or summary[
+            "rows_rejected_pricing_invariant"
         ]
     ):
         log("FAILED")
