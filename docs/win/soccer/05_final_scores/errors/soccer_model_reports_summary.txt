@@ -1,0 +1,7 @@
+[2026-08-31T09:16:37.219201] === START 05_soccer_model_reports.py 2026-08-31T09:16:37.219017 ===
+[2026-08-31T09:16:37.484828] MODEL METRICS WRITTEN | rows=14 | docs\win\soccer\05_final_scores\model_evaluation\SOCCER_model_metrics.csv
+[2026-08-31T09:16:37.485090] CALIBRATION WRITTEN | rows=420 | docs\win\soccer\05_final_scores\model_evaluation\SOCCER_model_calibration.csv
+[2026-08-31T09:16:37.485347] XG METRICS WRITTEN | rows=7 | docs\win\soccer\05_final_scores\model_evaluation\SOCCER_xg_metrics.csv
+[2026-08-31T09:16:37.487104] OVERALL MODEL | model=raw n=373 brier=0.6347358123324397 log_loss=1.0558619777234766 rps=0.21757158847184985
+[2026-08-31T09:16:37.487629] OVERALL MODEL | model=engine n=448 brier=0.6289247080504795 log_loss=1.0495356691780067 rps=0.21630463021658414
+[2026-08-31T09:16:37.488062] === END 05_soccer_model_reports.py 2026-08-31T09:16:37.487919 ===
