@@ -1,141 +1,100 @@
-You already built the hard part:
-historical fair probability → realized win rate → calibrated extra juice by band.
+# Legacy 3-Way Juice Method
 
-Now the correct production approach is this:
+## Status
 
----
+This method is still executed by:
 
-# ✅ Step 1 — Start With Your Fair Probability
+`docs/win/soccer/scripts/02_juice/apply_juice.py`
 
-For each side (home / draw / away):
+It produces legacy diagnostic 1X2 adjustment fields only.
 
-```
-p_fair = your_model_probability
-```
+It does NOT replace or modify the authoritative production Dixon-Coles `engine_*` probabilities or fair odds.
 
-This must sum to 1 across the 3 outcomes.
-
----
-
-# ✅ Step 2 — Apply Historical Extra Juice (From Your Curve)
-
-1. Find the correct probability band.
-2. Pull `extra_juice` from:
-
-```
-config/soccer/bundesliga_1x2_juice.csv
-```
-
-Then:
-
-```
-p_adjusted = p_fair + extra_juice
-```
-
-Clip between 0 and 1.
-
-This corrects for:
-
-* Longshot bias
-* Favorite bias
-* League-specific mispricing
-
----
-
-# ✅ Step 3 — Convert to Personally Acceptable Odds
-
-```
-acceptable_decimal = 1 / p_adjusted
-```
-
-Then convert to American.
-
-That becomes your **minimum required sportsbook price**.
-
----
-
-# ✅ Step 4 — Compare to Sportsbook
-
-From your clean feed:
-
-Example:
-
-```
-Inter Milan −145
-```
-
-Convert to decimal:
-
-```
-1.6897
-```
-
-If:
-
-```
-sportsbook_decimal > acceptable_decimal
-```
-
-→ Bet.
-
----
-
-# ⚠ Critical: Re-Normalize
-
-Because you're adjusting each side separately:
-
-After applying extra juice:
-
-```
-p_home_adj
-p_draw_adj
-p_away_adj
-```
-
-Re-normalize:
-
-```
-p_adj = p_adj / (sum of all three)
-```
-
-Otherwise you distort the book.
-
----
-
-# 🔥 Best Production Structure
+## Inputs
 
 For each match:
 
-1. Pull your model probs
-2. Apply side-specific extra juice
-3. Re-normalize
-4. Convert to acceptable odds
-5. Compare to sportsbook
-6. Bet only if:
+- raw model home probability
+- raw model draw probability
+- raw model away probability
+- league/side `3way_juice.csv`
+- each side's stored signed `extra_juice`
 
-   * Edge > threshold (ex: 2–3%)
-   * Meets liquidity rule
-   * Meets max exposure rule
+## Step 1 - Start with raw model probabilities
 
----
+For each side:
 
-# 🧠 What Not To Do
+`p_model = raw model probability`
 
-Do NOT:
+The three raw model probabilities are expected to represent Home / Draw / Away.
 
-* Add fixed juice to all probabilities
-* Use flat % adjustments
-* Ignore side asymmetry
-* Skip re-normalization
+## Step 2 - Interpolate the stored legacy adjustment
 
-That destroys calibration.
+For each side independently, `apply_juice.py` interpolates `extra_juice` from that league's `3way_juice.csv` using:
 
----
+- `side`
+- `fair_prob`
+- `extra_juice`
 
-# 🎯 Bottom Line
+The interpolation is based on the raw model probability for that side.
 
-The best approach is:
+## Step 3 - Apply the signed adjustment
 
-**Fair model → league/side band adjustment → re-normalize → convert → compare**
+Current code uses:
 
+`p_raw_adjusted = p_model + extra_juice`
 
+This is the canonical implementation.
+
+`extra_juice` is a signed value:
+
+- positive values increase the side before renormalization;
+- negative values decrease the side before renormalization.
+
+Do not automatically subtract the stored value.
+
+## Step 4 - Renormalize 1X2
+
+After all three side-specific adjustments:
+
+`total = p_home_raw_adjusted + p_draw_raw_adjusted + p_away_raw_adjusted`
+
+Then:
+
+`p_home_adjusted = p_home_raw_adjusted / total`
+
+`p_draw_adjusted = p_draw_raw_adjusted / total`
+
+`p_away_adjusted = p_away_raw_adjusted / total`
+
+The resulting three diagnostic probabilities must sum to approximately 1.
+
+## Step 5 - Diagnostic output only
+
+The adjusted values are retained as legacy diagnostic `juiced_*` fields.
+
+They are not used as the authoritative production probability source.
+
+Production pricing uses the exact-xG Dixon-Coles engine in `apply_juice.py`.
+
+## Historical calibration provenance
+
+The `3way_juice.csv` values were derived from approximately 20 years of historical data during prior analysis.
+
+The original source dataset and generation calculations were not retained.
+
+As a result, the current legacy calibration tables cannot be independently reproduced or reverified from repository artifacts alone.
+
+They should be treated as retained historical calibration inputs unless and until the original source/calculation trail is recovered.
+
+## Canonical distinction
+
+Legacy diagnostic path:
+
+`raw model probability -> signed extra_juice adjustment -> renormalize -> juiced_* diagnostic fields`
+
+Production pricing path:
+
+`exact home_xg + exact away_xg + league rho -> runtime Dixon-Coles -> engine_* probabilities -> fair decimal odds`
+
+The production path is authoritative.

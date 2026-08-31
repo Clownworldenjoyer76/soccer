@@ -2,20 +2,36 @@
 
 ## Scope
 
-This document defines the mathematics represented by the six files:
-
-- `epl/dc_soccer_pricing_engine.csv`
-- `bundesliga/dc_soccer_pricing_engine.csv`
-- `la_liga/dc_soccer_pricing_engine.csv`
-- `ligue1/dc_soccer_pricing_engine.csv`
-- `mls/dc_soccer_pricing_engine.csv`
-- `serie_a/dc_soccer_pricing_engine.csv`
-
-Consumer:
+This document defines the current production Dixon-Coles pricing methodology used by:
 
 - `docs/win/soccer/scripts/02_juice/apply_juice.py`
 
-The original source/generator that produced the engine CSVs is not available in the current repository and its external location is unknown. The calculation methodology is therefore documented here so the stored model is explicit and reproducible.
+League configuration is read from:
+
+- `docs/win/soccer/config/juice/epl/dc_soccer_pricing_engine.csv`
+- `docs/win/soccer/config/juice/bundesliga/dc_soccer_pricing_engine.csv`
+- `docs/win/soccer/config/juice/la_liga/dc_soccer_pricing_engine.csv`
+- `docs/win/soccer/config/juice/ligue1/dc_soccer_pricing_engine.csv`
+- `docs/win/soccer/config/juice/mls/dc_soccer_pricing_engine.csv`
+- `docs/win/soccer/config/juice/serie_a/dc_soccer_pricing_engine.csv`
+
+The original source/generator that produced the historical engine CSV grids is not available in the current repository and its external location is unknown.
+
+Production pricing no longer uses nearest-neighbor lookup against those stored grids. `apply_juice.py` reads the league `rho` value from the engine CSV and calculates Dixon-Coles probabilities directly at runtime from each match's exact `home_xg` and `away_xg`.
+
+## Production authority
+
+`apply_juice.py` is the single production pricing authority.
+
+For production probability and fair-odds fields:
+
+1. Exact match xG values are validated.
+2. The league `rho` value is loaded from `dc_soccer_pricing_engine.csv`.
+3. Dixon-Coles probabilities are calculated at runtime from the exact xG values.
+4. Fair decimal odds are calculated as the reciprocal of those probabilities.
+5. Runtime mathematical invariants are validated before output.
+
+No nearest-neighbor xG approximation is used for production pricing.
 
 ## Base model
 
@@ -29,7 +45,7 @@ where:
 
 ## Dixon-Coles rho correction
 
-The engine uses the standard Dixon-Coles low-score adjustment with the row's stored `rho`.
+The runtime engine uses the standard Dixon-Coles low-score adjustment with the league's stored `rho`.
 
 For a score `(x,y)`, multiply the independent-Poisson probability by `tau(x,y)`:
 
@@ -43,7 +59,7 @@ Thus:
 
 `P_DC(x,y) = P_Poisson(x,y) * tau(x,y)`
 
-The current engine rows use `rho = -0.1`.
+The resulting score-grid probability mass is normalized before market probabilities are returned.
 
 ## Equivalent market-level correction
 
@@ -70,62 +86,50 @@ The net probability change across those cells is zero, and all four scores are U
 - Over/Under 2.5
 - Over/Under 3.5
 
-The existing totals probabilities remain valid when rho is applied.
-
 ## Fair odds
 
-Fair decimal odds are the reciprocal of the corrected probability:
+Fair decimal odds are calculated directly from the runtime corrected probability:
 
 `fair_decimal = 1 / probability`
 
 Accordingly:
 
-- `home_win_fair_odds` must correspond to corrected `home_win`
-- `draw_fair_odds` must correspond to corrected `draw`
-- `away_win_fair_odds` must correspond to corrected `away_win`
-- `btts_yes_fair_odds` must correspond to corrected `btts_yes`
-- `btts_no_fair_odds` must correspond to corrected `btts_no`
+- `engine_home_fair_decimal` corresponds to runtime `engine_home_prob`
+- `engine_draw_fair_decimal` corresponds to runtime `engine_draw_prob`
+- `engine_away_fair_decimal` corresponds to runtime `engine_away_prob`
+- totals and BTTS fair decimal fields likewise correspond to their runtime engine probabilities
 
-## Consumer behavior
+## Runtime validation
 
-`apply_juice.py` does not calculate Dixon-Coles probabilities at runtime. It selects the nearest engine row in `(lambda_home, lambda_away)` space and copies the precomputed market probabilities and fair odds from the CSV.
+Production pricing validates, at minimum:
 
-Therefore `rho` must already have been applied when the engine CSV is generated.
+1. Required xG inputs are present, numeric, finite, and non-negative.
+2. `expected_total_goals` agrees with `home_xg + away_xg` within configured tolerance.
+3. Home + Draw + Away sums to approximately 1.
+4. Over 2.5 + Under 2.5 sums to approximately 1.
+5. Over 3.5 + Under 3.5 sums to approximately 1.
+6. BTTS Yes + BTTS No sums to approximately 1.
+7. Every probability is finite and between 0 and 1.
+8. Fair decimal odds equal `1 / probability` within numerical tolerance.
+9. Swapping home and away xG swaps home/away win probabilities while preserving symmetric markets within tolerance.
 
-## Verification performed
+Invalid rows cannot silently enter production pricing.
 
-The engine audit found:
+## Historical engine-grid status
 
-- EPL, Bundesliga, La Liga, and Ligue 1 previously stored `rho = -0.1` while their market probabilities reproduced independent Poisson.
-- MLS and Serie A already reflected the Dixon-Coles rho correction.
-- EPL, Bundesliga, La Liga, and Ligue 1 were corrected so the stored probabilities now reflect `rho = -0.1`.
-- MLS and Serie A were left unchanged with respect to rho because they already applied it.
+The `dc_soccer_pricing_engine.csv` files are retained as league configuration/history, but current production pricing does not copy their precomputed probability rows.
 
-After regeneration/correction, a non-zero rho measurably changes the affected 1X2 and BTTS probabilities.
+The current runtime consumer uses the league `rho` value from those files and prices the exact xG pair itself.
 
-Example validation for Liverpool vs Nottingham Forest:
+Because the original generator/source for the historical grids was not retained, those historical grids cannot be independently regenerated from repository artifacts alone.
 
-Before rho correction:
+## Legacy 3-way juice is separate
 
-- Home: `0.5748337181`
-- Draw: `0.2136001194`
-- Away: `0.2115165389`
+The league `3way_juice.csv` files are not the production Dixon-Coles probability source.
 
-After rho correction:
+They are still used by `apply_juice.py` to create legacy diagnostic 1X2 adjustment fields. Those diagnostic fields are separate from the authoritative `engine_*` production probabilities and fair odds.
 
-- Home: `0.5650397249`
-- Draw: `0.2331881057`
-- Away: `0.2017225457`
+See:
 
-This confirms that the stored model now behaves as Dixon-Coles rather than independent Poisson for the rho-sensitive markets.
-
-## Invariants
-
-Future engine generation must satisfy all of the following:
-
-1. Changing a non-zero `rho` changes the affected low-score probabilities.
-2. Changing `rho` changes 1X2 and BTTS probabilities when lambdas are positive.
-3. Home + Draw + Away remains approximately 1.0, subject only to any existing score-grid tail truncation.
-4. Fair odds remain the reciprocal of their labeled probabilities.
-5. Swapping `lambda_home` and `lambda_away` swaps home/away win probabilities while leaving draw unchanged within numerical tolerance.
-6. The `rho` column must not be retained if the engine is ever changed back to independent Poisson.
+- `docs/win/soccer/config/juice/Explanation.txt`
+- `docs/win/soccer/config/juice/method.txt`
