@@ -1,5 +1,14 @@
 #!/usr/bin/env python3
 # docs/win/soccer/scripts/01_merge/merge_intake.py
+#
+# PRODUCTION PRICING PATH
+# -----------------------
+# This stage only merges normalized prediction inputs with sportsbook prices.
+# It does not calculate production model probabilities or fair odds.
+# Raw home_prob/draw_prob/away_prob values are preserved as upstream model
+# inputs/audit fields. The authoritative production pricing calculation occurs
+# exactly once in scripts/02_juice/apply_juice.py from validated xG inputs.
+# scripts/03_edges/build_edges.py then consumes that engine output only.
 
 import csv
 import traceback

@@ -1,5 +1,17 @@
 #!/usr/bin/env python3
 # docs/win/soccer/scripts/02_juice/apply_juice.py
+#
+# PRODUCTION PRICING AUTHORITY
+# ----------------------------
+# This is the single production source for soccer model probabilities and fair
+# decimal prices. Stage 1 only merges raw prediction/xG inputs with book odds.
+# This stage validates xG, runs the Dixon-Coles pricing engine, and writes the
+# authoritative engine_* probability fields and corresponding fair decimals.
+# Stage 3 must consume these engine outputs and must not independently choose or
+# recalculate an alternative model-probability/fair-odds source.
+#
+# The legacy adjusted/juiced 1X2 fields produced here are retained as diagnostic
+# output only. They are not an authoritative production pricing source.
 
 import math
 import traceback

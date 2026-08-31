@@ -1,5 +1,18 @@
 #!/usr/bin/env python3
 # docs/win/soccer/scripts/03_edges/build_edges.py
+#
+# PRODUCTION PRICING CONSUMER
+# ---------------------------
+# Stage 2 (scripts/02_juice/apply_juice.py) is the single authoritative source
+# for production model probabilities and fair decimal prices.
+#
+# This stage does not choose between raw/adjusted/engine probability paths and
+# does not rebuild fair prices from probabilities. It consumes only the
+# authoritative engine_* probabilities/fair decimals written by apply_juice.py,
+# then derives EV/Kelly and edge outputs from sportsbook odds.
+#
+# For totals and BTTS, fair_odds = 1 / p makes edge mathematically identical to
+# EV, so edge is retained only as an explicit compatibility alias of EV.
 
 import math
 import traceback
@@ -28,14 +41,27 @@ MATCH_ODDS_SOURCE_KEYS = (
     "edge",
     "selection_filter",
 )
-SUPPORTED_MATCH_ODDS_SOURCES = {"raw", "adjusted", "engine"}
 
+AUTHORITATIVE_MATCH_ODDS_SOURCE = "engine"
 REDUNDANT_SIGNAL_RELATION = "alias_of_ev"
 
+FAIR_DECIMAL_REL_TOLERANCE = 1e-9
+FAIR_DECIMAL_ABS_TOLERANCE = 1e-12
+
 EDGE_COLUMNS_BY_MARKET = {
-    "match_odds": ["home_edge", "draw_edge", "away_edge"],
-    "total": ["over_edge", "under_edge"],
-    "btts": ["yes_edge", "no_edge"],
+    "match_odds": [
+        "home_edge",
+        "draw_edge",
+        "away_edge",
+    ],
+    "total": [
+        "over_edge",
+        "under_edge",
+    ],
+    "btts": [
+        "yes_edge",
+        "no_edge",
+    ],
 }
 
 
@@ -48,11 +74,22 @@ def _now():
 
 
 def _log(msg: str, level: str = "INFO"):
-    with open(LOG_FILE, "a", encoding="utf-8") as f:
-        f.write(f"{_now()} | {level:<5} | {msg.rstrip()}\n")
+    with open(
+        LOG_FILE,
+        "a",
+        encoding="utf-8",
+    ) as f:
+        f.write(
+            f"{_now()} | "
+            f"{level:<5} | "
+            f"{msg.rstrip()}\n"
+        )
 
 
-def _write_summary(summary: dict, per_file: list) -> None:
+def _write_summary(
+    summary: dict,
+    per_file: list,
+) -> None:
     lines = [
         "",
         "=" * 60,
@@ -65,40 +102,80 @@ def _write_summary(summary: dict, per_file: list) -> None:
         f"  null_edges     : {summary['null_edges']}",
         f"  errors         : {summary['errors']}",
         "",
-        f"  {'file':<50} {'market':<12} {'rows':>5} {'null_edges':>10} {'status':>10}",
+        f"  {'file':<50} {'market':<12} {'rows':>5} "
+        f"{'null_edges':>10} {'status':>10}",
     ]
 
     for pf in per_file:
         lines.append(
-            f"  {pf['name']:<50} {pf['market']:<12} {pf['rows']:>5} "
-            f"{pf['null_edges']:>10} {pf['status']:>10}"
+            f"  {pf['name']:<50} "
+            f"{pf['market']:<12} "
+            f"{pf['rows']:>5} "
+            f"{pf['null_edges']:>10} "
+            f"{pf['status']:>10}"
         )
 
-    status = "SUCCESS" if summary["errors"] == 0 else "COMPLETED WITH ERRORS"
-    lines += ["", f"STATUS: {status}", "=" * 60]
+    status = (
+        "SUCCESS"
+        if summary["errors"] == 0
+        else "COMPLETED WITH ERRORS"
+    )
 
-    with open(LOG_FILE, "a", encoding="utf-8") as f:
-        f.write("\n".join(lines) + "\n")
+    lines += [
+        "",
+        f"STATUS: {status}",
+        "=" * 60,
+    ]
+
+    with open(
+        LOG_FILE,
+        "a",
+        encoding="utf-8",
+    ) as f:
+        f.write(
+            "\n".join(lines)
+            + "\n"
+        )
 
 
 # =========================
-# CONFIG
+# CONFIG / AUTHORITY CHECK
 # =========================
 
-def load_match_odds_probability_sources() -> dict[str, str]:
-    with open(CONFIG_PATH, "r", encoding="utf-8") as f:
+def validate_engine_only_probability_config() -> None:
+    """
+    markets.yaml still carries provenance configuration used by the selection
+    stage. Production pricing is no longer switchable here: every configured
+    1X2 source must remain 'engine'. Any attempt to restore raw/adjusted pricing
+    fails fast instead of creating a competing live calculation path.
+    """
+
+    with open(
+        CONFIG_PATH,
+        "r",
+        encoding="utf-8",
+    ) as f:
         data = yaml.safe_load(f)
 
     try:
-        config = data["probability_sources"]["soccer"]["match_odds"]
+        config = (
+            data["probability_sources"]
+            ["soccer"]
+            ["match_odds"]
+        )
     except (TypeError, KeyError) as e:
         raise ValueError(
-            "markets.yaml missing probability_sources.soccer.match_odds"
+            "markets.yaml missing "
+            "probability_sources.soccer.match_odds"
         ) from e
 
-    if not isinstance(config, dict):
+    if not isinstance(
+        config,
+        dict,
+    ):
         raise ValueError(
-            "probability_sources.soccer.match_odds must be a mapping"
+            "probability_sources.soccer.match_odds "
+            "must be a mapping"
         )
 
     missing = [
@@ -109,26 +186,29 @@ def load_match_odds_probability_sources() -> dict[str, str]:
 
     if missing:
         raise ValueError(
-            f"probability_sources.soccer.match_odds missing keys: {missing}"
+            "probability_sources.soccer.match_odds "
+            f"missing keys: {missing}"
         )
 
-    normalized = {}
+    non_engine = {}
 
     for key in MATCH_ODDS_SOURCE_KEYS:
-        source = str(config[key]).strip().lower()
+        source = str(
+            config[key]
+        ).strip().lower()
 
-        if source not in SUPPORTED_MATCH_ODDS_SOURCES:
-            raise ValueError(
-                f"Unsupported 1X2 probability source for {key}: {source!r}. "
-                f"Supported: {sorted(SUPPORTED_MATCH_ODDS_SOURCES)}"
-            )
+        if (
+            source
+            != AUTHORITATIVE_MATCH_ODDS_SOURCE
+        ):
+            non_engine[key] = source
 
-        normalized[key] = source
-
-    return normalized
-
-
-MATCH_ODDS_PROBABILITY_SOURCES = load_match_odds_probability_sources()
+    if non_engine:
+        raise ValueError(
+            "Competing 1X2 pricing sources are disabled. "
+            "apply_juice.py engine output is authoritative; "
+            f"non-engine settings found: {non_engine}"
+        )
 
 
 # =========================
@@ -141,7 +221,11 @@ def _finite_float(value) -> float | None:
 
     try:
         number = float(value)
-    except (TypeError, ValueError, OverflowError):
+    except (
+        TypeError,
+        ValueError,
+        OverflowError,
+    ):
         return None
 
     if not math.isfinite(number):
@@ -151,19 +235,27 @@ def _finite_float(value) -> float | None:
 
 
 def _valid_probability(value) -> float | None:
-    probability = _finite_float(value)
+    probability = _finite_float(
+        value
+    )
 
     if probability is None:
         return None
 
-    if not 0.0 <= probability <= 1.0:
+    if not (
+        0.0
+        <= probability
+        <= 1.0
+    ):
         return None
 
     return probability
 
 
 def _valid_decimal_odds(value) -> float | None:
-    odds = _finite_float(value)
+    odds = _finite_float(
+        value
+    )
 
     if odds is None:
         return None
@@ -174,9 +266,14 @@ def _valid_decimal_odds(value) -> float | None:
     return odds
 
 
-def _first_valid_decimal(row: dict, *columns: str) -> float | None:
+def _first_valid_decimal(
+    row: dict,
+    *columns: str,
+) -> float | None:
     for column in columns:
-        odds = _valid_decimal_odds(row.get(column))
+        odds = _valid_decimal_odds(
+            row.get(column)
+        )
 
         if odds is not None:
             return odds
@@ -185,11 +282,21 @@ def _first_valid_decimal(row: dict, *columns: str) -> float | None:
 
 
 def _is_missing_or_nonfinite(value) -> bool:
-    return _finite_float(value) is None
+    return (
+        _finite_float(value)
+        is None
+    )
 
 
-def _count_null_edges(out: pd.DataFrame, market: str) -> int:
-    edge_columns = EDGE_COLUMNS_BY_MARKET[market]
+def _count_null_edges(
+    out: pd.DataFrame,
+    market: str,
+) -> int:
+    edge_columns = (
+        EDGE_COLUMNS_BY_MARKET[
+            market
+        ]
+    )
 
     missing_columns = [
         col
@@ -199,7 +306,8 @@ def _count_null_edges(out: pd.DataFrame, market: str) -> int:
 
     if missing_columns:
         raise ValueError(
-            f"Missing expected edge output columns for market={market}: "
+            "Missing expected edge output columns "
+            f"for market={market}: "
             f"{missing_columns}"
         )
 
@@ -207,24 +315,131 @@ def _count_null_edges(out: pd.DataFrame, market: str) -> int:
 
     for column in edge_columns:
         null_edges += int(
-            out[column].map(_is_missing_or_nonfinite).sum()
+            out[column]
+            .map(
+                _is_missing_or_nonfinite
+            )
+            .sum()
         )
 
     return null_edges
+
+
+def _engine_probability_column(
+    side: str,
+) -> str:
+    return (
+        f"engine_{side}_prob"
+    )
+
+
+def _engine_fair_decimal_column(
+    side: str,
+) -> str:
+    return (
+        f"engine_{side}_fair_decimal"
+    )
+
+
+def _validated_engine_price_pair(
+    row: dict,
+    side: str,
+) -> tuple[
+    float | None,
+    float | None,
+    str,
+    str,
+]:
+    probability_column = (
+        _engine_probability_column(
+            side
+        )
+    )
+
+    fair_decimal_column = (
+        _engine_fair_decimal_column(
+            side
+        )
+    )
+
+    probability = _valid_probability(
+        row.get(
+            probability_column
+        )
+    )
+
+    fair_decimal = _valid_decimal_odds(
+        row.get(
+            fair_decimal_column
+        )
+    )
+
+    if (
+        probability is None
+        or probability <= 0.0
+        or fair_decimal is None
+    ):
+        return (
+            probability,
+            None,
+            probability_column,
+            fair_decimal_column,
+        )
+
+    expected_decimal = (
+        1.0 / probability
+    )
+
+    if not math.isclose(
+        fair_decimal,
+        expected_decimal,
+        rel_tol=(
+            FAIR_DECIMAL_REL_TOLERANCE
+        ),
+        abs_tol=(
+            FAIR_DECIMAL_ABS_TOLERANCE
+        ),
+    ):
+        return (
+            probability,
+            None,
+            probability_column,
+            fair_decimal_column,
+        )
+
+    return (
+        probability,
+        fair_decimal,
+        probability_column,
+        fair_decimal_column,
+    )
 
 
 # =========================
 # CORE CALCS
 # =========================
 
-def calc_edge(book_odds, fair_odds):
-    book = _valid_decimal_odds(book_odds)
-    fair = _valid_decimal_odds(fair_odds)
+def calc_edge(
+    book_odds,
+    fair_odds,
+):
+    book = _valid_decimal_odds(
+        book_odds
+    )
 
-    if book is None or fair is None:
+    fair = _valid_decimal_odds(
+        fair_odds
+    )
+
+    if (
+        book is None
+        or fair is None
+    ):
         return None
 
-    edge = (book / fair) - 1.0
+    edge = (
+        book / fair
+    ) - 1.0
 
     if not math.isfinite(edge):
         return None
@@ -232,16 +447,32 @@ def calc_edge(book_odds, fair_odds):
     return edge
 
 
-def calc_ev(p, odds):
-    probability = _valid_probability(p)
-    decimal_odds = _valid_decimal_odds(odds)
+def calc_ev(
+    p,
+    odds,
+):
+    probability = _valid_probability(
+        p
+    )
 
-    if probability is None or decimal_odds is None:
+    decimal_odds = _valid_decimal_odds(
+        odds
+    )
+
+    if (
+        probability is None
+        or decimal_odds is None
+    ):
         return None
 
     ev = (
-        probability * (decimal_odds - 1.0)
-    ) - (1.0 - probability)
+        probability
+        * (
+            decimal_odds - 1.0
+        )
+    ) - (
+        1.0 - probability
+    )
 
     if not math.isfinite(ev):
         return None
@@ -249,67 +480,40 @@ def calc_ev(p, odds):
     return ev
 
 
-def calc_kelly(p, odds):
-    probability = _valid_probability(p)
-    decimal_odds = _valid_decimal_odds(odds)
+def calc_kelly(
+    p,
+    odds,
+):
+    probability = _valid_probability(
+        p
+    )
 
-    if probability is None or decimal_odds is None:
+    decimal_odds = _valid_decimal_odds(
+        odds
+    )
+
+    if (
+        probability is None
+        or decimal_odds is None
+    ):
         return None
 
     kelly = (
-        (probability * decimal_odds) - 1.0
-    ) / (decimal_odds - 1.0)
+        (
+            probability
+            * decimal_odds
+        )
+        - 1.0
+    ) / (
+        decimal_odds - 1.0
+    )
 
     if not math.isfinite(kelly):
         return None
 
-    return max(0.0, kelly)
-
-
-def _probability_column(side: str, source: str) -> str:
-    if source == "raw":
-        return f"{side}_prob"
-
-    if source == "adjusted":
-        return f"juiced_{side}_prob"
-
-    if source == "engine":
-        return f"engine_{side}_prob"
-
-    raise ValueError(
-        f"Unsupported probability source: {source!r}"
-    )
-
-
-def _probability_value(
-    row: dict,
-    side: str,
-    source: str,
-) -> tuple[float | None, str]:
-    column = _probability_column(
-        side,
-        source,
-    )
-
-    return _valid_probability(
-        row.get(column)
-    ), column
-
-
-def _fair_decimal_from_prob(
-    probability,
-) -> float | None:
-    p = _valid_probability(
-        probability
-    )
-
-    if p is None or p <= 0.0:
-        return None
-
-    fair_odds = 1.0 / p
-
-    return _valid_decimal_odds(
-        fair_odds
+    return max(
+        0.0,
+        kelly,
     )
 
 
@@ -317,103 +521,113 @@ def _fair_decimal_from_prob(
 # MARKET PROCESSORS
 # =========================
 
-def process_match(df) -> pd.DataFrame:
+def process_match(
+    df: pd.DataFrame,
+) -> pd.DataFrame:
     rows = []
 
     for _, r in df.iterrows():
         row = r.to_dict()
 
-        for side in [
+        for side in (
             "home",
             "draw",
             "away",
-        ]:
+        ):
             book = _valid_decimal_odds(
                 row.get(
                     f"dk_{side}_decimal"
                 )
             )
 
-            ev_prob, ev_source_column = _probability_value(
+            (
+                engine_prob,
+                engine_fair_decimal,
+                probability_column,
+                fair_decimal_column,
+            ) = _validated_engine_price_pair(
                 row,
                 side,
-                MATCH_ODDS_PROBABILITY_SOURCES["ev"],
-            )
-
-            kelly_prob, kelly_source_column = _probability_value(
-                row,
-                side,
-                MATCH_ODDS_PROBABILITY_SOURCES["kelly"],
-            )
-
-            fair_prob, fair_source_column = _probability_value(
-                row,
-                side,
-                MATCH_ODDS_PROBABILITY_SOURCES["fair_odds"],
-            )
-
-            edge_prob, edge_source_column = _probability_value(
-                row,
-                side,
-                MATCH_ODDS_PROBABILITY_SOURCES["edge"],
-            )
-
-            selection_prob, selection_source_column = _probability_value(
-                row,
-                side,
-                MATCH_ODDS_PROBABILITY_SOURCES["selection_filter"],
-            )
-
-            fair_decimal = _fair_decimal_from_prob(
-                fair_prob
-            )
-
-            edge_fair_decimal = _fair_decimal_from_prob(
-                edge_prob
             )
 
             edge = calc_edge(
                 book,
-                edge_fair_decimal,
+                engine_fair_decimal,
             )
 
             ev = calc_ev(
-                ev_prob,
+                engine_prob,
                 book,
             )
 
             kelly = calc_kelly(
-                kelly_prob,
+                engine_prob,
                 book,
             )
 
-            row[f"{side}_ev_prob"] = ev_prob
-            row[f"{side}_ev_prob_source"] = ev_source_column
+            # Compatibility/provenance columns consumed by stage 4.
+            # All point to the same authoritative engine probability.
+            row[
+                f"{side}_ev_prob"
+            ] = engine_prob
+            row[
+                f"{side}_ev_prob_source"
+            ] = probability_column
 
-            row[f"{side}_kelly_prob"] = kelly_prob
-            row[f"{side}_kelly_prob_source"] = kelly_source_column
+            row[
+                f"{side}_kelly_prob"
+            ] = engine_prob
+            row[
+                f"{side}_kelly_prob_source"
+            ] = probability_column
 
-            row[f"{side}_fair_odds_prob"] = fair_prob
-            row[f"{side}_fair_odds_prob_source"] = fair_source_column
-            row[f"{side}_fair_decimal"] = fair_decimal
+            row[
+                f"{side}_fair_odds_prob"
+            ] = engine_prob
+            row[
+                f"{side}_fair_odds_prob_source"
+            ] = probability_column
+            row[
+                f"{side}_fair_decimal"
+            ] = engine_fair_decimal
 
-            row[f"{side}_edge_prob"] = edge_prob
-            row[f"{side}_edge_prob_source"] = edge_source_column
-            row[f"{side}_edge_fair_decimal"] = edge_fair_decimal
+            row[
+                f"{side}_edge_prob"
+            ] = engine_prob
+            row[
+                f"{side}_edge_prob_source"
+            ] = probability_column
+            row[
+                f"{side}_edge_fair_decimal"
+            ] = engine_fair_decimal
 
-            row[f"{side}_selection_prob"] = selection_prob
-            row[f"{side}_selection_prob_source"] = selection_source_column
+            row[
+                f"{side}_selection_prob"
+            ] = engine_prob
+            row[
+                f"{side}_selection_prob_source"
+            ] = probability_column
 
-            row[f"{side}_edge"] = edge
-            row[f"{side}_ev"] = ev
-            row[f"{side}_kelly"] = kelly
+            row[
+                f"{side}_edge"
+            ] = edge
+            row[
+                f"{side}_ev"
+            ] = ev
+            row[
+                f"{side}_kelly"
+            ] = kelly
 
         rows.append(row)
 
-    return pd.DataFrame(rows)
+    return pd.DataFrame(
+        rows
+    )
 
 
-def process_totals(df) -> pd.DataFrame:
+def process_totals(
+    df: pd.DataFrame,
+) -> pd.DataFrame:
     """
     Totals edge and EV are the same mathematical signal because:
 
@@ -422,9 +636,9 @@ def process_totals(df) -> pd.DataFrame:
              = p * book_odds - 1
              = EV
 
-    EV is therefore calculated once and edge is written as an explicit
-    compatibility alias. edge must not be treated as independent confirmation.
+    EV is calculated once and edge is written as a compatibility alias.
     """
+
     rows = []
 
     for _, r in df.iterrows():
@@ -466,7 +680,9 @@ def process_totals(df) -> pd.DataFrame:
 
         row["over_ev"] = over_ev
         row["over_edge"] = over_ev
-        row["over_edge_relation"] = REDUNDANT_SIGNAL_RELATION
+        row[
+            "over_edge_relation"
+        ] = REDUNDANT_SIGNAL_RELATION
         row["over_kelly"] = calc_kelly(
             p_over,
             book_over,
@@ -474,7 +690,9 @@ def process_totals(df) -> pd.DataFrame:
 
         row["under_ev"] = under_ev
         row["under_edge"] = under_ev
-        row["under_edge_relation"] = REDUNDANT_SIGNAL_RELATION
+        row[
+            "under_edge_relation"
+        ] = REDUNDANT_SIGNAL_RELATION
         row["under_kelly"] = calc_kelly(
             p_under,
             book_under,
@@ -482,10 +700,14 @@ def process_totals(df) -> pd.DataFrame:
 
         rows.append(row)
 
-    return pd.DataFrame(rows)
+    return pd.DataFrame(
+        rows
+    )
 
 
-def process_btts(df) -> pd.DataFrame:
+def process_btts(
+    df: pd.DataFrame,
+) -> pd.DataFrame:
     """
     BTTS edge and EV are the same mathematical signal because:
 
@@ -494,9 +716,9 @@ def process_btts(df) -> pd.DataFrame:
              = p * book_odds - 1
              = EV
 
-    EV is therefore calculated once and edge is written as an explicit
-    compatibility alias. edge must not be treated as independent confirmation.
+    EV is calculated once and edge is written as a compatibility alias.
     """
+
     rows = []
 
     for _, r in df.iterrows():
@@ -538,7 +760,9 @@ def process_btts(df) -> pd.DataFrame:
 
         row["yes_ev"] = yes_ev
         row["yes_edge"] = yes_ev
-        row["yes_edge_relation"] = REDUNDANT_SIGNAL_RELATION
+        row[
+            "yes_edge_relation"
+        ] = REDUNDANT_SIGNAL_RELATION
         row["yes_kelly"] = calc_kelly(
             p_yes,
             book_yes,
@@ -546,7 +770,9 @@ def process_btts(df) -> pd.DataFrame:
 
         row["no_ev"] = no_ev
         row["no_edge"] = no_ev
-        row["no_edge_relation"] = REDUNDANT_SIGNAL_RELATION
+        row[
+            "no_edge_relation"
+        ] = REDUNDANT_SIGNAL_RELATION
         row["no_kelly"] = calc_kelly(
             p_no,
             book_no,
@@ -554,7 +780,9 @@ def process_btts(df) -> pd.DataFrame:
 
         rows.append(row)
 
-    return pd.DataFrame(rows)
+    return pd.DataFrame(
+        rows
+    )
 
 
 # =========================
@@ -594,12 +822,12 @@ def main():
         f"CONFIG    : {CONFIG_PATH}"
     )
 
+    validate_engine_only_probability_config()
+
     _log(
-        "MATCH_ODDS PROBABILITY SOURCES | "
-        + " | ".join(
-            f"{key}={MATCH_ODDS_PROBABILITY_SOURCES[key]}"
-            for key in MATCH_ODDS_SOURCE_KEYS
-        )
+        "MATCH_ODDS PRODUCTION SOURCE | "
+        "ev=engine | kelly=engine | fair_odds=engine | "
+        "edge=engine | selection_filter=engine"
     )
 
     _log(
@@ -609,7 +837,9 @@ def main():
     )
 
     input_files = sorted(
-        INPUT_DIR.glob("*.csv")
+        INPUT_DIR.glob(
+            "*.csv"
+        )
     )
 
     _log(
@@ -657,7 +887,9 @@ def main():
         )
 
         try:
-            df = pd.read_csv(file)
+            df = pd.read_csv(
+                file
+            )
 
             if df.empty:
                 _log(
@@ -674,13 +906,19 @@ def main():
             summary["total_rows"] += len(df)
 
             if market == "match_odds":
-                out = process_match(df)
+                out = process_match(
+                    df
+                )
 
             elif market == "total":
-                out = process_totals(df)
+                out = process_totals(
+                    df
+                )
 
             else:
-                out = process_btts(df)
+                out = process_btts(
+                    df
+                )
 
             null_edges = _count_null_edges(
                 out,
@@ -693,22 +931,28 @@ def main():
             if null_edges > 0:
                 _log(
                     f"{name} | {null_edges} null/invalid edge calculations "
-                    f"in written edge columns",
+                    "in written edge columns",
                     "WARN",
                 )
 
-            out_path = OUTPUT_DIR / name
+            out_path = (
+                OUTPUT_DIR
+                / name
+            )
 
             out.to_csv(
                 out_path,
                 index=False,
             )
 
-            summary["files_written"] += 1
+            summary[
+                "files_written"
+            ] += 1
 
             _log(
                 f"WROTE: {out_path} "
-                f"({len(out)} rows, {null_edges} null edges)"
+                f"({len(out)} rows, "
+                f"{null_edges} null edges)"
             )
 
         except Exception as e:
@@ -728,7 +972,9 @@ def main():
         per_file,
     )
 
-    print("edges complete.")
+    print(
+        "edges complete."
+    )
 
 
 if __name__ == "__main__":
