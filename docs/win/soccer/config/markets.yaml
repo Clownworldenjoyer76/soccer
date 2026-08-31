@@ -7,6 +7,19 @@ probability_sources:
       edge: engine
       selection_filter: engine
 
+# Fixed chronological split for threshold tuning/evaluation.
+#
+# Threshold bands in this file may be tuned only from matches inside:
+#   tuning_start through tuning_end
+#
+# Matches on/after evaluation_start are out-of-sample evaluation matches.
+# They must not be used to choose or modify threshold bands.
+backtest_policy:
+  soccer:
+    tuning_start: "2026_04_06"
+    tuning_end: "2026_08_30"
+    evaluation_start: "2026_08_31"
+
 # For BTTS and totals, fair_odds = 1 / model_probability.
 # Therefore edge = book_odds / fair_odds - 1 = EV.
 # edge is retained as an output compatibility alias only.
@@ -26,7 +39,7 @@ signal_relationships:
 
 markets:
   soccer:
-  
+
 ########################################################################################################################
 ## bundesliga
 ########################################################################################################################
