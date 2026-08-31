@@ -1,4 +1,4 @@
-sport,league,game_id,match_date,match_time,home_team,away_team,home_prob,draw_prob,away_prob,home_xg,away_xg,expected_total_goals
-soccer,laliga,401882916,2026_08_22,11:00 AM,Athletic Club,Sevilla,0.713,0.184,0.102,2.12,0.66,2.78
-soccer,laliga,401882907,2026_08_22,01:30 PM,Valencia,Celta Vigo,0.398,0.276,0.325,1.27,1.12,2.39
-soccer,laliga,401882912,2026_08_22,03:30 PM,Espanyol,Real Madrid,0.142,0.2,0.658,0.83,2.06,2.89
+sport,league,game_id,match_date,match_time,home_team,away_team,home_prob,draw_prob,away_prob,home_xg,away_xg,expected_total_goals,identity_status,identity_reason,identity_detail
+soccer,laliga,401882916,2026_08_22,11:00 AM,Athletic Club,Sevilla,0.713,0.184,0.102,2.12,0.66,2.78,matched,matched_game_id,
+soccer,laliga,401882907,2026_08_22,01:30 PM,Valencia,Celta Vigo,0.398,0.276,0.325,1.27,1.12,2.39,matched,matched_game_id,
+soccer,laliga,401882912,2026_08_22,03:30 PM,Espanyol,Real Madrid,0.142,0.2,0.658,0.83,2.06,2.89,matched,matched_game_id,

@@ -1,4 +1,4 @@
-sport,league,game_id,match_date,match_time,home_team,away_team,home_prob,draw_prob,away_prob,home_xg,away_xg,expected_total_goals
-soccer,ligue1,401876493,2026_08_23,09:00 AM,Angers,Lille,0.311,0.276,0.412,1.08,1.29,2.37
-soccer,ligue1,401876492,2026_08_23,11:15 AM,Le Havre,Monaco,0.093,0.163,0.744,0.71,2.37,3.08
-soccer,ligue1,72036122,2026_08_23,02:45 PM,Paris Saint Germain,Rennes,0.847,0.105,0.049,3.01,0.63,3.64
+sport,league,game_id,match_date,match_time,home_team,away_team,home_prob,draw_prob,away_prob,home_xg,away_xg,expected_total_goals,identity_status,identity_reason,identity_detail
+soccer,ligue1,72036110,2026_08_23,09:00 AM,Angers,Lille,0.311,0.276,0.412,1.08,1.29,2.37,matched,matched_game_id,
+soccer,ligue1,72036112,2026_08_23,11:15 AM,Le Havre,Monaco,0.093,0.163,0.744,0.71,2.37,3.08,matched,matched_game_id,
+soccer,ligue1,72036122,2026_08_23,02:45 PM,Paris Saint Germain,Rennes,0.847,0.105,0.049,3.01,0.63,3.64,matched,matched_game_id,

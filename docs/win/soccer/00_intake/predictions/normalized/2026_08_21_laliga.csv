@@ -1,2 +1,2 @@
-sport,league,game_id,match_date,match_time,home_team,away_team,home_prob,draw_prob,away_prob,home_xg,away_xg,expected_total_goals
-soccer,laliga,401882914,2026_08_21,03:00 PM,Real Betis,Real Sociedad,0.542,0.243,0.215,1.67,0.96,2.63
+sport,league,game_id,match_date,match_time,home_team,away_team,home_prob,draw_prob,away_prob,home_xg,away_xg,expected_total_goals,identity_status,identity_reason,identity_detail
+soccer,laliga,401882914,2026_08_21,03:00 PM,Real Betis,Real Sociedad,0.542,0.243,0.215,1.67,0.96,2.63,matched,matched_game_id,

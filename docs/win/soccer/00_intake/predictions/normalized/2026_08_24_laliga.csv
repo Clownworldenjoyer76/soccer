@@ -1,2 +1,2 @@
-sport,league,game_id,match_date,match_time,home_team,away_team,home_prob,draw_prob,away_prob,home_xg,away_xg,expected_total_goals
-soccer,laliga,401882909,2026_08_24,01:30 PM,Osasuna,Levante,0.531,0.247,0.222,1.63,0.96,2.59
+sport,league,game_id,match_date,match_time,home_team,away_team,home_prob,draw_prob,away_prob,home_xg,away_xg,expected_total_goals,identity_status,identity_reason,identity_detail
+soccer,laliga,401882909,2026_08_24,01:30 PM,Osasuna,Levante,0.531,0.247,0.222,1.63,0.96,2.59,matched,matched_game_id,

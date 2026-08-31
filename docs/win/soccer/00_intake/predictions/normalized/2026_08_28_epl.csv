@@ -1,2 +1,2 @@
-sport,league,game_id,match_date,match_time,home_team,away_team,home_prob,draw_prob,away_prob,home_xg,away_xg,expected_total_goals
-soccer,epl,401879294,2026_08_28,03:00 PM,Crystal Palace,Manchester City,0.28,0.267,0.453,1.05,1.41,2.46
+sport,league,game_id,match_date,match_time,home_team,away_team,home_prob,draw_prob,away_prob,home_xg,away_xg,expected_total_goals,identity_status,identity_reason,identity_detail
+soccer,epl,401879294,2026_08_28,03:00 PM,Crystal Palace,Manchester City,0.28,0.267,0.453,1.05,1.41,2.46,matched,matched_game_id,

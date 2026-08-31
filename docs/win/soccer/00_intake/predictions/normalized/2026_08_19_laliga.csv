@@ -1,2 +1,2 @@
-sport,league,game_id,match_date,match_time,home_team,away_team,home_prob,draw_prob,away_prob,home_xg,away_xg,expected_total_goals
-soccer,laliga,401882925,2026_08_19,03:00 PM,Atletico Madrid,Malaga,0.896,0.086,0.018,2.82,0.25,3.07
+sport,league,game_id,match_date,match_time,home_team,away_team,home_prob,draw_prob,away_prob,home_xg,away_xg,expected_total_goals,identity_status,identity_reason,identity_detail
+soccer,laliga,72478448,2026_08_19,03:00 PM,Atletico Madrid,Malaga,0.896,0.086,0.018,2.82,0.25,3.07,matched,matched_game_id,

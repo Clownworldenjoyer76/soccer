@@ -1,2 +1,2 @@
-sport,league,game_id,match_date,match_time,home_team,away_team,home_prob,draw_prob,away_prob,home_xg,away_xg,expected_total_goals
-soccer,seriea,33676041,2026_04_10,06:45 PM,Roma,Pisa,0.761,0.145,0.094,2.69,0.86,3.55
+sport,league,game_id,match_date,match_time,home_team,away_team,home_prob,draw_prob,away_prob,home_xg,away_xg,expected_total_goals,identity_status,identity_reason,identity_detail
+soccer,seriea,33676041,2026_04_10,06:45 PM,Roma,Pisa,0.761,0.145,0.094,2.69,0.86,3.55,matched,matched_game_id,

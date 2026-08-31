@@ -1,12 +1,12 @@
-sport,league,game_id,match_date,match_time,home_team,away_team,home_prob,draw_prob,away_prob,home_xg,away_xg,expected_total_goals
-soccer,mls,761714,2026_08_15,07:30 PM,Toronto FC,New England Revolution,0.427,0.282,0.291,1.28,1.0,2.28
-soccer,mls,761712,2026_08_15,07:30 PM,Atlanta United,New York Red Bulls,0.472,0.269,0.259,1.41,0.97,2.38
-soccer,mls,761710,2026_08_15,07:30 PM,Charlotte FC,Columbus Crew,0.414,0.263,0.322,1.39,1.19,2.58
-soccer,mls,761713,2026_08_15,07:30 PM,Orlando City,FC Cincinnati,0.406,0.276,0.318,1.29,1.1,2.39
-soccer,mls,761711,2026_08_15,07:30 PM,CF Montreal,DC United,0.42,0.277,0.303,1.3,1.06,2.36
-soccer,mls,761715,2026_08_15,08:30 PM,Houston Dynamo,LA Galaxy,0.553,0.237,0.211,1.74,0.97,2.71
-soccer,mls,761716,2026_08_15,08:30 PM,Nashville SC,Inter Miami,0.41,0.267,0.323,1.35,1.17,2.52
-soccer,mls,761719,2026_08_15,09:30 PM,Real Salt Lake,Minnesota United,0.555,0.24,0.205,1.7,0.93,2.63
-soccer,mls,761718,2026_08_15,09:30 PM,Colorado Rapids,Sporting Kansas City,0.624,0.214,0.161,1.93,0.87,2.8
-soccer,mls,761720,2026_08_15,10:30 PM,Los Angeles FC,San Diego FC,0.583,0.223,0.194,1.87,0.98,2.85
-soccer,mls,761721,2026_08_15,10:30 PM,San Jose Earthquakes,St Louis City,0.456,0.254,0.29,1.52,1.16,2.68
+sport,league,game_id,match_date,match_time,home_team,away_team,home_prob,draw_prob,away_prob,home_xg,away_xg,expected_total_goals,identity_status,identity_reason,identity_detail
+soccer,mls,66299346,2026_08_15,07:30 PM,Toronto FC,New England Revolution,0.427,0.282,0.291,1.28,1.0,2.28,matched,matched_game_id,
+soccer,mls,66299338,2026_08_15,07:30 PM,Atlanta United,New York Red Bulls,0.472,0.269,0.259,1.41,0.97,2.38,matched,matched_game_id,
+soccer,mls,66299340,2026_08_15,07:30 PM,Charlotte FC,Columbus Crew,0.414,0.263,0.322,1.39,1.19,2.58,matched,matched_game_id,
+soccer,mls,66299344,2026_08_15,07:30 PM,Orlando City,FC Cincinnati,0.406,0.276,0.318,1.29,1.1,2.39,matched,matched_game_id,
+soccer,mls,66299342,2026_08_15,07:30 PM,CF Montreal,DC United,0.42,0.277,0.303,1.3,1.06,2.36,matched,matched_game_id,
+soccer,mls,66299350,2026_08_15,08:30 PM,Houston Dynamo,LA Galaxy,0.553,0.237,0.211,1.74,0.97,2.71,matched,matched_game_id,
+soccer,mls,66299352,2026_08_15,08:30 PM,Nashville SC,Inter Miami,0.41,0.267,0.323,1.35,1.17,2.52,matched,matched_game_id,
+soccer,mls,66299356,2026_08_15,09:30 PM,Real Salt Lake,Minnesota United,0.555,0.24,0.205,1.7,0.93,2.63,matched,matched_game_id,
+soccer,mls,66299354,2026_08_15,09:30 PM,Colorado Rapids,Sporting Kansas City,0.624,0.214,0.161,1.93,0.87,2.8,matched,matched_game_id,
+soccer,mls,66299358,2026_08_15,10:30 PM,Los Angeles FC,San Diego FC,0.583,0.223,0.194,1.87,0.98,2.85,matched,matched_game_id,
+soccer,mls,66299360,2026_08_15,10:30 PM,San Jose Earthquakes,St Louis City,0.456,0.254,0.29,1.52,1.16,2.68,matched,matched_game_id,
