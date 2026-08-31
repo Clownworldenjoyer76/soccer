@@ -1,6 +1,6 @@
-bucket,side,Win,Loss,Push,Total,Win_Pct
-+100_to_+149,no,1,2,0,3,0.3333
-+150_to_+199,no,2,2,0,4,0.5
-+200_to_+249,yes,1,0,0,1,1.0
-+250_to_+299,yes,0,1,0,1,0.0
-+300_or_higher,yes,1,1,0,2,0.5
+bucket,side,Win,Loss,Push,Total,Sample_Count,Win_Pct
++100_to_+149,no,1,2,0,3,3,0.3333
++150_to_+199,no,2,2,0,4,4,0.5
++200_to_+249,yes,1,0,0,1,1,1.0
++250_to_+299,yes,0,1,0,1,1,0.0
++300_or_higher,yes,1,1,0,2,2,0.5

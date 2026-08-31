@@ -1,4 +1,4 @@
-bucket,Win,Loss,Push,Total,Win_Pct
-04,5,4,0,9,0.5556
-05,5,4,0,9,0.5556
-08,1,2,0,3,0.3333
+bucket,Win,Loss,Push,Total,Sample_Count,Win_Pct
+04,5,4,0,9,9,0.5556
+05,5,4,0,9,9,0.5556
+08,1,2,0,3,3,0.3333
