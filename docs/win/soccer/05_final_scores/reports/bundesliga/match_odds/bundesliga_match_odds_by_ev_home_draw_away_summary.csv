@@ -1,5 +1,5 @@
-bucket,side,Win,Loss,Push,Total,Win_Pct
-0.15_to_0.20,home,1,0,0,1,1.0
-0.35_to_0.40,away,1,0,0,1,1.0
-0.65_to_0.70,home,1,0,0,1,1.0
-0.85_to_0.90,home,0,1,0,1,0.0
+bucket,side,Win,Loss,Push,Total,Sample_Count,Win_Pct
+0.15_to_0.20,home,1,0,0,1,1,1.0
+0.35_to_0.40,away,1,0,0,1,1,1.0
+0.65_to_0.70,home,1,0,0,1,1,1.0
+0.85_to_0.90,home,0,1,0,1,1,0.0

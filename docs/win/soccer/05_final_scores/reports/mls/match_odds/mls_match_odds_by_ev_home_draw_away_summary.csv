@@ -1,2 +1,2 @@
-bucket,side,Win,Loss,Push,Total,Win_Pct
-0.00_to_0.05,home,0,7,0,7,0.0
+bucket,side,Win,Loss,Push,Total,Sample_Count,Win_Pct
+0.00_to_0.05,home,0,7,0,7,7,0.0

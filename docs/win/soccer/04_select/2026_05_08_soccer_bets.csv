@@ -1,2 +1,2 @@
-game_id,sport,league,match_date,match_time,home_team,away_team,market,side,odds,american_odds,ev,kelly,model_prob,edge,model_prob_source,ev_prob,ev_prob_source,kelly_prob,kelly_prob_source,fair_odds_prob,fair_odds_prob_source,fair_odds,edge_prob,edge_prob_source,edge_fair_odds
-61526576,soccer,ligue1,2026_05_08,02:45 PM,Lens,Nantes,total35,under,1.68,-147,0.0685326532450376,0.1007833135956436,0.6360313412172843,0.0685326532450376,,,,,,,,,,,
+game_id,sport,league,match_date,match_time,home_team,away_team,market,side,odds,american_odds,ev,kelly,model_prob,edge,selection_period,model_prob_source,ev_prob,ev_prob_source,kelly_prob,kelly_prob_source,fair_odds_prob,fair_odds_prob_source,fair_odds,edge_prob,edge_prob_source,edge_fair_odds
+61526576,soccer,ligue1,2026_05_08,02:45 PM,Lens,Nantes,total35,under,1.68,-147,0.0685326532450376,0.1007833135956436,0.6360313412172843,0.0685326532450376,tuning,,,,,,,,,,,
