@@ -1,2 +1,0 @@
-game_id,sport,league,match_date,match_time,home_team,away_team,home_prob,draw_prob,away_prob,home_xg,away_xg,expected_total_goals,dk_home_decimal,dk_draw_decimal,dk_away_decimal,fair_home_decimal,fair_draw_decimal,fair_away_decimal
-401882908,soccer,laliga,2026_08_20,03:00 PM,Vallecano,Alaves,0.567,0.245,0.188,1.64,0.83,2.47,2.5,3.05,3.15,1.7636684303350971,4.081632653061225,5.319148936170213

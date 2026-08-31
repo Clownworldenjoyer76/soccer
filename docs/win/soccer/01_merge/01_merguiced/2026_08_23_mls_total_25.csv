@@ -1,3 +1,0 @@
-game_id,sport,league,match_date,match_time,home_team,away_team,home_prob,draw_prob,away_prob,home_xg,away_xg,expected_total_goals,dk_over25_decimal,dk_under25_decimal,fair_over_decimal,fair_under_decimal
-761753,soccer,mls,2026_08_23,04:30 PM,New England Revolution,New York City FC,0.354,0.275,0.371,1.19,1.23,2.42,1.71,2.1,2.296170189035116,1.7715036254185195
-761754,soccer,mls,2026_08_23,07:00 PM,Atlanta United,Sporting Kansas City,0.546,0.237,0.216,1.73,0.99,2.72,,,1.9559442263422395,2.0460861339435383

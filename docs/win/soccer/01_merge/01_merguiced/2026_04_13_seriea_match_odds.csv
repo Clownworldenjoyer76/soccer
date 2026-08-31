@@ -1,2 +1,0 @@
-game_id,sport,league,match_date,match_time,home_team,away_team,home_prob,draw_prob,away_prob,home_xg,away_xg,expected_total_goals,dk_home_decimal,dk_draw_decimal,dk_away_decimal,fair_home_decimal,fair_draw_decimal,fair_away_decimal
-33676283,soccer,seriea,2026_04_13,06:45 PM,Fiorentina,Lazio,0.454,0.253,0.293,1.53,1.19,2.72,2.3,3.09,3.31,2.202643171806167,3.952569169960474,3.4129692832764507

@@ -1,3 +1,0 @@
-game_id,sport,league,match_date,match_time,home_team,away_team,home_prob,draw_prob,away_prob,home_xg,away_xg,expected_total_goals,dk_over35_decimal,dk_under35_decimal,fair_over_decimal,fair_under_decimal
-401874928,soccer,seriea,2026_08_24,02:45 PM,Roma,Fiorentina,0.602,0.217,0.181,1.93,0.96,2.89,,,3.047476213012572,1.4884061624963356
-401874927,soccer,seriea,2026_08_24,12:30 PM,Bologna,Lazio,0.572,0.228,0.201,1.83,0.98,2.81,,,3.222810428248562,1.4498809197993274

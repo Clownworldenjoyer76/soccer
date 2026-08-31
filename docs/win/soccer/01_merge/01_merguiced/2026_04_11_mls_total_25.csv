@@ -1,8 +1,0 @@
-game_id,sport,league,match_date,match_time,home_team,away_team,home_prob,draw_prob,away_prob,home_xg,away_xg,expected_total_goals,dk_over25_decimal,dk_under25_decimal,fair_over_decimal,fair_under_decimal
-33780247,soccer,mls,2026_04_11,06:30 PM,Austin FC,LA Galaxy,0.258,0.254,0.488,1.05,1.56,2.61,4.18,1.216,2.065782939713373,1.9382773571783158
-33780251,soccer,mls,2026_04_11,06:30 PM,CF Montreal,Philadelphia Union,0.338,0.29,0.372,1.07,1.14,2.21,1.617,2.354,2.6318113116658424,1.612815950502969
-33780276,soccer,mls,2026_04_11,08:45 PM,Portland Timbers,Los Angeles FC,0.281,0.26,0.458,1.09,1.48,2.57,1.591,2.444,2.1096454873739168,1.9011887232260067
-33780278,soccer,mls,2026_04_11,11:30 PM,Charlotte FC,Nashville SC,0.449,0.279,0.272,1.32,0.96,2.28,1.904,1.975,2.508461719429305,1.6629269984911046
-33780277,soccer,mls,2026_04_11,11:30 PM,Inter Miami,New York Red Bulls,0.665,0.2,0.135,2.04,0.79,2.83,1.314,3.531,1.859888123378963,2.1629419837437247
-33780280,soccer,mls,2026_04_11,11:30 PM,New England Revolution,DC United,0.539,0.245,0.216,1.65,0.95,2.6,2.045,1.842,2.0765394842171747,1.9289022972781793
-33780392,soccer,mls,2026_04_11,11:30 PM,Vancouver Whitecaps,New York City FC,0.537,0.247,0.216,1.63,0.93,2.56,1.605,2.404,2.1209674684111346,1.8920865486109115

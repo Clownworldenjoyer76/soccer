@@ -1,4 +1,0 @@
-game_id,sport,league,match_date,match_time,home_team,away_team,home_prob,draw_prob,away_prob,home_xg,away_xg,expected_total_goals,dk_home_decimal,dk_draw_decimal,dk_away_decimal,fair_home_decimal,fair_draw_decimal,fair_away_decimal
-33996725,soccer,seriea,2026_04_26,10:30 AM,Fiorentina,Sassuolo,0.543,0.22,0.236,1.94,1.22,3.16,1.906,3.11,4.435,1.8416206261510129,4.545454545454546,4.237288135593221
-33996884,soccer,seriea,2026_04_26,04:00 PM,Torino,Inter Milan,0.128,0.199,0.673,0.75,2.03,2.78,7.184,4.946,1.358,7.8125,5.025125628140703,1.4858841010401187
-33996881,soccer,seriea,2026_04_26,06:45 PM,Milan,Juventus,0.35,0.267,0.383,1.24,1.3,2.54,2.561,3.238,2.708,2.857142857142857,3.745318352059925,2.6109660574412534

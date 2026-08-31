@@ -1,4 +1,0 @@
-game_id,sport,league,match_date,match_time,home_team,away_team,home_prob,draw_prob,away_prob,home_xg,away_xg,expected_total_goals,dk_over35_decimal,dk_under35_decimal,fair_over_decimal,fair_under_decimal
-401879314,soccer,epl,2026_08_29,07:30 AM,Liverpool,Nottingham Forest,0.664,0.19,0.146,2.21,0.93,3.14,2.3,1.62,2.603484489815427,1.623641828998987
-401879296,soccer,epl,2026_08_29,10:00 AM,Bournemouth,Everton,0.464,0.262,0.273,1.46,1.06,2.52,,,4.053382192662824,1.3275056762965889
-401879312,soccer,epl,2026_08_29,12:30 PM,Tottenham Hotspur,Newcastle,0.425,0.26,0.315,1.43,1.2,2.63,,,3.6963087579611646,1.3708774067685623

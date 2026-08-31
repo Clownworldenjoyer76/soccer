@@ -1,4 +1,0 @@
-game_id,sport,league,match_date,match_time,home_team,away_team,home_prob,draw_prob,away_prob,home_xg,away_xg,expected_total_goals,dk_over35_decimal,dk_under35_decimal,fair_over_decimal,fair_under_decimal
-33675988,soccer,ligue1,2026_04_12,03:15 PM,Nice,Le Havre,0.551,0.238,0.211,1.73,0.97,2.7,3.152,1.385,3.497630756189619,1.4003794386026853
-33675989,soccer,ligue1,2026_04_12,03:15 PM,Toulouse,Lille,0.315,0.282,0.402,1.06,1.24,2.3,,,4.983729399212413,1.251021065888085
-33675990,soccer,ligue1,2026_04_12,06:45 PM,Lyon,Lorient,0.593,0.206,0.201,2.11,1.15,3.26,2.974,1.403,2.434215909439509,1.6972450894027522

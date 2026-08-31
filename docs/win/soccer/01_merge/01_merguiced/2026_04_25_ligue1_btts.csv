@@ -1,4 +1,0 @@
-game_id,sport,league,match_date,match_time,home_team,away_team,home_prob,draw_prob,away_prob,home_xg,away_xg,expected_total_goals,btts_yes,btts_no,fair_btts_yes_decimal,fair_btts_no_decimal
-33999620,soccer,ligue1,2026_04_25,01:00 PM,Lyon,Auxerre,0.598,0.212,0.19,2.01,1.04,3.05,,,,
-33999628,soccer,ligue1,2026_04_25,05:00 PM,Angers,Paris Saint Germain,0.083,0.145,0.772,0.73,2.59,3.32,,,,
-33999630,soccer,ligue1,2026_04_25,07:05 PM,Toulouse,Monaco,0.287,0.244,0.469,1.23,1.64,2.87,,,,

@@ -1,2 +1,0 @@
-game_id,sport,league,match_date,match_time,home_team,away_team,home_prob,draw_prob,away_prob,home_xg,away_xg,expected_total_goals,dk_over35_decimal,dk_under35_decimal,fair_over_decimal,fair_under_decimal
-34088800,soccer,epl,2026_05_01,07:00 PM,Leeds,Burnley,0.636,0.208,0.156,2.0,0.87,2.87,,,3.0895607505295497,1.4785694791341069

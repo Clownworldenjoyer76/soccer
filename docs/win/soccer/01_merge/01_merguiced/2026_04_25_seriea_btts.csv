@@ -1,3 +1,0 @@
-game_id,sport,league,match_date,match_time,home_team,away_team,home_prob,draw_prob,away_prob,home_xg,away_xg,expected_total_goals,btts_yes,btts_no,fair_btts_yes_decimal,fair_btts_no_decimal
-33996728,soccer,seriea,2026_04_25,04:00 PM,Bologna,Roma,0.328,0.267,0.405,1.18,1.35,2.53,,,,
-33996754,soccer,seriea,2026_04_25,06:45 PM,Verona,Lecce,0.393,0.256,0.35,1.41,1.32,2.73,,,,

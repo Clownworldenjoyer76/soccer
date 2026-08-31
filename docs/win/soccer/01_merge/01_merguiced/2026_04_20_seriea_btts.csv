@@ -1,2 +1,0 @@
-game_id,sport,league,match_date,match_time,home_team,away_team,home_prob,draw_prob,away_prob,home_xg,away_xg,expected_total_goals,btts_yes,btts_no,fair_btts_yes_decimal,fair_btts_no_decimal
-33896393,soccer,seriea,2026_04_20,06:45 PM,Lecce,Fiorentina,0.289,0.253,0.458,1.17,1.53,2.7,,,,

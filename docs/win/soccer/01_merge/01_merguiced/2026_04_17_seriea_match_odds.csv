@@ -1,3 +1,0 @@
-game_id,sport,league,match_date,match_time,home_team,away_team,home_prob,draw_prob,away_prob,home_xg,away_xg,expected_total_goals,dk_home_decimal,dk_draw_decimal,dk_away_decimal,fair_home_decimal,fair_draw_decimal,fair_away_decimal
-33890555,soccer,seriea,2026_04_17,04:30 PM,Sassuolo,Como,0.199,0.237,0.564,0.92,1.72,2.64,4.689,4.15,1.657,5.025125628140703,4.219409282700422,1.773049645390071
-33890566,soccer,seriea,2026_04_17,06:45 PM,Inter Milan,Cagliari,0.814,0.124,0.062,2.78,0.65,3.43,1.17,7.241,14.236,1.2285012285012287,8.064516129032258,16.129032258064516

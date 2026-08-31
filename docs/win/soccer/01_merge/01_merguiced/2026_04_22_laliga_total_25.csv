@@ -1,3 +1,0 @@
-game_id,sport,league,match_date,match_time,home_team,away_team,home_prob,draw_prob,away_prob,home_xg,away_xg,expected_total_goals,dk_over25_decimal,dk_under25_decimal,fair_over_decimal,fair_under_decimal
-33890645,soccer,laliga,2026_04_22,05:00 PM,Elche,Atletico Madrid,0.345,0.269,0.387,1.22,1.3,2.52,1.625,2.248,2.1677545428755143,1.8563443457368787
-33890655,soccer,laliga,2026_04_22,06:00 PM,Real Sociedad,Getafe,0.458,0.267,0.275,1.42,1.03,2.45,2.525,1.505,2.2558163399686344,1.796294783061173

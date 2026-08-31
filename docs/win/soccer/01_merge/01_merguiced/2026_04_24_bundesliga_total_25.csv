@@ -1,2 +1,0 @@
-game_id,sport,league,match_date,match_time,home_team,away_team,home_prob,draw_prob,away_prob,home_xg,away_xg,expected_total_goals,dk_over25_decimal,dk_under25_decimal,fair_over_decimal,fair_under_decimal
-33994090,soccer,bundesliga,2026_04_24,06:30 PM,RB Leipzig,Union Berlin,0.72,0.166,0.113,2.43,0.86,3.29,1.528,2.404,1.5660203882247619,2.7667208121890274

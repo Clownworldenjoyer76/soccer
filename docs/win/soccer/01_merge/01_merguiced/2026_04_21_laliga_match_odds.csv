@@ -1,5 +1,0 @@
-game_id,sport,league,match_date,match_time,home_team,away_team,home_prob,draw_prob,away_prob,home_xg,away_xg,expected_total_goals,dk_home_decimal,dk_draw_decimal,dk_away_decimal,fair_home_decimal,fair_draw_decimal,fair_away_decimal
-33890639,soccer,laliga,2026_04_21,05:00 PM,Athletic Club,Osasuna,0.71,0.185,0.105,2.12,0.68,2.8,1.77,3.536,4.616,1.4084507042253522,5.405405405405405,9.523809523809524
-33890640,soccer,laliga,2026_04_21,05:00 PM,Mallorca,Valencia,0.479,0.267,0.254,1.43,0.97,2.4,2.555,3.09,2.902,2.0876826722338206,3.745318352059925,3.937007874015748
-33890641,soccer,laliga,2026_04_21,07:30 PM,Girona,Real Betis,0.318,0.276,0.406,1.11,1.28,2.39,2.486,3.338,2.803,3.144654088050314,3.623188405797101,2.463054187192118
-33890643,soccer,laliga,2026_04_21,07:30 PM,Real Madrid,Alaves,0.775,0.15,0.075,2.43,0.62,3.05,1.259,5.755,9.441,1.2903225806451613,6.666666666666667,13.333333333333334

@@ -1,2 +1,0 @@
-game_id,sport,league,match_date,match_time,home_team,away_team,home_prob,draw_prob,away_prob,home_xg,away_xg,expected_total_goals,dk_home_decimal,dk_draw_decimal,dk_away_decimal,fair_home_decimal,fair_draw_decimal,fair_away_decimal
-401884817,soccer,bundesliga,2026_08_28,02:30 PM,Bayern Munich,VfB Stuttgart,0.822,0.113,0.065,3.07,0.8,3.87,1.29,6.0,8.5,1.2165450121654502,8.849557522123893,15.384615384615383

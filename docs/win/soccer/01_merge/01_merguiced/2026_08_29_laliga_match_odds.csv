@@ -1,4 +1,0 @@
-game_id,sport,league,match_date,match_time,home_team,away_team,home_prob,draw_prob,away_prob,home_xg,away_xg,expected_total_goals,dk_home_decimal,dk_draw_decimal,dk_away_decimal,fair_home_decimal,fair_draw_decimal,fair_away_decimal
-401882898,soccer,laliga,2026_08_29,01:00 PM,Real Sociedad,Espanyol,0.522,0.246,0.232,1.64,1.01,2.65,1.87,3.7,4.1,1.9157088122605364,4.065040650406504,4.310344827586206
-401882897,soccer,laliga,2026_08_29,03:30 PM,Sevilla,Atletico Madrid,0.262,0.261,0.476,1.03,1.48,2.51,4.2,3.45,1.91,3.8167938931297707,3.8314176245210727,2.100840336134454
-401882902,soccer,laliga,2026_08_29,11:00 AM,Levante,Real Betis,0.3,0.26,0.439,1.15,1.45,2.6,1.06,11.0,66.0,3.3333333333333335,3.846153846153846,2.277904328018223

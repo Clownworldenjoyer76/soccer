@@ -1,2 +1,0 @@
-game_id,sport,league,match_date,match_time,home_team,away_team,home_prob,draw_prob,away_prob,home_xg,away_xg,expected_total_goals,dk_over25_decimal,dk_under25_decimal,fair_over_decimal,fair_under_decimal
-69829676,soccer,mls,2026_08_08,04:30 PM,New England Revolution,Houston Dynamo,0.389,0.271,0.34,1.29,1.19,2.48,1.82,2.0,2.2170667655359733,1.8216476107287498

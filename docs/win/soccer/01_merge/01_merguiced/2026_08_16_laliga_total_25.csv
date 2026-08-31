@@ -1,3 +1,0 @@
-game_id,sport,league,match_date,match_time,home_team,away_team,home_prob,draw_prob,away_prob,home_xg,away_xg,expected_total_goals,dk_over25_decimal,dk_under25_decimal,fair_over_decimal,fair_under_decimal
-401882922,soccer,laliga,2026_08_16,01:00 PM,Espanyol,Levante,0.486,0.253,0.261,1.56,1.07,2.63,2.15,1.69,2.044674400358772,1.9572360533162967
-401882920,soccer,laliga,2026_08_16,11:00 AM,Santander,Villarreal,0.142,0.225,0.633,0.71,1.78,2.49,1.62,2.35,2.204492348684784,1.8302252821214895

@@ -1,2 +1,0 @@
-game_id,sport,league,match_date,match_time,home_team,away_team,home_prob,draw_prob,away_prob,home_xg,away_xg,expected_total_goals,dk_over25_decimal,dk_under25_decimal,fair_over_decimal,fair_under_decimal
-33550037,soccer,epl,2026_04_10,08:00 PM,West Ham,Wolverhampton,0.518,0.257,0.225,1.54,0.92,2.46,1.884,2.02,2.2427257441978727,1.8046827746740355

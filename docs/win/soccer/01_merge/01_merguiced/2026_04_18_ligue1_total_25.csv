@@ -1,4 +1,0 @@
-game_id,sport,league,match_date,match_time,home_team,away_team,home_prob,draw_prob,away_prob,home_xg,away_xg,expected_total_goals,dk_over25_decimal,dk_under25_decimal,fair_over_decimal,fair_under_decimal
-33890598,soccer,ligue1,2026_04_18,03:00 PM,Lorient,Marseille,0.215,0.245,0.541,0.94,1.66,2.6,1.697,2.198,2.0765394842171747,1.9289022972781793
-33890599,soccer,ligue1,2026_04_18,05:00 PM,Angers,Le Havre,0.379,0.261,0.36,1.35,1.3,2.65,2.436,1.572,2.0240907259131307,1.9764759846920301
-33890600,soccer,ligue1,2026_04_18,07:05 PM,Lille,Nice,0.614,0.226,0.16,1.8,0.79,2.59,1.788,2.05,2.087433876936447,1.9195961439211657

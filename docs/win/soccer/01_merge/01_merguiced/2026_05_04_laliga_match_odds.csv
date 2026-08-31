@@ -1,3 +1,0 @@
-game_id,sport,league,match_date,match_time,home_team,away_team,home_prob,draw_prob,away_prob,home_xg,away_xg,expected_total_goals,dk_home_decimal,dk_draw_decimal,dk_away_decimal,fair_home_decimal,fair_draw_decimal,fair_away_decimal
-61624616,soccer,laliga,2026_05_04,03:00 PM,Sevilla,Real Sociedad,0.355,0.299,0.346,1.06,1.05,2.11,2.4,3.45,2.9,2.8169014084507045,3.3444816053511706,2.8901734104046244
-61624616,soccer,laliga,2026_05_04,03:00 PM,Sevilla,Real Sociedad,0.355,0.299,0.346,1.06,1.05,2.11,2.45,3.3,2.95,2.8169014084507045,3.3444816053511706,2.8901734104046244

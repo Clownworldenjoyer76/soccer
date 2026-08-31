@@ -1,5 +1,0 @@
-game_id,sport,league,match_date,match_time,home_team,away_team,home_prob,draw_prob,away_prob,home_xg,away_xg,expected_total_goals,dk_home_decimal,dk_draw_decimal,dk_away_decimal,fair_home_decimal,fair_draw_decimal,fair_away_decimal
-401874748,soccer,seriea,2026_08_23,02:45 PM,Atalanta,Sassuolo,0.736,0.154,0.11,2.65,0.94,3.59,1.5,4.2,6.0,1.358695652173913,6.4935064935064934,9.090909090909092
-401874932,soccer,seriea,2026_08_23,02:45 PM,Torino,Milan,0.212,0.24,0.548,0.96,1.7,2.66,4.4,3.35,1.87,4.716981132075472,4.166666666666667,1.824817518248175
-401874930,soccer,seriea,2026_08_23,12:30 PM,Frosinone,Juventus,0.09,0.166,0.744,0.66,2.31,2.97,6.5,4.5,1.42,11.11111111111111,6.024096385542168,1.3440860215053763
-401874946,soccer,seriea,2026_08_23,12:30 PM,Venezia,Lecce,0.368,0.282,0.35,1.18,1.15,2.33,1.77,3.4,4.5,2.717391304347826,3.546099290780142,2.857142857142857

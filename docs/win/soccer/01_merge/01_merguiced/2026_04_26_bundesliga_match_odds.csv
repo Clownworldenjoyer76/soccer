@@ -1,3 +1,0 @@
-game_id,sport,league,match_date,match_time,home_team,away_team,home_prob,draw_prob,away_prob,home_xg,away_xg,expected_total_goals,dk_home_decimal,dk_draw_decimal,dk_away_decimal,fair_home_decimal,fair_draw_decimal,fair_away_decimal
-33994102,soccer,bundesliga,2026_04_26,01:30 PM,VfB Stuttgart,Werder Bremen,0.655,0.191,0.154,2.22,0.98,3.2,1.544,3.68,6.349,1.5267175572519083,5.2356020942408374,6.4935064935064934
-33994103,soccer,bundesliga,2026_04_26,03:30 PM,Borussia Dortmund,Freiburg,0.691,0.168,0.141,2.55,1.09,3.64,1.462,4.524,5.8,1.4471780028943562,5.952380952380952,7.092198581560284

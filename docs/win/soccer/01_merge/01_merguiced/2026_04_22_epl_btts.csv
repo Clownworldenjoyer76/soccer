@@ -1,3 +1,0 @@
-game_id,sport,league,match_date,match_time,home_team,away_team,home_prob,draw_prob,away_prob,home_xg,away_xg,expected_total_goals,btts_yes,btts_no,fair_btts_yes_decimal,fair_btts_no_decimal
-33981319,soccer,epl,2026_04_22,07:00 PM,Bournemouth,Leeds,0.487,0.245,0.269,1.64,1.15,2.79,1.6,2.21,1.7239819004524888,2.3812499999999996
-33981321,soccer,epl,2026_04_22,07:00 PM,Burnley,Manchester City,0.062,0.14,0.798,0.55,2.48,3.03,1.84,1.87,1.9839572192513368,2.016304347826087

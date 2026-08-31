@@ -1,3 +1,0 @@
-game_id,sport,league,match_date,match_time,home_team,away_team,home_prob,draw_prob,away_prob,home_xg,away_xg,expected_total_goals,btts_yes,btts_no,fair_btts_yes_decimal,fair_btts_no_decimal
-66299244,soccer,mls,2026_07_17,08:10 PM,Nashville SC,Atlanta United,0.673,0.196,0.131,2.07,0.79,2.86,,,,
-66299246,soccer,mls,2026_07_17,10:25 PM,LA Galaxy,Los Angeles FC,0.412,0.267,0.321,1.36,1.17,2.53,,,,

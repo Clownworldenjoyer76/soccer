@@ -1,2 +1,0 @@
-game_id,sport,league,match_date,match_time,home_team,away_team,home_prob,draw_prob,away_prob,home_xg,away_xg,expected_total_goals,dk_over25_decimal,dk_under25_decimal,fair_over_decimal,fair_under_decimal
-71564470,soccer,ligue1,2026_05_29,02:45 PM,Nice,Saint Etienne,0.542,0.241,0.218,1.7,0.98,2.68,,,1.9941627127777712,2.005871561211463

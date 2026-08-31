@@ -1,3 +1,0 @@
-game_id,sport,league,match_date,match_time,home_team,away_team,home_prob,draw_prob,away_prob,home_xg,away_xg,expected_total_goals,btts_yes,btts_no,fair_btts_yes_decimal,fair_btts_no_decimal
-401884814,soccer,bundesliga,2026_08_30,09:30 AM,Freiburg,Werder Bremen,0.487,0.245,0.268,1.63,1.15,2.78,,,,
-401884813,soccer,bundesliga,2026_08_30,11:30 AM,Augsburg,Schalke,0.479,0.209,0.312,2.1,1.67,3.77,,,,
