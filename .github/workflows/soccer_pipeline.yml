@@ -59,6 +59,7 @@ jobs:
           mkdir -p docs/win/soccer/errors/03_edges
 
           mkdir -p docs/win/soccer/04_select
+          mkdir -p docs/win/soccer/04_select/locked
           mkdir -p docs/win/soccer/errors/04_select
 
           mkdir -p docs/win/soccer/05_final_scores/intermediate
@@ -66,8 +67,10 @@ jobs:
           mkdir -p docs/win/soccer/05_final_scores/results/final_scores_dirty
           mkdir -p docs/win/soccer/05_final_scores/results/final_scores
           mkdir -p docs/win/soccer/05_final_scores/results/graded
+          mkdir -p docs/win/soccer/05_final_scores/results/graded_locked
           mkdir -p docs/win/soccer/05_final_scores/deeper_summaries/soccer
           mkdir -p docs/win/soccer/05_final_scores/model_evaluation
+          mkdir -p docs/win/soccer/05_final_scores/locked_evaluation
 
           touch docs/win/soccer/05_final_scores/soccer_market_tally.csv
 
@@ -434,6 +437,14 @@ jobs:
 
           echo "=== Normalized sportsbook CSVs ==="
           find docs/win/soccer/00_intake/sportsbook/normalized \
+            -maxdepth 1 -type f -name "*.csv" -print | sort || true
+
+          echo "=== Locked soccer picks ==="
+          find docs/win/soccer/04_select/locked \
+            -maxdepth 1 -type f -name "*_soccer_bets.csv" -print | sort || true
+
+          echo "=== Locked forward evaluation outputs ==="
+          find docs/win/soccer/05_final_scores/locked_evaluation \
             -maxdepth 1 -type f -name "*.csv" -print | sort || true
 
           echo "=== Model evaluation outputs ==="
