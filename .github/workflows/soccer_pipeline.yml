@@ -50,7 +50,6 @@ jobs:
           mkdir -p docs/win/soccer/00_intake/games
           mkdir -p docs/win/soccer/mappings/no_map
 
-          mkdir -p docs/win/soccer/01_merge/01_merguiced
           mkdir -p docs/win/soccer/errors/01_merge
 
           mkdir -p docs/win/soccer/02_juice
@@ -391,9 +390,6 @@ jobs:
       # -------------------------
       - name: Soccer merge intake
         run: python docs/win/soccer/scripts/01_merge/merge_intake.py
-
-      - name: Soccer build juice files
-        run: python docs/win/soccer/scripts/01_merge/build_juice_files.py
 
       - name: Soccer juice
         run: python docs/win/soccer/scripts/02_juice/apply_juice.py
