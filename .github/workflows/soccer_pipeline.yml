@@ -67,6 +67,7 @@ jobs:
           mkdir -p docs/win/soccer/05_final_scores/results/final_scores
           mkdir -p docs/win/soccer/05_final_scores/results/graded
           mkdir -p docs/win/soccer/05_final_scores/deeper_summaries/soccer
+          mkdir -p docs/win/soccer/05_final_scores/model_evaluation
 
           touch docs/win/soccer/05_final_scores/soccer_market_tally.csv
 
@@ -416,6 +417,15 @@ jobs:
       - name: Run soccer results reports
         run: python docs/win/soccer/scripts/05_final_scores/03_soccer_results_reports.py
 
+      # -------------------------
+      # ALL-MATCH MODEL EVALUATION
+      # -------------------------
+      - name: Run soccer model grade
+        run: python docs/win/soccer/scripts/05_final_scores/04_soccer_model_grade.py
+
+      - name: Run soccer model reports
+        run: python docs/win/soccer/scripts/05_final_scores/05_soccer_model_reports.py
+
       - name: Show key soccer outputs and logs
         run: |
           echo "=== Raw sportsbook CSVs ==="
@@ -424,6 +434,10 @@ jobs:
 
           echo "=== Normalized sportsbook CSVs ==="
           find docs/win/soccer/00_intake/sportsbook/normalized \
+            -maxdepth 1 -type f -name "*.csv" -print | sort || true
+
+          echo "=== Model evaluation outputs ==="
+          find docs/win/soccer/05_final_scores/model_evaluation \
             -maxdepth 1 -type f -name "*.csv" -print | sort || true
 
           echo "=== ESPN diagnostic ==="
@@ -440,6 +454,12 @@ jobs:
           cat docs/win/soccer/05_final_scores/errors/soccer_results_analyze_errors.txt || true
           cat docs/win/soccer/05_final_scores/errors/soccer_results_reports_summary.txt || true
           cat docs/win/soccer/05_final_scores/errors/soccer_results_reports_errors.txt || true
+
+          echo "=== Model evaluation logs ==="
+          cat docs/win/soccer/05_final_scores/errors/soccer_model_grade_summary.txt || true
+          cat docs/win/soccer/05_final_scores/errors/soccer_model_grade_errors.txt || true
+          cat docs/win/soccer/05_final_scores/errors/soccer_model_reports_summary.txt || true
+          cat docs/win/soccer/05_final_scores/errors/soccer_model_reports_errors.txt || true
 
       # -------------------------
       # ONE FINAL REPO WRITE
