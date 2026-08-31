@@ -1,3 +1,29 @@
+probability_sources:
+  soccer:
+    match_odds:
+      ev: engine
+      kelly: engine
+      fair_odds: engine
+      edge: engine
+      selection_filter: engine
+
+# For BTTS and totals, fair_odds = 1 / model_probability.
+# Therefore edge = book_odds / fair_odds - 1 = EV.
+# edge is retained as an output compatibility alias only.
+# edge_bands are intentionally disabled for these markets so EV and edge
+# are not treated as independent confirmation signals.
+signal_relationships:
+  soccer:
+    btts:
+      edge: alias_of_ev
+      edge_bands: disabled_redundant_filter
+    total25:
+      edge: alias_of_ev
+      edge_bands: disabled_redundant_filter
+    total35:
+      edge: alias_of_ev
+      edge_bands: disabled_redundant_filter
+
 markets:
   soccer:
   
@@ -58,7 +84,7 @@ markets:
           ev_bands: [[0.0, 10.00]]
           kelly_bands: [[0.0, 10.0]]
           model_prob_bands: [[0.0, 1.0]]
-          edge_bands: [[0.0, 10.0]]
+          edge_bands: []
           months: []
           exclude_days_of_week: []
 
@@ -69,7 +95,7 @@ markets:
           ev_bands: [[0.0, 10.0]]
           kelly_bands: [[0.0, 10.0]]
           model_prob_bands: [[0.0, 1.0]]
-          edge_bands: [[0.0, 10.0]]
+          edge_bands: []
           months: []
           exclude_days_of_week: []
 
@@ -86,7 +112,7 @@ markets:
           ev_bands: [[0.0, 10.0]]
           kelly_bands: [[0.0, 10.0]]
           model_prob_bands: [[0.0, 1.0]]
-          edge_bands: [[0.0, 10.0]]
+          edge_bands: []
           months: []
           exclude_days_of_week: []
 
@@ -97,7 +123,7 @@ markets:
           ev_bands: [[0.20, 10.0]]
           kelly_bands: [[0.0, 10.0]]
           model_prob_bands: [[0.0, 1.0]]
-          edge_bands: [[0.0, 10.0]]
+          edge_bands: []
           months: []
           exclude_days_of_week: []
 
@@ -114,7 +140,7 @@ markets:
           ev_bands: [[0.15, 10.0]]
           kelly_bands: [[0.0, 10.0]]
           model_prob_bands: [[0.0, 1.0]]
-          edge_bands: [[0.0, 10.0]]
+          edge_bands: []
           months: []
           exclude_days_of_week: []
 
@@ -125,7 +151,7 @@ markets:
           ev_bands: [[0.15, 10.0]]
           kelly_bands: [[0.0, 10.0]]
           model_prob_bands: [[0.0, 1.0]]
-          edge_bands: [[0.0, 10.0]]
+          edge_bands: []
           months: []
           exclude_days_of_week: []
 
@@ -186,7 +212,7 @@ markets:
           ev_bands: [[0.0, 10.0]]
           kelly_bands: [[0.0, 10.0]]
           model_prob_bands: [[0.0, 1.0]]
-          edge_bands: [[0.0, 10.0]]
+          edge_bands: []
           months: []
           exclude_days_of_week: []
 
@@ -197,7 +223,7 @@ markets:
           ev_bands: [[0.0, 10.0]]
           kelly_bands: [[0.0, 10.0]]
           model_prob_bands: [[0.0, 1.0]]
-          edge_bands: [[0.0, 10.0]]
+          edge_bands: []
           months: []
           exclude_days_of_week: []
 
@@ -214,7 +240,7 @@ markets:
           ev_bands: [[0.0, 0.05], [0.15, 0.30]]
           kelly_bands: [[0.0, 10.0]]
           model_prob_bands: [[0.0, 1.0]]
-          edge_bands: [[0.0, 10.0]]
+          edge_bands: []
           months: []
           exclude_days_of_week: []
 
@@ -225,7 +251,7 @@ markets:
           ev_bands: [[0.05, 0.10]]
           kelly_bands: [[0.0, 10.0]]
           model_prob_bands: [[0.0, 1.0]]
-          edge_bands: [[0.0, 10.0]]
+          edge_bands: []
           months: []
           exclude_days_of_week: []
 
@@ -242,7 +268,7 @@ markets:
           ev_bands: [[0.00, 0.05], [0.20, 0.99]]
           kelly_bands: [[0.0, 10.0]]
           model_prob_bands: [[0.0, 1.0]]
-          edge_bands: [[0.0, 10.0]]
+          edge_bands: []
           months: []
           exclude_days_of_week: []
 
@@ -253,13 +279,14 @@ markets:
           ev_bands: [[0.0, 10.0]]
           kelly_bands: [[0.0, 10.0]]
           model_prob_bands: [[0.0, 1.0]]
-          edge_bands: [[0.0, 10.0]]
+          edge_bands: []
           months: []
           exclude_days_of_week: []
 
 ########################################################################################################################
 ## La Liga
 ########################################################################################################################
+
     laliga:
 
       match_odds:
@@ -313,7 +340,7 @@ markets:
           ev_bands: [[0.20, 0.25]]
           kelly_bands: [[0.0, 10.0]]
           model_prob_bands: [[0.0, 1.0]]
-          edge_bands: [[0.0, 10.0]]
+          edge_bands: []
           months: []
           exclude_days_of_week: []
 
@@ -324,7 +351,7 @@ markets:
           ev_bands: [[0.20, 0.25]]
           kelly_bands: [[0.0, 10.0]]
           model_prob_bands: [[0.0, 1.0]]
-          edge_bands: [[0.0, 10.0]]
+          edge_bands: []
           months: []
           exclude_days_of_week: []
 
@@ -341,7 +368,7 @@ markets:
           ev_bands: [[0.01, 1.0]]
           kelly_bands: [[0.00, 0.01]]
           model_prob_bands: [[0.0, 1.0]]
-          edge_bands: [[0.0, 10.0]]
+          edge_bands: []
           months: []
           exclude_days_of_week: []
 
@@ -352,7 +379,7 @@ markets:
           ev_bands: [[0.01, 10.0]]
           kelly_bands: [[0, 0.01], [0.19, 0.25]]
           model_prob_bands: [[0.0, 1.0]]
-          edge_bands: [[0.0, 10.0]]
+          edge_bands: []
           months: []
           exclude_days_of_week: []
 
@@ -369,7 +396,7 @@ markets:
           ev_bands: [[0.0, 10.0]]
           kelly_bands: [[0.0, 10.0]]
           model_prob_bands: [[0.0, 1.0]]
-          edge_bands: [[0.0, 10.0]]
+          edge_bands: []
           months: []
           exclude_days_of_week: []
 
@@ -380,13 +407,14 @@ markets:
           ev_bands: [[0.0, 10.0]]
           kelly_bands: [[0.0, 10.0]]
           model_prob_bands: [[0.0, 1.0]]
-          edge_bands: [[0.0, 10.0]]
+          edge_bands: []
           months: []
           exclude_days_of_week: []
 
 ########################################################################################################################
 ## LIGUE 1
 ########################################################################################################################
+
     ligue1:
 
       match_odds:
@@ -440,7 +468,7 @@ markets:
           ev_bands: [[0.0, 10.0]]
           kelly_bands: [[0.05, 10.0]]
           model_prob_bands: [[0.0, 1.0]]
-          edge_bands: [[0.0, 10.0]]
+          edge_bands: []
           months: []
           exclude_days_of_week: []
 
@@ -451,7 +479,7 @@ markets:
           ev_bands: [[0.0, 10.0]]
           kelly_bands: [[0.0, 10.0]]
           model_prob_bands: [[0.0, 1.0]]
-          edge_bands: [[0.0, 10.0]]
+          edge_bands: []
           months: []
           exclude_days_of_week: []
 
@@ -468,7 +496,7 @@ markets:
           ev_bands: [[0.0, 10.0]]
           kelly_bands: [[0.05, 10.0]]
           model_prob_bands: [[0.0, 1.0]]
-          edge_bands: [[0.0, 10.0]]
+          edge_bands: []
           months: []
           exclude_days_of_week: []
 
@@ -479,7 +507,7 @@ markets:
           ev_bands: [[0.0, 10.0]]
           kelly_bands: [[0.05, 10.0]]
           model_prob_bands: [[0.0, 1.0]]
-          edge_bands: [[0.0, 10.0]]
+          edge_bands: []
           months: []
           exclude_days_of_week: []
 
@@ -496,7 +524,7 @@ markets:
           ev_bands: [[0.05, 10.0]]
           kelly_bands: [[0.10, 10.0]]
           model_prob_bands: [[0.0, 1.0]]
-          edge_bands: [[0.0, 10.0]]
+          edge_bands: []
           months: []
           exclude_days_of_week: []
 
@@ -507,7 +535,7 @@ markets:
           ev_bands: [[0.05, 10.0]]
           kelly_bands: [[0.10, 10.0]]
           model_prob_bands: [[0.0, 1.0]]
-          edge_bands: [[0.0, 10.0]]
+          edge_bands: []
           months: []
           exclude_days_of_week: []
 
@@ -568,7 +596,7 @@ markets:
           ev_bands: [[0.0, 10.0]]
           kelly_bands: [[0.20, 10.0]]
           model_prob_bands: [[0.0, 1.0]]
-          edge_bands: [[0.0, 10.0]]
+          edge_bands: []
           months: []
           exclude_days_of_week: []
 
@@ -579,7 +607,7 @@ markets:
           ev_bands: [[0.25, 10.0]]
           kelly_bands: [[0.20, 10.0]]
           model_prob_bands: [[0.0, 1.0]]
-          edge_bands: [[0.0, 10.0]]
+          edge_bands: []
           months: []
           exclude_days_of_week: []
 
@@ -596,7 +624,7 @@ markets:
           ev_bands: [[0.0, 10.0]]
           kelly_bands: [[0.0, 10.0]]
           model_prob_bands: [[0.0, 1.0]]
-          edge_bands: [[0.0, 10.0]]
+          edge_bands: []
           months: []
           exclude_days_of_week: []
 
@@ -607,7 +635,7 @@ markets:
           ev_bands: [[0.0, 10.0]]
           kelly_bands: [[0.0, 10.0]]
           model_prob_bands: [[0.0, 1.0]]
-          edge_bands: [[0.0, 10.0]]
+          edge_bands: []
           months: []
           exclude_days_of_week: []
 
@@ -624,7 +652,7 @@ markets:
           ev_bands: [[0.0, 10.0]]
           kelly_bands: [[0.0, 10.0]]
           model_prob_bands: [[0.0, 1.0]]
-          edge_bands: [[0.0, 10.0]]
+          edge_bands: []
           months: []
           exclude_days_of_week: []
 
@@ -635,13 +663,14 @@ markets:
           ev_bands: [[0.0, 10.0]]
           kelly_bands: [[0.0, 10.0]]
           model_prob_bands: [[0.0, 1.0]]
-          edge_bands: [[0.0, 10.0]]
+          edge_bands: []
           months: []
           exclude_days_of_week: []
 
 ########################################################################################################################
 ## MLS
 ########################################################################################################################
+
     mls:
 
       match_odds:
@@ -695,7 +724,7 @@ markets:
           ev_bands: [[0.0, 10.0]]
           kelly_bands: [[0.0, 10.0]]
           model_prob_bands: [[0.0, 1.0]]
-          edge_bands: [[0.0, 10.0]]
+          edge_bands: []
           months: []
           exclude_days_of_week: []
 
@@ -706,7 +735,7 @@ markets:
           ev_bands: [[0.0, 10.0]]
           kelly_bands: [[0.0, 10.0]]
           model_prob_bands: [[0.0, 1.0]]
-          edge_bands: [[0.0, 10.0]]
+          edge_bands: []
           months: []
           exclude_days_of_week: []
 
@@ -723,7 +752,7 @@ markets:
           ev_bands: [[0.0, 10.0]]
           kelly_bands: [[0.0, 10.0]]
           model_prob_bands: [[0.0, 1.0]]
-          edge_bands: [[0.0, 10.0]]
+          edge_bands: []
           months: []
           exclude_days_of_week: []
 
@@ -734,7 +763,7 @@ markets:
           ev_bands: [[0.0, 10.0]]
           kelly_bands: [[0.35, 10.0]]
           model_prob_bands: [[0.0, 1.0]]
-          edge_bands: [[0.0, 10.0]]
+          edge_bands: []
           months: []
           exclude_days_of_week: []
 
@@ -751,7 +780,7 @@ markets:
           ev_bands: [[0.0, 10.0]]
           kelly_bands: [[0.0, 10.0]]
           model_prob_bands: [[0.0, 1.0]]
-          edge_bands: [[0.0, 10.0]]
+          edge_bands: []
           months: []
           exclude_days_of_week: []
 
@@ -762,6 +791,6 @@ markets:
           ev_bands: [[0.0, 10.0]]
           kelly_bands: [[0.0, 10.0]]
           model_prob_bands: [[0.0, 1.0]]
-          edge_bands: [[0.0, 10.0]]
+          edge_bands: []
           months: []
           exclude_days_of_week: []

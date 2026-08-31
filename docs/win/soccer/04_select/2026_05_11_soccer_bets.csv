@@ -1,4 +1,4 @@
-game_id,sport,league,match_date,match_time,home_team,away_team,market,side,odds,american_odds,ev,kelly,model_prob,edge
-61301243,soccer,epl,2026_05_11,03:00 PM,Tottenham Hotspur,Leeds,total25,over,1.71,-141,0.0240110180919762,0.0338183353408114,0.5988368526853662,0.0240110180919761
-61624636,soccer,laliga,2026_05_11,03:00 PM,Vallecano,Girona,match_odds,home,2.45,145,0.5092000000000001,0.3511724137931035,0.6041102622715675,0.5083743047853313
-61061657,soccer,seriea,2026_05_11,02:45 PM,Napoli,Bologna,total25,over,1.83,-120,0.0011261317326888,0.0013567852201071,0.5470634599632179,0.0011261317326889
+game_id,sport,league,match_date,match_time,home_team,away_team,market,side,odds,american_odds,ev,kelly,model_prob,edge,model_prob_source,ev_prob,ev_prob_source,kelly_prob,kelly_prob_source,fair_odds_prob,fair_odds_prob_source,fair_odds,edge_prob,edge_prob_source,edge_fair_odds
+61301243,soccer,epl,2026_05_11,03:00 PM,Tottenham Hotspur,Leeds,total25,over,1.71,-141,0.0240110180919762,0.0338183353408114,0.5988368526853662,0.0240110180919761,,,,,,,,,,,
+61624636,soccer,laliga,2026_05_11,03:00 PM,Vallecano,Girona,match_odds,home,2.45,145,0.4800701425653405,0.331082856941614,0.6041102622715675,0.4800701425653404,engine_home_prob,0.6041102622715675,engine_home_prob,0.6041102622715675,engine_home_prob,0.6041102622715675,engine_home_prob,1.65532695346014,0.6041102622715675,engine_home_prob,1.65532695346014
+61061657,soccer,seriea,2026_05_11,02:45 PM,Napoli,Bologna,total25,over,1.83,-120,0.0011261317326888,0.0013567852201071,0.5470634599632179,0.0011261317326889,,,,,,,,,,,
