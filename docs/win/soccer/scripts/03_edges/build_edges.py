@@ -11,7 +11,7 @@ import yaml
 
 BASE = Path(__file__).resolve().parents[2]
 
-INPUT_DIR  = BASE / "02_juice"
+INPUT_DIR = BASE / "02_juice"
 OUTPUT_DIR = BASE / "03_edges"
 OUTPUT_DIR.mkdir(exist_ok=True)
 
@@ -31,6 +31,12 @@ MATCH_ODDS_SOURCE_KEYS = (
 SUPPORTED_MATCH_ODDS_SOURCES = {"raw", "adjusted", "engine"}
 
 REDUNDANT_SIGNAL_RELATION = "alias_of_ev"
+
+EDGE_COLUMNS_BY_MARKET = {
+    "match_odds": ["home_edge", "draw_edge", "away_edge"],
+    "total": ["over_edge", "under_edge"],
+    "btts": ["yes_edge", "no_edge"],
+}
 
 
 # =========================
@@ -126,66 +132,138 @@ MATCH_ODDS_PROBABILITY_SOURCES = load_match_odds_probability_sources()
 
 
 # =========================
+# VALIDATION HELPERS
+# =========================
+
+def _finite_float(value) -> float | None:
+    if value is None:
+        return None
+
+    try:
+        number = float(value)
+    except (TypeError, ValueError, OverflowError):
+        return None
+
+    if not math.isfinite(number):
+        return None
+
+    return number
+
+
+def _valid_probability(value) -> float | None:
+    probability = _finite_float(value)
+
+    if probability is None:
+        return None
+
+    if not 0.0 <= probability <= 1.0:
+        return None
+
+    return probability
+
+
+def _valid_decimal_odds(value) -> float | None:
+    odds = _finite_float(value)
+
+    if odds is None:
+        return None
+
+    if odds <= 1.0:
+        return None
+
+    return odds
+
+
+def _first_valid_decimal(row: dict, *columns: str) -> float | None:
+    for column in columns:
+        odds = _valid_decimal_odds(row.get(column))
+
+        if odds is not None:
+            return odds
+
+    return None
+
+
+def _is_missing_or_nonfinite(value) -> bool:
+    return _finite_float(value) is None
+
+
+def _count_null_edges(out: pd.DataFrame, market: str) -> int:
+    edge_columns = EDGE_COLUMNS_BY_MARKET[market]
+
+    missing_columns = [
+        col
+        for col in edge_columns
+        if col not in out.columns
+    ]
+
+    if missing_columns:
+        raise ValueError(
+            f"Missing expected edge output columns for market={market}: "
+            f"{missing_columns}"
+        )
+
+    null_edges = 0
+
+    for column in edge_columns:
+        null_edges += int(
+            out[column].map(_is_missing_or_nonfinite).sum()
+        )
+
+    return null_edges
+
+
+# =========================
 # CORE CALCS
 # =========================
 
 def calc_edge(book_odds, fair_odds):
-    try:
-        if book_odds is not None and fair_odds is not None:
-            book_odds = float(book_odds)
-            fair_odds = float(fair_odds)
+    book = _valid_decimal_odds(book_odds)
+    fair = _valid_decimal_odds(fair_odds)
 
-            if not math.isfinite(book_odds) or not math.isfinite(fair_odds):
-                return None
+    if book is None or fair is None:
+        return None
 
-            if book_odds <= 0 or fair_odds <= 0:
-                return None
+    edge = (book / fair) - 1.0
 
-            return (book_odds / fair_odds) - 1
+    if not math.isfinite(edge):
+        return None
 
-    except Exception:
-        pass
-
-    return None
+    return edge
 
 
 def calc_ev(p, odds):
-    try:
-        if p is not None and odds is not None:
-            p = float(p)
-            odds = float(odds)
+    probability = _valid_probability(p)
+    decimal_odds = _valid_decimal_odds(odds)
 
-            if not math.isfinite(p) or not math.isfinite(odds):
-                return None
+    if probability is None or decimal_odds is None:
+        return None
 
-            return (p * (odds - 1)) - (1 - p)
+    ev = (
+        probability * (decimal_odds - 1.0)
+    ) - (1.0 - probability)
 
-    except Exception:
-        pass
+    if not math.isfinite(ev):
+        return None
 
-    return None
+    return ev
 
 
 def calc_kelly(p, odds):
-    try:
-        if p is not None and odds is not None:
-            p = float(p)
-            odds = float(odds)
+    probability = _valid_probability(p)
+    decimal_odds = _valid_decimal_odds(odds)
 
-            if (
-                not math.isfinite(p)
-                or not math.isfinite(odds)
-                or odds <= 1
-            ):
-                return None
+    if probability is None or decimal_odds is None:
+        return None
 
-            k = ((p * odds) - 1) / (odds - 1)
-            return max(0, k)
+    kelly = (
+        (probability * decimal_odds) - 1.0
+    ) / (decimal_odds - 1.0)
 
-    except Exception:
-        pass
+    if not math.isfinite(kelly):
+        return None
 
-    return None
+    return max(0.0, kelly)
 
 
 def _probability_column(side: str, source: str) -> str:
@@ -212,54 +290,48 @@ def _probability_value(
         side,
         source,
     )
-    value = row.get(column)
 
-    try:
-        value = float(value)
-    except Exception:
-        return None, column
-
-    if (
-        not math.isfinite(value)
-        or not 0 <= value <= 1
-    ):
-        return None, column
-
-    return value, column
+    return _valid_probability(
+        row.get(column)
+    ), column
 
 
 def _fair_decimal_from_prob(
     probability,
 ) -> float | None:
-    try:
-        p = float(probability)
-    except Exception:
+    p = _valid_probability(
+        probability
+    )
+
+    if p is None or p <= 0.0:
         return None
 
-    if (
-        not math.isfinite(p)
-        or p <= 0
-        or p > 1
-    ):
-        return None
+    fair_odds = 1.0 / p
 
-    return 1.0 / p
+    return _valid_decimal_odds(
+        fair_odds
+    )
 
 
 # =========================
 # MARKET PROCESSORS
 # =========================
 
-def process_match(df) -> tuple[pd.DataFrame, int]:
-    rows       = []
-    null_edges = 0
+def process_match(df) -> pd.DataFrame:
+    rows = []
 
     for _, r in df.iterrows():
         row = r.to_dict()
 
-        for side in ["home", "draw", "away"]:
-            book = row.get(
-                f"dk_{side}_decimal"
+        for side in [
+            "home",
+            "draw",
+            "away",
+        ]:
+            book = _valid_decimal_odds(
+                row.get(
+                    f"dk_{side}_decimal"
+                )
             )
 
             ev_prob, ev_source_column = _probability_value(
@@ -336,15 +408,12 @@ def process_match(df) -> tuple[pd.DataFrame, int]:
             row[f"{side}_ev"] = ev
             row[f"{side}_kelly"] = kelly
 
-            if edge is None:
-                null_edges += 1
-
         rows.append(row)
 
-    return pd.DataFrame(rows), null_edges
+    return pd.DataFrame(rows)
 
 
-def process_totals(df) -> tuple[pd.DataFrame, int]:
+def process_totals(df) -> pd.DataFrame:
     """
     Totals edge and EV are the same mathematical signal because:
 
@@ -356,32 +425,40 @@ def process_totals(df) -> tuple[pd.DataFrame, int]:
     EV is therefore calculated once and edge is written as an explicit
     compatibility alias. edge must not be treated as independent confirmation.
     """
-    rows       = []
-    null_edges = 0
+    rows = []
 
     for _, r in df.iterrows():
         row = r.to_dict()
 
-        p_over = row.get(
-            "engine_over_prob"
-        )
-        book_over = (
-            row.get("dk_over25_decimal")
-            or row.get("dk_over35_decimal")
+        p_over = _valid_probability(
+            row.get(
+                "engine_over_prob"
+            )
         )
 
-        p_under = row.get(
-            "engine_under_prob"
+        book_over = _first_valid_decimal(
+            row,
+            "dk_over25_decimal",
+            "dk_over35_decimal",
         )
-        book_under = (
-            row.get("dk_under25_decimal")
-            or row.get("dk_under35_decimal")
+
+        p_under = _valid_probability(
+            row.get(
+                "engine_under_prob"
+            )
+        )
+
+        book_under = _first_valid_decimal(
+            row,
+            "dk_under25_decimal",
+            "dk_under35_decimal",
         )
 
         over_ev = calc_ev(
             p_over,
             book_over,
         )
+
         under_ev = calc_ev(
             p_under,
             book_under,
@@ -403,18 +480,12 @@ def process_totals(df) -> tuple[pd.DataFrame, int]:
             book_under,
         )
 
-        if over_ev is None:
-            null_edges += 1
-
-        if under_ev is None:
-            null_edges += 1
-
         rows.append(row)
 
-    return pd.DataFrame(rows), null_edges
+    return pd.DataFrame(rows)
 
 
-def process_btts(df) -> tuple[pd.DataFrame, int]:
+def process_btts(df) -> pd.DataFrame:
     """
     BTTS edge and EV are the same mathematical signal because:
 
@@ -426,30 +497,40 @@ def process_btts(df) -> tuple[pd.DataFrame, int]:
     EV is therefore calculated once and edge is written as an explicit
     compatibility alias. edge must not be treated as independent confirmation.
     """
-    rows       = []
-    null_edges = 0
+    rows = []
 
     for _, r in df.iterrows():
         row = r.to_dict()
 
-        p_yes = row.get(
-            "engine_btts_yes_prob"
-        )
-        book_yes = row.get(
-            "btts_yes"
+        p_yes = _valid_probability(
+            row.get(
+                "engine_btts_yes_prob"
+            )
         )
 
-        p_no = row.get(
-            "engine_btts_no_prob"
+        book_yes = _valid_decimal_odds(
+            row.get(
+                "btts_yes"
+            )
         )
-        book_no = row.get(
-            "btts_no"
+
+        p_no = _valid_probability(
+            row.get(
+                "engine_btts_no_prob"
+            )
+        )
+
+        book_no = _valid_decimal_odds(
+            row.get(
+                "btts_no"
+            )
         )
 
         yes_ev = calc_ev(
             p_yes,
             book_yes,
         )
+
         no_ev = calc_ev(
             p_no,
             book_no,
@@ -471,15 +552,9 @@ def process_btts(df) -> tuple[pd.DataFrame, int]:
             book_no,
         )
 
-        if yes_ev is None:
-            null_edges += 1
-
-        if no_ev is None:
-            null_edges += 1
-
         rows.append(row)
 
-    return pd.DataFrame(rows), null_edges
+    return pd.DataFrame(rows)
 
 
 # =========================
@@ -497,12 +572,12 @@ def main():
         )
 
     summary = {
-        "files_found":   0,
+        "files_found": 0,
         "files_written": 0,
-        "skipped":       0,
-        "total_rows":    0,
-        "null_edges":    0,
-        "errors":        0,
+        "skipped": 0,
+        "total_rows": 0,
+        "null_edges": 0,
+        "errors": 0,
     }
 
     per_file = []
@@ -510,9 +585,11 @@ def main():
     _log(
         f"INPUT_DIR : {INPUT_DIR}"
     )
+
     _log(
         f"OUTPUT_DIR: {OUTPUT_DIR}"
     )
+
     _log(
         f"CONFIG    : {CONFIG_PATH}"
     )
@@ -540,7 +617,7 @@ def main():
     )
 
     for file in input_files:
-        name   = file.name
+        name = file.name
         market = None
 
         pf = {
@@ -566,8 +643,10 @@ def main():
             )
 
             summary["skipped"] += 1
+
             pf["status"] = "skipped"
             per_file.append(pf)
+
             continue
 
         pf["market"] = market
@@ -588,27 +667,33 @@ def main():
                 pf["status"] = "empty"
                 summary["skipped"] += 1
                 per_file.append(pf)
+
                 continue
 
             pf["rows"] = len(df)
             summary["total_rows"] += len(df)
 
             if market == "match_odds":
-                out, null_edges = process_match(df)
+                out = process_match(df)
 
             elif market == "total":
-                out, null_edges = process_totals(df)
+                out = process_totals(df)
 
             else:
-                out, null_edges = process_btts(df)
+                out = process_btts(df)
+
+            null_edges = _count_null_edges(
+                out,
+                market,
+            )
 
             pf["null_edges"] = null_edges
             summary["null_edges"] += null_edges
 
             if null_edges > 0:
                 _log(
-                    f"{name} | {null_edges} null edges "
-                    f"(missing probability/book inputs)",
+                    f"{name} | {null_edges} null/invalid edge calculations "
+                    f"in written edge columns",
                     "WARN",
                 )
 
