@@ -1,0 +1,4 @@
+sport,league,game_id,match_date,match_time,home_team,away_team,home_prob,draw_prob,away_prob,home_xg,away_xg,expected_total_goals,identity_status,identity_reason,identity_detail
+soccer,ligue1,,2026_09_13,09:00 AM,Lille,Troyes,0.653,0.205,0.141,2.0,0.8,2.8,unmatched,no_sportsbook_fixture,no exact sportsbook fixture found for league/date/teams
+soccer,ligue1,,2026_09_13,11:15 AM,Le Mans,Lens,0.311,0.269,0.421,1.13,1.36,2.49,unmatched,no_sportsbook_fixture,no exact sportsbook fixture found for league/date/teams
+soccer,ligue1,,2026_09_13,02:45 PM,Stade Brest,Paris Saint Germain,0.124,0.181,0.695,0.83,2.25,3.08,unmatched,no_sportsbook_fixture,no exact sportsbook fixture found for league/date/teams

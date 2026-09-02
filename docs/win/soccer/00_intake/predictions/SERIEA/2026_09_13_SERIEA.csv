@@ -1,0 +1,5 @@
+sport,league,match_date,match_time,home_team,away_team,home_prob,draw_prob,away_prob,home_xg,away_xg,expected_total_goals
+soccer,seriea,2026_09_13,06:30 AM,Torino,Roma,25.9%,25.7%,48.4%,1.04,1.52,2.56
+soccer,seriea,2026_09_13,09:00 AM,Lecce,Monza,65.5%,20.1%,14.4%,2.06,0.84,2.90
+soccer,seriea,2026_09_13,12:00 PM,Napoli,Bologna,58.6%,22.2%,19.2%,1.89,0.98,2.87
+soccer,seriea,2026_09_13,02:45 PM,Lazio,Milan,28.3%,26.0%,45.7%,1.10,1.47,2.57

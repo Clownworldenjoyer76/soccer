@@ -1,0 +1,3 @@
+sport,league,game_id,match_date,match_time,home_team,away_team,home_prob,draw_prob,away_prob,home_xg,away_xg,expected_total_goals,identity_status,identity_reason,identity_detail
+soccer,bundesliga,,2026_09_13,09:30 AM,RB Leipzig,Hamburg,0.702,0.168,0.13,2.49,0.99,3.48,unmatched,no_sportsbook_fixture,no exact sportsbook fixture found for league/date/teams
+soccer,bundesliga,,2026_09_13,11:30 AM,Elversberg,Bayern Munich,0.08,0.14,0.78,0.74,2.64,3.38,unmatched,no_sportsbook_fixture,no exact sportsbook fixture found for league/date/teams

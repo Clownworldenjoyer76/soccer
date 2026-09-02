@@ -1,0 +1,2 @@
+sport,league,game_id,match_date,match_time,home_team,away_team,home_prob,draw_prob,away_prob,home_xg,away_xg,expected_total_goals,identity_status,identity_reason,identity_detail
+soccer,epl,,2026_09_14,03:00 PM,Leeds,Newcastle,0.339,0.272,0.39,1.18,1.29,2.47,unmatched,no_sportsbook_fixture,no exact sportsbook fixture found for league/date/teams

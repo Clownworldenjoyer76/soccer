@@ -1,0 +1,4 @@
+sport,league,game_id,match_date,match_time,home_team,away_team,home_prob,draw_prob,away_prob,home_xg,away_xg,expected_total_goals,identity_status,identity_reason,identity_detail
+soccer,seriea,,2026_09_05,09:00 AM,Fiorentina,Torino,0.545,0.236,0.219,1.75,1.02,2.77,unmatched,no_sportsbook_fixture,no exact sportsbook fixture found for league/date/teams
+soccer,seriea,,2026_09_05,12:00 PM,Inter Milan,Napoli,0.595,0.22,0.185,1.9,0.95,2.85,unmatched,no_sportsbook_fixture,no exact sportsbook fixture found for league/date/teams
+soccer,seriea,,2026_09_05,02:45 PM,Roma,Atalanta,0.57,0.227,0.203,1.84,1.01,2.85,unmatched,no_sportsbook_fixture,no exact sportsbook fixture found for league/date/teams

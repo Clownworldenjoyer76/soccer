@@ -1,7 +1,7 @@
 bucket,side,Win,Loss,Push,Total,Sample_Count,Win_Pct
 0.00_to_0.05,away,1,0,0,1,1,1.0
 0.00_to_0.05,draw,2,4,0,6,6,0.3333
-0.00_to_0.05,home,2,3,0,5,5,0.4
+0.00_to_0.05,home,3,3,0,6,6,0.5
 0.05_to_0.10,draw,2,3,0,5,5,0.4
 0.05_to_0.10,home,5,0,0,5,5,1.0
 0.10_to_0.15,draw,2,2,0,4,4,0.5
@@ -17,3 +17,4 @@ bucket,side,Win,Loss,Push,Total,Sample_Count,Win_Pct
 0.45_to_0.50,home,0,1,0,1,1,0.0
 0.60_to_0.65,home,1,0,0,1,1,1.0
 1.00_to_1.05,away,0,1,0,1,1,0.0
+2.40_to_2.45,draw,0,1,0,1,1,0.0

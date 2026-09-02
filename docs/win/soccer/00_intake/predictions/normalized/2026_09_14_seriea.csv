@@ -1,0 +1,2 @@
+sport,league,game_id,match_date,match_time,home_team,away_team,home_prob,draw_prob,away_prob,home_xg,away_xg,expected_total_goals,identity_status,identity_reason,identity_detail
+soccer,seriea,,2026_09_14,02:45 PM,Inter Milan,Udinese,0.834,0.114,0.052,2.85,0.6,3.45,unmatched,no_sportsbook_fixture,no exact sportsbook fixture found for league/date/teams

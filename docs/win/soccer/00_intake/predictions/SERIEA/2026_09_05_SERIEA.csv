@@ -1,0 +1,4 @@
+sport,league,match_date,match_time,home_team,away_team,home_prob,draw_prob,away_prob,home_xg,away_xg,expected_total_goals
+soccer,seriea,2026_09_05,09:00 AM,Fiorentina,Torino,54.5%,23.6%,21.9%,1.75,1.02,2.77
+soccer,seriea,2026_09_05,12:00 PM,Inter Milan,Napoli,59.5%,22.0%,18.5%,1.90,0.95,2.85
+soccer,seriea,2026_09_05,02:45 PM,Roma,Atalanta,57.0%,22.7%,20.3%,1.84,1.01,2.85

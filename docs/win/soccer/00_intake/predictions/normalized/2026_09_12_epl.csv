@@ -1,0 +1,8 @@
+sport,league,game_id,match_date,match_time,home_team,away_team,home_prob,draw_prob,away_prob,home_xg,away_xg,expected_total_goals,identity_status,identity_reason,identity_detail
+soccer,epl,,2026_09_12,10:00 AM,Chelsea,Hull,0.889,0.081,0.03,3.24,0.5,3.74,unmatched,no_sportsbook_fixture,no exact sportsbook fixture found for league/date/teams
+soccer,epl,,2026_09_12,10:00 AM,Liverpool,Fulham,0.801,0.131,0.068,2.7,0.67,3.37,unmatched,no_sportsbook_fixture,no exact sportsbook fixture found for league/date/teams
+soccer,epl,,2026_09_12,10:00 AM,Aston Villa,Nottingham Forest,0.555,0.241,0.204,1.69,0.92,2.61,unmatched,no_sportsbook_fixture,no exact sportsbook fixture found for league/date/teams
+soccer,epl,,2026_09_12,10:00 AM,Crystal Palace,Ipswich,0.731,0.172,0.096,2.24,0.68,2.92,unmatched,no_sportsbook_fixture,no exact sportsbook fixture found for league/date/teams
+soccer,epl,,2026_09_12,10:00 AM,Bournemouth,Brentford,0.494,0.26,0.247,1.51,0.98,2.49,unmatched,no_sportsbook_fixture,no exact sportsbook fixture found for league/date/teams
+soccer,epl,,2026_09_12,12:30 PM,Tottenham Hotspur,Everton,0.514,0.24,0.246,1.7,1.11,2.81,unmatched,no_sportsbook_fixture,no exact sportsbook fixture found for league/date/teams
+soccer,epl,,2026_09_12,03:00 PM,Sunderland,Arsenal,0.173,0.219,0.608,0.9,1.9,2.8,unmatched,no_sportsbook_fixture,no exact sportsbook fixture found for league/date/teams

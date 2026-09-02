@@ -1,0 +1,4 @@
+bucket,side,Win,Loss,Push,Total,Sample_Count,Win_Pct
+0.4_to_0.5,yes,2,0,0,2,2,1.0
+0.5_to_0.6,no,3,4,0,7,7,0.4286
+0.5_to_0.6,yes,0,2,0,2,2,0.0

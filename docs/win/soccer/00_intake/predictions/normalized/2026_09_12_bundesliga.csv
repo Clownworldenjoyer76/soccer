@@ -1,0 +1,7 @@
+sport,league,game_id,match_date,match_time,home_team,away_team,home_prob,draw_prob,away_prob,home_xg,away_xg,expected_total_goals,identity_status,identity_reason,identity_detail
+soccer,bundesliga,,2026_09_12,09:30 AM,Augsburg,Leverkusen,0.247,0.231,0.522,1.17,1.8,2.97,unmatched,no_sportsbook_fixture,no exact sportsbook fixture found for league/date/teams
+soccer,bundesliga,,2026_09_12,09:30 AM,Hoffenheim,VfB Stuttgart,0.433,0.246,0.321,1.57,1.32,2.89,unmatched,no_sportsbook_fixture,no exact sportsbook fixture found for league/date/teams
+soccer,bundesliga,,2026_09_12,09:30 AM,Borussia Dortmund,Paderborn,0.867,0.088,0.045,3.43,0.75,4.18,unmatched,no_sportsbook_fixture,no exact sportsbook fixture found for league/date/teams
+soccer,bundesliga,,2026_09_12,09:30 AM,Mainz,Eintracht Frankfurt,0.287,0.239,0.474,1.27,1.69,2.96,unmatched,no_sportsbook_fixture,no exact sportsbook fixture found for league/date/teams
+soccer,bundesliga,,2026_09_12,09:30 AM,Freiburg,Borussia Monchengladbach,0.484,0.24,0.276,1.69,1.23,2.92,unmatched,no_sportsbook_fixture,no exact sportsbook fixture found for league/date/teams
+soccer,bundesliga,,2026_09_12,12:30 PM,Koln,Werder Bremen,0.398,0.253,0.35,1.45,1.34,2.79,unmatched,no_sportsbook_fixture,no exact sportsbook fixture found for league/date/teams

@@ -1,0 +1,5 @@
+sport,league,match_date,match_time,home_team,away_team,home_prob,draw_prob,away_prob,home_xg,away_xg,expected_total_goals
+soccer,laliga,2026_09_12,08:00 AM,Santander,Alaves,25.0%,30.1%,44.9%,0.80,1.19,1.99
+soccer,laliga,2026_09_12,10:15 AM,Osasuna,Espanyol,49.0%,26.4%,24.6%,1.47,0.96,2.43
+soccer,laliga,2026_09_12,12:30 PM,Athletic Club,Elche,72.4%,18.0%,9.6%,2.15,0.63,2.78
+soccer,laliga,2026_09_12,03:00 PM,Real Madrid,Vallecano,71.5%,17.6%,10.8%,2.25,0.75,3.00

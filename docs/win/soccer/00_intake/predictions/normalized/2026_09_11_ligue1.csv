@@ -1,0 +1,2 @@
+sport,league,game_id,match_date,match_time,home_team,away_team,home_prob,draw_prob,away_prob,home_xg,away_xg,expected_total_goals,identity_status,identity_reason,identity_detail
+soccer,ligue1,,2026_09_11,02:45 PM,Rennes,Marseille,0.377,0.277,0.346,1.23,1.17,2.4,unmatched,no_sportsbook_fixture,no exact sportsbook fixture found for league/date/teams

@@ -1,0 +1,5 @@
+sport,league,game_id,match_date,match_time,home_team,away_team,home_prob,draw_prob,away_prob,home_xg,away_xg,expected_total_goals,identity_status,identity_reason,identity_detail
+soccer,laliga,,2026_09_13,08:00 AM,Celta Vigo,Malaga,0.739,0.173,0.088,2.19,0.61,2.8,unmatched,no_sportsbook_fixture,no exact sportsbook fixture found for league/date/teams
+soccer,laliga,,2026_09_13,10:15 AM,Levante,Barcelona,0.088,0.152,0.76,0.74,2.51,3.25,unmatched,no_sportsbook_fixture,no exact sportsbook fixture found for league/date/teams
+soccer,laliga,,2026_09_13,12:30 PM,Getafe,Deportivo De La Coruna,0.66,0.209,0.131,1.93,0.72,2.65,unmatched,no_sportsbook_fixture,no exact sportsbook fixture found for league/date/teams
+soccer,laliga,,2026_09_13,03:00 PM,Real Sociedad,Atletico Madrid,0.262,0.275,0.462,0.95,1.36,2.31,unmatched,no_sportsbook_fixture,no exact sportsbook fixture found for league/date/teams

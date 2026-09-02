@@ -1,0 +1,3 @@
+sport,league,game_id,match_date,match_time,home_team,away_team,home_prob,draw_prob,away_prob,home_xg,away_xg,expected_total_goals,identity_status,identity_reason,identity_detail
+soccer,seriea,,2026_09_12,12:00 PM,Sassuolo,Juventus,0.221,0.234,0.545,1.04,1.77,2.81,unmatched,no_sportsbook_fixture,no exact sportsbook fixture found for league/date/teams
+soccer,seriea,,2026_09_12,02:45 PM,Atalanta,Cagliari,0.757,0.15,0.093,2.57,0.79,3.36,unmatched,no_sportsbook_fixture,no exact sportsbook fixture found for league/date/teams

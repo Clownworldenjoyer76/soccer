@@ -1,0 +1,5 @@
+sport,league,match_date,match_time,home_team,away_team,home_prob,draw_prob,away_prob,home_xg,away_xg,expected_total_goals
+soccer,laliga,2026_09_13,08:00 AM,Celta Vigo,Malaga,73.9%,17.3%,8.8%,2.19,0.61,2.80
+soccer,laliga,2026_09_13,10:15 AM,Levante,Barcelona,8.8%,15.2%,76.0%,0.74,2.51,3.25
+soccer,laliga,2026_09_13,12:30 PM,Getafe,Deportivo De La Coruna,66.0%,20.9%,13.1%,1.93,0.72,2.65
+soccer,laliga,2026_09_13,03:00 PM,Real Sociedad,Atletico Madrid,26.2%,27.5%,46.2%,0.95,1.36,2.31

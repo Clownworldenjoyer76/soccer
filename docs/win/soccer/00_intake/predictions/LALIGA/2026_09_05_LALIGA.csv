@@ -1,0 +1,4 @@
+sport,league,match_date,match_time,home_team,away_team,home_prob,draw_prob,away_prob,home_xg,away_xg,expected_total_goals
+soccer,laliga,2026_09_05,10:15 AM,Athletic Club,Atletico Madrid,33.1%,29.6%,37.3%,1.03,1.11,2.14
+soccer,laliga,2026_09_05,12:30 PM,Vallecano,Santander,47.2%,25.1%,27.6%,1.56,1.14,2.70
+soccer,laliga,2026_09_05,03:00 PM,Villarreal,Deportivo De La Coruna,68.2%,17.4%,14.4%,2.46,1.05,3.51

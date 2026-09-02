@@ -1,0 +1,4 @@
+sport,league,match_date,match_time,home_team,away_team,home_prob,draw_prob,away_prob,home_xg,away_xg,expected_total_goals
+soccer,seriea,2026_09_06,09:00 AM,Parma,Monza,44.1%,23.5%,32.4%,1.70,1.43,3.13
+soccer,seriea,2026_09_06,12:00 PM,Bologna,Sassuolo,52.7%,21.9%,25.4%,1.96,1.30,3.26
+soccer,seriea,2026_09_06,02:45 PM,Juventus,Milan,47.7%,26.4%,25.9%,1.46,1.00,2.46

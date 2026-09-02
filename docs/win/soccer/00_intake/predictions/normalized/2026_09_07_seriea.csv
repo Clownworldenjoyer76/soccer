@@ -1,0 +1,3 @@
+sport,league,game_id,match_date,match_time,home_team,away_team,home_prob,draw_prob,away_prob,home_xg,away_xg,expected_total_goals,identity_status,identity_reason,identity_detail
+soccer,seriea,,2026_09_07,12:30 PM,Cagliari,Lecce,0.58,0.229,0.191,1.8,0.93,2.73,unmatched,no_sportsbook_fixture,no exact sportsbook fixture found for league/date/teams
+soccer,seriea,,2026_09_07,02:45 PM,Udinese,Lazio,0.327,0.275,0.398,1.13,1.29,2.42,unmatched,no_sportsbook_fixture,no exact sportsbook fixture found for league/date/teams

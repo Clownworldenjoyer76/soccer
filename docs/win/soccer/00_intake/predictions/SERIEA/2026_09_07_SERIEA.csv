@@ -1,0 +1,3 @@
+sport,league,match_date,match_time,home_team,away_team,home_prob,draw_prob,away_prob,home_xg,away_xg,expected_total_goals
+soccer,seriea,2026_09_07,12:30 PM,Cagliari,Lecce,58.0%,22.9%,19.1%,1.80,0.93,2.73
+soccer,seriea,2026_09_07,02:45 PM,Udinese,Lazio,32.7%,27.5%,39.8%,1.13,1.29,2.42

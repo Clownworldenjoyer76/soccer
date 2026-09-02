@@ -1,148 +1,214 @@
-[2026-08-31T13:45:02.860989] SCORE ROW EXCLUDED | docs/win/soccer/05_final_scores/results/final_scores/BUNDESLIGA/2026_04_11_BUNDESLIGA.csv | game_id=
-[2026-08-31T13:45:02.861121] SCORE ROW EXCLUDED | docs/win/soccer/05_final_scores/results/final_scores/BUNDESLIGA/2026_04_11_BUNDESLIGA.csv | game_id=
-[2026-08-31T13:45:02.861227] SCORE ROW EXCLUDED | docs/win/soccer/05_final_scores/results/final_scores/BUNDESLIGA/2026_04_11_BUNDESLIGA.csv | game_id=
-[2026-08-31T13:45:02.861326] SCORE ROW EXCLUDED | docs/win/soccer/05_final_scores/results/final_scores/BUNDESLIGA/2026_04_11_BUNDESLIGA.csv | game_id=
-[2026-08-31T13:45:02.861491] SCORE ROW EXCLUDED | docs/win/soccer/05_final_scores/results/final_scores/BUNDESLIGA/2026_04_11_BUNDESLIGA.csv | game_id=
-[2026-08-31T13:45:02.874863] SCORE ROW EXCLUDED | docs/win/soccer/05_final_scores/results/final_scores/BUNDESLIGA/2026_05_02_BUNDESLIGA.csv | game_id=
-[2026-08-31T13:45:02.874974] SCORE ROW EXCLUDED | docs/win/soccer/05_final_scores/results/final_scores/BUNDESLIGA/2026_05_02_BUNDESLIGA.csv | game_id=
-[2026-08-31T13:45:02.875126] SCORE ROW EXCLUDED | docs/win/soccer/05_final_scores/results/final_scores/BUNDESLIGA/2026_05_02_BUNDESLIGA.csv | game_id=
-[2026-08-31T13:45:02.875428] SCORE ROW EXCLUDED | docs/win/soccer/05_final_scores/results/final_scores/BUNDESLIGA/2026_05_02_BUNDESLIGA.csv | game_id=
-[2026-08-31T13:45:02.877114] SCORE ROW EXCLUDED | docs/win/soccer/05_final_scores/results/final_scores/BUNDESLIGA/2026_05_03_BUNDESLIGA.csv | game_id=
-[2026-08-31T13:45:02.877220] SCORE ROW EXCLUDED | docs/win/soccer/05_final_scores/results/final_scores/BUNDESLIGA/2026_05_03_BUNDESLIGA.csv | game_id=
-[2026-08-31T13:45:02.877312] SCORE ROW EXCLUDED | docs/win/soccer/05_final_scores/results/final_scores/BUNDESLIGA/2026_05_03_BUNDESLIGA.csv | game_id=
-[2026-08-31T13:45:02.882954] SCORE ROW EXCLUDED | docs/win/soccer/05_final_scores/results/final_scores/BUNDESLIGA/2026_05_16_BUNDESLIGA.csv | game_id=
-[2026-08-31T13:45:02.883326] SCORE ROW EXCLUDED | docs/win/soccer/05_final_scores/results/final_scores/BUNDESLIGA/2026_05_16_BUNDESLIGA.csv | game_id=
-[2026-08-31T13:45:02.886164] SCORE ROW EXCLUDED | docs/win/soccer/05_final_scores/results/final_scores/EPL/2026_04_11_EPL.csv | game_id=
-[2026-08-31T13:45:02.886263] SCORE ROW EXCLUDED | docs/win/soccer/05_final_scores/results/final_scores/EPL/2026_04_11_EPL.csv | game_id=
-[2026-08-31T13:45:02.886380] SCORE ROW EXCLUDED | docs/win/soccer/05_final_scores/results/final_scores/EPL/2026_04_11_EPL.csv | game_id=
-[2026-08-31T13:45:02.886498] SCORE ROW EXCLUDED | docs/win/soccer/05_final_scores/results/final_scores/EPL/2026_04_11_EPL.csv | game_id=
-[2026-08-31T13:45:02.889613] SCORE ROW EXCLUDED | docs/win/soccer/05_final_scores/results/final_scores/EPL/2026_04_13_EPL.csv | game_id=
-[2026-08-31T13:45:02.903235] SCORE ROW EXCLUDED | docs/win/soccer/05_final_scores/results/final_scores/EPL/2026_05_02_EPL.csv | game_id=
-[2026-08-31T13:45:02.903334] SCORE ROW EXCLUDED | docs/win/soccer/05_final_scores/results/final_scores/EPL/2026_05_02_EPL.csv | game_id=
-[2026-08-31T13:45:02.903457] SCORE ROW EXCLUDED | docs/win/soccer/05_final_scores/results/final_scores/EPL/2026_05_02_EPL.csv | game_id=
-[2026-08-31T13:45:02.903548] SCORE ROW EXCLUDED | docs/win/soccer/05_final_scores/results/final_scores/EPL/2026_05_02_EPL.csv | game_id=
-[2026-08-31T13:45:02.904835] SCORE ROW EXCLUDED | docs/win/soccer/05_final_scores/results/final_scores/EPL/2026_05_03_EPL.csv | game_id=
-[2026-08-31T13:45:02.904931] SCORE ROW EXCLUDED | docs/win/soccer/05_final_scores/results/final_scores/EPL/2026_05_03_EPL.csv | game_id=
-[2026-08-31T13:45:02.905019] SCORE ROW EXCLUDED | docs/win/soccer/05_final_scores/results/final_scores/EPL/2026_05_03_EPL.csv | game_id=
-[2026-08-31T13:45:02.928452] SCORE ROW EXCLUDED | docs/win/soccer/05_final_scores/results/final_scores/LALIGA/2026_04_11_LALIGA.csv | game_id=
-[2026-08-31T13:45:02.928556] SCORE ROW EXCLUDED | docs/win/soccer/05_final_scores/results/final_scores/LALIGA/2026_04_11_LALIGA.csv | game_id=
-[2026-08-31T13:45:02.928646] SCORE ROW EXCLUDED | docs/win/soccer/05_final_scores/results/final_scores/LALIGA/2026_04_11_LALIGA.csv | game_id=
-[2026-08-31T13:45:02.934513] SCORE ROW EXCLUDED | docs/win/soccer/05_final_scores/results/final_scores/LALIGA/2026_04_22_LALIGA.csv | game_id=
-[2026-08-31T13:45:02.944003] SCORE ROW EXCLUDED | docs/win/soccer/05_final_scores/results/final_scores/LALIGA/2026_05_01_LALIGA.csv | game_id=
-[2026-08-31T13:45:02.945400] SCORE ROW EXCLUDED | docs/win/soccer/05_final_scores/results/final_scores/LALIGA/2026_05_02_LALIGA.csv | game_id=
-[2026-08-31T13:45:02.945502] SCORE ROW EXCLUDED | docs/win/soccer/05_final_scores/results/final_scores/LALIGA/2026_05_02_LALIGA.csv | game_id=
-[2026-08-31T13:45:02.945592] SCORE ROW EXCLUDED | docs/win/soccer/05_final_scores/results/final_scores/LALIGA/2026_05_02_LALIGA.csv | game_id=
-[2026-08-31T13:45:02.945679] SCORE ROW EXCLUDED | docs/win/soccer/05_final_scores/results/final_scores/LALIGA/2026_05_02_LALIGA.csv | game_id=
-[2026-08-31T13:45:02.947019] SCORE ROW EXCLUDED | docs/win/soccer/05_final_scores/results/final_scores/LALIGA/2026_05_03_LALIGA.csv | game_id=
-[2026-08-31T13:45:02.947116] SCORE ROW EXCLUDED | docs/win/soccer/05_final_scores/results/final_scores/LALIGA/2026_05_03_LALIGA.csv | game_id=
-[2026-08-31T13:45:02.947213] SCORE ROW EXCLUDED | docs/win/soccer/05_final_scores/results/final_scores/LALIGA/2026_05_03_LALIGA.csv | game_id=
-[2026-08-31T13:45:02.947299] SCORE ROW EXCLUDED | docs/win/soccer/05_final_scores/results/final_scores/LALIGA/2026_05_03_LALIGA.csv | game_id=
-[2026-08-31T13:45:02.949920] SCORE ROW EXCLUDED | docs/win/soccer/05_final_scores/results/final_scores/LALIGA/2026_05_08_LALIGA.csv | game_id=
-[2026-08-31T13:45:02.951440] SCORE ROW EXCLUDED | docs/win/soccer/05_final_scores/results/final_scores/LALIGA/2026_05_09_LALIGA.csv | game_id=
-[2026-08-31T13:45:02.978229] SCORE ROW EXCLUDED | docs/win/soccer/05_final_scores/results/final_scores/LIGUE1/2026_04_11_LIGUE1.csv | game_id=
-[2026-08-31T13:45:02.990298] SCORE ROW EXCLUDED | docs/win/soccer/05_final_scores/results/final_scores/LIGUE1/2026_05_02_LIGUE1.csv | game_id=
-[2026-08-31T13:45:02.990423] SCORE ROW EXCLUDED | docs/win/soccer/05_final_scores/results/final_scores/LIGUE1/2026_05_02_LIGUE1.csv | game_id=
-[2026-08-31T13:45:02.990515] SCORE ROW EXCLUDED | docs/win/soccer/05_final_scores/results/final_scores/LIGUE1/2026_05_02_LIGUE1.csv | game_id=
-[2026-08-31T13:45:02.990602] SCORE ROW EXCLUDED | docs/win/soccer/05_final_scores/results/final_scores/LIGUE1/2026_05_02_LIGUE1.csv | game_id=
-[2026-08-31T13:45:02.991951] SCORE ROW EXCLUDED | docs/win/soccer/05_final_scores/results/final_scores/LIGUE1/2026_05_03_LIGUE1.csv | game_id=
-[2026-08-31T13:45:02.992047] SCORE ROW EXCLUDED | docs/win/soccer/05_final_scores/results/final_scores/LIGUE1/2026_05_03_LIGUE1.csv | game_id=
-[2026-08-31T13:45:02.992135] SCORE ROW EXCLUDED | docs/win/soccer/05_final_scores/results/final_scores/LIGUE1/2026_05_03_LIGUE1.csv | game_id=
-[2026-08-31T13:45:02.992220] SCORE ROW EXCLUDED | docs/win/soccer/05_final_scores/results/final_scores/LIGUE1/2026_05_03_LIGUE1.csv | game_id=
-[2026-08-31T13:45:02.992304] SCORE ROW EXCLUDED | docs/win/soccer/05_final_scores/results/final_scores/LIGUE1/2026_05_03_LIGUE1.csv | game_id=
-[2026-08-31T13:45:03.004762] SCORE ROW EXCLUDED | docs/win/soccer/05_final_scores/results/final_scores/LIGUE1/2026_08_23_LIGUE1.csv | game_id=
-[2026-08-31T13:45:03.006207] SCORE ROW EXCLUDED | docs/win/soccer/05_final_scores/results/final_scores/MLS/2026_04_11_MLS.csv | game_id=
-[2026-08-31T13:45:03.006304] SCORE ROW EXCLUDED | docs/win/soccer/05_final_scores/results/final_scores/MLS/2026_04_11_MLS.csv | game_id=
-[2026-08-31T13:45:03.006419] SCORE ROW EXCLUDED | docs/win/soccer/05_final_scores/results/final_scores/MLS/2026_04_11_MLS.csv | game_id=
-[2026-08-31T13:45:03.006509] SCORE ROW EXCLUDED | docs/win/soccer/05_final_scores/results/final_scores/MLS/2026_04_11_MLS.csv | game_id=
-[2026-08-31T13:45:03.006595] SCORE ROW EXCLUDED | docs/win/soccer/05_final_scores/results/final_scores/MLS/2026_04_11_MLS.csv | game_id=
-[2026-08-31T13:45:03.007056] SCORE ROW EXCLUDED | docs/win/soccer/05_final_scores/results/final_scores/MLS/2026_04_11_MLS.csv | game_id=
-[2026-08-31T13:45:03.010905] SCORE ROW EXCLUDED | docs/win/soccer/05_final_scores/results/final_scores/MLS/2026_04_18_MLS.csv | game_id=
-[2026-08-31T13:45:03.011001] SCORE ROW EXCLUDED | docs/win/soccer/05_final_scores/results/final_scores/MLS/2026_04_18_MLS.csv | game_id=
-[2026-08-31T13:45:03.011091] SCORE ROW EXCLUDED | docs/win/soccer/05_final_scores/results/final_scores/MLS/2026_04_18_MLS.csv | game_id=
-[2026-08-31T13:45:03.011176] SCORE ROW EXCLUDED | docs/win/soccer/05_final_scores/results/final_scores/MLS/2026_04_18_MLS.csv | game_id=
-[2026-08-31T13:45:03.023157] SCORE ROW EXCLUDED | docs/win/soccer/05_final_scores/results/final_scores/MLS/2026_05_09_MLS.csv | game_id=
-[2026-08-31T13:45:03.054166] SCORE ROW EXCLUDED | docs/win/soccer/05_final_scores/results/final_scores/SERIEA/2026_04_06_SERIEA.csv | game_id=
-[2026-08-31T13:45:03.054267] SCORE ROW EXCLUDED | docs/win/soccer/05_final_scores/results/final_scores/SERIEA/2026_04_06_SERIEA.csv | game_id=
-[2026-08-31T13:45:03.054379] SCORE ROW EXCLUDED | docs/win/soccer/05_final_scores/results/final_scores/SERIEA/2026_04_06_SERIEA.csv | game_id=
-[2026-08-31T13:45:03.057053] SCORE ROW EXCLUDED | docs/win/soccer/05_final_scores/results/final_scores/SERIEA/2026_04_11_SERIEA.csv | game_id=
-[2026-08-31T13:45:03.057147] SCORE ROW EXCLUDED | docs/win/soccer/05_final_scores/results/final_scores/SERIEA/2026_04_11_SERIEA.csv | game_id=
-[2026-08-31T13:45:03.057241] SCORE ROW EXCLUDED | docs/win/soccer/05_final_scores/results/final_scores/SERIEA/2026_04_11_SERIEA.csv | game_id=
-[2026-08-31T13:45:03.071659] SCORE ROW EXCLUDED | docs/win/soccer/05_final_scores/results/final_scores/SERIEA/2026_05_01_SERIEA.csv | game_id=
-[2026-08-31T13:45:03.072940] SCORE ROW EXCLUDED | docs/win/soccer/05_final_scores/results/final_scores/SERIEA/2026_05_02_SERIEA.csv | game_id=
-[2026-08-31T13:45:03.073037] SCORE ROW EXCLUDED | docs/win/soccer/05_final_scores/results/final_scores/SERIEA/2026_05_02_SERIEA.csv | game_id=
-[2026-08-31T13:45:03.073126] SCORE ROW EXCLUDED | docs/win/soccer/05_final_scores/results/final_scores/SERIEA/2026_05_02_SERIEA.csv | game_id=
-[2026-08-31T13:45:03.074481] SCORE ROW EXCLUDED | docs/win/soccer/05_final_scores/results/final_scores/SERIEA/2026_05_03_SERIEA.csv | game_id=
-[2026-08-31T13:45:03.074579] SCORE ROW EXCLUDED | docs/win/soccer/05_final_scores/results/final_scores/SERIEA/2026_05_03_SERIEA.csv | game_id=
-[2026-08-31T13:45:03.074666] SCORE ROW EXCLUDED | docs/win/soccer/05_final_scores/results/final_scores/SERIEA/2026_05_03_SERIEA.csv | game_id=
-[2026-08-31T13:45:03.074751] SCORE ROW EXCLUDED | docs/win/soccer/05_final_scores/results/final_scores/SERIEA/2026_05_03_SERIEA.csv | game_id=
-[2026-08-31T13:45:03.078623] SCORE ROW EXCLUDED | docs/win/soccer/05_final_scores/results/final_scores/SERIEA/2026_05_09_SERIEA.csv | game_id=
-[2026-08-31T13:45:03.078717] SCORE ROW EXCLUDED | docs/win/soccer/05_final_scores/results/final_scores/SERIEA/2026_05_09_SERIEA.csv | game_id=
-[2026-08-31T13:45:03.115098] INVALID RAW PROBABILITIES | league=ligue1 game_id=33675944 | sum=1.001000000000
-[2026-08-31T13:45:03.122965] INVALID RAW PROBABILITIES | league=seriea game_id=33676064 | sum=0.999000000000
-[2026-08-31T13:45:03.130168] INVALID RAW PROBABILITIES | league=epl game_id=33642702 | sum=0.999000000000
-[2026-08-31T13:45:03.137618] INVALID RAW PROBABILITIES | league=ligue1 game_id=33675989 | sum=0.999000000000
-[2026-08-31T13:45:03.140930] INVALID RAW PROBABILITIES | league=mls game_id=33780426 | sum=0.999000000000
-[2026-08-31T13:45:03.144441] INVALID RAW PROBABILITIES | league=seriea game_id=33676098 | sum=0.999000000000
-[2026-08-31T13:45:03.144588] INVALID RAW PROBABILITIES | league=seriea game_id=33676097 | sum=0.999000000000
-[2026-08-31T13:45:03.147955] INVALID RAW PROBABILITIES | league=laliga game_id=33676133 | sum=0.999000000000
-[2026-08-31T13:45:03.171652] INVALID RAW PROBABILITIES | league=epl game_id=33657529 | sum=0.999000000000
-[2026-08-31T13:45:03.179818] INVALID RAW PROBABILITIES | league=mls game_id=33891311 | sum=0.999000000000
-[2026-08-31T13:45:03.180217] INVALID RAW PROBABILITIES | league=mls game_id=33891337 | sum=0.999000000000
-[2026-08-31T13:45:03.180368] INVALID RAW PROBABILITIES | league=mls game_id=33891304 | sum=0.999000000000
-[2026-08-31T13:45:03.183969] INVALID RAW PROBABILITIES | league=seriea game_id=33890575 | sum=0.999000000000
-[2026-08-31T13:45:03.191295] INVALID RAW PROBABILITIES | league=epl game_id=33657526 | sum=0.999000000000
-[2026-08-31T13:45:03.195546] INVALID RAW PROBABILITIES | league=ligue1 game_id=33890612 | sum=0.999000000000
-[2026-08-31T13:45:03.195772] INVALID RAW PROBABILITIES | league=ligue1 game_id=33890616 | sum=0.999000000000
-[2026-08-31T13:45:03.230049] INVALID RAW PROBABILITIES | league=mls game_id=118533 | sum=0.999000000000
-[2026-08-31T13:45:03.230281] INVALID RAW PROBABILITIES | league=mls game_id=118537 | sum=0.999000000000
-[2026-08-31T13:45:03.237238] INVALID RAW PROBABILITIES | league=bundesliga game_id=33994090 | sum=0.999000000000
-[2026-08-31T13:45:03.249831] INVALID RAW PROBABILITIES | league=seriea game_id=33996797 | sum=1.001000000000
-[2026-08-31T13:45:03.257804] INVALID RAW PROBABILITIES | league=epl game_id=33981320 | sum=1.001000000000
-[2026-08-31T13:45:03.261541] INVALID RAW PROBABILITIES | league=laliga game_id=33999005 | sum=0.999000000000
-[2026-08-31T13:45:03.261769] INVALID RAW PROBABILITIES | league=laliga game_id=33999015 | sum=0.999000000000
-[2026-08-31T13:45:03.270129] INVALID RAW PROBABILITIES | league=mls game_id=118700 | sum=1.001000000000
-[2026-08-31T13:45:03.270468] INVALID RAW PROBABILITIES | league=mls game_id=118805 | sum=0.999000000000
-[2026-08-31T13:45:03.270837] INVALID RAW PROBABILITIES | league=mls game_id=118813 | sum=0.999000000000
-[2026-08-31T13:45:03.271279] INVALID RAW PROBABILITIES | league=mls game_id=118808 | sum=0.999000000000
-[2026-08-31T13:45:03.274832] INVALID RAW PROBABILITIES | league=seriea game_id=33996754 | sum=0.999000000000
-[2026-08-31T13:45:03.292100] INVALID RAW PROBABILITIES | league=seriea game_id=33996725 | sum=0.999000000000
-[2026-08-31T13:45:03.332821] INVALID RAW PROBABILITIES | league=seriea game_id=61061661 | sum=0.999000000000
-[2026-08-31T13:45:03.336651] INVALID RAW PROBABILITIES | league=bundesliga game_id=61514188 | sum=0.999000000000
-[2026-08-31T13:45:03.340626] INVALID RAW PROBABILITIES | league=epl game_id=61301225 | sum=0.999000000000
-[2026-08-31T13:45:03.340765] INVALID RAW PROBABILITIES | league=epl game_id=61301241 | sum=0.999000000000
-[2026-08-31T13:45:03.349162] INVALID RAW PROBABILITIES | league=mls game_id=66299132 | sum=0.999000000000
-[2026-08-31T13:45:03.356229] INVALID RAW PROBABILITIES | league=bundesliga game_id=61514186 | sum=0.999000000000
-[2026-08-31T13:45:03.360065] INVALID RAW PROBABILITIES | league=epl game_id=61301245 | sum=0.999000000000
-[2026-08-31T13:45:03.371802] INVALID RAW PROBABILITIES | league=mls game_id=66299144 | sum=0.999000000000
-[2026-08-31T13:45:03.375794] INVALID RAW PROBABILITIES | league=seriea game_id=61061659 | sum=0.999000000000
-[2026-08-31T13:45:03.388766] INVALID RAW PROBABILITIES | league=laliga game_id=61624640 | sum=1.001000000000
-[2026-08-31T13:45:03.388907] INVALID RAW PROBABILITIES | league=laliga game_id=61624650 | sum=0.999000000000
-[2026-08-31T13:45:03.399247] INVALID RAW PROBABILITIES | league=ligue1 game_id=70315368 | sum=0.999000000000
-[2026-08-31T13:45:03.420861] INVALID RAW PROBABILITIES | league=mls game_id=66299176 | sum=0.999000000000
-[2026-08-31T13:45:03.421249] INVALID RAW PROBABILITIES | league=mls game_id=66299190 | sum=0.999000000000
-[2026-08-31T13:45:03.421490] INVALID RAW PROBABILITIES | league=mls game_id=66299194 | sum=0.999000000000
-[2026-08-31T13:45:03.421620] INVALID RAW PROBABILITIES | league=mls game_id=66299196 | sum=0.999000000000
-[2026-08-31T13:45:03.421826] INVALID RAW PROBABILITIES | league=mls game_id=66299200 | sum=1.001000000000
-[2026-08-31T13:45:03.425910] INVALID RAW PROBABILITIES | league=epl game_id=61301265 | sum=0.999000000000
-[2026-08-31T13:45:03.430455] INVALID RAW PROBABILITIES | league=laliga game_id=61624662 | sum=0.999000000000
-[2026-08-31T13:45:03.430689] INVALID RAW PROBABILITIES | league=laliga game_id=61624666 | sum=1.001000000000
-[2026-08-31T13:45:03.443818] INVALID RAW PROBABILITIES | league=seriea game_id=61061665 | sum=0.999000000000
-[2026-08-31T13:45:03.469133] INVALID RAW PROBABILITIES | league=epl game_id=61301279 | sum=0.999000000000
-[2026-08-31T13:45:03.469384] INVALID RAW PROBABILITIES | league=epl game_id=61301281 | sum=0.999000000000
-[2026-08-31T13:45:03.476110] INVALID RAW PROBABILITIES | league=mls game_id=66299230 | sum=0.999000000000
-[2026-08-31T13:45:03.480675] INVALID RAW PROBABILITIES | league=seriea game_id=61061695 | sum=1.001000000000
-[2026-08-31T13:45:03.487099] INVALID RAW PROBABILITIES | league=ligue1 game_id=71564470 | sum=1.001000000000
-[2026-08-31T13:45:03.490760] INVALID RAW PROBABILITIES | league=mls game_id=66299240 | sum=0.999000000000
-[2026-08-31T13:45:03.498777] INVALID RAW PROBABILITIES | league=mls game_id=66299254 | sum=0.999000000000
-[2026-08-31T13:45:03.499004] INVALID RAW PROBABILITIES | league=mls game_id=66299250 | sum=0.999000000000
-[2026-08-31T13:45:03.499736] INVALID RAW PROBABILITIES | league=mls game_id=66299274 | sum=1.001000000000
-[2026-08-31T13:45:03.499866] INVALID RAW PROBABILITIES | league=mls game_id=66299272 | sum=0.999000000000
-[2026-08-31T13:45:03.505105] INVALID RAW PROBABILITIES | league=mls game_id=66299292 | sum=0.999000000000
-[2026-08-31T13:45:03.505323] INVALID RAW PROBABILITIES | league=mls game_id=66299296 | sum=0.999000000000
-[2026-08-31T13:45:03.509014] INVALID RAW PROBABILITIES | league=mls game_id=66299308 | sum=0.999000000000
-[2026-08-31T13:45:03.513547] INVALID RAW PROBABILITIES | league=mls game_id=66299312 | sum=0.999000000000
-[2026-08-31T13:45:03.513929] INVALID RAW PROBABILITIES | league=mls game_id=66299322 | sum=0.999000000000
-[2026-08-31T13:45:03.514294] INVALID RAW PROBABILITIES | league=mls game_id=66299324 | sum=0.999000000000
-[2026-08-31T13:45:03.527504] INVALID RAW PROBABILITIES | league=laliga game_id=401882916 | sum=0.999000000000
-[2026-08-31T13:45:03.536691] INVALID RAW PROBABILITIES | league=laliga game_id=401882913 | sum=0.999000000000
-[2026-08-31T13:45:03.540084] INVALID RAW PROBABILITIES | league=mls game_id=761754 | sum=0.999000000000
+[2026-09-02T05:08:11.344625] SCORE ROW EXCLUDED | docs/win/soccer/05_final_scores/results/final_scores/BUNDESLIGA/2026_04_11_BUNDESLIGA.csv | game_id=
+[2026-09-02T05:08:11.344737] SCORE ROW EXCLUDED | docs/win/soccer/05_final_scores/results/final_scores/BUNDESLIGA/2026_04_11_BUNDESLIGA.csv | game_id=
+[2026-09-02T05:08:11.344837] SCORE ROW EXCLUDED | docs/win/soccer/05_final_scores/results/final_scores/BUNDESLIGA/2026_04_11_BUNDESLIGA.csv | game_id=
+[2026-09-02T05:08:11.344966] SCORE ROW EXCLUDED | docs/win/soccer/05_final_scores/results/final_scores/BUNDESLIGA/2026_04_11_BUNDESLIGA.csv | game_id=
+[2026-09-02T05:08:11.345064] SCORE ROW EXCLUDED | docs/win/soccer/05_final_scores/results/final_scores/BUNDESLIGA/2026_04_11_BUNDESLIGA.csv | game_id=
+[2026-09-02T05:08:11.354037] SCORE ROW EXCLUDED | docs/win/soccer/05_final_scores/results/final_scores/BUNDESLIGA/2026_05_02_BUNDESLIGA.csv | game_id=
+[2026-09-02T05:08:11.354132] SCORE ROW EXCLUDED | docs/win/soccer/05_final_scores/results/final_scores/BUNDESLIGA/2026_05_02_BUNDESLIGA.csv | game_id=
+[2026-09-02T05:08:11.354280] SCORE ROW EXCLUDED | docs/win/soccer/05_final_scores/results/final_scores/BUNDESLIGA/2026_05_02_BUNDESLIGA.csv | game_id=
+[2026-09-02T05:08:11.354421] SCORE ROW EXCLUDED | docs/win/soccer/05_final_scores/results/final_scores/BUNDESLIGA/2026_05_02_BUNDESLIGA.csv | game_id=
+[2026-09-02T05:08:11.355414] SCORE ROW EXCLUDED | docs/win/soccer/05_final_scores/results/final_scores/BUNDESLIGA/2026_05_03_BUNDESLIGA.csv | game_id=
+[2026-09-02T05:08:11.355509] SCORE ROW EXCLUDED | docs/win/soccer/05_final_scores/results/final_scores/BUNDESLIGA/2026_05_03_BUNDESLIGA.csv | game_id=
+[2026-09-02T05:08:11.355595] SCORE ROW EXCLUDED | docs/win/soccer/05_final_scores/results/final_scores/BUNDESLIGA/2026_05_03_BUNDESLIGA.csv | game_id=
+[2026-09-02T05:08:11.359760] SCORE ROW EXCLUDED | docs/win/soccer/05_final_scores/results/final_scores/BUNDESLIGA/2026_05_16_BUNDESLIGA.csv | game_id=
+[2026-09-02T05:08:11.360146] SCORE ROW EXCLUDED | docs/win/soccer/05_final_scores/results/final_scores/BUNDESLIGA/2026_05_16_BUNDESLIGA.csv | game_id=
+[2026-09-02T05:08:11.360347] DUPLICATE FINAL SCORE | league=bundesliga game_id=61515292
+[2026-09-02T05:08:11.360436] DUPLICATE FINAL SCORE | league=bundesliga game_id=61515274
+[2026-09-02T05:08:11.360520] DUPLICATE FINAL SCORE | league=bundesliga game_id=61515296
+[2026-09-02T05:08:11.360604] DUPLICATE FINAL SCORE | league=bundesliga game_id=61515276
+[2026-09-02T05:08:11.360686] SCORE ROW EXCLUDED | docs/win/soccer/05_final_scores/results/final_scores/BUNDESLIGA/2026_05_16_BUNDESLIGA.csv | game_id=
+[2026-09-02T05:08:11.362986] DUPLICATE FINAL SCORE | league=bundesliga game_id=401884816
+[2026-09-02T05:08:11.363078] DUPLICATE FINAL SCORE | league=bundesliga game_id=401884812
+[2026-09-02T05:08:11.363165] DUPLICATE FINAL SCORE | league=bundesliga game_id=401884810
+[2026-09-02T05:08:11.363249] DUPLICATE FINAL SCORE | league=bundesliga game_id=401884809
+[2026-09-02T05:08:11.364325] DUPLICATE FINAL SCORE | league=bundesliga game_id=401884813
+[2026-09-02T05:08:11.366240] SCORE ROW EXCLUDED | docs/win/soccer/05_final_scores/results/final_scores/EPL/2026_04_11_EPL.csv | game_id=
+[2026-09-02T05:08:11.366336] SCORE ROW EXCLUDED | docs/win/soccer/05_final_scores/results/final_scores/EPL/2026_04_11_EPL.csv | game_id=
+[2026-09-02T05:08:11.366424] SCORE ROW EXCLUDED | docs/win/soccer/05_final_scores/results/final_scores/EPL/2026_04_11_EPL.csv | game_id=
+[2026-09-02T05:08:11.366510] SCORE ROW EXCLUDED | docs/win/soccer/05_final_scores/results/final_scores/EPL/2026_04_11_EPL.csv | game_id=
+[2026-09-02T05:08:11.368599] SCORE ROW EXCLUDED | docs/win/soccer/05_final_scores/results/final_scores/EPL/2026_04_13_EPL.csv | game_id=
+[2026-09-02T05:08:11.378496] SCORE ROW EXCLUDED | docs/win/soccer/05_final_scores/results/final_scores/EPL/2026_05_02_EPL.csv | game_id=
+[2026-09-02T05:08:11.378589] SCORE ROW EXCLUDED | docs/win/soccer/05_final_scores/results/final_scores/EPL/2026_05_02_EPL.csv | game_id=
+[2026-09-02T05:08:11.378677] SCORE ROW EXCLUDED | docs/win/soccer/05_final_scores/results/final_scores/EPL/2026_05_02_EPL.csv | game_id=
+[2026-09-02T05:08:11.378770] SCORE ROW EXCLUDED | docs/win/soccer/05_final_scores/results/final_scores/EPL/2026_05_02_EPL.csv | game_id=
+[2026-09-02T05:08:11.379739] SCORE ROW EXCLUDED | docs/win/soccer/05_final_scores/results/final_scores/EPL/2026_05_03_EPL.csv | game_id=
+[2026-09-02T05:08:11.379833] SCORE ROW EXCLUDED | docs/win/soccer/05_final_scores/results/final_scores/EPL/2026_05_03_EPL.csv | game_id=
+[2026-09-02T05:08:11.379948] SCORE ROW EXCLUDED | docs/win/soccer/05_final_scores/results/final_scores/EPL/2026_05_03_EPL.csv | game_id=
+[2026-09-02T05:08:11.389467] DUPLICATE FINAL SCORE | league=epl game_id=61301285
+[2026-09-02T05:08:11.390514] DUPLICATE FINAL SCORE | league=epl game_id=401879301
+[2026-09-02T05:08:11.392002] DUPLICATE FINAL SCORE | league=epl game_id=401879321
+[2026-09-02T05:08:11.392129] DUPLICATE FINAL SCORE | league=epl game_id=401879299
+[2026-09-02T05:08:11.392246] DUPLICATE FINAL SCORE | league=epl game_id=401879298
+[2026-09-02T05:08:11.392361] DUPLICATE FINAL SCORE | league=epl game_id=401879322
+[2026-09-02T05:08:11.393535] DUPLICATE FINAL SCORE | league=epl game_id=401879319
+[2026-09-02T05:08:11.393627] DUPLICATE FINAL SCORE | league=epl game_id=401879297
+[2026-09-02T05:08:11.396587] DUPLICATE FINAL SCORE | league=epl game_id=401879312
+[2026-09-02T05:08:11.397750] DUPLICATE FINAL SCORE | league=epl game_id=401879293
+[2026-09-02T05:08:11.397843] DUPLICATE FINAL SCORE | league=epl game_id=401879315
+[2026-09-02T05:08:11.397957] DUPLICATE FINAL SCORE | league=epl game_id=401879317
+[2026-09-02T05:08:11.401683] SCORE ROW EXCLUDED | docs/win/soccer/05_final_scores/results/final_scores/LALIGA/2026_04_11_LALIGA.csv | game_id=
+[2026-09-02T05:08:11.401778] SCORE ROW EXCLUDED | docs/win/soccer/05_final_scores/results/final_scores/LALIGA/2026_04_11_LALIGA.csv | game_id=
+[2026-09-02T05:08:11.401866] SCORE ROW EXCLUDED | docs/win/soccer/05_final_scores/results/final_scores/LALIGA/2026_04_11_LALIGA.csv | game_id=
+[2026-09-02T05:08:11.406001] SCORE ROW EXCLUDED | docs/win/soccer/05_final_scores/results/final_scores/LALIGA/2026_04_22_LALIGA.csv | game_id=
+[2026-09-02T05:08:11.412029] SCORE ROW EXCLUDED | docs/win/soccer/05_final_scores/results/final_scores/LALIGA/2026_05_01_LALIGA.csv | game_id=
+[2026-09-02T05:08:11.412987] SCORE ROW EXCLUDED | docs/win/soccer/05_final_scores/results/final_scores/LALIGA/2026_05_02_LALIGA.csv | game_id=
+[2026-09-02T05:08:11.413081] SCORE ROW EXCLUDED | docs/win/soccer/05_final_scores/results/final_scores/LALIGA/2026_05_02_LALIGA.csv | game_id=
+[2026-09-02T05:08:11.413168] SCORE ROW EXCLUDED | docs/win/soccer/05_final_scores/results/final_scores/LALIGA/2026_05_02_LALIGA.csv | game_id=
+[2026-09-02T05:08:11.413252] SCORE ROW EXCLUDED | docs/win/soccer/05_final_scores/results/final_scores/LALIGA/2026_05_02_LALIGA.csv | game_id=
+[2026-09-02T05:08:11.414222] SCORE ROW EXCLUDED | docs/win/soccer/05_final_scores/results/final_scores/LALIGA/2026_05_03_LALIGA.csv | game_id=
+[2026-09-02T05:08:11.414314] SCORE ROW EXCLUDED | docs/win/soccer/05_final_scores/results/final_scores/LALIGA/2026_05_03_LALIGA.csv | game_id=
+[2026-09-02T05:08:11.414400] SCORE ROW EXCLUDED | docs/win/soccer/05_final_scores/results/final_scores/LALIGA/2026_05_03_LALIGA.csv | game_id=
+[2026-09-02T05:08:11.414484] SCORE ROW EXCLUDED | docs/win/soccer/05_final_scores/results/final_scores/LALIGA/2026_05_03_LALIGA.csv | game_id=
+[2026-09-02T05:08:11.416384] SCORE ROW EXCLUDED | docs/win/soccer/05_final_scores/results/final_scores/LALIGA/2026_05_08_LALIGA.csv | game_id=
+[2026-09-02T05:08:11.417390] SCORE ROW EXCLUDED | docs/win/soccer/05_final_scores/results/final_scores/LALIGA/2026_05_09_LALIGA.csv | game_id=
+[2026-09-02T05:08:11.425512] DUPLICATE FINAL SCORE | league=laliga game_id=61624680
+[2026-09-02T05:08:11.427497] DUPLICATE FINAL SCORE | league=laliga game_id=401882918
+[2026-09-02T05:08:11.428566] DUPLICATE FINAL SCORE | league=laliga game_id=401882920
+[2026-09-02T05:08:11.430493] DUPLICATE FINAL SCORE | league=laliga game_id=401882908
+[2026-09-02T05:08:11.431503] DUPLICATE FINAL SCORE | league=laliga game_id=401882914
+[2026-09-02T05:08:11.433637] DUPLICATE FINAL SCORE | league=laliga game_id=401882911
+[2026-09-02T05:08:11.435628] DUPLICATE FINAL SCORE | league=laliga game_id=401882917
+[2026-09-02T05:08:11.439689] DUPLICATE FINAL SCORE | league=laliga game_id=401882902
+[2026-09-02T05:08:11.440840] DUPLICATE FINAL SCORE | league=laliga game_id=401882904
+[2026-09-02T05:08:11.443852] SCORE ROW EXCLUDED | docs/win/soccer/05_final_scores/results/final_scores/LIGUE1/2026_04_11_LIGUE1.csv | game_id=
+[2026-09-02T05:08:11.453114] SCORE ROW EXCLUDED | docs/win/soccer/05_final_scores/results/final_scores/LIGUE1/2026_05_02_LIGUE1.csv | game_id=
+[2026-09-02T05:08:11.453210] SCORE ROW EXCLUDED | docs/win/soccer/05_final_scores/results/final_scores/LIGUE1/2026_05_02_LIGUE1.csv | game_id=
+[2026-09-02T05:08:11.453297] SCORE ROW EXCLUDED | docs/win/soccer/05_final_scores/results/final_scores/LIGUE1/2026_05_02_LIGUE1.csv | game_id=
+[2026-09-02T05:08:11.453382] SCORE ROW EXCLUDED | docs/win/soccer/05_final_scores/results/final_scores/LIGUE1/2026_05_02_LIGUE1.csv | game_id=
+[2026-09-02T05:08:11.454349] SCORE ROW EXCLUDED | docs/win/soccer/05_final_scores/results/final_scores/LIGUE1/2026_05_03_LIGUE1.csv | game_id=
+[2026-09-02T05:08:11.454443] SCORE ROW EXCLUDED | docs/win/soccer/05_final_scores/results/final_scores/LIGUE1/2026_05_03_LIGUE1.csv | game_id=
+[2026-09-02T05:08:11.454551] SCORE ROW EXCLUDED | docs/win/soccer/05_final_scores/results/final_scores/LIGUE1/2026_05_03_LIGUE1.csv | game_id=
+[2026-09-02T05:08:11.454648] SCORE ROW EXCLUDED | docs/win/soccer/05_final_scores/results/final_scores/LIGUE1/2026_05_03_LIGUE1.csv | game_id=
+[2026-09-02T05:08:11.454755] SCORE ROW EXCLUDED | docs/win/soccer/05_final_scores/results/final_scores/LIGUE1/2026_05_03_LIGUE1.csv | game_id=
+[2026-09-02T05:08:11.459385] DUPLICATE FINAL SCORE | league=ligue1 game_id=61512170
+[2026-09-02T05:08:11.459480] DUPLICATE FINAL SCORE | league=ligue1 game_id=61512168
+[2026-09-02T05:08:11.460502] DUPLICATE FINAL SCORE | league=ligue1 game_id=71564468
+[2026-09-02T05:08:11.461528] DUPLICATE FINAL SCORE | league=ligue1 game_id=71564470
+[2026-09-02T05:08:11.463676] DUPLICATE FINAL SCORE | league=ligue1 game_id=401876491
+[2026-09-02T05:08:11.464644] SCORE ROW EXCLUDED | docs/win/soccer/05_final_scores/results/final_scores/LIGUE1/2026_08_23_LIGUE1.csv | game_id=
+[2026-09-02T05:08:11.464853] SCORE ROW EXCLUDED | docs/win/soccer/05_final_scores/results/final_scores/LIGUE1/2026_08_23_LIGUE1.csv | game_id=
+[2026-09-02T05:08:11.465868] DUPLICATE FINAL SCORE | league=ligue1 game_id=401876476
+[2026-09-02T05:08:11.467133] DUPLICATE FINAL SCORE | league=ligue1 game_id=401876483
+[2026-09-02T05:08:11.469156] SCORE ROW EXCLUDED | docs/win/soccer/05_final_scores/results/final_scores/MLS/2026_04_11_MLS.csv | game_id=
+[2026-09-02T05:08:11.469251] SCORE ROW EXCLUDED | docs/win/soccer/05_final_scores/results/final_scores/MLS/2026_04_11_MLS.csv | game_id=
+[2026-09-02T05:08:11.469336] SCORE ROW EXCLUDED | docs/win/soccer/05_final_scores/results/final_scores/MLS/2026_04_11_MLS.csv | game_id=
+[2026-09-02T05:08:11.469420] SCORE ROW EXCLUDED | docs/win/soccer/05_final_scores/results/final_scores/MLS/2026_04_11_MLS.csv | game_id=
+[2026-09-02T05:08:11.469502] SCORE ROW EXCLUDED | docs/win/soccer/05_final_scores/results/final_scores/MLS/2026_04_11_MLS.csv | game_id=
+[2026-09-02T05:08:11.469966] SCORE ROW EXCLUDED | docs/win/soccer/05_final_scores/results/final_scores/MLS/2026_04_11_MLS.csv | game_id=
+[2026-09-02T05:08:11.472801] SCORE ROW EXCLUDED | docs/win/soccer/05_final_scores/results/final_scores/MLS/2026_04_18_MLS.csv | game_id=
+[2026-09-02T05:08:11.472922] SCORE ROW EXCLUDED | docs/win/soccer/05_final_scores/results/final_scores/MLS/2026_04_18_MLS.csv | game_id=
+[2026-09-02T05:08:11.473013] SCORE ROW EXCLUDED | docs/win/soccer/05_final_scores/results/final_scores/MLS/2026_04_18_MLS.csv | game_id=
+[2026-09-02T05:08:11.473098] SCORE ROW EXCLUDED | docs/win/soccer/05_final_scores/results/final_scores/MLS/2026_04_18_MLS.csv | game_id=
+[2026-09-02T05:08:11.482549] SCORE ROW EXCLUDED | docs/win/soccer/05_final_scores/results/final_scores/MLS/2026_05_09_MLS.csv | game_id=
+[2026-09-02T05:08:11.498562] DUPLICATE FINAL SCORE | league=mls game_id=66299334
+[2026-09-02T05:08:11.501107] DUPLICATE FINAL SCORE | league=mls game_id=761716
+[2026-09-02T05:08:11.501200] DUPLICATE FINAL SCORE | league=mls game_id=761715
+[2026-09-02T05:08:11.501288] DUPLICATE FINAL SCORE | league=mls game_id=761711
+[2026-09-02T05:08:11.502472] DUPLICATE FINAL SCORE | league=mls game_id=761722
+[2026-09-02T05:08:11.504257] DUPLICATE FINAL SCORE | league=mls game_id=761738
+[2026-09-02T05:08:11.504351] DUPLICATE FINAL SCORE | league=mls game_id=761727
+[2026-09-02T05:08:11.504439] DUPLICATE FINAL SCORE | league=mls game_id=761726
+[2026-09-02T05:08:11.504525] DUPLICATE FINAL SCORE | league=mls game_id=761725
+[2026-09-02T05:08:11.504611] DUPLICATE FINAL SCORE | league=mls game_id=761730
+[2026-09-02T05:08:11.506280] DUPLICATE FINAL SCORE | league=mls game_id=761742
+[2026-09-02T05:08:11.506373] DUPLICATE FINAL SCORE | league=mls game_id=761745
+[2026-09-02T05:08:11.506461] DUPLICATE FINAL SCORE | league=mls game_id=761741
+[2026-09-02T05:08:11.507549] DUPLICATE FINAL SCORE | league=mls game_id=761753
+[2026-09-02T05:08:11.509219] DUPLICATE FINAL SCORE | league=mls game_id=761767
+[2026-09-02T05:08:11.509311] DUPLICATE FINAL SCORE | league=mls game_id=761757
+[2026-09-02T05:08:11.509397] DUPLICATE FINAL SCORE | league=mls game_id=761756
+[2026-09-02T05:08:11.509481] DUPLICATE FINAL SCORE | league=mls game_id=761760
+[2026-09-02T05:08:11.511503] SCORE ROW EXCLUDED | docs/win/soccer/05_final_scores/results/final_scores/SERIEA/2026_04_06_SERIEA.csv | game_id=
+[2026-09-02T05:08:11.511594] SCORE ROW EXCLUDED | docs/win/soccer/05_final_scores/results/final_scores/SERIEA/2026_04_06_SERIEA.csv | game_id=
+[2026-09-02T05:08:11.511680] SCORE ROW EXCLUDED | docs/win/soccer/05_final_scores/results/final_scores/SERIEA/2026_04_06_SERIEA.csv | game_id=
+[2026-09-02T05:08:11.513625] SCORE ROW EXCLUDED | docs/win/soccer/05_final_scores/results/final_scores/SERIEA/2026_04_11_SERIEA.csv | game_id=
+[2026-09-02T05:08:11.513718] SCORE ROW EXCLUDED | docs/win/soccer/05_final_scores/results/final_scores/SERIEA/2026_04_11_SERIEA.csv | game_id=
+[2026-09-02T05:08:11.513804] SCORE ROW EXCLUDED | docs/win/soccer/05_final_scores/results/final_scores/SERIEA/2026_04_11_SERIEA.csv | game_id=
+[2026-09-02T05:08:11.524657] SCORE ROW EXCLUDED | docs/win/soccer/05_final_scores/results/final_scores/SERIEA/2026_05_01_SERIEA.csv | game_id=
+[2026-09-02T05:08:11.525636] SCORE ROW EXCLUDED | docs/win/soccer/05_final_scores/results/final_scores/SERIEA/2026_05_02_SERIEA.csv | game_id=
+[2026-09-02T05:08:11.525733] SCORE ROW EXCLUDED | docs/win/soccer/05_final_scores/results/final_scores/SERIEA/2026_05_02_SERIEA.csv | game_id=
+[2026-09-02T05:08:11.525820] SCORE ROW EXCLUDED | docs/win/soccer/05_final_scores/results/final_scores/SERIEA/2026_05_02_SERIEA.csv | game_id=
+[2026-09-02T05:08:11.527087] SCORE ROW EXCLUDED | docs/win/soccer/05_final_scores/results/final_scores/SERIEA/2026_05_03_SERIEA.csv | game_id=
+[2026-09-02T05:08:11.527181] SCORE ROW EXCLUDED | docs/win/soccer/05_final_scores/results/final_scores/SERIEA/2026_05_03_SERIEA.csv | game_id=
+[2026-09-02T05:08:11.527269] SCORE ROW EXCLUDED | docs/win/soccer/05_final_scores/results/final_scores/SERIEA/2026_05_03_SERIEA.csv | game_id=
+[2026-09-02T05:08:11.527354] SCORE ROW EXCLUDED | docs/win/soccer/05_final_scores/results/final_scores/SERIEA/2026_05_03_SERIEA.csv | game_id=
+[2026-09-02T05:08:11.530330] SCORE ROW EXCLUDED | docs/win/soccer/05_final_scores/results/final_scores/SERIEA/2026_05_09_SERIEA.csv | game_id=
+[2026-09-02T05:08:11.530424] SCORE ROW EXCLUDED | docs/win/soccer/05_final_scores/results/final_scores/SERIEA/2026_05_09_SERIEA.csv | game_id=
+[2026-09-02T05:08:11.538196] DUPLICATE FINAL SCORE | league=seriea game_id=401874931
+[2026-09-02T05:08:11.543378] DUPLICATE FINAL SCORE | league=seriea game_id=401874938
+[2026-09-02T05:08:11.561000] INVALID RAW PROBABILITIES | league=ligue1 game_id=33675944 | sum=1.001000000000
+[2026-09-02T05:08:11.566229] INVALID RAW PROBABILITIES | league=seriea game_id=33676064 | sum=0.999000000000
+[2026-09-02T05:08:11.571157] INVALID RAW PROBABILITIES | league=epl game_id=33642702 | sum=0.999000000000
+[2026-09-02T05:08:11.576294] INVALID RAW PROBABILITIES | league=ligue1 game_id=33675989 | sum=0.999000000000
+[2026-09-02T05:08:11.578534] INVALID RAW PROBABILITIES | league=mls game_id=33780426 | sum=0.999000000000
+[2026-09-02T05:08:11.580939] INVALID RAW PROBABILITIES | league=seriea game_id=33676098 | sum=0.999000000000
+[2026-09-02T05:08:11.581082] INVALID RAW PROBABILITIES | league=seriea game_id=33676097 | sum=0.999000000000
+[2026-09-02T05:08:11.583424] INVALID RAW PROBABILITIES | league=laliga game_id=33676133 | sum=0.999000000000
+[2026-09-02T05:08:11.599467] INVALID RAW PROBABILITIES | league=epl game_id=33657529 | sum=0.999000000000
+[2026-09-02T05:08:11.605092] INVALID RAW PROBABILITIES | league=mls game_id=33891311 | sum=0.999000000000
+[2026-09-02T05:08:11.605482] INVALID RAW PROBABILITIES | league=mls game_id=33891337 | sum=0.999000000000
+[2026-09-02T05:08:11.605609] INVALID RAW PROBABILITIES | league=mls game_id=33891304 | sum=0.999000000000
+[2026-09-02T05:08:11.608117] INVALID RAW PROBABILITIES | league=seriea game_id=33890575 | sum=0.999000000000
+[2026-09-02T05:08:11.613186] INVALID RAW PROBABILITIES | league=epl game_id=33657526 | sum=0.999000000000
+[2026-09-02T05:08:11.615605] INVALID RAW PROBABILITIES | league=ligue1 game_id=33890612 | sum=0.999000000000
+[2026-09-02T05:08:11.615832] INVALID RAW PROBABILITIES | league=ligue1 game_id=33890616 | sum=0.999000000000
+[2026-09-02T05:08:11.639715] INVALID RAW PROBABILITIES | league=mls game_id=118533 | sum=0.999000000000
+[2026-09-02T05:08:11.639972] INVALID RAW PROBABILITIES | league=mls game_id=118537 | sum=0.999000000000
+[2026-09-02T05:08:11.644833] INVALID RAW PROBABILITIES | league=bundesliga game_id=33994090 | sum=0.999000000000
+[2026-09-02T05:08:11.653226] INVALID RAW PROBABILITIES | league=seriea game_id=33996797 | sum=1.001000000000
+[2026-09-02T05:08:11.658664] INVALID RAW PROBABILITIES | league=epl game_id=33981320 | sum=1.001000000000
+[2026-09-02T05:08:11.661242] INVALID RAW PROBABILITIES | league=laliga game_id=33999005 | sum=0.999000000000
+[2026-09-02T05:08:11.661468] INVALID RAW PROBABILITIES | league=laliga game_id=33999015 | sum=0.999000000000
+[2026-09-02T05:08:11.666995] INVALID RAW PROBABILITIES | league=mls game_id=118700 | sum=1.001000000000
+[2026-09-02T05:08:11.667326] INVALID RAW PROBABILITIES | league=mls game_id=118805 | sum=0.999000000000
+[2026-09-02T05:08:11.667751] INVALID RAW PROBABILITIES | league=mls game_id=118813 | sum=0.999000000000
+[2026-09-02T05:08:11.668229] INVALID RAW PROBABILITIES | league=mls game_id=118808 | sum=0.999000000000
+[2026-09-02T05:08:11.670638] INVALID RAW PROBABILITIES | league=seriea game_id=33996754 | sum=0.999000000000
+[2026-09-02T05:08:11.682473] INVALID RAW PROBABILITIES | league=seriea game_id=33996725 | sum=0.999000000000
+[2026-09-02T05:08:11.710482] INVALID RAW PROBABILITIES | league=seriea game_id=61061661 | sum=0.999000000000
+[2026-09-02T05:08:11.713096] INVALID RAW PROBABILITIES | league=bundesliga game_id=61514188 | sum=0.999000000000
+[2026-09-02T05:08:11.715871] INVALID RAW PROBABILITIES | league=epl game_id=61301225 | sum=0.999000000000
+[2026-09-02T05:08:11.716037] INVALID RAW PROBABILITIES | league=epl game_id=61301241 | sum=0.999000000000
+[2026-09-02T05:08:11.721964] INVALID RAW PROBABILITIES | league=mls game_id=66299132 | sum=0.999000000000
+[2026-09-02T05:08:11.726932] INVALID RAW PROBABILITIES | league=bundesliga game_id=61514186 | sum=0.999000000000
+[2026-09-02T05:08:11.729551] INVALID RAW PROBABILITIES | league=epl game_id=61301245 | sum=0.999000000000
+[2026-09-02T05:08:11.737744] INVALID RAW PROBABILITIES | league=mls game_id=66299144 | sum=0.999000000000
+[2026-09-02T05:08:11.740550] INVALID RAW PROBABILITIES | league=seriea game_id=61061659 | sum=0.999000000000
+[2026-09-02T05:08:11.749686] INVALID RAW PROBABILITIES | league=laliga game_id=61624640 | sum=1.001000000000
+[2026-09-02T05:08:11.749831] INVALID RAW PROBABILITIES | league=laliga game_id=61624650 | sum=0.999000000000
+[2026-09-02T05:08:11.756807] INVALID RAW PROBABILITIES | league=ligue1 game_id=70315368 | sum=0.999000000000
+[2026-09-02T05:08:11.771828] INVALID RAW PROBABILITIES | league=mls game_id=66299176 | sum=0.999000000000
+[2026-09-02T05:08:11.772236] INVALID RAW PROBABILITIES | league=mls game_id=66299190 | sum=0.999000000000
+[2026-09-02T05:08:11.772444] INVALID RAW PROBABILITIES | league=mls game_id=66299194 | sum=0.999000000000
+[2026-09-02T05:08:11.772569] INVALID RAW PROBABILITIES | league=mls game_id=66299196 | sum=0.999000000000
+[2026-09-02T05:08:11.772774] INVALID RAW PROBABILITIES | league=mls game_id=66299200 | sum=1.001000000000
+[2026-09-02T05:08:11.775485] INVALID RAW PROBABILITIES | league=epl game_id=61301265 | sum=0.999000000000
+[2026-09-02T05:08:11.778620] INVALID RAW PROBABILITIES | league=laliga game_id=61624662 | sum=0.999000000000
+[2026-09-02T05:08:11.778840] INVALID RAW PROBABILITIES | league=laliga game_id=61624666 | sum=1.001000000000
+[2026-09-02T05:08:11.787870] INVALID RAW PROBABILITIES | league=seriea game_id=61061665 | sum=0.999000000000
+[2026-09-02T05:08:11.805238] INVALID RAW PROBABILITIES | league=epl game_id=61301279 | sum=0.999000000000
+[2026-09-02T05:08:11.805456] INVALID RAW PROBABILITIES | league=epl game_id=61301281 | sum=0.999000000000
+[2026-09-02T05:08:11.809976] INVALID RAW PROBABILITIES | league=mls game_id=66299230 | sum=0.999000000000
+[2026-09-02T05:08:11.813179] INVALID RAW PROBABILITIES | league=seriea game_id=61061695 | sum=1.001000000000
+[2026-09-02T05:08:11.817556] INVALID RAW PROBABILITIES | league=ligue1 game_id=71564470 | sum=1.001000000000
+[2026-09-02T05:08:11.820108] INVALID RAW PROBABILITIES | league=mls game_id=66299240 | sum=0.999000000000
+[2026-09-02T05:08:11.825514] INVALID RAW PROBABILITIES | league=mls game_id=66299254 | sum=0.999000000000
+[2026-09-02T05:08:11.825743] INVALID RAW PROBABILITIES | league=mls game_id=66299250 | sum=0.999000000000
+[2026-09-02T05:08:11.826827] INVALID RAW PROBABILITIES | league=mls game_id=66299274 | sum=1.001000000000
+[2026-09-02T05:08:11.827067] INVALID RAW PROBABILITIES | league=mls game_id=66299272 | sum=0.999000000000
+[2026-09-02T05:08:11.830826] INVALID RAW PROBABILITIES | league=mls game_id=66299292 | sum=0.999000000000
+[2026-09-02T05:08:11.831070] INVALID RAW PROBABILITIES | league=mls game_id=66299296 | sum=0.999000000000
+[2026-09-02T05:08:11.833814] INVALID RAW PROBABILITIES | league=mls game_id=66299308 | sum=0.999000000000
+[2026-09-02T05:08:11.836859] INVALID RAW PROBABILITIES | league=mls game_id=66299312 | sum=0.999000000000
+[2026-09-02T05:08:11.837291] INVALID RAW PROBABILITIES | league=mls game_id=66299322 | sum=0.999000000000
+[2026-09-02T05:08:11.837656] INVALID RAW PROBABILITIES | league=mls game_id=66299324 | sum=0.999000000000
+[2026-09-02T05:08:11.846724] INVALID RAW PROBABILITIES | league=laliga game_id=401882916 | sum=0.999000000000
+[2026-09-02T05:08:11.853333] INVALID RAW PROBABILITIES | league=laliga game_id=401882913 | sum=0.999000000000
+[2026-09-02T05:08:11.855642] INVALID RAW PROBABILITIES | league=mls game_id=761754 | sum=0.999000000000
+[2026-09-02T05:08:11.862271] INVALID RAW PROBABILITIES | league=epl game_id=401879296 | sum=0.999000000000
+[2026-09-02T05:08:11.864838] INVALID RAW PROBABILITIES | league=laliga game_id=401882897 | sum=0.999000000000
+[2026-09-02T05:08:11.867485] INVALID RAW PROBABILITIES | league=ligue1 game_id=401876483 | sum=0.999000000000
+[2026-09-02T05:08:11.867625] INVALID RAW PROBABILITIES | league=ligue1 game_id=401876484 | sum=0.999000000000
+[2026-09-02T05:08:11.871153] INVALID RAW PROBABILITIES | league=mls game_id=761759 | sum=1.001000000000
+[2026-09-02T05:08:11.874164] INVALID RAW PROBABILITIES | league=seriea game_id=401874743 | sum=1.001000000000
+[2026-09-02T05:08:11.874304] INVALID RAW PROBABILITIES | league=seriea game_id=401874749 | sum=1.001000000000

@@ -1,0 +1,5 @@
+sport,league,game_id,game_date,match_time,home_team,away_team,home_score,away_score
+soccer,seriea,401874746,2026_08_29,02:45 PM,Juventus,Parma,2,0
+soccer,seriea,401874942,2026_08_29,12:30 PM,Fiorentina,Frosinone,0,3
+soccer,seriea,401874749,2026_08_29,12:30 PM,Monza,Udinese,2,3
+soccer,seriea,401874743,2026_08_29,12:30 PM,Sassuolo,Torino,2,1

@@ -1,0 +1,4 @@
+sport,league,match_date,match_time,home_team,away_team,home_prob,draw_prob,away_prob,home_xg,away_xg,expected_total_goals
+soccer,ligue1,2026_09_05,11:15 AM,Lens,Lorient,65.2%,20.2%,14.6%,2.04,0.85,2.89
+soccer,ligue1,2026_09_05,02:45 PM,Nice,Le Mans,55.8%,23.1%,21.0%,1.79,1.01,2.80
+soccer,ligue1,2026_09_05,02:45 PM,Le Havre,Stade Brest,36.7%,27.2%,36.1%,1.24,1.23,2.47
