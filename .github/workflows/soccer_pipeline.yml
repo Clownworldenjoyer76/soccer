@@ -22,6 +22,7 @@ jobs:
     env:
       TZ: America/New_York
       RUN_DATE: ${{ inputs.date }}
+      EPL_MODEL_ROOT: docs/win/soccer/ml/epl
 
     steps:
       - name: Checkout repo
@@ -395,6 +396,43 @@ jobs:
       - name: Soccer merge intake
         run: python docs/win/soccer/scripts/01_merge/merge_intake.py
 
+      # EPL-only ML inference. Reads the normalized EPL sportsbook row (all required
+      # market-role odds are together there), predicts once, and attaches ml_* fields
+      # to the four EPL merge-market files. No non-EPL file is modified.
+      - name: Set up Python 3.14 for EPL ML inference
+        id: epl-python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.14"
+
+      - name: Install EPL ML inference dependencies
+        run: |
+          python -m pip install --upgrade pip
+          python -m pip install \
+            numpy==2.5.2 \
+            scipy==1.18.0 \
+            pandas==3.0.5 \
+            joblib==1.5.3 \
+            scikit-learn==1.9.0 \
+            lightgbm==4.6.0 \
+            xgboost==3.4.1
+
+      - name: EPL ML inference
+        shell: bash
+        run: |
+          set -o pipefail
+          python docs/win/soccer/scripts/01_merge/epl_ml_infer.py \
+            --soccer-root docs/win/soccer \
+            --epl-root "${EPL_MODEL_ROOT}" \
+            --date "${RUN_DATE}" \
+            2>&1 | tee docs/win/soccer/errors/01_merge/epl_ml_infer.txt
+
+      # Restore the pipeline's existing Python version/dependencies after EPL inference.
+      - name: Restore Python 3.11
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+
       - name: Soccer juice
         run: python docs/win/soccer/scripts/02_juice/apply_juice.py
 
@@ -457,6 +495,9 @@ jobs:
           echo "=== Intake logs ==="
           cat docs/win/soccer/errors/00_intake/name_normalization.txt || true
           cat docs/win/soccer/errors/00_intake/soccer_cleaner.txt || true
+
+          echo "=== EPL ML inference log ==="
+          cat docs/win/soccer/errors/01_merge/epl_ml_infer.txt || true
 
           echo "=== Final score logs ==="
           cat docs/win/soccer/05_final_scores/errors/soccer_results_grade_summary.txt || true
