@@ -1,0 +1,4 @@
+game_id,sport,league,match_date,match_time,home_team,away_team,home_prob,draw_prob,away_prob,home_xg,away_xg,expected_total_goals,dk_over35_decimal,dk_under35_decimal
+401874931,soccer,seriea,2026_08_22,12:30 PM,Inter Milan,Monza,0.91,0.066,0.024,3.52,0.49,4.01,2.25,1.65
+401874745,soccer,seriea,2026_08_22,12:30 PM,Udinese,Como,0.335,0.277,0.387,1.14,1.24,2.38,,
+401874929,soccer,seriea,2026_08_22,02:45 PM,Genoa,Napoli,0.245,0.251,0.504,1.03,1.59,2.62,,

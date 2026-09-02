@@ -1,2 +1,2 @@
 sport,league,game_id,match_date,match_time,home_team,away_team,home_prob,draw_prob,away_prob,home_xg,away_xg,expected_total_goals,identity_status,identity_reason,identity_detail
-soccer,bundesliga,72513148,2026_08_28,02:30 PM,Bayern Munich,VfB Stuttgart,0.822,0.113,0.065,3.07,0.8,3.87,matched,matched_game_id,
+soccer,bundesliga,401884817,2026_08_28,02:30 PM,Bayern Munich,VfB Stuttgart,0.822,0.113,0.065,3.07,0.8,3.87,matched,matched_game_id,

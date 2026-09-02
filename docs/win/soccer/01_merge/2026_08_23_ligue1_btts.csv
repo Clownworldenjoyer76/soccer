@@ -1,0 +1,3 @@
+game_id,sport,league,match_date,match_time,home_team,away_team,home_prob,draw_prob,away_prob,home_xg,away_xg,expected_total_goals,btts_yes,btts_no
+401876493,soccer,ligue1,2026_08_23,09:00 AM,Angers,Lille,0.311,0.276,0.412,1.08,1.29,2.37,,
+401876492,soccer,ligue1,2026_08_23,11:15 AM,Le Havre,Monaco,0.093,0.163,0.744,0.71,2.37,3.08,3.50,1.29

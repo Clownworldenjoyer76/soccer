@@ -1,7 +1,0 @@
-sport,league,game_id,match_date,match_time,home_team,away_team,dk_home_decimal,dk_draw_decimal,dk_away_decimal,dk_over25_decimal,dk_under25_decimal,dk_over35_decimal,dk_under35_decimal,btts_yes,btts_no
-soccer,mls,66299236,2026_07_16,07:30 PM,CF Montreal,Toronto FC,1.77,3.90,3.80,,,,,,
-soccer,mls,66299238,2026_07_16,08:30 PM,Chicago Fire,Vancouver Whitecaps,2.65,3.90,2.30,,,,,,
-soccer,mls,66299240,2026_07_16,08:30 PM,St Louis City,Sporting Kansas City,1.32,5.30,7.00,,,,,,
-soccer,mls,66299242,2026_07_16,10:30 PM,Seattle Sounders,Portland Timbers,1.37,5.30,6.50,,,,,,
-soccer,mls,66299244,2026_07_17,08:00 PM,Nashville SC,Atlanta United,1.32,5.10,8.00,,,,,,
-soccer,mls,66299246,2026_07_17,10:45 PM,LA Galaxy,Los Angeles FC,2.50,3.80,2.50,,,,,,

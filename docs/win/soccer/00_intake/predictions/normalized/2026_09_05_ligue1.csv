@@ -1,4 +1,4 @@
 sport,league,game_id,match_date,match_time,home_team,away_team,home_prob,draw_prob,away_prob,home_xg,away_xg,expected_total_goals,identity_status,identity_reason,identity_detail
-soccer,ligue1,,2026_09_05,11:15 AM,Lens,Lorient,0.652,0.202,0.146,2.04,0.85,2.89,unmatched,no_sportsbook_fixture,no exact sportsbook fixture found for league/date/teams
-soccer,ligue1,,2026_09_05,02:45 PM,Nice,Le Mans,0.558,0.231,0.21,1.79,1.01,2.8,unmatched,no_sportsbook_fixture,no exact sportsbook fixture found for league/date/teams
-soccer,ligue1,,2026_09_05,02:45 PM,Le Havre,Stade Brest,0.367,0.272,0.361,1.24,1.23,2.47,unmatched,no_sportsbook_fixture,no exact sportsbook fixture found for league/date/teams
+soccer,ligue1,,2026_09_05,11:15 AM,Lens,Lorient,0.652,0.202,0.146,2.04,0.85,2.89,unmatched,no_sportsbook_fixture,no exact games-master fixture found for league/date/teams
+soccer,ligue1,,2026_09_05,02:45 PM,Nice,Le Mans,0.558,0.231,0.21,1.79,1.01,2.8,unmatched,no_sportsbook_fixture,no exact games-master fixture found for league/date/teams
+soccer,ligue1,,2026_09_05,02:45 PM,Le Havre,Stade Brest,0.367,0.272,0.361,1.24,1.23,2.47,unmatched,no_sportsbook_fixture,no exact games-master fixture found for league/date/teams

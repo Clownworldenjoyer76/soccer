@@ -1,5 +1,5 @@
 sport,league,game_id,match_date,match_time,home_team,away_team,home_prob,draw_prob,away_prob,home_xg,away_xg,expected_total_goals,identity_status,identity_reason,identity_detail
-soccer,laliga,,2026_09_12,08:00 AM,Santander,Alaves,0.25,0.301,0.449,0.8,1.19,1.99,unmatched,no_sportsbook_fixture,no exact sportsbook fixture found for league/date/teams
-soccer,laliga,,2026_09_12,10:15 AM,Osasuna,Espanyol,0.49,0.264,0.246,1.47,0.96,2.43,unmatched,no_sportsbook_fixture,no exact sportsbook fixture found for league/date/teams
-soccer,laliga,,2026_09_12,12:30 PM,Athletic Club,Elche,0.724,0.18,0.096,2.15,0.63,2.78,unmatched,no_sportsbook_fixture,no exact sportsbook fixture found for league/date/teams
-soccer,laliga,,2026_09_12,03:00 PM,Real Madrid,Vallecano,0.715,0.176,0.108,2.25,0.75,3.0,unmatched,no_sportsbook_fixture,no exact sportsbook fixture found for league/date/teams
+soccer,laliga,,2026_09_12,08:00 AM,Santander,Alaves,0.25,0.301,0.449,0.8,1.19,1.99,unmatched,no_sportsbook_fixture,no exact games-master fixture found for league/date/teams
+soccer,laliga,,2026_09_12,10:15 AM,Osasuna,Espanyol,0.49,0.264,0.246,1.47,0.96,2.43,unmatched,no_sportsbook_fixture,no exact games-master fixture found for league/date/teams
+soccer,laliga,,2026_09_12,12:30 PM,Athletic Club,Elche,0.724,0.18,0.096,2.15,0.63,2.78,unmatched,no_sportsbook_fixture,no exact games-master fixture found for league/date/teams
+soccer,laliga,,2026_09_12,03:00 PM,Real Madrid,Vallecano,0.715,0.176,0.108,2.25,0.75,3.0,unmatched,no_sportsbook_fixture,no exact games-master fixture found for league/date/teams
