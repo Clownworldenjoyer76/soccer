@@ -14,21 +14,55 @@ from zoneinfo import ZoneInfo
 import numpy as np
 import pandas as pd
 
+
 MODEL_REGISTRY = {
     "1x2": ("1x2", "extra_trees", "wrapper_raw.joblib"),
     "over25": ("over25", "lightgbm", "wrapper_raw.joblib"),
     "over35": ("over35", "xgboost", "wrapper_calibrated.joblib"),
     "btts": ("btts", "random_forest", "wrapper_raw.joblib"),
     "goals": ("goals", "lightgbm", "goal_bundle.joblib"),
-    "1x2_predictability": ("1x2_predictability", "extra_trees", "wrapper_raw.joblib"),
-    "1x2_skip": ("1x2_skip", "extra_trees", "wrapper_raw.joblib"),
-    "over25_predictability": ("over25_predictability", "lightgbm", "wrapper_raw.joblib"),
-    "over25_skip": ("over25_skip", "lightgbm", "wrapper_raw.joblib"),
-    "over35_predictability": ("over35_predictability", "xgboost", "wrapper_raw.joblib"),
-    "over35_skip": ("over35_skip", "xgboost", "wrapper_raw.joblib"),
-    "btts_predictability": ("btts_predictability", "random_forest", "wrapper_raw.joblib"),
-    "btts_skip": ("btts_skip", "random_forest", "wrapper_raw.joblib"),
+    "1x2_predictability": (
+        "1x2_predictability",
+        "extra_trees",
+        "wrapper_raw.joblib",
+    ),
+    "1x2_skip": (
+        "1x2_skip",
+        "extra_trees",
+        "wrapper_raw.joblib",
+    ),
+    "over25_predictability": (
+        "over25_predictability",
+        "lightgbm",
+        "wrapper_raw.joblib",
+    ),
+    "over25_skip": (
+        "over25_skip",
+        "lightgbm",
+        "wrapper_raw.joblib",
+    ),
+    "over35_predictability": (
+        "over35_predictability",
+        "xgboost",
+        "wrapper_raw.joblib",
+    ),
+    "over35_skip": (
+        "over35_skip",
+        "xgboost",
+        "wrapper_raw.joblib",
+    ),
+    "btts_predictability": (
+        "btts_predictability",
+        "random_forest",
+        "wrapper_raw.joblib",
+    ),
+    "btts_skip": (
+        "btts_skip",
+        "random_forest",
+        "wrapper_raw.joblib",
+    ),
 }
+
 
 ROLE_SOURCE_COLUMNS = {
     "role_1x2_home_odds": "dk_home_decimal",
@@ -38,7 +72,20 @@ ROLE_SOURCE_COLUMNS = {
     "role_under25_odds": "dk_under25_decimal",
 }
 
-BASE_MODEL_KEYS = ("1x2", "over25", "over35", "btts", "goals")
+
+MODEL_ODDS_COLUMNS = tuple(
+    ROLE_SOURCE_COLUMNS.values()
+)
+
+
+BASE_MODEL_KEYS = (
+    "1x2",
+    "over25",
+    "over35",
+    "btts",
+    "goals",
+)
+
 
 SECOND_STAGE_KEYS = (
     "1x2_predictability",
@@ -51,12 +98,14 @@ SECOND_STAGE_KEYS = (
     "btts_skip",
 )
 
+
 MERGE_SUFFIXES = (
     "match_odds",
     "total_25",
     "total_35",
     "btts",
 )
+
 
 REQUIRED_CURRENT_COLUMNS = (
     "game_id",
@@ -66,8 +115,18 @@ REQUIRED_CURRENT_COLUMNS = (
     "away_team",
 )
 
+
+IDENTITY_COLUMNS = (
+    "league",
+    "match_date",
+    "home_team",
+    "away_team",
+)
+
+
 MERGE_FILE_RE = re.compile(
-    r"^(\d{4}_\d{2}_\d{2})_epl_(match_odds|total_25|total_35|btts)\.csv$",
+    r"^(\d{4}_\d{2}_\d{2})_epl_"
+    r"(match_odds|total_25|total_35|btts)\.csv$",
     re.IGNORECASE,
 )
 
@@ -76,13 +135,72 @@ def clean_team(value):
     if pd.isna(value):
         return pd.NA
 
+    text = str(value).strip()
+
+    if not text:
+        return pd.NA
+
     return unicodedata.normalize(
         "NFKC",
-        str(value).strip(),
+        text,
     ).casefold()
 
 
-def resolve_date(raw: str | None) -> str:
+def normalize_game_id(value):
+    if pd.isna(value):
+        return pd.NA
+
+    text = str(value).strip()
+
+    if not text:
+        return pd.NA
+
+    if re.fullmatch(r"\d+\.0+", text):
+        text = text.split(".", 1)[0]
+
+    return text
+
+
+def normalize_identity_value(
+    column: str,
+    value,
+):
+    if pd.isna(value):
+        return None
+
+    text = str(value).strip()
+
+    if not text:
+        return None
+
+    if column == "league":
+        return text.casefold()
+
+    if column in ("home_team", "away_team"):
+        cleaned = clean_team(text)
+
+        if pd.isna(cleaned):
+            return None
+
+        return cleaned
+
+    if column == "match_date":
+        parsed = pd.to_datetime(
+            text.replace("_", "-"),
+            errors="coerce",
+        )
+
+        if pd.isna(parsed):
+            return text
+
+        return parsed.strftime("%Y-%m-%d")
+
+    return text
+
+
+def resolve_date(
+    raw: str | None,
+) -> str:
     value = (raw or "").strip()
 
     if not value:
@@ -92,7 +210,10 @@ def resolve_date(raw: str | None) -> str:
 
     value = value.replace("-", "_")
 
-    datetime.strptime(value, "%Y_%m_%d")
+    datetime.strptime(
+        value,
+        "%Y_%m_%d",
+    )
 
     return value
 
@@ -112,9 +233,12 @@ def discover_merge_dates(
     if not merge_dir.exists():
         return []
 
-    for path in merge_dir.glob("*_epl_*.csv"):
-
-        match = MERGE_FILE_RE.match(path.name)
+    for path in merge_dir.glob(
+        "*_epl_*.csv"
+    ):
+        match = MERGE_FILE_RE.match(
+            path.name
+        )
 
         if not match:
             continue
@@ -154,7 +278,6 @@ def load_bundle(
     root: Path,
     item,
 ):
-
     task, algorithm, filename = item
 
     path = model_path(
@@ -179,8 +302,10 @@ def load_all_bundles(
 
     bundles = {}
 
-    for key in BASE_MODEL_KEYS + SECOND_STAGE_KEYS:
-
+    for key in (
+        BASE_MODEL_KEYS
+        + SECOND_STAGE_KEYS
+    ):
         bundles[key] = load_bundle(
             joblib,
             root,
@@ -188,6 +313,332 @@ def load_all_bundles(
         )
 
     return bundles
+
+
+def valid_numeric_odds(
+    series: pd.Series,
+) -> pd.Series:
+
+    numeric = pd.to_numeric(
+        series,
+        errors="coerce",
+    )
+
+    return numeric[
+        numeric > 1.0
+    ]
+
+
+def row_model_completeness(
+    row: pd.Series,
+) -> tuple[int, int]:
+
+    model_count = 0
+
+    for column in MODEL_ODDS_COLUMNS:
+        if column not in row.index:
+            continue
+
+        value = pd.to_numeric(
+            pd.Series([row[column]]),
+            errors="coerce",
+        ).iloc[0]
+
+        if (
+            pd.notna(value)
+            and float(value) > 1.0
+        ):
+            model_count += 1
+
+    total_count = int(
+        row.notna().sum()
+    )
+
+    return (
+        model_count,
+        total_count,
+    )
+
+
+def validate_duplicate_identity(
+    game_id: str,
+    group: pd.DataFrame,
+) -> None:
+
+    conflicts = []
+
+    for column in IDENTITY_COLUMNS:
+        values = []
+
+        for value in group[column]:
+            normalized = (
+                normalize_identity_value(
+                    column,
+                    value,
+                )
+            )
+
+            if normalized is not None:
+                values.append(normalized)
+
+        unique_values = list(
+            dict.fromkeys(values)
+        )
+
+        if len(unique_values) > 1:
+            conflicts.append(
+                (
+                    column,
+                    unique_values,
+                )
+            )
+
+    if conflicts:
+        detail = "; ".join(
+            f"{column}={values}"
+            for column, values
+            in conflicts
+        )
+
+        raise RuntimeError(
+            "EPL inference stopped: "
+            f"game_id {game_id} maps to "
+            "conflicting match identities: "
+            f"{detail}"
+        )
+
+
+def fill_identity_from_group(
+    row: pd.Series,
+    group: pd.DataFrame,
+) -> pd.Series:
+
+    for column in IDENTITY_COLUMNS:
+
+        current = row[column]
+
+        normalized_current = (
+            normalize_identity_value(
+                column,
+                current,
+            )
+        )
+
+        if normalized_current is not None:
+            continue
+
+        for candidate in group[column]:
+
+            normalized_candidate = (
+                normalize_identity_value(
+                    column,
+                    candidate,
+                )
+            )
+
+            if normalized_candidate is None:
+                continue
+
+            row[column] = candidate
+            break
+
+    return row
+
+
+def consolidate_duplicate_games(
+    current: pd.DataFrame,
+) -> pd.DataFrame:
+
+    current = current.copy()
+
+    current["game_id"] = current[
+        "game_id"
+    ].map(normalize_game_id)
+
+    bad_game_ids = current[
+        "game_id"
+    ].isna()
+
+    if bad_game_ids.any():
+        bad = current.loc[
+            bad_game_ids,
+            [
+                c
+                for c in (
+                    "game_id",
+                    "match_date",
+                    "home_team",
+                    "away_team",
+                )
+                if c in current.columns
+            ],
+        ]
+
+        raise RuntimeError(
+            "EPL inference stopped: "
+            "blank or invalid game_id rows:\n"
+            + bad.to_string(index=False)
+        )
+
+    if not current[
+        "game_id"
+    ].duplicated().any():
+
+        return current.reset_index(
+            drop=True
+        )
+
+    consolidated_rows = []
+
+    duplicate_game_count = 0
+    removed_row_count = 0
+
+    for game_id, group in current.groupby(
+        "game_id",
+        sort=False,
+        dropna=False,
+    ):
+
+        group = group.copy()
+
+        if len(group) == 1:
+            consolidated_rows.append(
+                group.iloc[0].copy()
+            )
+            continue
+
+        duplicate_game_count += 1
+        removed_row_count += (
+            len(group) - 1
+        )
+
+        validate_duplicate_identity(
+            str(game_id),
+            group,
+        )
+
+        ranked_positions = sorted(
+            range(len(group)),
+            key=lambda position: (
+                row_model_completeness(
+                    group.iloc[position]
+                )[0],
+                row_model_completeness(
+                    group.iloc[position]
+                )[1],
+                -position,
+            ),
+            reverse=True,
+        )
+
+        base_position = (
+            ranked_positions[0]
+        )
+
+        row = group.iloc[
+            base_position
+        ].copy()
+
+        row = fill_identity_from_group(
+            row,
+            group,
+        )
+
+        conflicting_odds = []
+
+        for column in MODEL_ODDS_COLUMNS:
+
+            if column not in group.columns:
+                continue
+
+            valid = valid_numeric_odds(
+                group[column]
+            )
+
+            unique_valid = pd.unique(
+                valid.astype(float)
+            )
+
+            if len(unique_valid) > 1:
+                conflicting_odds.append(
+                    column
+                )
+
+            base_value = pd.to_numeric(
+                pd.Series(
+                    [row[column]]
+                ),
+                errors="coerce",
+            ).iloc[0]
+
+            base_is_valid = (
+                pd.notna(base_value)
+                and float(base_value) > 1.0
+            )
+
+            if (
+                not base_is_valid
+                and not valid.empty
+            ):
+                row[column] = float(
+                    valid.iloc[0]
+                )
+
+        consolidated_rows.append(row)
+
+        message = (
+            "EPL ML inference: consolidated "
+            f"{len(group)} sportsbook rows "
+            f"for game_id {game_id} into 1 row"
+        )
+
+        if conflicting_odds:
+            message += (
+                "; differing available odds in "
+                + ", ".join(
+                    conflicting_odds
+                )
+                + " — kept values from the "
+                "most-complete row and used "
+                "other rows only to fill missing "
+                "model inputs"
+            )
+
+        print(message + ".")
+
+    consolidated = pd.DataFrame(
+        consolidated_rows,
+        columns=current.columns,
+    ).reset_index(drop=True)
+
+    if consolidated[
+        "game_id"
+    ].duplicated().any():
+
+        dupes = consolidated.loc[
+            consolidated[
+                "game_id"
+            ].duplicated(
+                keep=False
+            ),
+            "game_id",
+        ].tolist()
+
+        raise RuntimeError(
+            "EPL inference stopped: "
+            "duplicate game_id remained after "
+            f"consolidation: {dupes}"
+        )
+
+    print(
+        "EPL ML inference: sportsbook "
+        "duplicate consolidation complete: "
+        f"{duplicate_game_count} game(s), "
+        f"{removed_row_count} duplicate "
+        "row(s) removed."
+    )
+
+    return consolidated
 
 
 def make_feature_frame(
@@ -198,7 +649,11 @@ def make_feature_frame(
         epl["match_date"]
         .astype("string")
         .str.strip()
-        .str.replace("_", "-", regex=False),
+        .str.replace(
+            "_",
+            "-",
+            regex=False,
+        ),
         errors="coerce",
     )
 
@@ -220,10 +675,14 @@ def make_feature_frame(
             + bad.to_string(index=False)
         )
 
-    X = pd.DataFrame(index=epl.index)
+    X = pd.DataFrame(
+        index=epl.index
+    )
 
     X["_date_ordinal"] = dates.map(
-        lambda d: int(d.toordinal())
+        lambda d: int(
+            d.toordinal()
+        )
     )
 
     X["_home_team_clean"] = epl[
@@ -234,7 +693,10 @@ def make_feature_frame(
         "away_team"
     ].map(clean_team)
 
-    for role, source_col in ROLE_SOURCE_COLUMNS.items():
+    for (
+        role,
+        source_col,
+    ) in ROLE_SOURCE_COLUMNS.items():
 
         if source_col not in epl.columns:
             X[role] = np.nan
@@ -254,125 +716,30 @@ def make_feature_frame(
     return X
 
 
-def deduplicate_current(
-    current: pd.DataFrame,
-) -> pd.DataFrame:
-
-    current = current.copy()
-
-    current["game_id"] = (
-        current["game_id"]
-        .astype("string")
-        .str.strip()
-    )
-
-    duplicate_ids = current.loc[
-        current["game_id"].duplicated(keep=False),
-        "game_id",
-    ].dropna().unique().tolist()
-
-    if not duplicate_ids:
-        return current
-
-    compare_columns = [
-        c
-        for c in (
-            "league",
-            "match_date",
-            "home_team",
-            "away_team",
-            "dk_home_decimal",
-            "dk_draw_decimal",
-            "dk_away_decimal",
-            "dk_over25_decimal",
-            "dk_under25_decimal",
-        )
-        if c in current.columns
-    ]
-
-    conflicting = []
-
-    for game_id in duplicate_ids:
-
-        group = current.loc[
-            current["game_id"].eq(game_id),
-            compare_columns,
-        ].copy()
-
-        normalized = pd.DataFrame(
-            index=group.index
-        )
-
-        for column in compare_columns:
-
-            if column in (
-                "dk_home_decimal",
-                "dk_draw_decimal",
-                "dk_away_decimal",
-                "dk_over25_decimal",
-                "dk_under25_decimal",
-            ):
-                normalized[column] = pd.to_numeric(
-                    group[column],
-                    errors="coerce",
-                )
-            else:
-                normalized[column] = (
-                    group[column]
-                    .astype("string")
-                    .str.strip()
-                    .fillna("<MISSING>")
-                )
-
-        normalized = normalized.fillna(
-            "<MISSING>"
-        )
-
-        if len(normalized.drop_duplicates()) > 1:
-            conflicting.append(game_id)
-
-    if conflicting:
-        raise RuntimeError(
-            "EPL inference stopped: "
-            "duplicate game_id rows contain conflicting "
-            "model inputs: "
-            f"{conflicting}"
-        )
-
-    print(
-        "EPL ML inference: removing duplicate sportsbook "
-        "row(s) for game_id(s): "
-        f"{duplicate_ids}"
-    )
-
-    current = (
-        current
-        .drop_duplicates(
-            subset=["game_id"],
-            keep="first",
-        )
-        .reset_index(drop=True)
-    )
-
-    return current
-
-
 def predict_frame(
     bundles: dict[str, object],
     current: pd.DataFrame,
 ) -> pd.DataFrame:
 
     missing = [
-        c
-        for c in REQUIRED_CURRENT_COLUMNS
-        if c not in current.columns
+        column
+        for column
+        in REQUIRED_CURRENT_COLUMNS
+        if column not in current.columns
     ]
 
     if missing:
         raise RuntimeError(
             "EPL inference stopped: "
-            f"required sportsbook columns absent: {missing}"
+            "required sportsbook columns "
+            f"absent: {missing}"
         )
+
+    current = (
+        consolidate_duplicate_games(
+            current
+        )
+    )
 
     league = (
         current["league"]
@@ -388,33 +755,39 @@ def predict_frame(
     if not non_epl.empty:
         raise RuntimeError(
             "EPL pipeline inference received "
-            "non-EPL rows in an EPL sportsbook file."
+            "non-EPL rows in an EPL "
+            "sportsbook file."
         )
 
-    current = deduplicate_current(
+    X = make_feature_frame(
         current
     )
-
-    X = make_feature_frame(current)
 
     predicted = current[
         ["game_id"]
     ].copy()
 
-    for key in BASE_MODEL_KEYS + SECOND_STAGE_KEYS:
+    for key in (
+        BASE_MODEL_KEYS
+        + SECOND_STAGE_KEYS
+    ):
 
-        pred = bundles[key].predict(X)
+        pred = bundles[
+            key
+        ].predict(X)
 
         if len(pred) != len(current):
             raise RuntimeError(
                 "EPL inference stopped: "
-                f"{key} returned wrong row count."
+                f"{key} returned wrong "
+                "row count."
             )
 
-        for col in pred.columns:
-            predicted[col] = pred[
-                col
-            ].to_numpy()
+        for column in pred.columns:
+            predicted[column] = (
+                pred[column]
+                .to_numpy()
+            )
 
     required = [
         "ml_home_prob",
@@ -431,15 +804,17 @@ def predict_frame(
     ]
 
     missing_outputs = [
-        c
-        for c in required
-        if c not in predicted.columns
+        column
+        for column in required
+        if column
+        not in predicted.columns
     ]
 
     if missing_outputs:
         raise RuntimeError(
             "EPL inference stopped: "
-            f"required model outputs absent: {missing_outputs}"
+            "required model outputs "
+            f"absent: {missing_outputs}"
         )
 
     one_x_two_sum = predicted[
@@ -448,7 +823,11 @@ def predict_frame(
             "ml_draw_prob",
             "ml_away_prob",
         ]
-    ].sum(axis=1).to_numpy(float)
+    ].sum(
+        axis=1
+    ).to_numpy(
+        float
+    )
 
     if not np.allclose(
         one_x_two_sum,
@@ -457,7 +836,8 @@ def predict_frame(
     ):
         raise RuntimeError(
             "EPL inference stopped: "
-            "1X2 probabilities do not sum to 1."
+            "1X2 probabilities do "
+            "not sum to 1."
         )
 
     for a, b in (
@@ -477,7 +857,11 @@ def predict_frame(
 
         pair_sum = predicted[
             [a, b]
-        ].sum(axis=1).to_numpy(float)
+        ].sum(
+            axis=1
+        ).to_numpy(
+            float
+        )
 
         if not np.allclose(
             pair_sum,
@@ -486,7 +870,8 @@ def predict_frame(
         ):
             raise RuntimeError(
                 "EPL inference stopped: "
-                f"{a} + {b} does not equal 1."
+                f"{a} + {b} does not "
+                "equal 1."
             )
 
     return predicted
@@ -508,39 +893,58 @@ def enrich_merge_file(
     if "game_id" not in df.columns:
         raise RuntimeError(
             "EPL inference stopped: "
-            f"game_id absent from merged file {path}"
+            "game_id absent from "
+            f"merged file {path}"
+        )
+
+    df["game_id"] = df[
+        "game_id"
+    ].map(normalize_game_id)
+
+    if df[
+        "game_id"
+    ].isna().any():
+        raise RuntimeError(
+            "EPL inference stopped: "
+            f"blank game_id in merged file {path}"
         )
 
     merge_game_ids = df[
         "game_id"
-    ].astype("string")
+    ]
 
     if merge_game_ids.duplicated().any():
+
+        dupes = df.loc[
+            merge_game_ids.duplicated(
+                keep=False
+            ),
+            "game_id",
+        ].tolist()
+
         raise RuntimeError(
             "EPL inference stopped: "
-            f"duplicate game_id in merged file {path}"
+            "duplicate game_id in merged "
+            f"file {path}: {dupes}"
         )
 
     pred = predictions.copy()
 
     pred["game_id"] = pred[
         "game_id"
-    ].astype("string")
-
-    df["game_id"] = df[
-        "game_id"
-    ].astype("string")
+    ].map(normalize_game_id)
 
     ml_cols = [
-        c
-        for c in pred.columns
-        if c != "game_id"
+        column
+        for column
+        in pred.columns
+        if column != "game_id"
     ]
 
     existing = [
-        c
-        for c in ml_cols
-        if c in df.columns
+        column
+        for column in ml_cols
+        if column in df.columns
     ]
 
     if existing:
@@ -564,13 +968,14 @@ def enrich_merge_file(
     if missing_predictions.any():
 
         bad_columns = [
-            c
-            for c in (
+            column
+            for column in (
                 "game_id",
                 "home_team",
                 "away_team",
             )
-            if c in out.columns
+            if column
+            in out.columns
         ]
 
         bad = out.loc[
@@ -580,8 +985,11 @@ def enrich_merge_file(
 
         raise RuntimeError(
             "EPL inference stopped: "
-            f"merged rows have no model prediction in {path}:\n"
-            + bad.to_string(index=False)
+            "merged rows have no model "
+            f"prediction in {path}:\n"
+            + bad.to_string(
+                index=False
+            )
         )
 
     temp = path.with_suffix(
@@ -612,7 +1020,8 @@ def process_date(
     merge_paths = [
         merge_dir
         / f"{date_text}_epl_{suffix}.csv"
-        for suffix in MERGE_SUFFIXES
+        for suffix
+        in MERGE_SUFFIXES
     ]
 
     existing_merge_paths = [
@@ -636,8 +1045,8 @@ def process_date(
         raise FileNotFoundError(
             "EPL inference stopped: "
             f"merge files exist for {date_text}, "
-            "but normalized sportsbook input is missing: "
-            f"{sportsbook_path}"
+            "but normalized sportsbook input "
+            f"is missing: {sportsbook_path}"
         )
 
     current = pd.read_csv(
@@ -648,8 +1057,9 @@ def process_date(
     if current.empty:
         raise RuntimeError(
             "EPL inference stopped: "
-            "normalized sportsbook file is empty "
-            f"for {date_text}: {sportsbook_path}"
+            "normalized sportsbook file "
+            f"is empty for {date_text}: "
+            f"{sportsbook_path}"
         )
 
     predictions = predict_frame(
@@ -674,9 +1084,12 @@ def process_date(
         )
 
     print(
-        f"EPL ML inference complete for {date_text}: "
-        f"{len(predictions)} match prediction(s), "
-        f"{len(updated)} merge file(s) enriched."
+        f"EPL ML inference complete for "
+        f"{date_text}: "
+        f"{len(predictions)} match "
+        "prediction(s), "
+        f"{len(updated)} merge "
+        "file(s) enriched."
     )
 
     for name, rows in updated:
@@ -692,9 +1105,12 @@ def main() -> None:
 
     ap = argparse.ArgumentParser(
         description=(
-            "Run EPL-only ML inference across all historical "
-            "EPL merge dates through the requested cutoff date "
-            "and attach outputs to EPL merge files."
+            "Run EPL-only ML inference "
+            "across all historical EPL "
+            "merge dates through the "
+            "requested cutoff date and "
+            "attach outputs to EPL "
+            "merge files."
         )
     )
 
@@ -717,9 +1133,8 @@ def main() -> None:
         help=(
             "Inclusive cutoff date "
             "(YYYY_MM_DD or YYYY-MM-DD). "
-            "All EPL merge dates on or before this date "
-            "are processed. Defaults to RUN_DATE or today's "
-            "America/New_York date."
+            "All EPL merge dates on or "
+            "before this date are processed."
         ),
     )
 
@@ -749,8 +1164,8 @@ def main() -> None:
 
     if not wrapper_module.exists():
         raise FileNotFoundError(
-            "Required EPL wrapper module missing: "
-            f"{wrapper_module}"
+            "Required EPL wrapper module "
+            f"missing: {wrapper_module}"
         )
 
     sys.path.insert(
@@ -769,15 +1184,16 @@ def main() -> None:
     if not dates:
         print(
             "EPL ML inference: "
-            "no EPL merge dates found through "
-            f"{cutoff_date}; nothing to do."
+            "no EPL merge dates found "
+            f"through {cutoff_date}; "
+            "nothing to do."
         )
         return
 
     print(
-        "EPL ML inference: "
-        f"processing {len(dates)} EPL merge date(s) "
-        f"through {cutoff_date}."
+        "EPL ML inference: processing "
+        f"{len(dates)} EPL merge "
+        f"date(s) through {cutoff_date}."
     )
 
     bundles = load_all_bundles(
@@ -807,14 +1223,17 @@ def main() -> None:
 
             updated_rows += sum(
                 rows
-                for _, rows in updated
+                for _, rows
+                in updated
             )
 
     print(
-        "EPL ML historical inference complete: "
+        "EPL ML historical inference "
+        "complete: "
         f"{processed_dates} date(s), "
         f"{updated_files} merge file(s), "
-        f"{updated_rows} total merged row(s) enriched."
+        f"{updated_rows} total merged "
+        "row(s) enriched."
     )
 
 
