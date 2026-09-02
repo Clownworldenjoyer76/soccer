@@ -1,7 +1,7 @@
-[2026-09-02T05:08:12.242578] === START 05_soccer_model_reports.py 2026-09-02T05:08:12.242554 ===
-[2026-09-02T05:08:12.434645] MODEL METRICS WRITTEN | rows=14 | docs/win/soccer/05_final_scores/model_evaluation/SOCCER_model_metrics.csv
-[2026-09-02T05:08:12.434680] CALIBRATION WRITTEN | rows=420 | docs/win/soccer/05_final_scores/model_evaluation/SOCCER_model_calibration.csv
-[2026-09-02T05:08:12.434705] XG METRICS WRITTEN | rows=7 | docs/win/soccer/05_final_scores/model_evaluation/SOCCER_xg_metrics.csv
-[2026-09-02T05:08:12.435175] OVERALL MODEL | model=raw n=416 brier=0.6263939014423077 log_loss=1.0436792871782778 rps=0.21576706730769232
-[2026-09-02T05:08:12.435286] OVERALL MODEL | model=engine n=492 brier=0.6257116490669851 log_loss=1.0442889247831566 rps=0.215216502604811
-[2026-09-02T05:08:12.435378] === END 05_soccer_model_reports.py 2026-09-02T05:08:12.435358 ===
+[2026-09-02T07:38:41.319554] === START 05_soccer_model_reports.py 2026-09-02T07:38:41.319528 ===
+[2026-09-02T07:38:41.587621] MODEL METRICS WRITTEN | rows=14 | docs/win/soccer/05_final_scores/model_evaluation/SOCCER_model_metrics.csv
+[2026-09-02T07:38:41.587657] CALIBRATION WRITTEN | rows=420 | docs/win/soccer/05_final_scores/model_evaluation/SOCCER_model_calibration.csv
+[2026-09-02T07:38:41.587681] XG METRICS WRITTEN | rows=7 | docs/win/soccer/05_final_scores/model_evaluation/SOCCER_xg_metrics.csv
+[2026-09-02T07:38:41.588969] OVERALL MODEL | model=raw n=416 brier=0.6263939014423077 log_loss=1.0436792871782778 rps=0.21576706730769232
+[2026-09-02T07:38:41.589079] OVERALL MODEL | model=engine n=492 brier=0.6257116490669851 log_loss=1.0442889247831566 rps=0.215216502604811
+[2026-09-02T07:38:41.589299] === END 05_soccer_model_reports.py 2026-09-02T07:38:41.589260 ===
