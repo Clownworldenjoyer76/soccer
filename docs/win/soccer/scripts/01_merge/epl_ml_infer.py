@@ -254,6 +254,109 @@ def make_feature_frame(
     return X
 
 
+def deduplicate_current(
+    current: pd.DataFrame,
+) -> pd.DataFrame:
+
+    current = current.copy()
+
+    current["game_id"] = (
+        current["game_id"]
+        .astype("string")
+        .str.strip()
+    )
+
+    duplicate_ids = current.loc[
+        current["game_id"].duplicated(keep=False),
+        "game_id",
+    ].dropna().unique().tolist()
+
+    if not duplicate_ids:
+        return current
+
+    compare_columns = [
+        c
+        for c in (
+            "league",
+            "match_date",
+            "home_team",
+            "away_team",
+            "dk_home_decimal",
+            "dk_draw_decimal",
+            "dk_away_decimal",
+            "dk_over25_decimal",
+            "dk_under25_decimal",
+        )
+        if c in current.columns
+    ]
+
+    conflicting = []
+
+    for game_id in duplicate_ids:
+
+        group = current.loc[
+            current["game_id"].eq(game_id),
+            compare_columns,
+        ].copy()
+
+        normalized = pd.DataFrame(
+            index=group.index
+        )
+
+        for column in compare_columns:
+
+            if column in (
+                "dk_home_decimal",
+                "dk_draw_decimal",
+                "dk_away_decimal",
+                "dk_over25_decimal",
+                "dk_under25_decimal",
+            ):
+                normalized[column] = pd.to_numeric(
+                    group[column],
+                    errors="coerce",
+                )
+            else:
+                normalized[column] = (
+                    group[column]
+                    .astype("string")
+                    .str.strip()
+                    .fillna("<MISSING>")
+                )
+
+        normalized = normalized.fillna(
+            "<MISSING>"
+        )
+
+        if len(normalized.drop_duplicates()) > 1:
+            conflicting.append(game_id)
+
+    if conflicting:
+        raise RuntimeError(
+            "EPL inference stopped: "
+            "duplicate game_id rows contain conflicting "
+            "model inputs: "
+            f"{conflicting}"
+        )
+
+    print(
+        "EPL ML inference: removing duplicate sportsbook "
+        "row(s) for game_id(s): "
+        f"{duplicate_ids}"
+    )
+
+    current = (
+        current
+        .drop_duplicates(
+            subset=["game_id"],
+            keep="first",
+        )
+        .reset_index(drop=True)
+    )
+
+    return current
+
+
 def predict_frame(
     bundles: dict[str, object],
     current: pd.DataFrame,
@@ -288,21 +391,9 @@ def predict_frame(
             "non-EPL rows in an EPL sportsbook file."
         )
 
-    game_ids = current[
-        "game_id"
-    ].astype("string")
-
-    if game_ids.duplicated().any():
-
-        dupes = current.loc[
-            game_ids.duplicated(False),
-            "game_id",
-        ].tolist()
-
-        raise RuntimeError(
-            "EPL inference stopped: "
-            f"duplicate game_id in sportsbook input: {dupes}"
-        )
+    current = deduplicate_current(
+        current
+    )
 
     X = make_feature_frame(current)
 
@@ -689,8 +780,6 @@ def main() -> None:
         f"through {cutoff_date}."
     )
 
-    # Load all selected production models once.
-    # They are reused for every historical date.
     bundles = load_all_bundles(
         joblib,
         epl_root,
