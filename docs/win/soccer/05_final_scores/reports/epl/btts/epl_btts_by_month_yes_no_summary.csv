@@ -1,4 +1,4 @@
 bucket,side,Win,Loss,Push,Total,Sample_Count,Win_Pct
-04,no,2,0,0,2,2,1.0
-05,no,1,4,0,5,5,0.2
+04,yes,1,2,0,3,3,0.3333
+05,yes,1,0,0,1,1,1.0
 08,yes,2,2,0,4,4,0.5

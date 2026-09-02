@@ -1,6 +1,6 @@
 === ESPN endpoint diagnostic ===
-utc_time=2026-09-02T13:09:04Z
-runner=GitHub Actions 1000099104
+utc_time=2026-09-02T13:59:35Z
+runner=GitHub Actions 1000099111
 date=20260902
 league=usa.1
 
@@ -31,7 +31,7 @@ json=yes type=dict | keys=code
 [cdn_scoreboard]
 url=https://cdn.espn.com/core/soccer/scoreboard?xhr=1&league=usa.1&dates=20260902
 curl_exit=0
-http|content_type|bytes|effective_url=200|application/json;charset=utf-8|215267|https://cdn.espn.com/core/soccer/scoreboard?xhr=1&league=usa.1&dates=20260902
+http|content_type|bytes|effective_url=200|application/json;charset=utf-8|215309|https://cdn.espn.com/core/soccer/scoreboard?xhr=1&league=usa.1&dates=20260902
 json=yes type=dict | keys=news,pinnedCount,nowFeedMD5Hash,type,content,analytics,nowFeed,ads,targeting,nowFeedCount,meta,nowFeedSupported,sport,tier2Nav
 
 [public_scoreboard_page]
