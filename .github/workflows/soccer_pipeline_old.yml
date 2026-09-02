@@ -1,4 +1,4 @@
-name: Soccer Full Pipeline
+name: old Soccer Full Pipeline
 
 on:
   workflow_dispatch:
