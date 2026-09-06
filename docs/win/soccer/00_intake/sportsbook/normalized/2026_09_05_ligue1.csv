@@ -1,0 +1,4 @@
+sport,league,game_id,match_date,match_time,home_team,away_team,dk_home_decimal,dk_draw_decimal,dk_away_decimal,dk_over25_decimal,dk_under25_decimal,dk_over35_decimal,dk_under35_decimal,btts_yes,btts_no
+soccer,ligue1,401876474,2026_09_05,02:45 PM,Le Havre,Stade Brest,2.95,3.20,2.55,2.10,1.71,,,,
+soccer,ligue1,401876470,2026_09_05,02:45 PM,Nice,Le Mans,1.65,4.10,5.00,1.69,2.15,,,,
+soccer,ligue1,401876473,2026_09_05,11:15 AM,Lens,Lorient,1.53,4.40,6.00,1.67,2.20,,,3.65,1.28

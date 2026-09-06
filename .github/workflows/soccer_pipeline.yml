@@ -1,4 +1,4 @@
-name: Soccer Full Pipeline
+name: Soccer Pipeline
 
 on:
   workflow_dispatch:
@@ -23,6 +23,11 @@ jobs:
       TZ: America/New_York
       RUN_DATE: ${{ inputs.date }}
       EPL_MODEL_ROOT: docs/win/soccer/ml/epl
+      BUNDESLIGA_MODEL_ROOT: docs/win/soccer/ml/bundesliga
+      LALIGA_MODEL_ROOT: docs/win/soccer/ml/laliga
+      SERIEA_MODEL_ROOT: docs/win/soccer/ml/seriea
+      LIGUE1_MODEL_ROOT: docs/win/soccer/ml/ligue1
+      MLS_MODEL_ROOT: docs/win/soccer/ml/mls
 
     steps:
       - name: Checkout repo
@@ -38,8 +43,7 @@ jobs:
       - name: Install dependencies
         run: |
           python -m pip install --upgrade pip
-          python -m pip install -r requirements.txt
-          python -m pip install pandas
+          python -m pip install -r docs/win/soccer/requirements.txt
 
       - name: Create soccer directories
         run: |
@@ -72,6 +76,7 @@ jobs:
           mkdir -p docs/win/soccer/05_final_scores/deeper_summaries/soccer
           mkdir -p docs/win/soccer/05_final_scores/model_evaluation
           mkdir -p docs/win/soccer/05_final_scores/locked_evaluation
+          mkdir -p frontend/data/pipeline_health
 
           touch docs/win/soccer/05_final_scores/soccer_market_tally.csv
 
@@ -415,8 +420,8 @@ jobs:
             joblib==1.5.3 \
             scikit-learn==1.9.0 \
             lightgbm==4.6.0 \
-            xgboost==3.4.1
-
+            xgboost==3.4.1 \
+            catboost==1.2.10
       - name: EPL ML inference
         shell: bash
         run: |
@@ -427,6 +432,51 @@ jobs:
             --date "${RUN_DATE}" \
             2>&1 | tee docs/win/soccer/errors/01_merge/epl_ml_infer.txt
 
+      - name: Bundesliga ML inference
+        shell: bash
+        run: |
+          set -o pipefail
+          python docs/win/soccer/scripts/01_merge/bundesliga_ml_infer.py \
+            --soccer-root docs/win/soccer \
+            --bundesliga-root "${BUNDESLIGA_MODEL_ROOT}" \
+            --date "${RUN_DATE}" \
+            2>&1 | tee docs/win/soccer/errors/01_merge/bundesliga_ml_infer.txt
+      - name: La Liga ML inference
+        shell: bash
+        run: |
+          set -o pipefail
+          python docs/win/soccer/scripts/01_merge/laliga_ml_infer.py \
+            --soccer-root docs/win/soccer \
+            --laliga-root "${LALIGA_MODEL_ROOT}" \
+            --date "${RUN_DATE}" \
+            2>&1 | tee docs/win/soccer/errors/01_merge/laliga_ml_infer.txt
+      - name: Serie A ML inference
+        shell: bash
+        run: |
+          set -o pipefail
+          python docs/win/soccer/scripts/01_merge/seriea_ml_infer.py \
+            --soccer-root docs/win/soccer \
+            --seriea-root "${SERIEA_MODEL_ROOT}" \
+            --date "${RUN_DATE}" \
+            2>&1 | tee docs/win/soccer/errors/01_merge/seriea_ml_infer.txt
+      - name: Ligue 1 ML inference
+        shell: bash
+        run: |
+          set -o pipefail
+          python docs/win/soccer/scripts/01_merge/ligue1_ml_infer.py \
+            --soccer-root docs/win/soccer \
+            --ligue1-root "${LIGUE1_MODEL_ROOT}" \
+            --date "${RUN_DATE}" \
+            2>&1 | tee docs/win/soccer/errors/01_merge/ligue1_ml_infer.txt
+      - name: MLS ML inference
+        shell: bash
+        run: |
+          set -o pipefail
+          python docs/win/soccer/scripts/01_merge/mls_ml_infer.py \
+            --soccer-root docs/win/soccer \
+            --mls-root "${MLS_MODEL_ROOT}" \
+            --date "${RUN_DATE}" \
+            2>&1 | tee docs/win/soccer/errors/01_merge/mls_ml_infer.txt
       # Restore the pipeline's existing Python version/dependencies after EPL inference.
       - name: Restore Python 3.11
         uses: actions/setup-python@v5
@@ -498,6 +548,16 @@ jobs:
 
           echo "=== EPL ML inference log ==="
           cat docs/win/soccer/errors/01_merge/epl_ml_infer.txt || true
+          echo "=== Bundesliga ML inference log ==="
+          cat docs/win/soccer/errors/01_merge/bundesliga_ml_infer.txt || true
+          echo "=== La Liga ML inference log ==="
+          cat docs/win/soccer/errors/01_merge/laliga_ml_infer.txt || true
+          echo "=== Serie A ML inference log ==="
+          cat docs/win/soccer/errors/01_merge/seriea_ml_infer.txt || true
+          echo "=== Ligue 1 ML inference log ==="
+          cat docs/win/soccer/errors/01_merge/ligue1_ml_infer.txt || true
+          echo "=== MLS ML inference log ==="
+          cat docs/win/soccer/errors/01_merge/mls_ml_infer.txt || true
 
           echo "=== Final score logs ==="
           cat docs/win/soccer/05_final_scores/errors/soccer_results_grade_summary.txt || true
@@ -545,3 +605,23 @@ jobs:
             git pull --rebase --autostash origin main
             git push origin main
           fi
+
+      - name: Soccer Pipeline Health
+        if: always()
+        env:
+          SOCCER_PIPELINE_JOB_STATUS: ${{ job.status }}
+          SOCCER_PIPELINE_RUN_DATE: ${{ env.RUN_DATE }}
+        run: python docs/win/soccer/scripts/pipeline_health.py
+
+      - name: Commit soccer pipeline health
+        if: always()
+        shell: bash
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add docs/win/soccer/pipeline_health.json
+          git add docs/win/soccer/errors/pipeline_health.txt
+          git add frontend/data/pipeline_health/soccer.json
+          git diff --cached --quiet || git commit -m "chore: update soccer pipeline health"
+          git pull --rebase --autostash origin main
+          git push origin main

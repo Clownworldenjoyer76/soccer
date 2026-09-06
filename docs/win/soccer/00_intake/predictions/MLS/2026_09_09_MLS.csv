@@ -1,0 +1,15 @@
+sport,league,match_date,match_time,home_team,away_team,home_prob,draw_prob,away_prob,home_xg,away_xg,expected_total_goals
+soccer,mls,2026_09_09,07:30 PM,DC United,Columbus Crew,50.6%,25.2%,24.2%,1.58,1.00,2.58
+soccer,mls,2026_09_09,07:30 PM,Atlanta United,Orlando City,44.8%,26.5%,28.7%,1.42,1.08,2.50
+soccer,mls,2026_09_09,07:30 PM,Toronto FC,Nashville SC,29.3%,28.5%,42.2%,0.99,1.25,2.24
+soccer,mls,2026_09_09,07:30 PM,Philadelphia Union,FC Cincinnati,46.9%,26.4%,26.7%,1.46,1.02,2.48
+soccer,mls,2026_09_09,07:30 PM,CF Montreal,Charlotte FC,40.5%,28.2%,31.3%,1.24,1.06,2.30
+soccer,mls,2026_09_09,08:00 PM,New York City FC,New England Revolution,56.0%,23.9%,20.1%,1.70,0.92,2.62
+soccer,mls,2026_09_09,08:30 PM,Chicago Fire,Inter Miami,42.5%,26.8%,30.7%,1.37,1.12,2.49
+soccer,mls,2026_09_09,08:30 PM,Austin FC,Colorado Rapids,42.1%,27.8%,30.0%,1.29,1.05,2.34
+soccer,mls,2026_09_09,08:30 PM,Houston Dynamo,Real Salt Lake,54.0%,24.6%,21.4%,1.64,0.93,2.57
+soccer,mls,2026_09_09,08:30 PM,Minnesota United,FC Dallas,48.2%,26.3%,25.6%,1.47,1.00,2.47
+soccer,mls,2026_09_09,10:30 PM,San Diego FC,San Jose Earthquakes,52.8%,24.4%,22.9%,1.67,1.00,2.67
+soccer,mls,2026_09_09,10:30 PM,Vancouver Whitecaps,LA Galaxy,67.7%,18.7%,13.6%,2.22,0.88,3.10
+soccer,mls,2026_09_09,10:30 PM,Los Angeles FC,New York Red Bulls,60.9%,22.1%,17.0%,1.87,0.86,2.73
+soccer,mls,2026_09_09,10:30 PM,Portland Timbers,St Louis City,46.2%,26.1%,27.7%,1.47,1.07,2.54

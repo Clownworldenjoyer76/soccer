@@ -66,7 +66,9 @@ FAIR_DECIMAL_REL_TOLERANCE = 1e-9
 FAIR_DECIMAL_ABS_TOLERANCE = 1e-12
 HOME_AWAY_SYMMETRY_TOLERANCE = 1e-9
 
-EPL_ML_MARKET_COLUMNS = {
+ML_PRICING_LEAGUES = {"epl", "bundesliga", "laliga", "seriea", "ligue1", "mls"}
+
+ML_MARKET_COLUMNS = {
     "match_odds": (
         ("home_win", "ml_home_prob"),
         ("draw", "ml_draw_prob"),
@@ -501,8 +503,8 @@ def _validate_authoritative_probs(values, market, row, file_path, source_index, 
 
 def authoritative_market_probs(dc_pricing, row, market, file_path, source_index, summary):
     league = str(row.get("league", "")).strip().casefold()
-    if league == "epl":
-        mapping = EPL_ML_MARKET_COLUMNS[market]
+    if league in ML_PRICING_LEAGUES:
+        mapping = ML_MARKET_COLUMNS[market]
         values = [safe_float(row.get(column)) for _, column in mapping]
         if not _validate_authoritative_probs(
             values, market, row, file_path, source_index, summary
@@ -510,7 +512,7 @@ def authoritative_market_probs(dc_pricing, row, market, file_path, source_index,
             return None, None, None
         probs = {key: value for (key, _), value in zip(mapping, values)}
         sources = {key: column for key, column in mapping}
-        return probs, sources, "epl_ml"
+        return probs, sources, f"{league}_ml"
 
     mapping = {
         "match_odds": ("home_win", "draw", "away_win"),

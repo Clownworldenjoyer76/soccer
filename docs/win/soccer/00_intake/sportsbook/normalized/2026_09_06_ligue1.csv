@@ -1,0 +1,4 @@
+sport,league,game_id,match_date,match_time,home_team,away_team,dk_home_decimal,dk_draw_decimal,dk_away_decimal,dk_over25_decimal,dk_under25_decimal,dk_over35_decimal,dk_under35_decimal,btts_yes,btts_no
+soccer,ligue1,401876471,2026_09_06,02:45 PM,Marseille,Paris FC,1.91,3.75,3.85,1.77,2.05,,,,
+soccer,ligue1,401876467,2026_09_06,09:00 AM,Troyes,Strasbourg,2.90,3.40,2.45,1.83,1.95,,,,
+soccer,ligue1,401876475,2026_09_06,11:15 AM,Angers,Rennes,3.85,3.95,1.87,1.61,2.30,,,,

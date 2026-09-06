@@ -9,6 +9,8 @@
 #   kelly_bucket
 #   odds_bucket        American odds buckets, converted from decimal odds
 #   month_bucket
+#   selected_model_prob
+#   model_prob_bucket
 #   selected_win_prob
 #   win_prob_bucket
 #
@@ -51,7 +53,7 @@ WORK_FILE    = INTERMEDIATE_DIR / "work_soccer.csv"
 REQUIRED_COLUMNS = [
     "game_id", "sport", "league", "match_date", "match_time",
     "home_team", "away_team",
-    "market", "side", "odds", "ev", "kelly",
+    "market", "side", "odds", "ev", "kelly", "model_prob",
     "game_date", "league_lower", "market_type", "take_bet",
     "odds_american", "edge_pct",
     "home_score", "away_score", "bet_result",
@@ -152,6 +154,10 @@ def ev_bucket(v):
 
 def kelly_bucket(v):
     return step_bucket(v, 0.05, 2)
+
+
+def model_prob_bucket(v):
+    return step_bucket(v, 0.10, 1)
 
 
 def win_prob_bucket(v):
@@ -342,6 +348,7 @@ def prepare() -> None:
 
     df["selected_ev"] = pd.to_numeric(df["ev"], errors="coerce")
     df["selected_kelly"] = pd.to_numeric(df["kelly"], errors="coerce")
+    df["selected_model_prob"] = pd.to_numeric(df["model_prob"], errors="coerce")
     df["selected_odds_decimal"] = pd.to_numeric(df["odds"], errors="coerce")
 
     df["home_score"] = pd.to_numeric(df["home_score"], errors="coerce")
@@ -360,6 +367,7 @@ def prepare() -> None:
     kel_b = df["selected_kelly"].apply(kelly_bucket)
     odd_b = df["selected_odds_american"].apply(odds_bucket_from_american)
     mon_b = df["match_date"].apply(month_bucket)
+    model_prob_b = df["selected_model_prob"].apply(model_prob_bucket)
 
     df["ev_bucket"] = ev_b.apply(lambda t: t[0])
     df["ev_sort"] = ev_b.apply(lambda t: t[1])
@@ -372,6 +380,9 @@ def prepare() -> None:
 
     df["month_bucket"] = mon_b.apply(lambda t: t[0])
     df["month_sort"] = mon_b.apply(lambda t: t[1])
+
+    df["model_prob_bucket"] = model_prob_b.apply(lambda t: t[0])
+    df["model_prob_sort"] = model_prob_b.apply(lambda t: t[1])
 
     df = attach_win_prob(df)
 
@@ -390,6 +401,10 @@ def prepare() -> None:
     log_summary(f"kelly_bucket nunique: {df['kelly_bucket'].nunique()}")
     log_summary(f"odds_bucket counts: {df['odds_bucket'].value_counts(dropna=False).to_dict()}")
     log_summary(f"month_bucket counts: {df['month_bucket'].value_counts(dropna=False).to_dict()}")
+    log_summary(
+        f"model_prob_bucket counts: "
+        f"{df['model_prob_bucket'].value_counts(dropna=False).to_dict()}"
+    )
     log_summary(
         f"win_prob_bucket counts (match_odds only): "
         f"{df.loc[df['market_type'] == 'match_odds', 'win_prob_bucket'].value_counts(dropna=False).to_dict()}"

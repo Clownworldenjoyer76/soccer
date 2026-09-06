@@ -1,0 +1,15 @@
+sport,league,game_id,match_date,match_time,home_team,away_team,home_prob,draw_prob,away_prob,home_xg,away_xg,expected_total_goals,identity_status,identity_reason,identity_detail
+soccer,mls,,2026_09_09,07:30 PM,DC United,Columbus Crew,0.506,0.252,0.242,1.58,1.0,2.58,unmatched,no_sportsbook_fixture,no exact games-master fixture found for league/date/teams
+soccer,mls,,2026_09_09,07:30 PM,Atlanta United,Orlando City,0.448,0.265,0.287,1.42,1.08,2.5,unmatched,no_sportsbook_fixture,no exact games-master fixture found for league/date/teams
+soccer,mls,,2026_09_09,07:30 PM,Toronto FC,Nashville SC,0.293,0.285,0.422,0.99,1.25,2.24,unmatched,no_sportsbook_fixture,no exact games-master fixture found for league/date/teams
+soccer,mls,,2026_09_09,07:30 PM,Philadelphia Union,FC Cincinnati,0.469,0.264,0.267,1.46,1.02,2.48,unmatched,no_sportsbook_fixture,no exact games-master fixture found for league/date/teams
+soccer,mls,,2026_09_09,07:30 PM,CF Montreal,Charlotte FC,0.405,0.282,0.313,1.24,1.06,2.3,unmatched,no_sportsbook_fixture,no exact games-master fixture found for league/date/teams
+soccer,mls,,2026_09_09,08:00 PM,New York City FC,New England Revolution,0.56,0.239,0.201,1.7,0.92,2.62,unmatched,no_sportsbook_fixture,no exact games-master fixture found for league/date/teams
+soccer,mls,,2026_09_09,08:30 PM,Chicago Fire,Inter Miami,0.425,0.268,0.307,1.37,1.12,2.49,unmatched,no_sportsbook_fixture,no exact games-master fixture found for league/date/teams
+soccer,mls,,2026_09_09,08:30 PM,Austin FC,Colorado Rapids,0.421,0.278,0.3,1.29,1.05,2.34,unmatched,no_sportsbook_fixture,no exact games-master fixture found for league/date/teams
+soccer,mls,,2026_09_09,08:30 PM,Houston Dynamo,Real Salt Lake,0.54,0.246,0.214,1.64,0.93,2.57,unmatched,no_sportsbook_fixture,no exact games-master fixture found for league/date/teams
+soccer,mls,,2026_09_09,08:30 PM,Minnesota United,FC Dallas,0.482,0.263,0.256,1.47,1.0,2.47,unmatched,no_sportsbook_fixture,no exact games-master fixture found for league/date/teams
+soccer,mls,,2026_09_09,10:30 PM,San Diego FC,San Jose Earthquakes,0.528,0.244,0.229,1.67,1.0,2.67,unmatched,no_sportsbook_fixture,no exact games-master fixture found for league/date/teams
+soccer,mls,,2026_09_09,10:30 PM,Vancouver Whitecaps,LA Galaxy,0.677,0.187,0.136,2.22,0.88,3.1,unmatched,no_sportsbook_fixture,no exact games-master fixture found for league/date/teams
+soccer,mls,,2026_09_09,10:30 PM,Los Angeles FC,New York Red Bulls,0.609,0.221,0.17,1.87,0.86,2.73,unmatched,no_sportsbook_fixture,no exact games-master fixture found for league/date/teams
+soccer,mls,,2026_09_09,10:30 PM,Portland Timbers,St Louis City,0.462,0.261,0.277,1.47,1.07,2.54,unmatched,no_sportsbook_fixture,no exact games-master fixture found for league/date/teams

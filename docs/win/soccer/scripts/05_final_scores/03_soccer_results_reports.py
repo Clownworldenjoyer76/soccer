@@ -1,23 +1,17 @@
 #!/usr/bin/env python3
 # docs/win/soccer/scripts/05_final_scores/03_soccer_results_reports.py
 #
-# Rebuildable historical reports are restricted to the fixed tuning period
-# declared in markets.yaml. These are tuning reports only.
+# Reads the analyzed graded-selection work file and rebuilds soccer result
+# tallies and bucket reports from every graded selection.
 #
-# Immutable forward evaluation picks are reported separately under:
-#   docs/win/soccer/05_final_scores/locked_evaluation/
-#
-# Evaluation reports include sample counts and are grouped by the immutable
-# markets.yaml SHA-256 stored with each locked pick.
+# There is no backtest/tuning/evaluation date split in this reporting stage.
 
 from datetime import datetime
-import hashlib
 from pathlib import Path
 import shutil
 import traceback
 
 import pandas as pd
-import yaml
 
 
 # =========================
@@ -32,24 +26,14 @@ FINAL_DIR = Path(
     "docs/win/soccer/05_final_scores"
 )
 
-CONFIG_PATH = Path(
-    "docs/win/soccer/config/markets.yaml"
-)
-
 REPORTS_DIR = (
     FINAL_DIR / "reports"
 )
 
-LOCKED_MASTER = (
-    FINAL_DIR
-    / "results"
-    / "graded_locked"
-    / "SOCCER_locked_final.csv"
-)
-
-LOCKED_EVAL_DIR = (
-    FINAL_DIR
-    / "locked_evaluation"
+# Deprecated output directory from the removed backtest/evaluation system.
+# It is deleted on each rebuild so stale evaluation files cannot survive.
+LEGACY_LOCKED_EVAL_DIR = (
+    FINAL_DIR / "locked_evaluation"
 )
 
 ERROR_DIR = (
@@ -76,11 +60,6 @@ REPORTS_DIR.mkdir(
     exist_ok=True,
 )
 
-LOCKED_EVAL_DIR.mkdir(
-    parents=True,
-    exist_ok=True,
-)
-
 ERROR_DIR.mkdir(
     parents=True,
     exist_ok=True,
@@ -88,7 +67,7 @@ ERROR_DIR.mkdir(
 
 
 # =========================
-# CONFIG
+# REPORT CONFIG
 # =========================
 
 MARKET_LAYOUT = {
@@ -136,6 +115,12 @@ BUCKETS = [
         None,
     ),
     (
+        "model_prob_bucket",
+        "model_prob_sort",
+        "model_prob",
+        None,
+    ),
+    (
         "win_prob_bucket",
         "win_prob_sort",
         "win_prob",
@@ -148,121 +133,6 @@ VALID_RESULTS = {
     "Loss",
     "Push",
 }
-
-
-def normalize_policy_date(
-    value,
-    label: str,
-) -> str:
-    normalized = (
-        str(value or "")
-        .strip()
-        .replace("-", "_")
-    )
-
-    try:
-        datetime.strptime(
-            normalized,
-            "%Y_%m_%d",
-        )
-
-    except ValueError as e:
-        raise ValueError(
-            f"backtest_policy.soccer.{label} "
-            "must be YYYY-MM-DD or YYYY_MM_DD"
-        ) from e
-
-    return normalized
-
-
-def load_backtest_policy() -> dict[str, str]:
-    with open(
-        CONFIG_PATH,
-        "r",
-        encoding="utf-8",
-    ) as f:
-        data = yaml.safe_load(f)
-
-    try:
-        raw = (
-            data["backtest_policy"]["soccer"]
-        )
-
-    except (TypeError, KeyError) as e:
-        raise ValueError(
-            "markets.yaml missing "
-            "backtest_policy.soccer"
-        ) from e
-
-    if not isinstance(raw, dict):
-        raise ValueError(
-            "backtest_policy.soccer "
-            "must be a mapping"
-        )
-
-    policy = {
-        "tuning_start": (
-            normalize_policy_date(
-                raw.get("tuning_start"),
-                "tuning_start",
-            )
-        ),
-        "tuning_end": (
-            normalize_policy_date(
-                raw.get("tuning_end"),
-                "tuning_end",
-            )
-        ),
-        "evaluation_start": (
-            normalize_policy_date(
-                raw.get(
-                    "evaluation_start"
-                ),
-                "evaluation_start",
-            )
-        ),
-    }
-
-    tuning_start = datetime.strptime(
-        policy["tuning_start"],
-        "%Y_%m_%d",
-    )
-
-    tuning_end = datetime.strptime(
-        policy["tuning_end"],
-        "%Y_%m_%d",
-    )
-
-    evaluation_start = datetime.strptime(
-        policy["evaluation_start"],
-        "%Y_%m_%d",
-    )
-
-    if tuning_start > tuning_end:
-        raise ValueError(
-            "backtest tuning_start "
-            "must be <= tuning_end"
-        )
-
-    if evaluation_start <= tuning_end:
-        raise ValueError(
-            "backtest evaluation_start "
-            "must be later than tuning_end"
-        )
-
-    return policy
-
-
-BACKTEST_POLICY = (
-    load_backtest_policy()
-)
-
-
-def current_config_sha256() -> str:
-    return hashlib.sha256(
-        CONFIG_PATH.read_bytes()
-    ).hexdigest()
-
 
 LEAGUE_TALLY_FILES = [
     FINAL_DIR
@@ -369,25 +239,20 @@ def clear_output_files() -> None:
             f"{REPORTS_DIR}"
         )
 
-    if LOCKED_EVAL_DIR.exists():
+    if LEGACY_LOCKED_EVAL_DIR.exists():
         shutil.rmtree(
-            LOCKED_EVAL_DIR
+            LEGACY_LOCKED_EVAL_DIR
         )
 
         deleted_dirs += 1
 
         log_summary(
-            "DELETED OLD LOCKED "
+            "DELETED LEGACY LOCKED "
             "EVALUATION DIR | "
-            f"{LOCKED_EVAL_DIR}"
+            f"{LEGACY_LOCKED_EVAL_DIR}"
         )
 
     REPORTS_DIR.mkdir(
-        parents=True,
-        exist_ok=True,
-    )
-
-    LOCKED_EVAL_DIR.mkdir(
         parents=True,
         exist_ok=True,
     )
@@ -422,6 +287,7 @@ def safe_read_intermediate(
                 "ev_bucket": str,
                 "kelly_bucket": str,
                 "odds_bucket": str,
+                "model_prob_bucket": str,
                 "win_prob_bucket": str,
             },
         )
@@ -439,43 +305,6 @@ def safe_read_intermediate(
     except Exception as e:
         log_error(
             f"READ ERROR | {path} | {e}"
-        )
-
-        log_error(
-            traceback.format_exc()
-        )
-
-        return pd.DataFrame()
-
-
-def safe_read_locked(
-    path: Path,
-) -> pd.DataFrame:
-    try:
-        if not path.exists():
-            log_summary(
-                "LOCKED MASTER NOT YET "
-                f"AVAILABLE | {path}"
-            )
-
-            return pd.DataFrame()
-
-        df = pd.read_csv(path)
-
-        if df.empty:
-            log_summary(
-                f"LOCKED MASTER EMPTY | "
-                f"{path}"
-            )
-
-            return pd.DataFrame()
-
-        return df
-
-    except Exception as e:
-        log_error(
-            "LOCKED MASTER READ ERROR | "
-            f"{path} | {e}"
         )
 
         log_error(
@@ -530,22 +359,6 @@ def summarize(
     }
 
 
-def summarize_locked(
-    sub: pd.DataFrame,
-) -> dict:
-    s = summarize(sub)
-
-    return {
-        "Win": s["Win"],
-        "Loss": s["Loss"],
-        "Push": s["Push"],
-        "Sample_Count": (
-            s["Sample_Count"]
-        ),
-        "Win_Pct": s["Win_Pct"],
-    }
-
-
 def write_csv(
     df: pd.DataFrame,
     path: Path,
@@ -583,66 +396,8 @@ def filter_graded(
     ].copy()
 
 
-def filter_tuning_period(
-    df: pd.DataFrame,
-) -> pd.DataFrame:
-    if "match_date" not in df.columns:
-        log_error(
-            "TUNING FILTER MISSING "
-            "COLUMN | match_date"
-        )
-
-        return pd.DataFrame()
-
-    dates = (
-        df["match_date"]
-        .astype(str)
-        .str.strip()
-        .str.replace(
-            "-",
-            "_",
-            regex=False,
-        )
-    )
-
-    start = (
-        BACKTEST_POLICY["tuning_start"]
-    )
-
-    end = (
-        BACKTEST_POLICY["tuning_end"]
-    )
-
-    mask = (
-        (dates >= start)
-        & (dates <= end)
-    )
-
-    excluded = int(
-        (~mask).sum()
-    )
-
-    if excluded:
-        log_summary(
-            "TUNING FILTER EXCLUDED | "
-            f"rows={excluded} | "
-            f"allowed={start}..{end}"
-        )
-
-    out = df.loc[
-        mask
-    ].copy()
-
-    out["match_date"] = (
-        dates.loc[mask]
-    )
-
-    return out
-
-
 # =========================
-# EXISTING TALLY FILES
-# TUNING PERIOD ONLY
+# TALLY FILES
 # =========================
 
 def build_all_tally(
@@ -764,8 +519,7 @@ def build_league_tally(
 
 
 # =========================
-# EXISTING BUCKET REPORTS
-# TUNING PERIOD ONLY
+# BUCKET REPORTS
 # =========================
 
 def by_bucket(
@@ -1054,507 +808,6 @@ def build_market_reports(
 
 
 # =========================
-# EXPLICIT TUNING PERFORMANCE
-# =========================
-
-def build_tuning_rule_performance(
-    df: pd.DataFrame,
-) -> None:
-    rows = []
-
-    config_sha = (
-        current_config_sha256()
-    )
-
-    for (
-        league,
-        market,
-        side,
-    ), sub in df.groupby(
-        [
-            "league_lower",
-            "market_type",
-            "side",
-        ],
-        dropna=False,
-    ):
-        rows.append(
-            {
-                "selection_config_sha256": (
-                    config_sha
-                ),
-                "league": league,
-                "market": market,
-                "side": side,
-                "Tuning_Start": (
-                    BACKTEST_POLICY[
-                        "tuning_start"
-                    ]
-                ),
-                "Tuning_End": (
-                    BACKTEST_POLICY[
-                        "tuning_end"
-                    ]
-                ),
-                "First_Match_Date": (
-                    sub["match_date"]
-                    .astype(str)
-                    .min()
-                ),
-                "Last_Match_Date": (
-                    sub["match_date"]
-                    .astype(str)
-                    .max()
-                ),
-                "Evidence_Type": (
-                    "TUNING_ONLY_"
-                    "NOT_PROMOTION_EVIDENCE"
-                ),
-                **summarize_locked(
-                    sub
-                ),
-            }
-        )
-
-    out = pd.DataFrame(
-        rows,
-        columns=[
-            "selection_config_sha256",
-            "league",
-            "market",
-            "side",
-            "Tuning_Start",
-            "Tuning_End",
-            "First_Match_Date",
-            "Last_Match_Date",
-            "Evidence_Type",
-            "Win",
-            "Loss",
-            "Push",
-            "Sample_Count",
-            "Win_Pct",
-        ],
-    )
-
-    if not out.empty:
-        out = (
-            out.sort_values(
-                [
-                    "league",
-                    "market",
-                    "side",
-                ]
-            )
-            .reset_index(
-                drop=True
-            )
-        )
-
-    write_csv(
-        out,
-        LOCKED_EVAL_DIR
-        / "tuning_rule_performance.csv",
-    )
-
-
-# =========================
-# LOCKED FORWARD EVALUATION
-# =========================
-
-def build_locked_evaluation() -> None:
-    raw = safe_read_locked(
-        LOCKED_MASTER
-    )
-
-    if raw.empty:
-        log_summary(
-            "NO LOCKED EVALUATION WRITTEN | "
-            "no graded locked rows available"
-        )
-
-        return
-
-    required = [
-        "league_lower",
-        "market_type",
-        "side",
-        "bet_result",
-        "match_date",
-        "selection_config_sha256",
-        "selection_period",
-        "tuning_start",
-        "tuning_end",
-        "evaluation_start",
-    ]
-
-    missing = [
-        c
-        for c in required
-        if c not in raw.columns
-    ]
-
-    if missing:
-        log_error(
-            "LOCKED EVALUATION MISSING "
-            f"REQUIRED COLUMNS | {missing}"
-        )
-
-        return
-
-    df = filter_graded(raw)
-
-    if df.empty:
-        log_summary(
-            "NO LOCKED GRADED RESULTS YET | "
-            "W/L/P sample count is zero"
-        )
-
-        return
-
-    for col in [
-        "league_lower",
-        "market_type",
-        "side",
-        "selection_config_sha256",
-        "selection_period",
-        "tuning_start",
-        "tuning_end",
-        "evaluation_start",
-    ]:
-        df[col] = (
-            df[col]
-            .astype(str)
-            .str.strip()
-        )
-
-    df["league_lower"] = (
-        df["league_lower"]
-        .str.lower()
-    )
-
-    df["market_type"] = (
-        df["market_type"]
-        .str.lower()
-    )
-
-    df["side"] = (
-        df["side"]
-        .str.lower()
-    )
-
-    df["selection_period"] = (
-        df["selection_period"]
-        .str.lower()
-    )
-
-    for col in [
-        "match_date",
-        "tuning_start",
-        "tuning_end",
-        "evaluation_start",
-    ]:
-        df[col] = (
-            df[col]
-            .astype(str)
-            .str.strip()
-            .str.replace(
-                "-",
-                "_",
-                regex=False,
-            )
-        )
-
-    # A row counts as out-of-sample only if the
-    # immutable metadata stored with that selection
-    # proves the match happened after tuning ended
-    # and on/after that YAML version's evaluation start.
-    valid_oos = (
-        (
-            df["selection_period"]
-            == "evaluation"
-        )
-        & (
-            df["match_date"]
-            > df["tuning_end"]
-        )
-        & (
-            df["match_date"]
-            >= df["evaluation_start"]
-        )
-    )
-
-    rejected_oos = int(
-        (~valid_oos).sum()
-    )
-
-    if rejected_oos:
-        log_error(
-            "LOCKED ROWS REJECTED AS "
-            "NON-OOS | "
-            f"rows={rejected_oos}"
-        )
-
-    df = df.loc[
-        valid_oos
-    ].copy()
-
-    if df.empty:
-        log_summary(
-            "NO OUT-OF-SAMPLE LOCKED RESULTS | "
-            "zero locked rows passed "
-            "period validation"
-        )
-
-        return
-
-    # ---------------------------------
-    # All immutable forward picks
-    # ---------------------------------
-
-    rows = []
-
-    for (
-        market,
-        side,
-    ), sub in df.groupby(
-        [
-            "market_type",
-            "side",
-        ],
-        dropna=False,
-    ):
-        rows.append(
-            {
-                "market": market,
-                "side": side,
-                **summarize_locked(
-                    sub
-                ),
-            }
-        )
-
-    all_tally = pd.DataFrame(
-        rows,
-        columns=[
-            "market",
-            "side",
-            "Win",
-            "Loss",
-            "Push",
-            "Sample_Count",
-            "Win_Pct",
-        ],
-    )
-
-    if not all_tally.empty:
-        all_tally = (
-            all_tally.sort_values(
-                [
-                    "market",
-                    "side",
-                ]
-            )
-            .reset_index(
-                drop=True
-            )
-        )
-
-    write_csv(
-        all_tally,
-        LOCKED_EVAL_DIR
-        / "all_soccer_locked_tally.csv",
-    )
-
-    # ---------------------------------
-    # Per YAML / league / market / side
-    # ---------------------------------
-
-    rows = []
-
-    group_cols = [
-        "selection_config_sha256",
-        "league_lower",
-        "market_type",
-        "side",
-    ]
-
-    for keys, sub in df.groupby(
-        group_cols,
-        dropna=False,
-    ):
-        (
-            config_sha,
-            league,
-            market,
-            side,
-        ) = keys
-
-        rows.append(
-            {
-                "selection_config_sha256": (
-                    config_sha
-                ),
-                "league": league,
-                "market": market,
-                "side": side,
-                "Tuning_Start": (
-                    sub["tuning_start"]
-                    .iloc[0]
-                ),
-                "Tuning_End": (
-                    sub["tuning_end"]
-                    .iloc[0]
-                ),
-                "Evaluation_Start": (
-                    sub["evaluation_start"]
-                    .iloc[0]
-                ),
-                "First_Match_Date": (
-                    sub["match_date"]
-                    .min()
-                ),
-                "Last_Match_Date": (
-                    sub["match_date"]
-                    .max()
-                ),
-                "Evidence_Type": (
-                    "OUT_OF_SAMPLE_EVALUATION"
-                ),
-                **summarize_locked(
-                    sub
-                ),
-            }
-        )
-
-    rule = pd.DataFrame(
-        rows,
-        columns=[
-            "selection_config_sha256",
-            "league",
-            "market",
-            "side",
-            "Tuning_Start",
-            "Tuning_End",
-            "Evaluation_Start",
-            "First_Match_Date",
-            "Last_Match_Date",
-            "Evidence_Type",
-            "Win",
-            "Loss",
-            "Push",
-            "Sample_Count",
-            "Win_Pct",
-        ],
-    )
-
-    if not rule.empty:
-        rule = (
-            rule.sort_values(
-                [
-                    "selection_config_sha256",
-                    "league",
-                    "market",
-                    "side",
-                ]
-            )
-            .reset_index(
-                drop=True
-            )
-        )
-
-    write_csv(
-        rule,
-        LOCKED_EVAL_DIR
-        / "locked_rule_performance.csv",
-    )
-
-    # ---------------------------------
-    # Overall performance per YAML
-    # ---------------------------------
-
-    rows = []
-
-    for config_sha, sub in df.groupby(
-        "selection_config_sha256",
-        dropna=False,
-    ):
-        rows.append(
-            {
-                "selection_config_sha256": (
-                    config_sha
-                ),
-                "Tuning_Start": (
-                    sub["tuning_start"]
-                    .iloc[0]
-                ),
-                "Tuning_End": (
-                    sub["tuning_end"]
-                    .iloc[0]
-                ),
-                "Evaluation_Start": (
-                    sub["evaluation_start"]
-                    .iloc[0]
-                ),
-                "First_Match_Date": (
-                    sub["match_date"]
-                    .min()
-                ),
-                "Last_Match_Date": (
-                    sub["match_date"]
-                    .max()
-                ),
-                "Evidence_Type": (
-                    "OUT_OF_SAMPLE_EVALUATION"
-                ),
-                **summarize_locked(
-                    sub
-                ),
-            }
-        )
-
-    config_perf = pd.DataFrame(
-        rows,
-        columns=[
-            "selection_config_sha256",
-            "Tuning_Start",
-            "Tuning_End",
-            "Evaluation_Start",
-            "First_Match_Date",
-            "Last_Match_Date",
-            "Evidence_Type",
-            "Win",
-            "Loss",
-            "Push",
-            "Sample_Count",
-            "Win_Pct",
-        ],
-    )
-
-    if not config_perf.empty:
-        config_perf = (
-            config_perf.sort_values(
-                "First_Match_Date"
-            )
-            .reset_index(
-                drop=True
-            )
-        )
-
-    write_csv(
-        config_perf,
-        LOCKED_EVAL_DIR
-        / "locked_config_performance.csv",
-    )
-
-    log_summary(
-        "LOCKED FORWARD EVALUATION | "
-        f"graded_oos_rows={len(df)} | "
-        f"config_versions="
-        f"{df['selection_config_sha256'].nunique()}"
-    )
-
-
-# =========================
 # MAIN
 # =========================
 
@@ -1568,15 +821,6 @@ def main() -> None:
     )
 
     clear_output_files()
-
-    log_summary(
-        "BACKTEST POLICY | "
-        f"tuning="
-        f"{BACKTEST_POLICY['tuning_start']}.."
-        f"{BACKTEST_POLICY['tuning_end']} | "
-        f"evaluation_start="
-        f"{BACKTEST_POLICY['evaluation_start']}"
-    )
 
     raw = safe_read_intermediate(
         INTERMEDIATE
@@ -1604,127 +848,108 @@ def main() -> None:
             )
 
         else:
-            df = filter_tuning_period(
-                df
-            )
+            required_cols = [
+                "league_lower",
+                "market_type",
+                "side",
+                "match_date",
+            ]
 
-            if df.empty:
+            missing_required = [
+                c
+                for c in required_cols
+                if c not in df.columns
+            ]
+
+            if missing_required:
                 log_error(
-                    "NO TUNING-PERIOD "
-                    "GRADED ROWS"
+                    "MISSING REQUIRED REPORT "
+                    f"COLUMNS | {missing_required}"
                 )
 
                 log_summary(
                     "NO STANDARD REPORTS WRITTEN | "
-                    "tuning sample is empty"
+                    "required columns missing"
                 )
 
             else:
-                required_cols = [
-                    "league_lower",
-                    "market_type",
-                    "side",
-                    "match_date",
-                ]
+                df["league_lower"] = (
+                    df["league_lower"]
+                    .astype(str)
+                    .str.lower()
+                    .str.strip()
+                )
 
-                missing_required = [
-                    c
-                    for c in required_cols
-                    if c not in df.columns
-                ]
+                df["market_type"] = (
+                    df["market_type"]
+                    .astype(str)
+                    .str.lower()
+                    .str.strip()
+                )
 
-                if missing_required:
-                    log_error(
-                        "MISSING REQUIRED REPORT "
-                        f"COLUMNS | {missing_required}"
+                df["side"] = (
+                    df["side"]
+                    .astype(str)
+                    .str.lower()
+                    .str.strip()
+                )
+
+                df["match_date"] = (
+                    df["match_date"]
+                    .astype(str)
+                    .str.strip()
+                    .str.replace(
+                        "-",
+                        "_",
+                        regex=False,
                     )
+                )
 
-                    log_summary(
-                        "NO STANDARD REPORTS WRITTEN | "
-                        "required columns missing"
-                    )
+                log_summary(
+                    "Rows loaded "
+                    "(all graded selections): "
+                    f"{len(df)}"
+                )
 
-                else:
-                    df["league_lower"] = (
-                        df["league_lower"]
-                        .astype(str)
-                        .str.lower()
-                        .str.strip()
-                    )
+                log_summary(
+                    "market_type counts: "
+                    f"{df['market_type'].value_counts().to_dict()}"
+                )
 
-                    df["market_type"] = (
-                        df["market_type"]
-                        .astype(str)
-                        .str.lower()
-                        .str.strip()
-                    )
+                log_summary(
+                    "leagues: "
+                    f"{df['league_lower'].value_counts().to_dict()}"
+                )
 
-                    df["side"] = (
-                        df["side"]
-                        .astype(str)
-                        .str.lower()
-                        .str.strip()
-                    )
+                build_all_tally(
+                    df
+                )
 
-                    log_summary(
-                        "Rows loaded "
-                        "(graded tuning only): "
-                        f"{len(df)}"
-                    )
-
-                    log_summary(
-                        "market_type counts: "
-                        f"{df['market_type'].value_counts().to_dict()}"
-                    )
-
-                    log_summary(
-                        "leagues: "
-                        f"{df['league_lower'].value_counts().to_dict()}"
-                    )
-
-                    log_summary(
-                        "TUNING PERIOD | "
-                        f"{BACKTEST_POLICY['tuning_start']}.."
-                        f"{BACKTEST_POLICY['tuning_end']} | "
-                        "standard reports are "
-                        "tuning-only evidence"
-                    )
-
-                    build_tuning_rule_performance(
-                        df
-                    )
-
-                    build_all_tally(
-                        df
-                    )
-
-                    for (
-                        league,
+                for (
+                    league,
+                    league_df,
+                ) in df.groupby(
+                    "league_lower"
+                ):
+                    build_league_tally(
                         league_df,
-                    ) in df.groupby(
-                        "league_lower"
-                    ):
-                        build_league_tally(
-                            league_df,
-                            league,
-                        )
+                        league,
+                    )
 
-                    for (
+                for (
+                    league,
+                    market_type,
+                ), grp in df.groupby(
+                    [
+                        "league_lower",
+                        "market_type",
+                    ]
+                ):
+                    build_market_reports(
+                        grp,
                         league,
                         market_type,
-                    ), grp in df.groupby(
-                        [
-                            "league_lower",
-                            "market_type",
-                        ]
-                    ):
-                        build_market_reports(
-                            grp,
-                            league,
-                            market_type,
-                        )
-
-    build_locked_evaluation()
+                    )
 
     log_summary(
         "=== END "

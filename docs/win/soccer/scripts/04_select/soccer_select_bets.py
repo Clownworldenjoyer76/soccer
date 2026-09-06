@@ -9,20 +9,15 @@
 # invalid configured ML filter inputs are hard errors; they are never silently
 # ignored.
 #
-# Historical rebuildable selections remain restricted to the fixed tuning
-# window declared in markets.yaml. Current evaluation-day selections are
-# additionally written once to 04_select/locked and locked files remain
-# immutable.
+# Every available Stage-3 date is rebuilt using the current markets.yaml
+# filters. There is no tuning/evaluation date restriction or locking logic.
 
-import hashlib
-import os
 import re
 import sys
 import traceback
 from collections import defaultdict
 from datetime import datetime, UTC
 from pathlib import Path
-from zoneinfo import ZoneInfo
 
 import pandas as pd
 import yaml
@@ -30,13 +25,11 @@ import yaml
 BASE = Path(__file__).resolve().parents[2]
 INPUT_DIR = BASE / "03_edges"
 OUTPUT_DIR = BASE / "04_select"
-LOCKED_DIR = OUTPUT_DIR / "locked"
 CONFIG_PATH = BASE / "config" / "markets.yaml"
 ERROR_DIR = BASE / "errors" / "04_select"
 LOG_FILE = ERROR_DIR / "select_bets.txt"
 
 OUTPUT_DIR.mkdir(exist_ok=True)
-LOCKED_DIR.mkdir(parents=True, exist_ok=True)
 ERROR_DIR.mkdir(parents=True, exist_ok=True)
 
 MARKET_FROM_SUFFIX = {
@@ -55,49 +48,6 @@ MATCH_ODDS_SOURCE_KEYS = (
 )
 SUPPORTED_MATCH_ODDS_SOURCES = {"raw", "adjusted", "engine"}
 
-LOCK_BASE_COLUMNS = [
-    "game_id",
-    "sport",
-    "league",
-    "match_date",
-    "match_time",
-    "home_team",
-    "away_team",
-    "market",
-    "side",
-    "odds",
-    "american_odds",
-    "ev",
-    "kelly",
-    "model_prob",
-    "edge",
-    "model_prob_source",
-    "model_prob_underlying_source",
-    "ev_prob",
-    "ev_prob_source",
-    "kelly_prob",
-    "kelly_prob_source",
-    "fair_odds_prob",
-    "fair_odds_prob_source",
-    "fair_odds",
-    "edge_prob",
-    "edge_prob_source",
-    "edge_fair_odds",
-    "ml_predictability",
-    "ml_predictability_source",
-    "ml_skip_prob",
-    "ml_skip_prob_source",
-]
-
-LOCK_METADATA_COLUMNS = [
-    "selection_config_sha256",
-    "selection_period",
-    "tuning_start",
-    "tuning_end",
-    "evaluation_start",
-    "locked_run_date",
-    "locked_at_utc",
-]
 
 DEBUG_COUNTS: dict = defaultdict(int)
 
@@ -121,8 +71,6 @@ def _write_summary(summary, per_market, per_date, per_league):
         f"  total_bets      : {summary['total_bets']}",
         f"  dates_written   : {summary['dates_written']}",
         f"  skipped_files   : {summary['skipped']}",
-        f"  locked_created  : {summary['locked_created']}",
-        f"  locked_preserved: {summary['locked_preserved']}",
         f"  errors          : {summary['errors']}",
         "",
         "--- By Market ---",
@@ -143,17 +91,6 @@ def _write_summary(summary, per_market, per_date, per_league):
     lines += ["", f"STATUS: {status}", "=" * 70]
     with open(LOG_FILE, "a", encoding="utf-8") as f:
         f.write("\n".join(lines) + "\n")
-
-
-def _normalize_policy_date(value, label: str) -> str:
-    normalized = str(value or "").strip().replace("-", "_")
-    try:
-        datetime.strptime(normalized, "%Y_%m_%d")
-    except ValueError as e:
-        raise ValueError(
-            f"backtest_policy.soccer.{label} must be YYYY-MM-DD or YYYY_MM_DD"
-        ) from e
-    return normalized
 
 
 def load_config():
@@ -188,25 +125,7 @@ def load_config():
                 )
             normalized_sources[key] = source
 
-        try:
-            raw_policy = data["backtest_policy"]["soccer"]
-        except (TypeError, KeyError) as e:
-            raise ValueError("markets.yaml missing backtest_policy.soccer") from e
-        if not isinstance(raw_policy, dict):
-            raise ValueError("backtest_policy.soccer must be a mapping")
-        policy = {
-            "tuning_start": _normalize_policy_date(raw_policy.get("tuning_start"), "tuning_start"),
-            "tuning_end": _normalize_policy_date(raw_policy.get("tuning_end"), "tuning_end"),
-            "evaluation_start": _normalize_policy_date(raw_policy.get("evaluation_start"), "evaluation_start"),
-        }
-        tuning_start = datetime.strptime(policy["tuning_start"], "%Y_%m_%d")
-        tuning_end = datetime.strptime(policy["tuning_end"], "%Y_%m_%d")
-        evaluation_start = datetime.strptime(policy["evaluation_start"], "%Y_%m_%d")
-        if tuning_start > tuning_end:
-            raise ValueError("backtest tuning_start must be <= tuning_end")
-        if evaluation_start <= tuning_end:
-            raise ValueError("backtest evaluation_start must be later than tuning_end")
-        return config, normalized_sources, policy
+        return config, normalized_sources
     except Exception as e:
         with open(LOG_FILE, "w", encoding="utf-8") as f:
             f.write(f"=== soccer select_bets RUN {_now()} ===\n")
@@ -214,7 +133,7 @@ def load_config():
         raise
 
 
-CONFIG, MATCH_ODDS_PROBABILITY_SOURCES, BACKTEST_POLICY = load_config()
+CONFIG, MATCH_ODDS_PROBABILITY_SOURCES = load_config()
 
 
 def fv(x):
@@ -275,31 +194,6 @@ def parse_date(s):
         return datetime.strptime(str(s).strip().replace("-", "_"), "%Y_%m_%d")
     except Exception:
         return None
-
-
-def selection_period(game_date: str) -> str:
-    dt = parse_date(game_date)
-    if dt is None:
-        return "invalid"
-    tuning_start = parse_date(BACKTEST_POLICY["tuning_start"])
-    tuning_end = parse_date(BACKTEST_POLICY["tuning_end"])
-    evaluation_start = parse_date(BACKTEST_POLICY["evaluation_start"])
-    if tuning_start <= dt <= tuning_end:
-        return "tuning"
-    if dt >= evaluation_start:
-        return "evaluation"
-    if dt < tuning_start:
-        return "pre_tuning"
-    return "gap"
-
-
-def historical_rebuild_allowed(game_date: str, active_lock_date: str) -> bool:
-    period = selection_period(game_date)
-    if period == "tuning":
-        return True
-    if period == "evaluation" and game_date == active_lock_date:
-        return True
-    return False
 
 
 def date_ok(game_date, months, exclude_dow):
@@ -485,92 +379,6 @@ def clear_old_outputs() -> None:
         _log(f"DELETED OLD SELECT FILE: {old_file}")
     DEBUG_COUNTS["deleted_old_select_files"] += deleted
     _log(f"Old select files deleted: {deleted}")
-    _log(f"Locked directory preserved: {LOCKED_DIR}")
-
-
-def current_ny_date() -> str:
-    return datetime.now(ZoneInfo("America/New_York")).strftime("%Y_%m_%d")
-
-
-def resolve_lock_date() -> str:
-    raw = os.environ.get("RUN_DATE", "").strip()
-    if raw:
-        normalized = raw.replace("-", "_")
-        try:
-            datetime.strptime(normalized, "%Y_%m_%d")
-        except ValueError as e:
-            raise ValueError(
-                f"Invalid RUN_DATE {raw!r}; expected YYYY-MM-DD or YYYY_MM_DD"
-            ) from e
-        return normalized
-    return current_ny_date()
-
-
-def config_sha256() -> str:
-    return hashlib.sha256(CONFIG_PATH.read_bytes()).hexdigest()
-
-
-def lock_daily_picks(df_all, seen_input_dates, summary):
-    lock_date = resolve_lock_date()
-    locked_path = LOCKED_DIR / f"{lock_date}_soccer_bets.csv"
-    _log(f"LOCK DATE: {lock_date}")
-    today = current_ny_date()
-    if lock_date != today:
-        _log(
-            f"LOCK SKIPPED | run date {lock_date} is not current New York date {today}; "
-            "historical backfill is not allowed",
-            "WARN",
-        )
-        DEBUG_COUNTS["lock_skipped_historical_run_date"] += 1
-        return
-    if selection_period(lock_date) != "evaluation":
-        _log(
-            f"LOCK SKIPPED | run date {lock_date} is not inside evaluation period "
-            f"starting {BACKTEST_POLICY['evaluation_start']}",
-            "WARN",
-        )
-        DEBUG_COUNTS["lock_skipped_not_evaluation_period"] += 1
-        return
-    if lock_date not in seen_input_dates:
-        _log(f"LOCK SKIPPED | no stage-3 input files found for run date {lock_date}", "WARN")
-        DEBUG_COUNTS["lock_skipped_no_run_date_input"] += 1
-        return
-    if locked_path.exists():
-        summary["locked_preserved"] += 1
-        DEBUG_COUNTS["locked_existing_preserved"] += 1
-        _log(f"LOCK PRESERVED | existing immutable file not overwritten: {locked_path}")
-        return
-
-    if df_all.empty or "match_date" not in df_all.columns:
-        locked = pd.DataFrame(columns=LOCK_BASE_COLUMNS)
-    else:
-        match_dates = df_all["match_date"].astype(str).str.strip()
-        locked = df_all.loc[match_dates == lock_date].copy()
-    for col in LOCK_BASE_COLUMNS:
-        if col not in locked.columns:
-            locked[col] = pd.NA
-
-    sha = config_sha256()
-    locked["selection_config_sha256"] = sha
-    locked["selection_period"] = "evaluation"
-    locked["tuning_start"] = BACKTEST_POLICY["tuning_start"]
-    locked["tuning_end"] = BACKTEST_POLICY["tuning_end"]
-    locked["evaluation_start"] = BACKTEST_POLICY["evaluation_start"]
-    locked["locked_run_date"] = lock_date
-    locked["locked_at_utc"] = _now()
-    ordered = LOCK_BASE_COLUMNS + LOCK_METADATA_COLUMNS
-    extra = [c for c in locked.columns if c not in ordered]
-    locked = locked[ordered + extra]
-    locked.to_csv(locked_path, index=False)
-
-    summary["locked_created"] += 1
-    DEBUG_COUNTS["locked_files_created"] += 1
-    DEBUG_COUNTS["locked_rows_created"] += len(locked)
-    _log(
-        f"LOCK CREATED | {locked_path} | rows={len(locked)} | markets_sha256={sha} | "
-        f"tuning={BACKTEST_POLICY['tuning_start']}..{BACKTEST_POLICY['tuning_end']} | "
-        f"evaluation_start={BACKTEST_POLICY['evaluation_start']}"
-    )
 
 
 def parse_filename(name: str):
@@ -590,12 +398,20 @@ def parse_filename(name: str):
     return m.group(1), m.group(2), market_type
 
 
-def build_match_odds_sides(row, game_date, cfg):
+def build_match_odds_sides(row, game_date, cfg, league):
     sides = []
     for side in ("home", "draw", "away"):
         scfg = cfg.get(side)
         if not scfg or not scfg.get("enabled", True):
             continue
+        side_ml_cfg = scfg.get("ml_filter")
+        side_ml_enabled = isinstance(side_ml_cfg, dict) and side_ml_cfg.get("enabled", False)
+        side_ml_pass, side_ml_meta = passes_ml_filter(
+            row, league, f"match_odds.{side}", scfg
+        )
+        if not side_ml_pass:
+            continue
+        side_ml_extra = side_ml_meta if side_ml_enabled else {}
         validate_match_odds_provenance(row, side)
         odds = fv(row.get(f"dk_{side}_decimal"))
         ev = fv(row.get(f"{side}_ev"))
@@ -629,6 +445,7 @@ def build_match_odds_sides(row, game_date, cfg):
                     edge_prob=fv(row.get(f"{side}_edge_prob")),
                     edge_prob_source=str(row.get(f"{side}_edge_prob_source")).strip(),
                     edge_fair_odds=fv(row.get(f"{side}_edge_fair_decimal")),
+                    **side_ml_extra,
                 )
             )
         else:
@@ -756,7 +573,7 @@ def process_file(file: Path):
             continue
 
         if market_type == "match_odds":
-            sides = build_match_odds_sides(row, game_date, cfg)
+            sides = build_match_odds_sides(row, game_date, cfg, league_key)
         elif market_type == "btts":
             sides = build_btts_sides(row, game_date, cfg)
         elif market_type == "total25":
@@ -804,11 +621,10 @@ def process_file(file: Path):
                 "edge": sel["edge"],
                 "model_prob_source": sel.get("model_prob_source"),
                 "model_prob_underlying_source": sel.get("model_prob_underlying_source"),
-                "ml_predictability": ml_meta["ml_predictability"],
-                "ml_predictability_source": ml_meta["ml_predictability_source"],
-                "ml_skip_prob": ml_meta["ml_skip_prob"],
-                "ml_skip_prob_source": ml_meta["ml_skip_prob_source"],
-                "selection_period": selection_period(game_date),
+                "ml_predictability": sel.get("ml_predictability", ml_meta["ml_predictability"]),
+                "ml_predictability_source": sel.get("ml_predictability_source", ml_meta["ml_predictability_source"]),
+                "ml_skip_prob": sel.get("ml_skip_prob", ml_meta["ml_skip_prob"]),
+                "ml_skip_prob_source": sel.get("ml_skip_prob_source", ml_meta["ml_skip_prob_source"]),
             }
             if market_type == "match_odds":
                 out_row.update(
@@ -841,25 +657,16 @@ def main():
         "total_bets": 0,
         "dates_written": 0,
         "skipped": 0,
-        "locked_created": 0,
-        "locked_preserved": 0,
         "errors": 0,
     }
     per_market = {}
     per_date = {}
     per_league = {}
     all_bets = []
-    seen_input_dates = set()
 
     _log(f"INPUT_DIR : {INPUT_DIR}")
     _log(f"OUTPUT_DIR: {OUTPUT_DIR}")
-    _log(f"LOCKED_DIR: {LOCKED_DIR}")
     _log(f"CONFIG    : {CONFIG_PATH}")
-    _log(
-        "BACKTEST POLICY | "
-        f"tuning={BACKTEST_POLICY['tuning_start']}..{BACKTEST_POLICY['tuning_end']} | "
-        f"evaluation_start={BACKTEST_POLICY['evaluation_start']}"
-    )
     _log(
         "MATCH_ODDS PROBABILITY SOURCES | "
         + " | ".join(
@@ -870,26 +677,9 @@ def main():
 
     input_files = sorted(INPUT_DIR.glob("*.csv"))
     _log(f"Files found: {len(input_files)}")
-    active_lock_date = resolve_lock_date()
 
     try:
         for file in input_files:
-            file_date, _, market_type = parse_filename(file.name)
-            if file_date and market_type:
-                seen_input_dates.add(file_date)
-                if not historical_rebuild_allowed(file_date, active_lock_date):
-                    period = selection_period(file_date)
-                    _log(
-                        "SKIP OUTSIDE REBUILD WINDOW | "
-                        f"file={file.name} | date={file_date} | period={period} | "
-                        f"tuning={BACKTEST_POLICY['tuning_start']}..{BACKTEST_POLICY['tuning_end']} | "
-                        f"current_eval_date={active_lock_date}",
-                        "WARN",
-                    )
-                    DEBUG_COUNTS[f"skipped_period_{period}"] += 1
-                    summary["skipped"] += 1
-                    continue
-
             try:
                 rows, status = process_file(file)
                 if status in ("skip", "empty", "disabled"):
@@ -919,10 +709,7 @@ def main():
                 per_date[str(date)] = {"bets": len(group), "file": out_path.name}
                 _log(f"WROTE: {out_path} ({len(group)} bets)")
         else:
-            df_all = pd.DataFrame(columns=LOCK_BASE_COLUMNS)
             _log("No bets selected across all files", "WARN")
-
-        lock_daily_picks(df_all, seen_input_dates, summary)
     except Exception as e:
         _log(f"FATAL: {e}\n{traceback.format_exc()}", "ERROR")
         summary["errors"] += 1

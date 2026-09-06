@@ -1,0 +1,4 @@
+sport,league,game_id,match_date,match_time,home_team,away_team,dk_home_decimal,dk_draw_decimal,dk_away_decimal,dk_over25_decimal,dk_under25_decimal,dk_over35_decimal,dk_under35_decimal,btts_yes,btts_no
+soccer,laliga,401882887,2026_09_05,03:00 PM,Villarreal,Deportivo De La Coruna,1.45,4.80,6.50,1.67,2.20,,,,
+soccer,laliga,401882895,2026_09_05,10:15 AM,Athletic Club,Atletico Madrid,2.75,3.30,2.65,1.91,1.91,,,3.45,1.30
+soccer,laliga,401882889,2026_09_05,12:30 PM,Vallecano,Santander,1.95,3.60,3.75,1.67,2.20,,,2.80,

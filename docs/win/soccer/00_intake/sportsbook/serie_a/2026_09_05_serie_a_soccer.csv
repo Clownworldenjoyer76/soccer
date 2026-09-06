@@ -1,0 +1,4 @@
+sport,league,game_id,match_date,match_time,home_team,away_team,dk_home_decimal,dk_draw_decimal,dk_away_decimal,dk_over25_decimal,dk_under25_decimal,dk_over35_decimal,dk_under35_decimal,btts_yes,btts_no
+soccer,seriea,401874781,2026_09_05,02:45 PM,Roma,Atalanta,1.62,3.75,5.00,1.77,2.05,,,,
+soccer,seriea,401874939,2026_09_05,09:00 AM,Fiorentina,Torino,2.00,3.20,3.65,1.91,1.87,8.70,1.07,,
+soccer,seriea,401874937,2026_09_05,12:00 PM,Inter Milan,Napoli,1.61,3.70,5.25,1.80,2.00,,,,

@@ -1,0 +1,16 @@
+game_id,sport,league,match_date,match_time,home_team,away_team
+401884803,soccer,bundesliga,2026_09_06,09:30 AM,Hamburg,Mainz
+401884805,soccer,bundesliga,2026_09_06,11:30 AM,Eintracht Frankfurt,Augsburg
+401879291,soccer,epl,2026_09_06,09:00 AM,Everton,Manchester United
+401879292,soccer,epl,2026_09_06,11:30 AM,Arsenal,Chelsea
+401882892,soccer,laliga,2026_09_06,03:00 PM,Espanyol,Sevilla
+401882888,soccer,laliga,2026_09_06,10:15 AM,Valencia,Barcelona
+401882896,soccer,laliga,2026_09_06,12:30 PM,Alaves,Osasuna
+401882890,soccer,laliga,2026_09_06,12:30 PM,Malaga,Levante
+401876471,soccer,ligue1,2026_09_06,02:45 PM,Marseille,Paris FC
+401876467,soccer,ligue1,2026_09_06,09:00 AM,Troyes,Strasbourg
+401876475,soccer,ligue1,2026_09_06,11:15 AM,Angers,Rennes
+401874954,soccer,seriea,2026_09_06,02:45 PM,Juventus,Milan
+401874768,soccer,seriea,2026_09_06,09:00 AM,Frosinone,Venezia
+401874987,soccer,seriea,2026_09_06,09:00 AM,Parma,Monza
+401874751,soccer,seriea,2026_09_06,12:00 PM,Bologna,Sassuolo
