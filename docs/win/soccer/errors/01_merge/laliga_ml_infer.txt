@@ -1,4 +1,4 @@
-LaLiga ML inference: processing 38 LaLiga merge date(s) through 2026_09_06.
+LaLiga ML inference: processing 39 LaLiga merge date(s) through 2026_09_07.
 LaLiga ML inference complete for 2026_04_10: 1 match prediction(s), 4 merge file(s) enriched.
   enriched 2026_04_10_laliga_match_odds.csv: 1 row(s)
   enriched 2026_04_10_laliga_total_25.csv: 1 row(s)
@@ -189,4 +189,9 @@ LaLiga ML inference complete for 2026_09_06: 4 match prediction(s), 4 merge file
   enriched 2026_09_06_laliga_total_25.csv: 3 row(s)
   enriched 2026_09_06_laliga_total_35.csv: 3 row(s)
   enriched 2026_09_06_laliga_btts.csv: 3 row(s)
-LaLiga ML historical inference complete: 38 date(s), 152 merge file(s), 384 total merged row(s) enriched.
+LaLiga ML inference complete for 2026_09_07: 2 match prediction(s), 4 merge file(s) enriched.
+  enriched 2026_09_07_laliga_match_odds.csv: 2 row(s)
+  enriched 2026_09_07_laliga_total_25.csv: 2 row(s)
+  enriched 2026_09_07_laliga_total_35.csv: 2 row(s)
+  enriched 2026_09_07_laliga_btts.csv: 2 row(s)
+LaLiga ML historical inference complete: 39 date(s), 156 merge file(s), 392 total merged row(s) enriched.
