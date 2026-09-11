@@ -1,7 +1,5 @@
 market,market_type,Win,Loss,Push,Total,Sample_Count,Win_Pct
-btts,no,1,2,0,3,3,0.3333
-btts,yes,14,2,0,16,16,0.875
+btts,yes,14,3,0,17,17,0.8235
 match_odds,away,1,0,0,1,1,1.0
-match_odds,draw,0,1,0,1,1,0.0
 total25,under,1,1,0,2,2,0.5
-total35,under,5,3,0,8,8,0.625
+total35,under,5,1,0,6,6,0.8333

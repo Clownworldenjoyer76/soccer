@@ -1,0 +1,4 @@
+sport,league,game_id,game_date,match_time,home_team,away_team,home_score,away_score
+soccer,laliga,401882892,2026_09_06,03:00 PM,Espanyol,Sevilla,1,1
+soccer,laliga,401882896,2026_09_06,12:30 PM,Alaves,Osasuna,5,2
+soccer,laliga,401882888,2026_09_06,10:15 AM,Valencia,Barcelona,0,5

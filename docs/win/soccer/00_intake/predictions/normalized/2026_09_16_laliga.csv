@@ -1,0 +1,5 @@
+sport,league,game_id,match_date,match_time,home_team,away_team,home_prob,draw_prob,away_prob,home_xg,away_xg,expected_total_goals,identity_status,identity_reason,identity_detail
+soccer,laliga,,2026_09_16,01:00 PM,Deportivo De La Coruna,Sevilla,0.246,0.264,0.49,0.96,1.47,2.43,unmatched,no_sportsbook_fixture,no exact games-master fixture found for league/date/teams
+soccer,laliga,,2026_09_16,01:00 PM,Atletico Madrid,Osasuna,0.759,0.159,0.081,2.34,0.62,2.96,unmatched,no_sportsbook_fixture,no exact games-master fixture found for league/date/teams
+soccer,laliga,,2026_09_16,03:30 PM,Levante,Athletic Club,0.201,0.24,0.559,0.91,1.69,2.6,unmatched,no_sportsbook_fixture,no exact games-master fixture found for league/date/teams
+soccer,laliga,,2026_09_16,03:30 PM,Barcelona,Santander,0.887,0.086,0.027,3.03,0.41,3.44,unmatched,no_sportsbook_fixture,no exact games-master fixture found for league/date/teams

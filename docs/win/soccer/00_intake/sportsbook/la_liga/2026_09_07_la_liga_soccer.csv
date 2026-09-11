@@ -1,3 +1,3 @@
 sport,league,game_id,match_date,match_time,home_team,away_team,dk_home_decimal,dk_draw_decimal,dk_away_decimal,dk_over25_decimal,dk_under25_decimal,dk_over35_decimal,dk_under35_decimal,btts_yes,btts_no
-soccer,laliga,401882891,2026_09_07,01:00 PM,Getafe,Celta Vigo,2.60,2.80,3.30,,,,,,
-soccer,laliga,401882893,2026_09_07,03:30 PM,Elche,Real Sociedad,3.30,3.50,2.20,1.77,2.05,,,,
+soccer,laliga,401882891,2026_09_07,01:00 PM,Getafe,Celta Vigo,2.80,2.65,3.15,2.01,1.86,,,,
+soccer,laliga,401882893,2026_09_07,03:30 PM,Elche,Real Sociedad,3.15,3.40,1.09,1.77,2.05,1.97,1.86,1.74,2.05

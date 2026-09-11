@@ -1,0 +1,6 @@
+sport,league,game_id,match_date,match_time,home_team,away_team,home_prob,draw_prob,away_prob,home_xg,away_xg,expected_total_goals,identity_status,identity_reason,identity_detail
+soccer,epl,,2026_09_19,07:30 AM,Tottenham Hotspur,Aston Villa,0.456,0.253,0.291,1.53,1.18,2.71,unmatched,no_sportsbook_fixture,no exact games-master fixture found for league/date/teams
+soccer,epl,,2026_09_19,10:00 AM,Brighton,Arsenal,0.284,0.267,0.449,1.06,1.41,2.47,unmatched,no_sportsbook_fixture,no exact games-master fixture found for league/date/teams
+soccer,epl,,2026_09_19,10:00 AM,Newcastle,Hull,0.859,0.099,0.042,3.02,0.56,3.58,unmatched,no_sportsbook_fixture,no exact games-master fixture found for league/date/teams
+soccer,epl,,2026_09_19,10:00 AM,Everton,Ipswich,0.696,0.185,0.119,2.18,0.78,2.96,unmatched,no_sportsbook_fixture,no exact games-master fixture found for league/date/teams
+soccer,epl,,2026_09_19,12:30 PM,Nottingham Forest,Coventry,0.69,0.194,0.116,2.05,0.7,2.75,unmatched,no_sportsbook_fixture,no exact games-master fixture found for league/date/teams

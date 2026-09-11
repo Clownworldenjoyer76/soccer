@@ -1,0 +1,4 @@
+sport,league,game_id,match_date,match_time,home_team,away_team,home_prob,draw_prob,away_prob,home_xg,away_xg,expected_total_goals,identity_status,identity_reason,identity_detail
+soccer,ligue1,,2026_09_20,09:00 AM,Auxerre,Stade Brest,0.408,0.272,0.32,1.32,1.13,2.45,unmatched,no_sportsbook_fixture,no exact games-master fixture found for league/date/teams
+soccer,ligue1,,2026_09_20,11:15 AM,Nice,Lille,0.375,0.289,0.336,1.15,1.08,2.23,unmatched,no_sportsbook_fixture,no exact games-master fixture found for league/date/teams
+soccer,ligue1,,2026_09_20,02:45 PM,Marseille,Paris Saint Germain,0.171,0.214,0.616,0.92,1.96,2.88,unmatched,no_sportsbook_fixture,no exact games-master fixture found for league/date/teams

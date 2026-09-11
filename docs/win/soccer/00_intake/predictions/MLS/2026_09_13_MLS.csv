@@ -1,0 +1,4 @@
+sport,league,match_date,match_time,home_team,away_team,home_prob,draw_prob,away_prob,home_xg,away_xg,expected_total_goals
+soccer,mls,2026_09_13,05:30 PM,Chicago Fire,New England Revolution,51.8%,25.0%,23.2%,1.60,0.98,2.58
+soccer,mls,2026_09_13,06:30 PM,Vancouver Whitecaps,Austin FC,66.9%,19.7%,13.4%,2.07,0.80,2.87
+soccer,mls,2026_09_13,09:00 PM,San Diego FC,Philadelphia Union,45.6%,26.5%,27.9%,1.43,1.06,2.49

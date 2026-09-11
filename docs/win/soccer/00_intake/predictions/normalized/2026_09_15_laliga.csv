@@ -1,0 +1,4 @@
+sport,league,game_id,match_date,match_time,home_team,away_team,home_prob,draw_prob,away_prob,home_xg,away_xg,expected_total_goals,identity_status,identity_reason,identity_detail
+soccer,laliga,,2026_09_15,01:00 PM,Vallecano,Espanyol,0.637,0.211,0.152,1.95,0.83,2.78,unmatched,no_sportsbook_fixture,no exact games-master fixture found for league/date/teams
+soccer,laliga,,2026_09_15,02:00 PM,Alaves,Valencia,0.506,0.261,0.233,1.5,0.92,2.42,unmatched,no_sportsbook_fixture,no exact games-master fixture found for league/date/teams
+soccer,laliga,,2026_09_15,03:30 PM,Elche,Real Madrid,0.139,0.205,0.657,0.79,1.99,2.78,unmatched,no_sportsbook_fixture,no exact games-master fixture found for league/date/teams

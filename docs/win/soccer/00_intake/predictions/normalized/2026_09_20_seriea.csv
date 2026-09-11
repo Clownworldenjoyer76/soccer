@@ -1,0 +1,4 @@
+sport,league,game_id,match_date,match_time,home_team,away_team,home_prob,draw_prob,away_prob,home_xg,away_xg,expected_total_goals,identity_status,identity_reason,identity_detail
+soccer,seriea,,2026_09_20,06:30 AM,Fiorentina,Napoli,0.338,0.272,0.39,1.18,1.29,2.47,unmatched,no_sportsbook_fixture,no exact games-master fixture found for league/date/teams
+soccer,seriea,,2026_09_20,12:00 PM,Juventus,Atalanta,0.538,0.237,0.224,1.73,1.04,2.77,unmatched,no_sportsbook_fixture,no exact games-master fixture found for league/date/teams
+soccer,seriea,,2026_09_20,02:45 PM,Milan,Lecce,0.842,0.108,0.05,2.95,0.61,3.56,unmatched,no_sportsbook_fixture,no exact games-master fixture found for league/date/teams

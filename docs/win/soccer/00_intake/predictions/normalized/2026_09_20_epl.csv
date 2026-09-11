@@ -1,0 +1,5 @@
+sport,league,game_id,match_date,match_time,home_team,away_team,home_prob,draw_prob,away_prob,home_xg,away_xg,expected_total_goals,identity_status,identity_reason,identity_detail
+soccer,epl,,2026_09_20,09:00 AM,Bournemouth,Liverpool,0.197,0.231,0.571,0.95,1.79,2.74,unmatched,no_sportsbook_fixture,no exact games-master fixture found for league/date/teams
+soccer,epl,,2026_09_20,09:00 AM,Manchester City,Sunderland,0.788,0.138,0.073,2.61,0.68,3.29,unmatched,no_sportsbook_fixture,no exact games-master fixture found for league/date/teams
+soccer,epl,,2026_09_20,09:00 AM,Leeds,Crystal Palace,0.34,0.278,0.382,1.15,1.23,2.38,unmatched,no_sportsbook_fixture,no exact games-master fixture found for league/date/teams
+soccer,epl,,2026_09_20,11:30 AM,Fulham,Manchester United,0.333,0.276,0.391,1.14,1.25,2.39,unmatched,no_sportsbook_fixture,no exact games-master fixture found for league/date/teams

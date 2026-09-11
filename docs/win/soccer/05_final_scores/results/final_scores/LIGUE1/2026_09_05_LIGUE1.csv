@@ -1,0 +1,4 @@
+sport,league,game_id,game_date,match_time,home_team,away_team,home_score,away_score
+soccer,ligue1,401876474,2026_09_05,02:45 PM,Le Havre,Stade Brest,1,2
+soccer,ligue1,401876470,2026_09_05,02:45 PM,Nice,Le Mans,1,1
+soccer,ligue1,401876473,2026_09_05,11:15 AM,Lens,Lorient,0,1

@@ -1,0 +1,6 @@
+sport,league,match_date,match_time,home_team,away_team,home_prob,draw_prob,away_prob,home_xg,away_xg,expected_total_goals
+soccer,epl,2026_09_19,07:30 AM,Tottenham Hotspur,Aston Villa,45.6%,25.3%,29.1%,1.53,1.18,2.71
+soccer,epl,2026_09_19,10:00 AM,Brighton,Arsenal,28.4%,26.7%,44.9%,1.06,1.41,2.47
+soccer,epl,2026_09_19,10:00 AM,Newcastle,Hull,85.9%,9.9%,4.2%,3.02,0.56,3.58
+soccer,epl,2026_09_19,10:00 AM,Everton,Ipswich,69.6%,18.5%,11.9%,2.18,0.78,2.96
+soccer,epl,2026_09_19,12:30 PM,Nottingham Forest,Coventry,69.0%,19.4%,11.6%,2.05,0.70,2.75

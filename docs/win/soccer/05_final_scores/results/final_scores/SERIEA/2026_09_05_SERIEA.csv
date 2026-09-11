@@ -1,0 +1,4 @@
+sport,league,game_id,game_date,match_time,home_team,away_team,home_score,away_score
+soccer,seriea,401874781,2026_09_05,02:45 PM,Roma,Atalanta,2,1
+soccer,seriea,401874937,2026_09_05,12:00 PM,Inter Milan,Napoli,3,2
+soccer,seriea,401874939,2026_09_05,09:00 AM,Fiorentina,Torino,1,2

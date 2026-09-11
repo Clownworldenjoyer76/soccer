@@ -1,7 +1,32 @@
-=== name_normalization RUN 2026-09-07T12:08:53.977495+00:00 ===
-2026-09-07T12:08:53.978519+00:00 | Team map loaded: 323 entries
-2026-09-07T12:08:53.987268+00:00 | Files to process: 1126
-2026-09-07T12:08:54.004884+00:00 | UPDATED: docs/win/soccer/00_intake/sportsbook/la_liga/2026_09_07_la_liga_soccer.csv
-2026-09-07T12:08:54.023588+00:00 | UPDATED: docs/win/soccer/00_intake/sportsbook/serie_a/2026_09_07_serie_a_soccer.csv
-2026-09-07T12:08:54.043382+00:00 | SUMMARY | files_processed=1126 | rows_processed=4996 | names_normalized=0 | unmapped=0
-2026-09-07T12:08:54.043421+00:00 | STATUS: SUCCESS
+=== name_normalization RUN 2026-09-11T18:03:17.093676+00:00 ===
+2026-09-11T18:03:17.094485+00:00 | Team map loaded: 323 entries
+2026-09-11T18:03:17.101193+00:00 | Files to process: 1190
+2026-09-11T18:03:17.104866+00:00 | UPDATED: docs/win/soccer/00_intake/sportsbook/bundesliga/2026_09_11_bundesliga_soccer.csv
+2026-09-11T18:03:17.114112+00:00 | UPDATED: docs/win/soccer/00_intake/sportsbook/la_liga/2026_09_11_la_liga_soccer.csv
+2026-09-11T18:03:17.117709+00:00 | UPDATED: docs/win/soccer/00_intake/sportsbook/ligue_1/2026_09_11_ligue_1_soccer.csv
+2026-09-11T18:03:17.128111+00:00 | UPDATED: docs/win/soccer/00_intake/sportsbook/serie_a/2026_09_11_serie_a_soccer.csv
+2026-09-11T18:03:17.128842+00:00 | UPDATED: docs/win/soccer/00_intake/predictions/BUNDESLIGA/2026_09_11_BUNDESLIGA.csv
+2026-09-11T18:03:17.129019+00:00 | UPDATED: docs/win/soccer/00_intake/predictions/BUNDESLIGA/2026_09_12_BUNDESLIGA.csv
+2026-09-11T18:03:17.129192+00:00 | UPDATED: docs/win/soccer/00_intake/predictions/BUNDESLIGA/2026_09_13_BUNDESLIGA.csv
+2026-09-11T18:03:17.129384+00:00 | UPDATED: docs/win/soccer/00_intake/predictions/BUNDESLIGA/2026_09_19_BUNDESLIGA.csv
+2026-09-11T18:03:17.129526+00:00 | UPDATED: docs/win/soccer/00_intake/predictions/BUNDESLIGA/2026_09_20_BUNDESLIGA.csv
+2026-09-11T18:03:17.130657+00:00 | UPDATED: docs/win/soccer/00_intake/predictions/EPL/2026_09_12_EPL.csv
+2026-09-11T18:03:17.130793+00:00 | UPDATED: docs/win/soccer/00_intake/predictions/EPL/2026_09_13_EPL.csv
+2026-09-11T18:03:17.130935+00:00 | UPDATED: docs/win/soccer/00_intake/predictions/EPL/2026_09_14_EPL.csv
+2026-09-11T18:03:17.131140+00:00 | UPDATED: docs/win/soccer/00_intake/predictions/EPL/2026_09_19_EPL.csv
+2026-09-11T18:03:17.131294+00:00 | UPDATED: docs/win/soccer/00_intake/predictions/EPL/2026_09_20_EPL.csv
+2026-09-11T18:03:17.132611+00:00 | UPDATED: docs/win/soccer/00_intake/predictions/LALIGA/2026_09_12_LALIGA.csv
+2026-09-11T18:03:17.132765+00:00 | UPDATED: docs/win/soccer/00_intake/predictions/LALIGA/2026_09_13_LALIGA.csv
+2026-09-11T18:03:17.132903+00:00 | UPDATED: docs/win/soccer/00_intake/predictions/LALIGA/2026_09_14_LALIGA.csv
+2026-09-11T18:03:17.133053+00:00 | UPDATED: docs/win/soccer/00_intake/predictions/LALIGA/2026_09_15_LALIGA.csv
+2026-09-11T18:03:17.133224+00:00 | UPDATED: docs/win/soccer/00_intake/predictions/LALIGA/2026_09_16_LALIGA.csv
+2026-09-11T18:03:17.133367+00:00 | UPDATED: docs/win/soccer/00_intake/predictions/LALIGA/2026_09_17_LALIGA.csv
+2026-09-11T18:03:17.133548+00:00 | UPDATED: docs/win/soccer/00_intake/predictions/LALIGA/2026_09_19_LALIGA.csv
+2026-09-11T18:03:17.133714+00:00 | UPDATED: docs/win/soccer/00_intake/predictions/LALIGA/2026_09_20_LALIGA.csv
+2026-09-11T18:03:17.134690+00:00 | UPDATED: docs/win/soccer/00_intake/predictions/LIGUE1/2026_09_13_LIGUE1.csv
+2026-09-11T18:03:17.134902+00:00 | UPDATED: docs/win/soccer/00_intake/predictions/LIGUE1/2026_09_20_LIGUE1.csv
+2026-09-11T18:03:17.136672+00:00 | UPDATED: docs/win/soccer/00_intake/predictions/MLS/2026_09_12_MLS.csv
+2026-09-11T18:03:17.137743+00:00 | UPDATED: docs/win/soccer/00_intake/predictions/SERIEA/2026_09_14_SERIEA.csv
+2026-09-11T18:03:17.137916+00:00 | UPDATED: docs/win/soccer/00_intake/predictions/SERIEA/2026_09_19_SERIEA.csv
+2026-09-11T18:03:17.145938+00:00 | SUMMARY | files_processed=1190 | rows_processed=5150 | names_normalized=51 | unmapped=0
+2026-09-11T18:03:17.145958+00:00 | STATUS: SUCCESS

@@ -1,0 +1,3 @@
+sport,league,game_id,match_date,match_time,home_team,away_team,home_prob,draw_prob,away_prob,home_xg,away_xg,expected_total_goals,identity_status,identity_reason,identity_detail
+soccer,bundesliga,,2026_09_20,09:30 AM,Leverkusen,RB Leipzig,0.543,0.226,0.232,1.87,1.15,3.02,unmatched,no_sportsbook_fixture,no exact games-master fixture found for league/date/teams
+soccer,bundesliga,,2026_09_20,01:30 PM,Paderborn,Hoffenheim,0.228,0.219,0.553,1.19,1.96,3.15,unmatched,no_sportsbook_fixture,no exact games-master fixture found for league/date/teams

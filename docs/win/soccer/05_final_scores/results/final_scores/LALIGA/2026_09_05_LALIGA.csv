@@ -1,0 +1,4 @@
+sport,league,game_id,game_date,match_time,home_team,away_team,home_score,away_score
+soccer,laliga,401882887,2026_09_05,03:00 PM,Villarreal,Deportivo De La Coruna,2,3
+soccer,laliga,401882889,2026_09_05,12:30 PM,Vallecano,Santander,3,2
+soccer,laliga,401882895,2026_09_05,10:15 AM,Athletic Club,Atletico Madrid,3,0

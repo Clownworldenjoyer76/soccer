@@ -1,0 +1,5 @@
+sport,league,game_id,match_date,match_time,home_team,away_team,home_prob,draw_prob,away_prob,home_xg,away_xg,expected_total_goals,identity_status,identity_reason,identity_detail
+soccer,seriea,,2026_09_19,09:00 AM,Bologna,Torino,0.651,0.203,0.145,2.03,0.83,2.86,unmatched,no_sportsbook_fixture,no exact games-master fixture found for league/date/teams
+soccer,seriea,,2026_09_19,09:00 AM,Udinese,Cagliari,0.474,0.262,0.264,1.47,1.03,2.5,unmatched,no_sportsbook_fixture,no exact games-master fixture found for league/date/teams
+soccer,seriea,,2026_09_19,12:00 PM,Roma,Inter Milan,0.337,0.274,0.389,1.16,1.27,2.43,unmatched,no_sportsbook_fixture,no exact games-master fixture found for league/date/teams
+soccer,seriea,,2026_09_19,02:45 PM,Venezia,Lazio,0.175,0.217,0.608,0.92,1.92,2.84,unmatched,no_sportsbook_fixture,no exact games-master fixture found for league/date/teams

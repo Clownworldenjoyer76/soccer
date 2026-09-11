@@ -1,0 +1,5 @@
+sport,league,match_date,match_time,home_team,away_team,home_prob,draw_prob,away_prob,home_xg,away_xg,expected_total_goals
+soccer,laliga,2026_09_16,01:00 PM,Deportivo De La Coruna,Sevilla,24.6%,26.4%,49.0%,0.96,1.47,2.43
+soccer,laliga,2026_09_16,01:00 PM,Atletico Madrid,Osasuna,75.9%,15.9%,8.1%,2.34,0.62,2.96
+soccer,laliga,2026_09_16,03:30 PM,Levante,Athletic Club,20.1%,24.0%,55.9%,0.91,1.69,2.60
+soccer,laliga,2026_09_16,03:30 PM,Barcelona,Santander,88.7%,8.6%,2.7%,3.03,0.41,3.44
