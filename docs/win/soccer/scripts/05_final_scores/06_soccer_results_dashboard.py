@@ -108,9 +108,9 @@ OUTPUT_FILE_COUNT = 0
 OUTPUT_ROW_COUNT = 0
 INPUT_FILES_SEEN: set[str] = set()
 
-with open(LOG_FILE, "w", encoding="utf-8") as log_file:
-    log_file.write("=== 06_soccer_results_dashboard ===\n")
-    log_file.write(f"START_TIMESTAMP_UTC: {RUN_STARTED.isoformat()}\n")
+with open(LOG_FILE, "w", encoding="utf-8") as startup_log_file:
+    startup_log_file.write("=== 06_soccer_results_dashboard ===\n")
+    startup_log_file.write(f"START_TIMESTAMP_UTC: {RUN_STARTED.isoformat()}\n")
 
 
 def _now() -> str:

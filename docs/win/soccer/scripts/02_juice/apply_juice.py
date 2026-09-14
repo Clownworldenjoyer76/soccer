@@ -821,6 +821,6 @@ if __name__ == "__main__":
     try:
         main()
     except Exception as fatal_exc:
-        with open(LOG_FILE, "a", encoding="utf-8") as log_file:
-            log_file.write(f"FATAL:\n{fatal_exc}\n{traceback.format_exc()}")
+        with open(LOG_FILE, "a", encoding="utf-8") as fatal_log_file:
+            fatal_log_file.write(f"FATAL:\n{fatal_exc}\n{traceback.format_exc()}")
         raise
