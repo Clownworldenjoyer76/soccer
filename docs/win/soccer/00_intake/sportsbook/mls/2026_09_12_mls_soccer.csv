@@ -1,0 +1,13 @@
+sport,league,game_id,match_date,match_time,home_team,away_team,dk_home_decimal,dk_draw_decimal,dk_away_decimal,dk_over25_decimal,dk_under25_decimal,dk_over35_decimal,dk_under35_decimal,btts_yes,btts_no
+soccer,mls,761804,2026_09_12,07:30 PM,Columbus Crew,New York Red Bulls,1.74,4.20,3.70,,,1.83,1.95,,
+soccer,mls,761803,2026_09_12,07:30 PM,DC United,Atlanta United,2.15,3.65,2.95,1.61,2.30,,,,
+soccer,mls,761802,2026_09_12,07:30 PM,FC Cincinnati,Charlotte FC,2.10,4.00,2.85,,,1.91,1.87,,
+soccer,mls,761800,2026_09_12,07:30 PM,Inter Miami,Nashville SC,1.95,3.95,3.10,,,1.87,1.91,,
+soccer,mls,761801,2026_09_12,07:30 PM,Orlando City,Toronto FC,1.83,3.95,3.55,,,2.05,1.74,,
+soccer,mls,761805,2026_09_12,08:30 PM,FC Dallas,Portland Timbers,1.74,4.10,3.80,,,1.95,1.83,,
+soccer,mls,761806,2026_09_12,08:30 PM,Sporting Kansas City,Los Angeles FC,4.20,4.10,1.67,,,2.35,1.59,,
+soccer,mls,761807,2026_09_12,08:30 PM,St Louis City,Minnesota United,2.00,3.75,3.20,,,2.30,1.59,,
+soccer,mls,761808,2026_09_12,09:30 PM,Colorado Rapids,CF Montreal,1.61,4.10,4.70,1.59,2.35,,,1.64,2.25
+soccer,mls,761809,2026_09_12,09:30 PM,Real Salt Lake,New York City FC,2.00,3.45,3.35,1.67,2.20,,,,
+soccer,mls,761811,2026_09_12,10:30 PM,LA Galaxy,Seattle Sounders,2.15,3.70,2.90,,,2.25,1.65,,
+soccer,mls,761810,2026_09_12,10:30 PM,San Jose Earthquakes,Houston Dynamo,2.35,3.45,2.70,1.71,2.10,,,1.55,2.40

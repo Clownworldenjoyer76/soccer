@@ -1,0 +1,4 @@
+sport,league,game_id,match_date,match_time,home_team,away_team,dk_home_decimal,dk_draw_decimal,dk_away_decimal,dk_over25_decimal,dk_under25_decimal,dk_over35_decimal,dk_under35_decimal,btts_yes,btts_no
+soccer,seriea,401874979,2026_09_12,02:45 PM,Atalanta,Cagliari,111.00,23.00,5.00,1.83,1.95,15.80,1.01,,
+soccer,seriea,401874991,2026_09_12,09:00 AM,Genoa,Frosinone,2.25,3.15,3.10,1.74,2.05,,,1.42,2.85
+soccer,seriea,401874941,2026_09_12,12:00 PM,Lazio,Milan,3.70,3.10,2.05,2.15,1.67,,,,

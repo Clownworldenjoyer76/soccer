@@ -1,0 +1,5 @@
+sport,league,game_id,match_date,match_time,home_team,away_team,dk_home_decimal,dk_draw_decimal,dk_away_decimal,dk_over25_decimal,dk_under25_decimal,dk_over35_decimal,dk_under35_decimal,btts_yes,btts_no
+soccer,laliga,401882880,2026_09_12,03:00 PM,Real Madrid,Vallecano,1.14,9.00,18.00,,,1.69,2.15,,
+soccer,laliga,401882881,2026_09_12,08:00 AM,Santander,Alaves,2.65,3.45,2.65,1.69,2.20,,,,
+soccer,laliga,401882882,2026_09_12,10:15 AM,Osasuna,Espanyol,2.25,3.20,3.40,2.10,1.74,,,,
+soccer,laliga,401882886,2026_09_12,12:30 PM,Athletic Club,Elche,1.40,4.90,8.00,1.67,2.20,,,,

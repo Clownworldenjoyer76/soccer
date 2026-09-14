@@ -1,5 +1,5 @@
 sport,league,game_id,match_date,match_time,home_team,away_team,home_prob,draw_prob,away_prob,home_xg,away_xg,expected_total_goals,identity_status,identity_reason,identity_detail
-soccer,laliga,,2026_09_12,08:00 AM,Santander,Alaves,0.361,0.309,0.33,1.03,0.96,1.99,unmatched,no_sportsbook_fixture,no exact games-master fixture found for league/date/teams
-soccer,laliga,,2026_09_12,10:15 AM,Osasuna,Espanyol,0.463,0.268,0.269,1.42,1.01,2.43,unmatched,no_sportsbook_fixture,no exact games-master fixture found for league/date/teams
-soccer,laliga,,2026_09_12,12:30 PM,Athletic Club,Elche,0.673,0.199,0.128,2.03,0.75,2.78,unmatched,no_sportsbook_fixture,no exact games-master fixture found for league/date/teams
-soccer,laliga,,2026_09_12,03:00 PM,Real Madrid,Vallecano,0.805,0.137,0.058,2.48,0.52,3.0,unmatched,no_sportsbook_fixture,no exact games-master fixture found for league/date/teams
+soccer,laliga,401882881,2026_09_12,08:00 AM,Santander,Alaves,0.361,0.309,0.33,1.03,0.96,1.99,matched,matched_game_id,
+soccer,laliga,401882882,2026_09_12,10:15 AM,Osasuna,Espanyol,0.463,0.268,0.269,1.42,1.01,2.43,matched,matched_game_id,
+soccer,laliga,401882886,2026_09_12,12:30 PM,Athletic Club,Elche,0.673,0.199,0.128,2.03,0.75,2.78,matched,matched_game_id,
+soccer,laliga,401882880,2026_09_12,03:00 PM,Real Madrid,Vallecano,0.805,0.137,0.058,2.48,0.52,3.0,matched,matched_game_id,

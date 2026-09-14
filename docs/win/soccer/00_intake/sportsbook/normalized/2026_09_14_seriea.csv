@@ -1,0 +1,4 @@
+sport,league,game_id,match_date,match_time,home_team,away_team,dk_home_decimal,dk_draw_decimal,dk_away_decimal,dk_over25_decimal,dk_under25_decimal,dk_over35_decimal,dk_under35_decimal,btts_yes,btts_no
+soccer,seriea,401874966,2026_09_14,02:45 PM,Inter Milan,Udinese,1.21,6.00,11.00,,,2.10,1.71,,
+soccer,seriea,401874933,2026_09_14,12:30 PM,Como,Parma,1.21,5.75,12.00,1.65,2.20,,,,
+soccer,seriea,401874950,2026_09_14,12:30 PM,Torino,Roma,5.75,4.00,1.53,1.71,2.10,,,,

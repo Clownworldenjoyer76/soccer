@@ -1,0 +1,8 @@
+sport,league,game_id,match_date,match_time,home_team,away_team,dk_home_decimal,dk_draw_decimal,dk_away_decimal,dk_over25_decimal,dk_under25_decimal,dk_over35_decimal,dk_under35_decimal,btts_yes,btts_no
+soccer,epl,401878779,2026_09_12,03:00 PM,Sunderland,Arsenal,6.00,3.75,1.62,2.10,1.71,,,,
+soccer,epl,401879285,2026_09_12,10:00 AM,Bournemouth,Brentford,2.30,3.60,3.00,1.65,2.25,,,,
+soccer,epl,401879284,2026_09_12,10:00 AM,Aston Villa,Nottingham Forest,2.25,3.40,3.20,1.83,1.95,,,,
+soccer,epl,401879283,2026_09_12,10:00 AM,Chelsea,Hull,1.22,7.00,12.00,,,2.05,1.77,,
+soccer,epl,401879281,2026_09_12,10:00 AM,Crystal Palace,Ipswich,2.20,3.60,3.20,1.67,2.20,,,,
+soccer,epl,401879279,2026_09_12,10:00 AM,Liverpool,Fulham,1.50,4.60,6.00,1.64,2.32,2.25,1.65,,
+soccer,epl,401879277,2026_09_12,12:30 PM,Tottenham Hotspur,Everton,2.00,3.65,3.60,1.74,2.10,,,,

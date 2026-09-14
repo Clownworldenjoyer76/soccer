@@ -1,0 +1,3 @@
+sport,league,game_id,match_date,match_time,home_team,away_team,dk_home_decimal,dk_draw_decimal,dk_away_decimal,dk_over25_decimal,dk_under25_decimal,dk_over35_decimal,dk_under35_decimal,btts_yes,btts_no
+soccer,bundesliga,401884798,2026_09_13,09:30 AM,RB Leipzig,Hamburg,,,,,,,,,
+soccer,bundesliga,401884791,2026_09_13,11:30 AM,Elversberg,Bayern Munich,11.00,7.50,1.17,,,1.75,2.08,,

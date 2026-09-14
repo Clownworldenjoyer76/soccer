@@ -1,0 +1,38 @@
+game_id,sport,league,match_date,match_time,home_team,away_team
+401884795,soccer,bundesliga,2026_09_12,09:30 AM,Augsburg,Leverkusen
+401884799,soccer,bundesliga,2026_09_12,09:30 AM,Borussia Dortmund,Paderborn
+401884796,soccer,bundesliga,2026_09_12,09:30 AM,Freiburg,Borussia Monchengladbach
+401884797,soccer,bundesliga,2026_09_12,09:30 AM,Hoffenheim,VfB Stuttgart
+401884794,soccer,bundesliga,2026_09_12,09:30 AM,Mainz,Eintracht Frankfurt
+401884792,soccer,bundesliga,2026_09_12,12:30 PM,Koln,Werder Bremen
+401878779,soccer,epl,2026_09_12,03:00 PM,Sunderland,Arsenal
+401879284,soccer,epl,2026_09_12,10:00 AM,Aston Villa,Nottingham Forest
+401879285,soccer,epl,2026_09_12,10:00 AM,Bournemouth,Brentford
+401879283,soccer,epl,2026_09_12,10:00 AM,Chelsea,Hull
+401879281,soccer,epl,2026_09_12,10:00 AM,Crystal Palace,Ipswich
+401879279,soccer,epl,2026_09_12,10:00 AM,Liverpool,Fulham
+401879277,soccer,epl,2026_09_12,12:30 PM,Tottenham Hotspur,Everton
+401882880,soccer,laliga,2026_09_12,03:00 PM,Real Madrid,Vallecano
+401882881,soccer,laliga,2026_09_12,08:00 AM,Santander,Alaves
+401882882,soccer,laliga,2026_09_12,10:15 AM,Osasuna,Espanyol
+401882886,soccer,laliga,2026_09_12,12:30 PM,Athletic Club,Elche
+401876466,soccer,ligue1,2026_09_12,02:45 PM,Auxerre,Nice
+401876464,soccer,ligue1,2026_09_12,02:45 PM,Le Havre,Angers
+401876461,soccer,ligue1,2026_09_12,02:45 PM,Lorient,Toulouse
+401876460,soccer,ligue1,2026_09_12,02:45 PM,Paris FC,Lyon
+401876458,soccer,ligue1,2026_09_12,11:15 AM,Strasbourg,Monaco
+761804,soccer,mls,2026_09_12,07:30 PM,Columbus Crew,New York Red Bulls
+761803,soccer,mls,2026_09_12,07:30 PM,DC United,Atlanta United
+761802,soccer,mls,2026_09_12,07:30 PM,FC Cincinnati,Charlotte FC
+761800,soccer,mls,2026_09_12,07:30 PM,Inter Miami,Nashville SC
+761801,soccer,mls,2026_09_12,07:30 PM,Orlando City,Toronto FC
+761805,soccer,mls,2026_09_12,08:30 PM,FC Dallas,Portland Timbers
+761806,soccer,mls,2026_09_12,08:30 PM,Sporting Kansas City,Los Angeles FC
+761807,soccer,mls,2026_09_12,08:30 PM,St Louis City,Minnesota United
+761808,soccer,mls,2026_09_12,09:30 PM,Colorado Rapids,CF Montreal
+761809,soccer,mls,2026_09_12,09:30 PM,Real Salt Lake,New York City FC
+761811,soccer,mls,2026_09_12,10:30 PM,LA Galaxy,Seattle Sounders
+761810,soccer,mls,2026_09_12,10:30 PM,San Jose Earthquakes,Houston Dynamo
+401874979,soccer,seriea,2026_09_12,02:45 PM,Atalanta,Cagliari
+401874991,soccer,seriea,2026_09_12,09:00 AM,Genoa,Frosinone
+401874941,soccer,seriea,2026_09_12,12:00 PM,Lazio,Milan
