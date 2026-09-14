@@ -11,6 +11,8 @@ OUT_DIRS = [
     Path("docs/win/soccer/05_final_scores/results/final_scores_dirty"),
 ]
 
+ALLOWED_MARKETS = {"BUNDESLIGA", "EPL", "LALIGA", "LIGUE1", "MLS", "SERIEA"}
+
 CSV_HEADERS = [
     "sport",
     "league",
@@ -306,9 +308,13 @@ def merge_rows(existing_rows: list[dict], incoming_rows: list[dict]) -> list[dic
 
 
 def write_csv(path: Path, rows: list[dict]) -> None:
-    path.parent.mkdir(parents=True, exist_ok=True)
+    safe_path = path.resolve()
+    allowed_roots = [base_dir.resolve() for base_dir in OUT_DIRS]
+    if not any(root in safe_path.parents for root in allowed_roots):
+        raise ValueError(f"Refusing output path outside final-score directories: {path}")
+    safe_path.parent.mkdir(parents=True, exist_ok=True)
 
-    with open(path, "w", encoding="utf-8", newline="") as f:
+    with open(safe_path, "w", encoding="utf-8", newline="") as f:
         writer = csv.DictWriter(f, fieldnames=CSV_HEADERS, extrasaction="ignore")
         writer.writeheader()
         writer.writerows(rows)
@@ -350,6 +356,12 @@ def main() -> None:
 
     if not league_value:
         raise ValueError("League value is empty after cleanup")
+
+    if market_path_value not in ALLOWED_MARKETS:
+        raise ValueError(
+            f"Unsupported market: {args.market!r}. "
+            "Choose from: BUNDESLIGA, EPL, LALIGA, LIGUE1, MLS, SERIEA"
+        )
 
     raw_lines = read_raw_lines(raw_file)
     rows = parse_rows(raw_lines, league_value)

@@ -108,9 +108,9 @@ OUTPUT_FILE_COUNT = 0
 OUTPUT_ROW_COUNT = 0
 INPUT_FILES_SEEN: set[str] = set()
 
-with open(LOG_FILE, "w", encoding="utf-8") as f:
-    f.write("=== 06_soccer_results_dashboard ===\n")
-    f.write(f"START_TIMESTAMP_UTC: {RUN_STARTED.isoformat()}\n")
+with open(LOG_FILE, "w", encoding="utf-8") as log_file:
+    log_file.write("=== 06_soccer_results_dashboard ===\n")
+    log_file.write(f"START_TIMESTAMP_UTC: {RUN_STARTED.isoformat()}\n")
 
 
 def _now() -> str:
@@ -118,8 +118,8 @@ def _now() -> str:
 
 
 def log(level: str, message: str) -> None:
-    with open(LOG_FILE, "a", encoding="utf-8") as f:
-        f.write(f"{_now()} | {level} | {message}\n")
+    with open(LOG_FILE, "a", encoding="utf-8") as log_file:
+        log_file.write(f"{_now()} | {level} | {message}\n")
 
 
 def warn(message: str) -> None:
@@ -154,13 +154,13 @@ def log_output(path: Path, rows: int, bytes_written: int) -> None:
 
 def finish(status: str) -> None:
     ended = datetime.now(UTC)
-    with open(LOG_FILE, "a", encoding="utf-8") as f:
-        f.write(f"INPUT_SUMMARY | files={INPUT_FILE_COUNT} | rows={INPUT_ROW_COUNT}\n")
-        f.write(f"OUTPUT_SUMMARY | files={OUTPUT_FILE_COUNT} | rows={OUTPUT_ROW_COUNT}\n")
-        f.write(f"WARNING_COUNT: {WARNING_COUNT}\n")
-        f.write(f"ERROR_COUNT: {ERROR_COUNT}\n")
-        f.write(f"END_TIMESTAMP_UTC: {ended.isoformat()}\n")
-        f.write(f"STATUS: {status}\n")
+    with open(LOG_FILE, "a", encoding="utf-8") as log_file:
+        log_file.write(f"INPUT_SUMMARY | files={INPUT_FILE_COUNT} | rows={INPUT_ROW_COUNT}\n")
+        log_file.write(f"OUTPUT_SUMMARY | files={OUTPUT_FILE_COUNT} | rows={OUTPUT_ROW_COUNT}\n")
+        log_file.write(f"WARNING_COUNT: {WARNING_COUNT}\n")
+        log_file.write(f"ERROR_COUNT: {ERROR_COUNT}\n")
+        log_file.write(f"END_TIMESTAMP_UTC: {ended.isoformat()}\n")
+        log_file.write(f"STATUS: {status}\n")
 
 
 def safe_read(path: Path, *, required: bool = False) -> pd.DataFrame:
@@ -1192,10 +1192,10 @@ def main() -> None:
     except Exception as exc:
         error(f"Unhandled exception: {type(exc).__name__}: {exc}")
         trace = traceback.format_exc()
-        with open(LOG_FILE, "a", encoding="utf-8") as f:
-            f.write(trace)
+        with open(LOG_FILE, "a", encoding="utf-8") as log_file:
+            log_file.write(trace)
             if not trace.endswith("\n"):
-                f.write("\n")
+                log_file.write("\n")
         raise
     finally:
         finish(status)
