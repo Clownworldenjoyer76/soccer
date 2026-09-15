@@ -1,0 +1,226 @@
+## Soccer testing audit — current result
+
+Pinned to `main` commit **`15dfd0335be4877fb9d9e7aedaf1be386187d44d`**. No repository files were modified.
+
+### 1. Production path — VERIFIED
+
+For Bundesliga 1X2, the live decision chain is:
+
+```text
+normalized sportsbook odds
+→ docs/win/soccer/01_merge/*_bundesliga_match_odds.csv
+→ docs/win/soccer/scripts/01_merge/bundesliga_ml_infer.py
+→ ml_home_prob / ml_draw_prob / ml_away_prob
+→ docs/win/soccer/scripts/02_juice/apply_juice.py
+→ engine_home_prob / engine_draw_prob / engine_away_prob
+→ docs/win/soccer/scripts/03_edges/build_edges.py
+→ EV / Kelly / fair odds / edge
+→ docs/win/soccer/scripts/04_select/soccer_select_bets.py
+→ docs/win/soccer/04_select/*_soccer_bets.csv
+→ grading/results
+```
+
+All six leagues are currently in `ML_PRICING_LEAGUES`. The comments at the top of `apply_juice.py` claiming only EPL uses ML are stale; runtime code is authoritative.
+
+### 2. Formula verification — PASS
+
+Production formulas in `docs/win/soccer/scripts/03_edges/build_edges.py` are:
+
+```text
+fair_odds = 1 / p
+EV        = p × (odds - 1) - (1 - p)
+edge      = odds / fair_odds - 1
+Kelly     = ((p × odds) - 1) / (odds - 1)
+```
+
+Kelly is clipped at zero. Totals/BTTS intentionally make `edge = EV`; it is not an independent signal.
+
+I independently recalculated all **3 scored Bundesliga 1X2 selections** currently present historically.
+
+| Check     | Maximum absolute error |
+| --------- | ---------------------: |
+| Fair odds |                **0.0** |
+| EV        |           **8.33e-17** |
+| Edge      |           **8.33e-17** |
+| Kelly     |           **8.33e-17** |
+
+**Parity: PASS.**
+
+No EV/Kelly/fair-odds/edge math change is supported.
+
+I also independently recalculated Brier score, log loss and RPS for a stored Bundesliga model-evaluation row; all three reproduce the production values exactly.
+
+### 3. ML → pricing transformation — PRESERVES SIGNAL
+
+A direct Stage-1 versus Stage-2 comparison for the September 6 Bundesliga slate shows:
+
+```text
+ml_home_prob → engine_home_prob
+ml_draw_prob → engine_draw_prob
+ml_away_prob → engine_away_prob
+```
+
+with no meaningful transformation; differences are only normal CSV floating-point representation.
+
+Example Eintracht Frankfurt–Augsburg:
+
+| Signal |   Stage 1 ML | Stage 2 engine |
+| ------ | -----------: | -------------: |
+| Home   | 0.4565067543 |   0.4565067543 |
+| Draw   | 0.3109314891 |   0.3109314891 |
+| Away   | 0.2325617566 |   0.2325617566 |
+
+Stage 2 also calculates Dixon–Coles and legacy juiced probabilities, but they **do not drive production betting**. `pricing_source=bundesliga_ml`.
+
+**Classification: PRESERVES signal.**
+
+No Stage-2 correction is supported.
+
+### 4. Current raw production signal
+
+For Bundesliga 1X2, the earliest actual production prediction is the ML output, not the manually supplied `home_prob/draw_prob/away_prob`.
+
+Those manual probabilities are a **parallel external signal** and are not inputs to the production Bundesliga model. Therefore:
+
+```text
+manual probability → ML probability
+```
+
+is **not** a production transformation and must not be tested as though it were.
+
+Current all-match Bundesliga production ML evaluation:
+
+| Signal                |  N |      Brier |   Log loss |        RPS |
+| --------------------- | -: | ---------: | ---------: | ---------: |
+| Manual/raw comparator | 49 | **0.5534** | **0.9376** | **0.2008** |
+| Production ML         | 56 |     0.5757 |     0.9724 |     0.2070 |
+
+**Do not conclude that ML is worse from this table.** The populations differ, 49 versus 56 observations. That violates the identical-population requirement.
+
+This comparison remains **UNRESOLVED pending common-observation testing**.
+
+### 5. Calibration evidence
+
+Bundesliga ML calibration has several visible deviations, particularly draw probabilities around 0.30–0.40 and some away buckets. However, many buckets contain only a handful of observations.
+
+For example, the production draw signal:
+
+```text
+0.20–0.30: n=35, predicted 25.40%, actual 20.00%
+0.30–0.40: n=15, predicted 30.69%, actual 20.00%
+```
+
+This suggests possible **draw overestimation**, but it is not sufficient evidence for recalibration or a draw filter.
+
+**No production change supported yet.**
+
+### 6. Decision-logic example
+
+September 6, Eintracht Frankfurt–Augsburg:
+
+```text
+Home:
+p = 45.65%
+EV = -16.46%
+
+Draw:
+p = 31.09%
+EV = +22.82%
+Kelly = 7.73%
+predictability = 53.98%
+skip probability = 34.34%
+
+Away:
+p = 23.26%
+EV = -17.44%
+```
+
+Only Draw passed the economic qualification.
+
+The current Bundesliga requirements include:
+
+```text
+model probability >= 0.30
+EV >= 0
+edge >= 0
+Kelly >= 0.00001
+predictability >= 0.50
+skip probability < 0.50
+```
+
+and the selector chooses the highest model probability among qualifying sides.
+
+The selection subsequently lost, but **that does not make the selection calculation incorrect**.
+
+### 7. Bundesliga end-to-end selections
+
+Current graded Bundesliga history contains:
+
+| Market          |   Record |
+| --------------- | -------: |
+| BTTS Yes        | **14–3** |
+| BTTS No         |      1–2 |
+| 1X2 Away        |      1–0 |
+| 1X2 Draw        |  **0–2** |
+| Total 2.5 Under |      1–1 |
+| Total 3.5 Under |  **6–7** |
+
+I independently reconstructed flat-stake returns from the stored selected bets:
+
+```text
+38 scored bets
+Profit: +2.455 units
+ROI: +6.46%
+```
+
+But the chronological split is materially different:
+
+```text
+April–May:
+27 bets
++5.565 units
++20.61% ROI
+
+August–September:
+11 bets
+-3.110 units
+-28.27% ROI
+```
+
+This is evidence of **temporal deterioration in final decisions**. It does **not yet prove** whether the cause is the ML probabilities, predictability/skip layer, market prices, ranking, or selection settings.
+
+### Current diagnosis
+
+**What is not wrong**
+
+* EV formula: PASS.
+* Kelly formula: PASS.
+* Fair-odds conversion: PASS.
+* Edge formula: PASS.
+* Stored 1X2 calculation parity: PASS.
+* Stage-1 ML → Stage-2 engine handoff: signal preserved.
+* September 6 selector behavior: consistent with configuration.
+
+**What may be wrong**
+
+The Bundesliga production system has clear **late-period deterioration**, and the ML draw signal has preliminary evidence of overestimation.
+
+Neither has yet been localized sufficiently to justify changing production.
+
+### Do-not-redo record
+
+| Test                                   | Result                                         | Decision                                     |
+| -------------------------------------- | ---------------------------------------------- | -------------------------------------------- |
+| Production-path audit                  | VERIFIED                                       | Retain                                       |
+| Brier/log-loss/RPS formula check       | PASS                                           | No change                                    |
+| EV/fair/edge/Kelly parity              | PASS                                           | No change                                    |
+| ML → Stage-2 probability preservation  | PASS                                           | No change                                    |
+| Current Bundesliga selected-bet return | +6.46% overall, substantial late deterioration | Continue investigation                       |
+| Market-result breakdown                | BTTS Yes strong; Draw and O3.5 Under weak      | **Do not create filters from these samples** |
+| Aggregate manual-vs-ML comparison      | Different populations                          | Reject as causal evidence                    |
+
+## Production change
+
+**NONE SUPPORTED YET.**
+
+The next unresolved test is the required **same-observation, chronological Bundesliga 1X2 signal test**. That needs to determine whether the late deterioration already exists in the ML probabilities themselves or is introduced later by EV/ranking/predictability/selection. Until that is isolated, changing `docs/win/soccer/config/markets.yaml`, recalibrating the model, or disabling draws would violate the testing standard you specified.
