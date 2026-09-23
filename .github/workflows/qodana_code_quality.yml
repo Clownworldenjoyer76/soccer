@@ -1,28 +1,73 @@
 name: Qodana
+
 on:
   workflow_dispatch:
   pull_request:
   push:
-    branches: # Specify your branches here
-      - main # The 'main' branch
-      - 'releases/*' # The release branches
+    branches:
+      - main
+      - 'releases/*'
+
+permissions:
+  contents: write
+  pull-requests: write
+  checks: write
 
 jobs:
   qodana:
+    name: Qodana - Soccer
     runs-on: ubuntu-latest
-    permissions:
-      contents: write
-      pull-requests: write
-      checks: write
+
+    env:
+      PYTHONPATH: ${{ github.workspace }}/docs/win/soccer/scripts:${{ github.workspace }}/docs/win/soccer/scripts/00_intake:${{ github.workspace }}/docs/win/soccer/scripts/01_merge:${{ github.workspace }}/docs/win/soccer/scripts/02_juice:${{ github.workspace }}/docs/win/soccer/scripts/03_edges:${{ github.workspace }}/docs/win/soccer/scripts/04_select:${{ github.workspace }}/docs/win/soccer/scripts/05_final_scores:${{ github.workspace }}/docs/win/soccer/ml/epl
+
     steps:
-      - uses: actions/checkout@v3
+      - name: Checkout repository
+        uses: actions/checkout@v7
         with:
-          ref: ${{ github.event.pull_request.head.sha }}  # to check out the actual pull request commit, not the merge commit
-          fetch-depth: 0  # a full history is required for pull request analysis
-      - name: 'Qodana Scan'
-        uses: JetBrains/qodana-action@v2026.1
+          fetch-depth: 0
+
+      - name: Set up Python 3.14
+        id: python-qodana
+        uses: actions/setup-python@v7
         with:
+          python-version: '3.14'
+
+      - name: Install Soccer analysis dependencies
+        run: |
+          python -m pip install --upgrade pip
+          python -m pip install \
+            PyYAML==6.0.2 \
+            numpy==2.5.2 \
+            scipy==1.18.0 \
+            pandas==3.0.5 \
+            joblib==1.5.3 \
+            scikit-learn==1.9.0 \
+            lightgbm==4.6.0 \
+            xgboost==3.4.1 \
+            catboost==1.2.10
+
+      - name: Verify Soccer analysis environment
+        run: |
+          python --version
+          python -c "import sys; print(sys.executable)"
+          python -m pip check
+          python -c "import yaml, numpy, pandas, scipy, joblib, sklearn, lightgbm, xgboost, catboost; print('Dependency imports OK')"
+          python -c "import soccer_model_wrapper; print(soccer_model_wrapper.__file__)"
+
+      - name: Qodana Soccer Scan
+        uses: JetBrains/qodana-action@v2026.2
+        with:
+          args: |
+            --linter qodana-python
+            --within-docker false
+            --only-directory docs/win/soccer
+            --config qodana.yaml
           pr-mode: false
+          artifact-name: qodana-soccer
+          primary-cache-key: qodana-2026.2-soccer-${{ github.ref }}-${{ github.sha }}
+          additional-cache-key: qodana-2026.2-soccer-${{ github.ref }}
         env:
           QODANA_TOKEN: ${{ secrets.QODANA_TOKEN_1406751930 }}
           QODANA_ENDPOINT: 'https://qodana.cloud'
+          QODANA_PYTHON_PATH: ${{ steps.python-qodana.outputs.python-path }}
