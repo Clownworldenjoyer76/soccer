@@ -100,7 +100,7 @@ def safe_float(val):
             return None
         number = float(val)
         return number if math.isfinite(number) else None
-    except Exception:
+    except (TypeError, ValueError):
         return None
 
 

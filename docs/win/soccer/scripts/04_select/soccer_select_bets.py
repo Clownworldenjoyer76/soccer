@@ -142,7 +142,7 @@ def fv(x):
             return None
         v = float(x)
         return v if pd.notna(v) else None
-    except Exception:
+    except (TypeError, ValueError):
         return None
 
 
@@ -192,7 +192,7 @@ def in_any_band(value, bands):
 def parse_date(s):
     try:
         return datetime.strptime(str(s).strip().replace("-", "_"), "%Y_%m_%d")
-    except Exception:
+    except ValueError:
         return None
 
 

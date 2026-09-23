@@ -79,7 +79,7 @@ def read_rows(path: Path) -> list[dict]:
     try:
         with path.open(newline="", encoding="utf-8-sig") as handle:
             return list(csv.DictReader(handle))
-    except Exception:
+    except (OSError, UnicodeError, csv.Error):
         return []
 
 

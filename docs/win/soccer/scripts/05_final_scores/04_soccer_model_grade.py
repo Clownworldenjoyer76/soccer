@@ -123,7 +123,7 @@ def number(value):
     try:
         v = float(value)
         return v if math.isfinite(v) else None
-    except Exception:
+    except (TypeError, ValueError):
         return None
 
 

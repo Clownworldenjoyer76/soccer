@@ -126,7 +126,7 @@ def decimal_to_american(dec) -> float | None:
         return None
     try:
         d = float(dec)
-    except Exception:
+    except (TypeError, ValueError):
         return None
     if d <= 1.0:
         return None
