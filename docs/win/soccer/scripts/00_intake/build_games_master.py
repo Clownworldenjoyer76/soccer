@@ -193,12 +193,12 @@ def main() -> None:
         rows = list(fixture_rows.values())
 
         rows.sort(
-            key=lambda row: (
-                row["league"],
-                row["match_time"],
-                row["home_team"],
-                row["away_team"],
-                row["game_id"],
+            key=lambda sort_row: (
+                sort_row["league"],
+                sort_row["match_time"],
+                sort_row["home_team"],
+                sort_row["away_team"],
+                sort_row["game_id"],
             )
         )
 

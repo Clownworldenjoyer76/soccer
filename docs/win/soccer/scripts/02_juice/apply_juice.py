@@ -90,8 +90,8 @@ ML_MARKET_COLUMNS = {
 
 
 def log(msg: str) -> None:
-    with open(LOG_FILE, "a", encoding="utf-8") as f:
-        f.write(f"{datetime.now(timezone.utc).isoformat()} | {msg}\n")
+    with open(LOG_FILE, "a", encoding="utf-8") as log_handle:
+        log_handle.write(f"{datetime.now(timezone.utc).isoformat()} | {msg}\n")
 
 
 def safe_float(val):
@@ -754,16 +754,21 @@ def process_file(file_path: Path, configs: dict, summary: dict):
         log(f"WROTE {out_path} ({len(out_df)} rows)")
         summary["files_written"] += 1
         summary["rows_written"] += len(out_df)
-    except Exception as e:
+    except Exception as processing_exc:
         if out_path.exists():
             out_path.unlink()
-        log(f"ERROR processing {file_path}: {e}\n{traceback.format_exc()}")
+        log(
+            f"ERROR processing {file_path}: "
+            f"{processing_exc}\n{traceback.format_exc()}"
+        )
         summary["errors"] += 1
 
 
 def main():
-    with open(LOG_FILE, "w", encoding="utf-8") as f:
-        f.write(f"=== apply_juice RUN {datetime.now(timezone.utc).isoformat()} ===\n")
+    with open(LOG_FILE, "w", encoding="utf-8") as log_handle:
+        log_handle.write(
+            f"=== apply_juice RUN {datetime.now(timezone.utc).isoformat()} ===\n"
+        )
 
     summary = {
         "files_written": 0,

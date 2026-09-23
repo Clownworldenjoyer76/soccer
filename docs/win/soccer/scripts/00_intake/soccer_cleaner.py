@@ -1771,12 +1771,12 @@ def clean_predictions(
                     "enter sportsbook merge)"
                 )
 
-            except Exception as e:
+            except Exception as processing_exc:
                 log(
                     "ERROR processing "
                     "predictions "
                     f"{pred_file}: "
-                    f"{e}\n"
+                    f"{processing_exc}\n"
                     f"{traceback.format_exc()}"
                 )
 

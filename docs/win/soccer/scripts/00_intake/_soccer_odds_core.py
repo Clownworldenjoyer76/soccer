@@ -2048,10 +2048,10 @@ def main(
                     )
 
             rows.sort(
-                key=lambda row: (
-                    row["match_time"],
-                    row["home_team"],
-                    row["away_team"],
+                key=lambda sort_row: (
+                    sort_row["match_time"],
+                    sort_row["home_team"],
+                    sort_row["away_team"],
                 )
             )
 
