@@ -292,18 +292,18 @@ def make_feature_frame(seriea: pd.DataFrame) -> pd.DataFrame:
             + bad.to_string(index=False)
         )
 
-    X = pd.DataFrame(index=seriea.index)
-    X["_date_ordinal"] = dates.map(lambda d: int(d.toordinal()))
-    X["_home_team_clean"] = seriea["home_team"].map(clean_team)
-    X["_away_team_clean"] = seriea["away_team"].map(clean_team)
+    features = pd.DataFrame(index=seriea.index)
+    features["_date_ordinal"] = dates.map(lambda d: int(d.toordinal()))
+    features["_home_team_clean"] = seriea["home_team"].map(clean_team)
+    features["_away_team_clean"] = seriea["away_team"].map(clean_team)
 
     for role, source_col in ROLE_SOURCE_COLUMNS.items():
         if source_col not in seriea.columns:
-            X[role] = np.nan
+            features[role] = np.nan
             continue
         values = pd.to_numeric(seriea[source_col], errors="coerce")
-        X[role] = values.mask(values <= 1.0)
-    return X
+        features[role] = values.mask(values <= 1.0)
+    return features
 
 
 def validate_predictions(predicted: pd.DataFrame):
@@ -373,13 +373,13 @@ def predict_frame(bundles, current: pd.DataFrame) -> pd.DataFrame:
             "in a Serie A sportsbook file."
         )
 
-    X = make_feature_frame(current)
+    features = make_feature_frame(current)
     predicted = current[["game_id"]].copy()
 
     # Validation winner for 1X2 supplies Home/Away structure.
-    one_x_two = bundles["1x2"].predict(X)
+    one_x_two = bundles["1x2"].predict(features)
     # Standalone calibrated Draw won binary Draw validation.
-    draw = bundles["draw"].predict(X)
+    draw = bundles["draw"].predict(features)
 
     home_raw = pd.to_numeric(one_x_two["ml_home_prob"], errors="coerce").to_numpy(float)
     away_raw = pd.to_numeric(one_x_two["ml_away_prob"], errors="coerce").to_numpy(float)
@@ -405,7 +405,7 @@ def predict_frame(bundles, current: pd.DataFrame) -> pd.DataFrame:
     predicted["ml_away_prob"] = remaining * (away_raw / home_away_total)
 
     for key in ("over25", "over35", "btts"):
-        pred = bundles[key].predict(X)
+        pred = bundles[key].predict(features)
         if len(pred) != len(current):
             raise RuntimeError(
                 f"Serie A inference stopped: {key} returned wrong row count."
@@ -414,13 +414,13 @@ def predict_frame(bundles, current: pd.DataFrame) -> pd.DataFrame:
             predicted[column] = pred[column].to_numpy()
 
     # Mixed validation goal winners.
-    home_goals = bundles["goals_random_forest"].home.predict(X)
-    away_goals = bundles["goals_catboost"].away.predict(X)
+    home_goals = bundles["goals_random_forest"].home.predict(features)
+    away_goals = bundles["goals_catboost"].away.predict(features)
     predicted["ml_home_goals"] = home_goals["ml_home_goals"].to_numpy()
     predicted["ml_away_goals"] = away_goals["ml_away_goals"].to_numpy()
 
     for key in SECOND_STAGE_KEYS:
-        pred = bundles[key].predict(X)
+        pred = bundles[key].predict(features)
         if len(pred) != len(current):
             raise RuntimeError(
                 f"Serie A inference stopped: {key} returned wrong row count."

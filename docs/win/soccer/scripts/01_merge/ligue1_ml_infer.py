@@ -287,18 +287,18 @@ def make_feature_frame(ligue1: pd.DataFrame) -> pd.DataFrame:
             + bad.to_string(index=False)
         )
 
-    X = pd.DataFrame(index=ligue1.index)
-    X["_date_ordinal"] = dates.map(lambda d: int(d.toordinal()))
-    X["_home_team_clean"] = ligue1["home_team"].map(clean_team)
-    X["_away_team_clean"] = ligue1["away_team"].map(clean_team)
+    features = pd.DataFrame(index=ligue1.index)
+    features["_date_ordinal"] = dates.map(lambda d: int(d.toordinal()))
+    features["_home_team_clean"] = ligue1["home_team"].map(clean_team)
+    features["_away_team_clean"] = ligue1["away_team"].map(clean_team)
 
     for role, source_col in ROLE_SOURCE_COLUMNS.items():
         if source_col not in ligue1.columns:
-            X[role] = np.nan
+            features[role] = np.nan
             continue
         values = pd.to_numeric(ligue1[source_col], errors="coerce")
-        X[role] = values.mask(values <= 1.0)
-    return X
+        features[role] = values.mask(values <= 1.0)
+    return features
 
 
 def validate_predictions(predicted: pd.DataFrame):
@@ -368,13 +368,13 @@ def predict_frame(bundles, current: pd.DataFrame) -> pd.DataFrame:
             "in a Ligue 1 sportsbook file."
         )
 
-    X = make_feature_frame(current)
+    features = make_feature_frame(current)
     predicted = current[["game_id"]].copy()
 
     # Validation winner is the calibrated 1X2 Logistic model. Its Draw
     # component beat the standalone Draw model on binary validation log loss,
     # so Home/Draw/Away are taken directly from this single calibrated model.
-    one_x_two = bundles["1x2"].predict(X)
+    one_x_two = bundles["1x2"].predict(features)
     if len(one_x_two) != len(current):
         raise RuntimeError(
             "Ligue 1 inference stopped: 1x2 returned wrong row count."
@@ -387,7 +387,7 @@ def predict_frame(bundles, current: pd.DataFrame) -> pd.DataFrame:
         predicted[column] = one_x_two[column].to_numpy()
 
     for key in ("over25", "over35", "btts"):
-        pred = bundles[key].predict(X)
+        pred = bundles[key].predict(features)
         if len(pred) != len(current):
             raise RuntimeError(
                 f"Ligue 1 inference stopped: {key} returned wrong row count."
@@ -396,13 +396,13 @@ def predict_frame(bundles, current: pd.DataFrame) -> pd.DataFrame:
             predicted[column] = pred[column].to_numpy()
 
     # Mixed validation goal winners.
-    home_goals = bundles["goals_catboost"].home.predict(X)
-    away_goals = bundles["goals_extra_trees"].away.predict(X)
+    home_goals = bundles["goals_catboost"].home.predict(features)
+    away_goals = bundles["goals_extra_trees"].away.predict(features)
     predicted["ml_home_goals"] = home_goals["ml_home_goals"].to_numpy()
     predicted["ml_away_goals"] = away_goals["ml_away_goals"].to_numpy()
 
     for key in SECOND_STAGE_KEYS:
-        pred = bundles[key].predict(X)
+        pred = bundles[key].predict(features)
         if len(pred) != len(current):
             raise RuntimeError(
                 f"Ligue 1 inference stopped: {key} returned wrong row count."

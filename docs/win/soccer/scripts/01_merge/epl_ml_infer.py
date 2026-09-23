@@ -675,21 +675,21 @@ def make_feature_frame(
             + bad.to_string(index=False)
         )
 
-    X = pd.DataFrame(
+    features = pd.DataFrame(
         index=epl.index
     )
 
-    X["_date_ordinal"] = dates.map(
+    features["_date_ordinal"] = dates.map(
         lambda d: int(
             d.toordinal()
         )
     )
 
-    X["_home_team_clean"] = epl[
+    features["_home_team_clean"] = epl[
         "home_team"
     ].map(clean_team)
 
-    X["_away_team_clean"] = epl[
+    features["_away_team_clean"] = epl[
         "away_team"
     ].map(clean_team)
 
@@ -699,7 +699,7 @@ def make_feature_frame(
     ) in ROLE_SOURCE_COLUMNS.items():
 
         if source_col not in epl.columns:
-            X[role] = np.nan
+            features[role] = np.nan
             continue
 
         values = pd.to_numeric(
@@ -711,9 +711,9 @@ def make_feature_frame(
             values <= 1.0
         )
 
-        X[role] = values
+        features[role] = values
 
-    return X
+    return features
 
 
 def predict_frame(
@@ -759,7 +759,7 @@ def predict_frame(
             "sportsbook file."
         )
 
-    X = make_feature_frame(
+    features = make_feature_frame(
         current
     )
 
@@ -774,7 +774,7 @@ def predict_frame(
 
         pred = bundles[
             key
-        ].predict(X)
+        ].predict(features)
 
         if len(pred) != len(current):
             raise RuntimeError(

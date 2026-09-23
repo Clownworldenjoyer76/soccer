@@ -482,29 +482,29 @@ def make_feature_frame(
             + bad.to_string(index=False)
         )
 
-    X = pd.DataFrame(index=laliga.index)
-    X["_date_ordinal"] = dates.map(
+    features = pd.DataFrame(index=laliga.index)
+    features["_date_ordinal"] = dates.map(
         lambda d: int(d.toordinal())
     )
-    X["_home_team_clean"] = laliga[
+    features["_home_team_clean"] = laliga[
         "home_team"
     ].map(clean_team)
-    X["_away_team_clean"] = laliga[
+    features["_away_team_clean"] = laliga[
         "away_team"
     ].map(clean_team)
 
     for role, source_col in ROLE_SOURCE_COLUMNS.items():
         if source_col not in laliga.columns:
-            X[role] = np.nan
+            features[role] = np.nan
             continue
 
         values = pd.to_numeric(
             laliga[source_col],
             errors="coerce",
         )
-        X[role] = values.mask(values <= 1.0)
+        features[role] = values.mask(values <= 1.0)
 
-    return X
+    return features
 
 
 def validate_predictions(predicted: pd.DataFrame) -> None:
@@ -616,13 +616,13 @@ def predict_frame(
             "in a LaLiga sportsbook file."
         )
 
-    X = make_feature_frame(current)
+    features = make_feature_frame(current)
     predicted = current[["game_id"]].copy()
 
     # 1X2 winner: Extra Trees RAW for Home/Away structure.
-    one_x_two = bundles["1x2"].predict(X)
+    one_x_two = bundles["1x2"].predict(features)
     # Draw winner: standalone CatBoost CALIBRATED.
-    draw = bundles["draw"].predict(X)
+    draw = bundles["draw"].predict(features)
 
     home_raw = pd.to_numeric(one_x_two["ml_home_prob"], errors="coerce").to_numpy(float)
     away_raw = pd.to_numeric(one_x_two["ml_away_prob"], errors="coerce").to_numpy(float)
@@ -649,7 +649,7 @@ def predict_frame(
 
     # Other probability-market winners.
     for key in ("over25", "over35", "btts"):
-        pred = bundles[key].predict(X)
+        pred = bundles[key].predict(features)
         if len(pred) != len(current):
             raise RuntimeError(
                 f"LaLiga inference stopped: {key} returned wrong row count."
@@ -659,14 +659,14 @@ def predict_frame(
 
     # Goal winners are intentionally mixed by side:
     # Home = CatBoost; Away = Poisson.
-    home_goals = bundles["goals_catboost"].home.predict(X)
-    away_goals = bundles["goals_poisson"].away.predict(X)
+    home_goals = bundles["goals_catboost"].home.predict(features)
+    away_goals = bundles["goals_poisson"].away.predict(features)
     predicted["ml_home_goals"] = home_goals["ml_home_goals"].to_numpy()
     predicted["ml_away_goals"] = away_goals["ml_away_goals"].to_numpy()
 
     # Predictability/skip models follow their selected base-model family.
     for key in SECOND_STAGE_KEYS:
-        pred = bundles[key].predict(X)
+        pred = bundles[key].predict(features)
         if len(pred) != len(current):
             raise RuntimeError(
                 f"LaLiga inference stopped: {key} returned wrong row count."

@@ -461,29 +461,29 @@ def make_feature_frame(
             + bad.to_string(index=False)
         )
 
-    X = pd.DataFrame(index=bundesliga.index)
-    X["_date_ordinal"] = dates.map(
+    features = pd.DataFrame(index=bundesliga.index)
+    features["_date_ordinal"] = dates.map(
         lambda d: int(d.toordinal())
     )
-    X["_home_team_clean"] = bundesliga[
+    features["_home_team_clean"] = bundesliga[
         "home_team"
     ].map(clean_team)
-    X["_away_team_clean"] = bundesliga[
+    features["_away_team_clean"] = bundesliga[
         "away_team"
     ].map(clean_team)
 
     for role, source_col in ROLE_SOURCE_COLUMNS.items():
         if source_col not in bundesliga.columns:
-            X[role] = np.nan
+            features[role] = np.nan
             continue
 
         values = pd.to_numeric(
             bundesliga[source_col],
             errors="coerce",
         )
-        X[role] = values.mask(values <= 1.0)
+        features[role] = values.mask(values <= 1.0)
 
-    return X
+    return features
 
 
 def validate_predictions(predicted: pd.DataFrame) -> None:
@@ -598,11 +598,11 @@ def predict_frame(
             "sportsbook file."
         )
 
-    X = make_feature_frame(current)
+    features = make_feature_frame(current)
     predicted = current[["game_id"]].copy()
 
     for key in BASE_MODEL_KEYS + SECOND_STAGE_KEYS:
-        pred = bundles[key].predict(X)
+        pred = bundles[key].predict(features)
         if len(pred) != len(current):
             raise RuntimeError(
                 "Bundesliga inference stopped: "
