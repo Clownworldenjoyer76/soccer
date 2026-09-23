@@ -354,7 +354,6 @@ def main():
 
     for file in input_files:
         name = file.name
-        market = None
         pf = {"name": name, "market": "unknown", "rows": 0, "null_edges": 0, "status": "ok"}
         if "match_odds" in name:
             market = "match_odds"
