@@ -207,20 +207,65 @@ def df_to_records(df: pd.DataFrame) -> list[dict]:
     return records
 
 
-def aggregate_tally(tally: pd.DataFrame) -> tuple[dict, list[dict]]:
+def _tally_counts(
+    frame: pd.DataFrame,
+) -> tuple[int, int, int, int]:
+    wins = (
+        int(frame["Win"].sum())
+        if "Win" in frame.columns
+        else 0
+    )
+    losses = (
+        int(frame["Loss"].sum())
+        if "Loss" in frame.columns
+        else 0
+    )
+    pushes = (
+        int(frame["Push"].sum())
+        if "Push" in frame.columns
+        else 0
+    )
+    total = wins + losses + pushes
+
+    return wins, losses, pushes, total
+
+
+def aggregate_tally(
+    tally: pd.DataFrame,
+) -> tuple[dict, list[dict]]:
     if tally.empty:
         return {}, []
 
     work = tally.copy()
-    for col in ["Win", "Loss", "Push", "Total", "Sample_Count"]:
-        if col in work.columns:
-            work[col] = pd.to_numeric(work[col], errors="coerce").fillna(0)
 
-    wins = int(work["Win"].sum()) if "Win" in work.columns else 0
-    losses = int(work["Loss"].sum()) if "Loss" in work.columns else 0
-    pushes = int(work["Push"].sum()) if "Push" in work.columns else 0
-    total = wins + losses + pushes
-    win_pct = wins / (wins + losses) if (wins + losses) else None
+    for col in [
+        "Win",
+        "Loss",
+        "Push",
+        "Total",
+        "Sample_Count",
+    ]:
+        if col in work.columns:
+            work[col] = (
+                pd.to_numeric(
+                    work[col],
+                    errors="coerce",
+                )
+                .fillna(0)
+            )
+
+    (
+        wins,
+        losses,
+        pushes,
+        total,
+    ) = _tally_counts(work)
+
+    win_pct = (
+        wins / (wins + losses)
+        if (wins + losses)
+        else None
+    )
 
     headline = {
         "wins": wins,
@@ -231,22 +276,43 @@ def aggregate_tally(tally: pd.DataFrame) -> tuple[dict, list[dict]]:
     }
 
     by_market = []
+
     if "market" in work.columns:
-        for market, part in work.groupby("market", dropna=False):
-            w = int(part["Win"].sum()) if "Win" in part.columns else 0
-            l = int(part["Loss"].sum()) if "Loss" in part.columns else 0
-            p = int(part["Push"].sum()) if "Push" in part.columns else 0
-            t = w + l + p
+        for market, part in work.groupby(
+            "market",
+            dropna=False,
+        ):
+            (
+                market_wins,
+                market_losses,
+                market_pushes,
+                market_total,
+            ) = _tally_counts(part)
+
             by_market.append(
                 {
                     "market": str(market),
-                    "market_display": MARKET_LABELS.get(str(market), str(market)),
-                    "Win": w,
-                    "Loss": l,
-                    "Push": p,
-                    "Total": t,
-                    "Sample_Count": t,
-                    "Win_Pct": (w / (w + l)) if (w + l) else None,
+                    "market_display": MARKET_LABELS.get(
+                        str(market),
+                        str(market),
+                    ),
+                    "Win": market_wins,
+                    "Loss": market_losses,
+                    "Push": market_pushes,
+                    "Total": market_total,
+                    "Sample_Count": market_total,
+                    "Win_Pct": (
+                        market_wins
+                        / (
+                            market_wins
+                            + market_losses
+                        )
+                        if (
+                            market_wins
+                            + market_losses
+                        )
+                        else None
+                    ),
                 }
             )
 
@@ -260,16 +326,47 @@ def load_model_tables() -> tuple[pd.DataFrame, pd.DataFrame, pd.DataFrame]:
     return metrics, calibration, xg
 
 
-def filter_league_rows(df: pd.DataFrame, league: str) -> pd.DataFrame:
-    if df.empty or "league" not in df.columns:
-        return pd.DataFrame()
-    scope_mask = (
-        df["scope"].astype(str).str.strip().str.lower().eq("league")
-        if "scope" in df.columns
-        else pd.Series(True, index=df.index)
+def _league_scope_mask(
+    df: pd.DataFrame,
+) -> pd.Series:
+    if "scope" not in df.columns:
+        return pd.Series(
+            True,
+            index=df.index,
+        )
+
+    return (
+        df["scope"]
+        .astype(str)
+        .str.strip()
+        .str.lower()
+        .eq("league")
     )
-    league_mask = df["league"].astype(str).str.strip().str.lower().eq(league)
-    return df.loc[scope_mask & league_mask].copy()
+
+
+def filter_league_rows(
+    df: pd.DataFrame,
+    league: str,
+) -> pd.DataFrame:
+    if (
+        df.empty
+        or "league" not in df.columns
+    ):
+        return pd.DataFrame()
+
+    scope_mask = _league_scope_mask(df)
+
+    league_mask = (
+        df["league"]
+        .astype(str)
+        .str.strip()
+        .str.lower()
+        .eq(league)
+    )
+
+    return df.loc[
+        scope_mask & league_mask
+    ].copy()
 
 
 def collect_league_data(
@@ -321,15 +418,18 @@ def collect_league_data(
 
 
 
-def filter_all_league_rows(df: pd.DataFrame) -> pd.DataFrame:
-    if df.empty or "league" not in df.columns:
+def filter_all_league_rows(
+    df: pd.DataFrame,
+) -> pd.DataFrame:
+    if (
+        df.empty
+        or "league" not in df.columns
+    ):
         return pd.DataFrame()
-    scope_mask = (
-        df["scope"].astype(str).str.strip().str.lower().eq("league")
-        if "scope" in df.columns
-        else pd.Series(True, index=df.index)
-    )
-    return df.loc[scope_mask].copy()
+
+    return df.loc[
+        _league_scope_mask(df)
+    ].copy()
 
 
 def combine_result_rows(rows: list[dict], group_keys: list[str]) -> list[dict]:

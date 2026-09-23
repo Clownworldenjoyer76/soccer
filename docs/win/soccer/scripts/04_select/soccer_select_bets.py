@@ -453,72 +453,159 @@ def build_match_odds_sides(row, game_date, cfg, league):
     return sides
 
 
-def build_btts_sides(row, game_date, cfg):
+def _build_two_way_sides(
+    row,
+    game_date,
+    cfg,
+    side_names: tuple[str, str],
+    odds_columns: dict[str, str],
+    probability_columns: dict[str, str],
+    reject_key: str,
+):
     sides = []
-    for side in ("yes", "no"):
+
+    for side in side_names:
         scfg = cfg.get(side)
-        if not scfg or not scfg.get("enabled", True):
+
+        if (
+            not scfg
+            or not scfg.get(
+                "enabled",
+                True,
+            )
+        ):
             continue
-        odds = fv(row.get(f"btts_{side}"))
-        ev = fv(row.get(f"{side}_ev"))
-        kelly = fv(row.get(f"{side}_kelly"))
-        mp = fv(row.get(f"engine_btts_{side}_prob"))
-        edge = fv(row.get(f"{side}_edge"))
-        values = make_values(odds, ev, kelly, mp, edge)
-        if passes_filters(values, scfg, game_date):
+
+        odds = fv(
+            row.get(
+                odds_columns[side]
+            )
+        )
+
+        ev = fv(
+            row.get(
+                f"{side}_ev"
+            )
+        )
+
+        kelly = fv(
+            row.get(
+                f"{side}_kelly"
+            )
+        )
+
+        probability_column = (
+            probability_columns[side]
+        )
+
+        model_prob = fv(
+            row.get(
+                probability_column
+            )
+        )
+
+        edge = fv(
+            row.get(
+                f"{side}_edge"
+            )
+        )
+
+        values = make_values(
+            odds,
+            ev,
+            kelly,
+            model_prob,
+            edge,
+        )
+
+        if passes_filters(
+            values,
+            scfg,
+            game_date,
+        ):
             sides.append(
                 make_side(
                     side,
                     odds,
                     ev,
                     kelly,
-                    mp,
+                    model_prob,
                     edge,
                     model_prob_source=str(
-                        row.get(f"{side}_model_prob_source", f"engine_btts_{side}_prob")
+                        row.get(
+                            f"{side}_model_prob_source",
+                            probability_column,
+                        )
                     ).strip(),
                     model_prob_underlying_source=str(
-                        row.get(f"engine_btts_{side}_prob_source", f"engine_btts_{side}_prob")
+                        row.get(
+                            f"{probability_column}_source",
+                            probability_column,
+                        )
                     ).strip(),
                 )
             )
         else:
-            DEBUG_COUNTS["rejected_btts"] += 1
+            DEBUG_COUNTS[
+                reject_key
+            ] += 1
+
     return sides
 
 
-def build_totals_sides(row, game_date, cfg, line_tag):
-    sides = []
-    for side in ("over", "under"):
-        scfg = cfg.get(side)
-        if not scfg or not scfg.get("enabled", True):
-            continue
-        odds = fv(row.get(f"dk_{side}{line_tag}_decimal"))
-        ev = fv(row.get(f"{side}_ev"))
-        kelly = fv(row.get(f"{side}_kelly"))
-        mp = fv(row.get(f"engine_{side}_prob"))
-        edge = fv(row.get(f"{side}_edge"))
-        values = make_values(odds, ev, kelly, mp, edge)
-        if passes_filters(values, scfg, game_date):
-            sides.append(
-                make_side(
-                    side,
-                    odds,
-                    ev,
-                    kelly,
-                    mp,
-                    edge,
-                    model_prob_source=str(
-                        row.get(f"{side}_model_prob_source", f"engine_{side}_prob")
-                    ).strip(),
-                    model_prob_underlying_source=str(
-                        row.get(f"engine_{side}_prob_source", f"engine_{side}_prob")
-                    ).strip(),
-                )
-            )
-        else:
-            DEBUG_COUNTS[f"rejected_total{line_tag}"] += 1
-    return sides
+def build_btts_sides(
+    row,
+    game_date,
+    cfg,
+):
+    return _build_two_way_sides(
+        row,
+        game_date,
+        cfg,
+        (
+            "yes",
+            "no",
+        ),
+        {
+            "yes": "btts_yes",
+            "no": "btts_no",
+        },
+        {
+            "yes": "engine_btts_yes_prob",
+            "no": "engine_btts_no_prob",
+        },
+        "rejected_btts",
+    )
+
+
+def build_totals_sides(
+    row,
+    game_date,
+    cfg,
+    line_tag,
+):
+    return _build_two_way_sides(
+        row,
+        game_date,
+        cfg,
+        (
+            "over",
+            "under",
+        ),
+        {
+            "over": (
+                f"dk_over{line_tag}_decimal"
+            ),
+            "under": (
+                f"dk_under{line_tag}_decimal"
+            ),
+        },
+        {
+            "over": "engine_over_prob",
+            "under": "engine_under_prob",
+        },
+        f"rejected_total{line_tag}",
+    )
 
 
 def base_row(row):

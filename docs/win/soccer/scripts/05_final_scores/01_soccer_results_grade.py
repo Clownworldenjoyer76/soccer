@@ -268,6 +268,21 @@ def grade_row(row) -> str:
 # PROCESS
 # =========================
 
+def count_grade_results(
+    frame: pd.DataFrame,
+) -> tuple[int, int, int, int, int, int]:
+    results = frame["bet_result"]
+
+    return (
+        int((results == "Win").sum()),
+        int((results == "Loss").sum()),
+        int((results == "Push").sum()),
+        int((results == "Missing Score").sum()),
+        int((results == "Unknown Market").sum()),
+        int((results == "Grade Error").sum()),
+    )
+
+
 def process_source(
     select_dir: Path,
     output_dir: Path,
@@ -399,12 +414,16 @@ def process_source(
         day_df = pd.concat(merged_frames, ignore_index=True)
         day_df["bet_result"] = day_df.apply(grade_row, axis=1)
 
-        wins = int((day_df["bet_result"] == "Win").sum())
-        losses = int((day_df["bet_result"] == "Loss").sum())
-        pushes = int((day_df["bet_result"] == "Push").sum())
-        missing_scores = int((day_df["bet_result"] == "Missing Score").sum())
-        unknown_markets = int((day_df["bet_result"] == "Unknown Market").sum())
-        grade_errors = int((day_df["bet_result"] == "Grade Error").sum())
+        (
+            wins,
+            losses,
+            pushes,
+            missing_scores,
+            unknown_markets,
+            grade_errors,
+        ) = count_grade_results(
+            day_df
+        )
 
         log_summary(
             f"{label} DAY RESULT | {file.name} | rows={len(day_df)} "
@@ -421,12 +440,16 @@ def process_source(
         final = pd.concat(all_rows, ignore_index=True)
         final.to_csv(master_file, index=False)
 
-        wins = int((final["bet_result"] == "Win").sum())
-        losses = int((final["bet_result"] == "Loss").sum())
-        pushes = int((final["bet_result"] == "Push").sum())
-        missing_scores = int((final["bet_result"] == "Missing Score").sum())
-        unknown_markets = int((final["bet_result"] == "Unknown Market").sum())
-        grade_errors = int((final["bet_result"] == "Grade Error").sum())
+        (
+            wins,
+            losses,
+            pushes,
+            missing_scores,
+            unknown_markets,
+            grade_errors,
+        ) = count_grade_results(
+            final
+        )
 
         log_summary(
             f"{label} MASTER WRITTEN | rows={len(final)} W={wins} L={losses} "

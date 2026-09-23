@@ -226,48 +226,108 @@ def calc_kelly(p, odds):
     return max(0.0, kelly)
 
 
-def process_match(df: pd.DataFrame) -> pd.DataFrame:
+def _apply_match_pricing_provenance(
+    row: dict,
+    side: str,
+    engine_prob,
+    engine_fair_decimal,
+    probability_column: str,
+    underlying: str,
+) -> None:
+    row[f"{side}_ev_prob"] = engine_prob
+    row[f"{side}_ev_prob_source"] = probability_column
+    row[f"{side}_kelly_prob"] = engine_prob
+    row[f"{side}_kelly_prob_source"] = probability_column
+    row[f"{side}_fair_odds_prob"] = engine_prob
+    row[f"{side}_fair_odds_prob_source"] = probability_column
+    row[f"{side}_fair_decimal"] = engine_fair_decimal
+    row[f"{side}_edge_prob"] = engine_prob
+    row[f"{side}_edge_prob_source"] = probability_column
+    row[f"{side}_edge_fair_decimal"] = engine_fair_decimal
+    row[f"{side}_selection_prob"] = engine_prob
+    row[f"{side}_selection_prob_source"] = probability_column
+
+    row[
+        f"{side}_ev_prob_underlying_source"
+    ] = underlying
+    row[
+        f"{side}_kelly_prob_underlying_source"
+    ] = underlying
+    row[
+        f"{side}_fair_odds_prob_underlying_source"
+    ] = underlying
+    row[
+        f"{side}_edge_prob_underlying_source"
+    ] = underlying
+    row[
+        f"{side}_selection_prob_underlying_source"
+    ] = underlying
+
+
+def process_match(
+    df: pd.DataFrame,
+) -> pd.DataFrame:
     rows = []
-    for _, r in df.iterrows():
-        row = r.to_dict()
-        for side in ("home", "draw", "away"):
-            book = _valid_decimal_odds(row.get(f"dk_{side}_decimal"))
+
+    for _, current_row in df.iterrows():
+        row = current_row.to_dict()
+
+        for side in (
+            "home",
+            "draw",
+            "away",
+        ):
+            book = _valid_decimal_odds(
+                row.get(
+                    f"dk_{side}_decimal"
+                )
+            )
+
             (
                 engine_prob,
                 engine_fair_decimal,
                 probability_column,
-                fair_decimal_column,
-            ) = _validated_engine_price_pair(row, side)
-            underlying = _underlying_source(row, probability_column)
-            edge = calc_edge(book, engine_fair_decimal)
-            ev = calc_ev(engine_prob, book)
-            kelly = calc_kelly(engine_prob, book)
+                _fair_decimal_column,
+            ) = _validated_engine_price_pair(
+                row,
+                side,
+            )
 
-            # Existing Stage-2 authority provenance is retained for compatibility.
-            row[f"{side}_ev_prob"] = engine_prob
-            row[f"{side}_ev_prob_source"] = probability_column
-            row[f"{side}_kelly_prob"] = engine_prob
-            row[f"{side}_kelly_prob_source"] = probability_column
-            row[f"{side}_fair_odds_prob"] = engine_prob
-            row[f"{side}_fair_odds_prob_source"] = probability_column
-            row[f"{side}_fair_decimal"] = engine_fair_decimal
-            row[f"{side}_edge_prob"] = engine_prob
-            row[f"{side}_edge_prob_source"] = probability_column
-            row[f"{side}_edge_fair_decimal"] = engine_fair_decimal
-            row[f"{side}_selection_prob"] = engine_prob
-            row[f"{side}_selection_prob_source"] = probability_column
+            underlying = _underlying_source(
+                row,
+                probability_column,
+            )
 
-            # New underlying provenance identifies the actual production model.
-            row[f"{side}_ev_prob_underlying_source"] = underlying
-            row[f"{side}_kelly_prob_underlying_source"] = underlying
-            row[f"{side}_fair_odds_prob_underlying_source"] = underlying
-            row[f"{side}_edge_prob_underlying_source"] = underlying
-            row[f"{side}_selection_prob_underlying_source"] = underlying
+            edge = calc_edge(
+                book,
+                engine_fair_decimal,
+            )
+
+            ev = calc_ev(
+                engine_prob,
+                book,
+            )
+
+            kelly = calc_kelly(
+                engine_prob,
+                book,
+            )
+
+            _apply_match_pricing_provenance(
+                row,
+                side,
+                engine_prob,
+                engine_fair_decimal,
+                probability_column,
+                underlying,
+            )
 
             row[f"{side}_edge"] = edge
             row[f"{side}_ev"] = ev
             row[f"{side}_kelly"] = kelly
+
         rows.append(row)
+
     return pd.DataFrame(rows)
 
 

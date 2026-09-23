@@ -400,9 +400,9 @@ def filter_graded(
 # TALLY FILES
 # =========================
 
-def build_all_tally(
+def _build_market_tally(
     df: pd.DataFrame,
-) -> None:
+) -> pd.DataFrame:
     rows = []
 
     for (
@@ -415,13 +415,11 @@ def build_all_tally(
         ],
         dropna=False,
     ):
-        s = summarize(sub)
-
         rows.append(
             {
                 "market": market,
                 "market_type": side,
-                **s,
+                **summarize(sub),
             }
         )
 
@@ -452,8 +450,14 @@ def build_all_tally(
             )
         )
 
+    return out
+
+
+def build_all_tally(
+    df: pd.DataFrame,
+) -> None:
     write_csv(
-        out,
+        _build_market_tally(df),
         ALL_TALLY,
     )
 
@@ -462,57 +466,8 @@ def build_league_tally(
     df: pd.DataFrame,
     league: str,
 ) -> None:
-    rows = []
-
-    for (
-        market,
-        side,
-    ), sub in df.groupby(
-        [
-            "market_type",
-            "side",
-        ],
-        dropna=False,
-    ):
-        s = summarize(sub)
-
-        rows.append(
-            {
-                "market": market,
-                "market_type": side,
-                **s,
-            }
-        )
-
-    out = pd.DataFrame(
-        rows,
-        columns=[
-            "market",
-            "market_type",
-            "Win",
-            "Loss",
-            "Push",
-            "Total",
-            "Sample_Count",
-            "Win_Pct",
-        ],
-    )
-
-    if not out.empty:
-        out = (
-            out.sort_values(
-                [
-                    "market",
-                    "market_type",
-                ]
-            )
-            .reset_index(
-                drop=True
-            )
-        )
-
     write_csv(
-        out,
+        _build_market_tally(df),
         FINAL_DIR
         / f"{league}_market_tally.csv",
     )

@@ -92,36 +92,74 @@ else:
 
 DATE_PAT = re.compile(r"\d{4}_\d{2}_\d{2}")
 
+
+def discover_league_csv_files(
+    root: Path,
+) -> list[Path]:
+    files = []
+
+    if not root.exists():
+        return files
+
+    for league_dir in sorted(
+        root.iterdir()
+    ):
+        if not league_dir.is_dir():
+            continue
+
+        league = league_dir.name
+
+        for csv_file in sorted(
+            league_dir.glob("*.csv")
+        ):
+            if (
+                DATE_PAT.search(
+                    csv_file.stem
+                )
+                and csv_file.stem.endswith(
+                    f"_{league}"
+                )
+            ):
+                files.append(
+                    csv_file
+                )
+
+    return files
+
+
 files_to_process = []
 
 sb_dir = INTAKE_DIR / "sportsbook"
+
 if sb_dir.exists():
-    for f in sorted(sb_dir.glob("*/*.csv")):
-        if DATE_PAT.search(f.stem) and f.stem.endswith("_soccer"):
-            files_to_process.append(f)
+    for csv_file in sorted(
+        sb_dir.glob("*/*.csv")
+    ):
+        if (
+            DATE_PAT.search(
+                csv_file.stem
+            )
+            and csv_file.stem.endswith(
+                "_soccer"
+            )
+        ):
+            files_to_process.append(
+                csv_file
+            )
 
 pred_dir = INTAKE_DIR / "predictions"
-if pred_dir.exists():
-    for league_dir in sorted(pred_dir.iterdir()):
-        if not league_dir.is_dir():
-            continue
 
-        league = league_dir.name
+files_to_process.extend(
+    discover_league_csv_files(
+        pred_dir
+    )
+)
 
-        for f in sorted(league_dir.glob("*.csv")):
-            if DATE_PAT.search(f.stem) and f.stem.endswith(f"_{league}"):
-                files_to_process.append(f)
-
-if FINAL_SCORES_DIR.exists():
-    for league_dir in sorted(FINAL_SCORES_DIR.iterdir()):
-        if not league_dir.is_dir():
-            continue
-
-        league = league_dir.name
-
-        for f in sorted(league_dir.glob("*.csv")):
-            if DATE_PAT.search(f.stem) and f.stem.endswith(f"_{league}"):
-                files_to_process.append(f)
+files_to_process.extend(
+    discover_league_csv_files(
+        FINAL_SCORES_DIR
+    )
+)
 
 log(f"Files to process: {len(files_to_process)}")
 
