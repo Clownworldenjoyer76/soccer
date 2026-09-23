@@ -1,0 +1,2 @@
+sport,league,game_id,match_date,match_time,home_team,away_team,home_prob,draw_prob,away_prob,home_xg,away_xg,expected_total_goals,identity_status,identity_reason,identity_detail
+soccer,mls,761543,2026_09_23,09:30 PM,Seattle Sounders,Real Salt Lake,0.485,0.262,0.253,1.48,0.99,2.47,matched,matched_game_id,

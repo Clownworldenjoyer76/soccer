@@ -478,20 +478,20 @@ def _merge_rows(
 
     for fresh in rows:
         merged = {
-            csv_field: str(fresh.get(csv_field) or "")
-            for csv_field in core.CSV_FIELDS
+            field: str(fresh.get(field) or "")
+            for field in core.CSV_FIELDS
         }
 
         game_id = merged["game_id"].strip()
         prior = existing_by_id.get(game_id) if game_id else None
 
         if prior is not None:
-            for csv_field in core.CSV_FIELDS:
+            for field in core.CSV_FIELDS:
                 if (
-                    _is_blank(merged[csv_field])
-                    and not _is_blank(prior.get(csv_field))
+                    _is_blank(merged[field])
+                    and not _is_blank(prior.get(field))
                 ):
-                    merged[csv_field] = prior[csv_field]
+                    merged[field] = prior[field]
 
             seen_ids.add(game_id)
 

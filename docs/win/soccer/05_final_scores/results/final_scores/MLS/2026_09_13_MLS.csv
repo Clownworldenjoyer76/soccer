@@ -1,0 +1,4 @@
+sport,league,game_id,game_date,match_time,home_team,away_team,home_score,away_score
+soccer,mls,761814,2026_09_13,09:00 PM,San Diego FC,Philadelphia Union,0,5
+soccer,mls,761813,2026_09_13,06:30 PM,Vancouver Whitecaps,Austin FC,1,2
+soccer,mls,761812,2026_09_13,05:30 PM,Chicago Fire,New England Revolution,1,2

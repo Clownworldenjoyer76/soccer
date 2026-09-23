@@ -1,0 +1,4 @@
+sport,league,match_date,match_time,home_team,away_team,home_prob,draw_prob,away_prob,home_xg,away_xg,expected_total_goals
+soccer,seriea,2026_10_10,09:00 AM,Genoa,Fiorentina,36.3%,28.4%,35.3%,1.16,1.14,2.30
+soccer,seriea,2026_10_10,12:00 PM,Inter Milan,Parma,83.1%,11.5%,5.4%,2.87,0.62,3.49
+soccer,seriea,2026_10_10,02:45 PM,Napoli,Frosinone,86.6%,9.4%,3.9%,3.10,0.56,3.66

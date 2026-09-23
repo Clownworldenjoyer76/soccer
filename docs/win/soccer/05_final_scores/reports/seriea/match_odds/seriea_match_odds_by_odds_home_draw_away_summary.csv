@@ -5,3 +5,4 @@ bucket,side,Win,Loss,Push,Total,Sample_Count,Win_Pct
 -199_to_-150,away,1,1,0,2,2,0.5
 +200_to_+249,away,1,0,0,1,1,1.0
 +250_to_+299,draw,1,0,0,1,1,1.0
++300_or_higher,away,1,0,0,1,1,1.0

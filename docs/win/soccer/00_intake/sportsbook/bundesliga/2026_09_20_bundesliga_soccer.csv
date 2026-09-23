@@ -1,0 +1,4 @@
+sport,league,game_id,match_date,match_time,home_team,away_team,dk_home_decimal,dk_draw_decimal,dk_away_decimal,dk_over25_decimal,dk_under25_decimal,dk_over35_decimal,dk_under35_decimal,btts_yes,btts_no
+soccer,bundesliga,401884782,2026_09_20,01:30 PM,Paderborn,Hoffenheim,3.85,4.10,1.74,,,1.91,1.87,,
+soccer,bundesliga,401884788,2026_09_20,09:30 AM,Leverkusen,RB Leipzig,1.80,4.10,3.50,2.14,1.70,1.67,2.15,,
+soccer,bundesliga,401884783,2026_09_20,11:30 AM,Schalke,Elversberg,1.83,3.80,3.65,,,2.15,1.69,2.15,1.66

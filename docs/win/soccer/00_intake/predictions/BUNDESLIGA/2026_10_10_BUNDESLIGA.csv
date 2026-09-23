@@ -1,0 +1,7 @@
+sport,league,match_date,match_time,home_team,away_team,home_prob,draw_prob,away_prob,home_xg,away_xg,expected_total_goals
+soccer,bundesliga,2026_10_10,09:30 AM,Augsburg,Bayern Munich,9.0%,13.9%,77.2%,0.86,2.78,3.64
+soccer,bundesliga,2026_10_10,09:30 AM,Hoffenheim,Hamburg,58.6%,20.7%,20.7%,2.11,1.17,3.28
+soccer,bundesliga,2026_10_10,09:30 AM,Union Berlin,Elversberg,49.0%,26.0%,25.0%,1.50,1.00,2.50
+soccer,bundesliga,2026_10_10,09:30 AM,Paderborn,VfB Stuttgart,18.4%,20.3%,61.3%,1.07,2.13,3.20
+soccer,bundesliga,2026_10_10,09:30 AM,Mainz,Leverkusen,25.3%,23.4%,51.3%,1.18,1.77,2.95
+soccer,bundesliga,2026_10_10,12:30 PM,RB Leipzig,Eintracht Frankfurt,49.6%,23.4%,27.0%,1.76,1.24,3.00

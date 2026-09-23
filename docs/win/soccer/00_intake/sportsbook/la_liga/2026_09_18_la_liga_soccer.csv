@@ -1,0 +1,2 @@
+sport,league,game_id,match_date,match_time,home_team,away_team,dk_home_decimal,dk_draw_decimal,dk_away_decimal,dk_over25_decimal,dk_under25_decimal,dk_over35_decimal,dk_under35_decimal,btts_yes,btts_no
+soccer,laliga,401882862,2026_09_18,03:00 PM,Espanyol,Elche,1.80,3.70,4.60,1.71,2.15,,,,

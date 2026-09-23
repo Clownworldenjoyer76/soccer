@@ -1,3 +1,5 @@
 bucket,side,Win,Loss,Push,Total,Sample_Count,Win_Pct
 -249_to_-200,under,1,0,0,1,1,1.0
+-199_to_-150,under,1,0,0,1,1,1.0
+-149_to_-100,under,0,1,0,1,1,0.0
 +300_or_higher,under,1,0,0,1,1,1.0

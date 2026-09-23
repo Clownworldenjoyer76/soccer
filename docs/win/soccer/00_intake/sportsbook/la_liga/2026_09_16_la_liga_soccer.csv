@@ -1,0 +1,5 @@
+sport,league,game_id,match_date,match_time,home_team,away_team,dk_home_decimal,dk_draw_decimal,dk_away_decimal,dk_over25_decimal,dk_under25_decimal,dk_over35_decimal,dk_under35_decimal,btts_yes,btts_no
+soccer,laliga,401882875,2026_09_16,01:00 PM,Atletico Madrid,Osasuna,1.31,5.25,10.00,1.57,2.40,,,3.20,1.34
+soccer,laliga,401882873,2026_09_16,01:00 PM,Deportivo De La Coruna,Sevilla,2.75,3.10,2.75,2.15,1.69,,,4.50,1.20
+soccer,laliga,401882871,2026_09_16,03:30 PM,Barcelona,Santander,1.06,15.00,26.00,,,,,,
+soccer,laliga,401882870,2026_09_16,03:30 PM,Levante,Athletic Club,3.35,3.55,2.15,1.74,2.10,,,,

@@ -1,0 +1,6 @@
+sport,league,game_id,match_date,match_time,home_team,away_team,home_prob,draw_prob,away_prob,home_xg,away_xg,expected_total_goals,identity_status,identity_reason,identity_detail
+soccer,seriea,,2026_10_11,06:30 AM,Como,Roma,0.327,0.269,0.404,1.17,1.33,2.5,unmatched,no_sportsbook_fixture,no exact games-master fixture found for league/date/teams
+soccer,seriea,,2026_10_11,09:00 AM,Lecce,Bologna,0.19,0.225,0.585,0.95,1.85,2.8,unmatched,no_sportsbook_fixture,no exact games-master fixture found for league/date/teams
+soccer,seriea,,2026_10_11,09:00 AM,Lazio,Monza,0.826,0.117,0.056,2.83,0.63,3.46,unmatched,no_sportsbook_fixture,no exact games-master fixture found for league/date/teams
+soccer,seriea,,2026_10_11,12:00 PM,Sassuolo,Milan,0.205,0.217,0.577,1.08,1.96,3.04,unmatched,no_sportsbook_fixture,no exact games-master fixture found for league/date/teams
+soccer,seriea,,2026_10_11,02:45 PM,Cagliari,Juventus,0.186,0.233,0.581,0.88,1.76,2.64,unmatched,no_sportsbook_fixture,no exact games-master fixture found for league/date/teams

@@ -1,0 +1,4 @@
+sport,league,game_id,match_date,match_time,home_team,away_team,home_prob,draw_prob,away_prob,home_xg,away_xg,expected_total_goals,identity_status,identity_reason,identity_detail
+soccer,epl,,2026_10_11,09:00 AM,Crystal Palace,Nottingham Forest,0.547,0.251,0.202,1.59,0.86,2.45,unmatched,no_sportsbook_fixture,no exact games-master fixture found for league/date/teams
+soccer,epl,,2026_10_11,09:00 AM,Hull,Everton,0.124,0.186,0.69,0.81,2.19,3.0,unmatched,no_sportsbook_fixture,no exact games-master fixture found for league/date/teams
+soccer,epl,,2026_10_11,11:30 AM,Liverpool,Manchester City,0.539,0.236,0.225,1.74,1.04,2.78,unmatched,no_sportsbook_fixture,no exact games-master fixture found for league/date/teams

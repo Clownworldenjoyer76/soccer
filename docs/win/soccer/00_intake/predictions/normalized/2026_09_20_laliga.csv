@@ -1,6 +1,6 @@
 sport,league,game_id,match_date,match_time,home_team,away_team,home_prob,draw_prob,away_prob,home_xg,away_xg,expected_total_goals,identity_status,identity_reason,identity_detail
-soccer,laliga,,2026_09_20,08:00 AM,Getafe,Malaga,0.608,0.245,0.146,1.61,0.64,2.25,unmatched,no_sportsbook_fixture,no exact games-master fixture found for league/date/teams
-soccer,laliga,,2026_09_20,10:15 AM,Atletico Madrid,Real Madrid,0.408,0.281,0.311,1.26,1.05,2.31,unmatched,no_sportsbook_fixture,no exact games-master fixture found for league/date/teams
-soccer,laliga,,2026_09_20,12:30 PM,Villarreal,Levante,0.694,0.18,0.126,2.29,0.86,3.15,unmatched,no_sportsbook_fixture,no exact games-master fixture found for league/date/teams
-soccer,laliga,,2026_09_20,12:30 PM,Deportivo De La Coruna,Real Betis,0.135,0.192,0.673,0.84,2.15,2.99,unmatched,no_sportsbook_fixture,no exact games-master fixture found for league/date/teams
-soccer,laliga,,2026_09_20,03:00 PM,Valencia,Real Sociedad,0.373,0.288,0.339,1.15,1.08,2.23,unmatched,no_sportsbook_fixture,no exact games-master fixture found for league/date/teams
+soccer,laliga,401882861,2026_09_20,08:00 AM,Getafe,Malaga,0.482,0.276,0.242,1.37,0.88,2.25,matched,matched_game_id,
+soccer,laliga,401882865,2026_09_20,10:15 AM,Atletico Madrid,Real Madrid,0.233,0.269,0.498,0.88,1.43,2.31,matched,matched_game_id,
+soccer,laliga,401882857,2026_09_20,12:30 PM,Villarreal,Levante,0.62,0.203,0.177,2.11,1.04,3.15,matched,matched_game_id,
+soccer,laliga,401882863,2026_09_20,12:30 PM,Deportivo De La Coruna,Real Betis,0.348,0.243,0.409,1.42,1.57,2.99,matched,matched_game_id,
+soccer,laliga,401882858,2026_09_20,03:00 PM,Valencia,Real Sociedad,0.345,0.289,0.367,1.1,1.13,2.23,matched,matched_game_id,

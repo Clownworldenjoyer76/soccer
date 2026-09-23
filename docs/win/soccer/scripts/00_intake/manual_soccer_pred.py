@@ -9,8 +9,6 @@ from pathlib import Path
 
 BASE_OUT_DIR = Path("docs/win/soccer/00_intake/predictions")
 
-ALLOWED_MARKETS = {"BUNDESLIGA", "EPL", "LALIGA", "LIGUE1", "MLS", "SERIEA"}
-
 CSV_HEADERS = [
     "sport",
     "league",
@@ -138,7 +136,7 @@ def find_xg_values(block: list[str]) -> tuple[str, str, str]:
     home_xg = ""
     expected_total_goals = ""
 
-    for line in block[5:]:
+    for i, line in enumerate(block[5:], start=5):
         if not away_xg and DECIMAL_RE.match(line):
             away_xg = line
             continue
@@ -224,13 +222,9 @@ def group_rows_by_match_date(rows: list[dict]) -> dict[str, list[dict]]:
 
 
 def write_csv(path: Path, rows: list[dict]) -> None:
-    safe_root = BASE_OUT_DIR.resolve()
-    safe_path = path.resolve()
-    if safe_root not in safe_path.parents:
-        raise ValueError(f"Refusing output path outside predictions directory: {path}")
-    safe_path.parent.mkdir(parents=True, exist_ok=True)
+    path.parent.mkdir(parents=True, exist_ok=True)
 
-    with open(safe_path, "w", encoding="utf-8", newline="") as f:
+    with open(path, "w", encoding="utf-8", newline="") as f:
         writer = csv.DictWriter(f, fieldnames=CSV_HEADERS)
         writer.writeheader()
         writer.writerows(rows)
@@ -258,12 +252,6 @@ def main() -> None:
 
     if not league_value:
         raise ValueError("League value is empty after cleanup")
-
-    if market_path_value not in ALLOWED_MARKETS:
-        raise ValueError(
-            f"Unsupported market: {args.market!r}. "
-            "Choose from: BUNDESLIGA, EPL, LALIGA, LIGUE1, MLS, SERIEA"
-        )
 
     raw_lines = read_raw_lines(raw_file)
     rows = parse_rows(raw_lines, league_value)

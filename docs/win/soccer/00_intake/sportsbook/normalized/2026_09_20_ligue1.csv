@@ -1,0 +1,4 @@
+sport,league,game_id,match_date,match_time,home_team,away_team,dk_home_decimal,dk_draw_decimal,dk_away_decimal,dk_over25_decimal,dk_under25_decimal,dk_over35_decimal,dk_under35_decimal,btts_yes,btts_no
+soccer,ligue1,401876449,2026_09_20,02:45 PM,Marseille,Paris Saint Germain,7.00,5.25,1.41,,,1.95,1.80,,
+soccer,ligue1,401876456,2026_09_20,09:00 AM,Auxerre,Stade Brest,3.00,3.45,2.35,1.65,2.20,2.20,1.64,,
+soccer,ligue1,401876452,2026_09_20,11:15 AM,Nice,Lille,3.20,3.45,2.25,1.71,2.10,,,1.40,2.95

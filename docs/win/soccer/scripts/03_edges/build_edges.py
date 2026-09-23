@@ -236,7 +236,7 @@ def process_match(df: pd.DataFrame) -> pd.DataFrame:
                 engine_prob,
                 engine_fair_decimal,
                 probability_column,
-                _,
+                fair_decimal_column,
             ) = _validated_engine_price_pair(row, side)
             underlying = _underlying_source(row, probability_column)
             edge = calc_edge(book, engine_fair_decimal)

@@ -1,0 +1,11 @@
+sport,league,game_id,match_date,match_time,home_team,away_team,home_prob,draw_prob,away_prob,home_xg,away_xg,expected_total_goals,identity_status,identity_reason,identity_detail
+soccer,laliga,,2026_10_11,11:00 AM,Levante,Sevilla,0.428,0.275,0.297,1.32,1.06,2.38,unmatched,no_sportsbook_fixture,no exact games-master fixture found for league/date/teams
+soccer,laliga,,2026_10_11,11:00 AM,Real Sociedad,Deportivo De La Coruna,0.785,0.143,0.072,2.52,0.63,3.15,unmatched,no_sportsbook_fixture,no exact games-master fixture found for league/date/teams
+soccer,laliga,,2026_10_11,11:00 AM,Real Betis,Osasuna,0.643,0.207,0.15,1.99,0.84,2.83,unmatched,no_sportsbook_fixture,no exact games-master fixture found for league/date/teams
+soccer,laliga,,2026_10_11,11:00 AM,Santander,Valencia,0.28,0.294,0.426,0.92,1.2,2.12,unmatched,no_sportsbook_fixture,no exact games-master fixture found for league/date/teams
+soccer,laliga,,2026_10_11,11:00 AM,Vallecano,Athletic Club,0.348,0.298,0.353,1.05,1.07,2.12,unmatched,no_sportsbook_fixture,no exact games-master fixture found for league/date/teams
+soccer,laliga,,2026_10_11,11:00 AM,Elche,Celta Vigo,0.363,0.29,0.347,1.12,1.1,2.22,unmatched,no_sportsbook_fixture,no exact games-master fixture found for league/date/teams
+soccer,laliga,,2026_10_11,11:00 AM,Malaga,Espanyol,0.272,0.289,0.439,0.92,1.24,2.16,unmatched,no_sportsbook_fixture,no exact games-master fixture found for league/date/teams
+soccer,laliga,,2026_10_11,11:00 AM,Real Madrid,Villarreal,0.717,0.17,0.112,2.36,0.82,3.18,unmatched,no_sportsbook_fixture,no exact games-master fixture found for league/date/teams
+soccer,laliga,,2026_10_11,11:00 AM,Alaves,Atletico Madrid,0.217,0.264,0.519,0.85,1.48,2.33,unmatched,no_sportsbook_fixture,no exact games-master fixture found for league/date/teams
+soccer,laliga,,2026_10_11,11:00 AM,Barcelona,Getafe,0.855,0.105,0.04,2.84,0.49,3.33,unmatched,no_sportsbook_fixture,no exact games-master fixture found for league/date/teams

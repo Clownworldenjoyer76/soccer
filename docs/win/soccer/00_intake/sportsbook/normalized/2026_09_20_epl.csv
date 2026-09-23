@@ -1,0 +1,5 @@
+sport,league,game_id,match_date,match_time,home_team,away_team,dk_home_decimal,dk_draw_decimal,dk_away_decimal,dk_over25_decimal,dk_under25_decimal,dk_over35_decimal,dk_under35_decimal,btts_yes,btts_no
+soccer,epl,401879276,2026_09_20,09:00 AM,Bournemouth,Liverpool,3.15,3.70,2.15,1.59,2.35,2.25,1.65,,
+soccer,epl,401879273,2026_09_20,09:00 AM,Leeds,Crystal Palace,1.65,4.00,5.25,1.71,2.10,,,,
+soccer,epl,401879272,2026_09_20,09:00 AM,Manchester City,Sunderland,1.36,5.25,8.50,1.62,2.30,2.40,1.57,,
+soccer,epl,401878777,2026_09_20,11:30 AM,Fulham,Manchester United,3.50,3.75,2.00,1.61,2.30,2.35,1.59,,

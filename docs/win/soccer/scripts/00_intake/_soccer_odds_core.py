@@ -229,9 +229,7 @@ class ESPNClient:
         else:
             full_url = url
 
-        full_url = validate_espn_url(
-            normalize_espn_ref(full_url)
-        )
+        full_url = normalize_espn_ref(full_url)
 
         if use_cache and full_url in self._cache:
             return self._cache[full_url]
@@ -257,7 +255,7 @@ class ESPNClient:
                 self.log(f"GET {full_url}")
                 self._last_request = time.monotonic()
 
-                with urlopen(  # skipcq: BAN-B310
+                with urlopen(
                     request,
                     timeout=self.timeout,
                 ) as response:
@@ -417,19 +415,6 @@ def normalize_espn_ref(url: str) -> str:
 
     return url
 
-
-def validate_espn_url(url: str) -> str:
-    """Allow network requests only to HTTPS ESPN hosts."""
-    parsed = urlparse(url)
-    hostname = (parsed.hostname or "").lower()
-
-    if parsed.scheme.lower() != "https":
-        raise ValueError(f"refusing non-HTTPS ESPN URL: {url!r}")
-
-    if not (hostname == "espn.com" or hostname.endswith(".espn.com")):
-        raise ValueError(f"refusing non-ESPN URL: {url!r}")
-
-    return url
 
 def walk_dicts(value: Any) -> Iterator[dict[str, Any]]:
     """Yield every dictionary in an arbitrary JSON tree."""

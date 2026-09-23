@@ -1,0 +1,7 @@
+sport,league,match_date,match_time,home_team,away_team,home_prob,draw_prob,away_prob,home_xg,away_xg,expected_total_goals
+soccer,epl,2026_10_10,07:30 AM,Arsenal,Leeds,79.8%,13.0%,7.2%,2.76,0.72,3.48
+soccer,epl,2026_10_10,10:00 AM,Aston Villa,Brentford,56.1%,23.4%,20.6%,1.76,0.97,2.73
+soccer,epl,2026_10_10,10:00 AM,Sunderland,Brighton,32.6%,28.2%,39.1%,1.09,1.22,2.31
+soccer,epl,2026_10_10,10:00 AM,Chelsea,Bournemouth,65.1%,20.5%,14.3%,2.00,0.81,2.81
+soccer,epl,2026_10_10,10:00 AM,Ipswich,Fulham,31.0%,27.8%,41.2%,1.07,1.28,2.35
+soccer,epl,2026_10_10,12:30 PM,Manchester United,Tottenham Hotspur,56.5%,22.4%,21.1%,1.87,1.06,2.93

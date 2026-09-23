@@ -25,8 +25,8 @@ with open(LOG_FILE, "w", encoding="utf-8") as f:
 
 
 def log(msg: str) -> None:
-    with open(LOG_FILE, "a", encoding="utf-8") as log_file:
-        log_file.write(f"{datetime.now(timezone.utc).isoformat()} | {msg}\n")
+    with open(LOG_FILE, "a", encoding="utf-8") as f:
+        f.write(f"{datetime.now(timezone.utc).isoformat()} | {msg}\n")
 
 
 # =========================

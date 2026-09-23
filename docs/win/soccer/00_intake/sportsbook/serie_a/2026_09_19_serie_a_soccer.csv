@@ -1,0 +1,5 @@
+sport,league,game_id,match_date,match_time,home_team,away_team,dk_home_decimal,dk_draw_decimal,dk_away_decimal,dk_over25_decimal,dk_under25_decimal,dk_over35_decimal,dk_under35_decimal,btts_yes,btts_no
+soccer,seriea,401874956,2026_09_19,02:45 PM,Venezia,Lazio,3.70,3.40,1.95,1.77,2.05,,,,
+soccer,seriea,401874767,2026_09_19,09:00 AM,Bologna,Torino,1.95,3.10,4.10,2.20,1.65,,,,
+soccer,seriea,401874964,2026_09_19,09:00 AM,Udinese,Cagliari,2.20,3.00,3.40,2.20,1.67,,,,
+soccer,seriea,401874753,2026_09_19,12:00 PM,Roma,Inter Milan,2.60,3.30,2.50,1.59,2.35,1.69,2.16,,

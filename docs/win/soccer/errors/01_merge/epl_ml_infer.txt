@@ -1,4 +1,4 @@
-EPL ML inference: processing 35 EPL merge date(s) through 2026_09_14.
+EPL ML inference: processing 38 EPL merge date(s) through 2026_09_23.
 EPL ML inference complete for 2026_04_10: 1 match prediction(s), 4 merge file(s) enriched.
   enriched 2026_04_10_epl_match_odds.csv: 1 row(s)
   enriched 2026_04_10_epl_total_25.csv: 1 row(s)
@@ -174,4 +174,19 @@ EPL ML inference complete for 2026_09_14: 1 match prediction(s), 4 merge file(s)
   enriched 2026_09_14_epl_total_25.csv: 1 row(s)
   enriched 2026_09_14_epl_total_35.csv: 1 row(s)
   enriched 2026_09_14_epl_btts.csv: 1 row(s)
-EPL ML historical inference complete: 35 date(s), 140 merge file(s), 392 total merged row(s) enriched.
+EPL ML inference complete for 2026_09_18: 1 match prediction(s), 4 merge file(s) enriched.
+  enriched 2026_09_18_epl_match_odds.csv: 1 row(s)
+  enriched 2026_09_18_epl_total_25.csv: 1 row(s)
+  enriched 2026_09_18_epl_total_35.csv: 1 row(s)
+  enriched 2026_09_18_epl_btts.csv: 1 row(s)
+EPL ML inference complete for 2026_09_19: 5 match prediction(s), 4 merge file(s) enriched.
+  enriched 2026_09_19_epl_match_odds.csv: 5 row(s)
+  enriched 2026_09_19_epl_total_25.csv: 5 row(s)
+  enriched 2026_09_19_epl_total_35.csv: 5 row(s)
+  enriched 2026_09_19_epl_btts.csv: 5 row(s)
+EPL ML inference complete for 2026_09_20: 4 match prediction(s), 4 merge file(s) enriched.
+  enriched 2026_09_20_epl_match_odds.csv: 4 row(s)
+  enriched 2026_09_20_epl_total_25.csv: 4 row(s)
+  enriched 2026_09_20_epl_total_35.csv: 4 row(s)
+  enriched 2026_09_20_epl_btts.csv: 4 row(s)
+EPL ML historical inference complete: 38 date(s), 152 merge file(s), 432 total merged row(s) enriched.

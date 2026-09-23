@@ -1,4 +1,5 @@
 bucket,side,Win,Loss,Push,Total,Sample_Count,Win_Pct
--249_to_-200,home,1,0,0,1,1,1.0
+-249_to_-200,home,1,1,0,2,2,0.5
+-199_to_-150,home,1,0,0,1,1,1.0
 -149_to_-100,away,1,0,0,1,1,1.0
--149_to_-100,home,3,2,0,5,5,0.6
+-149_to_-100,home,4,2,0,6,6,0.6667

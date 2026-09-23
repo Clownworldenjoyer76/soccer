@@ -1,0 +1,2 @@
+sport,league,match_date,match_time,home_team,away_team,home_prob,draw_prob,away_prob,home_xg,away_xg,expected_total_goals
+soccer,epl,2026_10_12,03:00 PM,Coventry,Newcastle,19.6%,23.9%,56.5%,0.90,1.71,2.61

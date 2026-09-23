@@ -1,0 +1,4 @@
+sport,league,game_id,game_date,match_time,home_team,away_team,home_score,away_score
+soccer,ligue1,401876449,2026_09_20,02:45 PM,Marseille,Paris Saint Germain,1,2
+soccer,ligue1,401876452,2026_09_20,11:15 AM,Nice,Lille,2,1
+soccer,ligue1,401876456,2026_09_20,09:00 AM,Auxerre,Stade Brest,2,1

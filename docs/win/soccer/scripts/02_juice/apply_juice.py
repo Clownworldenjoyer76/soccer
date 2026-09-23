@@ -90,8 +90,8 @@ ML_MARKET_COLUMNS = {
 
 
 def log(msg: str) -> None:
-    with open(LOG_FILE, "a", encoding="utf-8") as log_file:
-        log_file.write(f"{datetime.now(timezone.utc).isoformat()} | {msg}\n")
+    with open(LOG_FILE, "a", encoding="utf-8") as f:
+        f.write(f"{datetime.now(timezone.utc).isoformat()} | {msg}\n")
 
 
 def safe_float(val):
@@ -511,7 +511,7 @@ def authoritative_market_probs(dc_pricing, row, market, file_path, source_index,
         ):
             return None, None, None
         probs = {key: value for (key, _), value in zip(mapping, values)}
-        sources = dict(mapping)
+        sources = {key: column for key, column in mapping}
         return probs, sources, f"{league}_ml"
 
     mapping = {
@@ -762,8 +762,8 @@ def process_file(file_path: Path, configs: dict, summary: dict):
 
 
 def main():
-    with open(LOG_FILE, "w", encoding="utf-8") as log_file:
-        log_file.write(f"=== apply_juice RUN {datetime.now(timezone.utc).isoformat()} ===\n")
+    with open(LOG_FILE, "w", encoding="utf-8") as f:
+        f.write(f"=== apply_juice RUN {datetime.now(timezone.utc).isoformat()} ===\n")
 
     summary = {
         "files_written": 0,
@@ -820,7 +820,7 @@ def main():
 if __name__ == "__main__":
     try:
         main()
-    except Exception as fatal_exc:
-        with open(LOG_FILE, "a", encoding="utf-8") as fatal_log_file:
-            fatal_log_file.write(f"FATAL:\n{fatal_exc}\n{traceback.format_exc()}")
+    except Exception as e:
+        with open(LOG_FILE, "a", encoding="utf-8") as f:
+            f.write(f"FATAL:\n{e}\n{traceback.format_exc()}")
         raise
