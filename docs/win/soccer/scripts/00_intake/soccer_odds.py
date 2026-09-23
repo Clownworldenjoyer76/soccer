@@ -30,6 +30,8 @@ configured soccer leagues.
 
 from __future__ import annotations
 
+from _soccer_odds_core import *  # noqa: F401,F403 - preserve existing imports/API
+
 import csv
 import sys
 from datetime import date, timedelta
@@ -37,7 +39,6 @@ from pathlib import Path
 from typing import Any, Iterator, Mapping, Sequence
 
 import _soccer_odds_core as core
-from _soccer_odds_core import *  # noqa: F401,F403 - preserve existing imports/API
 
 
 CDN_SCOREBOARD = "https://cdn.espn.com/core/soccer/scoreboard"
