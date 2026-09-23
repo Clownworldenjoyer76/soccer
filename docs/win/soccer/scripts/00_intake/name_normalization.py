@@ -94,37 +94,37 @@ DATE_PAT = re.compile(r"\d{4}_\d{2}_\d{2}")
 
 
 def discover_league_csv_files(
-    root: Path,
+    search_root: Path,
 ) -> list[Path]:
-    files = []
+    discovered_files = []
 
-    if not root.exists():
-        return files
+    if not search_root.exists():
+        return discovered_files
 
-    for league_dir in sorted(
-        root.iterdir()
+    for candidate_league_dir in sorted(
+        search_root.iterdir()
     ):
-        if not league_dir.is_dir():
+        if not candidate_league_dir.is_dir():
             continue
 
-        league = league_dir.name
+        league_name = candidate_league_dir.name
 
-        for csv_file in sorted(
-            league_dir.glob("*.csv")
+        for candidate_csv in sorted(
+            candidate_league_dir.glob("*.csv")
         ):
             if (
                 DATE_PAT.search(
-                    csv_file.stem
+                    candidate_csv.stem
                 )
-                and csv_file.stem.endswith(
-                    f"_{league}"
+                and candidate_csv.stem.endswith(
+                    f"_{league_name}"
                 )
             ):
-                files.append(
-                    csv_file
+                discovered_files.append(
+                    candidate_csv
                 )
 
-    return files
+    return discovered_files
 
 
 files_to_process = []

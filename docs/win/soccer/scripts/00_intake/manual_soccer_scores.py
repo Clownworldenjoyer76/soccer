@@ -7,8 +7,6 @@ import re
 from pathlib import Path
 
 from _manual_soccer_common import (
-    clean_market_for_league_value,
-    clean_market_for_path,
     clean_raw_lines,
     clean_team,
     group_rows_by_match_date,
