@@ -9,8 +9,52 @@ linter: qodana-python
 profile:
   name: qodana.recommended
 
+bootstrap: python -m pip install -r docs/win/soccer/qodana-requirements.txt
+
 include:
   - name: CheckDependencyLicenses
+
+dependencyOverrides:
+  - name: "numpy"
+    version: "2.5.2"
+    licenses:
+      - key: "BSD-3-Clause"
+      - key: "0BSD"
+      - key: "MIT"
+      - key: "Zlib"
+      - key: "CC0-1.0"
+  - name: "pip"
+    version: "26.2.1"
+    licenses:
+      - key: "MIT"
+  - name: "scipy"
+    version: "1.18.0"
+    licenses:
+      - key: "BSD-3-Clause"
+  - name: "pandas"
+    version: "3.0.5"
+    licenses:
+      - key: "BSD-3-Clause"
+  - name: "joblib"
+    version: "1.5.3"
+    licenses:
+      - key: "BSD-3-Clause"
+  - name: "scikit-learn"
+    version: "1.9.0"
+    licenses:
+      - key: "BSD-3-Clause"
+  - name: "xgboost"
+    version: "3.4.1"
+    licenses:
+      - key: "Apache-2.0"
+  - name: "python-dateutil"
+    version: "2.9.0.post0"
+    licenses:
+      - key: "BSD-3-Clause"
+  - name: "narwhals"
+    version: "2.26.0"
+    licenses:
+      - key: "MIT"
 
 exclude:
   - name: DuplicatedCode
