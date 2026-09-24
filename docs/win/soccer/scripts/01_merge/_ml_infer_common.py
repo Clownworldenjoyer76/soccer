@@ -201,8 +201,8 @@ def validate_duplicate_identity(
 
     if conflicts:
         detail = "; ".join(
-            f"{column}={values}"
-            for column, values in conflicts
+            f"{conflict_column}={conflict_values}"
+            for conflict_column, conflict_values in conflicts
         )
         raise RuntimeError(
             f"{league_label} inference stopped: "
@@ -246,14 +246,14 @@ def consolidate_duplicate_games(
             bad = current.loc[
                 bad_game_ids,
                 [
-                    column
-                    for column in (
+                    identity_column
+                    for identity_column in (
                         "game_id",
                         "match_date",
                         "home_team",
                         "away_team",
                     )
-                    if column in current.columns
+                    if identity_column in current.columns
                 ],
             ]
             raise RuntimeError(
@@ -450,9 +450,9 @@ def validate_predictions(
     )
 
     missing = [
-        column
-        for column in required
-        if column not in predicted.columns
+        required_column
+        for required_column in required
+        if required_column not in predicted.columns
     ]
 
     if missing:
@@ -661,9 +661,9 @@ def process_date(
     ]
 
     existing_merge_paths = [
-        path
-        for path in merge_paths
-        if path.exists()
+        candidate_path
+        for candidate_path in merge_paths
+        if candidate_path.exists()
     ]
 
     if not existing_merge_paths:
@@ -797,8 +797,8 @@ class InferenceSupport:
             detailed_bad_ids=detailed_bad_ids,
         )
 
+    @staticmethod
     def resolve_date(
-        self,
         raw: str | None,
     ) -> str:
         return resolve_date(raw)
