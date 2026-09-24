@@ -31,18 +31,22 @@ OUTPUT_COLUMNS = [
     "home_team","away_team","home_score","away_score",
 ]
 
+# noinspection DuplicatedCode
 def reset_logs():
     ERROR_LOG.write_text("", encoding="utf-8")
     SUMMARY_LOG.write_text("", encoding="utf-8")
 
+# noinspection DuplicatedCode
 def log_error(msg):
     with open(ERROR_LOG, "a", encoding="utf-8") as f:
         f.write(f"[{datetime.now().isoformat()}] {msg}\n")
 
+# noinspection DuplicatedCode
 def log_summary(msg):
     with open(SUMMARY_LOG, "a", encoding="utf-8") as f:
         f.write(f"[{datetime.now().isoformat()}] {msg}\n")
 
+# noinspection DuplicatedCode
 def safe_read_csv(path):
     try:
         if not path.exists():

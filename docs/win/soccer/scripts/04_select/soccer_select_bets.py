@@ -93,6 +93,7 @@ def _write_summary(summary, per_market, per_date, per_league):
         f.write("\n".join(lines) + "\n")
 
 
+# noinspection DuplicatedCode
 def load_config():
     try:
         with open(CONFIG_PATH, "r", encoding="utf-8") as f:

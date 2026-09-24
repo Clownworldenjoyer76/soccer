@@ -64,16 +64,19 @@ REQUIRED_COLUMNS = [
 # LOGGING
 # =========================
 
+# noinspection DuplicatedCode
 def reset_logs() -> None:
     ERROR_LOG.write_text("", encoding="utf-8")
     SUMMARY_LOG.write_text("", encoding="utf-8")
 
 
+# noinspection DuplicatedCode
 def log_error(msg: str) -> None:
     with open(ERROR_LOG, "a", encoding="utf-8") as f:
         f.write(f"[{datetime.now().isoformat()}] {msg}\n")
 
 
+# noinspection DuplicatedCode
 def log_summary(msg: str) -> None:
     with open(SUMMARY_LOG, "a", encoding="utf-8") as f:
         f.write(f"[{datetime.now().isoformat()}] {msg}\n")
@@ -94,6 +97,7 @@ def clear_output_files() -> None:
 # IO HELPERS
 # =========================
 
+# noinspection DuplicatedCode
 def safe_read_csv(path: Path) -> pd.DataFrame:
     try:
         if not path.exists():

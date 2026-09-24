@@ -64,16 +64,19 @@ PROB_SUM_TOLERANCE = 0.001
 LOG_EPSILON = 1e-15
 
 
+# noinspection DuplicatedCode
 def reset_logs():
     ERROR_LOG.write_text("", encoding="utf-8")
     SUMMARY_LOG.write_text("", encoding="utf-8")
 
 
+# noinspection DuplicatedCode
 def log_error(msg):
     with open(ERROR_LOG, "a", encoding="utf-8") as f:
         f.write(f"[{datetime.now().isoformat()}] {msg}\n")
 
 
+# noinspection DuplicatedCode
 def log_summary(msg):
     with open(SUMMARY_LOG, "a", encoding="utf-8") as f:
         f.write(f"[{datetime.now().isoformat()}] {msg}\n")

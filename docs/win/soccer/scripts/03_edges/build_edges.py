@@ -82,6 +82,7 @@ def _write_summary(summary: dict, per_file: list) -> None:
         f.write("\n".join(lines) + "\n")
 
 
+# noinspection DuplicatedCode
 def validate_engine_only_probability_config() -> None:
     """
     markets.yaml retains the Stage-2 authority contract. The string 'engine'

@@ -11,3 +11,19 @@ profile:
 
 include:
   - name: CheckDependencyLicenses
+
+exclude:
+  - name: DuplicatedCode
+    paths:
+      - docs/win/soccer/scripts/01_merge/bundesliga_ml_infer.py
+      - docs/win/soccer/scripts/01_merge/epl_ml_infer.py
+      - docs/win/soccer/scripts/01_merge/laliga_ml_infer.py
+      - docs/win/soccer/scripts/01_merge/ligue1_ml_infer.py
+      - docs/win/soccer/scripts/01_merge/mls_ml_infer.py
+      - docs/win/soccer/scripts/01_merge/seriea_ml_infer.py
+      - docs/win/soccer/ml/bundesliga/soccer_model_wrapper.py
+      - docs/win/soccer/ml/epl/soccer_model_wrapper.py
+      - docs/win/soccer/ml/laliga/soccer_model_wrapper.py
+      - docs/win/soccer/ml/ligue1/soccer_model_wrapper.py
+      - docs/win/soccer/ml/mls/soccer_model_wrapper.py
+      - docs/win/soccer/ml/seriea/soccer_model_wrapper.py
