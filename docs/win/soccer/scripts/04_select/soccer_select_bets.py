@@ -495,13 +495,13 @@ def _build_two_way_sides(
             )
         )
 
-        probability_column = (
+        model_probability_column = (
             probability_columns[side]
         )
 
         model_prob = fv(
             row.get(
-                probability_column
+                model_probability_column
             )
         )
 
@@ -535,13 +535,13 @@ def _build_two_way_sides(
                     model_prob_source=str(
                         row.get(
                             f"{side}_model_prob_source",
-                            probability_column,
+                            model_probability_column,
                         )
                     ).strip(),
                     model_prob_underlying_source=str(
                         row.get(
-                            f"{probability_column}_source",
-                            probability_column,
+                            f"{model_probability_column}_source",
+                            model_probability_column,
                         )
                     ).strip(),
                 )
