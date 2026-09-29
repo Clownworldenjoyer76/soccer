@@ -1,42 +1,28 @@
 {
   "counts": {
-    "edge_rows": 4,
+    "edge_rows": 0,
     "locked_bets": 0,
-    "merged_games": 1,
-    "prediction_games": 1,
-    "scheduled_games": 1,
+    "merged_games": 0,
+    "prediction_games": 0,
+    "scheduled_games": 0,
     "selected_bets": 0,
-    "sportsbook_games": 1
+    "sportsbook_games": 0
   },
   "fatal_errors": [],
-  "game_date_new_york": "2026_09_23",
-  "generated_at_utc": "2026-09-23T18:14:57.659135+00:00",
+  "game_date_new_york": "2026_09_29",
+  "generated_at_utc": "2026-09-29T16:12:46.849693+00:00",
   "paths": {
-    "edges": [
-      "docs/win/soccer/03_edges/2026_09_23_mls_btts.csv",
-      "docs/win/soccer/03_edges/2026_09_23_mls_match_odds.csv",
-      "docs/win/soccer/03_edges/2026_09_23_mls_total_25.csv",
-      "docs/win/soccer/03_edges/2026_09_23_mls_total_35.csv"
-    ],
+    "edges": [],
     "games": [
-      "docs/win/soccer/00_intake/games/2026_09_23_soccer_games.csv"
+      "docs/win/soccer/00_intake/games/2026_09_29_soccer_games.csv"
     ],
     "locked": [],
-    "merged": [
-      "docs/win/soccer/01_merge/2026_09_23_mls_btts.csv",
-      "docs/win/soccer/01_merge/2026_09_23_mls_match_odds.csv",
-      "docs/win/soccer/01_merge/2026_09_23_mls_total_25.csv",
-      "docs/win/soccer/01_merge/2026_09_23_mls_total_35.csv"
-    ],
-    "predictions": [
-      "docs/win/soccer/00_intake/predictions/normalized/2026_09_23_mls.csv"
-    ],
+    "merged": [],
+    "predictions": [],
     "selected": [],
-    "sportsbook": [
-      "docs/win/soccer/00_intake/sportsbook/normalized/2026_09_23_mls.csv"
-    ]
+    "sportsbook": []
   },
-  "report_date": "2026_09_23",
+  "report_date": "2026_09_29",
   "schema_version": 1,
   "sport": "soccer",
   "stage_status": [
@@ -50,13 +36,13 @@
       "exists": true,
       "name": "Name Normalization",
       "path": "docs/win/soccer/errors/00_intake/name_normalization.txt",
-      "status": "2026-09-23T18:11:18.802663+00:00 | STATUS: SUCCESS"
+      "status": "2026-09-29T16:10:19.248010+00:00 | STATUS: SUCCESS"
     },
     {
       "exists": true,
       "name": "Soccer Cleaner",
       "path": "docs/win/soccer/errors/00_intake/soccer_cleaner.txt",
-      "status": "2026-09-23T18:11:19.284328+00:00 | STATUS: SUCCESS WITH MISSING IDENTITY"
+      "status": "2026-09-29T16:10:19.519063+00:00 | STATUS: SUCCESS WITH MISSING IDENTITY"
     },
     {
       "exists": true,
@@ -95,80 +81,59 @@
       "status": "STATUS: LOG PRESENT"
     },
     {
-      "exists": true,
-      "matched_files": [
-        "docs/win/soccer/00_intake/games/2026_09_23_soccer_games.csv"
-      ],
+      "exists": false,
+      "matched_files": [],
       "name": "Games Master",
-      "path": "docs/win/soccer/00_intake/games/2026_09_23_soccer_games.csv",
-      "status": "STATUS: OUTPUT PRESENT"
+      "path": "docs/win/soccer/00_intake/games/2026_09_29_soccer_games.csv",
+      "status": "STATUS: NO OUTPUT"
     },
     {
-      "exists": true,
-      "matched_files": [
-        "docs/win/soccer/00_intake/predictions/normalized/2026_09_23_mls.csv"
-      ],
+      "exists": false,
+      "matched_files": [],
       "name": "Normalized Predictions",
-      "path": "docs/win/soccer/00_intake/predictions/normalized/2026_09_23_*.csv",
-      "status": "STATUS: OUTPUT PRESENT"
+      "path": "docs/win/soccer/00_intake/predictions/normalized/2026_09_29_*.csv",
+      "status": "STATUS: NO OUTPUT"
     },
     {
-      "exists": true,
-      "matched_files": [
-        "docs/win/soccer/00_intake/sportsbook/normalized/2026_09_23_mls.csv"
-      ],
+      "exists": false,
+      "matched_files": [],
       "name": "Normalized Sportsbook",
-      "path": "docs/win/soccer/00_intake/sportsbook/normalized/2026_09_23_*.csv",
-      "status": "STATUS: OUTPUT PRESENT"
+      "path": "docs/win/soccer/00_intake/sportsbook/normalized/2026_09_29_*.csv",
+      "status": "STATUS: NO OUTPUT"
     },
     {
-      "exists": true,
-      "matched_files": [
-        "docs/win/soccer/01_merge/2026_09_23_mls_btts.csv",
-        "docs/win/soccer/01_merge/2026_09_23_mls_match_odds.csv",
-        "docs/win/soccer/01_merge/2026_09_23_mls_total_25.csv",
-        "docs/win/soccer/01_merge/2026_09_23_mls_total_35.csv"
-      ],
+      "exists": false,
+      "matched_files": [],
       "name": "Merge",
-      "path": "docs/win/soccer/01_merge/**/*2026_09_23*.csv",
-      "status": "STATUS: OUTPUT PRESENT"
+      "path": "docs/win/soccer/01_merge/**/*2026_09_29*.csv",
+      "status": "STATUS: NO OUTPUT"
     },
     {
-      "exists": true,
-      "matched_files": [
-        "docs/win/soccer/02_juice/2026_09_23_mls_btts.csv",
-        "docs/win/soccer/02_juice/2026_09_23_mls_match_odds.csv",
-        "docs/win/soccer/02_juice/2026_09_23_mls_total_25.csv",
-        "docs/win/soccer/02_juice/2026_09_23_mls_total_35.csv"
-      ],
+      "exists": false,
+      "matched_files": [],
       "name": "Juice",
-      "path": "docs/win/soccer/02_juice/**/*2026_09_23*.csv",
-      "status": "STATUS: OUTPUT PRESENT"
+      "path": "docs/win/soccer/02_juice/**/*2026_09_29*.csv",
+      "status": "STATUS: NO OUTPUT"
     },
     {
-      "exists": true,
-      "matched_files": [
-        "docs/win/soccer/03_edges/2026_09_23_mls_btts.csv",
-        "docs/win/soccer/03_edges/2026_09_23_mls_match_odds.csv",
-        "docs/win/soccer/03_edges/2026_09_23_mls_total_25.csv",
-        "docs/win/soccer/03_edges/2026_09_23_mls_total_35.csv"
-      ],
+      "exists": false,
+      "matched_files": [],
       "name": "Edges",
-      "path": "docs/win/soccer/03_edges/**/*2026_09_23*.csv",
-      "status": "STATUS: OUTPUT PRESENT"
+      "path": "docs/win/soccer/03_edges/**/*2026_09_29*.csv",
+      "status": "STATUS: NO OUTPUT"
     },
     {
       "exists": false,
       "matched_files": [],
       "name": "Select",
-      "path": "docs/win/soccer/04_select/*2026_09_23*.csv",
+      "path": "docs/win/soccer/04_select/*2026_09_29*.csv",
       "status": "STATUS: NO OUTPUT"
     },
     {
       "exists": false,
       "matched_files": [],
       "name": "Locked Select",
-      "path": "docs/win/soccer/04_select/locked/*2026_09_23*.csv",
+      "path": "docs/win/soccer/04_select/locked/*2026_09_29*.csv",
       "status": "STATUS: NO OUTPUT"
     }
   ],
@@ -178,8 +143,8 @@
     "name": "Soccer Pipeline",
     "ref_name": "main",
     "run_attempt": "1",
-    "run_id": "35900035671",
-    "sha": "ab8d9709195a523210f5273eb851772bd67efe4c",
+    "run_id": "36595546738",
+    "sha": "d61310b3dd125a985d880de4c5ba5cec13348863",
     "status": "success"
   }
 }

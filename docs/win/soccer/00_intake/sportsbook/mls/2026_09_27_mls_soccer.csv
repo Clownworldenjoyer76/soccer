@@ -1,0 +1,2 @@
+sport,league,game_id,match_date,match_time,home_team,away_team,dk_home_decimal,dk_draw_decimal,dk_away_decimal,dk_over25_decimal,dk_under25_decimal,dk_over35_decimal,dk_under35_decimal,btts_yes,btts_no
+soccer,mls,761844,2026_09_27,07:00 PM,Columbus Crew,Inter Miami,2.65,4.00,2.20,,,1.91,1.87,,

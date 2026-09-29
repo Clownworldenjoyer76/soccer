@@ -190,7 +190,8 @@ def read_existing_rows(path: Path) -> list[dict]:
 
     with open(path, "r", encoding="utf-8", newline="") as f:
         reader = csv.DictReader(f)
-        return list(reader)
+        _qodana_return_value = list(reader)
+    return _qodana_return_value
 
 
 def merge_rows(existing_rows: list[dict], incoming_rows: list[dict]) -> list[dict]:

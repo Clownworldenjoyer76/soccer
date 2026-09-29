@@ -410,8 +410,16 @@ def normalize_espn_ref(url: str) -> str:
     parsed = urlparse(url)
 
     if parsed.scheme == "http":
-        parsed = parsed._replace(scheme="https")
-        url = urlunparse(parsed)
+        url = urlunparse(
+            (
+                "https",
+                parsed.netloc,
+                parsed.path,
+                parsed.params,
+                parsed.query,
+                parsed.fragment,
+            )
+        )
 
     return url
 
