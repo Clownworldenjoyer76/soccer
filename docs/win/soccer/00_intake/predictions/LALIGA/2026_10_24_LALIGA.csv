@@ -1,0 +1,5 @@
+sport,league,match_date,match_time,home_team,away_team,home_prob,draw_prob,away_prob,home_xg,away_xg,expected_total_goals
+soccer,laliga,2026_10_24,08:00 AM,Vallecano,Elche,63.5%,21.6%,14.9%,1.88,0.78,2.66
+soccer,laliga,2026_10_24,10:15 AM,Santander,Espanyol,29.8%,30.2%,40.0%,0.92,1.12,2.04
+soccer,laliga,2026_10_24,12:30 PM,Valencia,Villarreal,33.3%,27.2%,39.5%,1.16,1.29,2.45
+soccer,laliga,2026_10_24,03:00 PM,Atletico Madrid,Deportivo De La Coruna,87.7%,9.0%,3.3%,3.08,0.48,3.56

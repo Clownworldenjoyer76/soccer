@@ -1,0 +1,4 @@
+sport,league,game_id,match_date,match_time,home_team,away_team,dk_home_decimal,dk_draw_decimal,dk_away_decimal,dk_over25_decimal,dk_under25_decimal,dk_over35_decimal,dk_under35_decimal,btts_yes,btts_no
+soccer,epl,401879266,2026_10_11,09:00 AM,Crystal Palace,Nottingham Forest,2.80,3.35,2.55,1.87,1.95,,,,
+soccer,epl,401878774,2026_10_11,09:00 AM,Hull,Everton,3.70,3.35,2.10,2.00,1.80,,,,
+soccer,epl,401879264,2026_10_11,11:30 AM,Liverpool,Manchester City,3.05,3.70,2.20,1.59,2.40,,,,

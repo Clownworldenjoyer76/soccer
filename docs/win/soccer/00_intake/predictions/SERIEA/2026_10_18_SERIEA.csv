@@ -1,0 +1,5 @@
+sport,league,match_date,match_time,home_team,away_team,home_prob,draw_prob,away_prob,home_xg,away_xg,expected_total_goals
+soccer,seriea,2026_10_18,06:30 AM,Udinese,Lecce,57.6%,23.0%,19.3%,1.79,0.94,2.73
+soccer,seriea,2026_10_18,09:00 AM,Fiorentina,Como,53.1%,24.1%,22.8%,1.69,1.03,2.72
+soccer,seriea,2026_10_18,12:00 PM,Milan,Atalanta,56.9%,22.2%,20.8%,1.90,1.05,2.95
+soccer,seriea,2026_10_18,02:45 PM,Juventus,Lazio,66.1%,20.0%,13.9%,2.05,0.81,2.86

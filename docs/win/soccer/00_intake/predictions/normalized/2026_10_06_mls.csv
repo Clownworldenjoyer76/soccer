@@ -1,0 +1,2 @@
+sport,league,game_id,match_date,match_time,home_team,away_team,home_prob,draw_prob,away_prob,home_xg,away_xg,expected_total_goals,identity_status,identity_reason,identity_detail
+soccer,mls,761660,2026_10_06,08:30 PM,Chicago Fire,Vancouver Whitecaps,0.401,0.276,0.323,1.28,1.12,2.4,matched,matched_game_id,

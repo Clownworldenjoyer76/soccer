@@ -1,0 +1,5 @@
+sport,league,match_date,match_time,home_team,away_team,home_prob,draw_prob,away_prob,home_xg,away_xg,expected_total_goals
+soccer,seriea,2026_10_24,09:00 AM,Como,Sassuolo,59.2%,21.3%,19.5%,2.00,1.07,3.07
+soccer,seriea,2026_10_24,09:00 AM,Cagliari,Bologna,26.1%,25.7%,48.2%,1.05,1.52,2.57
+soccer,seriea,2026_10_24,12:00 PM,Napoli,Roma,52.0%,24.2%,23.8%,1.68,1.06,2.74
+soccer,seriea,2026_10_24,02:45 PM,Lazio,Parma,62.8%,20.9%,16.4%,2.00,0.91,2.91

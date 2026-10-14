@@ -1,0 +1,5 @@
+sport,league,game_id,match_date,match_time,home_team,away_team,home_prob,draw_prob,away_prob,home_xg,away_xg,expected_total_goals,identity_status,identity_reason,identity_detail
+soccer,seriea,,2026_10_18,06:30 AM,Udinese,Lecce,0.576,0.23,0.193,1.79,0.94,2.73,unmatched,no_sportsbook_fixture,no exact games-master fixture found for league/date/teams
+soccer,seriea,,2026_10_18,09:00 AM,Fiorentina,Como,0.531,0.241,0.228,1.69,1.03,2.72,unmatched,no_sportsbook_fixture,no exact games-master fixture found for league/date/teams
+soccer,seriea,,2026_10_18,12:00 PM,Milan,Atalanta,0.569,0.222,0.208,1.9,1.05,2.95,unmatched,no_sportsbook_fixture,no exact games-master fixture found for league/date/teams
+soccer,seriea,,2026_10_18,02:45 PM,Juventus,Lazio,0.661,0.2,0.139,2.05,0.81,2.86,unmatched,no_sportsbook_fixture,no exact games-master fixture found for league/date/teams

@@ -1,0 +1,5 @@
+sport,league,match_date,match_time,home_team,away_team,home_prob,draw_prob,away_prob,home_xg,away_xg,expected_total_goals
+soccer,laliga,2026_10_17,08:00 AM,Espanyol,Atletico Madrid,17.8%,23.3%,58.9%,0.84,1.76,2.60
+soccer,laliga,2026_10_17,10:15 AM,Villarreal,Elche,65.9%,20.0%,14.1%,2.06,0.83,2.89
+soccer,laliga,2026_10_17,12:30 PM,Real Betis,Barcelona,20.0%,22.8%,57.2%,0.98,1.82,2.80
+soccer,laliga,2026_10_17,03:00 PM,Valencia,Athletic Club,24.2%,26.2%,49.6%,0.95,1.49,2.44

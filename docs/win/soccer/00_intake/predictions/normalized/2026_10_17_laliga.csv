@@ -1,0 +1,5 @@
+sport,league,game_id,match_date,match_time,home_team,away_team,home_prob,draw_prob,away_prob,home_xg,away_xg,expected_total_goals,identity_status,identity_reason,identity_detail
+soccer,laliga,,2026_10_17,08:00 AM,Espanyol,Atletico Madrid,0.178,0.233,0.589,0.84,1.76,2.6,unmatched,no_sportsbook_fixture,no exact games-master fixture found for league/date/teams
+soccer,laliga,,2026_10_17,10:15 AM,Villarreal,Elche,0.659,0.2,0.141,2.06,0.83,2.89,unmatched,no_sportsbook_fixture,no exact games-master fixture found for league/date/teams
+soccer,laliga,,2026_10_17,12:30 PM,Real Betis,Barcelona,0.2,0.228,0.572,0.98,1.82,2.8,unmatched,no_sportsbook_fixture,no exact games-master fixture found for league/date/teams
+soccer,laliga,,2026_10_17,03:00 PM,Valencia,Athletic Club,0.242,0.262,0.496,0.95,1.49,2.44,unmatched,no_sportsbook_fixture,no exact games-master fixture found for league/date/teams

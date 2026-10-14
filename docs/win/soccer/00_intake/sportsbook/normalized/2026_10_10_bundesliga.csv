@@ -1,0 +1,7 @@
+sport,league,game_id,match_date,match_time,home_team,away_team,dk_home_decimal,dk_draw_decimal,dk_away_decimal,dk_over25_decimal,dk_under25_decimal,dk_over35_decimal,dk_under35_decimal,btts_yes,btts_no
+soccer,bundesliga,401884775,2026_10_10,09:30 AM,Union Berlin,Elversberg,2.35,3.55,2.70,1.59,2.35,,,,
+soccer,bundesliga,401884777,2026_10_10,09:30 AM,Augsburg,Bayern Munich,11.00,8.00,1.15,,,,,,
+soccer,bundesliga,401884776,2026_10_10,09:30 AM,Mainz,Leverkusen,2.95,3.75,2.10,,,2.15,1.69,,
+soccer,bundesliga,401884773,2026_10_10,09:30 AM,Paderborn,VfB Stuttgart,4.60,4.50,1.56,,,1.80,2.00,,
+soccer,bundesliga,401884779,2026_10_10,09:30 AM,Hoffenheim,Hamburg,,,,,,,,,
+soccer,bundesliga,401884780,2026_10_10,12:30 PM,RB Leipzig,Eintracht Frankfurt,1.56,4.60,4.60,,,1.71,2.10,,

@@ -1,0 +1,7 @@
+sport,league,game_id,match_date,match_time,home_team,away_team,home_prob,draw_prob,away_prob,home_xg,away_xg,expected_total_goals,identity_status,identity_reason,identity_detail
+soccer,bundesliga,,2026_10_17,09:30 AM,Schalke,Mainz,0.163,0.193,0.644,1.03,2.22,3.25,unmatched,no_sportsbook_fixture,no exact games-master fixture found for league/date/teams
+soccer,bundesliga,,2026_10_17,09:30 AM,Elversberg,Augsburg,0.444,0.264,0.293,1.43,1.11,2.54,unmatched,no_sportsbook_fixture,no exact games-master fixture found for league/date/teams
+soccer,bundesliga,,2026_10_17,09:30 AM,Union Berlin,Borussia Dortmund,0.213,0.22,0.568,1.1,1.93,3.03,unmatched,no_sportsbook_fixture,no exact games-master fixture found for league/date/teams
+soccer,bundesliga,,2026_10_17,09:30 AM,Hamburg,VfB Stuttgart,0.354,0.253,0.392,1.35,1.43,2.78,unmatched,no_sportsbook_fixture,no exact games-master fixture found for league/date/teams
+soccer,bundesliga,,2026_10_17,09:30 AM,Werder Bremen,Paderborn,0.734,0.156,0.11,2.6,0.93,3.53,unmatched,no_sportsbook_fixture,no exact games-master fixture found for league/date/teams
+soccer,bundesliga,,2026_10_17,12:30 PM,Bayern Munich,RB Leipzig,0.784,0.132,0.083,2.85,0.84,3.69,unmatched,no_sportsbook_fixture,no exact games-master fixture found for league/date/teams

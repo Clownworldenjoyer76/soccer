@@ -1,0 +1,15 @@
+sport,league,match_date,match_time,home_team,away_team,home_prob,draw_prob,away_prob,home_xg,away_xg,expected_total_goals
+soccer,mls,2026_10_10,01:00 PM,Toronto FC,CF Montreal,50.2%,26.2%,23.6%,1.49,0.93,2.42
+soccer,mls,2026_10_10,02:30 PM,Chicago Fire,New York City FC,52.9%,24.9%,22.2%,1.61,0.95,2.56
+soccer,mls,2026_10_10,07:30 PM,New York Red Bulls,San Diego FC,45.9%,26.9%,27.2%,1.41,1.01,2.42
+soccer,mls,2026_10_10,07:30 PM,Philadelphia Union,Real Salt Lake,57.8%,23.1%,19.0%,1.78,0.91,2.69
+soccer,mls,2026_10_10,07:30 PM,New England Revolution,Seattle Sounders,53.6%,24.8%,21.6%,1.62,0.92,2.54
+soccer,mls,2026_10_10,07:30 PM,Atlanta United,FC Cincinnati,43.6%,26.8%,29.6%,1.39,1.09,2.48
+soccer,mls,2026_10_10,07:30 PM,Charlotte FC,FC Dallas,48.5%,26.4%,25.0%,1.46,0.97,2.43
+soccer,mls,2026_10_10,07:30 PM,Inter Miami,DC United,63.8%,20.6%,15.6%,2.02,0.88,2.90
+soccer,mls,2026_10_10,07:30 PM,Orlando City,Columbus Crew,48.3%,25.7%,26.0%,1.52,1.04,2.56
+soccer,mls,2026_10_10,08:30 PM,Minnesota United,Houston Dynamo,44.5%,27.4%,28.1%,1.35,1.01,2.36
+soccer,mls,2026_10_10,08:30 PM,Austin FC,Nashville SC,29.1%,28.5%,42.4%,0.99,1.25,2.24
+soccer,mls,2026_10_10,08:30 PM,Sporting Kansas City,Portland Timbers,38.7%,27.9%,33.4%,1.23,1.13,2.36
+soccer,mls,2026_10_10,09:30 PM,Colorado Rapids,San Jose Earthquakes,47.5%,26.0%,26.6%,1.49,1.05,2.54
+soccer,mls,2026_10_10,10:30 PM,Los Angeles FC,Vancouver Whitecaps,40.2%,27.1%,32.7%,1.31,1.16,2.47

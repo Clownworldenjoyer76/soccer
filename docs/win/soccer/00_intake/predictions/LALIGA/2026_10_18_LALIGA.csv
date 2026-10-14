@@ -1,0 +1,5 @@
+sport,league,match_date,match_time,home_team,away_team,home_prob,draw_prob,away_prob,home_xg,away_xg,expected_total_goals
+soccer,laliga,2026_10_18,08:00 AM,Osasuna,Santander,63.6%,22.8%,13.6%,1.75,0.66,2.41
+soccer,laliga,2026_10_18,10:15 AM,Celta Vigo,Alaves,51.1%,25.9%,23.0%,1.52,0.92,2.44
+soccer,laliga,2026_10_18,12:30 PM,Malaga,Real Sociedad,18.7%,25.8%,55.4%,0.77,1.52,2.29
+soccer,laliga,2026_10_18,03:00 PM,Real Madrid,Sevilla,80.8%,13.0%,6.2%,2.65,0.60,3.25

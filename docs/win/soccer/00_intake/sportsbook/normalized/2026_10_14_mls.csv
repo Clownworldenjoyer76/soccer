@@ -1,0 +1,16 @@
+sport,league,game_id,match_date,match_time,home_team,away_team,dk_home_decimal,dk_draw_decimal,dk_away_decimal,dk_over25_decimal,dk_under25_decimal,dk_over35_decimal,dk_under35_decimal,btts_yes,btts_no
+soccer,mls,761864,2026_10_14,07:30 PM,CF Montreal,Atlanta United,2.30,3.60,2.70,,,2.35,1.57,1.45,2.70
+soccer,mls,761865,2026_10_14,07:30 PM,Columbus Crew,Charlotte FC,1.95,3.85,3.30,,,2.10,1.71,,
+soccer,mls,761863,2026_10_14,07:30 PM,DC United,New York Red Bulls,1.91,3.90,3.35,,,2.20,1.67,,
+soccer,mls,761862,2026_10_14,07:30 PM,FC Cincinnati,New England Revolution,1.69,4.30,3.90,,,1.87,1.91,,
+soccer,mls,761861,2026_10_14,07:30 PM,Inter Miami,New York City FC,1.51,4.70,4.90,,,1.87,1.87,,
+soccer,mls,761860,2026_10_14,07:30 PM,Toronto FC,Orlando City,2.20,3.70,2.80,,,1.95,1.83,,
+soccer,mls,761869,2026_10_14,08:30 PM,Chicago Fire,Philadelphia Union,2.55,3.70,2.40,,,2.00,1.80,,
+soccer,mls,761867,2026_10_14,08:30 PM,FC Dallas,Seattle Sounders,1.77,3.95,3.75,,,2.30,1.61,,
+soccer,mls,761866,2026_10_14,08:30 PM,Nashville SC,Sporting Kansas City,1.22,6.50,9.00,,,1.77,2.00,,
+soccer,mls,761868,2026_10_14,08:30 PM,St Louis City,Vancouver Whitecaps,2.15,3.75,2.85,,,2.20,1.67,1.41,2.85
+soccer,mls,761871,2026_10_14,09:30 PM,Colorado Rapids,Minnesota United,2.05,3.60,3.20,1.61,2.30,,,,
+soccer,mls,761870,2026_10_14,09:30 PM,Real Salt Lake,San Jose Earthquakes,1.87,3.90,3.40,,,2.15,1.69,1.42,2.80
+soccer,mls,761874,2026_10_14,10:30 PM,LA Galaxy,Portland Timbers,2.00,3.80,3.10,,,2.00,1.80,,
+soccer,mls,761873,2026_10_14,10:30 PM,Los Angeles FC,Austin FC,1.43,4.60,6.00,,,2.35,1.59,,
+soccer,mls,761872,2026_10_14,10:30 PM,San Diego FC,Houston Dynamo,2.15,3.55,3.00,1.67,2.20,,,,

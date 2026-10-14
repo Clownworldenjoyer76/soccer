@@ -1,0 +1,3 @@
+sport,league,match_date,match_time,home_team,away_team,home_prob,draw_prob,away_prob,home_xg,away_xg,expected_total_goals
+soccer,seriea,2026_10_19,12:30 PM,Monza,Cagliari,23.2%,25.0%,51.9%,0.98,1.61,2.59
+soccer,seriea,2026_10_19,02:45 PM,Parma,Torino,42.5%,27.3%,30.2%,1.33,1.08,2.41

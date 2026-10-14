@@ -1,12 +1,7 @@
-name: Soccer Pipeline
+name: Soccer 01 Pipeline
 
 on:
   workflow_dispatch:
-    inputs:
-      date:
-        description: "Optional ESPN odds date (YYYY-MM-DD or YYYY_MM_DD). Blank uses today in America/New_York."
-        required: false
-        type: string
 
 permissions:
   contents: write
@@ -21,7 +16,7 @@ jobs:
 
     env:
       TZ: America/New_York
-      RUN_DATE: ${{ inputs.date }}
+      RUN_DATE: ""
       EPL_MODEL_ROOT: docs/win/soccer/ml/epl
       BUNDESLIGA_MODEL_ROOT: docs/win/soccer/ml/bundesliga
       LALIGA_MODEL_ROOT: docs/win/soccer/ml/laliga
@@ -32,8 +27,6 @@ jobs:
     steps:
       - name: Checkout repo
         uses: actions/checkout@v4
-        with:
-          fetch-depth: 0
 
       - name: Set up Python
         uses: actions/setup-python@v5
@@ -422,6 +415,7 @@ jobs:
             lightgbm==4.6.0 \
             xgboost==3.4.1 \
             catboost==1.2.10
+
       - name: EPL ML inference
         shell: bash
         run: |
@@ -441,6 +435,7 @@ jobs:
             --bundesliga-root "${BUNDESLIGA_MODEL_ROOT}" \
             --date "${RUN_DATE}" \
             2>&1 | tee docs/win/soccer/errors/01_merge/bundesliga_ml_infer.txt
+
       - name: La Liga ML inference
         shell: bash
         run: |
@@ -450,6 +445,7 @@ jobs:
             --laliga-root "${LALIGA_MODEL_ROOT}" \
             --date "${RUN_DATE}" \
             2>&1 | tee docs/win/soccer/errors/01_merge/laliga_ml_infer.txt
+
       - name: Serie A ML inference
         shell: bash
         run: |
@@ -459,6 +455,7 @@ jobs:
             --seriea-root "${SERIEA_MODEL_ROOT}" \
             --date "${RUN_DATE}" \
             2>&1 | tee docs/win/soccer/errors/01_merge/seriea_ml_infer.txt
+
       - name: Ligue 1 ML inference
         shell: bash
         run: |
@@ -468,6 +465,7 @@ jobs:
             --ligue1-root "${LIGUE1_MODEL_ROOT}" \
             --date "${RUN_DATE}" \
             2>&1 | tee docs/win/soccer/errors/01_merge/ligue1_ml_infer.txt
+
       - name: MLS ML inference
         shell: bash
         run: |
@@ -477,6 +475,7 @@ jobs:
             --mls-root "${MLS_MODEL_ROOT}" \
             --date "${RUN_DATE}" \
             2>&1 | tee docs/win/soccer/errors/01_merge/mls_ml_infer.txt
+
       # Restore the pipeline's existing Python version/dependencies after EPL inference.
       - name: Restore Python 3.11
         uses: actions/setup-python@v5
@@ -517,6 +516,9 @@ jobs:
       - name: Run soccer model reports
         run: python docs/win/soccer/scripts/05_final_scores/05_soccer_model_reports.py
 
+      - name: Build soccer dashboard
+        run: python docs/win/soccer/scripts/05_final_scores/06_soccer_results_dashboard.py
+
       - name: Show key soccer outputs and logs
         run: |
           echo "=== Raw sportsbook CSVs ==="
@@ -548,14 +550,19 @@ jobs:
 
           echo "=== EPL ML inference log ==="
           cat docs/win/soccer/errors/01_merge/epl_ml_infer.txt || true
+
           echo "=== Bundesliga ML inference log ==="
           cat docs/win/soccer/errors/01_merge/bundesliga_ml_infer.txt || true
+
           echo "=== La Liga ML inference log ==="
           cat docs/win/soccer/errors/01_merge/laliga_ml_infer.txt || true
+
           echo "=== Serie A ML inference log ==="
           cat docs/win/soccer/errors/01_merge/seriea_ml_infer.txt || true
+
           echo "=== Ligue 1 ML inference log ==="
           cat docs/win/soccer/errors/01_merge/ligue1_ml_infer.txt || true
+
           echo "=== MLS ML inference log ==="
           cat docs/win/soccer/errors/01_merge/mls_ml_infer.txt || true
 
@@ -586,6 +593,7 @@ jobs:
           git status --short
 
           git add -A docs/win/soccer/
+          git add frontend/data/dashboards/soccer.json
 
           if [[ -d docs/win/final_scores/results/soccer/final_scores ]]; then
             git add -A docs/win/final_scores/results/soccer/final_scores/

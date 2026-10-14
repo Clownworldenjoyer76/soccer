@@ -1,0 +1,4 @@
+sport,league,game_id,match_date,match_time,home_team,away_team,dk_home_decimal,dk_draw_decimal,dk_away_decimal,dk_over25_decimal,dk_under25_decimal,dk_over35_decimal,dk_under35_decimal,btts_yes,btts_no
+soccer,ligue1,401876440,2026_10_11,02:45 PM,Troyes,Marseille,3.45,3.70,2.05,1.61,2.30,,,,
+soccer,ligue1,401876443,2026_10_11,09:00 AM,Nice,Strasbourg,2.35,3.70,2.85,1.56,2.40,,,,
+soccer,ligue1,401876441,2026_10_11,11:15 AM,Rennes,Auxerre,1.43,5.00,6.50,,,2.10,1.69,,

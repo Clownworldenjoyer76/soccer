@@ -1,0 +1,6 @@
+sport,league,game_id,match_date,match_time,home_team,away_team,home_prob,draw_prob,away_prob,home_xg,away_xg,expected_total_goals,identity_status,identity_reason,identity_detail
+soccer,epl,,2026_10_17,07:30 AM,Everton,Chelsea,0.308,0.275,0.417,1.08,1.31,2.39,unmatched,no_sportsbook_fixture,no exact games-master fixture found for league/date/teams
+soccer,epl,,2026_10_17,10:00 AM,Fulham,Hull,0.808,0.128,0.063,2.7,0.63,3.33,unmatched,no_sportsbook_fixture,no exact games-master fixture found for league/date/teams
+soccer,epl,,2026_10_17,10:00 AM,Manchester City,Ipswich,0.853,0.102,0.044,2.98,0.57,3.55,unmatched,no_sportsbook_fixture,no exact games-master fixture found for league/date/teams
+soccer,epl,,2026_10_17,10:00 AM,Brentford,Liverpool,0.185,0.223,0.592,0.94,1.87,2.81,unmatched,no_sportsbook_fixture,no exact games-master fixture found for league/date/teams
+soccer,epl,,2026_10_17,12:30 PM,Newcastle,Aston Villa,0.49,0.253,0.257,1.56,1.05,2.61,unmatched,no_sportsbook_fixture,no exact games-master fixture found for league/date/teams

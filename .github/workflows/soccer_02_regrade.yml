@@ -1,4 +1,4 @@
-name: _Soccer Regrade and Reports
+name: Soccer 02 Grade
 
 on:
   workflow_dispatch:
@@ -24,6 +24,7 @@ jobs:
           fetch-depth: 1
           sparse-checkout: |
             docs/win/soccer
+            frontend
 
       - name: Set up Python
         uses: actions/setup-python@v6
@@ -79,6 +80,12 @@ jobs:
       - name: Run soccer model reports
         run: python docs/win/soccer/scripts/05_final_scores/05_soccer_model_reports.py
 
+      # -------------------------
+      # DASHBOARDS
+      # -------------------------
+      - name: Build soccer dashboards
+        run: python docs/win/soccer/scripts/05_final_scores/06_soccer_results_dashboard.py
+
       - name: Show reselect outputs and logs
         if: always()
         run: |
@@ -117,6 +124,9 @@ jobs:
           cat docs/win/soccer/05_final_scores/errors/soccer_model_reports_summary.txt || true
           cat docs/win/soccer/05_final_scores/errors/soccer_model_reports_errors.txt || true
 
+          echo "=== Dashboard log ==="
+          cat docs/win/soccer/05_final_scores/errors/06_soccer_results_dashboard.txt || true
+
       # -------------------------
       # ONE FINAL REPO WRITE
       # -------------------------
@@ -130,6 +140,7 @@ jobs:
           git status --short
 
           git add -A docs/win/soccer/
+          git add frontend/data/dashboards/soccer.json
 
           echo "Changed files after staging:"
           git status --short

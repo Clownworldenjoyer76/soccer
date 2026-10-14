@@ -1,0 +1,4 @@
+sport,league,game_id,match_date,match_time,home_team,away_team,dk_home_decimal,dk_draw_decimal,dk_away_decimal,dk_over25_decimal,dk_under25_decimal,dk_over35_decimal,dk_under35_decimal,btts_yes,btts_no
+soccer,seriea,401874754,2026_10_10,02:45 PM,Napoli,Frosinone,1.42,4.70,6.00,,,2.10,1.71,,
+soccer,seriea,401874947,2026_10_10,09:00 AM,Genoa,Fiorentina,3.15,3.15,2.25,2.05,1.74,,,,
+soccer,seriea,401875021,2026_10_10,12:00 PM,Inter Milan,Parma,1.12,8.00,15.00,,,1.91,1.83,,

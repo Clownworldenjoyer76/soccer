@@ -1,81 +1,95 @@
 === ESPN endpoint diagnostic ===
-utc_time=2026-09-29T16:10:10Z
-runner=GitHub Actions 1000105613
-date=20260929
+utc_time=2026-10-14T09:06:27Z
+runner=GitHub Actions 1000106738
+date=20261014
 league=usa.1
 
 [production_limit_1000]
-url=https://site.api.espn.com/apis/site/v2/sports/soccer/usa.1/scoreboard?dates=20260929&limit=1000
+url=https://site.api.espn.com/apis/site/v2/sports/soccer/usa.1/scoreboard?dates=20261014&limit=1000
 curl_exit=0
-http|content_type|bytes|effective_url=403|text/html|451|https://site.api.espn.com/apis/site/v2/sports/soccer/usa.1/scoreboard?dates=20260929&limit=1000
+http|content_type|bytes|effective_url=403|text/html|449|https://site.api.espn.com/apis/site/v2/sports/soccer/usa.1/scoreboard?dates=20261014&limit=1000
 json=no
 
 [site_api_limit_100]
-url=https://site.api.espn.com/apis/site/v2/sports/soccer/usa.1/scoreboard?dates=20260929&limit=100
+url=https://site.api.espn.com/apis/site/v2/sports/soccer/usa.1/scoreboard?dates=20261014&limit=100
 curl_exit=0
-http|content_type|bytes|effective_url=403|text/html|451|https://site.api.espn.com/apis/site/v2/sports/soccer/usa.1/scoreboard?dates=20260929&limit=100
+http|content_type|bytes|effective_url=403|text/html|449|https://site.api.espn.com/apis/site/v2/sports/soccer/usa.1/scoreboard?dates=20261014&limit=100
 json=no
 
 [site_api_no_limit]
-url=https://site.api.espn.com/apis/site/v2/sports/soccer/usa.1/scoreboard?dates=20260929
+url=https://site.api.espn.com/apis/site/v2/sports/soccer/usa.1/scoreboard?dates=20261014
 curl_exit=0
-http|content_type|bytes|effective_url=403|text/html|451|https://site.api.espn.com/apis/site/v2/sports/soccer/usa.1/scoreboard?dates=20260929
+http|content_type|bytes|effective_url=403|text/html|449|https://site.api.espn.com/apis/site/v2/sports/soccer/usa.1/scoreboard?dates=20261014
 json=no
 
 [site_web_api]
-url=https://site.web.api.espn.com/apis/v2/sports/soccer/usa.1/scoreboard?region=us&lang=en&contentorigin=espn&isqualified=true&limit=1000&dates=20260929
+url=https://site.web.api.espn.com/apis/v2/sports/soccer/usa.1/scoreboard?region=us&lang=en&contentorigin=espn&isqualified=true&limit=1000&dates=20261014
 curl_exit=0
-http|content_type|bytes|effective_url=404||12|https://site.web.api.espn.com/apis/v2/sports/soccer/usa.1/scoreboard?region=us&lang=en&contentorigin=espn&isqualified=true&limit=1000&dates=20260929
+http|content_type|bytes|effective_url=404||12|https://site.web.api.espn.com/apis/v2/sports/soccer/usa.1/scoreboard?region=us&lang=en&contentorigin=espn&isqualified=true&limit=1000&dates=20261014
 json=yes type=dict | keys=code
 
 [cdn_scoreboard]
-url=https://cdn.espn.com/core/soccer/scoreboard?xhr=1&league=usa.1&dates=20260929
+url=https://cdn.espn.com/core/soccer/scoreboard?xhr=1&league=usa.1&dates=20261014
 curl_exit=0
-http|content_type|bytes|effective_url=200|application/json;charset=utf-8|213873|https://cdn.espn.com/core/soccer/scoreboard?xhr=1&league=usa.1&dates=20260929
+http|content_type|bytes|effective_url=200|application/json;charset=utf-8|389687|https://cdn.espn.com/core/soccer/scoreboard?xhr=1&league=usa.1&dates=20261014
 json=yes type=dict | keys=news,pinnedCount,nowFeedMD5Hash,type,content,analytics,nowFeed,ads,targeting,nowFeedCount,meta,nowFeedSupported,sport,tier2Nav
 
 [public_scoreboard_page]
-url=https://www.espn.com/soccer/scoreboard/_/league/usa.1/date/20260929
+url=https://www.espn.com/soccer/scoreboard/_/league/usa.1/date/20261014
 curl_exit=0
-http|content_type|bytes|effective_url=202|text/html; charset=UTF-8|0|https://www.espn.com/soccer/scoreboard/_/league/usa.1/date/20260929
+http|content_type|bytes|effective_url=202|text/html; charset=UTF-8|0|https://www.espn.com/soccer/scoreboard/_/league/usa.1/date/20261014
 json=no
 
 [cdn_structure]
 top_level_keys=news,pinnedCount,nowFeedMD5Hash,type,content,analytics,nowFeed,ads,targeting,nowFeedCount,meta,nowFeedSupported,sport,tier2Nav
 event_list_paths_found=1
-event_list_path=$.content.sbData.events count=1
-event_candidates_found=1
-event_1=id:761833 competition:761833 date:2026-09-30T23:30Z home:Red Bull New York away:St. Louis CITY SC path:$.content.sbData.events[0]
-selected_event_id=761833
-selected_competition_id=761833
+event_list_path=$.content.sbData.events count=15
+event_candidates_found=15
+event_1=id:761864 competition:761864 date:2026-10-14T23:30Z home:CF Montréal away:Atlanta United FC path:$.content.sbData.events[0]
+event_2=id:761865 competition:761865 date:2026-10-14T23:30Z home:Columbus Crew away:Charlotte FC path:$.content.sbData.events[1]
+event_3=id:761863 competition:761863 date:2026-10-14T23:30Z home:D.C. United away:Red Bull New York path:$.content.sbData.events[2]
+event_4=id:761862 competition:761862 date:2026-10-14T23:30Z home:FC Cincinnati away:New England Revolution path:$.content.sbData.events[3]
+event_5=id:761861 competition:761861 date:2026-10-14T23:30Z home:Inter Miami CF away:New York City FC path:$.content.sbData.events[4]
+event_6=id:761860 competition:761860 date:2026-10-14T23:30Z home:Toronto FC away:Orlando City SC path:$.content.sbData.events[5]
+event_7=id:761869 competition:761869 date:2026-10-15T00:30Z home:Chicago Fire FC away:Philadelphia Union path:$.content.sbData.events[6]
+event_8=id:761867 competition:761867 date:2026-10-15T00:30Z home:FC Dallas away:Seattle Sounders FC path:$.content.sbData.events[7]
+event_9=id:761866 competition:761866 date:2026-10-15T00:30Z home:Nashville SC away:Sporting Kansas City path:$.content.sbData.events[8]
+event_10=id:761868 competition:761868 date:2026-10-15T00:30Z home:St. Louis CITY SC away:Vancouver Whitecaps path:$.content.sbData.events[9]
+event_11=id:761871 competition:761871 date:2026-10-15T01:30Z home:Colorado Rapids away:Minnesota United FC path:$.content.sbData.events[10]
+event_12=id:761870 competition:761870 date:2026-10-15T01:30Z home:Real Salt Lake away:San Jose Earthquakes path:$.content.sbData.events[11]
+event_13=id:761874 competition:761874 date:2026-10-15T02:30Z home:LA Galaxy away:Portland Timbers path:$.content.sbData.events[12]
+event_14=id:761873 competition:761873 date:2026-10-15T02:30Z home:LAFC away:Austin FC path:$.content.sbData.events[13]
+event_15=id:761872 competition:761872 date:2026-10-15T02:30Z home:San Diego FC away:Houston Dynamo FC path:$.content.sbData.events[14]
+selected_event_id=761864
+selected_competition_id=761864
 
 [core_event]
-url=https://sports.core.api.espn.com/v2/sports/soccer/leagues/usa.1/events/761833
+url=https://sports.core.api.espn.com/v2/sports/soccer/leagues/usa.1/events/761864
 curl_exit=0
-http|content_type|bytes|effective_url=200|application/json;charset=utf-8|10285|https://sports.core.api.espn.com/v2/sports/soccer/leagues/usa.1/events/761833
+http|content_type|bytes|effective_url=200|application/json;charset=utf-8|9994|https://sports.core.api.espn.com/v2/sports/soccer/leagues/usa.1/events/761864
 json=yes type=dict | keys=$ref,id,uid,date,name,shortName,season,seasonType,timeValid,competitions,links,venues,league
 
 [site_summary]
-url=https://site.api.espn.com/apis/site/v2/sports/soccer/usa.1/summary?event=761833
+url=https://site.api.espn.com/apis/site/v2/sports/soccer/usa.1/summary?event=761864
 curl_exit=0
-http|content_type|bytes|effective_url=403|text/html|448|https://site.api.espn.com/apis/site/v2/sports/soccer/usa.1/summary?event=761833
+http|content_type|bytes|effective_url=403|text/html|444|https://site.api.espn.com/apis/site/v2/sports/soccer/usa.1/summary?event=761864
 json=no
 
 [cdn_game]
-url=https://cdn.espn.com/core/soccer/game?xhr=1&gameId=761833
+url=https://cdn.espn.com/core/soccer/game?xhr=1&gameId=761864
 curl_exit=0
-http|content_type|bytes|effective_url=200|text/html;charset=UTF-8|380149|http://cdn.espn.com/core/soccer/match?gameId=761833
+http|content_type|bytes|effective_url=200|text/html;charset=UTF-8|344904|http://cdn.espn.com/core/soccer/match?gameId=761864
 json=no
 
 [core_odds]
-url=https://sports.core.api.espn.com/v2/sports/soccer/leagues/usa.1/events/761833/competitions/761833/odds?limit=100
+url=https://sports.core.api.espn.com/v2/sports/soccer/leagues/usa.1/events/761864/competitions/761864/odds?limit=100
 curl_exit=0
-http|content_type|bytes|effective_url=200|application/json;charset=utf-8|12825|https://sports.core.api.espn.com/v2/sports/soccer/leagues/usa.1/events/761833/competitions/761833/odds?limit=100
-json=yes type=dict | keys=count,pageIndex,pageSize,pageCount,items | items=2
+http|content_type|bytes|effective_url=200|application/json;charset=utf-8|6481|https://sports.core.api.espn.com/v2/sports/soccer/leagues/usa.1/events/761864/competitions/761864/odds?limit=100
+json=yes type=dict | keys=count,pageIndex,pageSize,pageCount,items | items=1
 
 [core_propbets]
-url=https://sports.core.api.espn.com/v2/sports/soccer/leagues/usa.1/events/761833/competitions/761833/propbets?limit=2000
+url=https://sports.core.api.espn.com/v2/sports/soccer/leagues/usa.1/events/761864/competitions/761864/propbets?limit=2000
 curl_exit=0
-http|content_type|bytes|effective_url=404||52|https://sports.core.api.espn.com/v2/sports/soccer/leagues/usa.1/events/761833/competitions/761833/propbets?limit=2000
+http|content_type|bytes|effective_url=404||52|https://sports.core.api.espn.com/v2/sports/soccer/leagues/usa.1/events/761864/competitions/761864/propbets?limit=2000
 json=yes type=dict | keys=error
 

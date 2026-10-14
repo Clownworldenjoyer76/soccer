@@ -1,0 +1,5 @@
+sport,league,match_date,match_time,home_team,away_team,home_prob,draw_prob,away_prob,home_xg,away_xg,expected_total_goals
+soccer,laliga,2026_10_25,09:00 AM,Athletic Club,Getafe,73.5%,17.8%,8.7%,2.13,0.57,2.70
+soccer,laliga,2026_10_25,11:15 AM,Celta Vigo,Real Betis,39.4%,27.5%,33.1%,1.27,1.14,2.41
+soccer,laliga,2026_10_25,01:30 PM,Real Sociedad,Levante,63.3%,21.2%,15.5%,1.95,0.84,2.79
+soccer,laliga,2026_10_25,04:00 PM,Barcelona,Real Madrid,57.2%,23.0%,19.8%,1.80,0.96,2.76

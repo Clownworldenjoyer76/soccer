@@ -1,0 +1,4 @@
+sport,league,match_date,match_time,home_team,away_team,home_prob,draw_prob,away_prob,home_xg,away_xg,expected_total_goals
+soccer,ligue1,2026_10_17,11:15 AM,Strasbourg,Paris Saint Germain,12.7%,18.5%,68.8%,0.84,2.22,3.06
+soccer,ligue1,2026_10_17,02:45 PM,Lille,Stade Brest,53.5%,24.4%,22.1%,1.66,0.98,2.64
+soccer,ligue1,2026_10_17,02:45 PM,Troyes,Lens,35.5%,28.6%,35.9%,1.13,1.14,2.27

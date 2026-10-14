@@ -1,0 +1,3 @@
+sport,league,game_id,match_date,match_time,home_team,away_team,dk_home_decimal,dk_draw_decimal,dk_away_decimal,dk_over25_decimal,dk_under25_decimal,dk_over35_decimal,dk_under35_decimal,btts_yes,btts_no
+soccer,seriea,401874763,2026_10_12,02:45 PM,Torino,Udinese,2.40,3.00,3.05,2.20,1.67,,,,
+soccer,seriea,401875005,2026_10_12,12:30 PM,Atalanta,Venezia,1.54,4.10,5.25,,,2.25,1.62,,

@@ -1,0 +1,2 @@
+sport,league,game_id,match_date,match_time,home_team,away_team,home_prob,draw_prob,away_prob,home_xg,away_xg,expected_total_goals,identity_status,identity_reason,identity_detail
+soccer,laliga,,2026_10_26,04:00 PM,Sevilla,Osasuna,0.459,0.275,0.266,1.36,0.96,2.32,unmatched,no_sportsbook_fixture,no exact games-master fixture found for league/date/teams

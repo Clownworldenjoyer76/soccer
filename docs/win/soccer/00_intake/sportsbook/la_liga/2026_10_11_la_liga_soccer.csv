@@ -1,0 +1,5 @@
+sport,league,game_id,match_date,match_time,home_team,away_team,dk_home_decimal,dk_draw_decimal,dk_away_decimal,dk_over25_decimal,dk_under25_decimal,dk_over35_decimal,dk_under35_decimal,btts_yes,btts_no
+soccer,laliga,401882850,2026_10_11,03:00 PM,Santander,Valencia,2.20,3.55,3.20,1.67,2.20,,,,
+soccer,laliga,401882854,2026_10_11,08:00 AM,Elche,Celta Vigo,2.95,3.25,2.50,1.95,1.83,,,,
+soccer,laliga,401882847,2026_10_11,10:15 AM,Real Sociedad,Deportivo De La Coruna,1.62,4.10,5.50,1.71,2.10,,,,
+soccer,laliga,401882855,2026_10_11,12:30 PM,Real Betis,Osasuna,1.50,4.60,6.00,1.62,2.30,,,,

@@ -1,0 +1,4 @@
+sport,league,match_date,match_time,home_team,away_team,home_prob,draw_prob,away_prob,home_xg,away_xg,expected_total_goals
+soccer,seriea,2026_10_17,09:00 AM,Venezia,Napoli,8.9%,15.3%,75.8%,0.73,2.49,3.22
+soccer,seriea,2026_10_17,12:00 PM,Bologna,Inter Milan,28.2%,26.3%,45.4%,1.08,1.45,2.53
+soccer,seriea,2026_10_17,02:45 PM,Roma,Genoa,69.8%,18.2%,12.0%,2.23,0.80,3.03

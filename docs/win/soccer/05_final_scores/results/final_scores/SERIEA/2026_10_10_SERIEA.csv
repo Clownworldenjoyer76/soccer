@@ -1,0 +1,4 @@
+sport,league,game_id,game_date,match_time,home_team,away_team,home_score,away_score
+soccer,seriea,401874754,2026_10_10,02:45 PM,Napoli,Frosinone,3,0
+soccer,seriea,401875021,2026_10_10,12:00 PM,Inter Milan,Parma,3,0
+soccer,seriea,401874947,2026_10_10,09:00 AM,Genoa,Fiorentina,2,1

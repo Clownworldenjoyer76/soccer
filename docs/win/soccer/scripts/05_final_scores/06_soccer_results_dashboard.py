@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 # docs/win/soccer/scripts/05_final_scores/06_soccer_results_dashboard.py
 #
-# Builds one self-contained Soccer Dashboard from the reporting artifacts
+# Builds the Soccer dashboard data (read live by the React Soccer page) from the reporting artifacts
 # already produced by:
 #   03_soccer_results_reports.py
 #   05_soccer_model_reports.py
@@ -13,9 +13,8 @@
 #   docs/win/soccer/05_final_scores/model_evaluation/SOCCER_model_calibration.csv
 #   docs/win/soccer/05_final_scores/model_evaluation/SOCCER_xg_metrics.csv
 #
-# Outputs:
-#   frontend/soccer_dashboard.html
-#   frontend/{bundesliga,epl,laliga,ligue1,mls,seriea}_dashboard.html
+# Output:
+#   frontend/data/dashboards/soccer.json  ({"generated_at": <UTC ISO>, "data": {"all": ..., <league>: ...}})
 #
 # Log:
 #   docs/win/soccer/05_final_scores/errors/06_soccer_results_dashboard.txt
@@ -24,8 +23,9 @@ from __future__ import annotations
 
 from datetime import datetime, UTC
 from pathlib import Path
-import html
 import json
+import math
+import os
 import traceback
 
 import pandas as pd
@@ -34,15 +34,7 @@ import pandas as pd
 BASE = Path("docs/win/soccer/05_final_scores")
 REPORT_DIR = BASE / "reports"
 MODEL_DIR = BASE / "model_evaluation"
-OUTPUT_FILE = Path("frontend/soccer_dashboard.html")
-LEAGUE_OUTPUTS = {
-    "bundesliga": Path("frontend/bundesliga_dashboard.html"),
-    "epl": Path("frontend/epl_dashboard.html"),
-    "laliga": Path("frontend/laliga_dashboard.html"),
-    "ligue1": Path("frontend/ligue1_dashboard.html"),
-    "mls": Path("frontend/mls_dashboard.html"),
-    "seriea": Path("frontend/seriea_dashboard.html"),
-}
+OUTPUT_FILE = Path("frontend/data/dashboards/soccer.json")
 ERROR_DIR = BASE / "errors"
 LOG_FILE = ERROR_DIR / "06_soccer_results_dashboard.txt"
 
@@ -524,644 +516,8 @@ def collect_all_data(
     return data
 
 
-CSS = r"""
-:root {
-  --bg: #0e1117;
-  --panel: #161b22;
-  --panel-2: #1c232c;
-  --text: #e6edf3;
-  --muted: #8b949e;
-  --accent: #58a6ff;
-  --good: #3fb950;
-  --bad: #f85149;
-  --border: #30363d;
-  --table-border: #46515e;
-}
-* { box-sizing: border-box; }
-html, body {
-  margin: 0;
-  padding: 0;
-  background: var(--bg);
-  color: var(--text);
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
-}
-header {
-  padding: 18px 24px;
-  border-bottom: 1px solid var(--border);
-  display: flex;
-  justify-content: space-between;
-  align-items: baseline;
-  flex-wrap: wrap;
-  gap: 12px;
-}
-header h1 { margin: 0; font-size: 20px; }
-header .ts { color: var(--muted); font-size: 12px; }
-.league-bar {
-  padding: 10px 24px;
-  border-bottom: 1px solid var(--border);
-  background: var(--panel);
-  display: flex;
-  gap: 6px;
-  flex-wrap: wrap;
-  align-items: center;
-  position: sticky;
-  top: 0;
-  z-index: 10;
-}
-.league-bar .lbl {
-  color: var(--muted);
-  font-size: 12px;
-  text-transform: uppercase;
-  letter-spacing: .06em;
-  margin-right: 6px;
-}
-.league-btn, .tab {
-  background: var(--panel-2);
-  border: 1px solid var(--border);
-  color: var(--text);
-  cursor: pointer;
-}
-.league-btn {
-  padding: 6px 14px;
-  border-radius: 4px;
-  font-size: 13px;
-}
-.league-btn.active {
-  background: var(--accent);
-  color: #0e1117;
-  border-color: var(--accent);
-  font-weight: 600;
-}
-main {
-  padding: 18px 24px;
-  max-width: 1500px;
-  margin: 0 auto;
-}
-.league-section { display: none; }
-.league-section.active { display: block; }
-h2 {
-  font-size: 16px;
-  margin: 24px 0 8px;
-  border-bottom: 1px solid var(--border);
-  padding-bottom: 4px;
-}
-.kpis {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
-  gap: 10px;
-  margin: 12px 0 4px;
-}
-.kpi {
-  background: var(--panel);
-  border: 1px solid var(--border);
-  border-radius: 6px;
-  padding: 12px;
-}
-.kpi .label {
-  color: var(--muted);
-  font-size: 11px;
-  text-transform: uppercase;
-  letter-spacing: .05em;
-}
-.kpi .value {
-  font-size: 22px;
-  margin-top: 4px;
-  font-weight: 600;
-}
-.good { color: var(--good); }
-.bad { color: var(--bad); }
-.tabs {
-  display: flex;
-  gap: 4px;
-  margin: 16px 0 0;
-  flex-wrap: wrap;
-}
-.tab {
-  padding: 6px 12px;
-  border-radius: 6px 6px 0 0;
-  color: var(--muted);
-  font-size: 13px;
-}
-.tab.active {
-  background: var(--panel-2);
-  color: var(--text);
-  border-bottom-color: var(--panel-2);
-}
-.tab-body {
-  background: var(--panel-2);
-  border: 1px solid var(--border);
-  border-top: none;
-  padding: 14px;
-  border-radius: 0 6px 6px 6px;
-}
-.controls {
-  display: flex;
-  gap: 8px;
-  flex-wrap: wrap;
-  align-items: center;
-  margin-bottom: 10px;
-}
-.controls label {
-  color: var(--muted);
-  font-size: 12px;
-}
-.controls select {
-  background: var(--panel);
-  color: var(--text);
-  border: 1px solid var(--border);
-  padding: 4px 8px;
-  border-radius: 4px;
-  font-size: 13px;
-}
-table {
-  width: 100%;
-  border-collapse: collapse;
-  font-size: 13px;
-}
-th, td {
-  padding: 7px 9px;
-  text-align: center;
-  border: 1px solid var(--table-border);
-  white-space: nowrap;
-  vertical-align: middle;
-}
-th {
-  color: var(--muted);
-  text-transform: uppercase;
-  font-size: 11px;
-  letter-spacing: .05em;
-  cursor: pointer;
-  user-select: none;
-  position: sticky;
-  top: 0;
-  background: var(--panel-2);
-}
-td.num {
-  text-align: center;
-  font-variant-numeric: tabular-nums;
-}
-.scroll {
-  max-height: 60vh;
-  overflow: auto;
-  border: 1px solid var(--table-border);
-  border-radius: 6px;
-}
-.muted { color: var(--muted); }
-td.win-pct-strong {
-  background: rgba(63,185,80,.24);
-  color: #7ee787;
-  font-weight: 700;
-}
-td.win-pct-green {
-  background: rgba(63,185,80,.16);
-  color: #56d364;
-  font-weight: 600;
-}
-td.win-pct-light {
-  background: rgba(63,185,80,.09);
-  color: #8ddb8c;
-  font-weight: 600;
-}
-td.win-pct-neutral {
-  background: rgba(139,148,158,.09);
-  color: #c9d1d9;
-}
-td.win-pct-red {
-  background: rgba(248,81,73,.14);
-  color: #ff7b72;
-  font-weight: 600;
-}
-"""
-
-
-JS = r"""
-function fmtPct(v) {
-  if (v == null || isNaN(v)) return '';
-  return (Number(v) * 100).toFixed(2) + '%';
-}
-function fmtNum(v, d) {
-  if (v == null || isNaN(v)) return '';
-  return Number(v).toFixed(d);
-}
-function fmtInt(v) {
-  if (v == null || isNaN(v)) return '';
-  return Number(v).toLocaleString();
-}
-function signedClass(v) {
-  if (v == null || isNaN(v)) return '';
-  return Number(v) > 0 ? 'good' : (Number(v) < 0 ? 'bad' : '');
-}
-function winPctClass(v) {
-  if (v == null || isNaN(v)) return '';
-  const pct = Number(v);
-  if (pct >= 0.80) return 'win-pct-strong';
-  if (pct >= 0.70) return 'win-pct-green';
-  if (pct >= 0.60) return 'win-pct-light';
-  if (pct >= 0.50) return 'win-pct-neutral';
-  return 'win-pct-red';
-}
-
-function showTab(host, key) {
-  host.querySelectorAll(':scope > .tabs .tab').forEach(el => {
-    el.classList.toggle('active', el.dataset.key === key);
-  });
-  host.querySelectorAll(':scope > .tab-body > .tab-panel').forEach(el => {
-    el.style.display = el.dataset.key === key ? '' : 'none';
-  });
-}
-
-function renderTable(data, columns, container) {
-  if (!data || data.length === 0) {
-    container.innerHTML = '<div class="muted">No rows available.</div>';
-    return;
-  }
-
-  const wrap = document.createElement('div');
-  wrap.className = 'scroll';
-  const table = document.createElement('table');
-  const thead = document.createElement('thead');
-  const headRow = document.createElement('tr');
-  const tbody = document.createElement('tbody');
-
-  let sortCol = null;
-  let sortDir = 'desc';
-
-  columns.forEach(col => {
-    const th = document.createElement('th');
-    th.textContent = col.label;
-    th.onclick = () => {
-      if (sortCol === col.key) sortDir = sortDir === 'asc' ? 'desc' : 'asc';
-      else {
-        sortCol = col.key;
-        sortDir = 'desc';
-      }
-      drawRows();
-    };
-    headRow.appendChild(th);
-  });
-
-  thead.appendChild(headRow);
-
-  function drawRows() {
-    const rows = data.slice();
-    if (sortCol) {
-      rows.sort((a, b) => {
-        const av = a[sortCol];
-        const bv = b[sortCol];
-        if (av == null) return 1;
-        if (bv == null) return -1;
-        if (!isNaN(Number(av)) && !isNaN(Number(bv))) {
-          return sortDir === 'asc' ? Number(av) - Number(bv) : Number(bv) - Number(av);
-        }
-        return sortDir === 'asc'
-          ? String(av).localeCompare(String(bv))
-          : String(bv).localeCompare(String(av));
-      });
-    }
-
-    tbody.innerHTML = '';
-    rows.forEach(row => {
-      const tr = document.createElement('tr');
-      columns.forEach(col => {
-        const td = document.createElement('td');
-        const v = row[col.key];
-
-        if (col.fmt === 'int') {
-          td.classList.add('num');
-          td.textContent = fmtInt(v);
-        } else if (col.fmt === 'pct') {
-          td.classList.add('num');
-          td.textContent = fmtPct(v);
-          if (col.key === 'Win_Pct') {
-            const winClass = winPctClass(v);
-            if (winClass) td.classList.add(winClass);
-          }
-        } else if (col.fmt === 'num') {
-          td.classList.add('num');
-          td.textContent = fmtNum(v, col.decimals == null ? 3 : col.decimals);
-          if (col.signed) {
-            const cls = signedClass(v);
-            if (cls) td.classList.add(cls);
-          }
-        } else {
-          td.textContent = v == null ? '' : String(v);
-        }
-
-        tr.appendChild(td);
-      });
-      tbody.appendChild(tr);
-    });
-  }
-
-  drawRows();
-  table.appendChild(thead);
-  table.appendChild(tbody);
-  wrap.appendChild(table);
-  container.innerHTML = '';
-  container.appendChild(wrap);
-}
-
-const RESULT_COLUMNS = [
-  { key: 'bucket', label: 'Bucket' },
-  { key: 'Win', label: 'W', fmt: 'int' },
-  { key: 'Loss', label: 'L', fmt: 'int' },
-  { key: 'Push', label: 'P', fmt: 'int' },
-  { key: 'Total', label: 'Total', fmt: 'int' },
-  { key: 'Sample_Count', label: 'Sample', fmt: 'int' },
-  { key: 'Win_Pct', label: 'Win %', fmt: 'pct' },
-];
-
-const RESULT_SIDE_COLUMNS = [
-  { key: 'side', label: 'Side' },
-  ...RESULT_COLUMNS,
-];
-
-const MODEL_COLUMNS = [
-  { key: 'model', label: 'Model' },
-  { key: 'sample_count', label: 'Sample', fmt: 'int' },
-  { key: 'brier_score', label: 'Brier', fmt: 'num', decimals: 4 },
-  { key: 'log_loss', label: 'Log Loss', fmt: 'num', decimals: 4 },
-  { key: 'rps', label: 'RPS', fmt: 'num', decimals: 4 },
-];
-
-const XG_COLUMNS = [
-  { key: 'sample_count', label: 'Sample', fmt: 'int' },
-  { key: 'home_xg_mae', label: 'Home xG MAE', fmt: 'num', decimals: 3 },
-  { key: 'home_xg_rmse', label: 'Home xG RMSE', fmt: 'num', decimals: 3 },
-  { key: 'home_xg_bias', label: 'Home xG Bias', fmt: 'num', decimals: 3, signed: true },
-  { key: 'away_xg_mae', label: 'Away xG MAE', fmt: 'num', decimals: 3 },
-  { key: 'away_xg_rmse', label: 'Away xG RMSE', fmt: 'num', decimals: 3 },
-  { key: 'away_xg_bias', label: 'Away xG Bias', fmt: 'num', decimals: 3, signed: true },
-  { key: 'total_xg_mae', label: 'Total xG MAE', fmt: 'num', decimals: 3 },
-  { key: 'total_xg_rmse', label: 'Total xG RMSE', fmt: 'num', decimals: 3 },
-  { key: 'total_xg_bias', label: 'Total xG Bias', fmt: 'num', decimals: 3, signed: true },
-];
-
-const CAL_COLUMNS = [
-  { key: 'model', label: 'Model' },
-  { key: 'outcome', label: 'Outcome' },
-  { key: 'bucket', label: 'Bucket' },
-  { key: 'sample_count', label: 'Sample', fmt: 'int' },
-  { key: 'mean_predicted_probability', label: 'Mean Pred', fmt: 'pct' },
-  { key: 'observed_rate', label: 'Observed', fmt: 'pct' },
-  { key: 'calibration_gap', label: 'Gap', fmt: 'num', decimals: 4, signed: true },
-];
-
-function selectLeague(league) {
-  document.querySelectorAll('.league-btn').forEach(btn => {
-    btn.classList.toggle('active', btn.dataset.league === league);
-  });
-  document.querySelectorAll('.league-section').forEach(section => {
-    section.classList.toggle('active', section.dataset.league === league);
-  });
-  try {
-    localStorage.setItem('soccer_dash_league', league);
-  } catch (e) {}
-}
-
-function buildModelArea(section, data) {
-  const host = section.querySelector('.model-area');
-  const leagueColumn = [{ key: 'league', label: 'League' }];
-
-  renderTable(
-    data.model_metrics || [],
-    data.is_all ? [...leagueColumn, ...MODEL_COLUMNS] : MODEL_COLUMNS,
-    host.querySelector('.model-core')
-  );
-
-  renderTable(
-    data.xg_metrics || [],
-    data.is_all ? [...leagueColumn, ...XG_COLUMNS] : XG_COLUMNS,
-    host.querySelector('.model-xg')
-  );
-
-  const calibrationRows = data.calibration || [];
-  const calibrationHost = host.querySelector('.model-calibration');
-
-  if (!calibrationRows.length) {
-    calibrationHost.innerHTML = '<div class="muted">No calibration rows available.</div>';
-  } else {
-    const models = [...new Set(calibrationRows.map(r => r.model).filter(Boolean))].sort();
-    const outcomes = [...new Set(calibrationRows.map(r => r.outcome).filter(Boolean))].sort();
-
-    calibrationHost.innerHTML =
-      '<div class="controls">' +
-        '<label>Model: <select class="cal-model"><option value="ALL">All</option>' +
-          models.map(v => '<option value="' + v + '">' + v + '</option>').join('') +
-        '</select></label>' +
-        '<label>Outcome: <select class="cal-outcome"><option value="ALL">All</option>' +
-          outcomes.map(v => '<option value="' + v + '">' + v + '</option>').join('') +
-        '</select></label>' +
-      '</div>' +
-      '<div class="cal-table"></div>';
-
-    const modelSel = calibrationHost.querySelector('.cal-model');
-    const outcomeSel = calibrationHost.querySelector('.cal-outcome');
-    const tableHost = calibrationHost.querySelector('.cal-table');
-
-    const refreshCalibration = () => {
-      const filtered = calibrationRows.filter(row =>
-        (modelSel.value === 'ALL' || String(row.model) === modelSel.value) &&
-        (outcomeSel.value === 'ALL' || String(row.outcome) === outcomeSel.value)
-      );
-      renderTable(
-        filtered,
-        data.is_all ? [...leagueColumn, ...CAL_COLUMNS] : CAL_COLUMNS,
-        tableHost
-      );
-    };
-
-    modelSel.onchange = refreshCalibration;
-    outcomeSel.onchange = refreshCalibration;
-    refreshCalibration();
-  }
-
-  host.querySelectorAll(':scope > .tabs .tab').forEach(tab => {
-    tab.onclick = () => showTab(host, tab.dataset.key);
-  });
-}
-
-function buildMarketArea(section, data) {
-  const host = section.querySelector('.market-area');
-  let firstAvailable = null;
-
-  Object.entries(data.markets || {}).forEach(([key, market]) => {
-    const panel = host.querySelector('.panel-' + key);
-    const tab = host.querySelector(':scope > .tabs .tab[data-key="' + key + '"]');
-    if (!panel) return;
-
-    const dimensions = Object.keys(market.by || {});
-    if (!dimensions.length) {
-      panel.style.display = 'none';
-      if (tab) tab.style.display = 'none';
-      return;
-    }
-
-    if (firstAvailable == null) firstAvailable = key;
-
-    panel.innerHTML =
-      '<div class="controls">' +
-        '<label>Dimension: <select class="dim-select">' +
-          dimensions.map(dim => '<option value="' + dim + '">' + dim.replaceAll('_', ' ') + '</option>').join('') +
-        '</select></label>' +
-        '<label>View: <select class="view-select">' +
-          '<option value="overall">Overall</option>' +
-          '<option value="side">Split by side</option>' +
-        '</select></label>' +
-      '</div>' +
-      '<div class="market-table"></div>';
-
-    const dimSel = panel.querySelector('.dim-select');
-    const viewSel = panel.querySelector('.view-select');
-    const tableHost = panel.querySelector('.market-table');
-
-    const refresh = () => {
-      const dim = dimSel.value;
-      const sideView = viewSel.value === 'side';
-      const rows = sideView
-        ? ((market.by_side || {})[dim] || [])
-        : ((market.by || {})[dim] || []);
-      renderTable(
-        rows,
-        sideView ? RESULT_SIDE_COLUMNS : RESULT_COLUMNS,
-        tableHost
-      );
-    };
-
-    dimSel.onchange = refresh;
-    viewSel.onchange = refresh;
-    refresh();
-  });
-
-  host.querySelectorAll(':scope > .tabs .tab').forEach(tab => {
-    tab.onclick = () => showTab(host, tab.dataset.key);
-  });
-
-  if (firstAvailable != null) {
-    showTab(host, firstAvailable);
-  } else {
-    host.querySelector(':scope > .tab-body').innerHTML =
-      '<div class="muted">No market drilldown reports available.</div>';
-  }
-}
-
-function buildLeagueSection(league, data) {
-  const section = document.querySelector(
-    '.league-section[data-league="' + league + '"]'
-  );
-  if (!section) return;
-
-  const h = data.headline || {};
-  const kpi = (label, value, fmt) => {
-    let display = 'N/A';
-    if (value != null && !(typeof value === 'number' && isNaN(value))) {
-      if (fmt === 'pct') display = fmtPct(value);
-      else if (fmt === 'int') display = fmtInt(value);
-      else display = String(value);
-    }
-    return '<div class="kpi"><div class="label">' + label +
-      '</div><div class="value">' + display + '</div></div>';
-  };
-
-  section.querySelector('.kpis').innerHTML = [
-    kpi('Bets', h.total, 'int'),
-    kpi('Wins', h.wins, 'int'),
-    kpi('Losses', h.losses, 'int'),
-    kpi('Pushes', h.pushes, 'int'),
-    kpi('Win %', h.win_pct, 'pct'),
-  ].join('');
-
-  renderTable(
-    data.by_market || [],
-    [
-      { key: 'market_display', label: 'Market' },
-      { key: 'Win', label: 'W', fmt: 'int' },
-      { key: 'Loss', label: 'L', fmt: 'int' },
-      { key: 'Push', label: 'P', fmt: 'int' },
-      { key: 'Total', label: 'Total', fmt: 'int' },
-      { key: 'Win_Pct', label: 'Win %', fmt: 'pct' },
-    ],
-    section.querySelector('.by-market')
-  );
-
-  renderTable(
-    data.tally || [],
-    [
-      { key: 'market', label: 'Market' },
-      { key: 'market_type', label: 'Side' },
-      { key: 'Win', label: 'W', fmt: 'int' },
-      { key: 'Loss', label: 'L', fmt: 'int' },
-      { key: 'Push', label: 'P', fmt: 'int' },
-      { key: 'Total', label: 'Total', fmt: 'int' },
-      { key: 'Win_Pct', label: 'Win %', fmt: 'pct' },
-    ],
-    section.querySelector('.side-tally')
-  );
-
-  buildModelArea(section, data);
-  buildMarketArea(section, data);
-}
-"""
-
-
-def league_section_html(league: str, display: str) -> str:
-    market_tabs = "\n".join(
-        f'<button class="tab{" active" if i == 0 else ""}" data-key="{spec["key"]}">{html.escape(spec["display"])}</button>'
-        for i, spec in enumerate(MARKETS)
-    )
-    market_panels = "\n".join(
-        f'<div class="tab-panel panel-{spec["key"]}" data-key="{spec["key"]}"'
-        + (' style="display:none"' if i else '')
-        + '></div>'
-        for i, spec in enumerate(MARKETS)
-    )
-
-    return f"""
-<section class="league-section" data-league="{html.escape(league)}">
-  <h2>{html.escape(display)} Analytics</h2>
-  <div class="kpis"></div>
-
-  <h2>By Market</h2>
-  <div class="by-market"></div>
-
-  <h2>By Market + Side</h2>
-  <div class="side-tally"></div>
-
-  <h2>Model Quality</h2>
-  <div class="model-area">
-    <div class="tabs">
-      <button class="tab active" data-key="core">Core Metrics</button>
-      <button class="tab" data-key="xg">xG Metrics</button>
-      <button class="tab" data-key="calibration">Calibration</button>
-    </div>
-    <div class="tab-body">
-      <div class="tab-panel model-core" data-key="core"></div>
-      <div class="tab-panel model-xg" data-key="xg" style="display:none"></div>
-      <div class="tab-panel model-calibration" data-key="calibration" style="display:none"></div>
-    </div>
-  </div>
-
-  <h2>Per Market Drilldown</h2>
-  <div class="market-area">
-    <div class="tabs">
-      {market_tabs}
-    </div>
-    <div class="tab-body">
-      {market_panels}
-    </div>
-  </div>
-</section>
-"""
-
-
-def build_dashboard(
-    league_defs: list[tuple[str, str]] | None = None,
-    *,
-    include_all: bool = False,
-) -> str:
-    ts = datetime.now(UTC).isoformat(timespec="seconds")
+def build_payload() -> dict:
     metrics, calibration, xg = load_model_tables()
-    league_defs = list(LEAGUES if league_defs is None else league_defs)
 
     league_payloads = {
         league: collect_league_data(
@@ -1171,117 +527,53 @@ def build_dashboard(
             calibration,
             xg,
         )
-        for league, display in league_defs
+        for league, display in LEAGUES
     }
 
-    payloads = dict(league_payloads)
-    nav_leagues = list(league_defs)
+    return {
+        "all": collect_all_data(
+            league_payloads,
+            metrics,
+            calibration,
+            xg,
+        ),
+        **league_payloads,
+    }
 
-    if include_all:
-        payloads = {
-            "all": collect_all_data(
-                league_payloads,
-                metrics,
-                calibration,
-                xg,
-            ),
-            **league_payloads,
-        }
-        nav_leagues = [("all", "All"), *league_defs]
 
-    payload_json = json.dumps(payloads, ensure_ascii=False, default=str)
+def json_safe(value):
+    if isinstance(value, float) and not math.isfinite(value):
+        return None
+    if isinstance(value, dict):
+        return {key: json_safe(item) for key, item in value.items()}
+    if isinstance(value, (list, tuple)):
+        return [json_safe(item) for item in value]
+    return value
 
-    league_buttons = "\n".join(
-        f'<button class="league-btn{" active" if i == 0 else ""}" '
-        f'data-league="{html.escape(league)}" onclick="selectLeague(\'{html.escape(league)}\')">{html.escape(display)}</button>'
-        for i, (league, display) in enumerate(nav_leagues)
+
+def write_json(path: Path, data) -> int:
+    document = {
+        "generated_at": datetime.now(UTC).isoformat(timespec="seconds"),
+        "data": json_safe(data),
+    }
+    content = json.dumps(
+        document,
+        ensure_ascii=False,
+        separators=(",", ":"),
+        default=str,
+        allow_nan=False,
     )
-
-    sections = "\n".join(
-        league_section_html(league, display)
-        for league, display in nav_leagues
-    )
-
-    first_league = nav_leagues[0][0]
-
-    return f"""<!doctype html>
-<html lang="en">
-<head>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Soccer Dashboard</title>
-<link rel="stylesheet" href="assets/css/matstheme.css">
-<style>
-{CSS}
-</style>
-</head>
-<body>
-<div id="nav-placeholder"></div>
-<header>
-  <h1>Soccer Dashboard</h1>
-  <span class="ts">Built {html.escape(ts)} UTC</span>
-</header>
-
-<div class="league-bar">
-  <span class="lbl">League:</span>
-  {league_buttons}
-</div>
-
-<main>
-{sections}
-</main>
-
-<script src="assets/js/shared/nav.js"></script>
-<script>
-{JS}
-
-const ALL_DATA = {payload_json};
-
-document.addEventListener('DOMContentLoaded', () => {{
-  Object.keys(ALL_DATA).forEach(league => {{
-    buildLeagueSection(league, ALL_DATA[league]);
-  }});
-
-  let initial = '{html.escape(first_league)}';
-  try {{
-    const stored = localStorage.getItem('soccer_dash_league');
-    if (stored && ALL_DATA[stored]) initial = stored;
-  }} catch (e) {{}}
-
-  selectLeague(initial);
-}});
-</script>
-</body>
-</html>
-"""
+    path.parent.mkdir(parents=True, exist_ok=True)
+    staging = path.with_name(path.name + ".tmp")
+    staging.write_text(content, encoding="utf-8")
+    os.replace(staging, path)
+    return len(content.encode("utf-8"))
 
 
 def run() -> None:
-    # ANALYTICS_MULTI_OUTPUT
-    OUTPUT_FILE.parent.mkdir(parents=True, exist_ok=True)
-
-    outputs: list[tuple[Path, str]] = []
-
-    master_page = build_dashboard(LEAGUES, include_all=True)
-    outputs.append((OUTPUT_FILE, master_page))
-
-    for league, display in LEAGUES:
-        page = build_dashboard([(league, display)])
-        title = f"{display} Dashboard"
-        page = (
-            page
-            .replace("<title>Soccer Dashboard</title>", f"<title>{title}</title>", 1)
-            .replace("<h1>Soccer Dashboard</h1>", f"<h1>{title}</h1>", 1)
-            .replace("</style>", "\n.league-bar{display:none!important}\n</style>", 1)
-        )
-        outputs.append((LEAGUE_OUTPUTS[league], page))
-
-    for output_path, page in outputs:
-        output_path.write_text(page, encoding="utf-8")
-        rows = page.count("\n") + 1
-        bytes_written = len(page.encode("utf-8"))
-        log_output(output_path, rows, bytes_written)
-        log("INFO", f"dashboard -> {output_path}")
+    bytes_written = write_json(OUTPUT_FILE, build_payload())
+    log_output(OUTPUT_FILE, 1, bytes_written)
+    log("INFO", f"dashboard data -> {OUTPUT_FILE}")
 
 
 def main() -> None:
