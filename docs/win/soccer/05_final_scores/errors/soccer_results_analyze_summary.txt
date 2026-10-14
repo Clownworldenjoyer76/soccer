@@ -1,13 +1,13 @@
-[2026-10-14T05:09:24.611005] === START 02_soccer_results_analyze.py 2026-10-14T05:09:24.610984 ===
-[2026-10-14T05:09:24.611316] DELETED OLD OUTPUT | docs/win/soccer/05_final_scores/intermediate/work_soccer.csv
-[2026-10-14T05:09:24.611329] OLD OUTPUT FILES DELETED | count=1
-[2026-10-14T05:09:24.721465] WORK FILE WRITTEN | docs/win/soccer/05_final_scores/intermediate/work_soccer.csv | rows=191
-[2026-10-14T05:09:24.721812] market_type counts: {'btts': 61, 'total25': 58, 'total35': 43, 'match_odds': 29}
-[2026-10-14T05:09:24.721969] bet_result counts: {'Win': 134, 'Loss': 51, 'Missing Score': 6}
-[2026-10-14T05:09:24.722049] ev_bucket nunique: 19
-[2026-10-14T05:09:24.722100] kelly_bucket nunique: 16
-[2026-10-14T05:09:24.722239] odds_bucket counts: {'-199_to_-150': 51, '-149_to_-100': 44, '+100_to_+149': 36, '-249_to_-200': 14, '+150_to_+199': 12, '-299_to_-250': 11, '-300_or_lower': 10, '+250_to_+299': 6, '+200_to_+249': 5, '+300_or_higher': 2}
-[2026-10-14T05:09:24.722371] month_bucket counts: {'05': 65, '04': 58, '09': 33, '08': 22, '10': 13}
-[2026-10-14T05:09:24.722503] model_prob_bucket counts: {'0.6_to_0.7': 58, '0.7_to_0.8': 56, '0.4_to_0.5': 36, '0.5_to_0.6': 20, '0.8_to_0.9': 11, '0.3_to_0.4': 5, '0.9_to_1.0': 5}
-[2026-10-14T05:09:24.722887] win_prob_bucket counts (match_odds only): {'0.5_to_0.6': 8, '0.6_to_0.7': 8, '0.7_to_0.8': 6, '0.8_to_0.9': 3, '0.9_to_1.0': 3, '0.3_to_0.4': 1}
-[2026-10-14T05:09:24.722980] === END 02_soccer_results_analyze.py 2026-10-14T05:09:24.722969 ===
+[2026-10-14T15:44:35.798185] === START 02_soccer_results_analyze.py 2026-10-14T15:44:35.798152 ===
+[2026-10-14T15:44:35.798353] DELETED OLD OUTPUT | docs/win/soccer/05_final_scores/intermediate/work_soccer.csv
+[2026-10-14T15:44:35.798371] OLD OUTPUT FILES DELETED | count=1
+[2026-10-14T15:44:36.673056] WORK FILE WRITTEN | docs/win/soccer/05_final_scores/intermediate/work_soccer.csv | rows=791
+[2026-10-14T15:44:36.673617] market_type counts: {'match_odds': 335, 'btts': 193, 'total25': 170, 'total35': 93}
+[2026-10-14T15:44:36.673875] bet_result counts: {'Loss': 466, 'Win': 294, 'Missing Score': 31}
+[2026-10-14T15:44:36.674024] ev_bucket nunique: 39
+[2026-10-14T15:44:36.674139] kelly_bucket nunique: 17
+[2026-10-14T15:44:36.674417] odds_bucket counts: {'+300_or_higher': 264, '+100_to_+149': 118, '-149_to_-100': 112, '-199_to_-150': 84, '+150_to_+199': 69, '+250_to_+299': 60, '+200_to_+249': 42, '-249_to_-200': 19, '-300_or_lower': 12, '-299_to_-250': 11}
+[2026-10-14T15:44:36.674660] month_bucket counts: {'05': 223, '04': 202, '09': 166, '08': 131, '10': 57, '07': 12}
+[2026-10-14T15:44:36.674901] model_prob_bucket counts: {'0.2_to_0.3': 226, '0.6_to_0.7': 149, '0.4_to_0.5': 133, '0.3_to_0.4': 87, '0.7_to_0.8': 70, '0.5_to_0.6': 64, '0.1_to_0.2': 44, '0.8_to_0.9': 12, '0.9_to_1.0': 5, '0.0_to_0.1': 1}
+[2026-10-14T15:44:36.675512] win_prob_bucket counts (match_odds only): {'0.2_to_0.3': 222, '0.1_to_0.2': 44, '0.3_to_0.4': 34, '0.5_to_0.6': 8, '0.6_to_0.7': 8, '0.4_to_0.5': 6, '0.7_to_0.8': 6, '0.8_to_0.9': 3, '0.9_to_1.0': 3, '0.0_to_0.1': 1}
+[2026-10-14T15:44:36.675788] === END 02_soccer_results_analyze.py 2026-10-14T15:44:36.675767 ===

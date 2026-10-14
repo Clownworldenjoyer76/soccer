@@ -1,0 +1,7 @@
+bucket,side,Win,Loss,Push,Total,Sample_Count,Win_Pct
+0.1_to_0.2,away,4,9,0,13,13,0.3077
+0.1_to_0.2,draw,2,3,0,5,5,0.4
+0.2_to_0.3,away,2,23,0,25,25,0.08
+0.2_to_0.3,draw,18,56,0,74,74,0.2432
+0.3_to_0.4,home,0,1,0,1,1,0.0
+0.4_to_0.5,home,0,1,0,1,1,0.0
