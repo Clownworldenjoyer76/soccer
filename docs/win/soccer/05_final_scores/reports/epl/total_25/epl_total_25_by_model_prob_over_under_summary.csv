@@ -1,6 +1,2 @@
 bucket,side,Win,Loss,Push,Total,Sample_Count,Win_Pct
-0.4_to_0.5,over,1,1,0,2,2,0.5
-0.4_to_0.5,under,0,2,0,2,2,0.0
-0.5_to_0.6,over,1,2,0,3,3,0.3333
-0.6_to_0.7,over,12,15,0,27,27,0.4444
-0.7_to_0.8,over,8,3,0,11,11,0.7273
+0.7_to_0.8,over,5,2,0,7,7,0.7143

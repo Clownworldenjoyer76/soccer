@@ -1,0 +1,4 @@
+sport,league,match_date,match_time,home_team,away_team,home_prob,draw_prob,away_prob,home_xg,away_xg,expected_total_goals
+soccer,ligue1,2026_10_31,12:15 PM,Nice,Rennes,44.9%,26.9%,28.2%,1.40,1.04,2.44
+soccer,ligue1,2026_10_31,03:45 PM,Lyon,Angers,69.4%,17.9%,12.7%,2.29,0.88,3.17
+soccer,ligue1,2026_10_31,03:45 PM,Lorient,Stade Brest,34.7%,27.4%,37.9%,1.19,1.25,2.44

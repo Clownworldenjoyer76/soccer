@@ -34,7 +34,7 @@ markets:
           american_odds_bands: [[-100000, 300]]
           ev_bands: [[0.0, 10.0]]
           kelly_bands: [[0.00001, 10.0]]
-          model_prob_bands: [[0.0, 1.0]]
+          model_prob_bands: [[0.20, 1.0]]
           edge_bands: [[0.0, 10.0]]
 
         draw:
@@ -43,8 +43,8 @@ markets:
           american_odds_bands: [[-100000, 250]]
           ev_bands: [[0.0, 10.0]]
           kelly_bands: [[0.00001, 10.0]]
-          model_prob_bands: [[0.0, 1.0]]
-          edge_bands: [[0.0, 10.0]]
+          model_prob_bands: [[0.20, 1.0]]
+          edge_bands: [[0.00, 10.0]]
 
         away:
           enabled: true
@@ -52,8 +52,8 @@ markets:
           american_odds_bands: [[-100000, 100000]]
           ev_bands: [[0.0, 10.0]]
           kelly_bands: [[0.00001, 10.0]]
-          model_prob_bands: [[0.0, 1.0]]
-          edge_bands: [[0.0, 10.0]]
+          model_prob_bands: [[0.20, 1.0]]
+          edge_bands: [[0.00, 10.0]]
 #################################################
       btts:
         enabled: true
@@ -128,7 +128,7 @@ markets:
         over:
           enabled: true
           odds_bands: [[1.0, 1000.0]]
-          american_odds_bands: [[-100000, 100000]]
+          american_odds_bands: [[-100000, 199.99]]
           ev_bands: [[0.0, 10.0]]
           kelly_bands: [[0.00001, 10.0]]
           model_prob_bands: [[0.0, 1.0]]
@@ -180,7 +180,7 @@ markets:
           american_odds_bands: [[-100000, 100000]]
           ev_bands: [[0.0, 10.0]]
           kelly_bands: [[0.00001, 10.0]]
-          model_prob_bands: [[0.0, 1.0]]
+          model_prob_bands: [[0.30, 1.0]]
           edge_bands: [[0.0, 10.0]]
 
         away:
@@ -213,7 +213,7 @@ markets:
         "yes":
           enabled: true
           odds_bands: [[1.0, 1000.0]]
-          american_odds_bands: [[-100000, 100000]]
+          american_odds_bands: [[-100000, 100]]
           ev_bands: [[0.0, 10.0]]
           kelly_bands: [[0.00001, 10.0]]
           model_prob_bands: [[0.0, 1.0]]
@@ -222,7 +222,7 @@ markets:
         "no":
           enabled: true
           odds_bands: [[1.0, 1000.0]]
-          american_odds_bands: [[-100000, 100000]]
+          american_odds_bands: [[-100000, 149]]
           ev_bands: [[0.0, 10.0]]
           kelly_bands: [[0.00001, 10.0]]
           model_prob_bands: [[0.0, 1.0]]
@@ -245,13 +245,13 @@ markets:
           american_odds_bands: [[-100000, 100000]]
           ev_bands: [[0.0, 10.0]]
           kelly_bands: [[0.00001, 10.0]]
-          model_prob_bands: [[0.0, 1.0]]
+          model_prob_bands: [[0.70, 1.0]]
           edge_bands: [[0.0, 10.0]]
           
         under:
           enabled: true
           odds_bands: [[1.0, 1000.0]]
-          american_odds_bands: [[-100000, 100000]]
+          american_odds_bands: [[-100000, -150]]
           ev_bands: [[0.0, 10.0]]
           kelly_bands: [[0.00001, 10.0]]
           model_prob_bands: [[0.0, 1.0]]
@@ -274,13 +274,13 @@ markets:
           american_odds_bands: [[-100000, 100000]]
           ev_bands: [[0.0, 10.0]]
           kelly_bands: [[0.00001, 10.0]]
-          model_prob_bands: [[0.0, 1.0]]
+          model_prob_bands: [[0.30, 1.0]]
           edge_bands: [[0.0, 10.0]]
 
         under:
           enabled: true
           odds_bands: [[1.0, 1000.0]]
-          american_odds_bands: [[-100000, 100000]]
+          american_odds_bands: [[-100000, -300], [250, 100000]]
           ev_bands: [[0.0, 10.0]]
           kelly_bands: [[0.00001, 10.0]]
           model_prob_bands: [[0.0, 1.0]]
@@ -308,7 +308,7 @@ markets:
           american_odds_bands: [[-100000, 100000]]
           ev_bands: [[0.0, 10.0]]
           kelly_bands: [[0.00001, 10.0]]
-          model_prob_bands: [[0.0, 1.0]]
+          model_prob_bands: [[0.70, 1.0]]
           edge_bands: [[0.0, 10.0]]
 
         draw:
@@ -323,7 +323,7 @@ markets:
           american_odds_bands: [[-100000, 100000]]
           ev_bands: [[0.0, 10.0]]
           kelly_bands: [[0.00001, 10.0]]
-          model_prob_bands: [[0.0, 1.0]]
+          model_prob_bands: [[0.40, 1.0]]
           edge_bands: [[0.0, 10.0]]
 
         away:
@@ -338,7 +338,7 @@ markets:
           american_odds_bands: [[-100000, 100000]]
           ev_bands: [[0.0, 10.0]]
           kelly_bands: [[0.00001, 10.0]]
-          model_prob_bands: [[0.0, 1.0]]
+          model_prob_bands: [[0.70, 1.0]]
           edge_bands: [[0.0, 10.0]]
 #################################################
       btts:
@@ -356,9 +356,9 @@ markets:
           enabled: true
           odds_bands: [[1.0, 1000.0]]
           american_odds_bands: [[-100000, 100000]]
-          ev_bands: [[0.0, 10.0]]
+          ev_bands: [[0.05, 10.0]]
           kelly_bands: [[0.00001, 10.0]]
-          model_prob_bands: [[0.0, 1.0]]
+          model_prob_bands: [[0.60, 1.0]]
           edge_bands: [[0.0, 10.0]]
 
         "no":
@@ -367,7 +367,7 @@ markets:
           american_odds_bands: [[-100000, 100000]]
           ev_bands: [[0.0, 10.0]]
           kelly_bands: [[0.00001, 10.0]]
-          model_prob_bands: [[0.0, 1.0]]
+          model_prob_bands: [[0.70, 1.0]]
           edge_bands: [[0.0, 10.0]]
 #################################################
       total25:
@@ -394,7 +394,7 @@ markets:
           enabled: true
           odds_bands: [[1.0, 1000.0]]
           american_odds_bands: [[-100000, 100000]]
-          ev_bands: [[0.0, 10.0]]
+          ev_bands: [[0.0, 0.05], [0.10, 10.0]]
           kelly_bands: [[0.00001, 10.0]]
           model_prob_bands: [[0.0, 1.0]]
           edge_bands: [[0.0, 10.0]]
@@ -425,7 +425,7 @@ markets:
           american_odds_bands: [[-100000, 100000]]
           ev_bands: [[0.0, 10.0]]
           kelly_bands: [[0.00001, 10.0]]
-          model_prob_bands: [[0.0, 1.0]]
+          model_prob_bands: [[0.80, 0.90]]
           edge_bands: [[0.0, 10.0]]
 #######################################################################################################################
 #######################################################################################################################
@@ -450,7 +450,7 @@ markets:
           american_odds_bands: [[-100000, 100000]]
           ev_bands: [[0.0, 10.0]]
           kelly_bands: [[0.00001, 10.0]]
-          model_prob_bands: [[0.0, 1.0]]
+          model_prob_bands: [[0.20, 1.0]]
           edge_bands: [[0.0, 10.0]]
 
         draw:
@@ -465,7 +465,7 @@ markets:
           american_odds_bands: [[-100000, 100000]]
           ev_bands: [[0.0, 10.0]]
           kelly_bands: [[0.00001, 10.0]]
-          model_prob_bands: [[0.0, 1.0]]
+          model_prob_bands: [[0.40, 1.0]]
           edge_bands: [[0.0, 10.0]]
 
         away:
@@ -480,7 +480,7 @@ markets:
           american_odds_bands: [[-100000, 100000]]
           ev_bands: [[0.0, 10.0]]
           kelly_bands: [[0.00001, 10.0]]
-          model_prob_bands: [[0.0, 1.0]]
+          model_prob_bands: [[0.50, 1.0]]
           edge_bands: [[0.0, 10.0]]
 #################################################
       btts:
@@ -500,7 +500,7 @@ markets:
           american_odds_bands: [[-100000, 100000]]
           ev_bands: [[0.0, 10.0]]
           kelly_bands: [[0.00001, 10.0]]
-          model_prob_bands: [[0.0, 1.0]]
+          model_prob_bands: [[0.0, 0.50]]
           edge_bands: [[0.0, 10.0]]
 
         "no":
@@ -508,7 +508,7 @@ markets:
           odds_bands: [[1.0, 1000.0]]
           american_odds_bands: [[-100000, 100000]]
           ev_bands: [[0.0, 10.0]]
-          kelly_bands: [[0.00001, 10.0]]
+          kelly_bands: [[0.05, 0.10]]
           model_prob_bands: [[0.0, 1.0]]
           edge_bands: [[0.0, 10.0]]
 #################################################
@@ -527,13 +527,13 @@ markets:
           enabled: true
           odds_bands: [[1.0, 1000.0]]
           american_odds_bands: [[-100000, 100000]]
-          ev_bands: [[0.0, 10.0]]
+          ev_bands: [[0.10, 10.0]]
           kelly_bands: [[0.00001, 10.0]]
           model_prob_bands: [[0.0, 1.0]]
           edge_bands: [[0.0, 10.0]]
 
         under:
-          enabled: true
+          enabled: false
           odds_bands: [[1.0, 1000.0]]
           american_odds_bands: [[-100000, 100000]]
           ev_bands: [[0.0, 10.0]]
@@ -589,10 +589,10 @@ markets:
         home:
           enabled: true
           odds_bands: [[1.0, 1000.0]]
-          american_odds_bands: [[-100000, 100000]]
-          ev_bands: [[0.0, 10.0]]
+          american_odds_bands: [[-100000, 200]]
+          ev_bands: [[0.0, 0.20]]
           kelly_bands: [[0.00001, 10.0]]
-          model_prob_bands: [[0.0, 1.0]]
+          model_prob_bands: [[0.50, 1.0]]
           edge_bands: [[0.0, 10.0]]
 
         draw:
@@ -601,7 +601,7 @@ markets:
           american_odds_bands: [[-100000, 100000]]
           ev_bands: [[0.0, 10.0]]
           kelly_bands: [[0.00001, 10.0]]
-          model_prob_bands: [[0.0, 1.0]]
+          model_prob_bands: [[0.30, 1.0]]
           edge_bands: [[0.0, 10.0]]
           
         away:
@@ -610,7 +610,7 @@ markets:
           american_odds_bands: [[-100000, 100000]]
           ev_bands: [[0.0, 10.0]]
           kelly_bands: [[0.00001, 10.0]]
-          model_prob_bands: [[0.0, 1.0]]
+          model_prob_bands: [[0.50, 1.0]]
           edge_bands: [[0.0, 10.0]]
 #################################################
       btts:
@@ -627,8 +627,8 @@ markets:
         "yes":
           enabled: true
           odds_bands: [[1.0, 1000.0]]
-          american_odds_bands: [[-100000, 100000]]
-          ev_bands: [[0.0, 10.0]]
+          american_odds_bands: [[-100000, -150]]
+          ev_bands: [[0.0, 0.10], [0.20, 10.0]]
           kelly_bands: [[0.00001, 10.0]]
           model_prob_bands: [[0.0, 1.0]]
           edge_bands: [[0.0, 10.0]]
@@ -637,7 +637,7 @@ markets:
           enabled: true
           odds_bands: [[1.0, 1000.0]]
           american_odds_bands: [[-100000, 100000]]
-          ev_bands: [[0.0, 10.0]]
+          ev_bands: [[0.0, 0.10]]
           kelly_bands: [[0.00001, 10.0]]
           model_prob_bands: [[0.0, 1.0]]
           edge_bands: [[0.0, 10.0]]
@@ -657,9 +657,9 @@ markets:
           enabled: true
           odds_bands: [[1.0, 1000.0]]
           american_odds_bands: [[-100000, 100000]]
-          ev_bands: [[0.0, 10.0]]
+          ev_bands: [[0.25, 10.0]]
           kelly_bands: [[0.00001, 10.0]]
-          model_prob_bands: [[0.0, 1.0]]
+          model_prob_bands: [[0.70, 1.0]]
           edge_bands: [[0.0, 10.0]]
 
         under:
@@ -668,7 +668,7 @@ markets:
           american_odds_bands: [[-100000, 100000]]
           ev_bands: [[0.0, 10.0]]
           kelly_bands: [[0.00001, 10.0]]
-          model_prob_bands: [[0.0, 1.0]]
+          model_prob_bands: [[0.50, 1.0]]
           edge_bands: [[0.0, 10.0]]
 #################################################
       total35:
@@ -688,7 +688,7 @@ markets:
           american_odds_bands: [[-100000, 100000]]
           ev_bands: [[0.0, 10.0]]
           kelly_bands: [[0.00001, 10.0]]
-          model_prob_bands: [[0.0, 1.0]]
+          model_prob_bands: [[0.60, 1.0]]
           edge_bands: [[0.0, 10.0]]
 
         under:
@@ -770,7 +770,7 @@ markets:
           enabled: true
           odds_bands: [[1.0, 1000.0]]
           american_odds_bands: [[-100000, -149]]
-          ev_bands: [[0.0, 10.0]]
+          ev_bands: [[0.05, 10.0]]
           kelly_bands: [[0.00001, 10.0]]
           model_prob_bands: [[0.0, 1.0]]
           edge_bands: [[0.0, 10.0]]
@@ -808,7 +808,7 @@ markets:
           enabled: true
           odds_bands: [[1.0, 1000.0]]
           american_odds_bands: [[-100000, 200]]
-          ev_bands: [[0.0, 10.0]]
+          ev_bands: [[0.15, 10.0]]
           kelly_bands: [[0.00001, 10.0]]
           model_prob_bands: [[0.0, 1.0]]
           edge_bands: [[0.0, 10.0]]

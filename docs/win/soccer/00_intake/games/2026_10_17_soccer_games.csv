@@ -1,0 +1,36 @@
+game_id,sport,league,match_date,match_time,home_team,away_team
+401884764,soccer,bundesliga,2026_10_17,09:30 AM,Elversberg,Augsburg
+401884767,soccer,bundesliga,2026_10_17,09:30 AM,Hamburg,VfB Stuttgart
+401884765,soccer,bundesliga,2026_10_17,09:30 AM,Schalke,Mainz
+401884769,soccer,bundesliga,2026_10_17,09:30 AM,Union Berlin,Borussia Dortmund
+401884766,soccer,bundesliga,2026_10_17,09:30 AM,Werder Bremen,Paderborn
+401884772,soccer,bundesliga,2026_10_17,12:30 PM,Bayern Munich,RB Leipzig
+401878771,soccer,epl,2026_10_17,07:30 AM,Everton,Chelsea
+401879262,soccer,epl,2026_10_17,10:00 AM,Brentford,Liverpool
+401878770,soccer,epl,2026_10_17,10:00 AM,Fulham,Hull
+401879259,soccer,epl,2026_10_17,10:00 AM,Manchester City,Ipswich
+401879258,soccer,epl,2026_10_17,12:30 PM,Newcastle,Aston Villa
+401882838,soccer,laliga,2026_10_17,03:00 PM,Valencia,Athletic Club
+401882843,soccer,laliga,2026_10_17,08:00 AM,Espanyol,Atletico Madrid
+401882837,soccer,laliga,2026_10_17,10:15 AM,Villarreal,Elche
+401882846,soccer,laliga,2026_10_17,12:00 PM,Real Betis,Barcelona
+401876436,soccer,ligue1,2026_10_17,02:45 PM,Lille,Stade Brest
+401876431,soccer,ligue1,2026_10_17,02:45 PM,Troyes,Lens
+401876432,soccer,ligue1,2026_10_17,11:15 AM,Strasbourg,Paris Saint Germain
+761875,soccer,mls,2026_10_17,02:30 PM,Philadelphia Union,Charlotte FC
+761876,soccer,mls,2026_10_17,04:30 PM,Minnesota United,St Louis City
+761880,soccer,mls,2026_10_17,07:30 PM,Atlanta United,Inter Miami
+761879,soccer,mls,2026_10_17,07:30 PM,New England Revolution,Chicago Fire
+761877,soccer,mls,2026_10_17,07:30 PM,New York City FC,Los Angeles FC
+761878,soccer,mls,2026_10_17,07:30 PM,New York Red Bulls,Toronto FC
+761881,soccer,mls,2026_10_17,07:30 PM,Orlando City,DC United
+761882,soccer,mls,2026_10_17,08:30 PM,Austin FC,Vancouver Whitecaps
+761883,soccer,mls,2026_10_17,08:30 PM,Houston Dynamo,FC Dallas
+761884,soccer,mls,2026_10_17,08:30 PM,Sporting Kansas City,Real Salt Lake
+761887,soccer,mls,2026_10_17,10:30 PM,LA Galaxy,San Diego FC
+761888,soccer,mls,2026_10_17,10:30 PM,Portland Timbers,Colorado Rapids
+761886,soccer,mls,2026_10_17,10:30 PM,San Jose Earthquakes,Nashville SC
+761885,soccer,mls,2026_10_17,10:30 PM,Seattle Sounders,CF Montreal
+401874935,soccer,seriea,2026_10_17,02:45 PM,Roma,Genoa
+401874760,soccer,seriea,2026_10_17,09:00 AM,Venezia,Napoli
+401874953,soccer,seriea,2026_10_17,12:00 PM,Bologna,Inter Milan

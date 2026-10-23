@@ -1,0 +1,5 @@
+sport,league,game_id,match_date,match_time,home_team,away_team,dk_home_decimal,dk_draw_decimal,dk_away_decimal,dk_over25_decimal,dk_under25_decimal,dk_over35_decimal,dk_under35_decimal,btts_yes,btts_no
+soccer,laliga,401882839,2026_10_18,03:00 PM,Real Madrid,Sevilla,1.24,7.00,11.00,,,2.05,1.80,,
+soccer,laliga,401882840,2026_10_18,08:00 AM,Osasuna,Santander,2.00,3.70,3.60,1.67,2.20,,,,
+soccer,laliga,401882845,2026_10_18,10:15 AM,Celta Vigo,Alaves,2.30,3.10,3.45,2.45,1.56,,,,
+soccer,laliga,401882841,2026_10_18,12:30 PM,Malaga,Real Sociedad,3.30,3.60,2.15,1.67,2.20,,,,

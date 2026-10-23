@@ -1,4 +1,4 @@
-name: Soccer 01 Pipeline
+name: Soccer_01_Pipeline
 
 on:
   workflow_dispatch:

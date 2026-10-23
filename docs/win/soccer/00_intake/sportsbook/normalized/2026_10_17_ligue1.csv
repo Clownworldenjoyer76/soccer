@@ -1,0 +1,4 @@
+sport,league,game_id,match_date,match_time,home_team,away_team,dk_home_decimal,dk_draw_decimal,dk_away_decimal,dk_over25_decimal,dk_under25_decimal,dk_over35_decimal,dk_under35_decimal,btts_yes,btts_no
+soccer,ligue1,401876436,2026_10_17,02:45 PM,Lille,Stade Brest,2.00,3.75,3.60,1.71,2.10,,,,
+soccer,ligue1,401876431,2026_10_17,02:45 PM,Troyes,Lens,3.80,3.90,1.91,1.59,2.35,,,,
+soccer,ligue1,401876432,2026_10_17,11:15 AM,Strasbourg,Paris Saint Germain,6.50,5.50,1.40,,,1.83,1.95,,

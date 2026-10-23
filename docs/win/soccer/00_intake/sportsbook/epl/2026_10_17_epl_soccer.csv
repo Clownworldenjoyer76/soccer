@@ -1,0 +1,6 @@
+sport,league,game_id,match_date,match_time,home_team,away_team,dk_home_decimal,dk_draw_decimal,dk_away_decimal,dk_over25_decimal,dk_under25_decimal,dk_over35_decimal,dk_under35_decimal,btts_yes,btts_no
+soccer,epl,401878771,2026_10_17,07:30 AM,Everton,Chelsea,2.95,3.55,2.30,1.61,2.30,,,,
+soccer,epl,401879262,2026_10_17,10:00 AM,Brentford,Liverpool,2.40,3.60,2.80,,,2.35,1.61,,
+soccer,epl,401878770,2026_10_17,10:00 AM,Fulham,Hull,1.62,4.10,5.25,1.74,2.10,,,,
+soccer,epl,401879259,2026_10_17,10:00 AM,Manchester City,Ipswich,1.24,6.50,10.50,,,1.80,2.00,,
+soccer,epl,401879258,2026_10_17,12:30 PM,Newcastle,Aston Villa,2.25,3.70,3.00,,,2.40,1.57,,

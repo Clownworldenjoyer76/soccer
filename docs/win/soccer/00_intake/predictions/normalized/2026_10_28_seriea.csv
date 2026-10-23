@@ -1,0 +1,6 @@
+sport,league,game_id,match_date,match_time,home_team,away_team,home_prob,draw_prob,away_prob,home_xg,away_xg,expected_total_goals,identity_status,identity_reason,identity_detail
+soccer,seriea,,2026_10_28,01:30 PM,Milan,Bologna,0.614,0.213,0.173,1.97,0.94,2.91,unmatched,no_sportsbook_fixture,no exact games-master fixture found for league/date/teams
+soccer,seriea,,2026_10_28,01:30 PM,Venezia,Inter Milan,0.059,0.123,0.819,0.62,2.75,3.37,unmatched,no_sportsbook_fixture,no exact games-master fixture found for league/date/teams
+soccer,seriea,,2026_10_28,01:30 PM,Parma,Udinese,0.494,0.255,0.251,1.55,1.02,2.57,unmatched,no_sportsbook_fixture,no exact games-master fixture found for league/date/teams
+soccer,seriea,,2026_10_28,03:45 PM,Genoa,Juventus,0.238,0.261,0.501,0.94,1.5,2.44,unmatched,no_sportsbook_fixture,no exact games-master fixture found for league/date/teams
+soccer,seriea,,2026_10_28,03:45 PM,Monza,Napoli,0.068,0.132,0.8,0.67,2.7,3.37,unmatched,no_sportsbook_fixture,no exact games-master fixture found for league/date/teams

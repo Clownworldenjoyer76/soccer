@@ -1,0 +1,2 @@
+sport,league,game_id,match_date,match_time,home_team,away_team,home_prob,draw_prob,away_prob,home_xg,away_xg,expected_total_goals,identity_status,identity_reason,identity_detail
+soccer,bundesliga,401884761,2026_10_23,02:30 PM,VfB Stuttgart,Borussia Monchengladbach,0.678,0.178,0.143,2.38,1.0,3.38,matched,matched_game_id,

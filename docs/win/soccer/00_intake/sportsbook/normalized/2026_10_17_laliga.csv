@@ -1,0 +1,5 @@
+sport,league,game_id,match_date,match_time,home_team,away_team,dk_home_decimal,dk_draw_decimal,dk_away_decimal,dk_over25_decimal,dk_under25_decimal,dk_over35_decimal,dk_under35_decimal,btts_yes,btts_no
+soccer,laliga,401882838,2026_10_17,03:00 PM,Valencia,Athletic Club,3.20,3.30,2.35,2.10,1.74,,,,
+soccer,laliga,401882843,2026_10_17,08:00 AM,Espanyol,Atletico Madrid,4.80,4.10,1.67,1.69,2.20,,,,
+soccer,laliga,401882837,2026_10_17,10:15 AM,Villarreal,Elche,1.42,5.25,6.50,,,2.00,1.80,,
+soccer,laliga,401882846,2026_10_17,12:00 PM,Real Betis,Barcelona,5.75,5.50,1.45,,,,,,

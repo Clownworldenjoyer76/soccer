@@ -1,44 +1,84 @@
 {
   "counts": {
-    "edge_rows": 60,
+    "edge_rows": 20,
     "locked_bets": 0,
-    "merged_games": 15,
-    "prediction_games": 15,
-    "scheduled_games": 15,
+    "merged_games": 5,
+    "prediction_games": 5,
+    "scheduled_games": 5,
     "selected_bets": 1,
-    "sportsbook_games": 15
+    "sportsbook_games": 5
   },
   "fatal_errors": [],
-  "game_date_new_york": "2026_10_14",
-  "generated_at_utc": "2026-10-14T09:09:34.602790+00:00",
+  "game_date_new_york": "2026_10_23",
+  "generated_at_utc": "2026-10-23T09:11:36.005654+00:00",
   "paths": {
     "edges": [
-      "docs/win/soccer/03_edges/2026_10_14_mls_btts.csv",
-      "docs/win/soccer/03_edges/2026_10_14_mls_match_odds.csv",
-      "docs/win/soccer/03_edges/2026_10_14_mls_total_25.csv",
-      "docs/win/soccer/03_edges/2026_10_14_mls_total_35.csv"
+      "docs/win/soccer/03_edges/2026_10_23_bundesliga_btts.csv",
+      "docs/win/soccer/03_edges/2026_10_23_bundesliga_match_odds.csv",
+      "docs/win/soccer/03_edges/2026_10_23_bundesliga_total_25.csv",
+      "docs/win/soccer/03_edges/2026_10_23_bundesliga_total_35.csv",
+      "docs/win/soccer/03_edges/2026_10_23_epl_btts.csv",
+      "docs/win/soccer/03_edges/2026_10_23_epl_match_odds.csv",
+      "docs/win/soccer/03_edges/2026_10_23_epl_total_25.csv",
+      "docs/win/soccer/03_edges/2026_10_23_epl_total_35.csv",
+      "docs/win/soccer/03_edges/2026_10_23_laliga_btts.csv",
+      "docs/win/soccer/03_edges/2026_10_23_laliga_match_odds.csv",
+      "docs/win/soccer/03_edges/2026_10_23_laliga_total_25.csv",
+      "docs/win/soccer/03_edges/2026_10_23_laliga_total_35.csv",
+      "docs/win/soccer/03_edges/2026_10_23_ligue1_btts.csv",
+      "docs/win/soccer/03_edges/2026_10_23_ligue1_match_odds.csv",
+      "docs/win/soccer/03_edges/2026_10_23_ligue1_total_25.csv",
+      "docs/win/soccer/03_edges/2026_10_23_ligue1_total_35.csv",
+      "docs/win/soccer/03_edges/2026_10_23_seriea_btts.csv",
+      "docs/win/soccer/03_edges/2026_10_23_seriea_match_odds.csv",
+      "docs/win/soccer/03_edges/2026_10_23_seriea_total_25.csv",
+      "docs/win/soccer/03_edges/2026_10_23_seriea_total_35.csv"
     ],
     "games": [
-      "docs/win/soccer/00_intake/games/2026_10_14_soccer_games.csv"
+      "docs/win/soccer/00_intake/games/2026_10_23_soccer_games.csv"
     ],
     "locked": [],
     "merged": [
-      "docs/win/soccer/01_merge/2026_10_14_mls_btts.csv",
-      "docs/win/soccer/01_merge/2026_10_14_mls_match_odds.csv",
-      "docs/win/soccer/01_merge/2026_10_14_mls_total_25.csv",
-      "docs/win/soccer/01_merge/2026_10_14_mls_total_35.csv"
+      "docs/win/soccer/01_merge/2026_10_23_bundesliga_btts.csv",
+      "docs/win/soccer/01_merge/2026_10_23_bundesliga_match_odds.csv",
+      "docs/win/soccer/01_merge/2026_10_23_bundesliga_total_25.csv",
+      "docs/win/soccer/01_merge/2026_10_23_bundesliga_total_35.csv",
+      "docs/win/soccer/01_merge/2026_10_23_epl_btts.csv",
+      "docs/win/soccer/01_merge/2026_10_23_epl_match_odds.csv",
+      "docs/win/soccer/01_merge/2026_10_23_epl_total_25.csv",
+      "docs/win/soccer/01_merge/2026_10_23_epl_total_35.csv",
+      "docs/win/soccer/01_merge/2026_10_23_laliga_btts.csv",
+      "docs/win/soccer/01_merge/2026_10_23_laliga_match_odds.csv",
+      "docs/win/soccer/01_merge/2026_10_23_laliga_total_25.csv",
+      "docs/win/soccer/01_merge/2026_10_23_laliga_total_35.csv",
+      "docs/win/soccer/01_merge/2026_10_23_ligue1_btts.csv",
+      "docs/win/soccer/01_merge/2026_10_23_ligue1_match_odds.csv",
+      "docs/win/soccer/01_merge/2026_10_23_ligue1_total_25.csv",
+      "docs/win/soccer/01_merge/2026_10_23_ligue1_total_35.csv",
+      "docs/win/soccer/01_merge/2026_10_23_seriea_btts.csv",
+      "docs/win/soccer/01_merge/2026_10_23_seriea_match_odds.csv",
+      "docs/win/soccer/01_merge/2026_10_23_seriea_total_25.csv",
+      "docs/win/soccer/01_merge/2026_10_23_seriea_total_35.csv"
     ],
     "predictions": [
-      "docs/win/soccer/00_intake/predictions/normalized/2026_10_14_mls.csv"
+      "docs/win/soccer/00_intake/predictions/normalized/2026_10_23_bundesliga.csv",
+      "docs/win/soccer/00_intake/predictions/normalized/2026_10_23_epl.csv",
+      "docs/win/soccer/00_intake/predictions/normalized/2026_10_23_laliga.csv",
+      "docs/win/soccer/00_intake/predictions/normalized/2026_10_23_ligue1.csv",
+      "docs/win/soccer/00_intake/predictions/normalized/2026_10_23_seriea.csv"
     ],
     "selected": [
-      "docs/win/soccer/04_select/2026_10_14_soccer_bets.csv"
+      "docs/win/soccer/04_select/2026_10_23_soccer_bets.csv"
     ],
     "sportsbook": [
-      "docs/win/soccer/00_intake/sportsbook/normalized/2026_10_14_mls.csv"
+      "docs/win/soccer/00_intake/sportsbook/normalized/2026_10_23_bundesliga.csv",
+      "docs/win/soccer/00_intake/sportsbook/normalized/2026_10_23_epl.csv",
+      "docs/win/soccer/00_intake/sportsbook/normalized/2026_10_23_laliga.csv",
+      "docs/win/soccer/00_intake/sportsbook/normalized/2026_10_23_ligue1.csv",
+      "docs/win/soccer/00_intake/sportsbook/normalized/2026_10_23_seriea.csv"
     ]
   },
-  "report_date": "2026_10_14",
+  "report_date": "2026_10_23",
   "schema_version": 1,
   "sport": "soccer",
   "stage_status": [
@@ -52,13 +92,13 @@
       "exists": true,
       "name": "Name Normalization",
       "path": "docs/win/soccer/errors/00_intake/name_normalization.txt",
-      "status": "2026-10-14T09:06:43.733488+00:00 | STATUS: SUCCESS"
+      "status": "2026-10-23T09:07:27.441590+00:00 | STATUS: SUCCESS"
     },
     {
       "exists": true,
       "name": "Soccer Cleaner",
       "path": "docs/win/soccer/errors/00_intake/soccer_cleaner.txt",
-      "status": "2026-10-14T09:06:44.127738+00:00 | STATUS: SUCCESS WITH MISSING IDENTITY"
+      "status": "2026-10-23T09:07:27.911311+00:00 | STATUS: SUCCESS WITH MISSING IDENTITY"
     },
     {
       "exists": true,
@@ -99,80 +139,136 @@
     {
       "exists": true,
       "matched_files": [
-        "docs/win/soccer/00_intake/games/2026_10_14_soccer_games.csv"
+        "docs/win/soccer/00_intake/games/2026_10_23_soccer_games.csv"
       ],
       "name": "Games Master",
-      "path": "docs/win/soccer/00_intake/games/2026_10_14_soccer_games.csv",
+      "path": "docs/win/soccer/00_intake/games/2026_10_23_soccer_games.csv",
       "status": "STATUS: OUTPUT PRESENT"
     },
     {
       "exists": true,
       "matched_files": [
-        "docs/win/soccer/00_intake/predictions/normalized/2026_10_14_mls.csv"
+        "docs/win/soccer/00_intake/predictions/normalized/2026_10_23_bundesliga.csv",
+        "docs/win/soccer/00_intake/predictions/normalized/2026_10_23_epl.csv",
+        "docs/win/soccer/00_intake/predictions/normalized/2026_10_23_laliga.csv",
+        "docs/win/soccer/00_intake/predictions/normalized/2026_10_23_ligue1.csv",
+        "docs/win/soccer/00_intake/predictions/normalized/2026_10_23_seriea.csv"
       ],
       "name": "Normalized Predictions",
-      "path": "docs/win/soccer/00_intake/predictions/normalized/2026_10_14_*.csv",
+      "path": "docs/win/soccer/00_intake/predictions/normalized/2026_10_23_*.csv",
       "status": "STATUS: OUTPUT PRESENT"
     },
     {
       "exists": true,
       "matched_files": [
-        "docs/win/soccer/00_intake/sportsbook/normalized/2026_10_14_mls.csv"
+        "docs/win/soccer/00_intake/sportsbook/normalized/2026_10_23_bundesliga.csv",
+        "docs/win/soccer/00_intake/sportsbook/normalized/2026_10_23_epl.csv",
+        "docs/win/soccer/00_intake/sportsbook/normalized/2026_10_23_laliga.csv",
+        "docs/win/soccer/00_intake/sportsbook/normalized/2026_10_23_ligue1.csv",
+        "docs/win/soccer/00_intake/sportsbook/normalized/2026_10_23_seriea.csv"
       ],
       "name": "Normalized Sportsbook",
-      "path": "docs/win/soccer/00_intake/sportsbook/normalized/2026_10_14_*.csv",
+      "path": "docs/win/soccer/00_intake/sportsbook/normalized/2026_10_23_*.csv",
       "status": "STATUS: OUTPUT PRESENT"
     },
     {
       "exists": true,
       "matched_files": [
-        "docs/win/soccer/01_merge/2026_10_14_mls_btts.csv",
-        "docs/win/soccer/01_merge/2026_10_14_mls_match_odds.csv",
-        "docs/win/soccer/01_merge/2026_10_14_mls_total_25.csv",
-        "docs/win/soccer/01_merge/2026_10_14_mls_total_35.csv"
+        "docs/win/soccer/01_merge/2026_10_23_bundesliga_btts.csv",
+        "docs/win/soccer/01_merge/2026_10_23_bundesliga_match_odds.csv",
+        "docs/win/soccer/01_merge/2026_10_23_bundesliga_total_25.csv",
+        "docs/win/soccer/01_merge/2026_10_23_bundesliga_total_35.csv",
+        "docs/win/soccer/01_merge/2026_10_23_epl_btts.csv",
+        "docs/win/soccer/01_merge/2026_10_23_epl_match_odds.csv",
+        "docs/win/soccer/01_merge/2026_10_23_epl_total_25.csv",
+        "docs/win/soccer/01_merge/2026_10_23_epl_total_35.csv",
+        "docs/win/soccer/01_merge/2026_10_23_laliga_btts.csv",
+        "docs/win/soccer/01_merge/2026_10_23_laliga_match_odds.csv",
+        "docs/win/soccer/01_merge/2026_10_23_laliga_total_25.csv",
+        "docs/win/soccer/01_merge/2026_10_23_laliga_total_35.csv",
+        "docs/win/soccer/01_merge/2026_10_23_ligue1_btts.csv",
+        "docs/win/soccer/01_merge/2026_10_23_ligue1_match_odds.csv",
+        "docs/win/soccer/01_merge/2026_10_23_ligue1_total_25.csv",
+        "docs/win/soccer/01_merge/2026_10_23_ligue1_total_35.csv",
+        "docs/win/soccer/01_merge/2026_10_23_seriea_btts.csv",
+        "docs/win/soccer/01_merge/2026_10_23_seriea_match_odds.csv",
+        "docs/win/soccer/01_merge/2026_10_23_seriea_total_25.csv",
+        "docs/win/soccer/01_merge/2026_10_23_seriea_total_35.csv"
       ],
       "name": "Merge",
-      "path": "docs/win/soccer/01_merge/**/*2026_10_14*.csv",
+      "path": "docs/win/soccer/01_merge/**/*2026_10_23*.csv",
       "status": "STATUS: OUTPUT PRESENT"
     },
     {
       "exists": true,
       "matched_files": [
-        "docs/win/soccer/02_juice/2026_10_14_mls_btts.csv",
-        "docs/win/soccer/02_juice/2026_10_14_mls_match_odds.csv",
-        "docs/win/soccer/02_juice/2026_10_14_mls_total_25.csv",
-        "docs/win/soccer/02_juice/2026_10_14_mls_total_35.csv"
+        "docs/win/soccer/02_juice/2026_10_23_bundesliga_btts.csv",
+        "docs/win/soccer/02_juice/2026_10_23_bundesliga_match_odds.csv",
+        "docs/win/soccer/02_juice/2026_10_23_bundesliga_total_25.csv",
+        "docs/win/soccer/02_juice/2026_10_23_bundesliga_total_35.csv",
+        "docs/win/soccer/02_juice/2026_10_23_epl_btts.csv",
+        "docs/win/soccer/02_juice/2026_10_23_epl_match_odds.csv",
+        "docs/win/soccer/02_juice/2026_10_23_epl_total_25.csv",
+        "docs/win/soccer/02_juice/2026_10_23_epl_total_35.csv",
+        "docs/win/soccer/02_juice/2026_10_23_laliga_btts.csv",
+        "docs/win/soccer/02_juice/2026_10_23_laliga_match_odds.csv",
+        "docs/win/soccer/02_juice/2026_10_23_laliga_total_25.csv",
+        "docs/win/soccer/02_juice/2026_10_23_laliga_total_35.csv",
+        "docs/win/soccer/02_juice/2026_10_23_ligue1_btts.csv",
+        "docs/win/soccer/02_juice/2026_10_23_ligue1_match_odds.csv",
+        "docs/win/soccer/02_juice/2026_10_23_ligue1_total_25.csv",
+        "docs/win/soccer/02_juice/2026_10_23_ligue1_total_35.csv",
+        "docs/win/soccer/02_juice/2026_10_23_seriea_btts.csv",
+        "docs/win/soccer/02_juice/2026_10_23_seriea_match_odds.csv",
+        "docs/win/soccer/02_juice/2026_10_23_seriea_total_25.csv",
+        "docs/win/soccer/02_juice/2026_10_23_seriea_total_35.csv"
       ],
       "name": "Juice",
-      "path": "docs/win/soccer/02_juice/**/*2026_10_14*.csv",
+      "path": "docs/win/soccer/02_juice/**/*2026_10_23*.csv",
       "status": "STATUS: OUTPUT PRESENT"
     },
     {
       "exists": true,
       "matched_files": [
-        "docs/win/soccer/03_edges/2026_10_14_mls_btts.csv",
-        "docs/win/soccer/03_edges/2026_10_14_mls_match_odds.csv",
-        "docs/win/soccer/03_edges/2026_10_14_mls_total_25.csv",
-        "docs/win/soccer/03_edges/2026_10_14_mls_total_35.csv"
+        "docs/win/soccer/03_edges/2026_10_23_bundesliga_btts.csv",
+        "docs/win/soccer/03_edges/2026_10_23_bundesliga_match_odds.csv",
+        "docs/win/soccer/03_edges/2026_10_23_bundesliga_total_25.csv",
+        "docs/win/soccer/03_edges/2026_10_23_bundesliga_total_35.csv",
+        "docs/win/soccer/03_edges/2026_10_23_epl_btts.csv",
+        "docs/win/soccer/03_edges/2026_10_23_epl_match_odds.csv",
+        "docs/win/soccer/03_edges/2026_10_23_epl_total_25.csv",
+        "docs/win/soccer/03_edges/2026_10_23_epl_total_35.csv",
+        "docs/win/soccer/03_edges/2026_10_23_laliga_btts.csv",
+        "docs/win/soccer/03_edges/2026_10_23_laliga_match_odds.csv",
+        "docs/win/soccer/03_edges/2026_10_23_laliga_total_25.csv",
+        "docs/win/soccer/03_edges/2026_10_23_laliga_total_35.csv",
+        "docs/win/soccer/03_edges/2026_10_23_ligue1_btts.csv",
+        "docs/win/soccer/03_edges/2026_10_23_ligue1_match_odds.csv",
+        "docs/win/soccer/03_edges/2026_10_23_ligue1_total_25.csv",
+        "docs/win/soccer/03_edges/2026_10_23_ligue1_total_35.csv",
+        "docs/win/soccer/03_edges/2026_10_23_seriea_btts.csv",
+        "docs/win/soccer/03_edges/2026_10_23_seriea_match_odds.csv",
+        "docs/win/soccer/03_edges/2026_10_23_seriea_total_25.csv",
+        "docs/win/soccer/03_edges/2026_10_23_seriea_total_35.csv"
       ],
       "name": "Edges",
-      "path": "docs/win/soccer/03_edges/**/*2026_10_14*.csv",
+      "path": "docs/win/soccer/03_edges/**/*2026_10_23*.csv",
       "status": "STATUS: OUTPUT PRESENT"
     },
     {
       "exists": true,
       "matched_files": [
-        "docs/win/soccer/04_select/2026_10_14_soccer_bets.csv"
+        "docs/win/soccer/04_select/2026_10_23_soccer_bets.csv"
       ],
       "name": "Select",
-      "path": "docs/win/soccer/04_select/*2026_10_14*.csv",
+      "path": "docs/win/soccer/04_select/*2026_10_23*.csv",
       "status": "STATUS: OUTPUT PRESENT"
     },
     {
       "exists": false,
       "matched_files": [],
       "name": "Locked Select",
-      "path": "docs/win/soccer/04_select/locked/*2026_10_14*.csv",
+      "path": "docs/win/soccer/04_select/locked/*2026_10_23*.csv",
       "status": "STATUS: NO OUTPUT"
     }
   ],
@@ -182,8 +278,8 @@
     "name": "Soccer Pipeline",
     "ref_name": "main",
     "run_attempt": "1",
-    "run_id": "38539757646",
-    "sha": "a573b5f8dff82316b99b880edae4b0d599530ec3",
+    "run_id": "39929281148",
+    "sha": "2da66f474f1c5fb00c4746d16cd2307982539e5d",
     "status": "success"
   }
 }

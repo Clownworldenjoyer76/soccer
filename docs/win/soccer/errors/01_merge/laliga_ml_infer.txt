@@ -1,4 +1,4 @@
-LaLiga ML inference: processing 51 LaLiga merge date(s) through 2026_10_14.
+LaLiga ML inference: processing 56 LaLiga merge date(s) through 2026_10_23.
 LaLiga ML inference complete for 2026_04_10: 1 match prediction(s), 4 merge file(s) enriched.
   enriched 2026_04_10_laliga_match_odds.csv: 1 row(s)
   enriched 2026_04_10_laliga_total_25.csv: 1 row(s)
@@ -254,4 +254,29 @@ LaLiga ML inference complete for 2026_10_12: 1 match prediction(s), 4 merge file
   enriched 2026_10_12_laliga_total_25.csv: 1 row(s)
   enriched 2026_10_12_laliga_total_35.csv: 1 row(s)
   enriched 2026_10_12_laliga_btts.csv: 1 row(s)
-LaLiga ML historical inference complete: 51 date(s), 204 merge file(s), 528 total merged row(s) enriched.
+LaLiga ML inference complete for 2026_10_17: 4 match prediction(s), 4 merge file(s) enriched.
+  enriched 2026_10_17_laliga_match_odds.csv: 4 row(s)
+  enriched 2026_10_17_laliga_total_25.csv: 4 row(s)
+  enriched 2026_10_17_laliga_total_35.csv: 4 row(s)
+  enriched 2026_10_17_laliga_btts.csv: 4 row(s)
+LaLiga ML inference complete for 2026_10_18: 4 match prediction(s), 4 merge file(s) enriched.
+  enriched 2026_10_18_laliga_match_odds.csv: 4 row(s)
+  enriched 2026_10_18_laliga_total_25.csv: 4 row(s)
+  enriched 2026_10_18_laliga_total_35.csv: 4 row(s)
+  enriched 2026_10_18_laliga_btts.csv: 4 row(s)
+LaLiga ML inference complete for 2026_10_19: 1 match prediction(s), 4 merge file(s) enriched.
+  enriched 2026_10_19_laliga_match_odds.csv: 1 row(s)
+  enriched 2026_10_19_laliga_total_25.csv: 1 row(s)
+  enriched 2026_10_19_laliga_total_35.csv: 1 row(s)
+  enriched 2026_10_19_laliga_btts.csv: 1 row(s)
+LaLiga ML inference complete for 2026_10_21: 1 match prediction(s), 4 merge file(s) enriched.
+  enriched 2026_10_21_laliga_match_odds.csv: 1 row(s)
+  enriched 2026_10_21_laliga_total_25.csv: 1 row(s)
+  enriched 2026_10_21_laliga_total_35.csv: 1 row(s)
+  enriched 2026_10_21_laliga_btts.csv: 1 row(s)
+LaLiga ML inference complete for 2026_10_23: 1 match prediction(s), 4 merge file(s) enriched.
+  enriched 2026_10_23_laliga_match_odds.csv: 1 row(s)
+  enriched 2026_10_23_laliga_total_25.csv: 1 row(s)
+  enriched 2026_10_23_laliga_total_35.csv: 1 row(s)
+  enriched 2026_10_23_laliga_btts.csv: 1 row(s)
+LaLiga ML historical inference complete: 56 date(s), 224 merge file(s), 572 total merged row(s) enriched.

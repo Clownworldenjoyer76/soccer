@@ -1,4 +1,4 @@
-name: Soccer 02 Grade
+name: Soccer_02_Grade
 
 on:
   workflow_dispatch:

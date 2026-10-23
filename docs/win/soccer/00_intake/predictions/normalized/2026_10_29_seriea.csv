@@ -1,0 +1,3 @@
+sport,league,game_id,match_date,match_time,home_team,away_team,home_prob,draw_prob,away_prob,home_xg,away_xg,expected_total_goals,identity_status,identity_reason,identity_detail
+soccer,seriea,,2026_10_29,01:30 PM,Frosinone,Lecce,0.374,0.284,0.342,1.18,1.12,2.3,unmatched,no_sportsbook_fixture,no exact games-master fixture found for league/date/teams
+soccer,seriea,,2026_10_29,03:45 PM,Fiorentina,Atalanta,0.382,0.266,0.352,1.31,1.25,2.56,unmatched,no_sportsbook_fixture,no exact games-master fixture found for league/date/teams

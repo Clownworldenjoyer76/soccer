@@ -1,0 +1,5 @@
+sport,league,game_id,game_date,match_time,home_team,away_team,home_score,away_score
+soccer,laliga,401882838,2026_10_17,03:00 PM,Valencia,Athletic Club,0,0
+soccer,laliga,401882846,2026_10_17,12:30 PM,Real Betis,Barcelona,2,5
+soccer,laliga,401882837,2026_10_17,10:15 AM,Villarreal,Elche,0,0
+soccer,laliga,401882843,2026_10_17,08:00 AM,Espanyol,Atletico Madrid,0,1

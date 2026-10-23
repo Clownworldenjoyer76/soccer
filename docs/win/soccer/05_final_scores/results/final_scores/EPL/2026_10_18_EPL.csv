@@ -1,0 +1,5 @@
+sport,league,game_id,game_date,match_time,home_team,away_team,home_score,away_score
+soccer,epl,401878769,2026_10_18,11:30 AM,Nottingham Forest,Arsenal,0,1
+soccer,epl,401879260,2026_10_18,09:00 AM,Leeds,Manchester United,1,1
+soccer,epl,401879263,2026_10_18,09:00 AM,Bournemouth,Sunderland,2,0
+soccer,epl,401879261,2026_10_18,09:00 AM,Brighton,Crystal Palace,5,0

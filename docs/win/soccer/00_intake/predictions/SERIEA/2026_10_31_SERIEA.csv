@@ -1,0 +1,4 @@
+sport,league,match_date,match_time,home_team,away_team,home_prob,draw_prob,away_prob,home_xg,away_xg,expected_total_goals
+soccer,seriea,2026_10_31,10:00 AM,Bologna,Monza,86.0%,9.8%,4.2%,3.06,0.57,3.63
+soccer,seriea,2026_10_31,01:00 PM,Udinese,Roma,21.0%,23.5%,55.4%,0.98,1.75,2.73
+soccer,seriea,2026_10_31,03:45 PM,Milan,Inter Milan,39.3%,27.5%,33.1%,1.27,1.14,2.41

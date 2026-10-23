@@ -1,0 +1,2 @@
+sport,league,match_date,match_time,home_team,away_team,home_prob,draw_prob,away_prob,home_xg,away_xg,expected_total_goals
+soccer,epl,2026_11_01,11:30 AM,Liverpool,Arsenal,53.2%,24.0%,22.8%,1.71,1.03,2.74
