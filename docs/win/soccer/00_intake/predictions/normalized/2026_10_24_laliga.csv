@@ -1,5 +1,5 @@
 sport,league,game_id,match_date,match_time,home_team,away_team,home_prob,draw_prob,away_prob,home_xg,away_xg,expected_total_goals,identity_status,identity_reason,identity_detail
-soccer,laliga,,2026_10_24,08:00 AM,Vallecano,Elche,0.553,0.239,0.208,1.71,0.95,2.66,unmatched,no_sportsbook_fixture,no exact games-master fixture found for league/date/teams
-soccer,laliga,,2026_10_24,10:15 AM,Santander,Espanyol,0.357,0.304,0.338,1.04,1.0,2.04,unmatched,no_sportsbook_fixture,no exact games-master fixture found for league/date/teams
-soccer,laliga,,2026_10_24,12:30 PM,Valencia,Villarreal,0.3,0.27,0.43,1.09,1.36,2.45,unmatched,no_sportsbook_fixture,no exact games-master fixture found for league/date/teams
-soccer,laliga,,2026_10_24,03:00 PM,Atletico Madrid,Deportivo De La Coruna,0.813,0.122,0.065,2.85,0.71,3.56,unmatched,no_sportsbook_fixture,no exact games-master fixture found for league/date/teams
+soccer,laliga,401882830,2026_10_24,08:00 AM,Vallecano,Elche,0.553,0.239,0.208,1.71,0.95,2.66,matched,matched_game_id,
+soccer,laliga,401882831,2026_10_24,10:15 AM,Santander,Espanyol,0.357,0.304,0.338,1.04,1.0,2.04,matched,matched_game_id,
+soccer,laliga,401882827,2026_10_24,12:30 PM,Valencia,Villarreal,0.3,0.27,0.43,1.09,1.36,2.45,matched,matched_game_id,
+soccer,laliga,401882834,2026_10_24,03:00 PM,Atletico Madrid,Deportivo De La Coruna,0.813,0.122,0.065,2.85,0.71,3.56,matched,matched_game_id,

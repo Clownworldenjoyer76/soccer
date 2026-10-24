@@ -1,0 +1,5 @@
+sport,league,game_id,match_date,match_time,home_team,away_team,dk_home_decimal,dk_draw_decimal,dk_away_decimal,dk_over25_decimal,dk_under25_decimal,dk_over35_decimal,dk_under35_decimal,btts_yes,btts_no
+soccer,laliga,401882834,2026_10_24,03:00 PM,Atletico Madrid,Deportivo De La Coruna,1.27,6.00,10.50,,,2.40,1.57,,
+soccer,laliga,401882830,2026_10_24,08:00 AM,Vallecano,Elche,1.77,3.85,4.50,1.80,2.00,,,,
+soccer,laliga,401882831,2026_10_24,10:15 AM,Santander,Espanyol,2.30,3.65,2.95,1.62,2.30,,,,
+soccer,laliga,401882827,2026_10_24,12:30 PM,Valencia,Villarreal,3.35,3.60,2.10,1.71,2.15,,,,

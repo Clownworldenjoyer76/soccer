@@ -1,4 +1,4 @@
-Ligue 1 ML inference: processing 38 Ligue 1 merge date(s) through 2026_10_23.
+Ligue 1 ML inference: processing 39 Ligue 1 merge date(s) through 2026_10_24.
 Ligue 1 ML inference complete for 2026_04_10: 2 match prediction(s), 4 merge file(s) enriched.
   enriched 2026_04_10_ligue1_match_odds.csv: 2 row(s)
   enriched 2026_04_10_ligue1_total_25.csv: 2 row(s)
@@ -189,4 +189,9 @@ Ligue 1 ML inference complete for 2026_10_23: 1 match prediction(s), 4 merge fil
   enriched 2026_10_23_ligue1_total_25.csv: 1 row(s)
   enriched 2026_10_23_ligue1_total_35.csv: 1 row(s)
   enriched 2026_10_23_ligue1_btts.csv: 1 row(s)
-Ligue 1 ML historical inference complete: 38 date(s), 152 merge file(s), 436 total merged row(s) enriched.
+Ligue 1 ML inference complete for 2026_10_24: 1 match prediction(s), 4 merge file(s) enriched.
+  enriched 2026_10_24_ligue1_match_odds.csv: 1 row(s)
+  enriched 2026_10_24_ligue1_total_25.csv: 1 row(s)
+  enriched 2026_10_24_ligue1_total_35.csv: 1 row(s)
+  enriched 2026_10_24_ligue1_btts.csv: 1 row(s)
+Ligue 1 ML historical inference complete: 39 date(s), 156 merge file(s), 440 total merged row(s) enriched.

@@ -1,0 +1,7 @@
+sport,league,game_id,match_date,match_time,home_team,away_team,dk_home_decimal,dk_draw_decimal,dk_away_decimal,dk_over25_decimal,dk_under25_decimal,dk_over35_decimal,dk_under35_decimal,btts_yes,btts_no
+soccer,bundesliga,401884758,2026_10_24,09:30 AM,Augsburg,Union Berlin,1.80,3.90,3.75,,,2.15,1.67,,
+soccer,bundesliga,401884756,2026_10_24,09:30 AM,Koln,Schalke,2.05,3.60,3.20,1.67,2.15,,,,
+soccer,bundesliga,401884757,2026_10_24,09:30 AM,Mainz,Werder Bremen,1.71,3.95,4.10,,,2.35,1.57,,
+soccer,bundesliga,401884762,2026_10_24,09:30 AM,RB Leipzig,Elversberg,1.39,5.00,6.00,,,1.69,2.15,,
+soccer,bundesliga,401884755,2026_10_24,09:30 AM,Paderborn,Hamburg,,,,,,,,,
+soccer,bundesliga,401884763,2026_10_24,12:30 PM,Borussia Dortmund,Eintracht Frankfurt,1.47,4.70,5.25,,,1.95,1.83,,

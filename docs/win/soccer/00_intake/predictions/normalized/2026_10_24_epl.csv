@@ -1,5 +1,5 @@
 sport,league,game_id,match_date,match_time,home_team,away_team,home_prob,draw_prob,away_prob,home_xg,away_xg,expected_total_goals,identity_status,identity_reason,identity_detail
-soccer,epl,,2026_10_24,07:30 AM,Aston Villa,Manchester City,0.213,0.243,0.544,0.94,1.67,2.61,unmatched,no_sportsbook_fixture,no exact games-master fixture found for league/date/teams
-soccer,epl,,2026_10_24,10:00 AM,Coventry,Fulham,0.315,0.277,0.408,1.09,1.28,2.37,unmatched,no_sportsbook_fixture,no exact games-master fixture found for league/date/teams
-soccer,epl,,2026_10_24,10:00 AM,Arsenal,Everton,0.719,0.17,0.111,2.36,0.81,3.17,unmatched,no_sportsbook_fixture,no exact games-master fixture found for league/date/teams
-soccer,epl,,2026_10_24,12:30 PM,Chelsea,Tottenham Hotspur,0.547,0.225,0.228,1.87,1.14,3.01,unmatched,no_sportsbook_fixture,no exact games-master fixture found for league/date/teams
+soccer,epl,401879256,2026_10_24,07:30 AM,Aston Villa,Manchester City,0.213,0.243,0.544,0.94,1.67,2.61,matched,matched_game_id,
+soccer,epl,401879255,2026_10_24,10:00 AM,Coventry,Fulham,0.315,0.277,0.408,1.09,1.28,2.37,matched,matched_game_id,
+soccer,epl,401878768,2026_10_24,10:00 AM,Arsenal,Everton,0.719,0.17,0.111,2.36,0.81,3.17,matched,matched_game_id,
+soccer,epl,401878767,2026_10_24,12:30 PM,Chelsea,Tottenham Hotspur,0.547,0.225,0.228,1.87,1.14,3.01,matched,matched_game_id,

@@ -1,0 +1,5 @@
+sport,league,game_id,match_date,match_time,home_team,away_team,dk_home_decimal,dk_draw_decimal,dk_away_decimal,dk_over25_decimal,dk_under25_decimal,dk_over35_decimal,dk_under35_decimal,btts_yes,btts_no
+soccer,epl,401879256,2026_10_24,07:30 AM,Aston Villa,Manchester City,4.80,4.30,1.65,,,2.10,1.74,,
+soccer,epl,401878768,2026_10_24,10:00 AM,Arsenal,Everton,1.43,4.50,7.50,1.74,2.10,,,,
+soccer,epl,401879255,2026_10_24,10:00 AM,Coventry,Fulham,3.15,3.45,2.25,1.74,2.10,,,,
+soccer,epl,401878767,2026_10_24,12:30 PM,Chelsea,Tottenham Hotspur,1.95,3.80,3.75,1.57,2.40,,,,

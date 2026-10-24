@@ -1,0 +1,34 @@
+game_id,sport,league,match_date,match_time,home_team,away_team
+401884758,soccer,bundesliga,2026_10_24,09:30 AM,Augsburg,Union Berlin
+401884756,soccer,bundesliga,2026_10_24,09:30 AM,Koln,Schalke
+401884757,soccer,bundesliga,2026_10_24,09:30 AM,Mainz,Werder Bremen
+401884755,soccer,bundesliga,2026_10_24,09:30 AM,Paderborn,Hamburg
+401884762,soccer,bundesliga,2026_10_24,09:30 AM,RB Leipzig,Elversberg
+401884763,soccer,bundesliga,2026_10_24,12:30 PM,Borussia Dortmund,Eintracht Frankfurt
+401879256,soccer,epl,2026_10_24,07:30 AM,Aston Villa,Manchester City
+401878768,soccer,epl,2026_10_24,10:00 AM,Arsenal,Everton
+401879255,soccer,epl,2026_10_24,10:00 AM,Coventry,Fulham
+401878767,soccer,epl,2026_10_24,12:30 PM,Chelsea,Tottenham Hotspur
+401882834,soccer,laliga,2026_10_24,03:00 PM,Atletico Madrid,Deportivo De La Coruna
+401882830,soccer,laliga,2026_10_24,08:00 AM,Vallecano,Elche
+401882831,soccer,laliga,2026_10_24,10:15 AM,Santander,Espanyol
+401882827,soccer,laliga,2026_10_24,12:30 PM,Valencia,Villarreal
+401876427,soccer,ligue1,2026_10_24,02:45 PM,Lens,Paris FC
+761903,soccer,mls,2026_10_24,01:30 PM,CF Montreal,Nashville SC
+761890,soccer,mls,2026_10_24,03:30 PM,Columbus Crew,Toronto FC
+761891,soccer,mls,2026_10_24,05:30 PM,New York Red Bulls,Inter Miami
+761893,soccer,mls,2026_10_24,07:30 PM,Atlanta United,Chicago Fire
+761895,soccer,mls,2026_10_24,07:30 PM,DC United,FC Cincinnati
+761892,soccer,mls,2026_10_24,07:30 PM,Orlando City,New York City FC
+761894,soccer,mls,2026_10_24,07:30 PM,Philadelphia Union,New England Revolution
+761900,soccer,mls,2026_10_24,08:30 PM,FC Dallas,San Jose Earthquakes
+761896,soccer,mls,2026_10_24,08:30 PM,Houston Dynamo,Minnesota United
+761899,soccer,mls,2026_10_24,08:30 PM,Sporting Kansas City,Austin FC
+761897,soccer,mls,2026_10_24,09:30 PM,Colorado Rapids,Vancouver Whitecaps
+761898,soccer,mls,2026_10_24,09:30 PM,Real Salt Lake,St Louis City
+761902,soccer,mls,2026_10_24,10:30 PM,Portland Timbers,Charlotte FC
+761901,soccer,mls,2026_10_24,10:30 PM,San Diego FC,Seattle Sounders
+401874955,soccer,seriea,2026_10_24,02:45 PM,Lazio,Parma
+401874958,soccer,seriea,2026_10_24,09:00 AM,Cagliari,Bologna
+401874961,soccer,seriea,2026_10_24,09:00 AM,Como,Sassuolo
+401874948,soccer,seriea,2026_10_24,12:00 PM,Napoli,Roma
