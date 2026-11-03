@@ -115,7 +115,7 @@ markets:
           edge_bands: [[0.0, 10.0]]
 #################################################
       total35:
-        enabled: true
+        enabled: false
         selection_mode: best
         pick_preference: { metric: model_prob, direction: max }
         ml_filter:
@@ -126,7 +126,7 @@ markets:
           reject_skip_at_or_above: 0.5
           #################################################
         over:
-          enabled: true
+          enabled: false
           odds_bands: [[1.0, 1000.0]]
           american_odds_bands: [[-100000, 199.99]]
           ev_bands: [[0.0, 10.0]]
@@ -135,7 +135,7 @@ markets:
           edge_bands: [[0.0, 10.0]]
 
         under:
-          enabled: true
+          enabled: false
           odds_bands: [[1.0, 1000.0]]
           american_odds_bands: [[-100000, 100000]]
           ev_bands: [[0.25, 10.0]]
@@ -199,7 +199,7 @@ markets:
           edge_bands: [[0.0, 10.0]]
 #################################################
       btts:
-        enabled: true
+        enabled: false
         selection_mode: best
         pick_preference: { metric: model_prob, direction: max }
         ml_filter:
@@ -211,7 +211,7 @@ markets:
           #################################################
 
         "yes":
-          enabled: true
+          enabled: false
           odds_bands: [[1.0, 1000.0]]
           american_odds_bands: [[-100000, 100]]
           ev_bands: [[0.0, 10.0]]
@@ -220,7 +220,7 @@ markets:
           edge_bands: [[0.0, 10.0]]
           
         "no":
-          enabled: true
+          enabled: false
           odds_bands: [[1.0, 1000.0]]
           american_odds_bands: [[-100000, 149]]
           ev_bands: [[0.0, 10.0]]
@@ -382,7 +382,7 @@ markets:
           reject_skip_at_or_above: 0.5
           #################################################
         over:
-          enabled: true
+          enabled: false
           odds_bands: [[1.0, 1000.0]]
           american_odds_bands: [[-100000, 100000]]
           ev_bands: [[0.0, 10.0]]
@@ -524,7 +524,7 @@ markets:
           reject_skip_at_or_above: 0.5
           #################################################
         over:
-          enabled: true
+          enabled: false
           odds_bands: [[1.0, 1000.0]]
           american_odds_bands: [[-100000, 100000]]
           ev_bands: [[0.10, 10.0]]
@@ -657,7 +657,7 @@ markets:
           enabled: true
           odds_bands: [[1.0, 1000.0]]
           american_odds_bands: [[-100000, 100000]]
-          ev_bands: [[0.25, 10.0]]
+          ev_bands: [[0.25, 0.35]]
           kelly_bands: [[0.00001, 10.0]]
           model_prob_bands: [[0.70, 1.0]]
           edge_bands: [[0.0, 10.0]]
