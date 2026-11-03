@@ -1,0 +1,150 @@
+{
+  "counts": {
+    "edge_rows": 0,
+    "locked_bets": 0,
+    "merged_games": 0,
+    "prediction_games": 0,
+    "scheduled_games": 0,
+    "selected_bets": 0,
+    "sportsbook_games": 0
+  },
+  "fatal_errors": [],
+  "game_date_new_york": "2026_11_03",
+  "generated_at_utc": "2026-11-03T14:03:00.306630+00:00",
+  "paths": {
+    "edges": [],
+    "games": [
+      "docs/win/soccer/00_intake/games/2026_11_03_soccer_games.csv"
+    ],
+    "locked": [],
+    "merged": [],
+    "predictions": [],
+    "selected": [],
+    "sportsbook": []
+  },
+  "report_date": "2026_11_03",
+  "schema_version": 1,
+  "sport": "soccer",
+  "stage_status": [
+    {
+      "exists": true,
+      "name": "ESPN Endpoint Diagnostic",
+      "path": "docs/win/soccer/errors/00_intake/espn_endpoint_diagnostic.txt",
+      "status": "STATUS: LOG PRESENT"
+    },
+    {
+      "exists": true,
+      "name": "Name Normalization",
+      "path": "docs/win/soccer/errors/00_intake/name_normalization.txt",
+      "status": "2026-11-03T14:00:37.208071+00:00 | STATUS: SUCCESS"
+    },
+    {
+      "exists": true,
+      "name": "Soccer Cleaner",
+      "path": "docs/win/soccer/errors/00_intake/soccer_cleaner.txt",
+      "status": "2026-11-03T14:00:37.468089+00:00 | STATUS: SUCCESS WITH MISSING IDENTITY"
+    },
+    {
+      "exists": true,
+      "name": "EPL ML Inference",
+      "path": "docs/win/soccer/errors/01_merge/epl_ml_infer.txt",
+      "status": "STATUS: LOG PRESENT"
+    },
+    {
+      "exists": true,
+      "name": "Bundesliga ML Inference",
+      "path": "docs/win/soccer/errors/01_merge/bundesliga_ml_infer.txt",
+      "status": "STATUS: LOG PRESENT"
+    },
+    {
+      "exists": true,
+      "name": "La Liga ML Inference",
+      "path": "docs/win/soccer/errors/01_merge/laliga_ml_infer.txt",
+      "status": "STATUS: LOG PRESENT"
+    },
+    {
+      "exists": true,
+      "name": "Serie A ML Inference",
+      "path": "docs/win/soccer/errors/01_merge/seriea_ml_infer.txt",
+      "status": "STATUS: LOG PRESENT"
+    },
+    {
+      "exists": true,
+      "name": "Ligue 1 ML Inference",
+      "path": "docs/win/soccer/errors/01_merge/ligue1_ml_infer.txt",
+      "status": "STATUS: LOG PRESENT"
+    },
+    {
+      "exists": true,
+      "name": "MLS ML Inference",
+      "path": "docs/win/soccer/errors/01_merge/mls_ml_infer.txt",
+      "status": "STATUS: LOG PRESENT"
+    },
+    {
+      "exists": false,
+      "matched_files": [],
+      "name": "Games Master",
+      "path": "docs/win/soccer/00_intake/games/2026_11_03_soccer_games.csv",
+      "status": "STATUS: NO OUTPUT"
+    },
+    {
+      "exists": false,
+      "matched_files": [],
+      "name": "Normalized Predictions",
+      "path": "docs/win/soccer/00_intake/predictions/normalized/2026_11_03_*.csv",
+      "status": "STATUS: NO OUTPUT"
+    },
+    {
+      "exists": false,
+      "matched_files": [],
+      "name": "Normalized Sportsbook",
+      "path": "docs/win/soccer/00_intake/sportsbook/normalized/2026_11_03_*.csv",
+      "status": "STATUS: NO OUTPUT"
+    },
+    {
+      "exists": false,
+      "matched_files": [],
+      "name": "Merge",
+      "path": "docs/win/soccer/01_merge/**/*2026_11_03*.csv",
+      "status": "STATUS: NO OUTPUT"
+    },
+    {
+      "exists": false,
+      "matched_files": [],
+      "name": "Juice",
+      "path": "docs/win/soccer/02_juice/**/*2026_11_03*.csv",
+      "status": "STATUS: NO OUTPUT"
+    },
+    {
+      "exists": false,
+      "matched_files": [],
+      "name": "Edges",
+      "path": "docs/win/soccer/03_edges/**/*2026_11_03*.csv",
+      "status": "STATUS: NO OUTPUT"
+    },
+    {
+      "exists": false,
+      "matched_files": [],
+      "name": "Select",
+      "path": "docs/win/soccer/04_select/*2026_11_03*.csv",
+      "status": "STATUS: NO OUTPUT"
+    },
+    {
+      "exists": false,
+      "matched_files": [],
+      "name": "Locked Select",
+      "path": "docs/win/soccer/04_select/locked/*2026_11_03*.csv",
+      "status": "STATUS: NO OUTPUT"
+    }
+  ],
+  "status": "healthy",
+  "warnings": [],
+  "workflow": {
+    "name": "Soccer Pipeline",
+    "ref_name": "main",
+    "run_attempt": "1",
+    "run_id": "41649416178",
+    "sha": "27735c7a664ad661d25e22c55bae8b8034bb617f",
+    "status": "success"
+  }
+}

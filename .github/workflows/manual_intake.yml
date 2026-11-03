@@ -1,0 +1,116 @@
+
+name: _Manual Intake
+
+on:
+  workflow_dispatch:
+    inputs:
+      league:
+        description: "League"
+        required: true
+        type: string
+      market:
+        description: "Market"
+        required: true
+        type: string
+      source:
+        description: "Source"
+        required: true
+        type: string
+      raw_text:
+        description: "Raw pasted data"
+        required: true
+        type: string
+
+permissions:
+  contents: write
+
+jobs:
+  intake:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repo
+        uses: actions/checkout@v7
+        with:
+          fetch-depth: 1
+          sparse-checkout: |
+            docs/win/soccer
+          sparse-checkout-cone-mode: true
+
+      - name: Setup Python
+        uses: actions/setup-python@v7
+        with:
+          python-version: "3.11"
+
+      - name: Validate dispatch inputs
+        shell: bash
+        env:
+          LEAGUE: ${{ inputs.league }}
+          SOURCE: ${{ inputs.source }}
+        run: |
+          if [ "$LEAGUE" != "soccer" ]; then
+            echo "Unsupported league: $LEAGUE"
+            exit 1
+          fi
+
+          case "$SOURCE" in
+            Predictions|"Soccer Totals") ;;
+            *)
+              echo "Unsupported source: $SOURCE"
+              exit 1
+              ;;
+          esac
+
+      - name: Run Soccer Predictions Parser
+        if: ${{ inputs.source == 'Predictions' }}
+        shell: bash
+        env:
+          RAW_TEXT: ${{ inputs.raw_text }}
+          MARKET: ${{ inputs.market }}
+        run: |
+          RAW_FILE="$RUNNER_TEMP/manual_soccer_pred_raw.txt"
+          printf '%s\n' "$RAW_TEXT" > "$RAW_FILE"
+
+          python docs/win/soccer/scripts/00_intake/manual_soccer_pred.py \
+            --market "$MARKET" \
+            --raw-file "$RAW_FILE"
+
+      - name: Run Soccer Scores Parser
+        if: ${{ inputs.source == 'Soccer Totals' }}
+        shell: bash
+        env:
+          RAW_TEXT: ${{ inputs.raw_text }}
+          MARKET: ${{ inputs.market }}
+        run: |
+          RAW_FILE="$RUNNER_TEMP/manual_soccer_scores_raw.txt"
+          printf '%s\n' "$RAW_TEXT" > "$RAW_FILE"
+
+          python docs/win/soccer/scripts/00_intake/manual_soccer_scores.py \
+            --market "$MARKET" \
+            --raw-file "$RAW_FILE"
+
+      - name: Commit Changes
+        shell: bash
+        env:
+          SOURCE: ${{ inputs.source }}
+        run: |
+          git config user.name "github-actions"
+          git config user.email "github-actions@github.com"
+
+          if [ "$SOURCE" = "Predictions" ]; then
+            git add -A -- docs/win/soccer/00_intake/predictions/
+            COMMIT_MESSAGE="Add manual soccer prediction data"
+          elif [ "$SOURCE" = "Soccer Totals" ]; then
+            git add -A -- docs/win/soccer/05_final_scores/results/final_scores_dirty/
+            COMMIT_MESSAGE="Add manual soccer final scores"
+          else
+            echo "Unsupported source: $SOURCE"
+            exit 1
+          fi
+
+          if git diff --cached --quiet; then
+            echo "No changes to commit."
+          else
+            git commit -m "$COMMIT_MESSAGE"
+            git push
+          fi

@@ -1,0 +1,24 @@
+name: Soccer Frontend
+
+on:
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  frontend:
+    runs-on: ubuntu-24.04
+    steps:
+      - uses: actions/checkout@v7
+
+      - name: Build frontend files
+        run: python3 docs/win/soccer/scripts/frontend.py
+
+      - name: Commit and push
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add frontend/soccer_slate.csv frontend/soccer_final.csv
+          git diff --cached --quiet || git commit -m "Update soccer frontend files"
+          git push
