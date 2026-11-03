@@ -1,0 +1,6 @@
+sport,league,game_id,match_date,match_time,home_team,away_team,dk_home_decimal,dk_draw_decimal,dk_away_decimal,dk_over25_decimal,dk_under25_decimal,dk_over35_decimal,dk_under35_decimal,btts_yes,btts_no
+soccer,epl,401879254,2026_10_25,10:00 AM,Crystal Palace,Newcastle,2.80,3.65,2.40,,,2.35,1.59,,
+soccer,epl,401878766,2026_10_25,10:00 AM,Hull,Brentford,5.00,4.10,1.65,1.67,2.25,,,,
+soccer,epl,401878765,2026_10_25,10:00 AM,Liverpool,Brighton,2.15,3.80,3.20,,,2.40,1.59,,
+soccer,epl,401879252,2026_10_25,10:00 AM,Manchester United,Bournemouth,2.25,3.55,3.10,1.67,2.20,,,,
+soccer,epl,401878764,2026_10_25,12:30 PM,Sunderland,Leeds,2.90,3.20,2.60,2.15,1.71,,,,

@@ -1,0 +1,10 @@
+sport,league,game_id,match_date,match_time,home_team,away_team,dk_home_decimal,dk_draw_decimal,dk_away_decimal,dk_over25_decimal,dk_under25_decimal,dk_over35_decimal,dk_under35_decimal,btts_yes,btts_no
+soccer,mls,761922,2026_10_31,01:00 PM,Charlotte FC,Orlando City,1.83,4.30,3.35,,,1.65,2.25,,
+soccer,mls,761924,2026_10_31,02:00 PM,Columbus Crew,DC United,1.41,4.90,6.00,,,2.10,1.71,,
+soccer,mls,761919,2026_10_31,02:00 PM,FC Cincinnati,Philadelphia Union,2.35,3.80,2.55,,,2.05,1.74,,
+soccer,mls,761930,2026_10_31,02:00 PM,New York City FC,CF Montreal,1.43,4.60,6.00,,,2.35,1.59,1.71,2.10
+soccer,mls,761928,2026_10_31,03:00 PM,Sporting Kansas City,FC Dallas,3.55,3.90,1.83,,,2.20,1.65,,
+soccer,mls,761926,2026_10_31,03:00 PM,St Louis City,San Diego FC,1.87,4.10,3.25,,,1.95,1.80,1.38,3.00
+soccer,mls,761925,2026_10_31,05:00 PM,LA Galaxy,Austin FC,1.48,4.70,5.25,,,2.00,1.80,,
+soccer,mls,761929,2026_10_31,05:00 PM,San Jose Earthquakes,Real Salt Lake,2.30,3.75,2.60,,,2.20,1.67,1.41,2.85
+soccer,mls,761923,2026_10_31,09:30 PM,Colorado Rapids,Chicago Fire,2.25,3.55,2.80,1.59,2.35,,,,

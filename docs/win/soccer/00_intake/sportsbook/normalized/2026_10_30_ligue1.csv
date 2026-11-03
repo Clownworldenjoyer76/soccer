@@ -1,0 +1,4 @@
+sport,league,game_id,match_date,match_time,home_team,away_team,dk_home_decimal,dk_draw_decimal,dk_away_decimal,dk_over25_decimal,dk_under25_decimal,dk_over35_decimal,dk_under35_decimal,btts_yes,btts_no
+soccer,ligue1,401876421,2026_10_30,02:00 PM,Le Havre,Paris Saint Germain,8.00,6.00,1.31,,,2.00,1.80,,
+soccer,ligue1,401876416,2026_10_30,02:00 PM,Nice,Rennes,2.55,3.60,2.65,1.62,2.25,,,,
+soccer,ligue1,401876420,2026_10_30,04:05 PM,Lille,Lens,2.80,3.35,2.55,1.87,1.91,,,,

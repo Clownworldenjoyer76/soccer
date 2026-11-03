@@ -1,4 +1,4 @@
 sport,league,game_id,match_date,match_time,home_team,away_team,home_prob,draw_prob,away_prob,home_xg,away_xg,expected_total_goals,identity_status,identity_reason,identity_detail
-soccer,seriea,,2026_10_27,01:30 PM,Sassuolo,Lazio,0.383,0.263,0.354,1.34,1.27,2.61,unmatched,no_sportsbook_fixture,no exact games-master fixture found for league/date/teams
-soccer,seriea,,2026_10_27,03:45 PM,Roma,Cagliari,0.757,0.154,0.09,2.49,0.73,3.22,unmatched,no_sportsbook_fixture,no exact games-master fixture found for league/date/teams
-soccer,seriea,,2026_10_27,03:45 PM,Torino,Como,0.394,0.278,0.328,1.25,1.12,2.37,unmatched,no_sportsbook_fixture,no exact games-master fixture found for league/date/teams
+soccer,seriea,401874980,2026_10_27,01:30 PM,Sassuolo,Lazio,0.303,0.26,0.437,1.16,1.45,2.61,matched,matched_game_id,
+soccer,seriea,401874780,2026_10_27,03:45 PM,Roma,Cagliari,0.745,0.158,0.096,2.46,0.76,3.22,matched,matched_game_id,
+soccer,seriea,401874786,2026_10_27,03:45 PM,Torino,Como,0.207,0.259,0.534,0.84,1.53,2.37,matched,matched_game_id,

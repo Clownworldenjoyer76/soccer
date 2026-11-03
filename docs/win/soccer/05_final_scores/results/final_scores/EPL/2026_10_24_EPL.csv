@@ -1,0 +1,5 @@
+sport,league,game_id,game_date,match_time,home_team,away_team,home_score,away_score
+soccer,epl,401878767,2026_10_24,12:30 PM,Chelsea,Tottenham Hotspur,0,2
+soccer,epl,401878768,2026_10_24,10:00 AM,Arsenal,Everton,2,0
+soccer,epl,401879255,2026_10_24,10:00 AM,Coventry,Fulham,0,1
+soccer,epl,401879256,2026_10_24,07:30 AM,Aston Villa,Manchester City,2,1

@@ -1,0 +1,24 @@
+game_id,sport,league,match_date,match_time,home_team,away_team
+401884760,soccer,bundesliga,2026_10_25,10:30 AM,Hoffenheim,Leverkusen
+401884759,soccer,bundesliga,2026_10_25,12:30 PM,Freiburg,Bayern Munich
+401879254,soccer,epl,2026_10_25,10:00 AM,Crystal Palace,Newcastle
+401878766,soccer,epl,2026_10_25,10:00 AM,Hull,Brentford
+401878765,soccer,epl,2026_10_25,10:00 AM,Liverpool,Brighton
+401879252,soccer,epl,2026_10_25,10:00 AM,Manchester United,Bournemouth
+401878764,soccer,epl,2026_10_25,12:30 PM,Sunderland,Leeds
+401882829,soccer,laliga,2026_10_25,01:30 PM,Real Sociedad,Levante
+401882832,soccer,laliga,2026_10_25,04:00 PM,Barcelona,Real Madrid
+401882835,soccer,laliga,2026_10_25,09:00 AM,Athletic Club,Getafe
+401882833,soccer,laliga,2026_10_25,11:15 AM,Celta Vigo,Real Betis
+401876425,soccer,ligue1,2026_10_25,10:00 AM,Monaco,Lille
+401876430,soccer,ligue1,2026_10_25,12:15 PM,Angers,Lorient
+401876429,soccer,ligue1,2026_10_25,12:15 PM,Auxerre,Le Mans
+401876426,soccer,ligue1,2026_10_25,12:15 PM,Marseille,Le Havre
+401876424,soccer,ligue1,2026_10_25,12:15 PM,Rennes,Strasbourg
+401876423,soccer,ligue1,2026_10_25,12:15 PM,Toulouse,Troyes
+761904,soccer,mls,2026_10_25,09:00 PM,Los Angeles FC,LA Galaxy
+401874772,soccer,seriea,2026_10_25,01:00 PM,Lecce,Juventus
+401874779,soccer,seriea,2026_10_25,03:45 PM,Udinese,Milan
+401875036,soccer,seriea,2026_10_25,07:30 AM,Inter Milan,Fiorentina
+401874972,soccer,seriea,2026_10_25,10:00 AM,Atalanta,Frosinone
+401874952,soccer,seriea,2026_10_25,10:00 AM,Genoa,Venezia

@@ -1,4 +1,4 @@
-MLS ML inference: processing 50 MLS merge date(s) through 2026_10_24.
+MLS ML inference: processing 54 MLS merge date(s) through 2026_11_03.
 MLS ML inference complete for 2026_04_11: 7 match prediction(s), 4 merge file(s) enriched.
   enriched 2026_04_11_mls_match_odds.csv: 7 row(s)
   enriched 2026_04_11_mls_total_25.csv: 7 row(s)
@@ -249,4 +249,24 @@ MLS ML inference complete for 2026_10_24: 14 match prediction(s), 4 merge file(s
   enriched 2026_10_24_mls_total_25.csv: 14 row(s)
   enriched 2026_10_24_mls_total_35.csv: 14 row(s)
   enriched 2026_10_24_mls_btts.csv: 14 row(s)
-MLS ML historical inference complete: 50 date(s), 200 merge file(s), 1456 total merged row(s) enriched.
+MLS ML inference complete for 2026_10_25: 1 match prediction(s), 4 merge file(s) enriched.
+  enriched 2026_10_25_mls_match_odds.csv: 1 row(s)
+  enriched 2026_10_25_mls_total_25.csv: 1 row(s)
+  enriched 2026_10_25_mls_total_35.csv: 1 row(s)
+  enriched 2026_10_25_mls_btts.csv: 1 row(s)
+MLS ML inference complete for 2026_10_28: 14 match prediction(s), 4 merge file(s) enriched.
+  enriched 2026_10_28_mls_match_odds.csv: 14 row(s)
+  enriched 2026_10_28_mls_total_25.csv: 14 row(s)
+  enriched 2026_10_28_mls_total_35.csv: 14 row(s)
+  enriched 2026_10_28_mls_btts.csv: 14 row(s)
+MLS ML inference complete for 2026_10_31: 9 match prediction(s), 4 merge file(s) enriched.
+  enriched 2026_10_31_mls_match_odds.csv: 9 row(s)
+  enriched 2026_10_31_mls_total_25.csv: 9 row(s)
+  enriched 2026_10_31_mls_total_35.csv: 9 row(s)
+  enriched 2026_10_31_mls_btts.csv: 9 row(s)
+MLS ML inference complete for 2026_11_01: 6 match prediction(s), 4 merge file(s) enriched.
+  enriched 2026_11_01_mls_match_odds.csv: 6 row(s)
+  enriched 2026_11_01_mls_total_25.csv: 6 row(s)
+  enriched 2026_11_01_mls_total_35.csv: 6 row(s)
+  enriched 2026_11_01_mls_btts.csv: 6 row(s)
+MLS ML historical inference complete: 54 date(s), 216 merge file(s), 1576 total merged row(s) enriched.

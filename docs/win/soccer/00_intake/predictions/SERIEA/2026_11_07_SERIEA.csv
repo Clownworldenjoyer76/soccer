@@ -1,0 +1,4 @@
+sport,league,match_date,match_time,home_team,away_team,home_prob,draw_prob,away_prob,home_xg,away_xg,expected_total_goals
+soccer,seriea,2026_11_07,09:00 AM,Torino,Lecce,55.0%,23.4%,21.6%,1.77,1.02,2.79
+soccer,seriea,2026_11_07,12:00 PM,Parma,Bologna,21.9%,24.5%,53.6%,0.96,1.65,2.61
+soccer,seriea,2026_11_07,02:45 PM,Roma,Sassuolo,72.4%,16.1%,11.5%,2.54,0.91,3.45

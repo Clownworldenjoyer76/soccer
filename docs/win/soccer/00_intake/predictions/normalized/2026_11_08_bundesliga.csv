@@ -1,0 +1,4 @@
+sport,league,game_id,match_date,match_time,home_team,away_team,home_prob,draw_prob,away_prob,home_xg,away_xg,expected_total_goals,identity_status,identity_reason,identity_detail
+soccer,bundesliga,,2026_11_08,09:30 AM,Koln,Leverkusen,0.214,0.215,0.572,1.15,2.0,3.15,unmatched,no_sportsbook_fixture,no exact games-master fixture found for league/date/teams
+soccer,bundesliga,,2026_11_08,11:30 AM,Freiburg,Union Berlin,0.508,0.244,0.248,1.66,1.09,2.75,unmatched,no_sportsbook_fixture,no exact games-master fixture found for league/date/teams
+soccer,bundesliga,,2026_11_08,01:30 PM,Hoffenheim,Schalke,0.863,0.09,0.047,3.4,0.75,4.15,unmatched,no_sportsbook_fixture,no exact games-master fixture found for league/date/teams

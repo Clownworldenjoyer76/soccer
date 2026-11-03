@@ -1,0 +1,7 @@
+sport,league,game_id,match_date,match_time,home_team,away_team,dk_home_decimal,dk_draw_decimal,dk_away_decimal,dk_over25_decimal,dk_under25_decimal,dk_over35_decimal,dk_under35_decimal,btts_yes,btts_no
+soccer,ligue1,401876425,2026_10_25,10:00 AM,Monaco,Lille,2.00,3.45,3.95,1.80,2.00,,,,
+soccer,ligue1,401876429,2026_10_25,12:15 PM,Auxerre,Le Mans,2.10,3.60,3.40,1.69,2.15,,,,
+soccer,ligue1,401876430,2026_10_25,12:15 PM,Angers,Lorient,3.00,3.30,2.45,2.00,1.80,,,,
+soccer,ligue1,401876426,2026_10_25,12:15 PM,Marseille,Le Havre,1.50,4.80,5.75,,,2.20,1.65,,
+soccer,ligue1,401876424,2026_10_25,12:15 PM,Rennes,Strasbourg,1.80,4.30,3.90,,,2.05,1.74,,
+soccer,ligue1,401876423,2026_10_25,12:15 PM,Toulouse,Troyes,1.54,4.50,5.75,1.59,2.35,,,,

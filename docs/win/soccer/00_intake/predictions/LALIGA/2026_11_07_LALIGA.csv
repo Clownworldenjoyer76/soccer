@@ -1,0 +1,4 @@
+sport,league,match_date,match_time,home_team,away_team,home_prob,draw_prob,away_prob,home_xg,away_xg,expected_total_goals
+soccer,laliga,2026_11_07,10:15 AM,Espanyol,La Coruna,47.2%,23.8%,29.0%,1.70,1.28,2.98
+soccer,laliga,2026_11_07,12:30 PM,Osasuna,Athletic Club,28.8%,27.6%,43.5%,1.02,1.33,2.35
+soccer,laliga,2026_11_07,03:00 PM,Valencia,Real Madrid,11.3%,18.6%,70.0%,0.72,2.14,2.86

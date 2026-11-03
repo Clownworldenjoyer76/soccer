@@ -1,0 +1,7 @@
+sport,league,game_id,match_date,match_time,home_team,away_team,home_prob,draw_prob,away_prob,home_xg,away_xg,expected_total_goals,identity_status,identity_reason,identity_detail
+soccer,mls,761920,2026_11_01,04:30 PM,Nashville SC,New York Red Bulls,0.673,0.202,0.125,1.99,0.72,2.71,matched,matched_game_id,
+soccer,mls,761927,2026_11_01,04:30 PM,Vancouver Whitecaps,Seattle Sounders,0.589,0.228,0.183,1.81,0.9,2.71,matched,matched_game_id,
+soccer,mls,761931,2026_11_01,04:30 PM,Atlanta United,Toronto FC,0.474,0.263,0.262,1.46,1.02,2.48,matched,matched_game_id,
+soccer,mls,761932,2026_11_01,07:00 PM,New England Revolution,Inter Miami,0.417,0.268,0.315,1.36,1.14,2.5,matched,matched_game_id,
+soccer,mls,761921,2026_11_01,08:30 PM,Los Angeles FC,Minnesota United,0.563,0.233,0.204,1.77,0.97,2.74,matched,matched_game_id,
+soccer,mls,761933,2026_11_01,09:45 PM,Portland Timbers,Houston Dynamo,0.441,0.271,0.288,1.37,1.04,2.41,matched,matched_game_id,

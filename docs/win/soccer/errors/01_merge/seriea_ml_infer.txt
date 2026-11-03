@@ -1,4 +1,4 @@
-Serie A ML inference: processing 43 Serie A merge date(s) through 2026_10_24.
+Serie A ML inference: processing 50 Serie A merge date(s) through 2026_11_03.
 Serie A ML inference complete for 2026_04_10: 1 match prediction(s), 4 merge file(s) enriched.
   enriched 2026_04_10_seriea_match_odds.csv: 1 row(s)
   enriched 2026_04_10_seriea_total_25.csv: 1 row(s)
@@ -214,4 +214,39 @@ Serie A ML inference complete for 2026_10_24: 4 match prediction(s), 4 merge fil
   enriched 2026_10_24_seriea_total_25.csv: 4 row(s)
   enriched 2026_10_24_seriea_total_35.csv: 4 row(s)
   enriched 2026_10_24_seriea_btts.csv: 4 row(s)
-Serie A ML historical inference complete: 43 date(s), 172 merge file(s), 452 total merged row(s) enriched.
+Serie A ML inference complete for 2026_10_25: 5 match prediction(s), 4 merge file(s) enriched.
+  enriched 2026_10_25_seriea_match_odds.csv: 4 row(s)
+  enriched 2026_10_25_seriea_total_25.csv: 4 row(s)
+  enriched 2026_10_25_seriea_total_35.csv: 4 row(s)
+  enriched 2026_10_25_seriea_btts.csv: 4 row(s)
+Serie A ML inference complete for 2026_10_27: 3 match prediction(s), 4 merge file(s) enriched.
+  enriched 2026_10_27_seriea_match_odds.csv: 3 row(s)
+  enriched 2026_10_27_seriea_total_25.csv: 3 row(s)
+  enriched 2026_10_27_seriea_total_35.csv: 3 row(s)
+  enriched 2026_10_27_seriea_btts.csv: 3 row(s)
+Serie A ML inference complete for 2026_10_28: 5 match prediction(s), 4 merge file(s) enriched.
+  enriched 2026_10_28_seriea_match_odds.csv: 5 row(s)
+  enriched 2026_10_28_seriea_total_25.csv: 5 row(s)
+  enriched 2026_10_28_seriea_total_35.csv: 5 row(s)
+  enriched 2026_10_28_seriea_btts.csv: 5 row(s)
+Serie A ML inference complete for 2026_10_29: 2 match prediction(s), 4 merge file(s) enriched.
+  enriched 2026_10_29_seriea_match_odds.csv: 2 row(s)
+  enriched 2026_10_29_seriea_total_25.csv: 2 row(s)
+  enriched 2026_10_29_seriea_total_35.csv: 2 row(s)
+  enriched 2026_10_29_seriea_btts.csv: 2 row(s)
+Serie A ML inference complete for 2026_10_31: 3 match prediction(s), 4 merge file(s) enriched.
+  enriched 2026_10_31_seriea_match_odds.csv: 3 row(s)
+  enriched 2026_10_31_seriea_total_25.csv: 3 row(s)
+  enriched 2026_10_31_seriea_total_35.csv: 3 row(s)
+  enriched 2026_10_31_seriea_btts.csv: 3 row(s)
+Serie A ML inference complete for 2026_11_01: 5 match prediction(s), 4 merge file(s) enriched.
+  enriched 2026_11_01_seriea_match_odds.csv: 4 row(s)
+  enriched 2026_11_01_seriea_total_25.csv: 4 row(s)
+  enriched 2026_11_01_seriea_total_35.csv: 4 row(s)
+  enriched 2026_11_01_seriea_btts.csv: 4 row(s)
+Serie A ML inference complete for 2026_11_02: 2 match prediction(s), 4 merge file(s) enriched.
+  enriched 2026_11_02_seriea_match_odds.csv: 2 row(s)
+  enriched 2026_11_02_seriea_total_25.csv: 2 row(s)
+  enriched 2026_11_02_seriea_total_35.csv: 2 row(s)
+  enriched 2026_11_02_seriea_btts.csv: 2 row(s)
+Serie A ML historical inference complete: 50 date(s), 200 merge file(s), 544 total merged row(s) enriched.

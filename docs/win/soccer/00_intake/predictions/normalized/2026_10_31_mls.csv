@@ -1,0 +1,10 @@
+sport,league,game_id,match_date,match_time,home_team,away_team,home_prob,draw_prob,away_prob,home_xg,away_xg,expected_total_goals,identity_status,identity_reason,identity_detail
+soccer,mls,761922,2026_10_31,01:00 PM,Charlotte FC,Orlando City,0.521,0.251,0.227,1.59,0.95,2.54,matched,matched_game_id,
+soccer,mls,761924,2026_10_31,02:00 PM,Columbus Crew,DC United,0.574,0.231,0.195,1.79,0.94,2.73,matched,matched_game_id,
+soccer,mls,761930,2026_10_31,02:00 PM,New York City FC,CF Montreal,0.664,0.202,0.134,2.02,0.77,2.79,matched,matched_game_id,
+soccer,mls,761919,2026_10_31,02:00 PM,FC Cincinnati,Philadelphia Union,0.408,0.277,0.315,1.28,1.09,2.37,matched,matched_game_id,
+soccer,mls,761928,2026_10_31,03:00 PM,Sporting Kansas City,FC Dallas,0.312,0.281,0.408,1.06,1.26,2.32,matched,matched_game_id,
+soccer,mls,761926,2026_10_31,03:00 PM,St Louis City,San Diego FC,0.582,0.227,0.191,1.83,0.94,2.77,matched,matched_game_id,
+soccer,mls,761929,2026_10_31,05:00 PM,San Jose Earthquakes,Real Salt Lake,0.486,0.255,0.258,1.54,1.04,2.58,matched,matched_game_id,
+soccer,mls,761925,2026_10_31,05:00 PM,LA Galaxy,Austin FC,0.526,0.246,0.227,1.64,0.99,2.63,matched,matched_game_id,
+soccer,mls,761923,2026_10_31,09:30 PM,Colorado Rapids,Chicago Fire,0.43,0.273,0.297,1.34,1.07,2.41,matched,matched_game_id,

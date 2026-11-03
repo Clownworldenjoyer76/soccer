@@ -1,0 +1,7 @@
+sport,league,game_id,match_date,match_time,home_team,away_team,dk_home_decimal,dk_draw_decimal,dk_away_decimal,dk_over25_decimal,dk_under25_decimal,dk_over35_decimal,dk_under35_decimal,btts_yes,btts_no
+soccer,mls,761927,2026_11_01,03:30 PM,Vancouver Whitecaps,Seattle Sounders,1.65,4.20,4.30,,,2.25,1.62,,
+soccer,mls,761931,2026_11_01,04:30 PM,Atlanta United,Toronto FC,2.10,3.85,2.90,,,2.10,1.71,,
+soccer,mls,761920,2026_11_01,04:30 PM,Nashville SC,New York Red Bulls,1.49,4.50,5.25,,,1.95,1.83,,
+soccer,mls,761932,2026_11_01,07:00 PM,New England Revolution,Inter Miami,2.80,3.85,2.15,,,2.00,1.80,,
+soccer,mls,761921,2026_11_01,08:30 PM,Los Angeles FC,Minnesota United,1.65,4.30,4.20,,,2.15,1.69,,
+soccer,mls,761933,2026_11_01,09:45 PM,Portland Timbers,Houston Dynamo,1.74,3.90,4.00,1.61,2.30,,,,

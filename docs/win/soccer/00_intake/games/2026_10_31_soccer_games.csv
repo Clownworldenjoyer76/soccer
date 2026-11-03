@@ -1,0 +1,32 @@
+game_id,sport,league,match_date,match_time,home_team,away_team
+401884754,soccer,bundesliga,2026_10_31,01:30 PM,Bayern Munich,Borussia Dortmund
+401884751,soccer,bundesliga,2026_10_31,10:30 AM,Augsburg,Freiburg
+401884749,soccer,bundesliga,2026_10_31,10:30 AM,Borussia Monchengladbach,Paderborn
+401884753,soccer,bundesliga,2026_10_31,10:30 AM,Leverkusen,VfB Stuttgart
+401884747,soccer,bundesliga,2026_10_31,10:30 AM,Schalke,RB Leipzig
+401884748,soccer,bundesliga,2026_10_31,10:30 AM,Werder Bremen,Hoffenheim
+401878761,soccer,epl,2026_10_31,01:30 PM,Tottenham Hotspur,Crystal Palace
+401879250,soccer,epl,2026_10_31,04:00 PM,Aston Villa,Fulham
+401879248,soccer,epl,2026_10_31,08:30 AM,Chelsea,Manchester United
+401879251,soccer,epl,2026_10_31,11:00 AM,Bournemouth,Leeds
+401879249,soccer,epl,2026_10_31,11:00 AM,Brentford,Nottingham Forest
+401879247,soccer,epl,2026_10_31,11:00 AM,Coventry,Sunderland
+401878763,soccer,epl,2026_10_31,11:00 AM,Hull,Ipswich
+401879245,soccer,epl,2026_10_31,11:00 AM,Manchester City,Brighton
+401882825,soccer,laliga,2026_10_31,01:30 PM,Real Betis,Malaga
+401882822,soccer,laliga,2026_10_31,04:00 PM,Barcelona,Alaves
+401882820,soccer,laliga,2026_10_31,09:00 AM,Levante,Atletico Madrid
+401882818,soccer,laliga,2026_10_31,11:15 AM,Vallecano,Celta Vigo
+401876413,soccer,ligue1,2026_10_31,03:45 PM,Troyes,Le Mans
+761922,soccer,mls,2026_10_31,01:00 PM,Charlotte FC,Orlando City
+761924,soccer,mls,2026_10_31,02:00 PM,Columbus Crew,DC United
+761919,soccer,mls,2026_10_31,02:00 PM,FC Cincinnati,Philadelphia Union
+761930,soccer,mls,2026_10_31,02:00 PM,New York City FC,CF Montreal
+761928,soccer,mls,2026_10_31,03:00 PM,Sporting Kansas City,FC Dallas
+761926,soccer,mls,2026_10_31,03:00 PM,St Louis City,San Diego FC
+761925,soccer,mls,2026_10_31,05:00 PM,LA Galaxy,Austin FC
+761929,soccer,mls,2026_10_31,05:00 PM,San Jose Earthquakes,Real Salt Lake
+761923,soccer,mls,2026_10_31,09:30 PM,Colorado Rapids,Chicago Fire
+401874990,soccer,seriea,2026_10_31,01:00 PM,Udinese,Roma
+401874795,soccer,seriea,2026_10_31,03:45 PM,Milan,Inter Milan
+401874798,soccer,seriea,2026_10_31,10:00 AM,Bologna,Monza

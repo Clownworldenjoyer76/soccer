@@ -1,0 +1,6 @@
+sport,league,game_id,match_date,match_time,home_team,away_team,home_prob,draw_prob,away_prob,home_xg,away_xg,expected_total_goals,identity_status,identity_reason,identity_detail
+soccer,epl,,2026_11_08,09:00 AM,Sunderland,Chelsea,0.239,0.257,0.503,0.97,1.53,2.5,unmatched,no_sportsbook_fixture,no exact games-master fixture found for league/date/teams
+soccer,epl,,2026_11_08,09:00 AM,Brighton,Brentford,0.565,0.238,0.197,1.72,0.91,2.63,unmatched,no_sportsbook_fixture,no exact games-master fixture found for league/date/teams
+soccer,epl,,2026_11_08,09:00 AM,Crystal Palace,Liverpool,0.241,0.254,0.506,0.99,1.57,2.56,unmatched,no_sportsbook_fixture,no exact games-master fixture found for league/date/teams
+soccer,epl,,2026_11_08,09:00 AM,Ipswich,Bournemouth,0.267,0.267,0.465,1.01,1.42,2.43,unmatched,no_sportsbook_fixture,no exact games-master fixture found for league/date/teams
+soccer,epl,,2026_11_08,11:30 AM,Manchester United,Aston Villa,0.525,0.241,0.234,1.69,1.04,2.73,unmatched,no_sportsbook_fixture,no exact games-master fixture found for league/date/teams

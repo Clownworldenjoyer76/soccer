@@ -1,10 +1,10 @@
 market,market_type,Win,Loss,Push,Total,Sample_Count,Win_Pct
 btts,no,9,3,0,12,12,0.75
-btts,yes,28,7,0,35,35,0.8
+btts,yes,28,8,0,36,36,0.7778
 match_odds,away,10,1,0,11,11,0.9091
 match_odds,draw,2,0,0,2,2,1.0
-match_odds,home,17,4,0,21,21,0.8095
+match_odds,home,18,5,0,23,23,0.7826
 total25,over,8,5,0,13,13,0.6154
-total25,under,12,2,0,14,14,0.8571
+total25,under,13,3,0,16,16,0.8125
 total35,over,1,0,0,1,1,1.0
-total35,under,24,7,0,31,31,0.7742
+total35,under,26,9,0,35,35,0.7429
