@@ -1,0 +1,355 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="color-scheme" content="dark">
+  <title>Soccer Manual Data</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;600;700&family=Barlow+Condensed:wght@400;600;700;800&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      color-scheme: dark;
+      --background: #000000;
+      --foreground: #f2f2f2;
+      --text-muted: #7c8796;
+      --green: #00ff84;
+      --green-dim: rgba(0,255,132,0.08);
+      --yellow: #facc15;
+      --red: #ff2d2d;
+      --blue: #00bfff;
+      --border: rgba(255,255,255,0.09);
+      --card: #0c1118;
+      --card-hover: #111822;
+    }
+
+    * { box-sizing: border-box; }
+
+    html, body {
+      margin: 0;
+      min-height: 100%;
+      background: var(--background);
+    }
+
+    body {
+      font-family: 'IBM Plex Mono', 'Courier New', monospace;
+      color: var(--foreground);
+    }
+
+    .manual-header {
+      display: flex;
+      align-items: center;
+      gap: 20px;
+      padding: 20px 24px 16px;
+      border-bottom: 1px solid var(--border);
+    }
+
+    .manual-title {
+      margin: 0;
+      font-family: 'Barlow Condensed', sans-serif;
+      font-size: clamp(27px, 4vw, 34px);
+      font-weight: 800;
+      letter-spacing: 5px;
+      line-height: 1.1;
+      text-transform: uppercase;
+      color: var(--green);
+    }
+
+    #status {
+      margin-left: auto;
+      color: var(--text-muted);
+      font-size: 10px;
+      letter-spacing: 2px;
+      text-transform: uppercase;
+      white-space: nowrap;
+    }
+
+    #status.loading {
+      color: var(--green);
+      animation: pulse 1.2s ease infinite;
+    }
+
+    @keyframes pulse {
+      0%, 100% { opacity: 1; }
+      50% { opacity: 0.35; }
+    }
+
+    .manual-controls {
+      display: grid;
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+      gap: 20px;
+      padding: 16px 24px;
+      border-bottom: 1px solid var(--border);
+    }
+
+    .control-wrap {
+      display: flex;
+      min-width: 0;
+      flex-direction: column;
+      gap: 6px;
+    }
+
+    .control-label, .raw-label {
+      color: var(--text-muted);
+      font-size: 10px;
+      letter-spacing: 2px;
+      text-transform: uppercase;
+    }
+
+    .manual-controls select,
+    .manual-controls input,
+    .manual-body textarea {
+      width: 100%;
+      min-width: 0;
+      padding: 10px 12px;
+      border: 1px solid rgba(255,255,255,0.12);
+      border-radius: 3px;
+      outline: none;
+      background: var(--card);
+      color: var(--foreground);
+      font: 12px 'IBM Plex Mono', monospace;
+      transition: border-color 0.15s, box-shadow 0.15s;
+    }
+
+    .manual-controls select { cursor: pointer; }
+
+    .manual-controls select:focus,
+    .manual-controls input:focus,
+    .manual-body textarea:focus {
+      border-color: var(--green);
+      box-shadow: 0 0 0 3px var(--green-dim);
+    }
+
+    .manual-body { padding: 24px; }
+
+    .manual-card {
+      padding: 18px;
+      border: 1px solid var(--border);
+      border-left: 3px solid transparent;
+      border-radius: 3px;
+      background: var(--card);
+      transition: border-color 0.18s, background 0.18s;
+    }
+
+    .manual-card:hover {
+      border-left-color: var(--green);
+      background: var(--card-hover);
+    }
+
+    .raw-label-row {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 12px;
+      margin-bottom: 8px;
+    }
+
+    .raw-hint {
+      color: var(--blue);
+      font-size: 10px;
+      letter-spacing: 1px;
+      text-align: right;
+      text-transform: uppercase;
+    }
+
+    .manual-body textarea {
+      display: block;
+      min-height: 280px;
+      resize: vertical;
+      line-height: 1.5;
+      background: #080c11;
+    }
+
+    .manual-card button {
+      width: 100%;
+      margin-top: 18px;
+      padding: 13px;
+      border: 1px solid rgba(0,255,132,0.3);
+      border-radius: 3px;
+      background: transparent;
+      color: var(--green);
+      font: 700 11px 'IBM Plex Mono', monospace;
+      letter-spacing: 3px;
+      text-transform: uppercase;
+      cursor: pointer;
+      transition: background 0.15s, border-color 0.15s;
+    }
+
+    .manual-card button:hover:not(:disabled) {
+      background: var(--green-dim);
+      border-color: var(--green);
+    }
+
+    .manual-card button:disabled {
+      color: var(--yellow);
+      border-color: rgba(250,204,21,0.45);
+      cursor: wait;
+    }
+
+    #out {
+      margin-top: 16px;
+      font-size: 11px;
+      font-weight: 700;
+      letter-spacing: 1px;
+      line-height: 1.6;
+      text-align: center;
+      overflow-wrap: anywhere;
+    }
+
+    .success { color: var(--green); }
+    .failure { color: var(--red); }
+
+    .note {
+      margin: 12px 0 0;
+      color: var(--text-muted);
+      font-size: 10px;
+      line-height: 1.6;
+      text-align: center;
+    }
+
+    @media (max-width: 880px) {
+      .manual-controls { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+    }
+
+    @media (max-width: 560px) {
+      .manual-header { padding: 20px 16px 16px; }
+      .manual-controls { grid-template-columns: 1fr; gap: 14px; padding: 16px; }
+      .manual-body { padding: 16px; }
+      .manual-card { padding: 16px; }
+      .raw-label-row { align-items: flex-start; }
+    }
+  </style>
+</head>
+<body>
+  <header class="manual-header">
+    <h1 class="manual-title">SOCCER MANUAL DATA</h1>
+    <div id="status" role="status" aria-live="polite"></div>
+  </header>
+
+  <main>
+    <div class="manual-controls">
+      <div class="control-wrap">
+        <label class="control-label" for="market">Market</label>
+        <select id="market" required>
+          <option value="">-- select --</option>
+          <option value="MLS">MLS</option>
+          <option value="EPL">EPL</option>
+          <option value="Ligue 1">Ligue 1</option>
+          <option value="Serie A">Serie A</option>
+          <option value="La Liga">La Liga</option>
+          <option value="Bundesliga">Bundesliga</option>
+        </select>
+      </div>
+
+      <div class="control-wrap">
+        <label class="control-label" for="source">Source</label>
+        <select id="source" required>
+          <option value="">-- select --</option>
+          <option value="Predictions">Predictions</option>
+          <option value="Soccer Totals">Soccer Totals</option>
+        </select>
+      </div>
+
+      <div class="control-wrap">
+        <label class="control-label" for="token">Magic</label>
+        <input id="token" type="password" placeholder="••••••••" autocomplete="off" spellcheck="false" required>
+      </div>
+    </div>
+
+    <div class="manual-body">
+      <div class="manual-card">
+        <div class="raw-label-row">
+          <label for="raw" class="raw-label">Raw Text</label>
+          <span class="raw-hint">Paste dump here</span>
+        </div>
+
+        <textarea id="raw" spellcheck="false" required></textarea>
+        <button id="btn" type="button">Create File</button>
+        <div id="out" role="status" aria-live="polite"></div>
+        <p class="note">Successful submission triggers the GitHub workflow. GitHub Actions processes and commits the data separately.</p>
+      </div>
+    </div>
+  </main>
+
+  <script>
+    'use strict';
+
+    const OWNER = 'Clownworldenjoyer76';
+    const REPO = 'soccer';
+    const WORKFLOW_FILE = '_manual_intake.yml';
+    const REF = 'main';
+    const LEAGUE = 'soccer';
+
+    const marketField = document.getElementById('market');
+    const sourceField = document.getElementById('source');
+    const tokenField = document.getElementById('token');
+    const rawField = document.getElementById('raw');
+    const button = document.getElementById('btn');
+    const output = document.getElementById('out');
+    const status = document.getElementById('status');
+
+    function setResult(message, ok) {
+      output.className = ok ? 'success' : 'failure';
+      output.textContent = message;
+      status.className = '';
+      status.textContent = ok ? 'Submitted' : 'Failed';
+    }
+
+    async function dispatch() {
+      const market = marketField.value;
+      const source = sourceField.value;
+      const token = tokenField.value.trim();
+      const raw_text = rawField.value;
+
+      if (!market || !source || !token || !raw_text.trim()) {
+        setResult('Missing input: select a market and source, enter Magic, and paste raw text.', false);
+        status.textContent = 'Missing Input';
+        return;
+      }
+
+      button.disabled = true;
+      button.textContent = 'Processing...';
+      output.className = '';
+      output.textContent = `Submitting to ${WORKFLOW_FILE}...`;
+      status.className = 'loading';
+      status.textContent = 'Submitting';
+
+      try {
+        const url = `https://api.github.com/repos/${OWNER}/${REPO}/actions/workflows/${WORKFLOW_FILE}/dispatches`;
+        const response = await fetch(url, {
+          method: 'POST',
+          headers: {
+            'Accept': 'application/vnd.github+json',
+            'Authorization': `Bearer ${token}`,
+            'Content-Type': 'application/json',
+            'X-GitHub-Api-Version': '2022-11-28'
+          },
+          body: JSON.stringify({
+            ref: REF,
+            inputs: {
+              league: LEAGUE,
+              market,
+              source,
+              raw_text
+            }
+          })
+        });
+
+        if (response.status !== 204) {
+          throw new Error(`GitHub API returned HTTP ${response.status}`);
+        }
+
+        setResult(`Workflow triggered: ${WORKFLOW_FILE} | ${market} | ${source}`, true);
+      } catch (error) {
+        setResult(`Submission failed: ${error instanceof Error ? error.message : String(error)}`, false);
+      } finally {
+        button.disabled = false;
+        button.textContent = 'Create File';
+      }
+    }
+
+    button.addEventListener('click', dispatch);
+  </script>
+</body>
+</html>
