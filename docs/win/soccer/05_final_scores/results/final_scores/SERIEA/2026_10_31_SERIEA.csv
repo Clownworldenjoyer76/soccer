@@ -1,0 +1,4 @@
+sport,league,game_id,game_date,match_time,home_team,away_team,home_score,away_score
+soccer,seriea,401874795,2026_10_31,03:45 PM,Milan,Inter Milan,3,1
+soccer,seriea,401874990,2026_10_31,01:00 PM,Udinese,Roma,2,5
+soccer,seriea,401874798,2026_10_31,10:00 AM,Bologna,Monza,2,1

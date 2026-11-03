@@ -1,0 +1,8 @@
+sport,league,game_id,game_date,match_time,home_team,away_team,home_score,away_score
+soccer,epl,401879250,2026_10_31,04:00 PM,Aston Villa,Fulham,1,1
+soccer,epl,401878761,2026_10_31,01:30 PM,Tottenham Hotspur,Crystal Palace,2,0
+soccer,epl,401879245,2026_10_31,11:00 AM,Manchester City,Brighton,0,1
+soccer,epl,401879247,2026_10_31,11:00 AM,Coventry,Sunderland,3,1
+soccer,epl,401879251,2026_10_31,11:00 AM,Bournemouth,Leeds,2,0
+soccer,epl,401879249,2026_10_31,11:00 AM,Brentford,Nottingham Forest,2,0
+soccer,epl,401879248,2026_10_31,08:30 AM,Chelsea,Manchester United,2,0

@@ -1,5 +1,5 @@
 sport,league,match_date,match_time,home_team,away_team,home_prob,draw_prob,away_prob,home_xg,away_xg,expected_total_goals
-soccer,epl,2026_11_07,07:30 AM,Leeds United,Tottenham,38.5%,26.3%,35.2%,1.34,1.27,2.61
-soccer,epl,2026_11_07,10:00 AM,Fulham,Newcastle United,42.7%,28.1%,29.2%,1.28,1.01,2.29
-soccer,epl,2026_11_07,10:00 AM,Arsenal,Hull City,88.5%,7.9%,3.6%,3.46,0.64,4.10
+soccer,epl,2026_11_07,07:30 AM,Leeds,Tottenham Hotspur,38.5%,26.3%,35.2%,1.34,1.27,2.61
+soccer,epl,2026_11_07,10:00 AM,Fulham,Newcastle,42.7%,28.1%,29.2%,1.28,1.01,2.29
+soccer,epl,2026_11_07,10:00 AM,Arsenal,Hull,88.5%,7.9%,3.6%,3.46,0.64,4.10
 soccer,epl,2026_11_07,12:30 PM,Nottingham Forest,Manchester City,20.6%,24.5%,54.9%,0.91,1.65,2.56

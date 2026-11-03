@@ -1,0 +1,15 @@
+sport,league,game_id,game_date,match_time,home_team,away_team,home_score,away_score
+soccer,mls,761916,2026_10_28,10:30 PM,Seattle Sounders,Houston Dynamo,0,1
+soccer,mls,761917,2026_10_28,10:30 PM,San Jose Earthquakes,Colorado Rapids,2,2
+soccer,mls,761918,2026_10_28,10:30 PM,Vancouver Whitecaps,San Diego FC,4,1
+soccer,mls,761910,2026_10_28,08:30 PM,Austin FC,Real Salt Lake,1,2
+soccer,mls,761911,2026_10_28,08:30 PM,Chicago Fire,Orlando City,2,2
+soccer,mls,761915,2026_10_28,08:30 PM,St Louis City,Portland Timbers,2,3
+soccer,mls,761914,2026_10_28,08:30 PM,Nashville SC,Philadelphia Union,0,0
+soccer,mls,761912,2026_10_28,08:30 PM,FC Dallas,Columbus Crew,0,2
+soccer,mls,761913,2026_10_28,08:30 PM,Minnesota United,Sporting Kansas City,3,1
+soccer,mls,761908,2026_10_28,07:30 PM,Inter Miami,FC Cincinnati,2,2
+soccer,mls,761909,2026_10_28,07:30 PM,New England Revolution,New York Red Bulls,3,2
+soccer,mls,761906,2026_10_28,07:30 PM,Toronto FC,DC United,2,1
+soccer,mls,761905,2026_10_28,07:30 PM,New York City FC,Atlanta United,2,1
+soccer,mls,761907,2026_10_28,07:30 PM,Charlotte FC,CF Montreal,4,0
