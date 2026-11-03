@@ -1,202 +1,228 @@
-[2026-10-24T05:09:05.967588] === START 01_soccer_results_grade.py 2026-10-24T05:09:05.967568 ===
-[2026-10-24T05:09:05.968019] DELETED OLD SELECTED OUTPUT | docs/win/soccer/05_final_scores/results/graded/2026_04_10_results_SOCCER.csv
-[2026-10-24T05:09:05.968169] DELETED OLD SELECTED OUTPUT | docs/win/soccer/05_final_scores/results/graded/2026_04_11_results_SOCCER.csv
-[2026-10-24T05:09:05.968308] DELETED OLD SELECTED OUTPUT | docs/win/soccer/05_final_scores/results/graded/2026_04_12_results_SOCCER.csv
-[2026-10-24T05:09:05.968462] DELETED OLD SELECTED OUTPUT | docs/win/soccer/05_final_scores/results/graded/2026_04_13_results_SOCCER.csv
-[2026-10-24T05:09:05.968597] DELETED OLD SELECTED OUTPUT | docs/win/soccer/05_final_scores/results/graded/2026_04_18_results_SOCCER.csv
-[2026-10-24T05:09:05.968737] DELETED OLD SELECTED OUTPUT | docs/win/soccer/05_final_scores/results/graded/2026_04_19_results_SOCCER.csv
-[2026-10-24T05:09:05.968869] DELETED OLD SELECTED OUTPUT | docs/win/soccer/05_final_scores/results/graded/2026_04_22_results_SOCCER.csv
-[2026-10-24T05:09:05.969002] DELETED OLD SELECTED OUTPUT | docs/win/soccer/05_final_scores/results/graded/2026_04_25_results_SOCCER.csv
-[2026-10-24T05:09:05.969127] DELETED OLD SELECTED OUTPUT | docs/win/soccer/05_final_scores/results/graded/2026_04_26_results_SOCCER.csv
-[2026-10-24T05:09:05.969255] DELETED OLD SELECTED OUTPUT | docs/win/soccer/05_final_scores/results/graded/2026_05_02_results_SOCCER.csv
-[2026-10-24T05:09:05.969379] DELETED OLD SELECTED OUTPUT | docs/win/soccer/05_final_scores/results/graded/2026_05_03_results_SOCCER.csv
-[2026-10-24T05:09:05.969507] DELETED OLD SELECTED OUTPUT | docs/win/soccer/05_final_scores/results/graded/2026_05_04_results_SOCCER.csv
-[2026-10-24T05:09:05.969633] DELETED OLD SELECTED OUTPUT | docs/win/soccer/05_final_scores/results/graded/2026_05_08_results_SOCCER.csv
-[2026-10-24T05:09:05.969757] DELETED OLD SELECTED OUTPUT | docs/win/soccer/05_final_scores/results/graded/2026_05_09_results_SOCCER.csv
-[2026-10-24T05:09:05.969881] DELETED OLD SELECTED OUTPUT | docs/win/soccer/05_final_scores/results/graded/2026_05_10_results_SOCCER.csv
-[2026-10-24T05:09:05.970006] DELETED OLD SELECTED OUTPUT | docs/win/soccer/05_final_scores/results/graded/2026_05_11_results_SOCCER.csv
-[2026-10-24T05:09:05.970128] DELETED OLD SELECTED OUTPUT | docs/win/soccer/05_final_scores/results/graded/2026_05_12_results_SOCCER.csv
-[2026-10-24T05:09:05.970252] DELETED OLD SELECTED OUTPUT | docs/win/soccer/05_final_scores/results/graded/2026_05_13_results_SOCCER.csv
-[2026-10-24T05:09:05.970374] DELETED OLD SELECTED OUTPUT | docs/win/soccer/05_final_scores/results/graded/2026_05_14_results_SOCCER.csv
-[2026-10-24T05:09:05.970498] DELETED OLD SELECTED OUTPUT | docs/win/soccer/05_final_scores/results/graded/2026_05_16_results_SOCCER.csv
-[2026-10-24T05:09:05.970625] DELETED OLD SELECTED OUTPUT | docs/win/soccer/05_final_scores/results/graded/2026_05_17_results_SOCCER.csv
-[2026-10-24T05:09:05.970748] DELETED OLD SELECTED OUTPUT | docs/win/soccer/05_final_scores/results/graded/2026_05_23_results_SOCCER.csv
-[2026-10-24T05:09:05.970927] DELETED OLD SELECTED OUTPUT | docs/win/soccer/05_final_scores/results/graded/2026_05_24_results_SOCCER.csv
-[2026-10-24T05:09:05.971074] DELETED OLD SELECTED OUTPUT | docs/win/soccer/05_final_scores/results/graded/2026_08_19_results_SOCCER.csv
-[2026-10-24T05:09:05.971197] DELETED OLD SELECTED OUTPUT | docs/win/soccer/05_final_scores/results/graded/2026_08_20_results_SOCCER.csv
-[2026-10-24T05:09:05.971322] DELETED OLD SELECTED OUTPUT | docs/win/soccer/05_final_scores/results/graded/2026_08_21_results_SOCCER.csv
-[2026-10-24T05:09:05.971456] DELETED OLD SELECTED OUTPUT | docs/win/soccer/05_final_scores/results/graded/2026_08_22_results_SOCCER.csv
-[2026-10-24T05:09:05.971582] DELETED OLD SELECTED OUTPUT | docs/win/soccer/05_final_scores/results/graded/2026_08_23_results_SOCCER.csv
-[2026-10-24T05:09:05.971707] DELETED OLD SELECTED OUTPUT | docs/win/soccer/05_final_scores/results/graded/2026_08_24_results_SOCCER.csv
-[2026-10-24T05:09:05.971833] DELETED OLD SELECTED OUTPUT | docs/win/soccer/05_final_scores/results/graded/2026_08_29_results_SOCCER.csv
-[2026-10-24T05:09:05.971965] DELETED OLD SELECTED OUTPUT | docs/win/soccer/05_final_scores/results/graded/2026_08_30_results_SOCCER.csv
-[2026-10-24T05:09:05.972089] DELETED OLD SELECTED OUTPUT | docs/win/soccer/05_final_scores/results/graded/2026_09_05_results_SOCCER.csv
-[2026-10-24T05:09:05.972211] DELETED OLD SELECTED OUTPUT | docs/win/soccer/05_final_scores/results/graded/2026_09_06_results_SOCCER.csv
-[2026-10-24T05:09:05.972334] DELETED OLD SELECTED OUTPUT | docs/win/soccer/05_final_scores/results/graded/2026_09_07_results_SOCCER.csv
-[2026-10-24T05:09:05.972465] DELETED OLD SELECTED OUTPUT | docs/win/soccer/05_final_scores/results/graded/2026_09_11_results_SOCCER.csv
-[2026-10-24T05:09:05.972590] DELETED OLD SELECTED OUTPUT | docs/win/soccer/05_final_scores/results/graded/2026_09_12_results_SOCCER.csv
-[2026-10-24T05:09:05.972714] DELETED OLD SELECTED OUTPUT | docs/win/soccer/05_final_scores/results/graded/2026_09_13_results_SOCCER.csv
-[2026-10-24T05:09:05.972839] DELETED OLD SELECTED OUTPUT | docs/win/soccer/05_final_scores/results/graded/2026_09_17_results_SOCCER.csv
-[2026-10-24T05:09:05.972964] DELETED OLD SELECTED OUTPUT | docs/win/soccer/05_final_scores/results/graded/2026_09_19_results_SOCCER.csv
-[2026-10-24T05:09:05.973089] DELETED OLD SELECTED OUTPUT | docs/win/soccer/05_final_scores/results/graded/2026_09_20_results_SOCCER.csv
-[2026-10-24T05:09:05.973211] DELETED OLD SELECTED OUTPUT | docs/win/soccer/05_final_scores/results/graded/2026_10_10_results_SOCCER.csv
-[2026-10-24T05:09:05.973335] DELETED OLD SELECTED OUTPUT | docs/win/soccer/05_final_scores/results/graded/2026_10_14_results_SOCCER.csv
-[2026-10-24T05:09:05.973472] DELETED OLD SELECTED OUTPUT | docs/win/soccer/05_final_scores/results/graded/2026_10_17_results_SOCCER.csv
-[2026-10-24T05:09:05.973603] DELETED OLD SELECTED OUTPUT | docs/win/soccer/05_final_scores/results/graded/2026_10_18_results_SOCCER.csv
-[2026-10-24T05:09:05.973727] DELETED OLD SELECTED OUTPUT | docs/win/soccer/05_final_scores/results/graded/2026_10_23_results_SOCCER.csv
-[2026-10-24T05:09:05.973866] DELETED OLD SELECTED OUTPUT | docs/win/soccer/05_final_scores/results/graded/SOCCER_final.csv
-[2026-10-24T05:09:05.973881] OLD SELECTED OUTPUT FILES DELETED | count=46
-[2026-10-24T05:09:05.974053] DELETED OLD LOCKED OUTPUT | docs/win/soccer/05_final_scores/results/graded_locked/2026_09_04_results_SOCCER.csv
-[2026-10-24T05:09:05.974178] DELETED OLD LOCKED OUTPUT | docs/win/soccer/05_final_scores/results/graded_locked/SOCCER_locked_final.csv
-[2026-10-24T05:09:05.974190] OLD LOCKED OUTPUT FILES DELETED | count=2
-[2026-10-24T05:09:05.974203] OLD OUTPUT FILES DELETED TOTAL | count=48
-[2026-10-24T05:09:05.974391] SELECTED select files found: 46 | docs/win/soccer/04_select
-[2026-10-24T05:09:05.974409] PROCESSING SELECTED SELECT | 2026_04_10_soccer_bets.csv | date=2026_04_10
-[2026-10-24T05:09:05.987456] SELECTED DAY RESULT | 2026_04_10_soccer_bets.csv | rows=4 W=4 L=0 P=0 MISSING_SCORE=0 UNKNOWN_MARKET=0 GRADE_ERROR=0
-[2026-10-24T05:09:05.988157] WROTE SELECTED | docs/win/soccer/05_final_scores/results/graded/2026_04_10_results_SOCCER.csv
-[2026-10-24T05:09:05.988177] PROCESSING SELECTED SELECT | 2026_04_11_soccer_bets.csv | date=2026_04_11
-[2026-10-24T05:09:06.001658] SELECTED DAY RESULT | 2026_04_11_soccer_bets.csv | rows=6 W=5 L=1 P=0 MISSING_SCORE=0 UNKNOWN_MARKET=0 GRADE_ERROR=0
-[2026-10-24T05:09:06.002132] WROTE SELECTED | docs/win/soccer/05_final_scores/results/graded/2026_04_11_results_SOCCER.csv
-[2026-10-24T05:09:06.002151] PROCESSING SELECTED SELECT | 2026_04_12_soccer_bets.csv | date=2026_04_12
-[2026-10-24T05:09:06.012924] SELECTED DAY RESULT | 2026_04_12_soccer_bets.csv | rows=3 W=2 L=1 P=0 MISSING_SCORE=0 UNKNOWN_MARKET=0 GRADE_ERROR=0
-[2026-10-24T05:09:06.013362] WROTE SELECTED | docs/win/soccer/05_final_scores/results/graded/2026_04_12_results_SOCCER.csv
-[2026-10-24T05:09:06.013381] PROCESSING SELECTED SELECT | 2026_04_13_soccer_bets.csv | date=2026_04_13
-[2026-10-24T05:09:06.018984] SELECTED DAY RESULT | 2026_04_13_soccer_bets.csv | rows=1 W=1 L=0 P=0 MISSING_SCORE=0 UNKNOWN_MARKET=0 GRADE_ERROR=0
-[2026-10-24T05:09:06.019299] WROTE SELECTED | docs/win/soccer/05_final_scores/results/graded/2026_04_13_results_SOCCER.csv
-[2026-10-24T05:09:06.019317] PROCESSING SELECTED SELECT | 2026_04_18_soccer_bets.csv | date=2026_04_18
-[2026-10-24T05:09:06.032159] SELECTED DAY RESULT | 2026_04_18_soccer_bets.csv | rows=8 W=3 L=5 P=0 MISSING_SCORE=0 UNKNOWN_MARKET=0 GRADE_ERROR=0
-[2026-10-24T05:09:06.032651] WROTE SELECTED | docs/win/soccer/05_final_scores/results/graded/2026_04_18_results_SOCCER.csv
-[2026-10-24T05:09:06.032670] PROCESSING SELECTED SELECT | 2026_04_19_soccer_bets.csv | date=2026_04_19
-[2026-10-24T05:09:06.045067] SELECTED DAY RESULT | 2026_04_19_soccer_bets.csv | rows=6 W=4 L=2 P=0 MISSING_SCORE=0 UNKNOWN_MARKET=0 GRADE_ERROR=0
-[2026-10-24T05:09:06.045534] WROTE SELECTED | docs/win/soccer/05_final_scores/results/graded/2026_04_19_results_SOCCER.csv
-[2026-10-24T05:09:06.045553] PROCESSING SELECTED SELECT | 2026_04_22_soccer_bets.csv | date=2026_04_22
-[2026-10-24T05:09:06.055639] SELECTED DAY RESULT | 2026_04_22_soccer_bets.csv | rows=4 W=4 L=0 P=0 MISSING_SCORE=0 UNKNOWN_MARKET=0 GRADE_ERROR=0
-[2026-10-24T05:09:06.056031] WROTE SELECTED | docs/win/soccer/05_final_scores/results/graded/2026_04_22_results_SOCCER.csv
-[2026-10-24T05:09:06.056051] PROCESSING SELECTED SELECT | 2026_04_25_soccer_bets.csv | date=2026_04_25
-[2026-10-24T05:09:06.069018] SELECTED DAY RESULT | 2026_04_25_soccer_bets.csv | rows=12 W=11 L=1 P=0 MISSING_SCORE=0 UNKNOWN_MARKET=0 GRADE_ERROR=0
-[2026-10-24T05:09:06.069563] WROTE SELECTED | docs/win/soccer/05_final_scores/results/graded/2026_04_25_results_SOCCER.csv
-[2026-10-24T05:09:06.069581] PROCESSING SELECTED SELECT | 2026_04_26_soccer_bets.csv | date=2026_04_26
-[2026-10-24T05:09:06.075026] SELECTED DAY RESULT | 2026_04_26_soccer_bets.csv | rows=2 W=2 L=0 P=0 MISSING_SCORE=0 UNKNOWN_MARKET=0 GRADE_ERROR=0
-[2026-10-24T05:09:06.075327] WROTE SELECTED | docs/win/soccer/05_final_scores/results/graded/2026_04_26_results_SOCCER.csv
-[2026-10-24T05:09:06.075344] PROCESSING SELECTED SELECT | 2026_05_02_soccer_bets.csv | date=2026_05_02
-[2026-10-24T05:09:06.080823] SELECTED DAY RESULT | 2026_05_02_soccer_bets.csv | rows=6 W=5 L=1 P=0 MISSING_SCORE=0 UNKNOWN_MARKET=0 GRADE_ERROR=0
-[2026-10-24T05:09:06.081168] WROTE SELECTED | docs/win/soccer/05_final_scores/results/graded/2026_05_02_results_SOCCER.csv
-[2026-10-24T05:09:06.081185] PROCESSING SELECTED SELECT | 2026_05_03_soccer_bets.csv | date=2026_05_03
-[2026-10-24T05:09:06.086590] SELECTED DAY RESULT | 2026_05_03_soccer_bets.csv | rows=1 W=1 L=0 P=0 MISSING_SCORE=0 UNKNOWN_MARKET=0 GRADE_ERROR=0
-[2026-10-24T05:09:06.086881] WROTE SELECTED | docs/win/soccer/05_final_scores/results/graded/2026_05_03_results_SOCCER.csv
-[2026-10-24T05:09:06.086899] PROCESSING SELECTED SELECT | 2026_05_04_soccer_bets.csv | date=2026_05_04
-[2026-10-24T05:09:06.092213] SELECTED DAY RESULT | 2026_05_04_soccer_bets.csv | rows=1 W=1 L=0 P=0 MISSING_SCORE=0 UNKNOWN_MARKET=0 GRADE_ERROR=0
-[2026-10-24T05:09:06.092521] WROTE SELECTED | docs/win/soccer/05_final_scores/results/graded/2026_05_04_results_SOCCER.csv
-[2026-10-24T05:09:06.092539] PROCESSING SELECTED SELECT | 2026_05_08_soccer_bets.csv | date=2026_05_08
-[2026-10-24T05:09:06.097946] SELECTED DAY RESULT | 2026_05_08_soccer_bets.csv | rows=1 W=1 L=0 P=0 MISSING_SCORE=0 UNKNOWN_MARKET=0 GRADE_ERROR=0
-[2026-10-24T05:09:06.098244] WROTE SELECTED | docs/win/soccer/05_final_scores/results/graded/2026_05_08_results_SOCCER.csv
-[2026-10-24T05:09:06.098261] PROCESSING SELECTED SELECT | 2026_05_09_soccer_bets.csv | date=2026_05_09
-[2026-10-24T05:09:06.103632] SELECTED DAY RESULT | 2026_05_09_soccer_bets.csv | rows=1 W=1 L=0 P=0 MISSING_SCORE=0 UNKNOWN_MARKET=0 GRADE_ERROR=0
-[2026-10-24T05:09:06.103936] WROTE SELECTED | docs/win/soccer/05_final_scores/results/graded/2026_05_09_results_SOCCER.csv
-[2026-10-24T05:09:06.103953] PROCESSING SELECTED SELECT | 2026_05_10_soccer_bets.csv | date=2026_05_10
-[2026-10-24T05:09:06.114161] SELECTED DAY RESULT | 2026_05_10_soccer_bets.csv | rows=8 W=6 L=2 P=0 MISSING_SCORE=0 UNKNOWN_MARKET=0 GRADE_ERROR=0
-[2026-10-24T05:09:06.114648] WROTE SELECTED | docs/win/soccer/05_final_scores/results/graded/2026_05_10_results_SOCCER.csv
-[2026-10-24T05:09:06.114666] PROCESSING SELECTED SELECT | 2026_05_11_soccer_bets.csv | date=2026_05_11
-[2026-10-24T05:09:06.120132] SELECTED DAY RESULT | 2026_05_11_soccer_bets.csv | rows=1 W=1 L=0 P=0 MISSING_SCORE=0 UNKNOWN_MARKET=0 GRADE_ERROR=0
-[2026-10-24T05:09:06.120427] WROTE SELECTED | docs/win/soccer/05_final_scores/results/graded/2026_05_11_results_SOCCER.csv
-[2026-10-24T05:09:06.120466] PROCESSING SELECTED SELECT | 2026_05_12_soccer_bets.csv | date=2026_05_12
-[2026-10-24T05:09:06.125989] SELECTED DAY RESULT | 2026_05_12_soccer_bets.csv | rows=1 W=1 L=0 P=0 MISSING_SCORE=0 UNKNOWN_MARKET=0 GRADE_ERROR=0
-[2026-10-24T05:09:06.126297] WROTE SELECTED | docs/win/soccer/05_final_scores/results/graded/2026_05_12_results_SOCCER.csv
-[2026-10-24T05:09:06.126316] PROCESSING SELECTED SELECT | 2026_05_13_soccer_bets.csv | date=2026_05_13
-[2026-10-24T05:09:06.134564] SELECTED DAY RESULT | 2026_05_13_soccer_bets.csv | rows=3 W=2 L=1 P=0 MISSING_SCORE=0 UNKNOWN_MARKET=0 GRADE_ERROR=0
-[2026-10-24T05:09:06.134968] WROTE SELECTED | docs/win/soccer/05_final_scores/results/graded/2026_05_13_results_SOCCER.csv
-[2026-10-24T05:09:06.134987] PROCESSING SELECTED SELECT | 2026_05_14_soccer_bets.csv | date=2026_05_14
-[2026-10-24T05:09:06.140545] SELECTED DAY RESULT | 2026_05_14_soccer_bets.csv | rows=1 W=1 L=0 P=0 MISSING_SCORE=0 UNKNOWN_MARKET=0 GRADE_ERROR=0
-[2026-10-24T05:09:06.140854] WROTE SELECTED | docs/win/soccer/05_final_scores/results/graded/2026_05_14_results_SOCCER.csv
-[2026-10-24T05:09:06.140872] PROCESSING SELECTED SELECT | 2026_05_16_soccer_bets.csv | date=2026_05_16
-[2026-10-24T05:09:06.146634] SELECTED DAY RESULT | 2026_05_16_soccer_bets.csv | rows=1 W=1 L=0 P=0 MISSING_SCORE=0 UNKNOWN_MARKET=0 GRADE_ERROR=0
-[2026-10-24T05:09:06.146947] WROTE SELECTED | docs/win/soccer/05_final_scores/results/graded/2026_05_16_results_SOCCER.csv
-[2026-10-24T05:09:06.146966] PROCESSING SELECTED SELECT | 2026_05_17_soccer_bets.csv | date=2026_05_17
-[2026-10-24T05:09:06.161359] SELECTED DAY RESULT | 2026_05_17_soccer_bets.csv | rows=10 W=7 L=2 P=0 MISSING_SCORE=1 UNKNOWN_MARKET=0 GRADE_ERROR=0
-[2026-10-24T05:09:06.161890] WROTE SELECTED | docs/win/soccer/05_final_scores/results/graded/2026_05_17_results_SOCCER.csv
-[2026-10-24T05:09:06.161908] PROCESSING SELECTED SELECT | 2026_05_23_soccer_bets.csv | date=2026_05_23
-[2026-10-24T05:09:06.167602] SELECTED DAY RESULT | 2026_05_23_soccer_bets.csv | rows=4 W=3 L=1 P=0 MISSING_SCORE=0 UNKNOWN_MARKET=0 GRADE_ERROR=0
-[2026-10-24T05:09:06.167938] WROTE SELECTED | docs/win/soccer/05_final_scores/results/graded/2026_05_23_results_SOCCER.csv
-[2026-10-24T05:09:06.167956] PROCESSING SELECTED SELECT | 2026_05_24_soccer_bets.csv | date=2026_05_24
-[2026-10-24T05:09:06.176162] SELECTED DAY RESULT | 2026_05_24_soccer_bets.csv | rows=9 W=9 L=0 P=0 MISSING_SCORE=0 UNKNOWN_MARKET=0 GRADE_ERROR=0
-[2026-10-24T05:09:06.176663] WROTE SELECTED | docs/win/soccer/05_final_scores/results/graded/2026_05_24_results_SOCCER.csv
-[2026-10-24T05:09:06.176682] PROCESSING SELECTED SELECT | 2026_08_19_soccer_bets.csv | date=2026_08_19
-[2026-10-24T05:09:06.181998] SELECTED DAY RESULT | 2026_08_19_soccer_bets.csv | rows=1 W=1 L=0 P=0 MISSING_SCORE=0 UNKNOWN_MARKET=0 GRADE_ERROR=0
-[2026-10-24T05:09:06.182300] WROTE SELECTED | docs/win/soccer/05_final_scores/results/graded/2026_08_19_results_SOCCER.csv
-[2026-10-24T05:09:06.182319] PROCESSING SELECTED SELECT | 2026_08_20_soccer_bets.csv | date=2026_08_20
-[2026-10-24T05:09:06.187898] SELECTED DAY RESULT | 2026_08_20_soccer_bets.csv | rows=1 W=1 L=0 P=0 MISSING_SCORE=0 UNKNOWN_MARKET=0 GRADE_ERROR=0
-[2026-10-24T05:09:06.188193] WROTE SELECTED | docs/win/soccer/05_final_scores/results/graded/2026_08_20_results_SOCCER.csv
-[2026-10-24T05:09:06.188210] PROCESSING SELECTED SELECT | 2026_08_21_soccer_bets.csv | date=2026_08_21
-[2026-10-24T05:09:06.193590] SELECTED DAY RESULT | 2026_08_21_soccer_bets.csv | rows=1 W=0 L=1 P=0 MISSING_SCORE=0 UNKNOWN_MARKET=0 GRADE_ERROR=0
-[2026-10-24T05:09:06.193904] WROTE SELECTED | docs/win/soccer/05_final_scores/results/graded/2026_08_21_results_SOCCER.csv
-[2026-10-24T05:09:06.193922] PROCESSING SELECTED SELECT | 2026_08_22_soccer_bets.csv | date=2026_08_22
-[2026-10-24T05:09:06.202340] SELECTED DAY RESULT | 2026_08_22_soccer_bets.csv | rows=2 W=2 L=0 P=0 MISSING_SCORE=0 UNKNOWN_MARKET=0 GRADE_ERROR=0
-[2026-10-24T05:09:06.202774] WROTE SELECTED | docs/win/soccer/05_final_scores/results/graded/2026_08_22_results_SOCCER.csv
-[2026-10-24T05:09:06.202793] PROCESSING SELECTED SELECT | 2026_08_23_soccer_bets.csv | date=2026_08_23
-[2026-10-24T05:09:06.211089] SELECTED DAY RESULT | 2026_08_23_soccer_bets.csv | rows=3 W=2 L=1 P=0 MISSING_SCORE=0 UNKNOWN_MARKET=0 GRADE_ERROR=0
-[2026-10-24T05:09:06.211532] WROTE SELECTED | docs/win/soccer/05_final_scores/results/graded/2026_08_23_results_SOCCER.csv
-[2026-10-24T05:09:06.211550] PROCESSING SELECTED SELECT | 2026_08_24_soccer_bets.csv | date=2026_08_24
-[2026-10-24T05:09:06.219455] SELECTED DAY RESULT | 2026_08_24_soccer_bets.csv | rows=2 W=2 L=0 P=0 MISSING_SCORE=0 UNKNOWN_MARKET=0 GRADE_ERROR=0
-[2026-10-24T05:09:06.219833] WROTE SELECTED | docs/win/soccer/05_final_scores/results/graded/2026_08_24_results_SOCCER.csv
-[2026-10-24T05:09:06.219852] PROCESSING SELECTED SELECT | 2026_08_29_soccer_bets.csv | date=2026_08_29
-[2026-10-24T05:09:06.232705] SELECTED DAY RESULT | 2026_08_29_soccer_bets.csv | rows=4 W=3 L=1 P=0 MISSING_SCORE=0 UNKNOWN_MARKET=0 GRADE_ERROR=0
-[2026-10-24T05:09:06.233143] WROTE SELECTED | docs/win/soccer/05_final_scores/results/graded/2026_08_29_results_SOCCER.csv
-[2026-10-24T05:09:06.233161] PROCESSING SELECTED SELECT | 2026_08_30_soccer_bets.csv | date=2026_08_30
-[2026-10-24T05:09:06.241375] SELECTED DAY RESULT | 2026_08_30_soccer_bets.csv | rows=2 W=2 L=0 P=0 MISSING_SCORE=0 UNKNOWN_MARKET=0 GRADE_ERROR=0
-[2026-10-24T05:09:06.241798] WROTE SELECTED | docs/win/soccer/05_final_scores/results/graded/2026_08_30_results_SOCCER.csv
-[2026-10-24T05:09:06.241817] PROCESSING SELECTED SELECT | 2026_09_05_soccer_bets.csv | date=2026_09_05
-[2026-10-24T05:09:06.250241] SELECTED DAY RESULT | 2026_09_05_soccer_bets.csv | rows=4 W=3 L=1 P=0 MISSING_SCORE=0 UNKNOWN_MARKET=0 GRADE_ERROR=0
-[2026-10-24T05:09:06.250692] WROTE SELECTED | docs/win/soccer/05_final_scores/results/graded/2026_09_05_results_SOCCER.csv
-[2026-10-24T05:09:06.250712] PROCESSING SELECTED SELECT | 2026_09_06_soccer_bets.csv | date=2026_09_06
-[2026-10-24T05:09:06.256230] SELECTED DAY RESULT | 2026_09_06_soccer_bets.csv | rows=1 W=1 L=0 P=0 MISSING_SCORE=0 UNKNOWN_MARKET=0 GRADE_ERROR=0
-[2026-10-24T05:09:06.256556] WROTE SELECTED | docs/win/soccer/05_final_scores/results/graded/2026_09_06_results_SOCCER.csv
-[2026-10-24T05:09:06.256575] PROCESSING SELECTED SELECT | 2026_09_07_soccer_bets.csv | date=2026_09_07
-[2026-10-24T05:09:06.262235] SELECTED DAY RESULT | 2026_09_07_soccer_bets.csv | rows=1 W=1 L=0 P=0 MISSING_SCORE=0 UNKNOWN_MARKET=0 GRADE_ERROR=0
-[2026-10-24T05:09:06.262559] WROTE SELECTED | docs/win/soccer/05_final_scores/results/graded/2026_09_07_results_SOCCER.csv
-[2026-10-24T05:09:06.262577] PROCESSING SELECTED SELECT | 2026_09_11_soccer_bets.csv | date=2026_09_11
-[2026-10-24T05:09:06.267991] SELECTED DAY RESULT | 2026_09_11_soccer_bets.csv | rows=1 W=1 L=0 P=0 MISSING_SCORE=0 UNKNOWN_MARKET=0 GRADE_ERROR=0
-[2026-10-24T05:09:06.268301] WROTE SELECTED | docs/win/soccer/05_final_scores/results/graded/2026_09_11_results_SOCCER.csv
-[2026-10-24T05:09:06.268320] PROCESSING SELECTED SELECT | 2026_09_12_soccer_bets.csv | date=2026_09_12
-[2026-10-24T05:09:06.278849] SELECTED DAY RESULT | 2026_09_12_soccer_bets.csv | rows=3 W=1 L=2 P=0 MISSING_SCORE=0 UNKNOWN_MARKET=0 GRADE_ERROR=0
-[2026-10-24T05:09:06.279281] WROTE SELECTED | docs/win/soccer/05_final_scores/results/graded/2026_09_12_results_SOCCER.csv
-[2026-10-24T05:09:06.279300] PROCESSING SELECTED SELECT | 2026_09_13_soccer_bets.csv | date=2026_09_13
-[2026-10-24T05:09:06.289816] SELECTED DAY RESULT | 2026_09_13_soccer_bets.csv | rows=4 W=3 L=1 P=0 MISSING_SCORE=0 UNKNOWN_MARKET=0 GRADE_ERROR=0
-[2026-10-24T05:09:06.290257] WROTE SELECTED | docs/win/soccer/05_final_scores/results/graded/2026_09_13_results_SOCCER.csv
-[2026-10-24T05:09:06.290275] PROCESSING SELECTED SELECT | 2026_09_17_soccer_bets.csv | date=2026_09_17
-[2026-10-24T05:09:06.295832] SELECTED DAY RESULT | 2026_09_17_soccer_bets.csv | rows=1 W=1 L=0 P=0 MISSING_SCORE=0 UNKNOWN_MARKET=0 GRADE_ERROR=0
-[2026-10-24T05:09:06.296135] WROTE SELECTED | docs/win/soccer/05_final_scores/results/graded/2026_09_17_results_SOCCER.csv
-[2026-10-24T05:09:06.296153] PROCESSING SELECTED SELECT | 2026_09_19_soccer_bets.csv | date=2026_09_19
-[2026-10-24T05:09:06.306893] SELECTED DAY RESULT | 2026_09_19_soccer_bets.csv | rows=4 W=4 L=0 P=0 MISSING_SCORE=0 UNKNOWN_MARKET=0 GRADE_ERROR=0
-[2026-10-24T05:09:06.307337] WROTE SELECTED | docs/win/soccer/05_final_scores/results/graded/2026_09_19_results_SOCCER.csv
-[2026-10-24T05:09:06.307356] PROCESSING SELECTED SELECT | 2026_09_20_soccer_bets.csv | date=2026_09_20
-[2026-10-24T05:09:06.315400] SELECTED DAY RESULT | 2026_09_20_soccer_bets.csv | rows=2 W=2 L=0 P=0 MISSING_SCORE=0 UNKNOWN_MARKET=0 GRADE_ERROR=0
-[2026-10-24T05:09:06.315878] WROTE SELECTED | docs/win/soccer/05_final_scores/results/graded/2026_09_20_results_SOCCER.csv
-[2026-10-24T05:09:06.315897] PROCESSING SELECTED SELECT | 2026_10_10_soccer_bets.csv | date=2026_10_10
-[2026-10-24T05:09:06.328781] SELECTED DAY RESULT | 2026_10_10_soccer_bets.csv | rows=6 W=5 L=1 P=0 MISSING_SCORE=0 UNKNOWN_MARKET=0 GRADE_ERROR=0
-[2026-10-24T05:09:06.329245] WROTE SELECTED | docs/win/soccer/05_final_scores/results/graded/2026_10_10_results_SOCCER.csv
-[2026-10-24T05:09:06.329263] PROCESSING SELECTED SELECT | 2026_10_14_soccer_bets.csv | date=2026_10_14
-[2026-10-24T05:09:06.334805] SELECTED DAY RESULT | 2026_10_14_soccer_bets.csv | rows=1 W=0 L=1 P=0 MISSING_SCORE=0 UNKNOWN_MARKET=0 GRADE_ERROR=0
-[2026-10-24T05:09:06.335114] WROTE SELECTED | docs/win/soccer/05_final_scores/results/graded/2026_10_14_results_SOCCER.csv
-[2026-10-24T05:09:06.335132] PROCESSING SELECTED SELECT | 2026_10_17_soccer_bets.csv | date=2026_10_17
-[2026-10-24T05:09:06.340681] SELECTED DAY RESULT | 2026_10_17_soccer_bets.csv | rows=1 W=0 L=1 P=0 MISSING_SCORE=0 UNKNOWN_MARKET=0 GRADE_ERROR=0
-[2026-10-24T05:09:06.340989] WROTE SELECTED | docs/win/soccer/05_final_scores/results/graded/2026_10_17_results_SOCCER.csv
-[2026-10-24T05:09:06.341007] PROCESSING SELECTED SELECT | 2026_10_18_soccer_bets.csv | date=2026_10_18
-[2026-10-24T05:09:06.349327] SELECTED DAY RESULT | 2026_10_18_soccer_bets.csv | rows=2 W=0 L=2 P=0 MISSING_SCORE=0 UNKNOWN_MARKET=0 GRADE_ERROR=0
-[2026-10-24T05:09:06.349765] WROTE SELECTED | docs/win/soccer/05_final_scores/results/graded/2026_10_18_results_SOCCER.csv
-[2026-10-24T05:09:06.349783] PROCESSING SELECTED SELECT | 2026_10_23_soccer_bets.csv | date=2026_10_23
-[2026-10-24T05:09:06.354103] SELECTED DAY RESULT | 2026_10_23_soccer_bets.csv | rows=1 W=0 L=0 P=0 MISSING_SCORE=1 UNKNOWN_MARKET=0 GRADE_ERROR=0
-[2026-10-24T05:09:06.354464] WROTE SELECTED | docs/win/soccer/05_final_scores/results/graded/2026_10_23_results_SOCCER.csv
-[2026-10-24T05:09:06.354483] PROCESSING SELECTED SELECT | 2026_10_24_soccer_bets.csv | date=2026_10_24
-[2026-10-24T05:09:06.361165] SELECTED DAY RESULT | 2026_10_24_soccer_bets.csv | rows=5 W=0 L=0 P=0 MISSING_SCORE=5 UNKNOWN_MARKET=0 GRADE_ERROR=0
-[2026-10-24T05:09:06.361661] WROTE SELECTED | docs/win/soccer/05_final_scores/results/graded/2026_10_24_results_SOCCER.csv
-[2026-10-24T05:09:06.371377] SELECTED MASTER WRITTEN | rows=147 W=111 L=29 P=0 MISSING_SCORE=7 UNKNOWN_MARKET=0 GRADE_ERROR=0 | docs/win/soccer/05_final_scores/results/graded/SOCCER_final.csv
-[2026-10-24T05:09:06.371912] LOCKED select files found: 3 | docs/win/soccer/04_select/locked
-[2026-10-24T05:09:06.371931] PROCESSING LOCKED SELECT | 2026_08_31_soccer_bets.csv | date=2026_08_31
-[2026-10-24T05:09:06.373235] EMPTY LOCKED PICK FILE | docs/win/soccer/04_select/locked/2026_08_31_soccer_bets.csv | zero picks recorded
-[2026-10-24T05:09:06.373756] PROCESSING LOCKED SELECT | 2026_09_03_soccer_bets.csv | date=2026_09_03
-[2026-10-24T05:09:06.375160] EMPTY LOCKED PICK FILE | docs/win/soccer/04_select/locked/2026_09_03_soccer_bets.csv | zero picks recorded
-[2026-10-24T05:09:06.375677] PROCESSING LOCKED SELECT | 2026_09_04_soccer_bets.csv | date=2026_09_04
-[2026-10-24T05:09:06.381634] LOCKED DAY RESULT | 2026_09_04_soccer_bets.csv | rows=1 W=1 L=0 P=0 MISSING_SCORE=0 UNKNOWN_MARKET=0 GRADE_ERROR=0
-[2026-10-24T05:09:06.381961] WROTE LOCKED | docs/win/soccer/05_final_scores/results/graded_locked/2026_09_04_results_SOCCER.csv
-[2026-10-24T05:09:06.382499] LOCKED MASTER WRITTEN | rows=1 W=1 L=0 P=0 MISSING_SCORE=0 UNKNOWN_MARKET=0 GRADE_ERROR=0 | docs/win/soccer/05_final_scores/results/graded_locked/SOCCER_locked_final.csv
-[2026-10-24T05:09:06.382549] === END 01_soccer_results_grade.py 2026-10-24T05:09:06.382536 ===
+[2026-11-03T09:02:51.834227] === START 01_soccer_results_grade.py 2026-11-03T09:02:51.834207 ===
+[2026-11-03T09:02:51.834801] DELETED OLD SELECTED OUTPUT | docs/win/soccer/05_final_scores/results/graded/2026_04_10_results_SOCCER.csv
+[2026-11-03T09:02:51.834964] DELETED OLD SELECTED OUTPUT | docs/win/soccer/05_final_scores/results/graded/2026_04_11_results_SOCCER.csv
+[2026-11-03T09:02:51.860342] DELETED OLD SELECTED OUTPUT | docs/win/soccer/05_final_scores/results/graded/2026_04_12_results_SOCCER.csv
+[2026-11-03T09:02:51.860528] DELETED OLD SELECTED OUTPUT | docs/win/soccer/05_final_scores/results/graded/2026_04_13_results_SOCCER.csv
+[2026-11-03T09:02:51.860666] DELETED OLD SELECTED OUTPUT | docs/win/soccer/05_final_scores/results/graded/2026_04_17_results_SOCCER.csv
+[2026-11-03T09:02:51.885731] DELETED OLD SELECTED OUTPUT | docs/win/soccer/05_final_scores/results/graded/2026_04_18_results_SOCCER.csv
+[2026-11-03T09:02:51.885880] DELETED OLD SELECTED OUTPUT | docs/win/soccer/05_final_scores/results/graded/2026_04_19_results_SOCCER.csv
+[2026-11-03T09:02:51.886024] DELETED OLD SELECTED OUTPUT | docs/win/soccer/05_final_scores/results/graded/2026_04_20_results_SOCCER.csv
+[2026-11-03T09:02:51.886145] DELETED OLD SELECTED OUTPUT | docs/win/soccer/05_final_scores/results/graded/2026_04_21_results_SOCCER.csv
+[2026-11-03T09:02:51.886293] DELETED OLD SELECTED OUTPUT | docs/win/soccer/05_final_scores/results/graded/2026_04_22_results_SOCCER.csv
+[2026-11-03T09:02:51.886431] DELETED OLD SELECTED OUTPUT | docs/win/soccer/05_final_scores/results/graded/2026_04_24_results_SOCCER.csv
+[2026-11-03T09:02:51.886569] DELETED OLD SELECTED OUTPUT | docs/win/soccer/05_final_scores/results/graded/2026_04_25_results_SOCCER.csv
+[2026-11-03T09:02:51.886699] DELETED OLD SELECTED OUTPUT | docs/win/soccer/05_final_scores/results/graded/2026_04_26_results_SOCCER.csv
+[2026-11-03T09:02:51.886828] DELETED OLD SELECTED OUTPUT | docs/win/soccer/05_final_scores/results/graded/2026_04_27_results_SOCCER.csv
+[2026-11-03T09:02:51.886957] DELETED OLD SELECTED OUTPUT | docs/win/soccer/05_final_scores/results/graded/2026_05_01_results_SOCCER.csv
+[2026-11-03T09:02:51.887094] DELETED OLD SELECTED OUTPUT | docs/win/soccer/05_final_scores/results/graded/2026_05_02_results_SOCCER.csv
+[2026-11-03T09:02:51.887233] DELETED OLD SELECTED OUTPUT | docs/win/soccer/05_final_scores/results/graded/2026_05_03_results_SOCCER.csv
+[2026-11-03T09:02:51.887433] DELETED OLD SELECTED OUTPUT | docs/win/soccer/05_final_scores/results/graded/2026_05_04_results_SOCCER.csv
+[2026-11-03T09:02:51.887563] DELETED OLD SELECTED OUTPUT | docs/win/soccer/05_final_scores/results/graded/2026_05_08_results_SOCCER.csv
+[2026-11-03T09:02:51.887696] DELETED OLD SELECTED OUTPUT | docs/win/soccer/05_final_scores/results/graded/2026_05_09_results_SOCCER.csv
+[2026-11-03T09:02:51.887832] DELETED OLD SELECTED OUTPUT | docs/win/soccer/05_final_scores/results/graded/2026_05_10_results_SOCCER.csv
+[2026-11-03T09:02:51.887964] DELETED OLD SELECTED OUTPUT | docs/win/soccer/05_final_scores/results/graded/2026_05_11_results_SOCCER.csv
+[2026-11-03T09:02:51.888089] DELETED OLD SELECTED OUTPUT | docs/win/soccer/05_final_scores/results/graded/2026_05_12_results_SOCCER.csv
+[2026-11-03T09:02:51.888229] DELETED OLD SELECTED OUTPUT | docs/win/soccer/05_final_scores/results/graded/2026_05_13_results_SOCCER.csv
+[2026-11-03T09:02:51.888348] DELETED OLD SELECTED OUTPUT | docs/win/soccer/05_final_scores/results/graded/2026_05_14_results_SOCCER.csv
+[2026-11-03T09:02:51.888473] DELETED OLD SELECTED OUTPUT | docs/win/soccer/05_final_scores/results/graded/2026_05_16_results_SOCCER.csv
+[2026-11-03T09:02:51.888599] DELETED OLD SELECTED OUTPUT | docs/win/soccer/05_final_scores/results/graded/2026_05_17_results_SOCCER.csv
+[2026-11-03T09:02:51.888735] DELETED OLD SELECTED OUTPUT | docs/win/soccer/05_final_scores/results/graded/2026_05_18_results_SOCCER.csv
+[2026-11-03T09:02:51.888855] DELETED OLD SELECTED OUTPUT | docs/win/soccer/05_final_scores/results/graded/2026_05_19_results_SOCCER.csv
+[2026-11-03T09:02:51.888994] DELETED OLD SELECTED OUTPUT | docs/win/soccer/05_final_scores/results/graded/2026_05_22_results_SOCCER.csv
+[2026-11-03T09:02:51.889151] DELETED OLD SELECTED OUTPUT | docs/win/soccer/05_final_scores/results/graded/2026_05_23_results_SOCCER.csv
+[2026-11-03T09:02:51.889286] DELETED OLD SELECTED OUTPUT | docs/win/soccer/05_final_scores/results/graded/2026_05_24_results_SOCCER.csv
+[2026-11-03T09:02:51.889414] DELETED OLD SELECTED OUTPUT | docs/win/soccer/05_final_scores/results/graded/2026_08_08_results_SOCCER.csv
+[2026-11-03T09:02:51.889553] DELETED OLD SELECTED OUTPUT | docs/win/soccer/05_final_scores/results/graded/2026_08_15_results_SOCCER.csv
+[2026-11-03T09:02:51.889692] DELETED OLD SELECTED OUTPUT | docs/win/soccer/05_final_scores/results/graded/2026_08_16_results_SOCCER.csv
+[2026-11-03T09:02:51.889814] DELETED OLD SELECTED OUTPUT | docs/win/soccer/05_final_scores/results/graded/2026_08_19_results_SOCCER.csv
+[2026-11-03T09:02:51.889947] DELETED OLD SELECTED OUTPUT | docs/win/soccer/05_final_scores/results/graded/2026_08_20_results_SOCCER.csv
+[2026-11-03T09:02:51.890073] DELETED OLD SELECTED OUTPUT | docs/win/soccer/05_final_scores/results/graded/2026_08_21_results_SOCCER.csv
+[2026-11-03T09:02:51.890206] DELETED OLD SELECTED OUTPUT | docs/win/soccer/05_final_scores/results/graded/2026_08_22_results_SOCCER.csv
+[2026-11-03T09:02:51.890342] DELETED OLD SELECTED OUTPUT | docs/win/soccer/05_final_scores/results/graded/2026_08_23_results_SOCCER.csv
+[2026-11-03T09:02:51.890461] DELETED OLD SELECTED OUTPUT | docs/win/soccer/05_final_scores/results/graded/2026_08_24_results_SOCCER.csv
+[2026-11-03T09:02:51.890580] DELETED OLD SELECTED OUTPUT | docs/win/soccer/05_final_scores/results/graded/2026_08_25_results_SOCCER.csv
+[2026-11-03T09:02:51.890704] DELETED OLD SELECTED OUTPUT | docs/win/soccer/05_final_scores/results/graded/2026_08_26_results_SOCCER.csv
+[2026-11-03T09:02:51.890823] DELETED OLD SELECTED OUTPUT | docs/win/soccer/05_final_scores/results/graded/2026_08_28_results_SOCCER.csv
+[2026-11-03T09:02:51.890937] DELETED OLD SELECTED OUTPUT | docs/win/soccer/05_final_scores/results/graded/2026_08_29_results_SOCCER.csv
+[2026-11-03T09:02:51.891053] DELETED OLD SELECTED OUTPUT | docs/win/soccer/05_final_scores/results/graded/2026_08_30_results_SOCCER.csv
+[2026-11-03T09:02:51.891169] DELETED OLD SELECTED OUTPUT | docs/win/soccer/05_final_scores/results/graded/2026_08_31_results_SOCCER.csv
+[2026-11-03T09:02:51.891284] DELETED OLD SELECTED OUTPUT | docs/win/soccer/05_final_scores/results/graded/2026_09_04_results_SOCCER.csv
+[2026-11-03T09:02:51.891407] DELETED OLD SELECTED OUTPUT | docs/win/soccer/05_final_scores/results/graded/2026_09_05_results_SOCCER.csv
+[2026-11-03T09:02:51.891536] DELETED OLD SELECTED OUTPUT | docs/win/soccer/05_final_scores/results/graded/2026_09_06_results_SOCCER.csv
+[2026-11-03T09:02:51.891657] DELETED OLD SELECTED OUTPUT | docs/win/soccer/05_final_scores/results/graded/2026_09_07_results_SOCCER.csv
+[2026-11-03T09:02:51.891785] DELETED OLD SELECTED OUTPUT | docs/win/soccer/05_final_scores/results/graded/2026_09_09_results_SOCCER.csv
+[2026-11-03T09:02:51.891898] DELETED OLD SELECTED OUTPUT | docs/win/soccer/05_final_scores/results/graded/2026_09_11_results_SOCCER.csv
+[2026-11-03T09:02:51.892015] DELETED OLD SELECTED OUTPUT | docs/win/soccer/05_final_scores/results/graded/2026_09_12_results_SOCCER.csv
+[2026-11-03T09:02:51.892186] DELETED OLD SELECTED OUTPUT | docs/win/soccer/05_final_scores/results/graded/2026_09_13_results_SOCCER.csv
+[2026-11-03T09:02:51.892344] DELETED OLD SELECTED OUTPUT | docs/win/soccer/05_final_scores/results/graded/2026_09_14_results_SOCCER.csv
+[2026-11-03T09:02:51.892481] DELETED OLD SELECTED OUTPUT | docs/win/soccer/05_final_scores/results/graded/2026_09_15_results_SOCCER.csv
+[2026-11-03T09:02:51.892617] DELETED OLD SELECTED OUTPUT | docs/win/soccer/05_final_scores/results/graded/2026_09_16_results_SOCCER.csv
+[2026-11-03T09:02:51.892750] DELETED OLD SELECTED OUTPUT | docs/win/soccer/05_final_scores/results/graded/2026_09_17_results_SOCCER.csv
+[2026-11-03T09:02:51.892896] DELETED OLD SELECTED OUTPUT | docs/win/soccer/05_final_scores/results/graded/2026_09_18_results_SOCCER.csv
+[2026-11-03T09:02:51.893037] DELETED OLD SELECTED OUTPUT | docs/win/soccer/05_final_scores/results/graded/2026_09_19_results_SOCCER.csv
+[2026-11-03T09:02:51.893187] DELETED OLD SELECTED OUTPUT | docs/win/soccer/05_final_scores/results/graded/2026_09_20_results_SOCCER.csv
+[2026-11-03T09:02:51.893308] DELETED OLD SELECTED OUTPUT | docs/win/soccer/05_final_scores/results/graded/2026_09_26_results_SOCCER.csv
+[2026-11-03T09:02:51.893426] DELETED OLD SELECTED OUTPUT | docs/win/soccer/05_final_scores/results/graded/2026_10_10_results_SOCCER.csv
+[2026-11-03T09:02:51.893549] DELETED OLD SELECTED OUTPUT | docs/win/soccer/05_final_scores/results/graded/2026_10_11_results_SOCCER.csv
+[2026-11-03T09:02:51.893680] DELETED OLD SELECTED OUTPUT | docs/win/soccer/05_final_scores/results/graded/2026_10_12_results_SOCCER.csv
+[2026-11-03T09:02:51.893811] DELETED OLD SELECTED OUTPUT | docs/win/soccer/05_final_scores/results/graded/2026_10_14_results_SOCCER.csv
+[2026-11-03T09:02:51.893934] DELETED OLD SELECTED OUTPUT | docs/win/soccer/05_final_scores/results/graded/2026_10_17_results_SOCCER.csv
+[2026-11-03T09:02:51.894058] DELETED OLD SELECTED OUTPUT | docs/win/soccer/05_final_scores/results/graded/2026_10_18_results_SOCCER.csv
+[2026-11-03T09:02:51.894189] DELETED OLD SELECTED OUTPUT | docs/win/soccer/05_final_scores/results/graded/2026_10_23_results_SOCCER.csv
+[2026-11-03T09:02:51.894315] DELETED OLD SELECTED OUTPUT | docs/win/soccer/05_final_scores/results/graded/2026_10_24_results_SOCCER.csv
+[2026-11-03T09:02:51.894454] DELETED OLD SELECTED OUTPUT | docs/win/soccer/05_final_scores/results/graded/SOCCER_final.csv
+[2026-11-03T09:02:51.894477] OLD SELECTED OUTPUT FILES DELETED | count=72
+[2026-11-03T09:02:51.894719] DELETED OLD LOCKED OUTPUT | docs/win/soccer/05_final_scores/results/graded_locked/2026_09_04_results_SOCCER.csv
+[2026-11-03T09:02:51.894864] DELETED OLD LOCKED OUTPUT | docs/win/soccer/05_final_scores/results/graded_locked/SOCCER_locked_final.csv
+[2026-11-03T09:02:51.894876] OLD LOCKED OUTPUT FILES DELETED | count=2
+[2026-11-03T09:02:51.894888] OLD OUTPUT FILES DELETED TOTAL | count=74
+[2026-11-03T09:02:51.895165] SELECTED select files found: 46 | docs/win/soccer/04_select
+[2026-11-03T09:02:51.895186] PROCESSING SELECTED SELECT | 2026_04_10_soccer_bets.csv | date=2026_04_10
+[2026-11-03T09:02:51.910367] SELECTED DAY RESULT | 2026_04_10_soccer_bets.csv | rows=4 W=4 L=0 P=0 MISSING_SCORE=0 UNKNOWN_MARKET=0 GRADE_ERROR=0
+[2026-11-03T09:02:51.911309] WROTE SELECTED | docs/win/soccer/05_final_scores/results/graded/2026_04_10_results_SOCCER.csv
+[2026-11-03T09:02:51.911331] PROCESSING SELECTED SELECT | 2026_04_11_soccer_bets.csv | date=2026_04_11
+[2026-11-03T09:02:51.925439] SELECTED DAY RESULT | 2026_04_11_soccer_bets.csv | rows=6 W=5 L=1 P=0 MISSING_SCORE=0 UNKNOWN_MARKET=0 GRADE_ERROR=0
+[2026-11-03T09:02:51.926018] WROTE SELECTED | docs/win/soccer/05_final_scores/results/graded/2026_04_11_results_SOCCER.csv
+[2026-11-03T09:02:51.926039] PROCESSING SELECTED SELECT | 2026_04_12_soccer_bets.csv | date=2026_04_12
+[2026-11-03T09:02:51.936956] SELECTED DAY RESULT | 2026_04_12_soccer_bets.csv | rows=3 W=2 L=1 P=0 MISSING_SCORE=0 UNKNOWN_MARKET=0 GRADE_ERROR=0
+[2026-11-03T09:02:51.937495] WROTE SELECTED | docs/win/soccer/05_final_scores/results/graded/2026_04_12_results_SOCCER.csv
+[2026-11-03T09:02:51.937514] PROCESSING SELECTED SELECT | 2026_04_13_soccer_bets.csv | date=2026_04_13
+[2026-11-03T09:02:51.943194] SELECTED DAY RESULT | 2026_04_13_soccer_bets.csv | rows=1 W=1 L=0 P=0 MISSING_SCORE=0 UNKNOWN_MARKET=0 GRADE_ERROR=0
+[2026-11-03T09:02:51.943555] WROTE SELECTED | docs/win/soccer/05_final_scores/results/graded/2026_04_13_results_SOCCER.csv
+[2026-11-03T09:02:51.943574] PROCESSING SELECTED SELECT | 2026_04_18_soccer_bets.csv | date=2026_04_18
+[2026-11-03T09:02:51.956553] SELECTED DAY RESULT | 2026_04_18_soccer_bets.csv | rows=8 W=3 L=5 P=0 MISSING_SCORE=0 UNKNOWN_MARKET=0 GRADE_ERROR=0
+[2026-11-03T09:02:51.957083] WROTE SELECTED | docs/win/soccer/05_final_scores/results/graded/2026_04_18_results_SOCCER.csv
+[2026-11-03T09:02:51.957133] PROCESSING SELECTED SELECT | 2026_04_19_soccer_bets.csv | date=2026_04_19
+[2026-11-03T09:02:51.969714] SELECTED DAY RESULT | 2026_04_19_soccer_bets.csv | rows=6 W=4 L=2 P=0 MISSING_SCORE=0 UNKNOWN_MARKET=0 GRADE_ERROR=0
+[2026-11-03T09:02:51.970226] WROTE SELECTED | docs/win/soccer/05_final_scores/results/graded/2026_04_19_results_SOCCER.csv
+[2026-11-03T09:02:51.970245] PROCESSING SELECTED SELECT | 2026_04_22_soccer_bets.csv | date=2026_04_22
+[2026-11-03T09:02:51.980522] SELECTED DAY RESULT | 2026_04_22_soccer_bets.csv | rows=4 W=4 L=0 P=0 MISSING_SCORE=0 UNKNOWN_MARKET=0 GRADE_ERROR=0
+[2026-11-03T09:02:51.980953] WROTE SELECTED | docs/win/soccer/05_final_scores/results/graded/2026_04_22_results_SOCCER.csv
+[2026-11-03T09:02:51.980973] PROCESSING SELECTED SELECT | 2026_04_25_soccer_bets.csv | date=2026_04_25
+[2026-11-03T09:02:51.994255] SELECTED DAY RESULT | 2026_04_25_soccer_bets.csv | rows=12 W=11 L=1 P=0 MISSING_SCORE=0 UNKNOWN_MARKET=0 GRADE_ERROR=0
+[2026-11-03T09:02:51.994828] WROTE SELECTED | docs/win/soccer/05_final_scores/results/graded/2026_04_25_results_SOCCER.csv
+[2026-11-03T09:02:51.994847] PROCESSING SELECTED SELECT | 2026_04_26_soccer_bets.csv | date=2026_04_26
+[2026-11-03T09:02:52.000445] SELECTED DAY RESULT | 2026_04_26_soccer_bets.csv | rows=2 W=2 L=0 P=0 MISSING_SCORE=0 UNKNOWN_MARKET=0 GRADE_ERROR=0
+[2026-11-03T09:02:52.000776] WROTE SELECTED | docs/win/soccer/05_final_scores/results/graded/2026_04_26_results_SOCCER.csv
+[2026-11-03T09:02:52.000794] PROCESSING SELECTED SELECT | 2026_05_02_soccer_bets.csv | date=2026_05_02
+[2026-11-03T09:02:52.006399] SELECTED DAY RESULT | 2026_05_02_soccer_bets.csv | rows=6 W=5 L=1 P=0 MISSING_SCORE=0 UNKNOWN_MARKET=0 GRADE_ERROR=0
+[2026-11-03T09:02:52.006766] WROTE SELECTED | docs/win/soccer/05_final_scores/results/graded/2026_05_02_results_SOCCER.csv
+[2026-11-03T09:02:52.006783] PROCESSING SELECTED SELECT | 2026_05_03_soccer_bets.csv | date=2026_05_03
+[2026-11-03T09:02:52.012549] SELECTED DAY RESULT | 2026_05_03_soccer_bets.csv | rows=1 W=1 L=0 P=0 MISSING_SCORE=0 UNKNOWN_MARKET=0 GRADE_ERROR=0
+[2026-11-03T09:02:52.012872] WROTE SELECTED | docs/win/soccer/05_final_scores/results/graded/2026_05_03_results_SOCCER.csv
+[2026-11-03T09:02:52.012889] PROCESSING SELECTED SELECT | 2026_05_04_soccer_bets.csv | date=2026_05_04
+[2026-11-03T09:02:52.018333] SELECTED DAY RESULT | 2026_05_04_soccer_bets.csv | rows=1 W=1 L=0 P=0 MISSING_SCORE=0 UNKNOWN_MARKET=0 GRADE_ERROR=0
+[2026-11-03T09:02:52.018659] WROTE SELECTED | docs/win/soccer/05_final_scores/results/graded/2026_05_04_results_SOCCER.csv
+[2026-11-03T09:02:52.018677] PROCESSING SELECTED SELECT | 2026_05_08_soccer_bets.csv | date=2026_05_08
+[2026-11-03T09:02:52.024161] SELECTED DAY RESULT | 2026_05_08_soccer_bets.csv | rows=1 W=1 L=0 P=0 MISSING_SCORE=0 UNKNOWN_MARKET=0 GRADE_ERROR=0
+[2026-11-03T09:02:52.024466] WROTE SELECTED | docs/win/soccer/05_final_scores/results/graded/2026_05_08_results_SOCCER.csv
+[2026-11-03T09:02:52.024483] PROCESSING SELECTED SELECT | 2026_05_09_soccer_bets.csv | date=2026_05_09
+[2026-11-03T09:02:52.029933] SELECTED DAY RESULT | 2026_05_09_soccer_bets.csv | rows=1 W=1 L=0 P=0 MISSING_SCORE=0 UNKNOWN_MARKET=0 GRADE_ERROR=0
+[2026-11-03T09:02:52.030248] WROTE SELECTED | docs/win/soccer/05_final_scores/results/graded/2026_05_09_results_SOCCER.csv
+[2026-11-03T09:02:52.030265] PROCESSING SELECTED SELECT | 2026_05_10_soccer_bets.csv | date=2026_05_10
+[2026-11-03T09:02:52.040763] SELECTED DAY RESULT | 2026_05_10_soccer_bets.csv | rows=8 W=6 L=2 P=0 MISSING_SCORE=0 UNKNOWN_MARKET=0 GRADE_ERROR=0
+[2026-11-03T09:02:52.041259] WROTE SELECTED | docs/win/soccer/05_final_scores/results/graded/2026_05_10_results_SOCCER.csv
+[2026-11-03T09:02:52.041277] PROCESSING SELECTED SELECT | 2026_05_11_soccer_bets.csv | date=2026_05_11
+[2026-11-03T09:02:52.046795] SELECTED DAY RESULT | 2026_05_11_soccer_bets.csv | rows=1 W=1 L=0 P=0 MISSING_SCORE=0 UNKNOWN_MARKET=0 GRADE_ERROR=0
+[2026-11-03T09:02:52.047112] WROTE SELECTED | docs/win/soccer/05_final_scores/results/graded/2026_05_11_results_SOCCER.csv
+[2026-11-03T09:02:52.047138] PROCESSING SELECTED SELECT | 2026_05_12_soccer_bets.csv | date=2026_05_12
+[2026-11-03T09:02:52.052552] SELECTED DAY RESULT | 2026_05_12_soccer_bets.csv | rows=1 W=1 L=0 P=0 MISSING_SCORE=0 UNKNOWN_MARKET=0 GRADE_ERROR=0
+[2026-11-03T09:02:52.052862] WROTE SELECTED | docs/win/soccer/05_final_scores/results/graded/2026_05_12_results_SOCCER.csv
+[2026-11-03T09:02:52.052879] PROCESSING SELECTED SELECT | 2026_05_13_soccer_bets.csv | date=2026_05_13
+[2026-11-03T09:02:52.060719] SELECTED DAY RESULT | 2026_05_13_soccer_bets.csv | rows=3 W=2 L=1 P=0 MISSING_SCORE=0 UNKNOWN_MARKET=0 GRADE_ERROR=0
+[2026-11-03T09:02:52.061095] WROTE SELECTED | docs/win/soccer/05_final_scores/results/graded/2026_05_13_results_SOCCER.csv
+[2026-11-03T09:02:52.061126] PROCESSING SELECTED SELECT | 2026_05_14_soccer_bets.csv | date=2026_05_14
+[2026-11-03T09:02:52.066543] SELECTED DAY RESULT | 2026_05_14_soccer_bets.csv | rows=1 W=1 L=0 P=0 MISSING_SCORE=0 UNKNOWN_MARKET=0 GRADE_ERROR=0
+[2026-11-03T09:02:52.066855] WROTE SELECTED | docs/win/soccer/05_final_scores/results/graded/2026_05_14_results_SOCCER.csv
+[2026-11-03T09:02:52.066872] PROCESSING SELECTED SELECT | 2026_05_16_soccer_bets.csv | date=2026_05_16
+[2026-11-03T09:02:52.072764] SELECTED DAY RESULT | 2026_05_16_soccer_bets.csv | rows=1 W=1 L=0 P=0 MISSING_SCORE=0 UNKNOWN_MARKET=0 GRADE_ERROR=0
+[2026-11-03T09:02:52.073077] WROTE SELECTED | docs/win/soccer/05_final_scores/results/graded/2026_05_16_results_SOCCER.csv
+[2026-11-03T09:02:52.073094] PROCESSING SELECTED SELECT | 2026_05_17_soccer_bets.csv | date=2026_05_17
+[2026-11-03T09:02:52.087584] SELECTED DAY RESULT | 2026_05_17_soccer_bets.csv | rows=10 W=7 L=2 P=0 MISSING_SCORE=1 UNKNOWN_MARKET=0 GRADE_ERROR=0
+[2026-11-03T09:02:52.088167] WROTE SELECTED | docs/win/soccer/05_final_scores/results/graded/2026_05_17_results_SOCCER.csv
+[2026-11-03T09:02:52.088186] PROCESSING SELECTED SELECT | 2026_05_23_soccer_bets.csv | date=2026_05_23
+[2026-11-03T09:02:52.093888] SELECTED DAY RESULT | 2026_05_23_soccer_bets.csv | rows=4 W=3 L=1 P=0 MISSING_SCORE=0 UNKNOWN_MARKET=0 GRADE_ERROR=0
+[2026-11-03T09:02:52.094261] WROTE SELECTED | docs/win/soccer/05_final_scores/results/graded/2026_05_23_results_SOCCER.csv
+[2026-11-03T09:02:52.094279] PROCESSING SELECTED SELECT | 2026_05_24_soccer_bets.csv | date=2026_05_24
+[2026-11-03T09:02:52.102600] SELECTED DAY RESULT | 2026_05_24_soccer_bets.csv | rows=9 W=9 L=0 P=0 MISSING_SCORE=0 UNKNOWN_MARKET=0 GRADE_ERROR=0
+[2026-11-03T09:02:52.103128] WROTE SELECTED | docs/win/soccer/05_final_scores/results/graded/2026_05_24_results_SOCCER.csv
+[2026-11-03T09:02:52.103148] PROCESSING SELECTED SELECT | 2026_08_19_soccer_bets.csv | date=2026_08_19
+[2026-11-03T09:02:52.108608] SELECTED DAY RESULT | 2026_08_19_soccer_bets.csv | rows=1 W=1 L=0 P=0 MISSING_SCORE=0 UNKNOWN_MARKET=0 GRADE_ERROR=0
+[2026-11-03T09:02:52.108924] WROTE SELECTED | docs/win/soccer/05_final_scores/results/graded/2026_08_19_results_SOCCER.csv
+[2026-11-03T09:02:52.108942] PROCESSING SELECTED SELECT | 2026_08_20_soccer_bets.csv | date=2026_08_20
+[2026-11-03T09:02:52.114577] SELECTED DAY RESULT | 2026_08_20_soccer_bets.csv | rows=1 W=1 L=0 P=0 MISSING_SCORE=0 UNKNOWN_MARKET=0 GRADE_ERROR=0
+[2026-11-03T09:02:52.114894] WROTE SELECTED | docs/win/soccer/05_final_scores/results/graded/2026_08_20_results_SOCCER.csv
+[2026-11-03T09:02:52.114911] PROCESSING SELECTED SELECT | 2026_08_21_soccer_bets.csv | date=2026_08_21
+[2026-11-03T09:02:52.120330] SELECTED DAY RESULT | 2026_08_21_soccer_bets.csv | rows=1 W=0 L=1 P=0 MISSING_SCORE=0 UNKNOWN_MARKET=0 GRADE_ERROR=0
+[2026-11-03T09:02:52.120648] WROTE SELECTED | docs/win/soccer/05_final_scores/results/graded/2026_08_21_results_SOCCER.csv
+[2026-11-03T09:02:52.120666] PROCESSING SELECTED SELECT | 2026_08_22_soccer_bets.csv | date=2026_08_22
+[2026-11-03T09:02:52.129269] SELECTED DAY RESULT | 2026_08_22_soccer_bets.csv | rows=2 W=2 L=0 P=0 MISSING_SCORE=0 UNKNOWN_MARKET=0 GRADE_ERROR=0
+[2026-11-03T09:02:52.129702] WROTE SELECTED | docs/win/soccer/05_final_scores/results/graded/2026_08_22_results_SOCCER.csv
+[2026-11-03T09:02:52.129724] PROCESSING SELECTED SELECT | 2026_08_23_soccer_bets.csv | date=2026_08_23
+[2026-11-03T09:02:52.138174] SELECTED DAY RESULT | 2026_08_23_soccer_bets.csv | rows=3 W=2 L=1 P=0 MISSING_SCORE=0 UNKNOWN_MARKET=0 GRADE_ERROR=0
+[2026-11-03T09:02:52.138616] WROTE SELECTED | docs/win/soccer/05_final_scores/results/graded/2026_08_23_results_SOCCER.csv
+[2026-11-03T09:02:52.138634] PROCESSING SELECTED SELECT | 2026_08_24_soccer_bets.csv | date=2026_08_24
+[2026-11-03T09:02:52.146489] SELECTED DAY RESULT | 2026_08_24_soccer_bets.csv | rows=2 W=2 L=0 P=0 MISSING_SCORE=0 UNKNOWN_MARKET=0 GRADE_ERROR=0
+[2026-11-03T09:02:52.146881] WROTE SELECTED | docs/win/soccer/05_final_scores/results/graded/2026_08_24_results_SOCCER.csv
+[2026-11-03T09:02:52.146899] PROCESSING SELECTED SELECT | 2026_08_29_soccer_bets.csv | date=2026_08_29
+[2026-11-03T09:02:52.159666] SELECTED DAY RESULT | 2026_08_29_soccer_bets.csv | rows=4 W=3 L=1 P=0 MISSING_SCORE=0 UNKNOWN_MARKET=0 GRADE_ERROR=0
+[2026-11-03T09:02:52.160127] WROTE SELECTED | docs/win/soccer/05_final_scores/results/graded/2026_08_29_results_SOCCER.csv
+[2026-11-03T09:02:52.160147] PROCESSING SELECTED SELECT | 2026_08_30_soccer_bets.csv | date=2026_08_30
+[2026-11-03T09:02:52.168182] SELECTED DAY RESULT | 2026_08_30_soccer_bets.csv | rows=2 W=2 L=0 P=0 MISSING_SCORE=0 UNKNOWN_MARKET=0 GRADE_ERROR=0
+[2026-11-03T09:02:52.168605] WROTE SELECTED | docs/win/soccer/05_final_scores/results/graded/2026_08_30_results_SOCCER.csv
+[2026-11-03T09:02:52.168623] PROCESSING SELECTED SELECT | 2026_09_05_soccer_bets.csv | date=2026_09_05
+[2026-11-03T09:02:52.176845] SELECTED DAY RESULT | 2026_09_05_soccer_bets.csv | rows=4 W=3 L=1 P=0 MISSING_SCORE=0 UNKNOWN_MARKET=0 GRADE_ERROR=0
+[2026-11-03T09:02:52.177309] WROTE SELECTED | docs/win/soccer/05_final_scores/results/graded/2026_09_05_results_SOCCER.csv
+[2026-11-03T09:02:52.177327] PROCESSING SELECTED SELECT | 2026_09_06_soccer_bets.csv | date=2026_09_06
+[2026-11-03T09:02:52.182764] SELECTED DAY RESULT | 2026_09_06_soccer_bets.csv | rows=1 W=1 L=0 P=0 MISSING_SCORE=0 UNKNOWN_MARKET=0 GRADE_ERROR=0
+[2026-11-03T09:02:52.183076] WROTE SELECTED | docs/win/soccer/05_final_scores/results/graded/2026_09_06_results_SOCCER.csv
+[2026-11-03T09:02:52.183094] PROCESSING SELECTED SELECT | 2026_09_07_soccer_bets.csv | date=2026_09_07
+[2026-11-03T09:02:52.188924] SELECTED DAY RESULT | 2026_09_07_soccer_bets.csv | rows=1 W=1 L=0 P=0 MISSING_SCORE=0 UNKNOWN_MARKET=0 GRADE_ERROR=0
+[2026-11-03T09:02:52.189292] WROTE SELECTED | docs/win/soccer/05_final_scores/results/graded/2026_09_07_results_SOCCER.csv
+[2026-11-03T09:02:52.189310] PROCESSING SELECTED SELECT | 2026_09_11_soccer_bets.csv | date=2026_09_11
+[2026-11-03T09:02:52.194668] SELECTED DAY RESULT | 2026_09_11_soccer_bets.csv | rows=1 W=1 L=0 P=0 MISSING_SCORE=0 UNKNOWN_MARKET=0 GRADE_ERROR=0
+[2026-11-03T09:02:52.194976] WROTE SELECTED | docs/win/soccer/05_final_scores/results/graded/2026_09_11_results_SOCCER.csv
+[2026-11-03T09:02:52.194993] PROCESSING SELECTED SELECT | 2026_09_12_soccer_bets.csv | date=2026_09_12
+[2026-11-03T09:02:52.205474] SELECTED DAY RESULT | 2026_09_12_soccer_bets.csv | rows=3 W=1 L=2 P=0 MISSING_SCORE=0 UNKNOWN_MARKET=0 GRADE_ERROR=0
+[2026-11-03T09:02:52.205917] WROTE SELECTED | docs/win/soccer/05_final_scores/results/graded/2026_09_12_results_SOCCER.csv
+[2026-11-03T09:02:52.205934] PROCESSING SELECTED SELECT | 2026_09_13_soccer_bets.csv | date=2026_09_13
+[2026-11-03T09:02:52.216673] SELECTED DAY RESULT | 2026_09_13_soccer_bets.csv | rows=4 W=3 L=1 P=0 MISSING_SCORE=0 UNKNOWN_MARKET=0 GRADE_ERROR=0
+[2026-11-03T09:02:52.217148] WROTE SELECTED | docs/win/soccer/05_final_scores/results/graded/2026_09_13_results_SOCCER.csv
+[2026-11-03T09:02:52.217167] PROCESSING SELECTED SELECT | 2026_09_17_soccer_bets.csv | date=2026_09_17
+[2026-11-03T09:02:52.222938] SELECTED DAY RESULT | 2026_09_17_soccer_bets.csv | rows=1 W=1 L=0 P=0 MISSING_SCORE=0 UNKNOWN_MARKET=0 GRADE_ERROR=0
+[2026-11-03T09:02:52.223272] WROTE SELECTED | docs/win/soccer/05_final_scores/results/graded/2026_09_17_results_SOCCER.csv
+[2026-11-03T09:02:52.223293] PROCESSING SELECTED SELECT | 2026_09_19_soccer_bets.csv | date=2026_09_19
+[2026-11-03T09:02:52.234079] SELECTED DAY RESULT | 2026_09_19_soccer_bets.csv | rows=4 W=4 L=0 P=0 MISSING_SCORE=0 UNKNOWN_MARKET=0 GRADE_ERROR=0
+[2026-11-03T09:02:52.234573] WROTE SELECTED | docs/win/soccer/05_final_scores/results/graded/2026_09_19_results_SOCCER.csv
+[2026-11-03T09:02:52.234591] PROCESSING SELECTED SELECT | 2026_09_20_soccer_bets.csv | date=2026_09_20
+[2026-11-03T09:02:52.243132] SELECTED DAY RESULT | 2026_09_20_soccer_bets.csv | rows=2 W=2 L=0 P=0 MISSING_SCORE=0 UNKNOWN_MARKET=0 GRADE_ERROR=0
+[2026-11-03T09:02:52.243612] WROTE SELECTED | docs/win/soccer/05_final_scores/results/graded/2026_09_20_results_SOCCER.csv
+[2026-11-03T09:02:52.243630] PROCESSING SELECTED SELECT | 2026_10_10_soccer_bets.csv | date=2026_10_10
+[2026-11-03T09:02:52.256315] SELECTED DAY RESULT | 2026_10_10_soccer_bets.csv | rows=6 W=5 L=1 P=0 MISSING_SCORE=0 UNKNOWN_MARKET=0 GRADE_ERROR=0
+[2026-11-03T09:02:52.256816] WROTE SELECTED | docs/win/soccer/05_final_scores/results/graded/2026_10_10_results_SOCCER.csv
+[2026-11-03T09:02:52.256834] PROCESSING SELECTED SELECT | 2026_10_14_soccer_bets.csv | date=2026_10_14
+[2026-11-03T09:02:52.262340] SELECTED DAY RESULT | 2026_10_14_soccer_bets.csv | rows=1 W=0 L=1 P=0 MISSING_SCORE=0 UNKNOWN_MARKET=0 GRADE_ERROR=0
+[2026-11-03T09:02:52.262656] WROTE SELECTED | docs/win/soccer/05_final_scores/results/graded/2026_10_14_results_SOCCER.csv
+[2026-11-03T09:02:52.262674] PROCESSING SELECTED SELECT | 2026_10_17_soccer_bets.csv | date=2026_10_17
+[2026-11-03T09:02:52.268150] SELECTED DAY RESULT | 2026_10_17_soccer_bets.csv | rows=1 W=0 L=1 P=0 MISSING_SCORE=0 UNKNOWN_MARKET=0 GRADE_ERROR=0
+[2026-11-03T09:02:52.268472] WROTE SELECTED | docs/win/soccer/05_final_scores/results/graded/2026_10_17_results_SOCCER.csv
+[2026-11-03T09:02:52.268490] PROCESSING SELECTED SELECT | 2026_10_18_soccer_bets.csv | date=2026_10_18
+[2026-11-03T09:02:52.276776] SELECTED DAY RESULT | 2026_10_18_soccer_bets.csv | rows=2 W=0 L=2 P=0 MISSING_SCORE=0 UNKNOWN_MARKET=0 GRADE_ERROR=0
+[2026-11-03T09:02:52.277243] WROTE SELECTED | docs/win/soccer/05_final_scores/results/graded/2026_10_18_results_SOCCER.csv
+[2026-11-03T09:02:52.277261] PROCESSING SELECTED SELECT | 2026_10_23_soccer_bets.csv | date=2026_10_23
+[2026-11-03T09:02:52.281614] SELECTED DAY RESULT | 2026_10_23_soccer_bets.csv | rows=1 W=0 L=0 P=0 MISSING_SCORE=1 UNKNOWN_MARKET=0 GRADE_ERROR=0
+[2026-11-03T09:02:52.281965] WROTE SELECTED | docs/win/soccer/05_final_scores/results/graded/2026_10_23_results_SOCCER.csv
+[2026-11-03T09:02:52.281982] PROCESSING SELECTED SELECT | 2026_10_24_soccer_bets.csv | date=2026_10_24
+[2026-11-03T09:02:52.288897] SELECTED DAY RESULT | 2026_10_24_soccer_bets.csv | rows=5 W=0 L=0 P=0 MISSING_SCORE=5 UNKNOWN_MARKET=0 GRADE_ERROR=0
+[2026-11-03T09:02:52.289403] WROTE SELECTED | docs/win/soccer/05_final_scores/results/graded/2026_10_24_results_SOCCER.csv
+[2026-11-03T09:02:52.299461] SELECTED MASTER WRITTEN | rows=147 W=111 L=29 P=0 MISSING_SCORE=7 UNKNOWN_MARKET=0 GRADE_ERROR=0 | docs/win/soccer/05_final_scores/results/graded/SOCCER_final.csv
+[2026-11-03T09:02:52.300304] LOCKED select files found: 3 | docs/win/soccer/04_select/locked
+[2026-11-03T09:02:52.300323] PROCESSING LOCKED SELECT | 2026_08_31_soccer_bets.csv | date=2026_08_31
+[2026-11-03T09:02:52.301585] EMPTY LOCKED PICK FILE | docs/win/soccer/04_select/locked/2026_08_31_soccer_bets.csv | zero picks recorded
+[2026-11-03T09:02:52.302081] PROCESSING LOCKED SELECT | 2026_09_03_soccer_bets.csv | date=2026_09_03
+[2026-11-03T09:02:52.303405] EMPTY LOCKED PICK FILE | docs/win/soccer/04_select/locked/2026_09_03_soccer_bets.csv | zero picks recorded
+[2026-11-03T09:02:52.303871] PROCESSING LOCKED SELECT | 2026_09_04_soccer_bets.csv | date=2026_09_04
+[2026-11-03T09:02:52.309703] LOCKED DAY RESULT | 2026_09_04_soccer_bets.csv | rows=1 W=1 L=0 P=0 MISSING_SCORE=0 UNKNOWN_MARKET=0 GRADE_ERROR=0
+[2026-11-03T09:02:52.310021] WROTE LOCKED | docs/win/soccer/05_final_scores/results/graded_locked/2026_09_04_results_SOCCER.csv
+[2026-11-03T09:02:52.310534] LOCKED MASTER WRITTEN | rows=1 W=1 L=0 P=0 MISSING_SCORE=0 UNKNOWN_MARKET=0 GRADE_ERROR=0 | docs/win/soccer/05_final_scores/results/graded_locked/SOCCER_locked_final.csv
+[2026-11-03T09:02:52.310579] === END 01_soccer_results_grade.py 2026-11-03T09:02:52.310566 ===
