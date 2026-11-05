@@ -9,7 +9,7 @@ scikit-learn==1.9.0
 narwhals==2.26.0
 threadpoolctl==3.7.0
 lightgbm==4.6.0
-xgboost==3.4.1
+xgboost==3.2.0
 catboost==1.2.10
 graphviz==0.21
 six==1.17.0
