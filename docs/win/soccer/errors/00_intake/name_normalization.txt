@@ -1,5 +1,5 @@
-=== name_normalization RUN 2026-11-04T08:05:39.463871+00:00 ===
-2026-11-04T08:05:39.464960+00:00 | Team map loaded: 323 entries
-2026-11-04T08:05:39.478452+00:00 | Files to process: 1739
-2026-11-04T08:05:39.557243+00:00 | SUMMARY | files_processed=1739 | rows_processed=6591 | names_normalized=0 | unmapped=0
-2026-11-04T08:05:39.557284+00:00 | STATUS: SUCCESS
+=== name_normalization RUN 2026-11-05T08:05:40.051768+00:00 ===
+2026-11-05T08:05:40.052811+00:00 | Team map loaded: 323 entries
+2026-11-05T08:05:40.066414+00:00 | Files to process: 1745
+2026-11-05T08:05:40.145117+00:00 | SUMMARY | files_processed=1745 | rows_processed=6591 | names_normalized=0 | unmapped=0
+2026-11-05T08:05:40.145154+00:00 | STATUS: SUCCESS
