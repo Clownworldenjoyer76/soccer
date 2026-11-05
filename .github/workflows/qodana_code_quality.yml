@@ -28,11 +28,11 @@ jobs:
         with:
           fetch-depth: 0
 
-      - name: Set up Python 3.11.17
+      - name: Set up Python 3.14
         id: python-qodana
         uses: actions/setup-python@v7
         with:
-          python-version: '3.11.17'
+          python-version: '3.14'
 
       - name: Qodana Soccer Scan
         uses: JetBrains/qodana-action@v2026.2
