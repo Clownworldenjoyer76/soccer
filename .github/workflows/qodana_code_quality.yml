@@ -17,7 +17,8 @@ permissions:
 jobs:
   qodana:
     name: Qodana - Soccer
-    runs-on: ubuntu-24.04
+    runs-on: ubuntu-22.04
+    timeout-minutes: 12
 
     env:
       PYTHONPATH: ${{ github.workspace }}/docs/win/soccer/scripts:${{ github.workspace }}/docs/win/soccer/scripts/00_intake:${{ github.workspace }}/docs/win/soccer/scripts/01_merge:${{ github.workspace }}/docs/win/soccer/scripts/02_juice:${{ github.workspace }}/docs/win/soccer/scripts/03_edges:${{ github.workspace }}/docs/win/soccer/scripts/04_select:${{ github.workspace }}/docs/win/soccer/scripts/05_final_scores:${{ github.workspace }}/docs/win/soccer/ml/epl
@@ -43,6 +44,7 @@ jobs:
             --only-directory docs/win/soccer
             --config qodana.yaml
           pr-mode: false
+          use-caches: false
           artifact-name: qodana-soccer
           primary-cache-key: qodana-2026.2-soccer-${{ github.ref }}-${{ github.sha }}
           additional-cache-key: qodana-2026.2-soccer-${{ github.ref }}
