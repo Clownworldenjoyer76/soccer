@@ -1,2 +1,2 @@
 sport,league,game_id,match_date,match_time,home_team,away_team,home_prob,draw_prob,away_prob,home_xg,away_xg,expected_total_goals,identity_status,identity_reason,identity_detail
-soccer,epl,,2026_11_06,03:00 PM,Everton,Coventry,0.577,0.22,0.203,1.92,1.06,2.98,unmatched,no_sportsbook_fixture,no exact games-master fixture found for league/date/teams
+soccer,epl,401879242,2026_11_06,03:00 PM,Everton,Coventry,0.577,0.22,0.203,1.92,1.06,2.98,matched,matched_game_id,

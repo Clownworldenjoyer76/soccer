@@ -1,43 +1,43 @@
 === ESPN endpoint diagnostic ===
-utc_time=2026-11-05T08:05:32Z
-runner=GitHub Actions 1000108503
-date=20261105
+utc_time=2026-11-06T08:05:32Z
+runner=GitHub Actions 1000108780
+date=20261106
 league=usa.1
 
 [production_limit_1000]
-url=https://site.api.espn.com/apis/site/v2/sports/soccer/usa.1/scoreboard?dates=20261105&limit=1000
+url=https://site.api.espn.com/apis/site/v2/sports/soccer/usa.1/scoreboard?dates=20261106&limit=1000
 curl_exit=0
-http|content_type|bytes|effective_url=403|text/html|449|https://site.api.espn.com/apis/site/v2/sports/soccer/usa.1/scoreboard?dates=20261105&limit=1000
+http|content_type|bytes|effective_url=403|text/html|451|https://site.api.espn.com/apis/site/v2/sports/soccer/usa.1/scoreboard?dates=20261106&limit=1000
 json=no
 
 [site_api_limit_100]
-url=https://site.api.espn.com/apis/site/v2/sports/soccer/usa.1/scoreboard?dates=20261105&limit=100
+url=https://site.api.espn.com/apis/site/v2/sports/soccer/usa.1/scoreboard?dates=20261106&limit=100
 curl_exit=0
-http|content_type|bytes|effective_url=403|text/html|451|https://site.api.espn.com/apis/site/v2/sports/soccer/usa.1/scoreboard?dates=20261105&limit=100
+http|content_type|bytes|effective_url=403|text/html|451|https://site.api.espn.com/apis/site/v2/sports/soccer/usa.1/scoreboard?dates=20261106&limit=100
 json=no
 
 [site_api_no_limit]
-url=https://site.api.espn.com/apis/site/v2/sports/soccer/usa.1/scoreboard?dates=20261105
+url=https://site.api.espn.com/apis/site/v2/sports/soccer/usa.1/scoreboard?dates=20261106
 curl_exit=0
-http|content_type|bytes|effective_url=403|text/html|451|https://site.api.espn.com/apis/site/v2/sports/soccer/usa.1/scoreboard?dates=20261105
+http|content_type|bytes|effective_url=403|text/html|451|https://site.api.espn.com/apis/site/v2/sports/soccer/usa.1/scoreboard?dates=20261106
 json=no
 
 [site_web_api]
-url=https://site.web.api.espn.com/apis/v2/sports/soccer/usa.1/scoreboard?region=us&lang=en&contentorigin=espn&isqualified=true&limit=1000&dates=20261105
+url=https://site.web.api.espn.com/apis/v2/sports/soccer/usa.1/scoreboard?region=us&lang=en&contentorigin=espn&isqualified=true&limit=1000&dates=20261106
 curl_exit=0
-http|content_type|bytes|effective_url=404||12|https://site.web.api.espn.com/apis/v2/sports/soccer/usa.1/scoreboard?region=us&lang=en&contentorigin=espn&isqualified=true&limit=1000&dates=20261105
+http|content_type|bytes|effective_url=404||12|https://site.web.api.espn.com/apis/v2/sports/soccer/usa.1/scoreboard?region=us&lang=en&contentorigin=espn&isqualified=true&limit=1000&dates=20261106
 json=yes type=dict | keys=code
 
 [cdn_scoreboard]
-url=https://cdn.espn.com/core/soccer/scoreboard?xhr=1&league=usa.1&dates=20261105
+url=https://cdn.espn.com/core/soccer/scoreboard?xhr=1&league=usa.1&dates=20261106
 curl_exit=0
-http|content_type|bytes|effective_url=200|application/json;charset=utf-8|387566|https://cdn.espn.com/core/soccer/scoreboard?xhr=1&league=usa.1&dates=20261105
+http|content_type|bytes|effective_url=200|application/json;charset=utf-8|389098|https://cdn.espn.com/core/soccer/scoreboard?xhr=1&league=usa.1&dates=20261106
 json=yes type=dict | keys=news,pinnedCount,nowFeedMD5Hash,type,content,analytics,nowFeed,ads,targeting,nowFeedCount,meta,nowFeedSupported,sport,tier2Nav
 
 [public_scoreboard_page]
-url=https://www.espn.com/soccer/scoreboard/_/league/usa.1/date/20261105
+url=https://www.espn.com/soccer/scoreboard/_/league/usa.1/date/20261106
 curl_exit=0
-http|content_type|bytes|effective_url=202|text/html; charset=UTF-8|0|https://www.espn.com/soccer/scoreboard/_/league/usa.1/date/20261105
+http|content_type|bytes|effective_url=202|text/html; charset=UTF-8|0|https://www.espn.com/soccer/scoreboard/_/league/usa.1/date/20261106
 json=no
 
 [cdn_structure]
@@ -78,7 +78,7 @@ json=no
 [cdn_game]
 url=https://cdn.espn.com/core/soccer/game?xhr=1&gameId=761934
 curl_exit=0
-http|content_type|bytes|effective_url=200|text/html;charset=UTF-8|425784|http://cdn.espn.com/core/soccer/match?gameId=761934
+http|content_type|bytes|effective_url=200|text/html;charset=UTF-8|425778|http://cdn.espn.com/core/soccer/match?gameId=761934
 json=no
 
 [core_odds]

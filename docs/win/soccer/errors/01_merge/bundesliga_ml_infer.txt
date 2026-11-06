@@ -1,4 +1,4 @@
-Bundesliga ML inference: processing 36 Bundesliga merge date(s) through 2026_11_05.
+Bundesliga ML inference: processing 37 Bundesliga merge date(s) through 2026_11_06.
 Bundesliga ML inference complete for 2026_04_10: 1 match prediction(s), 4 merge file(s) enriched.
   enriched 2026_04_10_bundesliga_match_odds.csv: 1 row(s)
   enriched 2026_04_10_bundesliga_total_25.csv: 1 row(s)
@@ -179,4 +179,9 @@ Bundesliga ML inference complete for 2026_11_01: 2 match prediction(s), 4 merge 
   enriched 2026_11_01_bundesliga_total_25.csv: 2 row(s)
   enriched 2026_11_01_bundesliga_total_35.csv: 2 row(s)
   enriched 2026_11_01_bundesliga_btts.csv: 2 row(s)
-Bundesliga ML historical inference complete: 36 date(s), 144 merge file(s), 424 total merged row(s) enriched.
+Bundesliga ML inference complete for 2026_11_06: 1 match prediction(s), 4 merge file(s) enriched.
+  enriched 2026_11_06_bundesliga_match_odds.csv: 1 row(s)
+  enriched 2026_11_06_bundesliga_total_25.csv: 1 row(s)
+  enriched 2026_11_06_bundesliga_total_35.csv: 1 row(s)
+  enriched 2026_11_06_bundesliga_btts.csv: 1 row(s)
+Bundesliga ML historical inference complete: 37 date(s), 148 merge file(s), 428 total merged row(s) enriched.
