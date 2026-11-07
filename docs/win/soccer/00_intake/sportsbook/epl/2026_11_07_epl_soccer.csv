@@ -1,0 +1,5 @@
+sport,league,game_id,match_date,match_time,home_team,away_team,dk_home_decimal,dk_draw_decimal,dk_away_decimal,dk_over25_decimal,dk_under25_decimal,dk_over35_decimal,dk_under35_decimal,btts_yes,btts_no
+soccer,epl,401878758,2026_11_07,07:30 AM,Leeds,Tottenham Hotspur,2.70,3.35,2.65,1.87,1.95,,,,
+soccer,epl,401878760,2026_11_07,10:00 AM,Arsenal,Hull,1.15,8.00,18.00,,,2.30,1.62,,
+soccer,epl,401879241,2026_11_07,10:00 AM,Fulham,Newcastle,2.00,3.70,3.55,1.67,2.20,,,,
+soccer,epl,401878757,2026_11_07,12:30 PM,Nottingham Forest,Manchester City,4.50,4.00,1.74,1.65,2.25,,,,

@@ -1,0 +1,33 @@
+game_id,sport,league,match_date,match_time,home_team,away_team
+401884745,soccer,bundesliga,2026_11_07,09:30 AM,Borussia Dortmund,Elversberg
+401884740,soccer,bundesliga,2026_11_07,09:30 AM,Mainz,Bayern Munich
+401884737,soccer,bundesliga,2026_11_07,09:30 AM,Paderborn,Eintracht Frankfurt
+401884744,soccer,bundesliga,2026_11_07,09:30 AM,RB Leipzig,Augsburg
+401884743,soccer,bundesliga,2026_11_07,12:30 PM,VfB Stuttgart,Werder Bremen
+401878758,soccer,epl,2026_11_07,07:30 AM,Leeds,Tottenham Hotspur
+401878760,soccer,epl,2026_11_07,10:00 AM,Arsenal,Hull
+401879241,soccer,epl,2026_11_07,10:00 AM,Fulham,Newcastle
+401878757,soccer,epl,2026_11_07,12:30 PM,Nottingham Forest,Manchester City
+401882808,soccer,laliga,2026_11_07,03:00 PM,Valencia,Real Madrid
+401882812,soccer,laliga,2026_11_07,08:00 AM,Malaga,Santander
+401882813,soccer,laliga,2026_11_07,10:15 AM,Espanyol,Deportivo De La Coruna
+401882811,soccer,laliga,2026_11_07,12:30 PM,Osasuna,Athletic Club
+761934,soccer,mls,2026_11_07,04:00 PM,CF Montreal,Vancouver Whitecaps
+761935,soccer,mls,2026_11_07,04:00 PM,Chicago Fire,Columbus Crew
+761936,soccer,mls,2026_11_07,04:00 PM,DC United,New York City FC
+761937,soccer,mls,2026_11_07,04:00 PM,FC Cincinnati,Nashville SC
+761938,soccer,mls,2026_11_07,04:00 PM,Inter Miami,Charlotte FC
+761939,soccer,mls,2026_11_07,04:00 PM,New York Red Bulls,Atlanta United
+761940,soccer,mls,2026_11_07,04:00 PM,Orlando City,New England Revolution
+761941,soccer,mls,2026_11_07,04:00 PM,Philadelphia Union,Toronto FC
+761942,soccer,mls,2026_11_07,07:00 PM,Austin FC,Portland Timbers
+761943,soccer,mls,2026_11_07,07:00 PM,FC Dallas,Colorado Rapids
+761944,soccer,mls,2026_11_07,07:00 PM,Houston Dynamo,St Louis City
+761945,soccer,mls,2026_11_07,07:00 PM,Minnesota United,San Jose Earthquakes
+761946,soccer,mls,2026_11_07,07:00 PM,Real Salt Lake,LA Galaxy
+761947,soccer,mls,2026_11_07,07:00 PM,San Diego FC,Sporting Kansas City
+761948,soccer,mls,2026_11_07,07:00 PM,Seattle Sounders,Los Angeles FC
+401874803,soccer,seriea,2026_11_07,02:45 PM,Roma,Sassuolo
+401874791,soccer,seriea,2026_11_07,09:00 AM,Cagliari,Frosinone
+401874811,soccer,seriea,2026_11_07,09:00 AM,Torino,Lecce
+401874974,soccer,seriea,2026_11_07,12:00 PM,Parma,Bologna

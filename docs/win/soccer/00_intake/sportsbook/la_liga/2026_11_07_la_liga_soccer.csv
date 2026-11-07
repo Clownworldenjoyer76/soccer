@@ -1,0 +1,5 @@
+sport,league,game_id,match_date,match_time,home_team,away_team,dk_home_decimal,dk_draw_decimal,dk_away_decimal,dk_over25_decimal,dk_under25_decimal,dk_over35_decimal,dk_under35_decimal,btts_yes,btts_no
+soccer,laliga,401882808,2026_11_07,03:00 PM,Valencia,Real Madrid,10.50,6.00,1.26,,,2.15,1.71,,
+soccer,laliga,401882812,2026_11_07,08:00 AM,Malaga,Santander,2.40,3.55,2.85,1.69,2.15,,,,
+soccer,laliga,401882813,2026_11_07,10:15 AM,Espanyol,Deportivo De La Coruna,2.45,3.30,3.00,2.05,1.77,,,,
+soccer,laliga,401882811,2026_11_07,12:30 PM,Osasuna,Athletic Club,3.60,3.45,2.10,2.10,1.74,,,,

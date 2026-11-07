@@ -1,4 +1,4 @@
 sport,league,game_id,match_date,match_time,home_team,away_team,home_prob,draw_prob,away_prob,home_xg,away_xg,expected_total_goals,identity_status,identity_reason,identity_detail
-soccer,seriea,,2026_11_07,09:00 AM,Torino,Lecce,0.55,0.234,0.216,1.77,1.02,2.79,unmatched,no_sportsbook_fixture,no exact games-master fixture found for league/date/teams
-soccer,seriea,,2026_11_07,12:00 PM,Parma,Bologna,0.219,0.245,0.536,0.96,1.65,2.61,unmatched,no_sportsbook_fixture,no exact games-master fixture found for league/date/teams
-soccer,seriea,,2026_11_07,02:45 PM,Roma,Sassuolo,0.724,0.161,0.115,2.54,0.91,3.45,unmatched,no_sportsbook_fixture,no exact games-master fixture found for league/date/teams
+soccer,seriea,401874811,2026_11_07,09:00 AM,Torino,Lecce,0.55,0.234,0.216,1.77,1.02,2.79,matched,matched_game_id,
+soccer,seriea,401874974,2026_11_07,12:00 PM,Parma,Bologna,0.219,0.245,0.536,0.96,1.65,2.61,matched,matched_game_id,
+soccer,seriea,401874803,2026_11_07,02:45 PM,Roma,Sassuolo,0.724,0.161,0.115,2.54,0.91,3.45,matched,matched_game_id,

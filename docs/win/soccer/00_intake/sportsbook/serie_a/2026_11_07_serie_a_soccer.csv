@@ -1,0 +1,5 @@
+sport,league,game_id,match_date,match_time,home_team,away_team,dk_home_decimal,dk_draw_decimal,dk_away_decimal,dk_over25_decimal,dk_under25_decimal,dk_over35_decimal,dk_under35_decimal,btts_yes,btts_no
+soccer,seriea,401874803,2026_11_07,02:45 PM,Roma,Sassuolo,1.28,5.75,8.00,,,1.87,1.91,,
+soccer,seriea,401874791,2026_11_07,09:00 AM,Cagliari,Frosinone,2.90,3.75,2.15,,,2.10,1.71,,
+soccer,seriea,401874811,2026_11_07,09:00 AM,Torino,Lecce,1.80,3.45,4.20,1.87,1.91,,,,
+soccer,seriea,401874974,2026_11_07,12:00 PM,Parma,Bologna,4.70,3.60,1.69,2.00,1.80,,,,

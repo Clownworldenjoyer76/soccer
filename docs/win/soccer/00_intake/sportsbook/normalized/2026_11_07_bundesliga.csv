@@ -1,0 +1,6 @@
+sport,league,game_id,match_date,match_time,home_team,away_team,dk_home_decimal,dk_draw_decimal,dk_away_decimal,dk_over25_decimal,dk_under25_decimal,dk_over35_decimal,dk_under35_decimal,btts_yes,btts_no
+soccer,bundesliga,401884745,2026_11_07,09:30 AM,Borussia Dortmund,Elversberg,1.32,5.25,7.50,,,1.91,1.87,,
+soccer,bundesliga,401884740,2026_11_07,09:30 AM,Mainz,Bayern Munich,7.50,6.00,1.27,,,,,,
+soccer,bundesliga,401884744,2026_11_07,09:30 AM,RB Leipzig,Augsburg,1.42,5.00,5.50,,,1.65,2.20,,
+soccer,bundesliga,401884737,2026_11_07,09:30 AM,Paderborn,Eintracht Frankfurt,2.80,3.70,2.20,,,2.15,1.69,,
+soccer,bundesliga,401884743,2026_11_07,12:30 PM,VfB Stuttgart,Werder Bremen,1.80,4.00,3.55,,,1.87,1.91,,
