@@ -1,6 +1,6 @@
 sport,league,game_id,match_date,match_time,home_team,away_team,home_prob,draw_prob,away_prob,home_xg,away_xg,expected_total_goals,identity_status,identity_reason,identity_detail
-soccer,seriea,,2026_11_08,06:30 AM,Napoli,Lazio,0.466,0.236,0.298,1.72,1.34,3.06,unmatched,no_sportsbook_fixture,no exact games-master fixture found for league/date/teams
-soccer,seriea,,2026_11_08,09:00 AM,Monza,Atalanta,0.285,0.217,0.497,1.47,1.98,3.45,unmatched,no_sportsbook_fixture,no exact games-master fixture found for league/date/teams
-soccer,seriea,,2026_11_08,09:00 AM,Genoa,Milan,0.221,0.243,0.536,0.98,1.67,2.65,unmatched,no_sportsbook_fixture,no exact games-master fixture found for league/date/teams
-soccer,seriea,,2026_11_08,12:00 PM,Inter Milan,Como,0.552,0.216,0.231,1.99,1.23,3.22,unmatched,no_sportsbook_fixture,no exact games-master fixture found for league/date/teams
-soccer,seriea,,2026_11_08,02:45 PM,Fiorentina,Juventus,0.254,0.274,0.472,0.93,1.37,2.3,unmatched,no_sportsbook_fixture,no exact games-master fixture found for league/date/teams
+soccer,seriea,401874810,2026_11_08,06:30 AM,Napoli,Lazio,0.466,0.236,0.298,1.72,1.34,3.06,matched,matched_game_id,
+soccer,seriea,401874800,2026_11_08,09:00 AM,Monza,Atalanta,0.285,0.217,0.497,1.47,1.98,3.45,matched,matched_game_id,
+soccer,seriea,401875018,2026_11_08,09:00 AM,Genoa,Milan,0.221,0.243,0.536,0.98,1.67,2.65,matched,matched_game_id,
+soccer,seriea,401874808,2026_11_08,12:00 PM,Inter Milan,Como,0.552,0.216,0.231,1.99,1.23,3.22,matched,matched_game_id,
+soccer,seriea,401875003,2026_11_08,02:45 PM,Fiorentina,Juventus,0.254,0.274,0.472,0.93,1.37,2.3,matched,matched_game_id,
