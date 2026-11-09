@@ -10,7 +10,7 @@
   },
   "fatal_errors": [],
   "game_date_new_york": "2026_11_09",
-  "generated_at_utc": "2026-11-09T08:08:54.679572+00:00",
+  "generated_at_utc": "2026-11-09T11:35:02.366522+00:00",
   "paths": {
     "edges": [],
     "games": [
@@ -36,13 +36,13 @@
       "exists": true,
       "name": "Name Normalization",
       "path": "docs/win/soccer/errors/00_intake/name_normalization.txt",
-      "status": "2026-11-09T08:05:36.857501+00:00 | STATUS: SUCCESS"
+      "status": "2026-11-09T11:31:33.891059+00:00 | STATUS: SUCCESS"
     },
     {
       "exists": true,
       "name": "Soccer Cleaner",
       "path": "docs/win/soccer/errors/00_intake/soccer_cleaner.txt",
-      "status": "2026-11-09T08:05:37.195467+00:00 | STATUS: SUCCESS WITH MISSING IDENTITY"
+      "status": "2026-11-09T11:31:34.288260+00:00 | STATUS: SUCCESS WITH MISSING IDENTITY"
     },
     {
       "exists": true,
@@ -143,8 +143,8 @@
     "name": "Soccer Pipeline",
     "ref_name": "main",
     "run_attempt": "1",
-    "run_id": "42583413982",
-    "sha": "4a39e916bba6efc66fe042ffd08a5e9036f74cec",
+    "run_id": "42609655434",
+    "sha": "5089541fb046e5dc7a75234281d693b06e001262",
     "status": "success"
   }
 }
