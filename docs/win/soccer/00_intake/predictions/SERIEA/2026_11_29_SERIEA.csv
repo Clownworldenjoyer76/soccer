@@ -1,0 +1,5 @@
+sport,league,match_date,match_time,home_team,away_team,home_prob,draw_prob,away_prob,home_xg,away_xg,expected_total_goals
+soccer,seriea,2026_11_29,06:30 AM,Udinese,Fiorentina,29.7%,26.9%,43.4%,1.09,1.38,2.47
+soccer,seriea,2026_11_29,09:00 AM,Sassuolo,Napoli,22.7%,22.6%,54.7%,1.13,1.87,3.00
+soccer,seriea,2026_11_29,12:00 PM,Roma,Monza,88.1%,8.5%,3.4%,3.24,0.55,3.79
+soccer,seriea,2026_11_29,02:45 PM,Como,Juventus,29.1%,27.1%,43.8%,1.06,1.36,2.42
