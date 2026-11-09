@@ -1,0 +1,3 @@
+sport,league,game_id,match_date,match_time,home_team,away_team,home_prob,draw_prob,away_prob,home_xg,away_xg,expected_total_goals,identity_status,identity_reason,identity_detail
+soccer,mls,,2026_11_18,04:00 PM,Orlando City,FC Cincinnati,0.473,0.262,0.265,1.47,1.04,2.51,unmatched,no_sportsbook_fixture,no exact games-master fixture found for league/date/teams
+soccer,mls,,2026_11_18,04:00 PM,Seattle Sounders,Real Salt Lake,0.496,0.258,0.245,1.52,0.98,2.5,unmatched,no_sportsbook_fixture,no exact games-master fixture found for league/date/teams

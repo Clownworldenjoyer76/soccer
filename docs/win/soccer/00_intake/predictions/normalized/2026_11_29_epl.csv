@@ -1,0 +1,7 @@
+sport,league,game_id,match_date,match_time,home_team,away_team,home_prob,draw_prob,away_prob,home_xg,away_xg,expected_total_goals,identity_status,identity_reason,identity_detail
+soccer,epl,,2026_11_29,07:00 AM,Everton,Liverpool,0.199,0.228,0.573,0.98,1.83,2.81,unmatched,no_sportsbook_fixture,no exact games-master fixture found for league/date/teams
+soccer,epl,,2026_11_29,09:05 AM,Brighton,Newcastle,0.48,0.262,0.258,1.48,1.01,2.49,unmatched,no_sportsbook_fixture,no exact games-master fixture found for league/date/teams
+soccer,epl,,2026_11_29,09:05 AM,Sunderland,Tottenham Hotspur,0.371,0.272,0.357,1.25,1.22,2.47,unmatched,no_sportsbook_fixture,no exact games-master fixture found for league/date/teams
+soccer,epl,,2026_11_29,09:05 AM,Fulham,Bournemouth,0.422,0.274,0.304,1.32,1.07,2.39,unmatched,no_sportsbook_fixture,no exact games-master fixture found for league/date/teams
+soccer,epl,,2026_11_29,09:05 AM,Crystal Palace,Hull,0.852,0.105,0.043,2.91,0.53,3.44,unmatched,no_sportsbook_fixture,no exact games-master fixture found for league/date/teams
+soccer,epl,,2026_11_29,11:30 AM,Arsenal,Manchester City,0.489,0.251,0.26,1.58,1.08,2.66,unmatched,no_sportsbook_fixture,no exact games-master fixture found for league/date/teams

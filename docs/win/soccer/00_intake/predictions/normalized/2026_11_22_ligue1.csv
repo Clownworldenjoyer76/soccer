@@ -1,0 +1,4 @@
+sport,league,game_id,match_date,match_time,home_team,away_team,home_prob,draw_prob,away_prob,home_xg,away_xg,expected_total_goals,identity_status,identity_reason,identity_detail
+soccer,ligue1,,2026_11_22,09:00 AM,Paris FC,Angers,0.416,0.279,0.304,1.28,1.05,2.33,unmatched,no_sportsbook_fixture,no exact games-master fixture found for league/date/teams
+soccer,ligue1,,2026_11_22,11:15 AM,Lorient,Rennes,0.359,0.276,0.365,1.2,1.21,2.41,unmatched,no_sportsbook_fixture,no exact games-master fixture found for league/date/teams
+soccer,ligue1,,2026_11_22,02:45 PM,Marseille,Le Mans,0.738,0.162,0.1,2.42,0.77,3.19,unmatched,no_sportsbook_fixture,no exact games-master fixture found for league/date/teams

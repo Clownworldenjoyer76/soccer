@@ -1,0 +1,4 @@
+sport,league,game_id,match_date,match_time,home_team,away_team,home_prob,draw_prob,away_prob,home_xg,away_xg,expected_total_goals,identity_status,identity_reason,identity_detail
+soccer,ligue1,,2026_11_29,09:00 AM,Auxerre,Marseille,0.327,0.274,0.399,1.14,1.29,2.43,unmatched,no_sportsbook_fixture,no exact games-master fixture found for league/date/teams
+soccer,ligue1,,2026_11_29,11:15 AM,Toulouse,Rennes,0.438,0.263,0.298,1.42,1.13,2.55,unmatched,no_sportsbook_fixture,no exact games-master fixture found for league/date/teams
+soccer,ligue1,,2026_11_29,02:45 PM,Lyon,Monaco,0.352,0.262,0.386,1.28,1.36,2.64,unmatched,no_sportsbook_fixture,no exact games-master fixture found for league/date/teams

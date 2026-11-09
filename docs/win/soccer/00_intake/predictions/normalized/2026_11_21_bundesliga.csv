@@ -1,0 +1,7 @@
+sport,league,game_id,match_date,match_time,home_team,away_team,home_prob,draw_prob,away_prob,home_xg,away_xg,expected_total_goals,identity_status,identity_reason,identity_detail
+soccer,bundesliga,,2026_11_21,09:30 AM,Eintracht Frankfurt,Hoffenheim,0.641,0.188,0.171,2.31,1.12,3.43,unmatched,no_sportsbook_fixture,no exact games-master fixture found for league/date/teams
+soccer,bundesliga,,2026_11_21,09:30 AM,Elversberg,Freiburg,0.443,0.266,0.29,1.41,1.09,2.5,unmatched,no_sportsbook_fixture,no exact games-master fixture found for league/date/teams
+soccer,bundesliga,,2026_11_21,09:30 AM,Leverkusen,Paderborn,0.855,0.096,0.049,3.28,0.73,4.01,unmatched,no_sportsbook_fixture,no exact games-master fixture found for league/date/teams
+soccer,bundesliga,,2026_11_21,09:30 AM,Union Berlin,RB Leipzig,0.262,0.246,0.491,1.12,1.63,2.75,unmatched,no_sportsbook_fixture,no exact games-master fixture found for league/date/teams
+soccer,bundesliga,,2026_11_21,09:30 AM,Borussia Monchengladbach,Borussia Dortmund,0.238,0.217,0.545,1.25,1.99,3.24,unmatched,no_sportsbook_fixture,no exact games-master fixture found for league/date/teams
+soccer,bundesliga,,2026_11_21,12:30 PM,Schalke,VfB Stuttgart,0.092,0.141,0.767,0.87,2.76,3.63,unmatched,no_sportsbook_fixture,no exact games-master fixture found for league/date/teams

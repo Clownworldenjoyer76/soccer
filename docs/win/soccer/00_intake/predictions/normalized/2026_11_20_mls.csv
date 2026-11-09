@@ -1,0 +1,7 @@
+sport,league,game_id,match_date,match_time,home_team,away_team,home_prob,draw_prob,away_prob,home_xg,away_xg,expected_total_goals,identity_status,identity_reason,identity_detail
+soccer,mls,,2026_11_20,04:00 PM,St Louis City,Los Angeles FC,0.508,0.248,0.244,1.61,1.04,2.65,unmatched,no_sportsbook_fixture,no exact games-master fixture found for league/date/teams
+soccer,mls,,2026_11_20,04:00 PM,San Jose Earthquakes,Houston Dynamo,0.474,0.264,0.262,1.45,1.01,2.46,unmatched,no_sportsbook_fixture,no exact games-master fixture found for league/date/teams
+soccer,mls,,2026_11_20,04:00 PM,Inter Miami,Columbus Crew,0.593,0.219,0.188,1.92,0.98,2.9,unmatched,no_sportsbook_fixture,no exact games-master fixture found for league/date/teams
+soccer,mls,,2026_11_20,04:00 PM,Chicago Fire,Charlotte FC,0.517,0.253,0.231,1.58,0.96,2.54,unmatched,no_sportsbook_fixture,no exact games-master fixture found for league/date/teams
+soccer,mls,,2026_11_20,04:00 PM,FC Dallas,Portland Timbers,0.543,0.242,0.214,1.68,0.95,2.63,unmatched,no_sportsbook_fixture,no exact games-master fixture found for league/date/teams
+soccer,mls,,2026_11_20,04:00 PM,New England Revolution,Philadelphia Union,0.425,0.274,0.3,1.33,1.06,2.39,unmatched,no_sportsbook_fixture,no exact games-master fixture found for league/date/teams

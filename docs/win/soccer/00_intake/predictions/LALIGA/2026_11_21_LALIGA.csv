@@ -1,5 +1,5 @@
 sport,league,match_date,match_time,home_team,away_team,home_prob,draw_prob,away_prob,home_xg,away_xg,expected_total_goals
-soccer,laliga,2026_11_21,08:00 AM,Alaves,La Coruna,74.0%,16.9%,9.1%,2.26,0.64,2.90
-soccer,laliga,2026_11_21,10:15 AM,Rayo Vallecano,Valencia,61.5%,21.9%,16.6%,1.89,0.86,2.75
-soccer,laliga,2026_11_21,12:30 PM,Sevilla,Betis,30.9%,27.8%,41.3%,1.07,1.29,2.36
+soccer,laliga,2026_11_21,08:00 AM,Alaves,Deportivo De La Coruna,74.0%,16.9%,9.1%,2.26,0.64,2.90
+soccer,laliga,2026_11_21,10:15 AM,Vallecano,Valencia,61.5%,21.9%,16.6%,1.89,0.86,2.75
+soccer,laliga,2026_11_21,12:30 PM,Sevilla,Real Betis,30.9%,27.8%,41.3%,1.07,1.29,2.36
 soccer,laliga,2026_11_21,03:00 PM,Real Madrid,Celta Vigo,76.3%,15.1%,8.5%,2.49,0.72,3.21

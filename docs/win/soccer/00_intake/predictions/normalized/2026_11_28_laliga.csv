@@ -1,0 +1,5 @@
+sport,league,game_id,match_date,match_time,home_team,away_team,home_prob,draw_prob,away_prob,home_xg,away_xg,expected_total_goals,identity_status,identity_reason,identity_detail
+soccer,laliga,,2026_11_28,08:00 AM,Real Betis,Vallecano,0.502,0.253,0.245,1.57,1.01,2.58,unmatched,no_sportsbook_fixture,no exact games-master fixture found for league/date/teams
+soccer,laliga,,2026_11_28,10:15 AM,Malaga,Athletic Club,0.108,0.203,0.69,0.61,1.93,2.54,unmatched,no_sportsbook_fixture,no exact games-master fixture found for league/date/teams
+soccer,laliga,,2026_11_28,12:30 PM,Elche,Atletico Madrid,0.174,0.237,0.589,0.81,1.71,2.52,unmatched,no_sportsbook_fixture,no exact games-master fixture found for league/date/teams
+soccer,laliga,,2026_11_28,03:00 PM,Real Madrid,Alaves,0.775,0.15,0.075,2.43,0.62,3.05,unmatched,no_sportsbook_fixture,no exact games-master fixture found for league/date/teams

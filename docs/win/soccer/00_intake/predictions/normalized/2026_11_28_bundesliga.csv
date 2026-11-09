@@ -1,0 +1,4 @@
+sport,league,game_id,match_date,match_time,home_team,away_team,home_prob,draw_prob,away_prob,home_xg,away_xg,expected_total_goals,identity_status,identity_reason,identity_detail
+soccer,bundesliga,,2026_11_28,09:30 AM,Mainz,Union Berlin,0.52,0.239,0.241,1.72,1.09,2.81,unmatched,no_sportsbook_fixture,no exact games-master fixture found for league/date/teams
+soccer,bundesliga,,2026_11_28,09:30 AM,Hamburg,Bayern Munich,0.095,0.138,0.767,0.93,2.83,3.76,unmatched,no_sportsbook_fixture,no exact games-master fixture found for league/date/teams
+soccer,bundesliga,,2026_11_28,12:30 PM,VfB Stuttgart,Eintracht Frankfurt,0.427,0.247,0.326,1.56,1.33,2.89,unmatched,no_sportsbook_fixture,no exact games-master fixture found for league/date/teams

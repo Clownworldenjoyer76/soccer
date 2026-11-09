@@ -1,0 +1,5 @@
+sport,league,game_id,match_date,match_time,home_team,away_team,home_prob,draw_prob,away_prob,home_xg,away_xg,expected_total_goals,identity_status,identity_reason,identity_detail
+soccer,laliga,,2026_11_22,08:00 AM,Barcelona,Villarreal,0.78,0.14,0.08,2.65,0.74,3.39,unmatched,no_sportsbook_fixture,no exact games-master fixture found for league/date/teams
+soccer,laliga,,2026_11_22,10:15 AM,Santander,Real Sociedad,0.21,0.274,0.516,0.79,1.4,2.19,unmatched,no_sportsbook_fixture,no exact games-master fixture found for league/date/teams
+soccer,laliga,,2026_11_22,12:30 PM,Osasuna,Malaga,0.669,0.211,0.12,1.88,0.64,2.52,unmatched,no_sportsbook_fixture,no exact games-master fixture found for league/date/teams
+soccer,laliga,,2026_11_22,03:00 PM,Getafe,Atletico Madrid,0.156,0.236,0.607,0.73,1.69,2.42,unmatched,no_sportsbook_fixture,no exact games-master fixture found for league/date/teams

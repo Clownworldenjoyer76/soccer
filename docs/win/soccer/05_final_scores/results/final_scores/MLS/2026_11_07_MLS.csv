@@ -1,0 +1,16 @@
+sport,league,game_id,game_date,match_time,home_team,away_team,home_score,away_score
+soccer,mls,761943,2026_11_07,07:00 PM,FC Dallas,Colorado Rapids,3,1
+soccer,mls,761948,2026_11_07,07:00 PM,Seattle Sounders,Los Angeles FC,2,1
+soccer,mls,761947,2026_11_07,07:00 PM,San Diego FC,Sporting Kansas City,0,1
+soccer,mls,761945,2026_11_07,07:00 PM,Minnesota United,San Jose Earthquakes,3,1
+soccer,mls,761942,2026_11_07,07:00 PM,Austin FC,Portland Timbers,0,2
+soccer,mls,761944,2026_11_07,07:00 PM,Houston Dynamo,St Louis City,0,1
+soccer,mls,761946,2026_11_07,07:00 PM,Real Salt Lake,LA Galaxy,2,1
+soccer,mls,761940,2026_11_07,04:00 PM,Orlando City,New England Revolution,1,0
+soccer,mls,761936,2026_11_07,04:00 PM,DC United,New York City FC,0,1
+soccer,mls,761938,2026_11_07,04:00 PM,Inter Miami,Charlotte FC,3,3
+soccer,mls,761937,2026_11_07,04:00 PM,FC Cincinnati,Nashville SC,0,2
+soccer,mls,761934,2026_11_07,04:00 PM,CF Montreal,Vancouver Whitecaps,0,2
+soccer,mls,761941,2026_11_07,04:00 PM,Philadelphia Union,Toronto FC,4,1
+soccer,mls,761935,2026_11_07,04:00 PM,Chicago Fire,Columbus Crew,3,4
+soccer,mls,761939,2026_11_07,04:00 PM,New York Red Bulls,Atlanta United,3,0

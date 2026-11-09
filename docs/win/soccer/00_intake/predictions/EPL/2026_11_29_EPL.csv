@@ -1,7 +1,7 @@
 sport,league,match_date,match_time,home_team,away_team,home_prob,draw_prob,away_prob,home_xg,away_xg,expected_total_goals
 soccer,epl,2026_11_29,07:00 AM,Everton,Liverpool,19.9%,22.8%,57.3%,0.98,1.83,2.81
-soccer,epl,2026_11_29,09:05 AM,Brighton and Hove Albion,Newcastle United,48.0%,26.2%,25.8%,1.48,1.01,2.49
-soccer,epl,2026_11_29,09:05 AM,Sunderland,Tottenham,37.1%,27.2%,35.7%,1.25,1.22,2.47
+soccer,epl,2026_11_29,09:05 AM,Brighton,Newcastle,48.0%,26.2%,25.8%,1.48,1.01,2.49
+soccer,epl,2026_11_29,09:05 AM,Sunderland,Tottenham Hotspur,37.1%,27.2%,35.7%,1.25,1.22,2.47
 soccer,epl,2026_11_29,09:05 AM,Fulham,Bournemouth,42.2%,27.4%,30.4%,1.32,1.07,2.39
-soccer,epl,2026_11_29,09:05 AM,Crystal Palace,Hull City,85.2%,10.5%,4.3%,2.91,0.53,3.44
+soccer,epl,2026_11_29,09:05 AM,Crystal Palace,Hull,85.2%,10.5%,4.3%,2.91,0.53,3.44
 soccer,epl,2026_11_29,11:30 AM,Arsenal,Manchester City,48.9%,25.1%,26.0%,1.58,1.08,2.66
