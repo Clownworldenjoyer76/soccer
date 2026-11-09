@@ -1,0 +1,5 @@
+sport,league,match_date,match_time,home_team,away_team,home_prob,draw_prob,away_prob,home_xg,away_xg,expected_total_goals
+soccer,laliga,2026_11_28,08:00 AM,Betis,Rayo Vallecano,50.2%,25.3%,24.5%,1.57,1.01,2.58
+soccer,laliga,2026_11_28,10:15 AM,Malaga,Athletic Club,10.8%,20.3%,69.0%,0.61,1.93,2.54
+soccer,laliga,2026_11_28,12:30 PM,Elche,Atletico Madrid,17.4%,23.7%,58.9%,0.81,1.71,2.52
+soccer,laliga,2026_11_28,03:00 PM,Real Madrid,Alaves,77.5%,15.0%,7.5%,2.43,0.62,3.05
