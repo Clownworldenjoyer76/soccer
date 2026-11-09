@@ -1,0 +1,2 @@
+sport,league,match_date,match_time,home_team,away_team,home_prob,draw_prob,away_prob,home_xg,away_xg,expected_total_goals
+soccer,epl,2026_11_23,03:00 PM,Brentford,Everton,45.6%,26.4%,27.9%,1.44,1.06,2.50
