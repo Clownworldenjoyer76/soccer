@@ -1,0 +1,4 @@
+sport,league,match_date,match_time,home_team,away_team,home_prob,draw_prob,away_prob,home_xg,away_xg,expected_total_goals
+soccer,bundesliga,2026_11_29,09:30 AM,Freiburg,RB Leipzig,28.0%,24.6%,47.4%,1.18,1.62,2.80
+soccer,bundesliga,2026_11_29,11:30 AM,Hoffenheim,Augsburg,59.9%,20.6%,19.5%,2.10,1.12,3.22
+soccer,bundesliga,2026_11_29,01:30 PM,Dortmund,Bayer 04 Leverkusen,52.6%,22.5%,24.9%,1.88,1.23,3.11
