@@ -1,6 +1,5 @@
-=== name_normalization RUN 2026-11-08T08:05:41.862986+00:00 ===
-2026-11-08T08:05:41.863870+00:00 | Team map loaded: 323 entries
-2026-11-08T08:05:41.874891+00:00 | Files to process: 1763
-2026-11-08T08:05:41.931877+00:00 | UPDATED: docs/win/soccer/00_intake/sportsbook/serie_a/2026_11_08_serie_a_soccer.csv
-2026-11-08T08:05:41.957722+00:00 | SUMMARY | files_processed=1763 | rows_processed=6633 | names_normalized=2 | unmapped=0
-2026-11-08T08:05:41.957769+00:00 | STATUS: SUCCESS
+=== name_normalization RUN 2026-11-09T08:05:36.789987+00:00 ===
+2026-11-09T08:05:36.790780+00:00 | Team map loaded: 323 entries
+2026-11-09T08:05:36.800932+00:00 | Files to process: 1769
+2026-11-09T08:05:36.857469+00:00 | SUMMARY | files_processed=1769 | rows_processed=6633 | names_normalized=0 | unmapped=0
+2026-11-09T08:05:36.857501+00:00 | STATUS: SUCCESS
