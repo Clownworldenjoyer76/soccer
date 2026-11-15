@@ -9,12 +9,12 @@
     "sportsbook_games": 0
   },
   "fatal_errors": [],
-  "game_date_new_york": "2026_11_14",
-  "generated_at_utc": "2026-11-14T08:08:50.414613+00:00",
+  "game_date_new_york": "2026_11_15",
+  "generated_at_utc": "2026-11-15T08:08:45.455735+00:00",
   "paths": {
     "edges": [],
     "games": [
-      "docs/win/soccer/00_intake/games/2026_11_14_soccer_games.csv"
+      "docs/win/soccer/00_intake/games/2026_11_15_soccer_games.csv"
     ],
     "locked": [],
     "merged": [],
@@ -22,7 +22,7 @@
     "selected": [],
     "sportsbook": []
   },
-  "report_date": "2026_11_14",
+  "report_date": "2026_11_15",
   "schema_version": 1,
   "sport": "soccer",
   "stage_status": [
@@ -36,13 +36,13 @@
       "exists": true,
       "name": "Name Normalization",
       "path": "docs/win/soccer/errors/00_intake/name_normalization.txt",
-      "status": "2026-11-14T08:05:33.708970+00:00 | STATUS: SUCCESS"
+      "status": "2026-11-15T08:05:42.800842+00:00 | STATUS: SUCCESS"
     },
     {
       "exists": true,
       "name": "Soccer Cleaner",
       "path": "docs/win/soccer/errors/00_intake/soccer_cleaner.txt",
-      "status": "2026-11-14T08:05:34.060975+00:00 | STATUS: SUCCESS WITH MISSING IDENTITY"
+      "status": "2026-11-15T08:05:43.110694+00:00 | STATUS: SUCCESS WITH MISSING IDENTITY"
     },
     {
       "exists": true,
@@ -84,56 +84,56 @@
       "exists": false,
       "matched_files": [],
       "name": "Games Master",
-      "path": "docs/win/soccer/00_intake/games/2026_11_14_soccer_games.csv",
+      "path": "docs/win/soccer/00_intake/games/2026_11_15_soccer_games.csv",
       "status": "STATUS: NO OUTPUT"
     },
     {
       "exists": false,
       "matched_files": [],
       "name": "Normalized Predictions",
-      "path": "docs/win/soccer/00_intake/predictions/normalized/2026_11_14_*.csv",
+      "path": "docs/win/soccer/00_intake/predictions/normalized/2026_11_15_*.csv",
       "status": "STATUS: NO OUTPUT"
     },
     {
       "exists": false,
       "matched_files": [],
       "name": "Normalized Sportsbook",
-      "path": "docs/win/soccer/00_intake/sportsbook/normalized/2026_11_14_*.csv",
+      "path": "docs/win/soccer/00_intake/sportsbook/normalized/2026_11_15_*.csv",
       "status": "STATUS: NO OUTPUT"
     },
     {
       "exists": false,
       "matched_files": [],
       "name": "Merge",
-      "path": "docs/win/soccer/01_merge/**/*2026_11_14*.csv",
+      "path": "docs/win/soccer/01_merge/**/*2026_11_15*.csv",
       "status": "STATUS: NO OUTPUT"
     },
     {
       "exists": false,
       "matched_files": [],
       "name": "Juice",
-      "path": "docs/win/soccer/02_juice/**/*2026_11_14*.csv",
+      "path": "docs/win/soccer/02_juice/**/*2026_11_15*.csv",
       "status": "STATUS: NO OUTPUT"
     },
     {
       "exists": false,
       "matched_files": [],
       "name": "Edges",
-      "path": "docs/win/soccer/03_edges/**/*2026_11_14*.csv",
+      "path": "docs/win/soccer/03_edges/**/*2026_11_15*.csv",
       "status": "STATUS: NO OUTPUT"
     },
     {
       "exists": false,
       "matched_files": [],
       "name": "Select",
-      "path": "docs/win/soccer/04_select/*2026_11_14*.csv",
+      "path": "docs/win/soccer/04_select/*2026_11_15*.csv",
       "status": "STATUS: NO OUTPUT"
     },
     {
       "exists": false,
       "matched_files": [],
       "name": "Locked Select",
-      "path": "docs/win/soccer/04_select/locked/*2026_11_14*.csv",
+      "path": "docs/win/soccer/04_select/locked/*2026_11_15*.csv",
       "status": "STATUS: NO OUTPUT"
     }
   ],
@@ -143,8 +143,8 @@
     "name": "Soccer Pipeline",
     "ref_name": "main",
     "run_attempt": "1",
-    "run_id": "43574100051",
-    "sha": "a93637e70fffdea652e467134599ce33c96c66a1",
+    "run_id": "43692839492",
+    "sha": "1d49d8ecc5e419392ac6a2e3defb728d5dfa016e",
     "status": "success"
   }
 }
