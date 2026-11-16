@@ -1,6 +1,6 @@
 === ESPN endpoint diagnostic ===
-utc_time=2026-11-16T08:05:40Z
-runner=GitHub Actions 1000110107
+utc_time=2026-11-16T11:07:39Z
+runner=GitHub Actions 1000110189
 date=20261116
 league=usa.1
 
@@ -31,13 +31,13 @@ json=yes type=dict | keys=code
 [cdn_scoreboard]
 url=https://cdn.espn.com/core/soccer/scoreboard?xhr=1&league=usa.1&dates=20261116
 curl_exit=0
-http|content_type|bytes|effective_url=200|application/json;charset=utf-8|230313|https://cdn.espn.com/core/soccer/scoreboard?xhr=1&league=usa.1&dates=20261116
+http|content_type|bytes|effective_url=200|application/json;charset=utf-8|223967|https://cdn.espn.com/core/soccer/scoreboard?xhr=1&league=usa.1&dates=20261116
 json=yes type=dict | keys=news,pinnedCount,nowFeedMD5Hash,type,content,analytics,nowFeed,ads,targeting,nowFeedCount,meta,nowFeedSupported,sport,tier2Nav
 
 [public_scoreboard_page]
 url=https://www.espn.com/soccer/scoreboard/_/league/usa.1/date/20261116
 curl_exit=0
-http|content_type|bytes|effective_url=200|text/html; charset=utf-8|518798|https://www.espn.com/soccer/scoreboard/_/league/usa.1/date/20261116
+http|content_type|bytes|effective_url=202|text/html; charset=UTF-8|0|https://www.espn.com/soccer/scoreboard/_/league/usa.1/date/20261116
 json=no
 
 [cdn_structure]

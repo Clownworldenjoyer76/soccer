@@ -1,4 +1,4 @@
 sport,league,match_date,match_time,home_team,away_team,home_prob,draw_prob,away_prob,home_xg,away_xg,expected_total_goals
 soccer,epl,2026_11_28,10:00 AM,Manchester United,Brentford,59.8%,22.2%,18.0%,1.87,0.92,2.79
-soccer,epl,2026_11_28,10:00 AM,Leeds United,Coventry City,66.0%,19.8%,14.3%,2.09,0.86,2.95
-soccer,epl,2026_11_28,12:30 PM,Ipswich Town,Aston Villa,22.5%,24.5%,53.1%,0.99,1.65,2.64
+soccer,epl,2026_11_28,10:00 AM,Leeds,Coventry,66.0%,19.8%,14.3%,2.09,0.86,2.95
+soccer,epl,2026_11_28,12:30 PM,Ipswich,Aston Villa,22.5%,24.5%,53.1%,0.99,1.65,2.64

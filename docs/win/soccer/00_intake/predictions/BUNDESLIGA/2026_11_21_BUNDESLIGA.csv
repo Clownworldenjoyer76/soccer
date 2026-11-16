@@ -1,7 +1,7 @@
 sport,league,match_date,match_time,home_team,away_team,home_prob,draw_prob,away_prob,home_xg,away_xg,expected_total_goals
 soccer,bundesliga,2026_11_21,09:30 AM,Eintracht Frankfurt,Hoffenheim,64.1%,18.8%,17.1%,2.31,1.12,3.43
 soccer,bundesliga,2026_11_21,09:30 AM,Elversberg,Freiburg,44.3%,26.6%,29.0%,1.41,1.09,2.50
-soccer,bundesliga,2026_11_21,09:30 AM,Bayer 04 Leverkusen,Paderborn 07,85.5%,9.6%,4.9%,3.28,0.73,4.01
+soccer,bundesliga,2026_11_21,09:30 AM,Leverkusen,Paderborn,85.5%,9.6%,4.9%,3.28,0.73,4.01
 soccer,bundesliga,2026_11_21,09:30 AM,Union Berlin,RB Leipzig,26.2%,24.6%,49.1%,1.12,1.63,2.75
-soccer,bundesliga,2026_11_21,09:30 AM,Borussia Monchengladbach,Dortmund,23.8%,21.7%,54.5%,1.25,1.99,3.24
-soccer,bundesliga,2026_11_21,12:30 PM,Schalke 04,VfB Stuttgart,9.2%,14.1%,76.7%,0.87,2.76,3.63
+soccer,bundesliga,2026_11_21,09:30 AM,Borussia Monchengladbach,Borussia Dortmund,23.8%,21.7%,54.5%,1.25,1.99,3.24
+soccer,bundesliga,2026_11_21,12:30 PM,Schalke,VfB Stuttgart,9.2%,14.1%,76.7%,0.87,2.76,3.63
