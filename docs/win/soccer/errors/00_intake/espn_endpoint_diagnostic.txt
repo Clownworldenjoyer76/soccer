@@ -1,25 +1,25 @@
 === ESPN endpoint diagnostic ===
-utc_time=2026-11-16T11:07:39Z
-runner=GitHub Actions 1000110189
+utc_time=2026-11-16T20:50:19Z
+runner=GitHub Actions 1000110283
 date=20261116
 league=usa.1
 
 [production_limit_1000]
 url=https://site.api.espn.com/apis/site/v2/sports/soccer/usa.1/scoreboard?dates=20261116&limit=1000
 curl_exit=0
-http|content_type|bytes|effective_url=403|text/html|451|https://site.api.espn.com/apis/site/v2/sports/soccer/usa.1/scoreboard?dates=20261116&limit=1000
+http|content_type|bytes|effective_url=403|text/html|449|https://site.api.espn.com/apis/site/v2/sports/soccer/usa.1/scoreboard?dates=20261116&limit=1000
 json=no
 
 [site_api_limit_100]
 url=https://site.api.espn.com/apis/site/v2/sports/soccer/usa.1/scoreboard?dates=20261116&limit=100
 curl_exit=0
-http|content_type|bytes|effective_url=403|text/html|451|https://site.api.espn.com/apis/site/v2/sports/soccer/usa.1/scoreboard?dates=20261116&limit=100
+http|content_type|bytes|effective_url=403|text/html|449|https://site.api.espn.com/apis/site/v2/sports/soccer/usa.1/scoreboard?dates=20261116&limit=100
 json=no
 
 [site_api_no_limit]
 url=https://site.api.espn.com/apis/site/v2/sports/soccer/usa.1/scoreboard?dates=20261116
 curl_exit=0
-http|content_type|bytes|effective_url=403|text/html|451|https://site.api.espn.com/apis/site/v2/sports/soccer/usa.1/scoreboard?dates=20261116
+http|content_type|bytes|effective_url=403|text/html|449|https://site.api.espn.com/apis/site/v2/sports/soccer/usa.1/scoreboard?dates=20261116
 json=no
 
 [site_web_api]
@@ -31,7 +31,7 @@ json=yes type=dict | keys=code
 [cdn_scoreboard]
 url=https://cdn.espn.com/core/soccer/scoreboard?xhr=1&league=usa.1&dates=20261116
 curl_exit=0
-http|content_type|bytes|effective_url=200|application/json;charset=utf-8|223967|https://cdn.espn.com/core/soccer/scoreboard?xhr=1&league=usa.1&dates=20261116
+http|content_type|bytes|effective_url=200|application/json;charset=utf-8|230652|https://cdn.espn.com/core/soccer/scoreboard?xhr=1&league=usa.1&dates=20261116
 json=yes type=dict | keys=news,pinnedCount,nowFeedMD5Hash,type,content,analytics,nowFeed,ads,targeting,nowFeedCount,meta,nowFeedSupported,sport,tier2Nav
 
 [public_scoreboard_page]
@@ -65,13 +65,13 @@ json=no
 [cdn_game]
 url=https://cdn.espn.com/core/soccer/game?xhr=1&gameId=401933535
 curl_exit=0
-http|content_type|bytes|effective_url=200|text/html;charset=UTF-8|297640|http://cdn.espn.com/core/soccer/match?gameId=401933535
+http|content_type|bytes|effective_url=200|text/html;charset=UTF-8|305495|http://cdn.espn.com/core/soccer/match?gameId=401933535
 json=no
 
 [core_odds]
 url=https://sports.core.api.espn.com/v2/sports/soccer/leagues/usa.1/events/401933535/competitions/401933535/odds?limit=100
 curl_exit=0
-http|content_type|bytes|effective_url=200|application/json;charset=utf-8|6500|https://sports.core.api.espn.com/v2/sports/soccer/leagues/usa.1/events/401933535/competitions/401933535/odds?limit=100
+http|content_type|bytes|effective_url=200|application/json;charset=utf-8|6498|https://sports.core.api.espn.com/v2/sports/soccer/leagues/usa.1/events/401933535/competitions/401933535/odds?limit=100
 json=yes type=dict | keys=count,pageIndex,pageSize,pageCount,items | items=1
 
 [core_propbets]
