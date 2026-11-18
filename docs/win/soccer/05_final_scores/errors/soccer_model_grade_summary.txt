@@ -1,6 +1,6 @@
-[2026-11-17T03:09:05.363283] === START 04_soccer_model_grade.py 2026-11-17T03:09:05.363258 ===
-[2026-11-17T03:09:05.633825] FINAL SCORES INDEXED | files=340 rows=1497 valid_games=1122
-[2026-11-17T03:09:05.635677] RAW MATCH_ODDS FILES FOUND | count=305
-[2026-11-17T03:09:06.417359] MODEL MASTER WRITTEN | rows=1080 | docs/win/soccer/05_final_scores/model_evaluation/SOCCER_model_results.csv
-[2026-11-17T03:09:06.417404] ACCOUNTING | raw_rows=1090 | known_scores=1080 | no_score=8 | raw_invalid=165 | engine_missing=0 | engine_invalid=0
-[2026-11-17T03:09:06.419466] === END 04_soccer_model_grade.py 2026-11-17T03:09:06.419422 ===
+[2026-11-18T03:08:26.180934] === START 04_soccer_model_grade.py 2026-11-18T03:08:26.180920 ===
+[2026-11-18T03:08:26.424757] FINAL SCORES INDEXED | files=340 rows=1497 valid_games=1122
+[2026-11-18T03:08:26.426291] RAW MATCH_ODDS FILES FOUND | count=305
+[2026-11-18T03:08:27.105483] MODEL MASTER WRITTEN | rows=1080 | docs/win/soccer/05_final_scores/model_evaluation/SOCCER_model_results.csv
+[2026-11-18T03:08:27.105509] ACCOUNTING | raw_rows=1090 | known_scores=1080 | no_score=8 | raw_invalid=165 | engine_missing=0 | engine_invalid=0
+[2026-11-18T03:08:27.106236] === END 04_soccer_model_grade.py 2026-11-18T03:08:27.106216 ===
