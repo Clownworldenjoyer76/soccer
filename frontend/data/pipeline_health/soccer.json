@@ -10,7 +10,7 @@
   },
   "fatal_errors": [],
   "game_date_new_york": "2026_11_20",
-  "generated_at_utc": "2026-11-20T08:08:34.351974+00:00",
+  "generated_at_utc": "2026-11-20T11:27:41.907904+00:00",
   "paths": {
     "edges": [
       "docs/win/soccer/03_edges/2026_11_20_bundesliga_btts.csv",
@@ -71,13 +71,13 @@
       "exists": true,
       "name": "Name Normalization",
       "path": "docs/win/soccer/errors/00_intake/name_normalization.txt",
-      "status": "2026-11-20T08:05:43.094773+00:00 | STATUS: SUCCESS"
+      "status": "2026-11-20T11:23:05.131543+00:00 | STATUS: SUCCESS"
     },
     {
       "exists": true,
       "name": "Soccer Cleaner",
       "path": "docs/win/soccer/errors/00_intake/soccer_cleaner.txt",
-      "status": "2026-11-20T08:05:43.409510+00:00 | STATUS: SUCCESS WITH MISSING IDENTITY"
+      "status": "2026-11-20T11:23:05.644882+00:00 | STATUS: SUCCESS WITH MISSING IDENTITY"
     },
     {
       "exists": true,
@@ -228,8 +228,8 @@
     "name": "Soccer Pipeline",
     "ref_name": "main",
     "run_attempt": "1",
-    "run_id": "44699736426",
-    "sha": "68cffc52ef249d6fe989d5abd2721fb213d8bd65",
+    "run_id": "44727070104",
+    "sha": "0a2874cb836c7df30f410c18803144ecbcced3f2",
     "status": "success"
   }
 }
