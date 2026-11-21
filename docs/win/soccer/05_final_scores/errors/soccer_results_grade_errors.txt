@@ -1,35 +1,37 @@
-[2026-11-20T06:27:29.717289] SCORE GAME_ID ROWS REMOVED | docs/win/soccer/05_final_scores/results/final_scores/LALIGA/2026_04_11_LALIGA.csv | before=4 after=1
-[2026-11-20T06:27:29.722131] SCORE GAME_ID ROWS REMOVED | docs/win/soccer/05_final_scores/results/final_scores/LIGUE1/2026_04_11_LIGUE1.csv | before=2 after=1
-[2026-11-20T06:27:29.727007] SCORE GAME_ID ROWS REMOVED | docs/win/soccer/05_final_scores/results/final_scores/MLS/2026_04_11_MLS.csv | before=13 after=7
-[2026-11-20T06:27:29.789977] SCORE GAME_ID ROWS REMOVED | docs/win/soccer/05_final_scores/results/final_scores/MLS/2026_04_18_MLS.csv | before=13 after=9
-[2026-11-20T06:27:29.828579] SCORE GAME_ID ROWS REMOVED | docs/win/soccer/05_final_scores/results/final_scores/LALIGA/2026_04_22_LALIGA.csv | before=3 after=2
-[2026-11-20T06:27:30.049950] SCORE GAME_ID ROWS REMOVED | docs/win/soccer/05_final_scores/results/final_scores/LIGUE1/2026_05_17_LIGUE1.csv | before=10 after=8
-[2026-11-20T06:27:30.052903] MISSING SCORE MERGE | source=SELECTED select=2026_05_17_soccer_bets.csv league=ligue1 rows=4 missing_rows=1 unique_missing=1
-[2026-11-20T06:27:30.054644]  game_id league match_date home_team away_team market side
+[2026-11-21T03:08:36.015392] SCORE GAME_ID ROWS REMOVED | docs/win/soccer/05_final_scores/results/final_scores/LALIGA/2026_04_11_LALIGA.csv | before=4 after=1
+[2026-11-21T03:08:36.018348] SCORE GAME_ID ROWS REMOVED | docs/win/soccer/05_final_scores/results/final_scores/LIGUE1/2026_04_11_LIGUE1.csv | before=2 after=1
+[2026-11-21T03:08:36.021292] SCORE GAME_ID ROWS REMOVED | docs/win/soccer/05_final_scores/results/final_scores/MLS/2026_04_11_MLS.csv | before=13 after=7
+[2026-11-21T03:08:36.056721] SCORE GAME_ID ROWS REMOVED | docs/win/soccer/05_final_scores/results/final_scores/MLS/2026_04_18_MLS.csv | before=13 after=9
+[2026-11-21T03:08:36.078639] SCORE GAME_ID ROWS REMOVED | docs/win/soccer/05_final_scores/results/final_scores/LALIGA/2026_04_22_LALIGA.csv | before=3 after=2
+[2026-11-21T03:08:36.202797] SCORE GAME_ID ROWS REMOVED | docs/win/soccer/05_final_scores/results/final_scores/LIGUE1/2026_05_17_LIGUE1.csv | before=10 after=8
+[2026-11-21T03:08:36.204490] MISSING SCORE MERGE | source=SELECTED select=2026_05_17_soccer_bets.csv league=ligue1 rows=4 missing_rows=1 unique_missing=1
+[2026-11-21T03:08:36.205585]  game_id league match_date home_team away_team market side
 61512162 ligue1 2026_05_17    Nantes  Toulouse   btts   no
-[2026-11-20T06:27:30.073839] SCORE GAME_ID ROWS REMOVED | docs/win/soccer/05_final_scores/results/final_scores/LALIGA/2026_05_23_LALIGA.csv | before=10 after=9
-[2026-11-20T06:27:30.087527] SCORE GAME_ID ROWS REMOVED | docs/win/soccer/05_final_scores/results/final_scores/EPL/2026_05_24_EPL.csv | before=11 after=10
-[2026-11-20T06:27:30.120536] SCORE GAME_ID ROWS REMOVED | docs/win/soccer/05_final_scores/results/final_scores/LALIGA/2026_08_20_LALIGA.csv | before=2 after=1
-[2026-11-20T06:27:30.147012] SCORE GAME_ID ROWS REMOVED | docs/win/soccer/05_final_scores/results/final_scores/EPL/2026_08_22_EPL.csv | before=9 after=5
-[2026-11-20T06:27:30.151528] SCORE GAME_ID ROWS REMOVED | docs/win/soccer/05_final_scores/results/final_scores/SERIEA/2026_08_22_SERIEA.csv | before=4 after=3
-[2026-11-20T06:27:30.165964] SCORE GAME_ID ROWS REMOVED | docs/win/soccer/05_final_scores/results/final_scores/LIGUE1/2026_08_23_LIGUE1.csv | before=4 after=2
-[2026-11-20T06:27:30.204137] SCORE GAME_ID ROWS REMOVED | docs/win/soccer/05_final_scores/results/final_scores/LIGUE1/2026_08_29_LIGUE1.csv | before=7 after=5
-[2026-11-20T06:27:30.208987] SCORE GAME_ID ROWS REMOVED | docs/win/soccer/05_final_scores/results/final_scores/MLS/2026_08_29_MLS.csv | before=17 after=13
-[2026-11-20T06:27:30.228946] SCORE GAME_ID ROWS REMOVED | docs/win/soccer/05_final_scores/results/final_scores/EPL/2026_08_30_EPL.csv | before=7 after=4
-[2026-11-20T06:27:30.248517] SCORE GAME_ID ROWS REMOVED | docs/win/soccer/05_final_scores/results/final_scores/BUNDESLIGA/2026_09_05_BUNDESLIGA.csv | before=17 after=6
-[2026-11-20T06:27:30.253413] SCORE GAME_ID ROWS REMOVED | docs/win/soccer/05_final_scores/results/final_scores/LALIGA/2026_09_05_LALIGA.csv | before=6 after=3
-[2026-11-20T06:27:30.308277] SCORE GAME_ID ROWS REMOVED | docs/win/soccer/05_final_scores/results/final_scores/EPL/2026_09_12_EPL.csv | before=16 after=7
-[2026-11-20T06:27:30.329086] SCORE GAME_ID ROWS REMOVED | docs/win/soccer/05_final_scores/results/final_scores/LIGUE1/2026_09_13_LIGUE1.csv | before=7 after=3
-[2026-11-20T06:27:30.349119] SCORE GAME_ID ROWS REMOVED | docs/win/soccer/05_final_scores/results/final_scores/LALIGA/2026_09_17_LALIGA.csv | before=4 after=2
-[2026-11-20T06:27:30.362430] SCORE GAME_ID ROWS REMOVED | docs/win/soccer/05_final_scores/results/final_scores/EPL/2026_09_19_EPL.csv | before=18 after=5
-[2026-11-20T06:27:30.367467] SCORE GAME_ID ROWS REMOVED | docs/win/soccer/05_final_scores/results/final_scores/MLS/2026_09_19_MLS.csv | before=16 after=13
-[2026-11-20T06:27:30.372153] SCORE GAME_ID ROWS REMOVED | docs/win/soccer/05_final_scores/results/final_scores/SERIEA/2026_09_19_SERIEA.csv | before=6 after=4
-[2026-11-20T06:27:30.386876] SCORE GAME_ID ROWS REMOVED | docs/win/soccer/05_final_scores/results/final_scores/LALIGA/2026_09_20_LALIGA.csv | before=7 after=5
-[2026-11-20T06:27:30.399950] SCORE GAME_ID ROWS REMOVED | docs/win/soccer/05_final_scores/results/final_scores/EPL/2026_10_10_EPL.csv | before=8 after=6
-[2026-11-20T06:27:30.404716] SCORE GAME_ID ROWS REMOVED | docs/win/soccer/05_final_scores/results/final_scores/LIGUE1/2026_10_10_LIGUE1.csv | before=7 after=5
-[2026-11-20T06:27:30.437118] SCORE GAME_ID ROWS REMOVED | docs/win/soccer/05_final_scores/results/final_scores/EPL/2026_10_17_EPL.csv | before=6 after=5
-[2026-11-20T06:27:30.462832] SCORE GAME_ID ROWS REMOVED | docs/win/soccer/05_final_scores/results/final_scores/EPL/2026_10_24_EPL.csv | before=5 after=4
-[2026-11-20T06:27:30.482279] SCORE GAME_ID ROWS REMOVED | docs/win/soccer/05_final_scores/results/final_scores/EPL/2026_10_25_EPL.csv | before=9 after=5
-[2026-11-20T06:27:30.487124] SCORE GAME_ID ROWS REMOVED | docs/win/soccer/05_final_scores/results/final_scores/LALIGA/2026_10_25_LALIGA.csv | before=5 after=4
-[2026-11-20T06:27:30.518957] SCORE GAME_ID ROWS REMOVED | docs/win/soccer/05_final_scores/results/final_scores/EPL/2026_10_31_EPL.csv | before=10 after=7
-[2026-11-20T06:27:30.584474] SCORE GAME_ID ROWS REMOVED | docs/win/soccer/05_final_scores/results/final_scores/LIGUE1/2026_09_04_LIGUE1.csv | before=5 after=2
+[2026-11-21T03:08:36.215916] SCORE GAME_ID ROWS REMOVED | docs/win/soccer/05_final_scores/results/final_scores/LALIGA/2026_05_23_LALIGA.csv | before=10 after=9
+[2026-11-21T03:08:36.223506] SCORE GAME_ID ROWS REMOVED | docs/win/soccer/05_final_scores/results/final_scores/EPL/2026_05_24_EPL.csv | before=11 after=10
+[2026-11-21T03:08:36.241474] SCORE GAME_ID ROWS REMOVED | docs/win/soccer/05_final_scores/results/final_scores/LALIGA/2026_08_20_LALIGA.csv | before=2 after=1
+[2026-11-21T03:08:36.256519] SCORE GAME_ID ROWS REMOVED | docs/win/soccer/05_final_scores/results/final_scores/EPL/2026_08_22_EPL.csv | before=9 after=5
+[2026-11-21T03:08:36.259247] SCORE GAME_ID ROWS REMOVED | docs/win/soccer/05_final_scores/results/final_scores/SERIEA/2026_08_22_SERIEA.csv | before=4 after=3
+[2026-11-21T03:08:36.267463] SCORE GAME_ID ROWS REMOVED | docs/win/soccer/05_final_scores/results/final_scores/LIGUE1/2026_08_23_LIGUE1.csv | before=4 after=2
+[2026-11-21T03:08:36.288490] SCORE GAME_ID ROWS REMOVED | docs/win/soccer/05_final_scores/results/final_scores/LIGUE1/2026_08_29_LIGUE1.csv | before=7 after=5
+[2026-11-21T03:08:36.291278] SCORE GAME_ID ROWS REMOVED | docs/win/soccer/05_final_scores/results/final_scores/MLS/2026_08_29_MLS.csv | before=17 after=13
+[2026-11-21T03:08:36.302579] SCORE GAME_ID ROWS REMOVED | docs/win/soccer/05_final_scores/results/final_scores/EPL/2026_08_30_EPL.csv | before=7 after=4
+[2026-11-21T03:08:36.313451] SCORE GAME_ID ROWS REMOVED | docs/win/soccer/05_final_scores/results/final_scores/BUNDESLIGA/2026_09_05_BUNDESLIGA.csv | before=17 after=6
+[2026-11-21T03:08:36.316203] SCORE GAME_ID ROWS REMOVED | docs/win/soccer/05_final_scores/results/final_scores/LALIGA/2026_09_05_LALIGA.csv | before=6 after=3
+[2026-11-21T03:08:36.346385] SCORE GAME_ID ROWS REMOVED | docs/win/soccer/05_final_scores/results/final_scores/EPL/2026_09_12_EPL.csv | before=16 after=7
+[2026-11-21T03:08:36.357183] SCORE GAME_ID ROWS REMOVED | docs/win/soccer/05_final_scores/results/final_scores/LIGUE1/2026_09_13_LIGUE1.csv | before=7 after=3
+[2026-11-21T03:08:36.367991] SCORE GAME_ID ROWS REMOVED | docs/win/soccer/05_final_scores/results/final_scores/LALIGA/2026_09_17_LALIGA.csv | before=4 after=2
+[2026-11-21T03:08:36.375588] SCORE GAME_ID ROWS REMOVED | docs/win/soccer/05_final_scores/results/final_scores/EPL/2026_09_19_EPL.csv | before=18 after=5
+[2026-11-21T03:08:36.378592] SCORE GAME_ID ROWS REMOVED | docs/win/soccer/05_final_scores/results/final_scores/MLS/2026_09_19_MLS.csv | before=16 after=13
+[2026-11-21T03:08:36.381351] SCORE GAME_ID ROWS REMOVED | docs/win/soccer/05_final_scores/results/final_scores/SERIEA/2026_09_19_SERIEA.csv | before=6 after=4
+[2026-11-21T03:08:36.389658] SCORE GAME_ID ROWS REMOVED | docs/win/soccer/05_final_scores/results/final_scores/LALIGA/2026_09_20_LALIGA.csv | before=7 after=5
+[2026-11-21T03:08:36.397159] SCORE GAME_ID ROWS REMOVED | docs/win/soccer/05_final_scores/results/final_scores/EPL/2026_10_10_EPL.csv | before=8 after=6
+[2026-11-21T03:08:36.400073] SCORE GAME_ID ROWS REMOVED | docs/win/soccer/05_final_scores/results/final_scores/LIGUE1/2026_10_10_LIGUE1.csv | before=7 after=5
+[2026-11-21T03:08:36.418516] SCORE GAME_ID ROWS REMOVED | docs/win/soccer/05_final_scores/results/final_scores/EPL/2026_10_17_EPL.csv | before=6 after=5
+[2026-11-21T03:08:36.433426] SCORE GAME_ID ROWS REMOVED | docs/win/soccer/05_final_scores/results/final_scores/EPL/2026_10_24_EPL.csv | before=5 after=4
+[2026-11-21T03:08:36.444201] SCORE GAME_ID ROWS REMOVED | docs/win/soccer/05_final_scores/results/final_scores/EPL/2026_10_25_EPL.csv | before=9 after=5
+[2026-11-21T03:08:36.446918] SCORE GAME_ID ROWS REMOVED | docs/win/soccer/05_final_scores/results/final_scores/LALIGA/2026_10_25_LALIGA.csv | before=5 after=4
+[2026-11-21T03:08:36.464933] SCORE GAME_ID ROWS REMOVED | docs/win/soccer/05_final_scores/results/final_scores/EPL/2026_10_31_EPL.csv | before=10 after=7
+[2026-11-21T03:08:36.487766] NO SCORE FILE | league=seriea date=2026_11_21
+[2026-11-21T03:08:36.487917] NO SCORES LOADED | source=SELECTED league=seriea date=2026_11_21
+[2026-11-21T03:08:36.511629] SCORE GAME_ID ROWS REMOVED | docs/win/soccer/05_final_scores/results/final_scores/LIGUE1/2026_09_04_LIGUE1.csv | before=5 after=2
