@@ -1,0 +1,3 @@
+sport,league,game_id,match_date,match_time,home_team,away_team,dk_home_decimal,dk_draw_decimal,dk_away_decimal,dk_over25_decimal,dk_under25_decimal,dk_over35_decimal,dk_under35_decimal,btts_yes,btts_no
+soccer,bundesliga,401884733,2026_11_22,09:30 AM,Augsburg,Mainz,2.65,3.75,2.30,,,2.00,1.77,,
+soccer,bundesliga,401884730,2026_11_22,11:30 AM,Werder Bremen,Hamburg,,,,,,,,,
