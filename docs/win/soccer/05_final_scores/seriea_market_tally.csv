@@ -1,5 +1,5 @@
 market,market_type,Win,Loss,Push,Total,Sample_Count,Win_Pct
-match_odds,away,7,1,0,8,8,0.875
+match_odds,away,8,1,0,9,9,0.8889
 match_odds,draw,1,0,0,1,1,1.0
 total25,over,1,0,0,1,1,1.0
 total25,under,4,2,0,6,6,0.6667

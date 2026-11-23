@@ -1,0 +1,6 @@
+sport,league,game_id,match_date,match_time,home_team,away_team,home_prob,draw_prob,away_prob,home_xg,away_xg,expected_total_goals,identity_status,identity_reason,identity_detail
+soccer,ligue1,,2026_12_05,11:15 AM,Lille,Auxerre,0.604,0.222,0.174,1.86,0.89,2.75,unmatched,no_sportsbook_fixture,no exact games-master fixture found for league/date/teams
+soccer,ligue1,,2026_12_05,02:45 PM,Lens,Le Havre,0.732,0.174,0.094,2.22,0.65,2.87,unmatched,no_sportsbook_fixture,no exact games-master fixture found for league/date/teams
+soccer,ligue1,,2026_12_05,02:45 PM,Paris FC,Le Mans,0.488,0.259,0.253,1.51,1.0,2.51,unmatched,no_sportsbook_fixture,no exact games-master fixture found for league/date/teams
+soccer,ligue1,,2026_12_05,02:45 PM,Monaco,Angers,0.792,0.133,0.075,2.74,0.75,3.49,unmatched,no_sportsbook_fixture,no exact games-master fixture found for league/date/teams
+soccer,ligue1,,2026_12_05,02:45 PM,Strasbourg,Lorient,0.628,0.208,0.163,2.01,0.91,2.92,unmatched,no_sportsbook_fixture,no exact games-master fixture found for league/date/teams

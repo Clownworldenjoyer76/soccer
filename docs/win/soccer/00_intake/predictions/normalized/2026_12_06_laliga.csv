@@ -1,0 +1,10 @@
+sport,league,game_id,match_date,match_time,home_team,away_team,home_prob,draw_prob,away_prob,home_xg,away_xg,expected_total_goals,identity_status,identity_reason,identity_detail
+soccer,laliga,,2026_12_06,11:00 AM,Getafe,Valencia,0.402,0.293,0.306,1.18,0.98,2.16,unmatched,no_sportsbook_fixture,no exact games-master fixture found for league/date/teams
+soccer,laliga,,2026_12_06,11:00 AM,Vallecano,Levante,0.672,0.194,0.133,2.11,0.81,2.92,unmatched,no_sportsbook_fixture,no exact games-master fixture found for league/date/teams
+soccer,laliga,,2026_12_06,11:00 AM,Sevilla,Malaga,0.662,0.215,0.123,1.85,0.65,2.5,unmatched,no_sportsbook_fixture,no exact games-master fixture found for league/date/teams
+soccer,laliga,,2026_12_06,11:00 AM,Villarreal,Real Sociedad,0.535,0.243,0.223,1.67,0.99,2.66,unmatched,no_sportsbook_fixture,no exact games-master fixture found for league/date/teams
+soccer,laliga,,2026_12_06,11:00 AM,Osasuna,Elche,0.492,0.268,0.24,1.44,0.92,2.36,unmatched,no_sportsbook_fixture,no exact games-master fixture found for league/date/teams
+soccer,laliga,,2026_12_06,11:00 AM,Barcelona,Celta Vigo,0.815,0.124,0.061,2.77,0.64,3.41,unmatched,no_sportsbook_fixture,no exact games-master fixture found for league/date/teams
+soccer,laliga,,2026_12_06,11:00 AM,Atletico Madrid,Real Betis,0.642,0.208,0.149,1.98,0.82,2.8,unmatched,no_sportsbook_fixture,no exact games-master fixture found for league/date/teams
+soccer,laliga,,2026_12_06,11:00 AM,Alaves,Espanyol,0.528,0.257,0.215,1.54,0.88,2.42,unmatched,no_sportsbook_fixture,no exact games-master fixture found for league/date/teams
+soccer,laliga,,2026_12_06,11:00 AM,Athletic Club,Real Madrid,0.341,0.29,0.369,1.08,1.13,2.21,unmatched,no_sportsbook_fixture,no exact games-master fixture found for league/date/teams

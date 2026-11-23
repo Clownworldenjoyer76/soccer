@@ -1,0 +1,3 @@
+sport,league,game_id,match_date,match_time,home_team,away_team,home_prob,draw_prob,away_prob,home_xg,away_xg,expected_total_goals,identity_status,identity_reason,identity_detail
+soccer,seriea,,2026_12_07,12:30 PM,Venezia,Sassuolo,0.248,0.238,0.513,1.12,1.72,2.84,unmatched,no_sportsbook_fixture,no exact games-master fixture found for league/date/teams
+soccer,seriea,,2026_12_07,02:45 PM,Fiorentina,Cagliari,0.667,0.195,0.138,2.11,0.84,2.95,unmatched,no_sportsbook_fixture,no exact games-master fixture found for league/date/teams

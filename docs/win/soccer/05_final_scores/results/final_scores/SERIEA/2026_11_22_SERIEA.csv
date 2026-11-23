@@ -1,0 +1,6 @@
+sport,league,game_id,game_date,match_time,home_team,away_team,home_score,away_score
+soccer,seriea,401875001,2026_11_22,02:45 PM,Atalanta,Inter Milan,4,4
+soccer,seriea,401874989,2026_11_22,12:00 PM,Milan,Frosinone,5,1
+soccer,seriea,401874960,2026_11_22,09:00 AM,Sassuolo,Genoa,0,2
+soccer,seriea,401875047,2026_11_22,09:00 AM,Bologna,Udinese,1,1
+soccer,seriea,401875008,2026_11_22,06:30 AM,Juventus,Venezia,4,0

@@ -1,0 +1,2 @@
+sport,league,game_id,match_date,match_time,home_team,away_team,home_prob,draw_prob,away_prob,home_xg,away_xg,expected_total_goals,identity_status,identity_reason,identity_detail
+soccer,mls,401933728,2026_11_23,10:00 PM,St Louis City,Los Angeles FC,0.384,0.261,0.355,1.36,1.29,2.65,matched,matched_game_id,
