@@ -1,0 +1,9 @@
+sport,league,match_date,match_time,home_team,away_team,home_prob,draw_prob,away_prob,home_xg,away_xg,expected_total_goals
+soccer,epl,2026_12_02,02:30 PM,Manchester City,Leeds United,79.6%,13.1%,7.3%,2.76,0.73,3.49
+soccer,epl,2026_12_02,02:30 PM,Chelsea,Crystal Palace,58.9%,23.3%,17.8%,1.76,0.84,2.60
+soccer,epl,2026_12_02,02:30 PM,Liverpool,Sunderland,81.7%,12.3%,6.0%,2.78,0.64,3.42
+soccer,epl,2026_12_02,02:30 PM,Hull City,Nottingham Forest,13.6%,20.4%,66.0%,0.77,2.00,2.77
+soccer,epl,2026_12_02,03:15 PM,Brentford,Arsenal,21.6%,24.1%,54.3%,0.97,1.70,2.67
+soccer,epl,2026_12_02,03:15 PM,Bournemouth,Brighton and Hove Albion,40.1%,28.2%,31.7%,1.24,1.07,2.31
+soccer,epl,2026_12_02,03:15 PM,Aston Villa,Everton,54.1%,23.8%,22.1%,1.72,1.01,2.73
+soccer,epl,2026_12_02,03:15 PM,Newcastle United,Manchester United,44.9%,26.4%,28.8%,1.43,1.09,2.52
