@@ -1,0 +1,10 @@
+sport,league,match_date,match_time,home_team,away_team,home_prob,draw_prob,away_prob,home_xg,away_xg,expected_total_goals
+soccer,laliga,2026_12_06,11:00 AM,Getafe,Valencia,40.2%,29.3%,30.6%,1.18,0.98,2.16
+soccer,laliga,2026_12_06,11:00 AM,Rayo Vallecano,Levante,67.2%,19.4%,13.3%,2.11,0.81,2.92
+soccer,laliga,2026_12_06,11:00 AM,Sevilla,Malaga,66.2%,21.5%,12.3%,1.85,0.65,2.50
+soccer,laliga,2026_12_06,11:00 AM,Villarreal,Real Sociedad,53.5%,24.3%,22.3%,1.67,0.99,2.66
+soccer,laliga,2026_12_06,11:00 AM,Osasuna,Elche,49.2%,26.8%,24.0%,1.44,0.92,2.36
+soccer,laliga,2026_12_06,11:00 AM,Barcelona,Celta Vigo,81.5%,12.4%,6.1%,2.77,0.64,3.41
+soccer,laliga,2026_12_06,11:00 AM,Atletico Madrid,Betis,64.2%,20.8%,14.9%,1.98,0.82,2.80
+soccer,laliga,2026_12_06,11:00 AM,Alaves,Espanyol,52.8%,25.7%,21.5%,1.54,0.88,2.42
+soccer,laliga,2026_12_06,11:00 AM,Athletic Club,Real Madrid,34.1%,29.0%,36.9%,1.08,1.13,2.21
