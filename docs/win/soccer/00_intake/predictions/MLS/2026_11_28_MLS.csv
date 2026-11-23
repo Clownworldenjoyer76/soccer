@@ -1,0 +1,7 @@
+sport,league,match_date,match_time,home_team,away_team,home_prob,draw_prob,away_prob,home_xg,away_xg,expected_total_goals
+soccer,mls,2026_11_28,12:00 PM,Charlotte FC,Chicago Fire,33.2%,27.2%,39.6%,1.16,1.30,2.46
+soccer,mls,2026_11_28,02:30 PM,Houston Dynamo,San Jose Earthquakes,51.6%,25.2%,23.2%,1.58,0.97,2.55
+soccer,mls,2026_11_28,04:30 PM,Philadelphia Union,New England Revolution,59.8%,22.8%,17.4%,1.80,0.85,2.65
+soccer,mls,2026_11_28,06:30 PM,FC Cincinnati,Nashville SC,31.6%,28.9%,39.5%,1.03,1.19,2.22
+soccer,mls,2026_11_28,08:30 PM,Los Angeles FC,St Louis City,49.2%,25.3%,25.5%,1.57,1.05,2.62
+soccer,mls,2026_11_28,10:30 PM,Portland Timbers,FC Dallas,42.7%,27.1%,30.1%,1.35,1.08,2.43
