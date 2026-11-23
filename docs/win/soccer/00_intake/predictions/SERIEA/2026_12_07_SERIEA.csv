@@ -1,0 +1,3 @@
+sport,league,match_date,match_time,home_team,away_team,home_prob,draw_prob,away_prob,home_xg,away_xg,expected_total_goals
+soccer,seriea,2026_12_07,12:30 PM,Venezia,Sassuolo,24.8%,23.8%,51.3%,1.12,1.72,2.84
+soccer,seriea,2026_12_07,02:45 PM,Fiorentina,Cagliari,66.7%,19.5%,13.8%,2.11,0.84,2.95
