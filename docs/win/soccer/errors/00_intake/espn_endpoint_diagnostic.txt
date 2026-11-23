@@ -1,43 +1,43 @@
 === ESPN endpoint diagnostic ===
-utc_time=2026-11-22T08:05:24Z
-runner=GitHub Actions 1000111530
-date=20261122
+utc_time=2026-11-23T08:05:39Z
+runner=GitHub Actions 1000111726
+date=20261123
 league=usa.1
 
 [production_limit_1000]
-url=https://site.api.espn.com/apis/site/v2/sports/soccer/usa.1/scoreboard?dates=20261122&limit=1000
+url=https://site.api.espn.com/apis/site/v2/sports/soccer/usa.1/scoreboard?dates=20261123&limit=1000
 curl_exit=0
-http|content_type|bytes|effective_url=403|text/html|449|https://site.api.espn.com/apis/site/v2/sports/soccer/usa.1/scoreboard?dates=20261122&limit=1000
+http|content_type|bytes|effective_url=403|text/html|451|https://site.api.espn.com/apis/site/v2/sports/soccer/usa.1/scoreboard?dates=20261123&limit=1000
 json=no
 
 [site_api_limit_100]
-url=https://site.api.espn.com/apis/site/v2/sports/soccer/usa.1/scoreboard?dates=20261122&limit=100
+url=https://site.api.espn.com/apis/site/v2/sports/soccer/usa.1/scoreboard?dates=20261123&limit=100
 curl_exit=0
-http|content_type|bytes|effective_url=403|text/html|449|https://site.api.espn.com/apis/site/v2/sports/soccer/usa.1/scoreboard?dates=20261122&limit=100
+http|content_type|bytes|effective_url=403|text/html|451|https://site.api.espn.com/apis/site/v2/sports/soccer/usa.1/scoreboard?dates=20261123&limit=100
 json=no
 
 [site_api_no_limit]
-url=https://site.api.espn.com/apis/site/v2/sports/soccer/usa.1/scoreboard?dates=20261122
+url=https://site.api.espn.com/apis/site/v2/sports/soccer/usa.1/scoreboard?dates=20261123
 curl_exit=0
-http|content_type|bytes|effective_url=403|text/html|449|https://site.api.espn.com/apis/site/v2/sports/soccer/usa.1/scoreboard?dates=20261122
+http|content_type|bytes|effective_url=403|text/html|451|https://site.api.espn.com/apis/site/v2/sports/soccer/usa.1/scoreboard?dates=20261123
 json=no
 
 [site_web_api]
-url=https://site.web.api.espn.com/apis/v2/sports/soccer/usa.1/scoreboard?region=us&lang=en&contentorigin=espn&isqualified=true&limit=1000&dates=20261122
+url=https://site.web.api.espn.com/apis/v2/sports/soccer/usa.1/scoreboard?region=us&lang=en&contentorigin=espn&isqualified=true&limit=1000&dates=20261123
 curl_exit=0
-http|content_type|bytes|effective_url=404||12|https://site.web.api.espn.com/apis/v2/sports/soccer/usa.1/scoreboard?region=us&lang=en&contentorigin=espn&isqualified=true&limit=1000&dates=20261122
+http|content_type|bytes|effective_url=404||12|https://site.web.api.espn.com/apis/v2/sports/soccer/usa.1/scoreboard?region=us&lang=en&contentorigin=espn&isqualified=true&limit=1000&dates=20261123
 json=yes type=dict | keys=code
 
 [cdn_scoreboard]
-url=https://cdn.espn.com/core/soccer/scoreboard?xhr=1&league=usa.1&dates=20261122
+url=https://cdn.espn.com/core/soccer/scoreboard?xhr=1&league=usa.1&dates=20261123
 curl_exit=0
-http|content_type|bytes|effective_url=200|application/json;charset=utf-8|255729|https://cdn.espn.com/core/soccer/scoreboard?xhr=1&league=usa.1&dates=20261122
+http|content_type|bytes|effective_url=200|application/json;charset=utf-8|242802|https://cdn.espn.com/core/soccer/scoreboard?xhr=1&league=usa.1&dates=20261123
 json=yes type=dict | keys=news,pinnedCount,nowFeedMD5Hash,type,content,analytics,nowFeed,ads,targeting,nowFeedCount,meta,nowFeedSupported,sport,tier2Nav
 
 [public_scoreboard_page]
-url=https://www.espn.com/soccer/scoreboard/_/league/usa.1/date/20261122
+url=https://www.espn.com/soccer/scoreboard/_/league/usa.1/date/20261123
 curl_exit=0
-http|content_type|bytes|effective_url=202|text/html; charset=UTF-8|0|https://www.espn.com/soccer/scoreboard/_/league/usa.1/date/20261122
+http|content_type|bytes|effective_url=200|text/html; charset=utf-8|536110|https://www.espn.com/soccer/scoreboard/_/league/usa.1/date/20261123
 json=no
 
 [cdn_structure]
@@ -45,39 +45,39 @@ top_level_keys=news,pinnedCount,nowFeedMD5Hash,type,content,analytics,nowFeed,ad
 event_list_paths_found=1
 event_list_path=$.content.sbData.events count=3
 event_candidates_found=3
-event_1=id:401933733 competition:401933733 date:2026-11-21T19:00Z home:New England Revolution away:Philadelphia Union path:$.content.sbData.events[0]
-event_2=id:401933732 competition:401933732 date:2026-11-21T21:00Z home:FC Dallas away:Portland Timbers path:$.content.sbData.events[1]
-event_3=id:401933739 competition:401933739 date:2026-11-21T23:00Z home:Inter Miami CF away:Columbus Crew path:$.content.sbData.events[2]
-selected_event_id=401933733
-selected_competition_id=401933733
+event_1=id:401933731 competition:401933731 date:2026-11-22T21:00Z home:Nashville SC away:FC Cincinnati path:$.content.sbData.events[0]
+event_2=id:401933730 competition:401933730 date:2026-11-22T23:30Z home:Chicago Fire FC away:Charlotte FC path:$.content.sbData.events[1]
+event_3=id:401933729 competition:401933729 date:2026-11-23T01:30Z home:Vancouver Whitecaps away:Real Salt Lake path:$.content.sbData.events[2]
+selected_event_id=401933731
+selected_competition_id=401933731
 
 [core_event]
-url=https://sports.core.api.espn.com/v2/sports/soccer/leagues/usa.1/events/401933733
+url=https://sports.core.api.espn.com/v2/sports/soccer/leagues/usa.1/events/401933731
 curl_exit=0
-http|content_type|bytes|effective_url=200|application/json;charset=utf-8|12475|https://sports.core.api.espn.com/v2/sports/soccer/leagues/usa.1/events/401933733
+http|content_type|bytes|effective_url=200|application/json;charset=utf-8|12504|https://sports.core.api.espn.com/v2/sports/soccer/leagues/usa.1/events/401933731
 json=yes type=dict | keys=$ref,id,uid,date,name,shortName,season,seasonType,timeValid,competitions,links,venues,league
 
 [site_summary]
-url=https://site.api.espn.com/apis/site/v2/sports/soccer/usa.1/summary?event=401933733
+url=https://site.api.espn.com/apis/site/v2/sports/soccer/usa.1/summary?event=401933731
 curl_exit=0
-http|content_type|bytes|effective_url=403|text/html|448|https://site.api.espn.com/apis/site/v2/sports/soccer/usa.1/summary?event=401933733
+http|content_type|bytes|effective_url=403|text/html|446|https://site.api.espn.com/apis/site/v2/sports/soccer/usa.1/summary?event=401933731
 json=no
 
 [cdn_game]
-url=https://cdn.espn.com/core/soccer/game?xhr=1&gameId=401933733
+url=https://cdn.espn.com/core/soccer/game?xhr=1&gameId=401933731
 curl_exit=0
-http|content_type|bytes|effective_url=200|text/html;charset=UTF-8|331543|http://cdn.espn.com/core/soccer/match?gameId=401933733
+http|content_type|bytes|effective_url=200|text/html;charset=UTF-8|334530|http://cdn.espn.com/core/soccer/match?gameId=401933731
 json=no
 
 [core_odds]
-url=https://sports.core.api.espn.com/v2/sports/soccer/leagues/usa.1/events/401933733/competitions/401933733/odds?limit=100
+url=https://sports.core.api.espn.com/v2/sports/soccer/leagues/usa.1/events/401933731/competitions/401933731/odds?limit=100
 curl_exit=0
-http|content_type|bytes|effective_url=200|application/json;charset=utf-8|49017|https://sports.core.api.espn.com/v2/sports/soccer/leagues/usa.1/events/401933733/competitions/401933733/odds?limit=100
+http|content_type|bytes|effective_url=200|application/json;charset=utf-8|41249|https://sports.core.api.espn.com/v2/sports/soccer/leagues/usa.1/events/401933731/competitions/401933731/odds?limit=100
 json=yes type=dict | keys=count,pageIndex,pageSize,pageCount,items | items=2
 
 [core_propbets]
-url=https://sports.core.api.espn.com/v2/sports/soccer/leagues/usa.1/events/401933733/competitions/401933733/propbets?limit=2000
+url=https://sports.core.api.espn.com/v2/sports/soccer/leagues/usa.1/events/401933731/competitions/401933731/propbets?limit=2000
 curl_exit=0
-http|content_type|bytes|effective_url=404||52|https://sports.core.api.espn.com/v2/sports/soccer/leagues/usa.1/events/401933733/competitions/401933733/propbets?limit=2000
+http|content_type|bytes|effective_url=404||52|https://sports.core.api.espn.com/v2/sports/soccer/leagues/usa.1/events/401933731/competitions/401933731/propbets?limit=2000
 json=yes type=dict | keys=error
 
