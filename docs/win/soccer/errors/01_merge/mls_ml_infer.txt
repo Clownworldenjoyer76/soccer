@@ -1,4 +1,4 @@
-MLS ML inference: processing 55 MLS merge date(s) through 2026_11_26.
+MLS ML inference: processing 56 MLS merge date(s) through 2026_11_27.
 MLS ML inference complete for 2026_04_11: 7 match prediction(s), 4 merge file(s) enriched.
   enriched 2026_04_11_mls_match_odds.csv: 7 row(s)
   enriched 2026_04_11_mls_total_25.csv: 7 row(s)
@@ -274,4 +274,9 @@ MLS ML inference complete for 2026_11_23: 1 match prediction(s), 4 merge file(s)
   enriched 2026_11_23_mls_total_25.csv: 1 row(s)
   enriched 2026_11_23_mls_total_35.csv: 1 row(s)
   enriched 2026_11_23_mls_btts.csv: 1 row(s)
-MLS ML historical inference complete: 55 date(s), 220 merge file(s), 1580 total merged row(s) enriched.
+MLS ML inference complete for 2026_11_27: 2 match prediction(s), 4 merge file(s) enriched.
+  enriched 2026_11_27_mls_match_odds.csv: 2 row(s)
+  enriched 2026_11_27_mls_total_25.csv: 2 row(s)
+  enriched 2026_11_27_mls_total_35.csv: 2 row(s)
+  enriched 2026_11_27_mls_btts.csv: 2 row(s)
+MLS ML historical inference complete: 56 date(s), 224 merge file(s), 1588 total merged row(s) enriched.

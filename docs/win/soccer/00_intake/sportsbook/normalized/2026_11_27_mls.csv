@@ -1,0 +1,3 @@
+sport,league,game_id,match_date,match_time,home_team,away_team,dk_home_decimal,dk_draw_decimal,dk_away_decimal,dk_over25_decimal,dk_under25_decimal,dk_over35_decimal,dk_under35_decimal,btts_yes,btts_no
+soccer,mls,401933727,2026_11_27,08:00 PM,Columbus Crew,Inter Miami,2.35,3.80,2.55,,,2.00,1.77,,
+soccer,mls,401933725,2026_11_27,10:00 PM,Real Salt Lake,Vancouver Whitecaps,2.65,3.60,2.35,,,2.25,1.62,,
