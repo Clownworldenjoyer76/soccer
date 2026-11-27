@@ -1,6 +1,8 @@
-=== Soccer PIPELINE HEALTH 2026-11-26T08:08:41.132898+00:00 ===
-status=healthy
+=== Soccer PIPELINE HEALTH 2026-11-27T08:08:39.076876+00:00 ===
+status=warning
 workflow_status=success
-report_date=2026_11_26
+report_date=2026_11_27
 fatal_errors=0
-warnings=0
+warnings=2
+WARNING: Soccer: 1 game(s) missing normalized predictions
+WARNING: Soccer: 1 sportsbook game(s) did not reach merge outputs
