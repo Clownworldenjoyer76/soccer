@@ -1,6 +1,6 @@
 === ESPN endpoint diagnostic ===
-utc_time=2026-11-28T13:00:17Z
-runner=GitHub Actions 1000112685
+utc_time=2026-11-28T13:19:55Z
+runner=DESKTOP-PSA331V
 date=20261128
 league=usa.1
 
@@ -31,13 +31,13 @@ json=yes type=dict | keys=code
 [cdn_scoreboard]
 url=https://cdn.espn.com/core/soccer/scoreboard?xhr=1&league=usa.1&dates=20261128
 curl_exit=0
-http|content_type|bytes|effective_url=200|application/json;charset=utf-8|274475|https://cdn.espn.com/core/soccer/scoreboard?xhr=1&league=usa.1&dates=20261128
+http|content_type|bytes|effective_url=200|application/json;charset=utf-8|276619|https://cdn.espn.com/core/soccer/scoreboard?xhr=1&league=usa.1&dates=20261128
 json=yes type=dict | keys=news,pinnedCount,nowFeedMD5Hash,type,content,analytics,nowFeed,ads,targeting,nowFeedCount,meta,nowFeedSupported,sport,tier2Nav
 
 [public_scoreboard_page]
 url=https://www.espn.com/soccer/scoreboard/_/league/usa.1/date/20261128
 curl_exit=0
-http|content_type|bytes|effective_url=202|text/html; charset=UTF-8|0|https://www.espn.com/soccer/scoreboard/_/league/usa.1/date/20261128
+http|content_type|bytes|effective_url=200|text/html; charset=utf-8|613766|https://www.espn.com/soccer/scoreboard/_/league/usa.1/date/20261128
 json=no
 
 [cdn_structure]
@@ -63,13 +63,13 @@ json=yes type=dict | keys=$ref,id,uid,date,name,shortName,season,seasonType,time
 [site_summary]
 url=https://site.api.espn.com/apis/site/v2/sports/soccer/usa.1/summary?event=401933737
 curl_exit=0
-http|content_type|bytes|effective_url=403|text/html|446|https://site.api.espn.com/apis/site/v2/sports/soccer/usa.1/summary?event=401933737
+http|content_type|bytes|effective_url=403|text/html|448|https://site.api.espn.com/apis/site/v2/sports/soccer/usa.1/summary?event=401933737
 json=no
 
 [cdn_game]
 url=https://cdn.espn.com/core/soccer/game?xhr=1&gameId=401933737
 curl_exit=0
-http|content_type|bytes|effective_url=200|text/html;charset=UTF-8|336273|http://cdn.espn.com/core/soccer/match?gameId=401933737
+http|content_type|bytes|effective_url=200|text/html;charset=UTF-8|338203|http://cdn.espn.com/core/soccer/match?gameId=401933737
 json=no
 
 [core_odds]
