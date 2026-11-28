@@ -1,4 +1,4 @@
 sport,league,match_date,match_time,home_team,away_team,home_prob,draw_prob,away_prob,home_xg,away_xg,expected_total_goals
-soccer,bundesliga,2026_11_28,09:30 AM,Mainz 05,Union Berlin,62.3%,21.4%,16.3%,1.93,0.88,2.81
-soccer,bundesliga,2026_11_28,09:30 AM,Hamburger SV,Bayern Munich,9.9%,14.1%,76.0%,0.95,2.81,3.76
+soccer,bundesliga,2026_11_28,09:30 AM,Mainz,Union Berlin,62.3%,21.4%,16.3%,1.93,0.88,2.81
+soccer,bundesliga,2026_11_28,09:30 AM,Hamburg,Bayern Munich,9.9%,14.1%,76.0%,0.95,2.81,3.76
 soccer,bundesliga,2026_11_28,12:30 PM,VfB Stuttgart,Eintracht Frankfurt,53.6%,23.2%,23.2%,1.79,1.10,2.89
