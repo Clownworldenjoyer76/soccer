@@ -1,1 +1,7 @@
 sport,league,game_id,match_date,match_time,home_team,away_team,dk_home_decimal,dk_draw_decimal,dk_away_decimal,dk_over25_decimal,dk_under25_decimal,dk_over35_decimal,dk_under35_decimal,btts_yes,btts_no
+soccer,mls,401933724,2026_11_28,02:30 PM,Houston Dynamo,San Jose Earthquakes,2.10,3.40,3.20,1.80,2.00,,,1.62,2.25
+soccer,mls,401933723,2026_11_28,04:30 PM,Philadelphia Union,New England Revolution,1.54,4.40,5.00,,,2.25,1.65,,
+soccer,mls,401933722,2026_11_28,06:30 PM,FC Cincinnati,Nashville SC,3.25,3.65,2.00,,,2.25,1.62,,
+soccer,mls,401933726,2026_11_28,08:30 PM,Los Angeles FC,St Louis City,1.57,4.20,4.80,1.57,2.35,,,1.62,2.30
+soccer,mls,401933721,2026_11_28,10:30 PM,Portland Timbers,FC Dallas,2.10,3.75,2.90,,,2.20,1.65,,
+soccer,mls,401933737,2026_11_28,12:30 PM,Charlotte FC,Chicago Fire,2.60,3.70,2.35,,,1.95,1.83,,

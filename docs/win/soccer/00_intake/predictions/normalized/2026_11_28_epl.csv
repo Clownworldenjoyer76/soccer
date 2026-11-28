@@ -1,4 +1,4 @@
 sport,league,game_id,match_date,match_time,home_team,away_team,home_prob,draw_prob,away_prob,home_xg,away_xg,expected_total_goals,identity_status,identity_reason,identity_detail
-soccer,epl,,2026_11_28,10:00 AM,Manchester United,Brentford,0.483,0.245,0.272,1.63,1.16,2.79,unmatched,no_sportsbook_fixture,no exact games-master fixture found for league/date/teams
-soccer,epl,,2026_11_28,10:00 AM,Leeds,Coventry,0.63,0.207,0.163,2.02,0.93,2.95,unmatched,no_sportsbook_fixture,no exact games-master fixture found for league/date/teams
-soccer,epl,,2026_11_28,12:30 PM,Ipswich,Aston Villa,0.272,0.254,0.474,1.1,1.54,2.64,unmatched,no_sportsbook_fixture,no exact games-master fixture found for league/date/teams
+soccer,epl,401879226,2026_11_28,10:00 AM,Manchester United,Brentford,0.483,0.245,0.272,1.63,1.16,2.79,matched,matched_game_id,
+soccer,epl,401879227,2026_11_28,10:00 AM,Leeds,Coventry,0.63,0.207,0.163,2.02,0.93,2.95,matched,matched_game_id,
+soccer,epl,401878752,2026_11_28,12:30 PM,Ipswich,Aston Villa,0.272,0.254,0.474,1.1,1.54,2.64,matched,matched_game_id,

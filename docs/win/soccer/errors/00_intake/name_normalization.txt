@@ -1,5 +1,11 @@
-=== name_normalization RUN 2026-11-28T08:05:48.010657+00:00 ===
-2026-11-28T08:05:48.011415+00:00 | Team map loaded: 323 entries
-2026-11-28T08:05:48.020650+00:00 | Files to process: 1966
-2026-11-28T08:05:48.064668+00:00 | SUMMARY | files_processed=1966 | rows_processed=6971 | names_normalized=0 | unmapped=0
-2026-11-28T08:05:48.064729+00:00 | STATUS: SUCCESS
+=== name_normalization RUN 2026-11-28T13:00:34.817960+00:00 ===
+2026-11-28T13:00:34.819161+00:00 | Team map loaded: 323 entries
+2026-11-28T13:00:34.834062+00:00 | Files to process: 1966
+2026-11-28T13:00:34.841703+00:00 | UPDATED: docs/win/soccer/00_intake/sportsbook/bundesliga/2026_11_28_bundesliga_soccer.csv
+2026-11-28T13:00:34.850911+00:00 | UPDATED: docs/win/soccer/00_intake/sportsbook/epl/2026_11_28_epl_soccer.csv
+2026-11-28T13:00:34.859778+00:00 | UPDATED: docs/win/soccer/00_intake/sportsbook/la_liga/2026_11_28_la_liga_soccer.csv
+2026-11-28T13:00:34.867254+00:00 | UPDATED: docs/win/soccer/00_intake/sportsbook/ligue_1/2026_11_28_ligue_1_soccer.csv
+2026-11-28T13:00:34.878842+00:00 | UPDATED: docs/win/soccer/00_intake/sportsbook/mls/2026_11_28_mls_soccer.csv
+2026-11-28T13:00:34.893313+00:00 | UPDATED: docs/win/soccer/00_intake/sportsbook/serie_a/2026_11_28_serie_a_soccer.csv
+2026-11-28T13:00:34.928101+00:00 | SUMMARY | files_processed=1966 | rows_processed=6997 | names_normalized=20 | unmapped=0
+2026-11-28T13:00:34.928130+00:00 | STATUS: SUCCESS

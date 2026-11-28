@@ -1,1 +1,4 @@
 sport,league,game_id,match_date,match_time,home_team,away_team,dk_home_decimal,dk_draw_decimal,dk_away_decimal,dk_over25_decimal,dk_under25_decimal,dk_over35_decimal,dk_under35_decimal,btts_yes,btts_no
+soccer,epl,401879227,2026_11_28,10:00 AM,Leeds,Coventry,1.49,4.50,6.50,1.74,2.10,,,,
+soccer,epl,401879226,2026_11_28,10:00 AM,Manchester United,Brentford,2.30,3.70,2.90,,,2.35,1.59,,
+soccer,epl,401878752,2026_11_28,12:30 PM,Ipswich,Aston Villa,3.40,3.75,2.05,1.61,2.30,,,,
