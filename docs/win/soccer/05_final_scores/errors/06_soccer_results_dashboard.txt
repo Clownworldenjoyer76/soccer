@@ -1,324 +1,324 @@
 === 06_soccer_results_dashboard ===
-START_TIMESTAMP_UTC: 2026-11-28T13:51:28.503741+00:00
-2026-11-28T13:51:28.510324+00:00 | INFO | INPUT | file=docs\win\soccer\05_final_scores\model_evaluation\SOCCER_model_metrics.csv | exists=1 | rows=14
-2026-11-28T13:51:28.521073+00:00 | INFO | INPUT | file=docs\win\soccer\05_final_scores\model_evaluation\SOCCER_model_calibration.csv | exists=1 | rows=420
-2026-11-28T13:51:28.521073+00:00 | INFO | INPUT | file=docs\win\soccer\05_final_scores\model_evaluation\SOCCER_xg_metrics.csv | exists=1 | rows=7
-2026-11-28T13:51:28.521073+00:00 | INFO | INPUT | file=docs\win\soccer\05_final_scores\mls_market_tally.csv | exists=1 | rows=6
-2026-11-28T13:51:28.538182+00:00 | INFO | INPUT | file=docs\win\soccer\05_final_scores\reports\mls\match_odds\mls_match_odds_by_ev.csv | exists=0 | rows=0
-2026-11-28T13:51:28.538182+00:00 | INFO | Optional dashboard input missing: docs\win\soccer\05_final_scores\reports\mls\match_odds\mls_match_odds_by_ev.csv
-2026-11-28T13:51:28.538182+00:00 | INFO | INPUT | file=docs\win\soccer\05_final_scores\reports\mls\match_odds\mls_match_odds_by_ev_home_draw_away_summary.csv | exists=0 | rows=0
-2026-11-28T13:51:28.538182+00:00 | INFO | Optional dashboard input missing: docs\win\soccer\05_final_scores\reports\mls\match_odds\mls_match_odds_by_ev_home_draw_away_summary.csv
-2026-11-28T13:51:28.539184+00:00 | INFO | INPUT | file=docs\win\soccer\05_final_scores\reports\mls\match_odds\mls_match_odds_by_kelly.csv | exists=0 | rows=0
-2026-11-28T13:51:28.539184+00:00 | INFO | Optional dashboard input missing: docs\win\soccer\05_final_scores\reports\mls\match_odds\mls_match_odds_by_kelly.csv
-2026-11-28T13:51:28.539184+00:00 | INFO | INPUT | file=docs\win\soccer\05_final_scores\reports\mls\match_odds\mls_match_odds_by_kelly_home_draw_away_summary.csv | exists=0 | rows=0
-2026-11-28T13:51:28.539184+00:00 | INFO | Optional dashboard input missing: docs\win\soccer\05_final_scores\reports\mls\match_odds\mls_match_odds_by_kelly_home_draw_away_summary.csv
-2026-11-28T13:51:28.539184+00:00 | INFO | INPUT | file=docs\win\soccer\05_final_scores\reports\mls\match_odds\mls_match_odds_by_month.csv | exists=0 | rows=0
-2026-11-28T13:51:28.540186+00:00 | INFO | Optional dashboard input missing: docs\win\soccer\05_final_scores\reports\mls\match_odds\mls_match_odds_by_month.csv
-2026-11-28T13:51:28.540186+00:00 | INFO | INPUT | file=docs\win\soccer\05_final_scores\reports\mls\match_odds\mls_match_odds_by_month_home_draw_away_summary.csv | exists=0 | rows=0
-2026-11-28T13:51:28.540186+00:00 | INFO | Optional dashboard input missing: docs\win\soccer\05_final_scores\reports\mls\match_odds\mls_match_odds_by_month_home_draw_away_summary.csv
-2026-11-28T13:51:28.540186+00:00 | INFO | INPUT | file=docs\win\soccer\05_final_scores\reports\mls\match_odds\mls_match_odds_by_odds.csv | exists=0 | rows=0
-2026-11-28T13:51:28.540186+00:00 | INFO | Optional dashboard input missing: docs\win\soccer\05_final_scores\reports\mls\match_odds\mls_match_odds_by_odds.csv
-2026-11-28T13:51:28.540186+00:00 | INFO | INPUT | file=docs\win\soccer\05_final_scores\reports\mls\match_odds\mls_match_odds_by_odds_home_draw_away_summary.csv | exists=0 | rows=0
-2026-11-28T13:51:28.541184+00:00 | INFO | Optional dashboard input missing: docs\win\soccer\05_final_scores\reports\mls\match_odds\mls_match_odds_by_odds_home_draw_away_summary.csv
-2026-11-28T13:51:28.541184+00:00 | INFO | INPUT | file=docs\win\soccer\05_final_scores\reports\mls\match_odds\mls_match_odds_by_model_prob.csv | exists=0 | rows=0
-2026-11-28T13:51:28.541184+00:00 | INFO | Optional dashboard input missing: docs\win\soccer\05_final_scores\reports\mls\match_odds\mls_match_odds_by_model_prob.csv
-2026-11-28T13:51:28.541184+00:00 | INFO | INPUT | file=docs\win\soccer\05_final_scores\reports\mls\match_odds\mls_match_odds_by_model_prob_home_draw_away_summary.csv | exists=0 | rows=0
-2026-11-28T13:51:28.541184+00:00 | INFO | Optional dashboard input missing: docs\win\soccer\05_final_scores\reports\mls\match_odds\mls_match_odds_by_model_prob_home_draw_away_summary.csv
-2026-11-28T13:51:28.542184+00:00 | INFO | INPUT | file=docs\win\soccer\05_final_scores\reports\mls\match_odds\mls_match_odds_by_win_prob.csv | exists=0 | rows=0
-2026-11-28T13:51:28.542184+00:00 | INFO | Optional dashboard input missing: docs\win\soccer\05_final_scores\reports\mls\match_odds\mls_match_odds_by_win_prob.csv
-2026-11-28T13:51:28.542184+00:00 | INFO | INPUT | file=docs\win\soccer\05_final_scores\reports\mls\match_odds\mls_match_odds_by_win_prob_home_draw_away_summary.csv | exists=0 | rows=0
-2026-11-28T13:51:28.542184+00:00 | INFO | Optional dashboard input missing: docs\win\soccer\05_final_scores\reports\mls\match_odds\mls_match_odds_by_win_prob_home_draw_away_summary.csv
-2026-11-28T13:51:28.543253+00:00 | INFO | INPUT | file=docs\win\soccer\05_final_scores\reports\mls\btts\mls_btts_by_ev.csv | exists=1 | rows=5
-2026-11-28T13:51:28.553128+00:00 | INFO | INPUT | file=docs\win\soccer\05_final_scores\reports\mls\btts\mls_btts_by_ev_yes_no_summary.csv | exists=1 | rows=6
-2026-11-28T13:51:28.561453+00:00 | INFO | INPUT | file=docs\win\soccer\05_final_scores\reports\mls\btts\mls_btts_by_kelly.csv | exists=1 | rows=6
-2026-11-28T13:51:28.562453+00:00 | INFO | INPUT | file=docs\win\soccer\05_final_scores\reports\mls\btts\mls_btts_by_kelly_yes_no_summary.csv | exists=1 | rows=8
-2026-11-28T13:51:28.570833+00:00 | INFO | INPUT | file=docs\win\soccer\05_final_scores\reports\mls\btts\mls_btts_by_month.csv | exists=1 | rows=3
-2026-11-28T13:51:28.571832+00:00 | INFO | INPUT | file=docs\win\soccer\05_final_scores\reports\mls\btts\mls_btts_by_month_yes_no_summary.csv | exists=1 | rows=5
-2026-11-28T13:51:28.579838+00:00 | INFO | INPUT | file=docs\win\soccer\05_final_scores\reports\mls\btts\mls_btts_by_odds.csv | exists=1 | rows=3
-2026-11-28T13:51:28.582836+00:00 | INFO | INPUT | file=docs\win\soccer\05_final_scores\reports\mls\btts\mls_btts_by_odds_yes_no_summary.csv | exists=1 | rows=3
-2026-11-28T13:51:28.590132+00:00 | INFO | INPUT | file=docs\win\soccer\05_final_scores\reports\mls\btts\mls_btts_by_model_prob.csv | exists=1 | rows=4
-2026-11-28T13:51:28.590132+00:00 | INFO | INPUT | file=docs\win\soccer\05_final_scores\reports\mls\btts\mls_btts_by_model_prob_yes_no_summary.csv | exists=1 | rows=4
-2026-11-28T13:51:28.598369+00:00 | INFO | INPUT | file=docs\win\soccer\05_final_scores\reports\mls\total_25\mls_total_25_by_ev.csv | exists=1 | rows=4
-2026-11-28T13:51:28.598369+00:00 | INFO | INPUT | file=docs\win\soccer\05_final_scores\reports\mls\total_25\mls_total_25_by_ev_over_under_summary.csv | exists=1 | rows=4
-2026-11-28T13:51:28.606596+00:00 | INFO | INPUT | file=docs\win\soccer\05_final_scores\reports\mls\total_25\mls_total_25_by_kelly.csv | exists=1 | rows=3
-2026-11-28T13:51:28.618134+00:00 | INFO | INPUT | file=docs\win\soccer\05_final_scores\reports\mls\total_25\mls_total_25_by_kelly_over_under_summary.csv | exists=1 | rows=3
-2026-11-28T13:51:28.625132+00:00 | INFO | INPUT | file=docs\win\soccer\05_final_scores\reports\mls\total_25\mls_total_25_by_month.csv | exists=1 | rows=3
-2026-11-28T13:51:28.631133+00:00 | INFO | INPUT | file=docs\win\soccer\05_final_scores\reports\mls\total_25\mls_total_25_by_month_over_under_summary.csv | exists=1 | rows=3
-2026-11-28T13:51:28.637622+00:00 | INFO | INPUT | file=docs\win\soccer\05_final_scores\reports\mls\total_25\mls_total_25_by_odds.csv | exists=1 | rows=2
-2026-11-28T13:51:28.644620+00:00 | INFO | INPUT | file=docs\win\soccer\05_final_scores\reports\mls\total_25\mls_total_25_by_odds_over_under_summary.csv | exists=1 | rows=2
-2026-11-28T13:51:28.649620+00:00 | INFO | INPUT | file=docs\win\soccer\05_final_scores\reports\mls\total_25\mls_total_25_by_model_prob.csv | exists=1 | rows=2
-2026-11-28T13:51:28.649620+00:00 | INFO | INPUT | file=docs\win\soccer\05_final_scores\reports\mls\total_25\mls_total_25_by_model_prob_over_under_summary.csv | exists=1 | rows=2
-2026-11-28T13:51:28.657226+00:00 | INFO | INPUT | file=docs\win\soccer\05_final_scores\reports\mls\total_35\mls_total_35_by_ev.csv | exists=1 | rows=5
-2026-11-28T13:51:28.667261+00:00 | INFO | INPUT | file=docs\win\soccer\05_final_scores\reports\mls\total_35\mls_total_35_by_ev_over_under_summary.csv | exists=1 | rows=6
-2026-11-28T13:51:28.674610+00:00 | INFO | INPUT | file=docs\win\soccer\05_final_scores\reports\mls\total_35\mls_total_35_by_kelly.csv | exists=1 | rows=7
-2026-11-28T13:51:28.674610+00:00 | INFO | INPUT | file=docs\win\soccer\05_final_scores\reports\mls\total_35\mls_total_35_by_kelly_over_under_summary.csv | exists=1 | rows=8
-2026-11-28T13:51:28.681136+00:00 | INFO | INPUT | file=docs\win\soccer\05_final_scores\reports\mls\total_35\mls_total_35_by_month.csv | exists=1 | rows=6
-2026-11-28T13:51:28.689667+00:00 | INFO | INPUT | file=docs\win\soccer\05_final_scores\reports\mls\total_35\mls_total_35_by_month_over_under_summary.csv | exists=1 | rows=6
-2026-11-28T13:51:28.692104+00:00 | INFO | INPUT | file=docs\win\soccer\05_final_scores\reports\mls\total_35\mls_total_35_by_odds.csv | exists=1 | rows=4
-2026-11-28T13:51:28.693103+00:00 | INFO | INPUT | file=docs\win\soccer\05_final_scores\reports\mls\total_35\mls_total_35_by_odds_over_under_summary.csv | exists=1 | rows=4
-2026-11-28T13:51:28.698708+00:00 | INFO | INPUT | file=docs\win\soccer\05_final_scores\reports\mls\total_35\mls_total_35_by_model_prob.csv | exists=1 | rows=3
-2026-11-28T13:51:28.704185+00:00 | INFO | INPUT | file=docs\win\soccer\05_final_scores\reports\mls\total_35\mls_total_35_by_model_prob_over_under_summary.csv | exists=1 | rows=3
-2026-11-28T13:51:28.707185+00:00 | INFO | INPUT | file=docs\win\soccer\05_final_scores\epl_market_tally.csv | exists=1 | rows=7
-2026-11-28T13:51:28.715185+00:00 | INFO | INPUT | file=docs\win\soccer\05_final_scores\reports\epl\match_odds\epl_match_odds_by_ev.csv | exists=1 | rows=3
-2026-11-28T13:51:28.721830+00:00 | INFO | INPUT | file=docs\win\soccer\05_final_scores\reports\epl\match_odds\epl_match_odds_by_ev_home_draw_away_summary.csv | exists=1 | rows=4
-2026-11-28T13:51:28.727762+00:00 | INFO | INPUT | file=docs\win\soccer\05_final_scores\reports\epl\match_odds\epl_match_odds_by_kelly.csv | exists=1 | rows=4
-2026-11-28T13:51:28.731921+00:00 | INFO | INPUT | file=docs\win\soccer\05_final_scores\reports\epl\match_odds\epl_match_odds_by_kelly_home_draw_away_summary.csv | exists=1 | rows=5
-2026-11-28T13:51:28.736495+00:00 | INFO | INPUT | file=docs\win\soccer\05_final_scores\reports\epl\match_odds\epl_match_odds_by_month.csv | exists=1 | rows=5
-2026-11-28T13:51:28.745618+00:00 | INFO | INPUT | file=docs\win\soccer\05_final_scores\reports\epl\match_odds\epl_match_odds_by_month_home_draw_away_summary.csv | exists=1 | rows=6
-2026-11-28T13:51:28.752506+00:00 | INFO | INPUT | file=docs\win\soccer\05_final_scores\reports\epl\match_odds\epl_match_odds_by_odds.csv | exists=1 | rows=4
-2026-11-28T13:51:28.760485+00:00 | INFO | INPUT | file=docs\win\soccer\05_final_scores\reports\epl\match_odds\epl_match_odds_by_odds_home_draw_away_summary.csv | exists=1 | rows=5
-2026-11-28T13:51:28.766484+00:00 | INFO | INPUT | file=docs\win\soccer\05_final_scores\reports\epl\match_odds\epl_match_odds_by_model_prob.csv | exists=1 | rows=3
-2026-11-28T13:51:28.772350+00:00 | INFO | INPUT | file=docs\win\soccer\05_final_scores\reports\epl\match_odds\epl_match_odds_by_model_prob_home_draw_away_summary.csv | exists=1 | rows=4
-2026-11-28T13:51:28.774349+00:00 | INFO | INPUT | file=docs\win\soccer\05_final_scores\reports\epl\match_odds\epl_match_odds_by_win_prob.csv | exists=1 | rows=3
-2026-11-28T13:51:28.775349+00:00 | INFO | INPUT | file=docs\win\soccer\05_final_scores\reports\epl\match_odds\epl_match_odds_by_win_prob_home_draw_away_summary.csv | exists=1 | rows=4
-2026-11-28T13:51:28.782968+00:00 | INFO | INPUT | file=docs\win\soccer\05_final_scores\reports\epl\btts\epl_btts_by_ev.csv | exists=1 | rows=2
-2026-11-28T13:51:28.783354+00:00 | INFO | INPUT | file=docs\win\soccer\05_final_scores\reports\epl\btts\epl_btts_by_ev_yes_no_summary.csv | exists=1 | rows=3
-2026-11-28T13:51:28.794377+00:00 | INFO | INPUT | file=docs\win\soccer\05_final_scores\reports\epl\btts\epl_btts_by_kelly.csv | exists=1 | rows=3
-2026-11-28T13:51:28.796358+00:00 | INFO | INPUT | file=docs\win\soccer\05_final_scores\reports\epl\btts\epl_btts_by_kelly_yes_no_summary.csv | exists=1 | rows=4
-2026-11-28T13:51:28.802535+00:00 | INFO | INPUT | file=docs\win\soccer\05_final_scores\reports\epl\btts\epl_btts_by_month.csv | exists=1 | rows=2
-2026-11-28T13:51:28.809693+00:00 | INFO | INPUT | file=docs\win\soccer\05_final_scores\reports\epl\btts\epl_btts_by_month_yes_no_summary.csv | exists=1 | rows=4
-2026-11-28T13:51:28.810657+00:00 | INFO | INPUT | file=docs\win\soccer\05_final_scores\reports\epl\btts\epl_btts_by_odds.csv | exists=1 | rows=3
-2026-11-28T13:51:28.820682+00:00 | INFO | INPUT | file=docs\win\soccer\05_final_scores\reports\epl\btts\epl_btts_by_odds_yes_no_summary.csv | exists=1 | rows=3
-2026-11-28T13:51:28.829627+00:00 | INFO | INPUT | file=docs\win\soccer\05_final_scores\reports\epl\btts\epl_btts_by_model_prob.csv | exists=1 | rows=3
-2026-11-28T13:51:28.835625+00:00 | INFO | INPUT | file=docs\win\soccer\05_final_scores\reports\epl\btts\epl_btts_by_model_prob_yes_no_summary.csv | exists=1 | rows=3
-2026-11-28T13:51:28.843873+00:00 | INFO | INPUT | file=docs\win\soccer\05_final_scores\reports\epl\total_25\epl_total_25_by_ev.csv | exists=1 | rows=3
-2026-11-28T13:51:28.849650+00:00 | INFO | INPUT | file=docs\win\soccer\05_final_scores\reports\epl\total_25\epl_total_25_by_ev_over_under_summary.csv | exists=1 | rows=3
-2026-11-28T13:51:28.851585+00:00 | INFO | INPUT | file=docs\win\soccer\05_final_scores\reports\epl\total_25\epl_total_25_by_kelly.csv | exists=1 | rows=3
-2026-11-28T13:51:28.851585+00:00 | INFO | INPUT | file=docs\win\soccer\05_final_scores\reports\epl\total_25\epl_total_25_by_kelly_over_under_summary.csv | exists=1 | rows=3
-2026-11-28T13:51:28.864848+00:00 | INFO | INPUT | file=docs\win\soccer\05_final_scores\reports\epl\total_25\epl_total_25_by_month.csv | exists=1 | rows=5
-2026-11-28T13:51:28.864848+00:00 | INFO | INPUT | file=docs\win\soccer\05_final_scores\reports\epl\total_25\epl_total_25_by_month_over_under_summary.csv | exists=1 | rows=5
-2026-11-28T13:51:28.876585+00:00 | INFO | INPUT | file=docs\win\soccer\05_final_scores\reports\epl\total_25\epl_total_25_by_odds.csv | exists=1 | rows=1
-2026-11-28T13:51:28.876585+00:00 | INFO | INPUT | file=docs\win\soccer\05_final_scores\reports\epl\total_25\epl_total_25_by_odds_over_under_summary.csv | exists=1 | rows=2
-2026-11-28T13:51:28.880559+00:00 | INFO | INPUT | file=docs\win\soccer\05_final_scores\reports\epl\total_25\epl_total_25_by_model_prob.csv | exists=1 | rows=2
-2026-11-28T13:51:28.892306+00:00 | INFO | INPUT | file=docs\win\soccer\05_final_scores\reports\epl\total_25\epl_total_25_by_model_prob_over_under_summary.csv | exists=1 | rows=2
-2026-11-28T13:51:28.894305+00:00 | INFO | INPUT | file=docs\win\soccer\05_final_scores\reports\epl\total_35\epl_total_35_by_ev.csv | exists=1 | rows=4
-2026-11-28T13:51:28.900308+00:00 | INFO | INPUT | file=docs\win\soccer\05_final_scores\reports\epl\total_35\epl_total_35_by_ev_over_under_summary.csv | exists=1 | rows=4
-2026-11-28T13:51:28.907247+00:00 | INFO | INPUT | file=docs\win\soccer\05_final_scores\reports\epl\total_35\epl_total_35_by_kelly.csv | exists=1 | rows=4
-2026-11-28T13:51:28.913247+00:00 | INFO | INPUT | file=docs\win\soccer\05_final_scores\reports\epl\total_35\epl_total_35_by_kelly_over_under_summary.csv | exists=1 | rows=4
-2026-11-28T13:51:28.916245+00:00 | INFO | INPUT | file=docs\win\soccer\05_final_scores\reports\epl\total_35\epl_total_35_by_month.csv | exists=1 | rows=4
-2026-11-28T13:51:28.926321+00:00 | INFO | INPUT | file=docs\win\soccer\05_final_scores\reports\epl\total_35\epl_total_35_by_month_over_under_summary.csv | exists=1 | rows=4
-2026-11-28T13:51:28.932354+00:00 | INFO | INPUT | file=docs\win\soccer\05_final_scores\reports\epl\total_35\epl_total_35_by_odds.csv | exists=1 | rows=2
-2026-11-28T13:51:28.932354+00:00 | INFO | INPUT | file=docs\win\soccer\05_final_scores\reports\epl\total_35\epl_total_35_by_odds_over_under_summary.csv | exists=1 | rows=2
-2026-11-28T13:51:28.943140+00:00 | INFO | INPUT | file=docs\win\soccer\05_final_scores\reports\epl\total_35\epl_total_35_by_model_prob.csv | exists=1 | rows=3
-2026-11-28T13:51:28.948428+00:00 | INFO | INPUT | file=docs\win\soccer\05_final_scores\reports\epl\total_35\epl_total_35_by_model_prob_over_under_summary.csv | exists=1 | rows=3
-2026-11-28T13:51:28.958464+00:00 | INFO | INPUT | file=docs\win\soccer\05_final_scores\laliga_market_tally.csv | exists=1 | rows=4
-2026-11-28T13:51:28.970456+00:00 | INFO | INPUT | file=docs\win\soccer\05_final_scores\reports\laliga\match_odds\laliga_match_odds_by_ev.csv | exists=1 | rows=1
-2026-11-28T13:51:28.977137+00:00 | INFO | INPUT | file=docs\win\soccer\05_final_scores\reports\laliga\match_odds\laliga_match_odds_by_ev_home_draw_away_summary.csv | exists=1 | rows=1
-2026-11-28T13:51:28.984191+00:00 | INFO | INPUT | file=docs\win\soccer\05_final_scores\reports\laliga\match_odds\laliga_match_odds_by_kelly.csv | exists=1 | rows=1
-2026-11-28T13:51:28.990191+00:00 | INFO | INPUT | file=docs\win\soccer\05_final_scores\reports\laliga\match_odds\laliga_match_odds_by_kelly_home_draw_away_summary.csv | exists=1 | rows=1
-2026-11-28T13:51:28.995703+00:00 | INFO | INPUT | file=docs\win\soccer\05_final_scores\reports\laliga\match_odds\laliga_match_odds_by_month.csv | exists=1 | rows=1
-2026-11-28T13:51:29.001591+00:00 | INFO | INPUT | file=docs\win\soccer\05_final_scores\reports\laliga\match_odds\laliga_match_odds_by_month_home_draw_away_summary.csv | exists=1 | rows=1
-2026-11-28T13:51:29.008596+00:00 | INFO | INPUT | file=docs\win\soccer\05_final_scores\reports\laliga\match_odds\laliga_match_odds_by_odds.csv | exists=1 | rows=1
-2026-11-28T13:51:29.009597+00:00 | INFO | INPUT | file=docs\win\soccer\05_final_scores\reports\laliga\match_odds\laliga_match_odds_by_odds_home_draw_away_summary.csv | exists=1 | rows=1
-2026-11-28T13:51:29.019756+00:00 | INFO | INPUT | file=docs\win\soccer\05_final_scores\reports\laliga\match_odds\laliga_match_odds_by_model_prob.csv | exists=1 | rows=1
-2026-11-28T13:51:29.023000+00:00 | INFO | INPUT | file=docs\win\soccer\05_final_scores\reports\laliga\match_odds\laliga_match_odds_by_model_prob_home_draw_away_summary.csv | exists=1 | rows=1
-2026-11-28T13:51:29.026165+00:00 | INFO | INPUT | file=docs\win\soccer\05_final_scores\reports\laliga\match_odds\laliga_match_odds_by_win_prob.csv | exists=1 | rows=1
-2026-11-28T13:51:29.027165+00:00 | INFO | INPUT | file=docs\win\soccer\05_final_scores\reports\laliga\match_odds\laliga_match_odds_by_win_prob_home_draw_away_summary.csv | exists=1 | rows=1
-2026-11-28T13:51:29.034164+00:00 | INFO | INPUT | file=docs\win\soccer\05_final_scores\reports\laliga\btts\laliga_btts_by_ev.csv | exists=1 | rows=6
-2026-11-28T13:51:29.036477+00:00 | INFO | INPUT | file=docs\win\soccer\05_final_scores\reports\laliga\btts\laliga_btts_by_ev_yes_no_summary.csv | exists=1 | rows=6
-2026-11-28T13:51:29.042615+00:00 | INFO | INPUT | file=docs\win\soccer\05_final_scores\reports\laliga\btts\laliga_btts_by_kelly.csv | exists=1 | rows=7
-2026-11-28T13:51:29.047614+00:00 | INFO | INPUT | file=docs\win\soccer\05_final_scores\reports\laliga\btts\laliga_btts_by_kelly_yes_no_summary.csv | exists=1 | rows=7
-2026-11-28T13:51:29.049614+00:00 | INFO | INPUT | file=docs\win\soccer\05_final_scores\reports\laliga\btts\laliga_btts_by_month.csv | exists=1 | rows=3
-2026-11-28T13:51:29.061651+00:00 | INFO | INPUT | file=docs\win\soccer\05_final_scores\reports\laliga\btts\laliga_btts_by_month_yes_no_summary.csv | exists=1 | rows=3
-2026-11-28T13:51:29.067911+00:00 | INFO | INPUT | file=docs\win\soccer\05_final_scores\reports\laliga\btts\laliga_btts_by_odds.csv | exists=1 | rows=3
-2026-11-28T13:51:29.067911+00:00 | INFO | INPUT | file=docs\win\soccer\05_final_scores\reports\laliga\btts\laliga_btts_by_odds_yes_no_summary.csv | exists=1 | rows=3
-2026-11-28T13:51:29.081583+00:00 | INFO | INPUT | file=docs\win\soccer\05_final_scores\reports\laliga\btts\laliga_btts_by_model_prob.csv | exists=1 | rows=3
-2026-11-28T13:51:29.086583+00:00 | INFO | INPUT | file=docs\win\soccer\05_final_scores\reports\laliga\btts\laliga_btts_by_model_prob_yes_no_summary.csv | exists=1 | rows=3
-2026-11-28T13:51:29.095307+00:00 | INFO | INPUT | file=docs\win\soccer\05_final_scores\reports\laliga\total_25\laliga_total_25_by_ev.csv | exists=1 | rows=2
-2026-11-28T13:51:29.096307+00:00 | INFO | INPUT | file=docs\win\soccer\05_final_scores\reports\laliga\total_25\laliga_total_25_by_ev_over_under_summary.csv | exists=1 | rows=2
-2026-11-28T13:51:29.102963+00:00 | INFO | INPUT | file=docs\win\soccer\05_final_scores\reports\laliga\total_25\laliga_total_25_by_kelly.csv | exists=1 | rows=2
-2026-11-28T13:51:29.109196+00:00 | INFO | INPUT | file=docs\win\soccer\05_final_scores\reports\laliga\total_25\laliga_total_25_by_kelly_over_under_summary.csv | exists=1 | rows=2
-2026-11-28T13:51:29.115196+00:00 | INFO | INPUT | file=docs\win\soccer\05_final_scores\reports\laliga\total_25\laliga_total_25_by_month.csv | exists=1 | rows=4
-2026-11-28T13:51:29.118808+00:00 | INFO | INPUT | file=docs\win\soccer\05_final_scores\reports\laliga\total_25\laliga_total_25_by_month_over_under_summary.csv | exists=1 | rows=4
-2026-11-28T13:51:29.121989+00:00 | INFO | INPUT | file=docs\win\soccer\05_final_scores\reports\laliga\total_25\laliga_total_25_by_odds.csv | exists=1 | rows=3
-2026-11-28T13:51:29.121989+00:00 | INFO | INPUT | file=docs\win\soccer\05_final_scores\reports\laliga\total_25\laliga_total_25_by_odds_over_under_summary.csv | exists=1 | rows=3
-2026-11-28T13:51:29.134166+00:00 | INFO | INPUT | file=docs\win\soccer\05_final_scores\reports\laliga\total_25\laliga_total_25_by_model_prob.csv | exists=1 | rows=3
-2026-11-28T13:51:29.134166+00:00 | INFO | INPUT | file=docs\win\soccer\05_final_scores\reports\laliga\total_25\laliga_total_25_by_model_prob_over_under_summary.csv | exists=1 | rows=3
-2026-11-28T13:51:29.148213+00:00 | INFO | INPUT | file=docs\win\soccer\05_final_scores\reports\laliga\total_35\laliga_total_35_by_ev.csv | exists=1 | rows=2
-2026-11-28T13:51:29.152228+00:00 | INFO | INPUT | file=docs\win\soccer\05_final_scores\reports\laliga\total_35\laliga_total_35_by_ev_over_under_summary.csv | exists=1 | rows=2
-2026-11-28T13:51:29.162557+00:00 | INFO | INPUT | file=docs\win\soccer\05_final_scores\reports\laliga\total_35\laliga_total_35_by_kelly.csv | exists=1 | rows=2
-2026-11-28T13:51:29.168557+00:00 | INFO | INPUT | file=docs\win\soccer\05_final_scores\reports\laliga\total_35\laliga_total_35_by_kelly_over_under_summary.csv | exists=1 | rows=2
-2026-11-28T13:51:29.171984+00:00 | INFO | INPUT | file=docs\win\soccer\05_final_scores\reports\laliga\total_35\laliga_total_35_by_month.csv | exists=1 | rows=2
-2026-11-28T13:51:29.177989+00:00 | INFO | INPUT | file=docs\win\soccer\05_final_scores\reports\laliga\total_35\laliga_total_35_by_month_over_under_summary.csv | exists=1 | rows=2
-2026-11-28T13:51:29.183745+00:00 | INFO | INPUT | file=docs\win\soccer\05_final_scores\reports\laliga\total_35\laliga_total_35_by_odds.csv | exists=1 | rows=2
-2026-11-28T13:51:29.190188+00:00 | INFO | INPUT | file=docs\win\soccer\05_final_scores\reports\laliga\total_35\laliga_total_35_by_odds_over_under_summary.csv | exists=1 | rows=2
-2026-11-28T13:51:29.197290+00:00 | INFO | INPUT | file=docs\win\soccer\05_final_scores\reports\laliga\total_35\laliga_total_35_by_model_prob.csv | exists=1 | rows=1
-2026-11-28T13:51:29.202098+00:00 | INFO | INPUT | file=docs\win\soccer\05_final_scores\reports\laliga\total_35\laliga_total_35_by_model_prob_over_under_summary.csv | exists=1 | rows=1
-2026-11-28T13:51:29.210550+00:00 | INFO | INPUT | file=docs\win\soccer\05_final_scores\ligue1_market_tally.csv | exists=1 | rows=5
-2026-11-28T13:51:29.225845+00:00 | INFO | INPUT | file=docs\win\soccer\05_final_scores\reports\ligue1\match_odds\ligue1_match_odds_by_ev.csv | exists=1 | rows=4
-2026-11-28T13:51:29.232111+00:00 | INFO | INPUT | file=docs\win\soccer\05_final_scores\reports\ligue1\match_odds\ligue1_match_odds_by_ev_home_draw_away_summary.csv | exists=1 | rows=5
-2026-11-28T13:51:29.239433+00:00 | INFO | INPUT | file=docs\win\soccer\05_final_scores\reports\ligue1\match_odds\ligue1_match_odds_by_kelly.csv | exists=1 | rows=5
-2026-11-28T13:51:29.245494+00:00 | INFO | INPUT | file=docs\win\soccer\05_final_scores\reports\ligue1\match_odds\ligue1_match_odds_by_kelly_home_draw_away_summary.csv | exists=1 | rows=6
-2026-11-28T13:51:29.253557+00:00 | INFO | INPUT | file=docs\win\soccer\05_final_scores\reports\ligue1\match_odds\ligue1_match_odds_by_month.csv | exists=1 | rows=5
-2026-11-28T13:51:29.259678+00:00 | INFO | INPUT | file=docs\win\soccer\05_final_scores\reports\ligue1\match_odds\ligue1_match_odds_by_month_home_draw_away_summary.csv | exists=1 | rows=5
-2026-11-28T13:51:29.268475+00:00 | INFO | INPUT | file=docs\win\soccer\05_final_scores\reports\ligue1\match_odds\ligue1_match_odds_by_odds.csv | exists=1 | rows=3
-2026-11-28T13:51:29.269475+00:00 | INFO | INPUT | file=docs\win\soccer\05_final_scores\reports\ligue1\match_odds\ligue1_match_odds_by_odds_home_draw_away_summary.csv | exists=1 | rows=4
-2026-11-28T13:51:29.276291+00:00 | INFO | INPUT | file=docs\win\soccer\05_final_scores\reports\ligue1\match_odds\ligue1_match_odds_by_model_prob.csv | exists=1 | rows=4
-2026-11-28T13:51:29.277993+00:00 | INFO | INPUT | file=docs\win\soccer\05_final_scores\reports\ligue1\match_odds\ligue1_match_odds_by_model_prob_home_draw_away_summary.csv | exists=1 | rows=5
-2026-11-28T13:51:29.277993+00:00 | INFO | INPUT | file=docs\win\soccer\05_final_scores\reports\ligue1\match_odds\ligue1_match_odds_by_win_prob.csv | exists=1 | rows=4
-2026-11-28T13:51:29.277993+00:00 | INFO | INPUT | file=docs\win\soccer\05_final_scores\reports\ligue1\match_odds\ligue1_match_odds_by_win_prob_home_draw_away_summary.csv | exists=1 | rows=5
-2026-11-28T13:51:29.294713+00:00 | INFO | INPUT | file=docs\win\soccer\05_final_scores\reports\ligue1\btts\ligue1_btts_by_ev.csv | exists=1 | rows=3
-2026-11-28T13:51:29.299712+00:00 | INFO | INPUT | file=docs\win\soccer\05_final_scores\reports\ligue1\btts\ligue1_btts_by_ev_yes_no_summary.csv | exists=1 | rows=3
-2026-11-28T13:51:29.307986+00:00 | INFO | INPUT | file=docs\win\soccer\05_final_scores\reports\ligue1\btts\ligue1_btts_by_kelly.csv | exists=1 | rows=2
-2026-11-28T13:51:29.313986+00:00 | INFO | INPUT | file=docs\win\soccer\05_final_scores\reports\ligue1\btts\ligue1_btts_by_kelly_yes_no_summary.csv | exists=1 | rows=2
-2026-11-28T13:51:29.317089+00:00 | INFO | INPUT | file=docs\win\soccer\05_final_scores\reports\ligue1\btts\ligue1_btts_by_month.csv | exists=1 | rows=2
-2026-11-28T13:51:29.325277+00:00 | INFO | INPUT | file=docs\win\soccer\05_final_scores\reports\ligue1\btts\ligue1_btts_by_month_yes_no_summary.csv | exists=1 | rows=3
-2026-11-28T13:51:29.333204+00:00 | INFO | INPUT | file=docs\win\soccer\05_final_scores\reports\ligue1\btts\ligue1_btts_by_odds.csv | exists=1 | rows=1
-2026-11-28T13:51:29.333204+00:00 | INFO | INPUT | file=docs\win\soccer\05_final_scores\reports\ligue1\btts\ligue1_btts_by_odds_yes_no_summary.csv | exists=1 | rows=2
-2026-11-28T13:51:29.346523+00:00 | INFO | INPUT | file=docs\win\soccer\05_final_scores\reports\ligue1\btts\ligue1_btts_by_model_prob.csv | exists=1 | rows=1
-2026-11-28T13:51:29.346523+00:00 | INFO | INPUT | file=docs\win\soccer\05_final_scores\reports\ligue1\btts\ligue1_btts_by_model_prob_yes_no_summary.csv | exists=1 | rows=2
-2026-11-28T13:51:29.346523+00:00 | INFO | INPUT | file=docs\win\soccer\05_final_scores\reports\ligue1\total_25\ligue1_total_25_by_ev.csv | exists=0 | rows=0
-2026-11-28T13:51:29.346523+00:00 | INFO | Optional dashboard input missing: docs\win\soccer\05_final_scores\reports\ligue1\total_25\ligue1_total_25_by_ev.csv
-2026-11-28T13:51:29.346523+00:00 | INFO | INPUT | file=docs\win\soccer\05_final_scores\reports\ligue1\total_25\ligue1_total_25_by_ev_over_under_summary.csv | exists=0 | rows=0
-2026-11-28T13:51:29.346523+00:00 | INFO | Optional dashboard input missing: docs\win\soccer\05_final_scores\reports\ligue1\total_25\ligue1_total_25_by_ev_over_under_summary.csv
-2026-11-28T13:51:29.346523+00:00 | INFO | INPUT | file=docs\win\soccer\05_final_scores\reports\ligue1\total_25\ligue1_total_25_by_kelly.csv | exists=0 | rows=0
-2026-11-28T13:51:29.346523+00:00 | INFO | Optional dashboard input missing: docs\win\soccer\05_final_scores\reports\ligue1\total_25\ligue1_total_25_by_kelly.csv
-2026-11-28T13:51:29.346523+00:00 | INFO | INPUT | file=docs\win\soccer\05_final_scores\reports\ligue1\total_25\ligue1_total_25_by_kelly_over_under_summary.csv | exists=0 | rows=0
-2026-11-28T13:51:29.346523+00:00 | INFO | Optional dashboard input missing: docs\win\soccer\05_final_scores\reports\ligue1\total_25\ligue1_total_25_by_kelly_over_under_summary.csv
-2026-11-28T13:51:29.346523+00:00 | INFO | INPUT | file=docs\win\soccer\05_final_scores\reports\ligue1\total_25\ligue1_total_25_by_month.csv | exists=0 | rows=0
-2026-11-28T13:51:29.346523+00:00 | INFO | Optional dashboard input missing: docs\win\soccer\05_final_scores\reports\ligue1\total_25\ligue1_total_25_by_month.csv
-2026-11-28T13:51:29.346523+00:00 | INFO | INPUT | file=docs\win\soccer\05_final_scores\reports\ligue1\total_25\ligue1_total_25_by_month_over_under_summary.csv | exists=0 | rows=0
-2026-11-28T13:51:29.346523+00:00 | INFO | Optional dashboard input missing: docs\win\soccer\05_final_scores\reports\ligue1\total_25\ligue1_total_25_by_month_over_under_summary.csv
-2026-11-28T13:51:29.346523+00:00 | INFO | INPUT | file=docs\win\soccer\05_final_scores\reports\ligue1\total_25\ligue1_total_25_by_odds.csv | exists=0 | rows=0
-2026-11-28T13:51:29.346523+00:00 | INFO | Optional dashboard input missing: docs\win\soccer\05_final_scores\reports\ligue1\total_25\ligue1_total_25_by_odds.csv
-2026-11-28T13:51:29.346523+00:00 | INFO | INPUT | file=docs\win\soccer\05_final_scores\reports\ligue1\total_25\ligue1_total_25_by_odds_over_under_summary.csv | exists=0 | rows=0
-2026-11-28T13:51:29.346523+00:00 | INFO | Optional dashboard input missing: docs\win\soccer\05_final_scores\reports\ligue1\total_25\ligue1_total_25_by_odds_over_under_summary.csv
-2026-11-28T13:51:29.346523+00:00 | INFO | INPUT | file=docs\win\soccer\05_final_scores\reports\ligue1\total_25\ligue1_total_25_by_model_prob.csv | exists=0 | rows=0
-2026-11-28T13:51:29.346523+00:00 | INFO | Optional dashboard input missing: docs\win\soccer\05_final_scores\reports\ligue1\total_25\ligue1_total_25_by_model_prob.csv
-2026-11-28T13:51:29.346523+00:00 | INFO | INPUT | file=docs\win\soccer\05_final_scores\reports\ligue1\total_25\ligue1_total_25_by_model_prob_over_under_summary.csv | exists=0 | rows=0
-2026-11-28T13:51:29.346523+00:00 | INFO | Optional dashboard input missing: docs\win\soccer\05_final_scores\reports\ligue1\total_25\ligue1_total_25_by_model_prob_over_under_summary.csv
-2026-11-28T13:51:29.346523+00:00 | INFO | INPUT | file=docs\win\soccer\05_final_scores\reports\ligue1\total_35\ligue1_total_35_by_ev.csv | exists=1 | rows=6
-2026-11-28T13:51:29.362672+00:00 | INFO | INPUT | file=docs\win\soccer\05_final_scores\reports\ligue1\total_35\ligue1_total_35_by_ev_over_under_summary.csv | exists=1 | rows=6
-2026-11-28T13:51:29.368671+00:00 | INFO | INPUT | file=docs\win\soccer\05_final_scores\reports\ligue1\total_35\ligue1_total_35_by_kelly.csv | exists=1 | rows=6
-2026-11-28T13:51:29.375711+00:00 | INFO | INPUT | file=docs\win\soccer\05_final_scores\reports\ligue1\total_35\ligue1_total_35_by_kelly_over_under_summary.csv | exists=1 | rows=6
-2026-11-28T13:51:29.383211+00:00 | INFO | INPUT | file=docs\win\soccer\05_final_scores\reports\ligue1\total_35\ligue1_total_35_by_month.csv | exists=1 | rows=6
-2026-11-28T13:51:29.390167+00:00 | INFO | INPUT | file=docs\win\soccer\05_final_scores\reports\ligue1\total_35\ligue1_total_35_by_month_over_under_summary.csv | exists=1 | rows=6
-2026-11-28T13:51:29.396738+00:00 | INFO | INPUT | file=docs\win\soccer\05_final_scores\reports\ligue1\total_35\ligue1_total_35_by_odds.csv | exists=1 | rows=4
-2026-11-28T13:51:29.397083+00:00 | INFO | INPUT | file=docs\win\soccer\05_final_scores\reports\ligue1\total_35\ligue1_total_35_by_odds_over_under_summary.csv | exists=1 | rows=4
-2026-11-28T13:51:29.403269+00:00 | INFO | INPUT | file=docs\win\soccer\05_final_scores\reports\ligue1\total_35\ligue1_total_35_by_model_prob.csv | exists=1 | rows=1
-2026-11-28T13:51:29.410626+00:00 | INFO | INPUT | file=docs\win\soccer\05_final_scores\reports\ligue1\total_35\ligue1_total_35_by_model_prob_over_under_summary.csv | exists=1 | rows=1
-2026-11-28T13:51:29.416513+00:00 | INFO | INPUT | file=docs\win\soccer\05_final_scores\seriea_market_tally.csv | exists=1 | rows=5
-2026-11-28T13:51:29.430944+00:00 | INFO | INPUT | file=docs\win\soccer\05_final_scores\reports\seriea\match_odds\seriea_match_odds_by_ev.csv | exists=1 | rows=4
-2026-11-28T13:51:29.437319+00:00 | INFO | INPUT | file=docs\win\soccer\05_final_scores\reports\seriea\match_odds\seriea_match_odds_by_ev_home_draw_away_summary.csv | exists=1 | rows=4
-2026-11-28T13:51:29.440349+00:00 | INFO | INPUT | file=docs\win\soccer\05_final_scores\reports\seriea\match_odds\seriea_match_odds_by_kelly.csv | exists=1 | rows=5
-2026-11-28T13:51:29.445348+00:00 | INFO | INPUT | file=docs\win\soccer\05_final_scores\reports\seriea\match_odds\seriea_match_odds_by_kelly_home_draw_away_summary.csv | exists=1 | rows=6
-2026-11-28T13:51:29.450448+00:00 | INFO | INPUT | file=docs\win\soccer\05_final_scores\reports\seriea\match_odds\seriea_match_odds_by_month.csv | exists=1 | rows=5
-2026-11-28T13:51:29.450448+00:00 | INFO | INPUT | file=docs\win\soccer\05_final_scores\reports\seriea\match_odds\seriea_match_odds_by_month_home_draw_away_summary.csv | exists=1 | rows=6
-2026-11-28T13:51:29.463703+00:00 | INFO | INPUT | file=docs\win\soccer\05_final_scores\reports\seriea\match_odds\seriea_match_odds_by_odds.csv | exists=1 | rows=7
-2026-11-28T13:51:29.463703+00:00 | INFO | INPUT | file=docs\win\soccer\05_final_scores\reports\seriea\match_odds\seriea_match_odds_by_odds_home_draw_away_summary.csv | exists=1 | rows=7
-2026-11-28T13:51:29.476394+00:00 | INFO | INPUT | file=docs\win\soccer\05_final_scores\reports\seriea\match_odds\seriea_match_odds_by_model_prob.csv | exists=1 | rows=6
-2026-11-28T13:51:29.477327+00:00 | INFO | INPUT | file=docs\win\soccer\05_final_scores\reports\seriea\match_odds\seriea_match_odds_by_model_prob_home_draw_away_summary.csv | exists=1 | rows=6
-2026-11-28T13:51:29.483321+00:00 | INFO | INPUT | file=docs\win\soccer\05_final_scores\reports\seriea\match_odds\seriea_match_odds_by_win_prob.csv | exists=1 | rows=6
-2026-11-28T13:51:29.483321+00:00 | INFO | INPUT | file=docs\win\soccer\05_final_scores\reports\seriea\match_odds\seriea_match_odds_by_win_prob_home_draw_away_summary.csv | exists=1 | rows=6
-2026-11-28T13:51:29.483321+00:00 | INFO | INPUT | file=docs\win\soccer\05_final_scores\reports\seriea\btts\seriea_btts_by_ev.csv | exists=0 | rows=0
-2026-11-28T13:51:29.487589+00:00 | INFO | Optional dashboard input missing: docs\win\soccer\05_final_scores\reports\seriea\btts\seriea_btts_by_ev.csv
-2026-11-28T13:51:29.487589+00:00 | INFO | INPUT | file=docs\win\soccer\05_final_scores\reports\seriea\btts\seriea_btts_by_ev_yes_no_summary.csv | exists=0 | rows=0
-2026-11-28T13:51:29.487589+00:00 | INFO | Optional dashboard input missing: docs\win\soccer\05_final_scores\reports\seriea\btts\seriea_btts_by_ev_yes_no_summary.csv
-2026-11-28T13:51:29.487589+00:00 | INFO | INPUT | file=docs\win\soccer\05_final_scores\reports\seriea\btts\seriea_btts_by_kelly.csv | exists=0 | rows=0
-2026-11-28T13:51:29.487589+00:00 | INFO | Optional dashboard input missing: docs\win\soccer\05_final_scores\reports\seriea\btts\seriea_btts_by_kelly.csv
-2026-11-28T13:51:29.487589+00:00 | INFO | INPUT | file=docs\win\soccer\05_final_scores\reports\seriea\btts\seriea_btts_by_kelly_yes_no_summary.csv | exists=0 | rows=0
-2026-11-28T13:51:29.487589+00:00 | INFO | Optional dashboard input missing: docs\win\soccer\05_final_scores\reports\seriea\btts\seriea_btts_by_kelly_yes_no_summary.csv
-2026-11-28T13:51:29.487589+00:00 | INFO | INPUT | file=docs\win\soccer\05_final_scores\reports\seriea\btts\seriea_btts_by_month.csv | exists=0 | rows=0
-2026-11-28T13:51:29.487589+00:00 | INFO | Optional dashboard input missing: docs\win\soccer\05_final_scores\reports\seriea\btts\seriea_btts_by_month.csv
-2026-11-28T13:51:29.489594+00:00 | INFO | INPUT | file=docs\win\soccer\05_final_scores\reports\seriea\btts\seriea_btts_by_month_yes_no_summary.csv | exists=0 | rows=0
-2026-11-28T13:51:29.489594+00:00 | INFO | Optional dashboard input missing: docs\win\soccer\05_final_scores\reports\seriea\btts\seriea_btts_by_month_yes_no_summary.csv
-2026-11-28T13:51:29.490263+00:00 | INFO | INPUT | file=docs\win\soccer\05_final_scores\reports\seriea\btts\seriea_btts_by_odds.csv | exists=0 | rows=0
-2026-11-28T13:51:29.490263+00:00 | INFO | Optional dashboard input missing: docs\win\soccer\05_final_scores\reports\seriea\btts\seriea_btts_by_odds.csv
-2026-11-28T13:51:29.490702+00:00 | INFO | INPUT | file=docs\win\soccer\05_final_scores\reports\seriea\btts\seriea_btts_by_odds_yes_no_summary.csv | exists=0 | rows=0
-2026-11-28T13:51:29.490702+00:00 | INFO | Optional dashboard input missing: docs\win\soccer\05_final_scores\reports\seriea\btts\seriea_btts_by_odds_yes_no_summary.csv
-2026-11-28T13:51:29.490702+00:00 | INFO | INPUT | file=docs\win\soccer\05_final_scores\reports\seriea\btts\seriea_btts_by_model_prob.csv | exists=0 | rows=0
-2026-11-28T13:51:29.490702+00:00 | INFO | Optional dashboard input missing: docs\win\soccer\05_final_scores\reports\seriea\btts\seriea_btts_by_model_prob.csv
-2026-11-28T13:51:29.490702+00:00 | INFO | INPUT | file=docs\win\soccer\05_final_scores\reports\seriea\btts\seriea_btts_by_model_prob_yes_no_summary.csv | exists=0 | rows=0
-2026-11-28T13:51:29.490702+00:00 | INFO | Optional dashboard input missing: docs\win\soccer\05_final_scores\reports\seriea\btts\seriea_btts_by_model_prob_yes_no_summary.csv
-2026-11-28T13:51:29.497744+00:00 | INFO | INPUT | file=docs\win\soccer\05_final_scores\reports\seriea\total_25\seriea_total_25_by_ev.csv | exists=1 | rows=3
-2026-11-28T13:51:29.504089+00:00 | INFO | INPUT | file=docs\win\soccer\05_final_scores\reports\seriea\total_25\seriea_total_25_by_ev_over_under_summary.csv | exists=1 | rows=3
-2026-11-28T13:51:29.504089+00:00 | INFO | INPUT | file=docs\win\soccer\05_final_scores\reports\seriea\total_25\seriea_total_25_by_kelly.csv | exists=1 | rows=4
-2026-11-28T13:51:29.504089+00:00 | INFO | INPUT | file=docs\win\soccer\05_final_scores\reports\seriea\total_25\seriea_total_25_by_kelly_over_under_summary.csv | exists=1 | rows=4
-2026-11-28T13:51:29.520131+00:00 | INFO | INPUT | file=docs\win\soccer\05_final_scores\reports\seriea\total_25\seriea_total_25_by_month.csv | exists=1 | rows=5
-2026-11-28T13:51:29.525133+00:00 | INFO | INPUT | file=docs\win\soccer\05_final_scores\reports\seriea\total_25\seriea_total_25_by_month_over_under_summary.csv | exists=1 | rows=6
-2026-11-28T13:51:29.532689+00:00 | INFO | INPUT | file=docs\win\soccer\05_final_scores\reports\seriea\total_25\seriea_total_25_by_odds.csv | exists=1 | rows=1
-2026-11-28T13:51:29.539688+00:00 | INFO | INPUT | file=docs\win\soccer\05_final_scores\reports\seriea\total_25\seriea_total_25_by_odds_over_under_summary.csv | exists=1 | rows=2
-2026-11-28T13:51:29.544068+00:00 | INFO | INPUT | file=docs\win\soccer\05_final_scores\reports\seriea\total_25\seriea_total_25_by_model_prob.csv | exists=1 | rows=2
-2026-11-28T13:51:29.551736+00:00 | INFO | INPUT | file=docs\win\soccer\05_final_scores\reports\seriea\total_25\seriea_total_25_by_model_prob_over_under_summary.csv | exists=1 | rows=2
-2026-11-28T13:51:29.560221+00:00 | INFO | INPUT | file=docs\win\soccer\05_final_scores\reports\seriea\total_35\seriea_total_35_by_ev.csv | exists=1 | rows=2
-2026-11-28T13:51:29.566220+00:00 | INFO | INPUT | file=docs\win\soccer\05_final_scores\reports\seriea\total_35\seriea_total_35_by_ev_over_under_summary.csv | exists=1 | rows=2
-2026-11-28T13:51:29.572577+00:00 | INFO | INPUT | file=docs\win\soccer\05_final_scores\reports\seriea\total_35\seriea_total_35_by_kelly.csv | exists=1 | rows=2
-2026-11-28T13:51:29.578585+00:00 | INFO | INPUT | file=docs\win\soccer\05_final_scores\reports\seriea\total_35\seriea_total_35_by_kelly_over_under_summary.csv | exists=1 | rows=2
-2026-11-28T13:51:29.583733+00:00 | INFO | INPUT | file=docs\win\soccer\05_final_scores\reports\seriea\total_35\seriea_total_35_by_month.csv | exists=1 | rows=2
-2026-11-28T13:51:29.590410+00:00 | INFO | INPUT | file=docs\win\soccer\05_final_scores\reports\seriea\total_35\seriea_total_35_by_month_over_under_summary.csv | exists=1 | rows=2
-2026-11-28T13:51:29.597016+00:00 | INFO | INPUT | file=docs\win\soccer\05_final_scores\reports\seriea\total_35\seriea_total_35_by_odds.csv | exists=1 | rows=2
-2026-11-28T13:51:29.603585+00:00 | INFO | INPUT | file=docs\win\soccer\05_final_scores\reports\seriea\total_35\seriea_total_35_by_odds_over_under_summary.csv | exists=1 | rows=2
-2026-11-28T13:51:29.603585+00:00 | INFO | INPUT | file=docs\win\soccer\05_final_scores\reports\seriea\total_35\seriea_total_35_by_model_prob.csv | exists=1 | rows=1
-2026-11-28T13:51:29.610361+00:00 | INFO | INPUT | file=docs\win\soccer\05_final_scores\reports\seriea\total_35\seriea_total_35_by_model_prob_over_under_summary.csv | exists=1 | rows=1
-2026-11-28T13:51:29.619703+00:00 | INFO | INPUT | file=docs\win\soccer\05_final_scores\bundesliga_market_tally.csv | exists=1 | rows=3
-2026-11-28T13:51:29.634900+00:00 | INFO | INPUT | file=docs\win\soccer\05_final_scores\reports\bundesliga\match_odds\bundesliga_match_odds_by_ev.csv | exists=1 | rows=1
-2026-11-28T13:51:29.641309+00:00 | INFO | INPUT | file=docs\win\soccer\05_final_scores\reports\bundesliga\match_odds\bundesliga_match_odds_by_ev_home_draw_away_summary.csv | exists=1 | rows=2
-2026-11-28T13:51:29.644308+00:00 | INFO | INPUT | file=docs\win\soccer\05_final_scores\reports\bundesliga\match_odds\bundesliga_match_odds_by_kelly.csv | exists=1 | rows=1
-2026-11-28T13:51:29.645309+00:00 | INFO | INPUT | file=docs\win\soccer\05_final_scores\reports\bundesliga\match_odds\bundesliga_match_odds_by_kelly_home_draw_away_summary.csv | exists=1 | rows=2
-2026-11-28T13:51:29.647310+00:00 | INFO | INPUT | file=docs\win\soccer\05_final_scores\reports\bundesliga\match_odds\bundesliga_match_odds_by_month.csv | exists=1 | rows=2
-2026-11-28T13:51:29.653345+00:00 | INFO | INPUT | file=docs\win\soccer\05_final_scores\reports\bundesliga\match_odds\bundesliga_match_odds_by_month_home_draw_away_summary.csv | exists=1 | rows=2
-2026-11-28T13:51:29.659315+00:00 | INFO | INPUT | file=docs\win\soccer\05_final_scores\reports\bundesliga\match_odds\bundesliga_match_odds_by_odds.csv | exists=1 | rows=2
-2026-11-28T13:51:29.659315+00:00 | INFO | INPUT | file=docs\win\soccer\05_final_scores\reports\bundesliga\match_odds\bundesliga_match_odds_by_odds_home_draw_away_summary.csv | exists=1 | rows=2
-2026-11-28T13:51:29.667818+00:00 | INFO | INPUT | file=docs\win\soccer\05_final_scores\reports\bundesliga\match_odds\bundesliga_match_odds_by_model_prob.csv | exists=1 | rows=2
-2026-11-28T13:51:29.673156+00:00 | INFO | INPUT | file=docs\win\soccer\05_final_scores\reports\bundesliga\match_odds\bundesliga_match_odds_by_model_prob_home_draw_away_summary.csv | exists=1 | rows=2
-2026-11-28T13:51:29.677031+00:00 | INFO | INPUT | file=docs\win\soccer\05_final_scores\reports\bundesliga\match_odds\bundesliga_match_odds_by_win_prob.csv | exists=1 | rows=2
-2026-11-28T13:51:29.677031+00:00 | INFO | INPUT | file=docs\win\soccer\05_final_scores\reports\bundesliga\match_odds\bundesliga_match_odds_by_win_prob_home_draw_away_summary.csv | exists=1 | rows=2
-2026-11-28T13:51:29.677031+00:00 | INFO | INPUT | file=docs\win\soccer\05_final_scores\reports\bundesliga\btts\bundesliga_btts_by_ev.csv | exists=0 | rows=0
-2026-11-28T13:51:29.677031+00:00 | INFO | Optional dashboard input missing: docs\win\soccer\05_final_scores\reports\bundesliga\btts\bundesliga_btts_by_ev.csv
-2026-11-28T13:51:29.677031+00:00 | INFO | INPUT | file=docs\win\soccer\05_final_scores\reports\bundesliga\btts\bundesliga_btts_by_ev_yes_no_summary.csv | exists=0 | rows=0
-2026-11-28T13:51:29.677031+00:00 | INFO | Optional dashboard input missing: docs\win\soccer\05_final_scores\reports\bundesliga\btts\bundesliga_btts_by_ev_yes_no_summary.csv
-2026-11-28T13:51:29.677031+00:00 | INFO | INPUT | file=docs\win\soccer\05_final_scores\reports\bundesliga\btts\bundesliga_btts_by_kelly.csv | exists=0 | rows=0
-2026-11-28T13:51:29.677031+00:00 | INFO | Optional dashboard input missing: docs\win\soccer\05_final_scores\reports\bundesliga\btts\bundesliga_btts_by_kelly.csv
-2026-11-28T13:51:29.677031+00:00 | INFO | INPUT | file=docs\win\soccer\05_final_scores\reports\bundesliga\btts\bundesliga_btts_by_kelly_yes_no_summary.csv | exists=0 | rows=0
-2026-11-28T13:51:29.677031+00:00 | INFO | Optional dashboard input missing: docs\win\soccer\05_final_scores\reports\bundesliga\btts\bundesliga_btts_by_kelly_yes_no_summary.csv
-2026-11-28T13:51:29.677031+00:00 | INFO | INPUT | file=docs\win\soccer\05_final_scores\reports\bundesliga\btts\bundesliga_btts_by_month.csv | exists=0 | rows=0
-2026-11-28T13:51:29.677031+00:00 | INFO | Optional dashboard input missing: docs\win\soccer\05_final_scores\reports\bundesliga\btts\bundesliga_btts_by_month.csv
-2026-11-28T13:51:29.677031+00:00 | INFO | INPUT | file=docs\win\soccer\05_final_scores\reports\bundesliga\btts\bundesliga_btts_by_month_yes_no_summary.csv | exists=0 | rows=0
-2026-11-28T13:51:29.677031+00:00 | INFO | Optional dashboard input missing: docs\win\soccer\05_final_scores\reports\bundesliga\btts\bundesliga_btts_by_month_yes_no_summary.csv
-2026-11-28T13:51:29.677031+00:00 | INFO | INPUT | file=docs\win\soccer\05_final_scores\reports\bundesliga\btts\bundesliga_btts_by_odds.csv | exists=0 | rows=0
-2026-11-28T13:51:29.677031+00:00 | INFO | Optional dashboard input missing: docs\win\soccer\05_final_scores\reports\bundesliga\btts\bundesliga_btts_by_odds.csv
-2026-11-28T13:51:29.677031+00:00 | INFO | INPUT | file=docs\win\soccer\05_final_scores\reports\bundesliga\btts\bundesliga_btts_by_odds_yes_no_summary.csv | exists=0 | rows=0
-2026-11-28T13:51:29.677031+00:00 | INFO | Optional dashboard input missing: docs\win\soccer\05_final_scores\reports\bundesliga\btts\bundesliga_btts_by_odds_yes_no_summary.csv
-2026-11-28T13:51:29.677031+00:00 | INFO | INPUT | file=docs\win\soccer\05_final_scores\reports\bundesliga\btts\bundesliga_btts_by_model_prob.csv | exists=0 | rows=0
-2026-11-28T13:51:29.677031+00:00 | INFO | Optional dashboard input missing: docs\win\soccer\05_final_scores\reports\bundesliga\btts\bundesliga_btts_by_model_prob.csv
-2026-11-28T13:51:29.677031+00:00 | INFO | INPUT | file=docs\win\soccer\05_final_scores\reports\bundesliga\btts\bundesliga_btts_by_model_prob_yes_no_summary.csv | exists=0 | rows=0
-2026-11-28T13:51:29.677031+00:00 | INFO | Optional dashboard input missing: docs\win\soccer\05_final_scores\reports\bundesliga\btts\bundesliga_btts_by_model_prob_yes_no_summary.csv
-2026-11-28T13:51:29.690556+00:00 | INFO | INPUT | file=docs\win\soccer\05_final_scores\reports\bundesliga\total_25\bundesliga_total_25_by_ev.csv | exists=1 | rows=1
-2026-11-28T13:51:29.691630+00:00 | INFO | INPUT | file=docs\win\soccer\05_final_scores\reports\bundesliga\total_25\bundesliga_total_25_by_ev_over_under_summary.csv | exists=1 | rows=1
-2026-11-28T13:51:29.698626+00:00 | INFO | INPUT | file=docs\win\soccer\05_final_scores\reports\bundesliga\total_25\bundesliga_total_25_by_kelly.csv | exists=1 | rows=1
-2026-11-28T13:51:29.705238+00:00 | INFO | INPUT | file=docs\win\soccer\05_final_scores\reports\bundesliga\total_25\bundesliga_total_25_by_kelly_over_under_summary.csv | exists=1 | rows=1
-2026-11-28T13:51:29.711238+00:00 | INFO | INPUT | file=docs\win\soccer\05_final_scores\reports\bundesliga\total_25\bundesliga_total_25_by_month.csv | exists=1 | rows=1
-2026-11-28T13:51:29.713237+00:00 | INFO | INPUT | file=docs\win\soccer\05_final_scores\reports\bundesliga\total_25\bundesliga_total_25_by_month_over_under_summary.csv | exists=1 | rows=1
-2026-11-28T13:51:29.718177+00:00 | INFO | INPUT | file=docs\win\soccer\05_final_scores\reports\bundesliga\total_25\bundesliga_total_25_by_odds.csv | exists=1 | rows=1
-2026-11-28T13:51:29.718177+00:00 | INFO | INPUT | file=docs\win\soccer\05_final_scores\reports\bundesliga\total_25\bundesliga_total_25_by_odds_over_under_summary.csv | exists=1 | rows=1
-2026-11-28T13:51:29.725945+00:00 | INFO | INPUT | file=docs\win\soccer\05_final_scores\reports\bundesliga\total_25\bundesliga_total_25_by_model_prob.csv | exists=1 | rows=1
-2026-11-28T13:51:29.732223+00:00 | INFO | INPUT | file=docs\win\soccer\05_final_scores\reports\bundesliga\total_25\bundesliga_total_25_by_model_prob_over_under_summary.csv | exists=1 | rows=1
-2026-11-28T13:51:29.732223+00:00 | INFO | INPUT | file=docs\win\soccer\05_final_scores\reports\bundesliga\total_35\bundesliga_total_35_by_ev.csv | exists=0 | rows=0
-2026-11-28T13:51:29.734208+00:00 | INFO | Optional dashboard input missing: docs\win\soccer\05_final_scores\reports\bundesliga\total_35\bundesliga_total_35_by_ev.csv
-2026-11-28T13:51:29.734208+00:00 | INFO | INPUT | file=docs\win\soccer\05_final_scores\reports\bundesliga\total_35\bundesliga_total_35_by_ev_over_under_summary.csv | exists=0 | rows=0
-2026-11-28T13:51:29.734208+00:00 | INFO | Optional dashboard input missing: docs\win\soccer\05_final_scores\reports\bundesliga\total_35\bundesliga_total_35_by_ev_over_under_summary.csv
-2026-11-28T13:51:29.734208+00:00 | INFO | INPUT | file=docs\win\soccer\05_final_scores\reports\bundesliga\total_35\bundesliga_total_35_by_kelly.csv | exists=0 | rows=0
-2026-11-28T13:51:29.734208+00:00 | INFO | Optional dashboard input missing: docs\win\soccer\05_final_scores\reports\bundesliga\total_35\bundesliga_total_35_by_kelly.csv
-2026-11-28T13:51:29.734208+00:00 | INFO | INPUT | file=docs\win\soccer\05_final_scores\reports\bundesliga\total_35\bundesliga_total_35_by_kelly_over_under_summary.csv | exists=0 | rows=0
-2026-11-28T13:51:29.734208+00:00 | INFO | Optional dashboard input missing: docs\win\soccer\05_final_scores\reports\bundesliga\total_35\bundesliga_total_35_by_kelly_over_under_summary.csv
-2026-11-28T13:51:29.734208+00:00 | INFO | INPUT | file=docs\win\soccer\05_final_scores\reports\bundesliga\total_35\bundesliga_total_35_by_month.csv | exists=0 | rows=0
-2026-11-28T13:51:29.734208+00:00 | INFO | Optional dashboard input missing: docs\win\soccer\05_final_scores\reports\bundesliga\total_35\bundesliga_total_35_by_month.csv
-2026-11-28T13:51:29.734208+00:00 | INFO | INPUT | file=docs\win\soccer\05_final_scores\reports\bundesliga\total_35\bundesliga_total_35_by_month_over_under_summary.csv | exists=0 | rows=0
-2026-11-28T13:51:29.734208+00:00 | INFO | Optional dashboard input missing: docs\win\soccer\05_final_scores\reports\bundesliga\total_35\bundesliga_total_35_by_month_over_under_summary.csv
-2026-11-28T13:51:29.736214+00:00 | INFO | INPUT | file=docs\win\soccer\05_final_scores\reports\bundesliga\total_35\bundesliga_total_35_by_odds.csv | exists=0 | rows=0
-2026-11-28T13:51:29.736214+00:00 | INFO | Optional dashboard input missing: docs\win\soccer\05_final_scores\reports\bundesliga\total_35\bundesliga_total_35_by_odds.csv
-2026-11-28T13:51:29.736214+00:00 | INFO | INPUT | file=docs\win\soccer\05_final_scores\reports\bundesliga\total_35\bundesliga_total_35_by_odds_over_under_summary.csv | exists=0 | rows=0
-2026-11-28T13:51:29.736214+00:00 | INFO | Optional dashboard input missing: docs\win\soccer\05_final_scores\reports\bundesliga\total_35\bundesliga_total_35_by_odds_over_under_summary.csv
-2026-11-28T13:51:29.736214+00:00 | INFO | INPUT | file=docs\win\soccer\05_final_scores\reports\bundesliga\total_35\bundesliga_total_35_by_model_prob.csv | exists=0 | rows=0
-2026-11-28T13:51:29.736214+00:00 | INFO | Optional dashboard input missing: docs\win\soccer\05_final_scores\reports\bundesliga\total_35\bundesliga_total_35_by_model_prob.csv
-2026-11-28T13:51:29.736214+00:00 | INFO | INPUT | file=docs\win\soccer\05_final_scores\reports\bundesliga\total_35\bundesliga_total_35_by_model_prob_over_under_summary.csv | exists=0 | rows=0
-2026-11-28T13:51:29.736214+00:00 | INFO | Optional dashboard input missing: docs\win\soccer\05_final_scores\reports\bundesliga\total_35\bundesliga_total_35_by_model_prob_over_under_summary.csv
-2026-11-28T13:51:29.741745+00:00 | INFO | INPUT | file=docs\win\soccer\05_final_scores\all_soccer_market_tally.csv | exists=1 | rows=9
-2026-11-28T13:51:29.764401+00:00 | INFO | OUTPUT | file=frontend\data\dashboards\soccer.json | rows=1 | bytes=294434
-2026-11-28T13:51:29.764401+00:00 | INFO | dashboard data -> frontend\data\dashboards\soccer.json
+START_TIMESTAMP_UTC: 2026-11-28T15:01:42.941938+00:00
+2026-11-28T15:01:42.957960+00:00 | INFO | INPUT | file=docs\win\soccer\05_final_scores\model_evaluation\SOCCER_model_metrics.csv | exists=1 | rows=14
+2026-11-28T15:01:42.966834+00:00 | INFO | INPUT | file=docs\win\soccer\05_final_scores\model_evaluation\SOCCER_model_calibration.csv | exists=1 | rows=420
+2026-11-28T15:01:42.966834+00:00 | INFO | INPUT | file=docs\win\soccer\05_final_scores\model_evaluation\SOCCER_xg_metrics.csv | exists=1 | rows=7
+2026-11-28T15:01:42.979839+00:00 | INFO | INPUT | file=docs\win\soccer\05_final_scores\mls_market_tally.csv | exists=1 | rows=6
+2026-11-28T15:01:42.984987+00:00 | INFO | INPUT | file=docs\win\soccer\05_final_scores\reports\mls\match_odds\mls_match_odds_by_ev.csv | exists=0 | rows=0
+2026-11-28T15:01:42.984987+00:00 | INFO | Optional dashboard input missing: docs\win\soccer\05_final_scores\reports\mls\match_odds\mls_match_odds_by_ev.csv
+2026-11-28T15:01:42.984987+00:00 | INFO | INPUT | file=docs\win\soccer\05_final_scores\reports\mls\match_odds\mls_match_odds_by_ev_home_draw_away_summary.csv | exists=0 | rows=0
+2026-11-28T15:01:42.984987+00:00 | INFO | Optional dashboard input missing: docs\win\soccer\05_final_scores\reports\mls\match_odds\mls_match_odds_by_ev_home_draw_away_summary.csv
+2026-11-28T15:01:42.984987+00:00 | INFO | INPUT | file=docs\win\soccer\05_final_scores\reports\mls\match_odds\mls_match_odds_by_kelly.csv | exists=0 | rows=0
+2026-11-28T15:01:42.984987+00:00 | INFO | Optional dashboard input missing: docs\win\soccer\05_final_scores\reports\mls\match_odds\mls_match_odds_by_kelly.csv
+2026-11-28T15:01:42.984987+00:00 | INFO | INPUT | file=docs\win\soccer\05_final_scores\reports\mls\match_odds\mls_match_odds_by_kelly_home_draw_away_summary.csv | exists=0 | rows=0
+2026-11-28T15:01:42.984987+00:00 | INFO | Optional dashboard input missing: docs\win\soccer\05_final_scores\reports\mls\match_odds\mls_match_odds_by_kelly_home_draw_away_summary.csv
+2026-11-28T15:01:42.984987+00:00 | INFO | INPUT | file=docs\win\soccer\05_final_scores\reports\mls\match_odds\mls_match_odds_by_month.csv | exists=0 | rows=0
+2026-11-28T15:01:42.984987+00:00 | INFO | Optional dashboard input missing: docs\win\soccer\05_final_scores\reports\mls\match_odds\mls_match_odds_by_month.csv
+2026-11-28T15:01:42.993049+00:00 | INFO | INPUT | file=docs\win\soccer\05_final_scores\reports\mls\match_odds\mls_match_odds_by_month_home_draw_away_summary.csv | exists=0 | rows=0
+2026-11-28T15:01:42.993049+00:00 | INFO | Optional dashboard input missing: docs\win\soccer\05_final_scores\reports\mls\match_odds\mls_match_odds_by_month_home_draw_away_summary.csv
+2026-11-28T15:01:42.993765+00:00 | INFO | INPUT | file=docs\win\soccer\05_final_scores\reports\mls\match_odds\mls_match_odds_by_odds.csv | exists=0 | rows=0
+2026-11-28T15:01:42.993765+00:00 | INFO | Optional dashboard input missing: docs\win\soccer\05_final_scores\reports\mls\match_odds\mls_match_odds_by_odds.csv
+2026-11-28T15:01:42.993765+00:00 | INFO | INPUT | file=docs\win\soccer\05_final_scores\reports\mls\match_odds\mls_match_odds_by_odds_home_draw_away_summary.csv | exists=0 | rows=0
+2026-11-28T15:01:42.993765+00:00 | INFO | Optional dashboard input missing: docs\win\soccer\05_final_scores\reports\mls\match_odds\mls_match_odds_by_odds_home_draw_away_summary.csv
+2026-11-28T15:01:42.993765+00:00 | INFO | INPUT | file=docs\win\soccer\05_final_scores\reports\mls\match_odds\mls_match_odds_by_model_prob.csv | exists=0 | rows=0
+2026-11-28T15:01:42.993765+00:00 | INFO | Optional dashboard input missing: docs\win\soccer\05_final_scores\reports\mls\match_odds\mls_match_odds_by_model_prob.csv
+2026-11-28T15:01:42.993765+00:00 | INFO | INPUT | file=docs\win\soccer\05_final_scores\reports\mls\match_odds\mls_match_odds_by_model_prob_home_draw_away_summary.csv | exists=0 | rows=0
+2026-11-28T15:01:42.993765+00:00 | INFO | Optional dashboard input missing: docs\win\soccer\05_final_scores\reports\mls\match_odds\mls_match_odds_by_model_prob_home_draw_away_summary.csv
+2026-11-28T15:01:42.993765+00:00 | INFO | INPUT | file=docs\win\soccer\05_final_scores\reports\mls\match_odds\mls_match_odds_by_win_prob.csv | exists=0 | rows=0
+2026-11-28T15:01:42.993765+00:00 | INFO | Optional dashboard input missing: docs\win\soccer\05_final_scores\reports\mls\match_odds\mls_match_odds_by_win_prob.csv
+2026-11-28T15:01:42.993765+00:00 | INFO | INPUT | file=docs\win\soccer\05_final_scores\reports\mls\match_odds\mls_match_odds_by_win_prob_home_draw_away_summary.csv | exists=0 | rows=0
+2026-11-28T15:01:42.993765+00:00 | INFO | Optional dashboard input missing: docs\win\soccer\05_final_scores\reports\mls\match_odds\mls_match_odds_by_win_prob_home_draw_away_summary.csv
+2026-11-28T15:01:43.000353+00:00 | INFO | INPUT | file=docs\win\soccer\05_final_scores\reports\mls\btts\mls_btts_by_ev.csv | exists=1 | rows=5
+2026-11-28T15:01:43.007464+00:00 | INFO | INPUT | file=docs\win\soccer\05_final_scores\reports\mls\btts\mls_btts_by_ev_yes_no_summary.csv | exists=1 | rows=6
+2026-11-28T15:01:43.007878+00:00 | INFO | INPUT | file=docs\win\soccer\05_final_scores\reports\mls\btts\mls_btts_by_kelly.csv | exists=1 | rows=6
+2026-11-28T15:01:43.021212+00:00 | INFO | INPUT | file=docs\win\soccer\05_final_scores\reports\mls\btts\mls_btts_by_kelly_yes_no_summary.csv | exists=1 | rows=8
+2026-11-28T15:01:43.030306+00:00 | INFO | INPUT | file=docs\win\soccer\05_final_scores\reports\mls\btts\mls_btts_by_month.csv | exists=1 | rows=3
+2026-11-28T15:01:43.034494+00:00 | INFO | INPUT | file=docs\win\soccer\05_final_scores\reports\mls\btts\mls_btts_by_month_yes_no_summary.csv | exists=1 | rows=5
+2026-11-28T15:01:43.046390+00:00 | INFO | INPUT | file=docs\win\soccer\05_final_scores\reports\mls\btts\mls_btts_by_odds.csv | exists=1 | rows=3
+2026-11-28T15:01:43.050398+00:00 | INFO | INPUT | file=docs\win\soccer\05_final_scores\reports\mls\btts\mls_btts_by_odds_yes_no_summary.csv | exists=1 | rows=3
+2026-11-28T15:01:43.061315+00:00 | INFO | INPUT | file=docs\win\soccer\05_final_scores\reports\mls\btts\mls_btts_by_model_prob.csv | exists=1 | rows=4
+2026-11-28T15:01:43.061315+00:00 | INFO | INPUT | file=docs\win\soccer\05_final_scores\reports\mls\btts\mls_btts_by_model_prob_yes_no_summary.csv | exists=1 | rows=4
+2026-11-28T15:01:43.074552+00:00 | INFO | INPUT | file=docs\win\soccer\05_final_scores\reports\mls\total_25\mls_total_25_by_ev.csv | exists=1 | rows=4
+2026-11-28T15:01:43.082617+00:00 | INFO | INPUT | file=docs\win\soccer\05_final_scores\reports\mls\total_25\mls_total_25_by_ev_over_under_summary.csv | exists=1 | rows=4
+2026-11-28T15:01:43.087459+00:00 | INFO | INPUT | file=docs\win\soccer\05_final_scores\reports\mls\total_25\mls_total_25_by_kelly.csv | exists=1 | rows=3
+2026-11-28T15:01:43.087459+00:00 | INFO | INPUT | file=docs\win\soccer\05_final_scores\reports\mls\total_25\mls_total_25_by_kelly_over_under_summary.csv | exists=1 | rows=3
+2026-11-28T15:01:43.101356+00:00 | INFO | INPUT | file=docs\win\soccer\05_final_scores\reports\mls\total_25\mls_total_25_by_month.csv | exists=1 | rows=3
+2026-11-28T15:01:43.106943+00:00 | INFO | INPUT | file=docs\win\soccer\05_final_scores\reports\mls\total_25\mls_total_25_by_month_over_under_summary.csv | exists=1 | rows=3
+2026-11-28T15:01:43.114143+00:00 | INFO | INPUT | file=docs\win\soccer\05_final_scores\reports\mls\total_25\mls_total_25_by_odds.csv | exists=1 | rows=2
+2026-11-28T15:01:43.114143+00:00 | INFO | INPUT | file=docs\win\soccer\05_final_scores\reports\mls\total_25\mls_total_25_by_odds_over_under_summary.csv | exists=1 | rows=2
+2026-11-28T15:01:43.130484+00:00 | INFO | INPUT | file=docs\win\soccer\05_final_scores\reports\mls\total_25\mls_total_25_by_model_prob.csv | exists=1 | rows=2
+2026-11-28T15:01:43.139744+00:00 | INFO | INPUT | file=docs\win\soccer\05_final_scores\reports\mls\total_25\mls_total_25_by_model_prob_over_under_summary.csv | exists=1 | rows=2
+2026-11-28T15:01:43.140756+00:00 | INFO | INPUT | file=docs\win\soccer\05_final_scores\reports\mls\total_35\mls_total_35_by_ev.csv | exists=1 | rows=5
+2026-11-28T15:01:43.153048+00:00 | INFO | INPUT | file=docs\win\soccer\05_final_scores\reports\mls\total_35\mls_total_35_by_ev_over_under_summary.csv | exists=1 | rows=6
+2026-11-28T15:01:43.155697+00:00 | INFO | INPUT | file=docs\win\soccer\05_final_scores\reports\mls\total_35\mls_total_35_by_kelly.csv | exists=1 | rows=7
+2026-11-28T15:01:43.167402+00:00 | INFO | INPUT | file=docs\win\soccer\05_final_scores\reports\mls\total_35\mls_total_35_by_kelly_over_under_summary.csv | exists=1 | rows=8
+2026-11-28T15:01:43.174400+00:00 | INFO | INPUT | file=docs\win\soccer\05_final_scores\reports\mls\total_35\mls_total_35_by_month.csv | exists=1 | rows=6
+2026-11-28T15:01:43.180404+00:00 | INFO | INPUT | file=docs\win\soccer\05_final_scores\reports\mls\total_35\mls_total_35_by_month_over_under_summary.csv | exists=1 | rows=6
+2026-11-28T15:01:43.188402+00:00 | INFO | INPUT | file=docs\win\soccer\05_final_scores\reports\mls\total_35\mls_total_35_by_odds.csv | exists=1 | rows=4
+2026-11-28T15:01:43.194758+00:00 | INFO | INPUT | file=docs\win\soccer\05_final_scores\reports\mls\total_35\mls_total_35_by_odds_over_under_summary.csv | exists=1 | rows=4
+2026-11-28T15:01:43.201917+00:00 | INFO | INPUT | file=docs\win\soccer\05_final_scores\reports\mls\total_35\mls_total_35_by_model_prob.csv | exists=1 | rows=3
+2026-11-28T15:01:43.207946+00:00 | INFO | INPUT | file=docs\win\soccer\05_final_scores\reports\mls\total_35\mls_total_35_by_model_prob_over_under_summary.csv | exists=1 | rows=3
+2026-11-28T15:01:43.215953+00:00 | INFO | INPUT | file=docs\win\soccer\05_final_scores\epl_market_tally.csv | exists=1 | rows=7
+2026-11-28T15:01:43.228925+00:00 | INFO | INPUT | file=docs\win\soccer\05_final_scores\reports\epl\match_odds\epl_match_odds_by_ev.csv | exists=1 | rows=3
+2026-11-28T15:01:43.233149+00:00 | INFO | INPUT | file=docs\win\soccer\05_final_scores\reports\epl\match_odds\epl_match_odds_by_ev_home_draw_away_summary.csv | exists=1 | rows=4
+2026-11-28T15:01:43.236647+00:00 | INFO | INPUT | file=docs\win\soccer\05_final_scores\reports\epl\match_odds\epl_match_odds_by_kelly.csv | exists=1 | rows=4
+2026-11-28T15:01:43.248342+00:00 | INFO | INPUT | file=docs\win\soccer\05_final_scores\reports\epl\match_odds\epl_match_odds_by_kelly_home_draw_away_summary.csv | exists=1 | rows=5
+2026-11-28T15:01:43.248342+00:00 | INFO | INPUT | file=docs\win\soccer\05_final_scores\reports\epl\match_odds\epl_match_odds_by_month.csv | exists=1 | rows=5
+2026-11-28T15:01:43.259642+00:00 | INFO | INPUT | file=docs\win\soccer\05_final_scores\reports\epl\match_odds\epl_match_odds_by_month_home_draw_away_summary.csv | exists=1 | rows=6
+2026-11-28T15:01:43.266130+00:00 | INFO | INPUT | file=docs\win\soccer\05_final_scores\reports\epl\match_odds\epl_match_odds_by_odds.csv | exists=1 | rows=4
+2026-11-28T15:01:43.266130+00:00 | INFO | INPUT | file=docs\win\soccer\05_final_scores\reports\epl\match_odds\epl_match_odds_by_odds_home_draw_away_summary.csv | exists=1 | rows=5
+2026-11-28T15:01:43.280152+00:00 | INFO | INPUT | file=docs\win\soccer\05_final_scores\reports\epl\match_odds\epl_match_odds_by_model_prob.csv | exists=1 | rows=3
+2026-11-28T15:01:43.284781+00:00 | INFO | INPUT | file=docs\win\soccer\05_final_scores\reports\epl\match_odds\epl_match_odds_by_model_prob_home_draw_away_summary.csv | exists=1 | rows=4
+2026-11-28T15:01:43.284781+00:00 | INFO | INPUT | file=docs\win\soccer\05_final_scores\reports\epl\match_odds\epl_match_odds_by_win_prob.csv | exists=1 | rows=3
+2026-11-28T15:01:43.284781+00:00 | INFO | INPUT | file=docs\win\soccer\05_final_scores\reports\epl\match_odds\epl_match_odds_by_win_prob_home_draw_away_summary.csv | exists=1 | rows=4
+2026-11-28T15:01:43.295336+00:00 | INFO | INPUT | file=docs\win\soccer\05_final_scores\reports\epl\btts\epl_btts_by_ev.csv | exists=1 | rows=2
+2026-11-28T15:01:43.295336+00:00 | INFO | INPUT | file=docs\win\soccer\05_final_scores\reports\epl\btts\epl_btts_by_ev_yes_no_summary.csv | exists=1 | rows=3
+2026-11-28T15:01:43.304131+00:00 | INFO | INPUT | file=docs\win\soccer\05_final_scores\reports\epl\btts\epl_btts_by_kelly.csv | exists=1 | rows=3
+2026-11-28T15:01:43.313222+00:00 | INFO | INPUT | file=docs\win\soccer\05_final_scores\reports\epl\btts\epl_btts_by_kelly_yes_no_summary.csv | exists=1 | rows=4
+2026-11-28T15:01:43.313222+00:00 | INFO | INPUT | file=docs\win\soccer\05_final_scores\reports\epl\btts\epl_btts_by_month.csv | exists=1 | rows=2
+2026-11-28T15:01:43.327153+00:00 | INFO | INPUT | file=docs\win\soccer\05_final_scores\reports\epl\btts\epl_btts_by_month_yes_no_summary.csv | exists=1 | rows=4
+2026-11-28T15:01:43.332559+00:00 | INFO | INPUT | file=docs\win\soccer\05_final_scores\reports\epl\btts\epl_btts_by_odds.csv | exists=1 | rows=3
+2026-11-28T15:01:43.332559+00:00 | INFO | INPUT | file=docs\win\soccer\05_final_scores\reports\epl\btts\epl_btts_by_odds_yes_no_summary.csv | exists=1 | rows=3
+2026-11-28T15:01:43.343168+00:00 | INFO | INPUT | file=docs\win\soccer\05_final_scores\reports\epl\btts\epl_btts_by_model_prob.csv | exists=1 | rows=3
+2026-11-28T15:01:43.352269+00:00 | INFO | INPUT | file=docs\win\soccer\05_final_scores\reports\epl\btts\epl_btts_by_model_prob_yes_no_summary.csv | exists=1 | rows=3
+2026-11-28T15:01:43.352269+00:00 | INFO | INPUT | file=docs\win\soccer\05_final_scores\reports\epl\total_25\epl_total_25_by_ev.csv | exists=1 | rows=3
+2026-11-28T15:01:43.361007+00:00 | INFO | INPUT | file=docs\win\soccer\05_final_scores\reports\epl\total_25\epl_total_25_by_ev_over_under_summary.csv | exists=1 | rows=3
+2026-11-28T15:01:43.361007+00:00 | INFO | INPUT | file=docs\win\soccer\05_final_scores\reports\epl\total_25\epl_total_25_by_kelly.csv | exists=1 | rows=3
+2026-11-28T15:01:43.374660+00:00 | INFO | INPUT | file=docs\win\soccer\05_final_scores\reports\epl\total_25\epl_total_25_by_kelly_over_under_summary.csv | exists=1 | rows=3
+2026-11-28T15:01:43.374660+00:00 | INFO | INPUT | file=docs\win\soccer\05_final_scores\reports\epl\total_25\epl_total_25_by_month.csv | exists=1 | rows=5
+2026-11-28T15:01:43.386922+00:00 | INFO | INPUT | file=docs\win\soccer\05_final_scores\reports\epl\total_25\epl_total_25_by_month_over_under_summary.csv | exists=1 | rows=5
+2026-11-28T15:01:43.392682+00:00 | INFO | INPUT | file=docs\win\soccer\05_final_scores\reports\epl\total_25\epl_total_25_by_odds.csv | exists=1 | rows=1
+2026-11-28T15:01:43.392682+00:00 | INFO | INPUT | file=docs\win\soccer\05_final_scores\reports\epl\total_25\epl_total_25_by_odds_over_under_summary.csv | exists=1 | rows=2
+2026-11-28T15:01:43.408317+00:00 | INFO | INPUT | file=docs\win\soccer\05_final_scores\reports\epl\total_25\epl_total_25_by_model_prob.csv | exists=1 | rows=2
+2026-11-28T15:01:43.408317+00:00 | INFO | INPUT | file=docs\win\soccer\05_final_scores\reports\epl\total_25\epl_total_25_by_model_prob_over_under_summary.csv | exists=1 | rows=2
+2026-11-28T15:01:43.422249+00:00 | INFO | INPUT | file=docs\win\soccer\05_final_scores\reports\epl\total_35\epl_total_35_by_ev.csv | exists=1 | rows=4
+2026-11-28T15:01:43.430537+00:00 | INFO | INPUT | file=docs\win\soccer\05_final_scores\reports\epl\total_35\epl_total_35_by_ev_over_under_summary.csv | exists=1 | rows=4
+2026-11-28T15:01:43.437534+00:00 | INFO | INPUT | file=docs\win\soccer\05_final_scores\reports\epl\total_35\epl_total_35_by_kelly.csv | exists=1 | rows=4
+2026-11-28T15:01:43.437534+00:00 | INFO | INPUT | file=docs\win\soccer\05_final_scores\reports\epl\total_35\epl_total_35_by_kelly_over_under_summary.csv | exists=1 | rows=4
+2026-11-28T15:01:43.446904+00:00 | INFO | INPUT | file=docs\win\soccer\05_final_scores\reports\epl\total_35\epl_total_35_by_month.csv | exists=1 | rows=4
+2026-11-28T15:01:43.455275+00:00 | INFO | INPUT | file=docs\win\soccer\05_final_scores\reports\epl\total_35\epl_total_35_by_month_over_under_summary.csv | exists=1 | rows=4
+2026-11-28T15:01:43.462394+00:00 | INFO | INPUT | file=docs\win\soccer\05_final_scores\reports\epl\total_35\epl_total_35_by_odds.csv | exists=1 | rows=2
+2026-11-28T15:01:43.469342+00:00 | INFO | INPUT | file=docs\win\soccer\05_final_scores\reports\epl\total_35\epl_total_35_by_odds_over_under_summary.csv | exists=1 | rows=2
+2026-11-28T15:01:43.471570+00:00 | INFO | INPUT | file=docs\win\soccer\05_final_scores\reports\epl\total_35\epl_total_35_by_model_prob.csv | exists=1 | rows=3
+2026-11-28T15:01:43.480656+00:00 | INFO | INPUT | file=docs\win\soccer\05_final_scores\reports\epl\total_35\epl_total_35_by_model_prob_over_under_summary.csv | exists=1 | rows=3
+2026-11-28T15:01:43.486687+00:00 | INFO | INPUT | file=docs\win\soccer\05_final_scores\laliga_market_tally.csv | exists=1 | rows=4
+2026-11-28T15:01:43.500330+00:00 | INFO | INPUT | file=docs\win\soccer\05_final_scores\reports\laliga\match_odds\laliga_match_odds_by_ev.csv | exists=1 | rows=1
+2026-11-28T15:01:43.500330+00:00 | INFO | INPUT | file=docs\win\soccer\05_final_scores\reports\laliga\match_odds\laliga_match_odds_by_ev_home_draw_away_summary.csv | exists=1 | rows=1
+2026-11-28T15:01:43.507428+00:00 | INFO | INPUT | file=docs\win\soccer\05_final_scores\reports\laliga\match_odds\laliga_match_odds_by_kelly.csv | exists=1 | rows=1
+2026-11-28T15:01:43.516224+00:00 | INFO | INPUT | file=docs\win\soccer\05_final_scores\reports\laliga\match_odds\laliga_match_odds_by_kelly_home_draw_away_summary.csv | exists=1 | rows=1
+2026-11-28T15:01:43.522801+00:00 | INFO | INPUT | file=docs\win\soccer\05_final_scores\reports\laliga\match_odds\laliga_match_odds_by_month.csv | exists=1 | rows=1
+2026-11-28T15:01:43.530405+00:00 | INFO | INPUT | file=docs\win\soccer\05_final_scores\reports\laliga\match_odds\laliga_match_odds_by_month_home_draw_away_summary.csv | exists=1 | rows=1
+2026-11-28T15:01:43.532152+00:00 | INFO | INPUT | file=docs\win\soccer\05_final_scores\reports\laliga\match_odds\laliga_match_odds_by_odds.csv | exists=1 | rows=1
+2026-11-28T15:01:43.541164+00:00 | INFO | INPUT | file=docs\win\soccer\05_final_scores\reports\laliga\match_odds\laliga_match_odds_by_odds_home_draw_away_summary.csv | exists=1 | rows=1
+2026-11-28T15:01:43.548250+00:00 | INFO | INPUT | file=docs\win\soccer\05_final_scores\reports\laliga\match_odds\laliga_match_odds_by_model_prob.csv | exists=1 | rows=1
+2026-11-28T15:01:43.555253+00:00 | INFO | INPUT | file=docs\win\soccer\05_final_scores\reports\laliga\match_odds\laliga_match_odds_by_model_prob_home_draw_away_summary.csv | exists=1 | rows=1
+2026-11-28T15:01:43.555253+00:00 | INFO | INPUT | file=docs\win\soccer\05_final_scores\reports\laliga\match_odds\laliga_match_odds_by_win_prob.csv | exists=1 | rows=1
+2026-11-28T15:01:43.555253+00:00 | INFO | INPUT | file=docs\win\soccer\05_final_scores\reports\laliga\match_odds\laliga_match_odds_by_win_prob_home_draw_away_summary.csv | exists=1 | rows=1
+2026-11-28T15:01:43.564115+00:00 | INFO | INPUT | file=docs\win\soccer\05_final_scores\reports\laliga\btts\laliga_btts_by_ev.csv | exists=1 | rows=6
+2026-11-28T15:01:43.564115+00:00 | INFO | INPUT | file=docs\win\soccer\05_final_scores\reports\laliga\btts\laliga_btts_by_ev_yes_no_summary.csv | exists=1 | rows=6
+2026-11-28T15:01:43.572187+00:00 | INFO | INPUT | file=docs\win\soccer\05_final_scores\reports\laliga\btts\laliga_btts_by_kelly.csv | exists=1 | rows=7
+2026-11-28T15:01:43.581807+00:00 | INFO | INPUT | file=docs\win\soccer\05_final_scores\reports\laliga\btts\laliga_btts_by_kelly_yes_no_summary.csv | exists=1 | rows=7
+2026-11-28T15:01:43.587930+00:00 | INFO | INPUT | file=docs\win\soccer\05_final_scores\reports\laliga\btts\laliga_btts_by_month.csv | exists=1 | rows=3
+2026-11-28T15:01:43.595568+00:00 | INFO | INPUT | file=docs\win\soccer\05_final_scores\reports\laliga\btts\laliga_btts_by_month_yes_no_summary.csv | exists=1 | rows=3
+2026-11-28T15:01:43.598195+00:00 | INFO | INPUT | file=docs\win\soccer\05_final_scores\reports\laliga\btts\laliga_btts_by_odds.csv | exists=1 | rows=3
+2026-11-28T15:01:43.607769+00:00 | INFO | INPUT | file=docs\win\soccer\05_final_scores\reports\laliga\btts\laliga_btts_by_odds_yes_no_summary.csv | exists=1 | rows=3
+2026-11-28T15:01:43.613640+00:00 | INFO | INPUT | file=docs\win\soccer\05_final_scores\reports\laliga\btts\laliga_btts_by_model_prob.csv | exists=1 | rows=3
+2026-11-28T15:01:43.613640+00:00 | INFO | INPUT | file=docs\win\soccer\05_final_scores\reports\laliga\btts\laliga_btts_by_model_prob_yes_no_summary.csv | exists=1 | rows=3
+2026-11-28T15:01:43.627687+00:00 | INFO | INPUT | file=docs\win\soccer\05_final_scores\reports\laliga\total_25\laliga_total_25_by_ev.csv | exists=1 | rows=2
+2026-11-28T15:01:43.632272+00:00 | INFO | INPUT | file=docs\win\soccer\05_final_scores\reports\laliga\total_25\laliga_total_25_by_ev_over_under_summary.csv | exists=1 | rows=2
+2026-11-28T15:01:43.638376+00:00 | INFO | INPUT | file=docs\win\soccer\05_final_scores\reports\laliga\total_25\laliga_total_25_by_kelly.csv | exists=1 | rows=2
+2026-11-28T15:01:43.645566+00:00 | INFO | INPUT | file=docs\win\soccer\05_final_scores\reports\laliga\total_25\laliga_total_25_by_kelly_over_under_summary.csv | exists=1 | rows=2
+2026-11-28T15:01:43.652608+00:00 | INFO | INPUT | file=docs\win\soccer\05_final_scores\reports\laliga\total_25\laliga_total_25_by_month.csv | exists=1 | rows=4
+2026-11-28T15:01:43.658505+00:00 | INFO | INPUT | file=docs\win\soccer\05_final_scores\reports\laliga\total_25\laliga_total_25_by_month_over_under_summary.csv | exists=1 | rows=4
+2026-11-28T15:01:43.665231+00:00 | INFO | INPUT | file=docs\win\soccer\05_final_scores\reports\laliga\total_25\laliga_total_25_by_odds.csv | exists=1 | rows=3
+2026-11-28T15:01:43.672107+00:00 | INFO | INPUT | file=docs\win\soccer\05_final_scores\reports\laliga\total_25\laliga_total_25_by_odds_over_under_summary.csv | exists=1 | rows=3
+2026-11-28T15:01:43.679632+00:00 | INFO | INPUT | file=docs\win\soccer\05_final_scores\reports\laliga\total_25\laliga_total_25_by_model_prob.csv | exists=1 | rows=3
+2026-11-28T15:01:43.686914+00:00 | INFO | INPUT | file=docs\win\soccer\05_final_scores\reports\laliga\total_25\laliga_total_25_by_model_prob_over_under_summary.csv | exists=1 | rows=3
+2026-11-28T15:01:43.694099+00:00 | INFO | INPUT | file=docs\win\soccer\05_final_scores\reports\laliga\total_35\laliga_total_35_by_ev.csv | exists=1 | rows=2
+2026-11-28T15:01:43.700277+00:00 | INFO | INPUT | file=docs\win\soccer\05_final_scores\reports\laliga\total_35\laliga_total_35_by_ev_over_under_summary.csv | exists=1 | rows=2
+2026-11-28T15:01:43.707169+00:00 | INFO | INPUT | file=docs\win\soccer\05_final_scores\reports\laliga\total_35\laliga_total_35_by_kelly.csv | exists=1 | rows=2
+2026-11-28T15:01:43.714393+00:00 | INFO | INPUT | file=docs\win\soccer\05_final_scores\reports\laliga\total_35\laliga_total_35_by_kelly_over_under_summary.csv | exists=1 | rows=2
+2026-11-28T15:01:43.716562+00:00 | INFO | INPUT | file=docs\win\soccer\05_final_scores\reports\laliga\total_35\laliga_total_35_by_month.csv | exists=1 | rows=2
+2026-11-28T15:01:43.723235+00:00 | INFO | INPUT | file=docs\win\soccer\05_final_scores\reports\laliga\total_35\laliga_total_35_by_month_over_under_summary.csv | exists=1 | rows=2
+2026-11-28T15:01:43.730393+00:00 | INFO | INPUT | file=docs\win\soccer\05_final_scores\reports\laliga\total_35\laliga_total_35_by_odds.csv | exists=1 | rows=2
+2026-11-28T15:01:43.730393+00:00 | INFO | INPUT | file=docs\win\soccer\05_final_scores\reports\laliga\total_35\laliga_total_35_by_odds_over_under_summary.csv | exists=1 | rows=2
+2026-11-28T15:01:43.741205+00:00 | INFO | INPUT | file=docs\win\soccer\05_final_scores\reports\laliga\total_35\laliga_total_35_by_model_prob.csv | exists=1 | rows=1
+2026-11-28T15:01:43.741205+00:00 | INFO | INPUT | file=docs\win\soccer\05_final_scores\reports\laliga\total_35\laliga_total_35_by_model_prob_over_under_summary.csv | exists=1 | rows=1
+2026-11-28T15:01:43.754391+00:00 | INFO | INPUT | file=docs\win\soccer\05_final_scores\ligue1_market_tally.csv | exists=1 | rows=5
+2026-11-28T15:01:43.768227+00:00 | INFO | INPUT | file=docs\win\soccer\05_final_scores\reports\ligue1\match_odds\ligue1_match_odds_by_ev.csv | exists=1 | rows=4
+2026-11-28T15:01:43.768227+00:00 | INFO | INPUT | file=docs\win\soccer\05_final_scores\reports\ligue1\match_odds\ligue1_match_odds_by_ev_home_draw_away_summary.csv | exists=1 | rows=5
+2026-11-28T15:01:43.780757+00:00 | INFO | INPUT | file=docs\win\soccer\05_final_scores\reports\ligue1\match_odds\ligue1_match_odds_by_kelly.csv | exists=1 | rows=5
+2026-11-28T15:01:43.780757+00:00 | INFO | INPUT | file=docs\win\soccer\05_final_scores\reports\ligue1\match_odds\ligue1_match_odds_by_kelly_home_draw_away_summary.csv | exists=1 | rows=6
+2026-11-28T15:01:43.794454+00:00 | INFO | INPUT | file=docs\win\soccer\05_final_scores\reports\ligue1\match_odds\ligue1_match_odds_by_month.csv | exists=1 | rows=5
+2026-11-28T15:01:43.802815+00:00 | INFO | INPUT | file=docs\win\soccer\05_final_scores\reports\ligue1\match_odds\ligue1_match_odds_by_month_home_draw_away_summary.csv | exists=1 | rows=5
+2026-11-28T15:01:43.807739+00:00 | INFO | INPUT | file=docs\win\soccer\05_final_scores\reports\ligue1\match_odds\ligue1_match_odds_by_odds.csv | exists=1 | rows=3
+2026-11-28T15:01:43.807739+00:00 | INFO | INPUT | file=docs\win\soccer\05_final_scores\reports\ligue1\match_odds\ligue1_match_odds_by_odds_home_draw_away_summary.csv | exists=1 | rows=4
+2026-11-28T15:01:43.820715+00:00 | INFO | INPUT | file=docs\win\soccer\05_final_scores\reports\ligue1\match_odds\ligue1_match_odds_by_model_prob.csv | exists=1 | rows=4
+2026-11-28T15:01:43.830365+00:00 | INFO | INPUT | file=docs\win\soccer\05_final_scores\reports\ligue1\match_odds\ligue1_match_odds_by_model_prob_home_draw_away_summary.csv | exists=1 | rows=5
+2026-11-28T15:01:43.834094+00:00 | INFO | INPUT | file=docs\win\soccer\05_final_scores\reports\ligue1\match_odds\ligue1_match_odds_by_win_prob.csv | exists=1 | rows=4
+2026-11-28T15:01:43.835964+00:00 | INFO | INPUT | file=docs\win\soccer\05_final_scores\reports\ligue1\match_odds\ligue1_match_odds_by_win_prob_home_draw_away_summary.csv | exists=1 | rows=5
+2026-11-28T15:01:43.841708+00:00 | INFO | INPUT | file=docs\win\soccer\05_final_scores\reports\ligue1\btts\ligue1_btts_by_ev.csv | exists=1 | rows=3
+2026-11-28T15:01:43.849427+00:00 | INFO | INPUT | file=docs\win\soccer\05_final_scores\reports\ligue1\btts\ligue1_btts_by_ev_yes_no_summary.csv | exists=1 | rows=3
+2026-11-28T15:01:43.856425+00:00 | INFO | INPUT | file=docs\win\soccer\05_final_scores\reports\ligue1\btts\ligue1_btts_by_kelly.csv | exists=1 | rows=2
+2026-11-28T15:01:43.862430+00:00 | INFO | INPUT | file=docs\win\soccer\05_final_scores\reports\ligue1\btts\ligue1_btts_by_kelly_yes_no_summary.csv | exists=1 | rows=2
+2026-11-28T15:01:43.870426+00:00 | INFO | INPUT | file=docs\win\soccer\05_final_scores\reports\ligue1\btts\ligue1_btts_by_month.csv | exists=1 | rows=2
+2026-11-28T15:01:43.876183+00:00 | INFO | INPUT | file=docs\win\soccer\05_final_scores\reports\ligue1\btts\ligue1_btts_by_month_yes_no_summary.csv | exists=1 | rows=3
+2026-11-28T15:01:43.882182+00:00 | INFO | INPUT | file=docs\win\soccer\05_final_scores\reports\ligue1\btts\ligue1_btts_by_odds.csv | exists=1 | rows=1
+2026-11-28T15:01:43.886183+00:00 | INFO | INPUT | file=docs\win\soccer\05_final_scores\reports\ligue1\btts\ligue1_btts_by_odds_yes_no_summary.csv | exists=1 | rows=2
+2026-11-28T15:01:43.886183+00:00 | INFO | INPUT | file=docs\win\soccer\05_final_scores\reports\ligue1\btts\ligue1_btts_by_model_prob.csv | exists=1 | rows=1
+2026-11-28T15:01:43.886183+00:00 | INFO | INPUT | file=docs\win\soccer\05_final_scores\reports\ligue1\btts\ligue1_btts_by_model_prob_yes_no_summary.csv | exists=1 | rows=2
+2026-11-28T15:01:43.886183+00:00 | INFO | INPUT | file=docs\win\soccer\05_final_scores\reports\ligue1\total_25\ligue1_total_25_by_ev.csv | exists=0 | rows=0
+2026-11-28T15:01:43.886183+00:00 | INFO | Optional dashboard input missing: docs\win\soccer\05_final_scores\reports\ligue1\total_25\ligue1_total_25_by_ev.csv
+2026-11-28T15:01:43.886183+00:00 | INFO | INPUT | file=docs\win\soccer\05_final_scores\reports\ligue1\total_25\ligue1_total_25_by_ev_over_under_summary.csv | exists=0 | rows=0
+2026-11-28T15:01:43.886183+00:00 | INFO | Optional dashboard input missing: docs\win\soccer\05_final_scores\reports\ligue1\total_25\ligue1_total_25_by_ev_over_under_summary.csv
+2026-11-28T15:01:43.886183+00:00 | INFO | INPUT | file=docs\win\soccer\05_final_scores\reports\ligue1\total_25\ligue1_total_25_by_kelly.csv | exists=0 | rows=0
+2026-11-28T15:01:43.886183+00:00 | INFO | Optional dashboard input missing: docs\win\soccer\05_final_scores\reports\ligue1\total_25\ligue1_total_25_by_kelly.csv
+2026-11-28T15:01:43.886183+00:00 | INFO | INPUT | file=docs\win\soccer\05_final_scores\reports\ligue1\total_25\ligue1_total_25_by_kelly_over_under_summary.csv | exists=0 | rows=0
+2026-11-28T15:01:43.886183+00:00 | INFO | Optional dashboard input missing: docs\win\soccer\05_final_scores\reports\ligue1\total_25\ligue1_total_25_by_kelly_over_under_summary.csv
+2026-11-28T15:01:43.886183+00:00 | INFO | INPUT | file=docs\win\soccer\05_final_scores\reports\ligue1\total_25\ligue1_total_25_by_month.csv | exists=0 | rows=0
+2026-11-28T15:01:43.886183+00:00 | INFO | Optional dashboard input missing: docs\win\soccer\05_final_scores\reports\ligue1\total_25\ligue1_total_25_by_month.csv
+2026-11-28T15:01:43.886183+00:00 | INFO | INPUT | file=docs\win\soccer\05_final_scores\reports\ligue1\total_25\ligue1_total_25_by_month_over_under_summary.csv | exists=0 | rows=0
+2026-11-28T15:01:43.886183+00:00 | INFO | Optional dashboard input missing: docs\win\soccer\05_final_scores\reports\ligue1\total_25\ligue1_total_25_by_month_over_under_summary.csv
+2026-11-28T15:01:43.886183+00:00 | INFO | INPUT | file=docs\win\soccer\05_final_scores\reports\ligue1\total_25\ligue1_total_25_by_odds.csv | exists=0 | rows=0
+2026-11-28T15:01:43.886183+00:00 | INFO | Optional dashboard input missing: docs\win\soccer\05_final_scores\reports\ligue1\total_25\ligue1_total_25_by_odds.csv
+2026-11-28T15:01:43.886183+00:00 | INFO | INPUT | file=docs\win\soccer\05_final_scores\reports\ligue1\total_25\ligue1_total_25_by_odds_over_under_summary.csv | exists=0 | rows=0
+2026-11-28T15:01:43.886183+00:00 | INFO | Optional dashboard input missing: docs\win\soccer\05_final_scores\reports\ligue1\total_25\ligue1_total_25_by_odds_over_under_summary.csv
+2026-11-28T15:01:43.886183+00:00 | INFO | INPUT | file=docs\win\soccer\05_final_scores\reports\ligue1\total_25\ligue1_total_25_by_model_prob.csv | exists=0 | rows=0
+2026-11-28T15:01:43.886183+00:00 | INFO | Optional dashboard input missing: docs\win\soccer\05_final_scores\reports\ligue1\total_25\ligue1_total_25_by_model_prob.csv
+2026-11-28T15:01:43.886183+00:00 | INFO | INPUT | file=docs\win\soccer\05_final_scores\reports\ligue1\total_25\ligue1_total_25_by_model_prob_over_under_summary.csv | exists=0 | rows=0
+2026-11-28T15:01:43.886183+00:00 | INFO | Optional dashboard input missing: docs\win\soccer\05_final_scores\reports\ligue1\total_25\ligue1_total_25_by_model_prob_over_under_summary.csv
+2026-11-28T15:01:43.906111+00:00 | INFO | INPUT | file=docs\win\soccer\05_final_scores\reports\ligue1\total_35\ligue1_total_35_by_ev.csv | exists=1 | rows=6
+2026-11-28T15:01:43.906111+00:00 | INFO | INPUT | file=docs\win\soccer\05_final_scores\reports\ligue1\total_35\ligue1_total_35_by_ev_over_under_summary.csv | exists=1 | rows=6
+2026-11-28T15:01:43.918121+00:00 | INFO | INPUT | file=docs\win\soccer\05_final_scores\reports\ligue1\total_35\ligue1_total_35_by_kelly.csv | exists=1 | rows=6
+2026-11-28T15:01:43.918121+00:00 | INFO | INPUT | file=docs\win\soccer\05_final_scores\reports\ligue1\total_35\ligue1_total_35_by_kelly_over_under_summary.csv | exists=1 | rows=6
+2026-11-28T15:01:43.930398+00:00 | INFO | INPUT | file=docs\win\soccer\05_final_scores\reports\ligue1\total_35\ligue1_total_35_by_month.csv | exists=1 | rows=6
+2026-11-28T15:01:43.935779+00:00 | INFO | INPUT | file=docs\win\soccer\05_final_scores\reports\ligue1\total_35\ligue1_total_35_by_month_over_under_summary.csv | exists=1 | rows=6
+2026-11-28T15:01:43.935779+00:00 | INFO | INPUT | file=docs\win\soccer\05_final_scores\reports\ligue1\total_35\ligue1_total_35_by_odds.csv | exists=1 | rows=4
+2026-11-28T15:01:43.947578+00:00 | INFO | INPUT | file=docs\win\soccer\05_final_scores\reports\ligue1\total_35\ligue1_total_35_by_odds_over_under_summary.csv | exists=1 | rows=4
+2026-11-28T15:01:43.953777+00:00 | INFO | INPUT | file=docs\win\soccer\05_final_scores\reports\ligue1\total_35\ligue1_total_35_by_model_prob.csv | exists=1 | rows=1
+2026-11-28T15:01:43.953777+00:00 | INFO | INPUT | file=docs\win\soccer\05_final_scores\reports\ligue1\total_35\ligue1_total_35_by_model_prob_over_under_summary.csv | exists=1 | rows=1
+2026-11-28T15:01:43.967202+00:00 | INFO | INPUT | file=docs\win\soccer\05_final_scores\seriea_market_tally.csv | exists=1 | rows=5
+2026-11-28T15:01:43.969206+00:00 | INFO | INPUT | file=docs\win\soccer\05_final_scores\reports\seriea\match_odds\seriea_match_odds_by_ev.csv | exists=1 | rows=4
+2026-11-28T15:01:43.981364+00:00 | INFO | INPUT | file=docs\win\soccer\05_final_scores\reports\seriea\match_odds\seriea_match_odds_by_ev_home_draw_away_summary.csv | exists=1 | rows=4
+2026-11-28T15:01:43.981364+00:00 | INFO | INPUT | file=docs\win\soccer\05_final_scores\reports\seriea\match_odds\seriea_match_odds_by_kelly.csv | exists=1 | rows=5
+2026-11-28T15:01:43.997477+00:00 | INFO | INPUT | file=docs\win\soccer\05_final_scores\reports\seriea\match_odds\seriea_match_odds_by_kelly_home_draw_away_summary.csv | exists=1 | rows=6
+2026-11-28T15:01:43.997477+00:00 | INFO | INPUT | file=docs\win\soccer\05_final_scores\reports\seriea\match_odds\seriea_match_odds_by_month.csv | exists=1 | rows=5
+2026-11-28T15:01:44.008878+00:00 | INFO | INPUT | file=docs\win\soccer\05_final_scores\reports\seriea\match_odds\seriea_match_odds_by_month_home_draw_away_summary.csv | exists=1 | rows=6
+2026-11-28T15:01:44.015202+00:00 | INFO | INPUT | file=docs\win\soccer\05_final_scores\reports\seriea\match_odds\seriea_match_odds_by_odds.csv | exists=1 | rows=7
+2026-11-28T15:01:44.015202+00:00 | INFO | INPUT | file=docs\win\soccer\05_final_scores\reports\seriea\match_odds\seriea_match_odds_by_odds_home_draw_away_summary.csv | exists=1 | rows=7
+2026-11-28T15:01:44.023187+00:00 | INFO | INPUT | file=docs\win\soccer\05_final_scores\reports\seriea\match_odds\seriea_match_odds_by_model_prob.csv | exists=1 | rows=6
+2026-11-28T15:01:44.032504+00:00 | INFO | INPUT | file=docs\win\soccer\05_final_scores\reports\seriea\match_odds\seriea_match_odds_by_model_prob_home_draw_away_summary.csv | exists=1 | rows=6
+2026-11-28T15:01:44.032504+00:00 | INFO | INPUT | file=docs\win\soccer\05_final_scores\reports\seriea\match_odds\seriea_match_odds_by_win_prob.csv | exists=1 | rows=6
+2026-11-28T15:01:44.032504+00:00 | INFO | INPUT | file=docs\win\soccer\05_final_scores\reports\seriea\match_odds\seriea_match_odds_by_win_prob_home_draw_away_summary.csv | exists=1 | rows=6
+2026-11-28T15:01:44.032504+00:00 | INFO | INPUT | file=docs\win\soccer\05_final_scores\reports\seriea\btts\seriea_btts_by_ev.csv | exists=0 | rows=0
+2026-11-28T15:01:44.032504+00:00 | INFO | Optional dashboard input missing: docs\win\soccer\05_final_scores\reports\seriea\btts\seriea_btts_by_ev.csv
+2026-11-28T15:01:44.032504+00:00 | INFO | INPUT | file=docs\win\soccer\05_final_scores\reports\seriea\btts\seriea_btts_by_ev_yes_no_summary.csv | exists=0 | rows=0
+2026-11-28T15:01:44.032504+00:00 | INFO | Optional dashboard input missing: docs\win\soccer\05_final_scores\reports\seriea\btts\seriea_btts_by_ev_yes_no_summary.csv
+2026-11-28T15:01:44.032504+00:00 | INFO | INPUT | file=docs\win\soccer\05_final_scores\reports\seriea\btts\seriea_btts_by_kelly.csv | exists=0 | rows=0
+2026-11-28T15:01:44.032504+00:00 | INFO | Optional dashboard input missing: docs\win\soccer\05_final_scores\reports\seriea\btts\seriea_btts_by_kelly.csv
+2026-11-28T15:01:44.032504+00:00 | INFO | INPUT | file=docs\win\soccer\05_final_scores\reports\seriea\btts\seriea_btts_by_kelly_yes_no_summary.csv | exists=0 | rows=0
+2026-11-28T15:01:44.032504+00:00 | INFO | Optional dashboard input missing: docs\win\soccer\05_final_scores\reports\seriea\btts\seriea_btts_by_kelly_yes_no_summary.csv
+2026-11-28T15:01:44.032504+00:00 | INFO | INPUT | file=docs\win\soccer\05_final_scores\reports\seriea\btts\seriea_btts_by_month.csv | exists=0 | rows=0
+2026-11-28T15:01:44.032504+00:00 | INFO | Optional dashboard input missing: docs\win\soccer\05_final_scores\reports\seriea\btts\seriea_btts_by_month.csv
+2026-11-28T15:01:44.032504+00:00 | INFO | INPUT | file=docs\win\soccer\05_final_scores\reports\seriea\btts\seriea_btts_by_month_yes_no_summary.csv | exists=0 | rows=0
+2026-11-28T15:01:44.032504+00:00 | INFO | Optional dashboard input missing: docs\win\soccer\05_final_scores\reports\seriea\btts\seriea_btts_by_month_yes_no_summary.csv
+2026-11-28T15:01:44.032504+00:00 | INFO | INPUT | file=docs\win\soccer\05_final_scores\reports\seriea\btts\seriea_btts_by_odds.csv | exists=0 | rows=0
+2026-11-28T15:01:44.032504+00:00 | INFO | Optional dashboard input missing: docs\win\soccer\05_final_scores\reports\seriea\btts\seriea_btts_by_odds.csv
+2026-11-28T15:01:44.032504+00:00 | INFO | INPUT | file=docs\win\soccer\05_final_scores\reports\seriea\btts\seriea_btts_by_odds_yes_no_summary.csv | exists=0 | rows=0
+2026-11-28T15:01:44.032504+00:00 | INFO | Optional dashboard input missing: docs\win\soccer\05_final_scores\reports\seriea\btts\seriea_btts_by_odds_yes_no_summary.csv
+2026-11-28T15:01:44.032504+00:00 | INFO | INPUT | file=docs\win\soccer\05_final_scores\reports\seriea\btts\seriea_btts_by_model_prob.csv | exists=0 | rows=0
+2026-11-28T15:01:44.032504+00:00 | INFO | Optional dashboard input missing: docs\win\soccer\05_final_scores\reports\seriea\btts\seriea_btts_by_model_prob.csv
+2026-11-28T15:01:44.042323+00:00 | INFO | INPUT | file=docs\win\soccer\05_final_scores\reports\seriea\btts\seriea_btts_by_model_prob_yes_no_summary.csv | exists=0 | rows=0
+2026-11-28T15:01:44.042323+00:00 | INFO | Optional dashboard input missing: docs\win\soccer\05_final_scores\reports\seriea\btts\seriea_btts_by_model_prob_yes_no_summary.csv
+2026-11-28T15:01:44.049397+00:00 | INFO | INPUT | file=docs\win\soccer\05_final_scores\reports\seriea\total_25\seriea_total_25_by_ev.csv | exists=1 | rows=3
+2026-11-28T15:01:44.055260+00:00 | INFO | INPUT | file=docs\win\soccer\05_final_scores\reports\seriea\total_25\seriea_total_25_by_ev_over_under_summary.csv | exists=1 | rows=3
+2026-11-28T15:01:44.062906+00:00 | INFO | INPUT | file=docs\win\soccer\05_final_scores\reports\seriea\total_25\seriea_total_25_by_kelly.csv | exists=1 | rows=4
+2026-11-28T15:01:44.068254+00:00 | INFO | INPUT | file=docs\win\soccer\05_final_scores\reports\seriea\total_25\seriea_total_25_by_kelly_over_under_summary.csv | exists=1 | rows=4
+2026-11-28T15:01:44.075611+00:00 | INFO | INPUT | file=docs\win\soccer\05_final_scores\reports\seriea\total_25\seriea_total_25_by_month.csv | exists=1 | rows=5
+2026-11-28T15:01:44.081610+00:00 | INFO | INPUT | file=docs\win\soccer\05_final_scores\reports\seriea\total_25\seriea_total_25_by_month_over_under_summary.csv | exists=1 | rows=6
+2026-11-28T15:01:44.088507+00:00 | INFO | INPUT | file=docs\win\soccer\05_final_scores\reports\seriea\total_25\seriea_total_25_by_odds.csv | exists=1 | rows=1
+2026-11-28T15:01:44.094249+00:00 | INFO | INPUT | file=docs\win\soccer\05_final_scores\reports\seriea\total_25\seriea_total_25_by_odds_over_under_summary.csv | exists=1 | rows=2
+2026-11-28T15:01:44.101772+00:00 | INFO | INPUT | file=docs\win\soccer\05_final_scores\reports\seriea\total_25\seriea_total_25_by_model_prob.csv | exists=1 | rows=2
+2026-11-28T15:01:44.108266+00:00 | INFO | INPUT | file=docs\win\soccer\05_final_scores\reports\seriea\total_25\seriea_total_25_by_model_prob_over_under_summary.csv | exists=1 | rows=2
+2026-11-28T15:01:44.115765+00:00 | INFO | INPUT | file=docs\win\soccer\05_final_scores\reports\seriea\total_35\seriea_total_35_by_ev.csv | exists=1 | rows=2
+2026-11-28T15:01:44.120766+00:00 | INFO | INPUT | file=docs\win\soccer\05_final_scores\reports\seriea\total_35\seriea_total_35_by_ev_over_under_summary.csv | exists=1 | rows=2
+2026-11-28T15:01:44.128393+00:00 | INFO | INPUT | file=docs\win\soccer\05_final_scores\reports\seriea\total_35\seriea_total_35_by_kelly.csv | exists=1 | rows=2
+2026-11-28T15:01:44.133756+00:00 | INFO | INPUT | file=docs\win\soccer\05_final_scores\reports\seriea\total_35\seriea_total_35_by_kelly_over_under_summary.csv | exists=1 | rows=2
+2026-11-28T15:01:44.141402+00:00 | INFO | INPUT | file=docs\win\soccer\05_final_scores\reports\seriea\total_35\seriea_total_35_by_month.csv | exists=1 | rows=2
+2026-11-28T15:01:44.147256+00:00 | INFO | INPUT | file=docs\win\soccer\05_final_scores\reports\seriea\total_35\seriea_total_35_by_month_over_under_summary.csv | exists=1 | rows=2
+2026-11-28T15:01:44.154986+00:00 | INFO | INPUT | file=docs\win\soccer\05_final_scores\reports\seriea\total_35\seriea_total_35_by_odds.csv | exists=1 | rows=2
+2026-11-28T15:01:44.161287+00:00 | INFO | INPUT | file=docs\win\soccer\05_final_scores\reports\seriea\total_35\seriea_total_35_by_odds_over_under_summary.csv | exists=1 | rows=2
+2026-11-28T15:01:44.169148+00:00 | INFO | INPUT | file=docs\win\soccer\05_final_scores\reports\seriea\total_35\seriea_total_35_by_model_prob.csv | exists=1 | rows=1
+2026-11-28T15:01:44.175147+00:00 | INFO | INPUT | file=docs\win\soccer\05_final_scores\reports\seriea\total_35\seriea_total_35_by_model_prob_over_under_summary.csv | exists=1 | rows=1
+2026-11-28T15:01:44.181773+00:00 | INFO | INPUT | file=docs\win\soccer\05_final_scores\bundesliga_market_tally.csv | exists=1 | rows=3
+2026-11-28T15:01:44.195073+00:00 | INFO | INPUT | file=docs\win\soccer\05_final_scores\reports\bundesliga\match_odds\bundesliga_match_odds_by_ev.csv | exists=1 | rows=1
+2026-11-28T15:01:44.200076+00:00 | INFO | INPUT | file=docs\win\soccer\05_final_scores\reports\bundesliga\match_odds\bundesliga_match_odds_by_ev_home_draw_away_summary.csv | exists=1 | rows=2
+2026-11-28T15:01:44.203234+00:00 | INFO | INPUT | file=docs\win\soccer\05_final_scores\reports\bundesliga\match_odds\bundesliga_match_odds_by_kelly.csv | exists=1 | rows=1
+2026-11-28T15:01:44.204234+00:00 | INFO | INPUT | file=docs\win\soccer\05_final_scores\reports\bundesliga\match_odds\bundesliga_match_odds_by_kelly_home_draw_away_summary.csv | exists=1 | rows=2
+2026-11-28T15:01:44.207044+00:00 | INFO | INPUT | file=docs\win\soccer\05_final_scores\reports\bundesliga\match_odds\bundesliga_match_odds_by_month.csv | exists=1 | rows=2
+2026-11-28T15:01:44.213162+00:00 | INFO | INPUT | file=docs\win\soccer\05_final_scores\reports\bundesliga\match_odds\bundesliga_match_odds_by_month_home_draw_away_summary.csv | exists=1 | rows=2
+2026-11-28T15:01:44.220029+00:00 | INFO | INPUT | file=docs\win\soccer\05_final_scores\reports\bundesliga\match_odds\bundesliga_match_odds_by_odds.csv | exists=1 | rows=2
+2026-11-28T15:01:44.221816+00:00 | INFO | INPUT | file=docs\win\soccer\05_final_scores\reports\bundesliga\match_odds\bundesliga_match_odds_by_odds_home_draw_away_summary.csv | exists=1 | rows=2
+2026-11-28T15:01:44.234004+00:00 | INFO | INPUT | file=docs\win\soccer\05_final_scores\reports\bundesliga\match_odds\bundesliga_match_odds_by_model_prob.csv | exists=1 | rows=2
+2026-11-28T15:01:44.235472+00:00 | INFO | INPUT | file=docs\win\soccer\05_final_scores\reports\bundesliga\match_odds\bundesliga_match_odds_by_model_prob_home_draw_away_summary.csv | exists=1 | rows=2
+2026-11-28T15:01:44.235472+00:00 | INFO | INPUT | file=docs\win\soccer\05_final_scores\reports\bundesliga\match_odds\bundesliga_match_odds_by_win_prob.csv | exists=1 | rows=2
+2026-11-28T15:01:44.235472+00:00 | INFO | INPUT | file=docs\win\soccer\05_final_scores\reports\bundesliga\match_odds\bundesliga_match_odds_by_win_prob_home_draw_away_summary.csv | exists=1 | rows=2
+2026-11-28T15:01:44.235472+00:00 | INFO | INPUT | file=docs\win\soccer\05_final_scores\reports\bundesliga\btts\bundesliga_btts_by_ev.csv | exists=0 | rows=0
+2026-11-28T15:01:44.246044+00:00 | INFO | Optional dashboard input missing: docs\win\soccer\05_final_scores\reports\bundesliga\btts\bundesliga_btts_by_ev.csv
+2026-11-28T15:01:44.246044+00:00 | INFO | INPUT | file=docs\win\soccer\05_final_scores\reports\bundesliga\btts\bundesliga_btts_by_ev_yes_no_summary.csv | exists=0 | rows=0
+2026-11-28T15:01:44.246044+00:00 | INFO | Optional dashboard input missing: docs\win\soccer\05_final_scores\reports\bundesliga\btts\bundesliga_btts_by_ev_yes_no_summary.csv
+2026-11-28T15:01:44.246044+00:00 | INFO | INPUT | file=docs\win\soccer\05_final_scores\reports\bundesliga\btts\bundesliga_btts_by_kelly.csv | exists=0 | rows=0
+2026-11-28T15:01:44.246044+00:00 | INFO | Optional dashboard input missing: docs\win\soccer\05_final_scores\reports\bundesliga\btts\bundesliga_btts_by_kelly.csv
+2026-11-28T15:01:44.247339+00:00 | INFO | INPUT | file=docs\win\soccer\05_final_scores\reports\bundesliga\btts\bundesliga_btts_by_kelly_yes_no_summary.csv | exists=0 | rows=0
+2026-11-28T15:01:44.247339+00:00 | INFO | Optional dashboard input missing: docs\win\soccer\05_final_scores\reports\bundesliga\btts\bundesliga_btts_by_kelly_yes_no_summary.csv
+2026-11-28T15:01:44.247339+00:00 | INFO | INPUT | file=docs\win\soccer\05_final_scores\reports\bundesliga\btts\bundesliga_btts_by_month.csv | exists=0 | rows=0
+2026-11-28T15:01:44.247339+00:00 | INFO | Optional dashboard input missing: docs\win\soccer\05_final_scores\reports\bundesliga\btts\bundesliga_btts_by_month.csv
+2026-11-28T15:01:44.247339+00:00 | INFO | INPUT | file=docs\win\soccer\05_final_scores\reports\bundesliga\btts\bundesliga_btts_by_month_yes_no_summary.csv | exists=0 | rows=0
+2026-11-28T15:01:44.247339+00:00 | INFO | Optional dashboard input missing: docs\win\soccer\05_final_scores\reports\bundesliga\btts\bundesliga_btts_by_month_yes_no_summary.csv
+2026-11-28T15:01:44.248342+00:00 | INFO | INPUT | file=docs\win\soccer\05_final_scores\reports\bundesliga\btts\bundesliga_btts_by_odds.csv | exists=0 | rows=0
+2026-11-28T15:01:44.248342+00:00 | INFO | Optional dashboard input missing: docs\win\soccer\05_final_scores\reports\bundesliga\btts\bundesliga_btts_by_odds.csv
+2026-11-28T15:01:44.248342+00:00 | INFO | INPUT | file=docs\win\soccer\05_final_scores\reports\bundesliga\btts\bundesliga_btts_by_odds_yes_no_summary.csv | exists=0 | rows=0
+2026-11-28T15:01:44.248342+00:00 | INFO | Optional dashboard input missing: docs\win\soccer\05_final_scores\reports\bundesliga\btts\bundesliga_btts_by_odds_yes_no_summary.csv
+2026-11-28T15:01:44.248342+00:00 | INFO | INPUT | file=docs\win\soccer\05_final_scores\reports\bundesliga\btts\bundesliga_btts_by_model_prob.csv | exists=0 | rows=0
+2026-11-28T15:01:44.248342+00:00 | INFO | Optional dashboard input missing: docs\win\soccer\05_final_scores\reports\bundesliga\btts\bundesliga_btts_by_model_prob.csv
+2026-11-28T15:01:44.249342+00:00 | INFO | INPUT | file=docs\win\soccer\05_final_scores\reports\bundesliga\btts\bundesliga_btts_by_model_prob_yes_no_summary.csv | exists=0 | rows=0
+2026-11-28T15:01:44.249342+00:00 | INFO | Optional dashboard input missing: docs\win\soccer\05_final_scores\reports\bundesliga\btts\bundesliga_btts_by_model_prob_yes_no_summary.csv
+2026-11-28T15:01:44.255338+00:00 | INFO | INPUT | file=docs\win\soccer\05_final_scores\reports\bundesliga\total_25\bundesliga_total_25_by_ev.csv | exists=1 | rows=1
+2026-11-28T15:01:44.261340+00:00 | INFO | INPUT | file=docs\win\soccer\05_final_scores\reports\bundesliga\total_25\bundesliga_total_25_by_ev_over_under_summary.csv | exists=1 | rows=1
+2026-11-28T15:01:44.268339+00:00 | INFO | INPUT | file=docs\win\soccer\05_final_scores\reports\bundesliga\total_25\bundesliga_total_25_by_kelly.csv | exists=1 | rows=1
+2026-11-28T15:01:44.273565+00:00 | INFO | INPUT | file=docs\win\soccer\05_final_scores\reports\bundesliga\total_25\bundesliga_total_25_by_kelly_over_under_summary.csv | exists=1 | rows=1
+2026-11-28T15:01:44.281202+00:00 | INFO | INPUT | file=docs\win\soccer\05_final_scores\reports\bundesliga\total_25\bundesliga_total_25_by_month.csv | exists=1 | rows=1
+2026-11-28T15:01:44.287941+00:00 | INFO | INPUT | file=docs\win\soccer\05_final_scores\reports\bundesliga\total_25\bundesliga_total_25_by_month_over_under_summary.csv | exists=1 | rows=1
+2026-11-28T15:01:44.293941+00:00 | INFO | INPUT | file=docs\win\soccer\05_final_scores\reports\bundesliga\total_25\bundesliga_total_25_by_odds.csv | exists=1 | rows=1
+2026-11-28T15:01:44.299668+00:00 | INFO | INPUT | file=docs\win\soccer\05_final_scores\reports\bundesliga\total_25\bundesliga_total_25_by_odds_over_under_summary.csv | exists=1 | rows=1
+2026-11-28T15:01:44.307194+00:00 | INFO | INPUT | file=docs\win\soccer\05_final_scores\reports\bundesliga\total_25\bundesliga_total_25_by_model_prob.csv | exists=1 | rows=1
+2026-11-28T15:01:44.313326+00:00 | INFO | INPUT | file=docs\win\soccer\05_final_scores\reports\bundesliga\total_25\bundesliga_total_25_by_model_prob_over_under_summary.csv | exists=1 | rows=1
+2026-11-28T15:01:44.314563+00:00 | INFO | INPUT | file=docs\win\soccer\05_final_scores\reports\bundesliga\total_35\bundesliga_total_35_by_ev.csv | exists=0 | rows=0
+2026-11-28T15:01:44.314563+00:00 | INFO | Optional dashboard input missing: docs\win\soccer\05_final_scores\reports\bundesliga\total_35\bundesliga_total_35_by_ev.csv
+2026-11-28T15:01:44.314563+00:00 | INFO | INPUT | file=docs\win\soccer\05_final_scores\reports\bundesliga\total_35\bundesliga_total_35_by_ev_over_under_summary.csv | exists=0 | rows=0
+2026-11-28T15:01:44.314563+00:00 | INFO | Optional dashboard input missing: docs\win\soccer\05_final_scores\reports\bundesliga\total_35\bundesliga_total_35_by_ev_over_under_summary.csv
+2026-11-28T15:01:44.315562+00:00 | INFO | INPUT | file=docs\win\soccer\05_final_scores\reports\bundesliga\total_35\bundesliga_total_35_by_kelly.csv | exists=0 | rows=0
+2026-11-28T15:01:44.315562+00:00 | INFO | Optional dashboard input missing: docs\win\soccer\05_final_scores\reports\bundesliga\total_35\bundesliga_total_35_by_kelly.csv
+2026-11-28T15:01:44.315562+00:00 | INFO | INPUT | file=docs\win\soccer\05_final_scores\reports\bundesliga\total_35\bundesliga_total_35_by_kelly_over_under_summary.csv | exists=0 | rows=0
+2026-11-28T15:01:44.315562+00:00 | INFO | Optional dashboard input missing: docs\win\soccer\05_final_scores\reports\bundesliga\total_35\bundesliga_total_35_by_kelly_over_under_summary.csv
+2026-11-28T15:01:44.315562+00:00 | INFO | INPUT | file=docs\win\soccer\05_final_scores\reports\bundesliga\total_35\bundesliga_total_35_by_month.csv | exists=0 | rows=0
+2026-11-28T15:01:44.316571+00:00 | INFO | Optional dashboard input missing: docs\win\soccer\05_final_scores\reports\bundesliga\total_35\bundesliga_total_35_by_month.csv
+2026-11-28T15:01:44.316571+00:00 | INFO | INPUT | file=docs\win\soccer\05_final_scores\reports\bundesliga\total_35\bundesliga_total_35_by_month_over_under_summary.csv | exists=0 | rows=0
+2026-11-28T15:01:44.316571+00:00 | INFO | Optional dashboard input missing: docs\win\soccer\05_final_scores\reports\bundesliga\total_35\bundesliga_total_35_by_month_over_under_summary.csv
+2026-11-28T15:01:44.316571+00:00 | INFO | INPUT | file=docs\win\soccer\05_final_scores\reports\bundesliga\total_35\bundesliga_total_35_by_odds.csv | exists=0 | rows=0
+2026-11-28T15:01:44.316571+00:00 | INFO | Optional dashboard input missing: docs\win\soccer\05_final_scores\reports\bundesliga\total_35\bundesliga_total_35_by_odds.csv
+2026-11-28T15:01:44.316571+00:00 | INFO | INPUT | file=docs\win\soccer\05_final_scores\reports\bundesliga\total_35\bundesliga_total_35_by_odds_over_under_summary.csv | exists=0 | rows=0
+2026-11-28T15:01:44.317568+00:00 | INFO | Optional dashboard input missing: docs\win\soccer\05_final_scores\reports\bundesliga\total_35\bundesliga_total_35_by_odds_over_under_summary.csv
+2026-11-28T15:01:44.317568+00:00 | INFO | INPUT | file=docs\win\soccer\05_final_scores\reports\bundesliga\total_35\bundesliga_total_35_by_model_prob.csv | exists=0 | rows=0
+2026-11-28T15:01:44.317568+00:00 | INFO | Optional dashboard input missing: docs\win\soccer\05_final_scores\reports\bundesliga\total_35\bundesliga_total_35_by_model_prob.csv
+2026-11-28T15:01:44.318133+00:00 | INFO | INPUT | file=docs\win\soccer\05_final_scores\reports\bundesliga\total_35\bundesliga_total_35_by_model_prob_over_under_summary.csv | exists=0 | rows=0
+2026-11-28T15:01:44.318133+00:00 | INFO | Optional dashboard input missing: docs\win\soccer\05_final_scores\reports\bundesliga\total_35\bundesliga_total_35_by_model_prob_over_under_summary.csv
+2026-11-28T15:01:44.324187+00:00 | INFO | INPUT | file=docs\win\soccer\05_final_scores\all_soccer_market_tally.csv | exists=1 | rows=9
+2026-11-28T15:01:44.346060+00:00 | INFO | OUTPUT | file=frontend\data\dashboards\soccer.json | rows=1 | bytes=294438
+2026-11-28T15:01:44.346060+00:00 | INFO | dashboard data -> frontend\data\dashboards\soccer.json
 INPUT_SUMMARY | files=262 | rows=1124
 OUTPUT_SUMMARY | files=1 | rows=1
 WARNING_COUNT: 0
 ERROR_COUNT: 0
-END_TIMESTAMP_UTC: 2026-11-28T13:51:29.764401+00:00
+END_TIMESTAMP_UTC: 2026-11-28T15:01:44.346060+00:00
 STATUS: SUCCESS
