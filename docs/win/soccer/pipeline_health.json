@@ -10,7 +10,7 @@
   },
   "fatal_errors": [],
   "game_date_new_york": "2026_11_28",
-  "generated_at_utc": "2026-11-28T13:53:07.203693+00:00",
+  "generated_at_utc": "2026-11-28T15:03:28.568114+00:00",
   "paths": {
     "edges": [
       "docs\\win\\soccer\\03_edges\\2026_11_28_bundesliga_btts.csv",
@@ -102,13 +102,13 @@
       "exists": true,
       "name": "Name Normalization",
       "path": "docs\\win\\soccer\\errors\\00_intake\\name_normalization.txt",
-      "status": "2026-11-28T13:47:00.390072+00:00 | STATUS: SUCCESS"
+      "status": "2026-11-28T14:57:02.408129+00:00 | STATUS: SUCCESS"
     },
     {
       "exists": true,
       "name": "Soccer Cleaner",
       "path": "docs\\win\\soccer\\errors\\00_intake\\soccer_cleaner.txt",
-      "status": "2026-11-28T13:47:02.754109+00:00 | STATUS: SUCCESS WITH MISSING IDENTITY"
+      "status": "2026-11-28T14:57:05.398907+00:00 | STATUS: SUCCESS WITH MISSING IDENTITY"
     },
     {
       "exists": true,
