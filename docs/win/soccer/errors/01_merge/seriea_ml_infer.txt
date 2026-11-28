@@ -1,4 +1,4 @@
-Serie A ML inference: processing 57 Serie A merge date(s) through 2026_11_28.
+Serie A ML inference: processing 58 Serie A merge date(s) through 2026_11_28.
 Serie A ML inference complete for 2026_04_10: 1 match prediction(s), 4 merge file(s) enriched.
   enriched 2026_04_10_seriea_match_odds.csv: 1 row(s)
   enriched 2026_04_10_seriea_total_25.csv: 1 row(s)
@@ -284,4 +284,9 @@ Serie A ML inference complete for 2026_11_27: 1 match prediction(s), 4 merge fil
   enriched 2026_11_27_seriea_total_25.csv: 1 row(s)
   enriched 2026_11_27_seriea_total_35.csv: 1 row(s)
   enriched 2026_11_27_seriea_btts.csv: 1 row(s)
-Serie A ML historical inference complete: 57 date(s), 228 merge file(s), 620 total merged row(s) enriched.
+Serie A ML inference complete for 2026_11_28: 3 match prediction(s), 4 merge file(s) enriched.
+  enriched 2026_11_28_seriea_match_odds.csv: 2 row(s)
+  enriched 2026_11_28_seriea_total_25.csv: 2 row(s)
+  enriched 2026_11_28_seriea_total_35.csv: 2 row(s)
+  enriched 2026_11_28_seriea_btts.csv: 2 row(s)
+Serie A ML historical inference complete: 58 date(s), 232 merge file(s), 628 total merged row(s) enriched.

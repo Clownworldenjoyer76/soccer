@@ -1,0 +1,27 @@
+game_id,sport,league,match_date,match_time,home_team,away_team
+401884722,soccer,bundesliga,2026_11_28,09:30 AM,Hamburg,Bayern Munich
+401884721,soccer,bundesliga,2026_11_28,09:30 AM,Koln,Elversberg
+401884723,soccer,bundesliga,2026_11_28,09:30 AM,Mainz,Union Berlin
+401884719,soccer,bundesliga,2026_11_28,09:30 AM,Paderborn,Schalke
+401884726,soccer,bundesliga,2026_11_28,12:30 PM,VfB Stuttgart,Eintracht Frankfurt
+401879227,soccer,epl,2026_11_28,10:00 AM,Leeds,Coventry
+401879226,soccer,epl,2026_11_28,10:00 AM,Manchester United,Brentford
+401878752,soccer,epl,2026_11_28,12:30 PM,Ipswich,Aston Villa
+401882789,soccer,laliga,2026_11_28,03:00 PM,Real Madrid,Alaves
+401882796,soccer,laliga,2026_11_28,08:00 AM,Real Betis,Vallecano
+401882790,soccer,laliga,2026_11_28,10:15 AM,Malaga,Athletic Club
+401882793,soccer,laliga,2026_11_28,12:30 PM,Elche,Atletico Madrid
+401876391,soccer,ligue1,2026_11_28,02:45 PM,Le Havre,Strasbourg
+401876390,soccer,ligue1,2026_11_28,02:45 PM,Le Mans,Lille
+401876388,soccer,ligue1,2026_11_28,02:45 PM,Nice,Troyes
+401876387,soccer,ligue1,2026_11_28,02:45 PM,Paris Saint Germain,Lorient
+401876394,soccer,ligue1,2026_11_28,11:15 AM,Angers,Lens
+401933724,soccer,mls,2026_11_28,02:30 PM,Houston Dynamo,San Jose Earthquakes
+401933723,soccer,mls,2026_11_28,04:30 PM,Philadelphia Union,New England Revolution
+401933722,soccer,mls,2026_11_28,06:30 PM,FC Cincinnati,Nashville SC
+401933726,soccer,mls,2026_11_28,08:30 PM,Los Angeles FC,St Louis City
+401933721,soccer,mls,2026_11_28,10:30 PM,Portland Timbers,FC Dallas
+401933737,soccer,mls,2026_11_28,12:30 PM,Charlotte FC,Chicago Fire
+401874977,soccer,seriea,2026_11_28,02:45 PM,Inter Milan,Genoa
+401875081,soccer,seriea,2026_11_28,09:00 AM,Frosinone,Parma
+401874826,soccer,seriea,2026_11_28,12:00 PM,Torino,Lazio
