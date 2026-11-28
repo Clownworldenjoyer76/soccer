@@ -1,16 +1,16 @@
 {
   "counts": {
-    "edge_rows": 92,
+    "edge_rows": 88,
     "locked_bets": 0,
-    "merged_games": 23,
-    "prediction_games": 23,
+    "merged_games": 22,
+    "prediction_games": 22,
     "scheduled_games": 26,
     "selected_bets": 4,
     "sportsbook_games": 26
   },
   "fatal_errors": [],
   "game_date_new_york": "2026_11_28",
-  "generated_at_utc": "2026-11-28T13:30:33.174479+00:00",
+  "generated_at_utc": "2026-11-28T13:53:07.203693+00:00",
   "paths": {
     "edges": [
       "docs\\win\\soccer\\03_edges\\2026_11_28_bundesliga_btts.csv",
@@ -102,13 +102,13 @@
       "exists": true,
       "name": "Name Normalization",
       "path": "docs\\win\\soccer\\errors\\00_intake\\name_normalization.txt",
-      "status": "2026-11-28T13:20:43.424975+00:00 | STATUS: SUCCESS"
+      "status": "2026-11-28T13:47:00.390072+00:00 | STATUS: SUCCESS"
     },
     {
       "exists": true,
       "name": "Soccer Cleaner",
       "path": "docs\\win\\soccer\\errors\\00_intake\\soccer_cleaner.txt",
-      "status": "2026-11-28T13:20:46.131986+00:00 | STATUS: SUCCESS WITH MISSING IDENTITY"
+      "status": "2026-11-28T13:47:02.754109+00:00 | STATUS: SUCCESS WITH MISSING IDENTITY"
     },
     {
       "exists": true,
@@ -298,8 +298,8 @@
   ],
   "status": "warning",
   "warnings": [
-    "Soccer: 3 game(s) missing normalized predictions",
-    "Soccer: 3 sportsbook game(s) did not reach merge outputs"
+    "Soccer: 4 game(s) missing normalized predictions",
+    "Soccer: 4 sportsbook game(s) did not reach merge outputs"
   ],
   "workflow": {
     "name": "Soccer Pipeline",
